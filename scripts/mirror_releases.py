@@ -6,6 +6,7 @@ Runs only inside the DalamudPluginsTC repo's own GitHub Actions workflow,
 using a token that is never stored in the source plugin repos.
 """
 import json
+import re
 import shutil
 import subprocess
 import tempfile
@@ -110,6 +111,12 @@ def main():
                     for key in ("AssemblyVersion", "Description", "Punchline", "Author"):
                         if key in manifest:
                             entry[key] = manifest[key]
+                else:
+                    # No manifest asset published; fall back to parsing the tag itself
+                    # (e.g. "v7.15.0.47" or "7.15.0.5-cn" -> "7.15.0.47" / "7.15.0.5").
+                    m = re.search(r"\d+\.\d+\.\d+\.\d+", tag)
+                    if m:
+                        entry["AssemblyVersion"] = m.group(0)
                 zip_asset = next((a["name"] for a in rel["assets"] if a["name"].endswith(".zip")), None)
                 if zip_asset:
                     url = f"https://github.com/{PUBLIC_REPO}/releases/download/{public_tag}/{zip_asset}"
