@@ -5,6 +5,7 @@ this public repo's own releases, then refresh repo.json.
 Runs only inside the DalamudPluginsTC repo's own GitHub Actions workflow,
 using a token that is never stored in the source plugin repos.
 """
+import base64
 import json
 import re
 import shutil
@@ -17,6 +18,7 @@ GH = shutil.which("gh") or r"C:\Program Files\GitHub CLI\gh.exe"
 REPO_ROOT = Path(__file__).resolve().parent.parent
 REPO_JSON = REPO_ROOT / "repo.json"
 STATE_FILE = REPO_ROOT / "scripts" / "release-state.json"
+ICONS_DIR = REPO_ROOT / "icons"
 PUBLIC_REPO = "Lother/DalamudPluginsTC"
 
 # InternalName -> source repo (owner/name)
@@ -31,6 +33,20 @@ SOURCE_REPOS = {
     "BossModReborn": "Lother/BossmodReborn",
     "WrathCombo": "Lother/WrathCombo",
     "LatihasChocobo": "Lother/LatihasChocobo",
+}
+
+# InternalName -> icon path within the source repo (on its default branch).
+# raw.githubusercontent.com can't serve files from private repos anonymously,
+# so we mirror the icon into this public repo instead.
+ICON_PATHS = {
+    "EurekaHelper": "EurekaHelper/Resources/icon.png",
+    "Accountant": "images/icon.png",
+    "AutoRetainer": "AutoRetainer/res/autoretainer.png",
+    "Saucy": "Saucy/Icon.png",
+    "LogogramHelper": "res/img/logoslogo.png",
+    "SomethingNeedDoing": "res/icon.png",
+    "BossModReborn": "Data/icon.png",
+    "WrathCombo": "res/plugin/wrathcombo.png",
 }
 
 
@@ -65,12 +81,36 @@ def load_json(path, default):
     return default
 
 
+def sync_icon(internal_name, source_repo, entry):
+    icon_path = ICON_PATHS.get(internal_name)
+    if not icon_path:
+        return False
+    out = gh("api", f"repos/{source_repo}/contents/{icon_path}", "--jq", ".content", check=False)
+    if not out:
+        print(f"[warn] {internal_name}: could not fetch icon at {icon_path}")
+        return False
+    ICONS_DIR.mkdir(exist_ok=True)
+    dest = ICONS_DIR / f"{internal_name}.png"
+    data = base64.b64decode(out)
+    if dest.exists() and dest.read_bytes() == data:
+        return False
+    dest.write_bytes(data)
+    entry["IconUrl"] = f"https://raw.githubusercontent.com/{PUBLIC_REPO}/main/icons/{internal_name}.png"
+    return True
+
+
 def main():
     state = load_json(STATE_FILE, {})
     repo_json = load_json(REPO_JSON, [])
     by_internal = {e["InternalName"]: e for e in repo_json}
 
     changed = False
+
+    for internal_name, source_repo in SOURCE_REPOS.items():
+        entry = by_internal.get(internal_name)
+        if entry is not None and sync_icon(internal_name, source_repo, entry):
+            print(f"[icon updated] {internal_name}")
+            changed = True
 
     for internal_name, source_repo in SOURCE_REPOS.items():
         rel = latest_release(source_repo)
