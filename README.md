@@ -1,6 +1,6 @@
 # DalamudPluginsTC
 
-第三方 Dalamud 插件倉庫，彙整 [Lother](https://github.com/Lother) 為 TC（台服私人伺服器）維護的所有 Dalamud 插件 fork。
+第三方 Dalamud 插件倉庫，彙整 [Lother](https://github.com/Lother) 為 DalamudTW 維護的所有 Dalamud 插件 fork。
 
 ## 使用方式
 
@@ -21,5 +21,6 @@ https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/repo.json
 - SomethingNeedDoing
 - BossModReborn
 - WrathCombo
+- LatihasChocobo
 
-所有插件皆為 TC 7.15 (Dalamud API Level 12) 相容分支，各自原始碼與版本紀錄請見對應的 `Lother/<PluginName>` repo。
+所有插件皆為 TC 7.15 (Dalamud API Level 12) 相容分支。

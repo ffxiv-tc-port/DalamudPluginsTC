@@ -1,0 +1,131 @@
+#!/usr/bin/env python3
+"""Poll private plugin repos for new releases and mirror their assets into
+this public repo's own releases, then refresh repo.json.
+
+Runs only inside the DalamudPluginsTC repo's own GitHub Actions workflow,
+using a token that is never stored in the source plugin repos.
+"""
+import json
+import shutil
+import subprocess
+import tempfile
+from pathlib import Path
+
+GH = shutil.which("gh") or r"C:\Program Files\GitHub CLI\gh.exe"
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_JSON = REPO_ROOT / "repo.json"
+STATE_FILE = REPO_ROOT / "scripts" / "release-state.json"
+PUBLIC_REPO = "Lother/DalamudPluginsTC"
+
+# InternalName -> source repo (owner/name)
+SOURCE_REPOS = {
+    "EurekaHelper": "Lother/EurekaHelper",
+    "Accountant": "Lother/Accountant",
+    "AutoRetainer": "Lother/AutoRetainer",
+    "Saucy": "Lother/Saucy",
+    "LogogramHelper": "Lother/LogogramHelper",
+    "TriadBuddy": "Lother/FFTriadBuddyDalamud",
+    "SomethingNeedDoing": "Lother/SomethingNeedDoing",
+    "BossModReborn": "Lother/BossmodReborn",
+    "WrathCombo": "Lother/WrathCombo",
+    "LatihasChocobo": "Lother/LatihasChocobo",
+}
+
+
+def gh(*args, check=True):
+    result = subprocess.run([GH, *args], capture_output=True, text=True)
+    if check and result.returncode != 0:
+        raise RuntimeError(f"gh {' '.join(args)} failed:\n{result.stderr}")
+    return result.stdout.strip()
+
+
+def latest_release(repo):
+    out = gh("api", f"repos/{repo}/releases", "--jq",
+              "sort_by(.published_at) | reverse | .[0] "
+              "| {tag: .tag_name, assets: [.assets[] | {name, url}]}",
+              check=False)
+    if not out or out == "null":
+        return None
+    return json.loads(out)
+
+
+def download_asset(asset_url, dest):
+    with open(dest, "wb") as f:
+        subprocess.run(
+            [GH, "api", asset_url, "-H", "Accept: application/octet-stream"],
+            stdout=f, check=True,
+        )
+
+
+def load_json(path, default):
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
+    return default
+
+
+def main():
+    state = load_json(STATE_FILE, {})
+    repo_json = load_json(REPO_JSON, [])
+    by_internal = {e["InternalName"]: e for e in repo_json}
+
+    changed = False
+
+    for internal_name, source_repo in SOURCE_REPOS.items():
+        rel = latest_release(source_repo)
+        if rel is None:
+            print(f"[skip] {internal_name}: no releases found on {source_repo}")
+            continue
+
+        tag = rel["tag"]
+        if state.get(internal_name) == tag:
+            print(f"[up to date] {internal_name}: {tag}")
+            continue
+
+        print(f"[new release] {internal_name}: {tag}")
+
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            local_files = []
+            manifest = None
+            for asset in rel["assets"]:
+                dest = tmp / asset["name"]
+                download_asset(asset["url"], dest)
+                local_files.append(dest)
+                if asset["name"].endswith(".json"):
+                    manifest = json.loads(dest.read_text(encoding="utf-8"))
+
+            public_tag = f"{internal_name}-{tag}"
+            gh("release", "create", public_tag,
+               *[str(f) for f in local_files],
+               "--repo", PUBLIC_REPO,
+               "--title", f"{internal_name} {tag}",
+               "--notes", f"Mirrored from {source_repo}@{tag}")
+
+            entry = by_internal.get(internal_name)
+            if entry is None:
+                print(f"[warn] {internal_name} not present in repo.json, skipping metadata update")
+            else:
+                if manifest:
+                    for key in ("AssemblyVersion", "Description", "Punchline", "Author"):
+                        if key in manifest:
+                            entry[key] = manifest[key]
+                zip_asset = next((a["name"] for a in rel["assets"] if a["name"].endswith(".zip")), None)
+                if zip_asset:
+                    url = f"https://github.com/{PUBLIC_REPO}/releases/download/{public_tag}/{zip_asset}"
+                    entry["DownloadLinkInstall"] = url
+                    entry["DownloadLinkUpdate"] = url
+                changed = True
+
+        state[internal_name] = tag
+
+    STATE_FILE.write_text(json.dumps(state, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    if changed:
+        REPO_JSON.write_text(json.dumps(repo_json, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    print("done" if changed else "no repo.json changes")
+
+
+if __name__ == "__main__":
+    main()
