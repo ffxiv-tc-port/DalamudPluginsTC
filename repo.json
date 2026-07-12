@@ -3,7 +3,7 @@
     "Author": "Snowy, KangasZ, Lother",
     "Name": "Eureka Helper",
     "InternalName": "EurekaHelper",
-    "AssemblyVersion": "7.15.0.58",
+    "AssemblyVersion": "7.15.0.59",
     "Description": "協助你進行優雷卡冒險的工具，已更新至《漂泊眾島》版本！輸入 /eurekahelper 開始使用。\n\n功能包含：\n- 遊戲內追蹤器 GUI\n- 副本追蹤器\n- 聖靈追蹤器\n- 魂武助手\n- 鬧鐘\n- 賺錢 NM 天氣時間提醒\n- 更多功能陸續推出",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/EurekaHelper",
@@ -30,14 +30,14 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/EurekaHelper/tc-7.15/EurekaHelper/Resources/icon.png",
     "Punchline": "優雷卡追蹤器與多項實用功能整合插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/EurekaHelper-v7.15.0.57/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/EurekaHelper-v7.15.0.57/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/EurekaHelper-v7.15.0.59/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/EurekaHelper-v7.15.0.59/latest.zip"
   },
   {
     "Author": "Ottermandias, Lother",
     "Name": "Accountant",
     "InternalName": "Accountant",
-    "AssemblyVersion": "7.15.0.70",
+    "AssemblyVersion": "7.15.0.71",
     "Description": "記錄多名角色的雇員、飛艇、潛水艇、以太之輪與作物計時器，\n以及其他各種雜項任務進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/Accountant",
@@ -62,14 +62,14 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/Accountant/tc-7.15/images/icon.png",
     "Punchline": "角色任務計時器。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Accountant-v7.15.0.74/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Accountant-v7.15.0.74/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Accountant-v7.15.0.71/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Accountant-v7.15.0.71/latest.zip"
   },
   {
     "Author": "кайт машина (Puni.sh), Lother",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.15.0.86",
+    "AssemblyVersion": "7.15.0.87",
     "Description": "躺在床上就能收取並指派雇員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/AutoRetainer",
@@ -81,14 +81,14 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/AutoRetainer/tc-7.15/AutoRetainer/res/autoretainer.png",
     "Punchline": "躺著也能派遣雇員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.86/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.86/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.87/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.87/latest.zip"
   },
   {
     "Author": "Taurenkey, Kagekazu, Lother",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.15.0.290",
+    "AssemblyVersion": "7.15.0.291",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/Saucy",
@@ -105,14 +105,14 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/Saucy/tc-7.15/Saucy/Icon.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Saucy-v7.15.0.289/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Saucy-v7.15.0.289/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Saucy-v7.15.0.291/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Saucy-v7.15.0.291/latest.zip"
   },
   {
     "Author": "apetih, Lother",
     "Name": "Logogram Helper",
     "InternalName": "LogogramHelper",
-    "AssemblyVersion": "7.15.0.2",
+    "AssemblyVersion": "7.15.0.3",
     "Description": "進入聖言操縱者後，顯示優雷卡聖言技能所有可能組合的數量。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/LogogramHelper",
@@ -131,14 +131,14 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/LogogramHelper/tc-7.15/res/img/logoslogo.png",
     "Punchline": "優雷卡聖言技能輔助工具。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/LogogramHelper-v7.15.0.7/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LogogramHelper-v7.15.0.7/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/LogogramHelper-v7.15.0.3/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LogogramHelper-v7.15.0.3/latest.zip"
   },
   {
     "Author": "MgAl2O4, Lother",
     "Name": "TriadBuddy",
     "InternalName": "TriadBuddy",
-    "AssemblyVersion": "7.15.0.9",
+    "AssemblyVersion": "7.15.0.10",
     "Description": "三張牌遊戲解牌工具，僅支援 NPC 對戰。\n- 小遊戲進行時提示下一步最佳出牌\n- 對戰前評估所有牌組預設\n- NPC 牌組優化器\n- 為卡牌收藏視窗新增更多細節",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/FFTriadBuddyDalamud",
@@ -154,14 +154,14 @@
     "LoadPriority": 0,
     "Punchline": "三張牌遊戲解牌助手",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/TriadBuddy-v7.15.0.8/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/TriadBuddy-v7.15.0.8/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/TriadBuddy-v7.15.0.10/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/TriadBuddy-v7.15.0.10/latest.zip"
   },
   {
     "Author": "daemitus, croizat, Lother",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.15.0.18",
+    "AssemblyVersion": "7.15.0.19",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/SomethingNeedDoing",
@@ -180,8 +180,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/SomethingNeedDoing/tc-7.15/res/icon.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.15.0.17/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.15.0.17/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.15.0.19/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.15.0.19/latest.zip"
   },
   {
     "Author": "The Combat Reborn Team, Lother",
@@ -204,8 +204,8 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/BossModReborn-v7.15.0.46/BossModReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/BossModReborn-v7.15.0.46/BossModReborn.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/BossModReborn-7.15.0.47/BossModReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/BossModReborn-7.15.0.47/BossModReborn.zip"
   },
   {
     "Author": "Team Wrath, Lother",
@@ -234,14 +234,14 @@
     "Changelog": "Please check the project's GitHub for a full changelog.",
     "Punchline": "Condenses combos and mutually exclusive abilities onto a single button - and then some.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/WrathCombo-7.15.0.4-cn/WrathCombo.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/WrathCombo-7.15.0.4-cn/WrathCombo.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/WrathCombo-7.15.0.5-cn/WrathCombo.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/WrathCombo-7.15.0.5-cn/WrathCombo.zip"
   },
   {
     "Author": "Latihas, Lother",
     "Name": "LatihasChocobo",
     "InternalName": "LatihasChocobo",
-    "AssemblyVersion": "7.15.0.3",
+    "AssemblyVersion": "7.15.0.4",
     "Description": "自動陸行鳥競賽",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/LatihasChocobo",
@@ -257,7 +257,7 @@
     "LoadPriority": 0,
     "Punchline": "自動陸行鳥競賽",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/LatihasChocobo-20260710214708/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LatihasChocobo-20260710214708/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/LatihasChocobo-20260713001004/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LatihasChocobo-20260713001004/latest.zip"
   }
 ]
