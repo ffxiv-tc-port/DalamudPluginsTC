@@ -155,7 +155,8 @@
     "Punchline": "三張牌遊戲解牌助手",
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/TriadBuddy-v7.15.0.10/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/TriadBuddy-v7.15.0.10/latest.zip"
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/TriadBuddy-v7.15.0.10/latest.zip",
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/TriadBuddy.png"
   },
   {
     "Author": "daemitus, croizat, Lother",
