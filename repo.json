@@ -188,7 +188,7 @@
     "Author": "The Combat Reborn Team, Lother",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.15.0.47",
+    "AssemblyVersion": "7.15.0.48",
     "Description": "繁體中文分支（TC-7.15）。提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/BossmodReborn",
@@ -205,14 +205,14 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/BossModReborn-7.15.0.47/BossModReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/BossModReborn-7.15.0.47/BossModReborn.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/BossModReborn-v7.15.0.48/BossModReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/BossModReborn-v7.15.0.48/BossModReborn.zip"
   },
   {
     "Author": "Team Wrath, Lother",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.15.0.5",
+    "AssemblyVersion": "7.15.0.6",
     "Description": "Condenses combos and mutually exclusive abilities onto a single button - and then some.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/WrathCombo",
@@ -235,14 +235,14 @@
     "Changelog": "Please check the project's GitHub for a full changelog.",
     "Punchline": "Condenses combos and mutually exclusive abilities onto a single button - and then some.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/WrathCombo-7.15.0.5-cn/WrathCombo.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/WrathCombo-7.15.0.5-cn/WrathCombo.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/WrathCombo-v7.15.0.6/WrathCombo.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/WrathCombo-v7.15.0.6/WrathCombo.zip"
   },
   {
     "Author": "Latihas, Lother",
     "Name": "LatihasChocobo",
     "InternalName": "LatihasChocobo",
-    "AssemblyVersion": "7.15.0.4",
+    "AssemblyVersion": "7.15.0.5",
     "Description": "自動陸行鳥競賽",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/LatihasChocobo",
@@ -258,7 +258,7 @@
     "LoadPriority": 0,
     "Punchline": "自動陸行鳥競賽",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/LatihasChocobo-20260713001004/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LatihasChocobo-20260713001004/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/LatihasChocobo-v7.15.0.5/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LatihasChocobo-v7.15.0.5/latest.zip"
   }
 ]
