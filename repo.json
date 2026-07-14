@@ -4,7 +4,7 @@
     "Name": "Eureka Helper",
     "InternalName": "EurekaHelper",
     "AssemblyVersion": "7.15.0.59",
-    "Description": "協助你進行優雷卡冒險的工具，已更新至《漂泊眾島》版本！輸入 /eurekahelper 開始使用。\n\n功能包含：\n- 遊戲內追蹤器 GUI\n- 副本追蹤器\n- 聖靈追蹤器\n- 魂武助手\n- 鬧鐘\n- 賺錢 NM 天氣時間提醒\n- 更多功能陸續推出",
+    "Description": "協助你進行優雷卡冒險的工具，已更新至《漂泊眾島》版本！輸入 /eurekahelper 開始使用。\n\n功能包含：\n- 遊戲內追蹤器 GUI\n- 副本追蹤器\n- 聖靈追蹤器\n- 魂武助手\n- 鬧鐘\n- 賺錢 NM 天氣時間提醒\n- 更多功能陸續推出\n\n本 fork 新增/改善：\n- 新增 Lucky Carrot 尋寶助手\n- 追蹤器改為依區域分頁、自動記憶連線並在重連時自動修復\n- 優化怪物警戒範圍偵測與畫面顯示（降低疊圖遮擋、修正誤判）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/EurekaHelper",
     "Tags": [
@@ -38,7 +38,7 @@
     "Name": "Accountant",
     "InternalName": "Accountant",
     "AssemblyVersion": "7.15.0.71",
-    "Description": "記錄多名角色的雇員、飛艇、潛水艇、以太之輪與作物計時器，\n以及其他各種雜項任務進度。",
+    "Description": "記錄多名角色的雇員、飛艇、潛水艇、以太之輪與作物計時器，\n以及其他各種雜項任務進度。\n\n本 fork 新增/改善：\n- 與 AutoRetainer IPC 同步、FireCallback 偵測整合\n- 新增施肥提醒標記，拆分小隊/作物計時快取以提升效能\n- 修正房屋/私人栽種時目標地點誤判的問題",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/Accountant",
     "Tags": [
@@ -70,7 +70,7 @@
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
     "AssemblyVersion": "7.15.0.87",
-    "Description": "躺在床上就能收取並指派雇員的遠航任務。",
+    "Description": "躺在床上就能收取並指派雇員的遠航任務。\n\n本 fork 新增/改善：\n- 完整繁體中文化介面\n- 新增自動購買燃料、任務清單提示\n- 新增多重模式登入後延遲設定，修正登入畫面偏移與 TC 客戶端文字比對失敗導致流程卡住的問題",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/AutoRetainer",
     "DalamudApiLevel": 12,
@@ -89,7 +89,7 @@
     "Name": "Saucy",
     "InternalName": "Saucy",
     "AssemblyVersion": "7.15.0.291",
-    "Description": "自動化部分金碟遊樂園小遊戲。",
+    "Description": "自動化部分金碟遊樂園小遊戲。\n\n本 fork 新增/改善：\n- 新增 Cliffhanger、Leap of Faith、Slice Is Right 等小遊戲自動化模組\n- 修正 GATE 銜接時機、Air Force One 射擊判定、三張牌記憶體位移等問題\n- 主要介面繁體中文化",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/Saucy",
     "Tags": [
@@ -113,7 +113,7 @@
     "Name": "Logogram Helper",
     "InternalName": "LogogramHelper",
     "AssemblyVersion": "7.15.0.3",
-    "Description": "進入聖言操縱者後，顯示優雷卡聖言技能所有可能組合的數量。",
+    "Description": "進入聖言操縱者後，顯示優雷卡聖言技能所有可能組合的數量。\n\n本 fork 新增/改善：\n- 新增一鍵合成填入配方\n- 顯示每項素材圖示與目前持有數量\n- 繁體中文化",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/LogogramHelper",
     "Tags": [
@@ -139,7 +139,7 @@
     "Name": "TriadBuddy",
     "InternalName": "TriadBuddy",
     "AssemblyVersion": "7.15.0.10",
-    "Description": "三張牌遊戲解牌工具，僅支援 NPC 對戰。\n- 小遊戲進行時提示下一步最佳出牌\n- 對戰前評估所有牌組預設\n- NPC 牌組優化器\n- 為卡牌收藏視窗新增更多細節",
+    "Description": "三張牌遊戲解牌工具，僅支援 NPC 對戰。\n- 小遊戲進行時提示下一步最佳出牌\n- 對戰前評估所有牌組預設\n- NPC 牌組優化器\n- 為卡牌收藏視窗新增更多細節\n\n本 fork 新增/改善：\n- 新增比賽牌組讀取、加入手動判定先後手的補救選項\n- 繁體中文化介面",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/FFTriadBuddyDalamud",
     "Tags": [
@@ -163,7 +163,7 @@
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
     "AssemblyVersion": "7.15.0.19",
-    "Description": "現在不只能用於生產，功能更多！",
+    "Description": "現在不只能用於生產，功能更多！\n\n本 fork 新增/改善：\n- 新增花園自動照顧巨集，依作物實際狀態澆水/施肥並回報結果\n- 新增跨插件 IPC 事件廣播、選單自動化與畫面診斷 API\n- 繁體中文化",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/SomethingNeedDoing",
     "Tags": [
@@ -189,7 +189,7 @@
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
     "AssemblyVersion": "7.15.0.48",
-    "Description": "繁體中文分支（TC-7.15）。提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
+    "Description": "繁體中文分支（TC-7.15）。提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。\n\n本 fork 新增/改善：\n- 新增不祥克主母（Unreal Byakko）模組、AI 安全邊界可調設定\n- 修正深層迷宮小地圖當機與樓層資料錯亂問題\n- 繁體中文化框架",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/BossmodReborn",
     "DalamudApiLevel": 12,
@@ -213,7 +213,7 @@
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
     "AssemblyVersion": "7.15.0.6",
-    "Description": "Condenses combos and mutually exclusive abilities onto a single button - and then some.",
+    "Description": "Condenses combos and mutually exclusive abilities onto a single button - and then some.\n\n本 fork 新增/改善：\n- 新月島技能繁體中文化、DTR 列文字在地化\n- 修正與 BossModReborn IPC 啟動時序競態導致的誤報警告",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/WrathCombo",
     "Tags": [
@@ -243,7 +243,7 @@
     "Name": "LatihasChocobo",
     "InternalName": "LatihasChocobo",
     "AssemblyVersion": "7.15.0.5",
-    "Description": "自動陸行鳥競賽",
+    "Description": "自動陸行鳥競賽\n\n本 fork 新增/改善：\n- 全面改版自動競賽邏輯，新增賽事紀錄追蹤與設定 UI\n- TC 7.15（API12/.NET9）相容性修正",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/LatihasChocobo",
     "Tags": [
