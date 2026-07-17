@@ -33,6 +33,7 @@ SOURCE_REPOS = {
     "BossModReborn": "Lother/BossmodReborn",
     "WrathCombo": "Lother/WrathCombo",
     "LatihasChocobo": "Lother/LatihasChocobo",
+    "Artisan": "Lother/Artisan",
 }
 
 # InternalName -> icon path within the source repo (on its default branch).

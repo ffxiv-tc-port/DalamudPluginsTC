@@ -261,5 +261,28 @@
     "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/LatihasChocobo-v7.15.0.5/latest.zip",
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LatihasChocobo-v7.15.0.5/latest.zip",
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/LatihasChocobo.png"
+  },
+  {
+    "Author": "Taurenkey (Puni.sh), Lother",
+    "Name": "Artisan",
+    "InternalName": "Artisan",
+    "AssemblyVersion": "0.0.0.0",
+    "Description": "The all-in-one crafting plugin.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/Artisan",
+    "Tags": [
+      "crafting"
+    ],
+    "CategoryTags": [
+      "Crafting & Gathering"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Artisan.png",
+    "Punchline": "A 'simple' crafting plugin.",
+    "AcceptsFeedback": true
   }
 ]
