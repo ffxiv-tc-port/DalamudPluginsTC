@@ -286,5 +286,31 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.1/Artisan.zip",
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.1/Artisan.zip"
+  },
+  {
+    "Author": "NightmareXIV, Lother",
+    "Name": "Splatoon",
+    "InternalName": "Splatoon",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "Splatoon is a powerful accessibility tool. It revolutionizes gameplay with its custom waymark system, offering the ability to create unlimited grouped waymarks, labels, and actor indicators with exacting pixel precision. This feature empowers players by making crucial objects and events more visually discernible, thereby facilitating quicker reactions. However, it's important to note that the plugin does not come pre-loaded with presets. Players have the freedom to craft their own or import existing ones, offering a personalized touch to their gaming experience.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/Splatoon",
+    "Tags": [
+      "Utility",
+      "Accessibility"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Splatoon.png",
+    "Punchline": "Redefining FFXIV navigation with unlimited, precise waymarks.",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Splatoon-v7.15.0.1/Splatoon.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Splatoon-v7.15.0.1/Splatoon.zip"
   }
 ]

@@ -40,6 +40,7 @@ LOCAL_PATHS = {
     "WrathCombo": r"D:\WrathCombo",
     "LatihasChocobo": r"D:\LatihasChocobo",
     "Artisan": r"D:\Artisan",
+    "Splatoon": r"D:\Splatoon",
 }
 
 BRANCH = "tc-7.15"
