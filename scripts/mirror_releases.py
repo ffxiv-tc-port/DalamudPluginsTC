@@ -34,6 +34,7 @@ SOURCE_REPOS = {
     "WrathCombo": "Lother/WrathCombo",
     "LatihasChocobo": "Lother/LatihasChocobo",
     "Artisan": "Lother/Artisan",
+    "Splatoon": "Lother/Splatoon",
 }
 
 # InternalName -> icon path within the source repo (on its default branch).
@@ -50,6 +51,7 @@ ICON_PATHS = {
     "WrathCombo": "res/plugin/wrathcombo.png",
     "LatihasChocobo": "Resources/icon.png",
     "Artisan": "Artisan/Images/Icon.png",
+    "Splatoon": "Splatoon/res/icon.png",
 }
 
 
