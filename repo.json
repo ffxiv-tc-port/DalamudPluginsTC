@@ -259,6 +259,7 @@
     "Punchline": "自動陸行鳥競賽",
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/LatihasChocobo-v7.15.0.5/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LatihasChocobo-v7.15.0.5/latest.zip"
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LatihasChocobo-v7.15.0.5/latest.zip",
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/LatihasChocobo.png"
   }
 ]

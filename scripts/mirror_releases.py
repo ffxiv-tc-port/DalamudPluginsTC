@@ -47,6 +47,7 @@ ICON_PATHS = {
     "SomethingNeedDoing": "res/icon.png",
     "BossModReborn": "Data/icon.png",
     "WrathCombo": "res/plugin/wrathcombo.png",
+    "LatihasChocobo": "Resources/icon.png",
 }
 
 
