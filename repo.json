@@ -312,5 +312,55 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Splatoon-v7.15.0.1/Splatoon.zip",
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Splatoon-v7.15.0.1/Splatoon.zip"
+  },
+  {
+    "Author": "veyn, Lother",
+    "Name": "vnavmesh",
+    "InternalName": "vnavmesh",
+    "AssemblyVersion": "0.0.0.0",
+    "Description": "Utility to automatically move the character around in the world, skilfully avoiding any obstacles.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/vnavmesh",
+    "Tags": [
+      "navigation",
+      "movement",
+      "pathfinding"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/vnavmesh.png",
+    "Punchline": "Move around!",
+    "AcceptsFeedback": true
+  },
+  {
+    "Author": "Critical_Impact, Lother",
+    "Name": "Allagan Tools",
+    "InternalName": "InventoryTools",
+    "AssemblyVersion": "0.0.0.0",
+    "Description": "A plugin that helps with inventory management, market board browsing, crafting, and more.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/InventoryTools",
+    "Tags": [
+      "inventory",
+      "crafting",
+      "market board"
+    ],
+    "CategoryTags": [
+      "Inventory & Retainers"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/InventoryTools.png",
+    "Punchline": "A plugin to help with managing your inventory.",
+    "AcceptsFeedback": true
   }
 ]
