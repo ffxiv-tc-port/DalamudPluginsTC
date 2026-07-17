@@ -41,6 +41,8 @@ LOCAL_PATHS = {
     "LatihasChocobo": r"D:\LatihasChocobo",
     "Artisan": r"D:\Artisan",
     "Splatoon": r"D:\Splatoon",
+    "vnavmesh": r"D:\vnavmesh",
+    "InventoryTools": r"D:\InventoryTools",
 }
 
 BRANCH = "tc-7.15"
