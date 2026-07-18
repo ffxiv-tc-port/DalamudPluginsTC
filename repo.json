@@ -317,7 +317,7 @@
     "Author": "veyn, Lother",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
-    "AssemblyVersion": "0.0.0.0",
+    "AssemblyVersion": "7.15.0.2",
     "Description": "Utility to automatically move the character around in the world, skilfully avoiding any obstacles.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/vnavmesh",
@@ -337,8 +337,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/vnavmesh.png",
     "Punchline": "Move around!",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/vnavmesh-v7.15.0.1/vnavmesh.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/vnavmesh-v7.15.0.1/vnavmesh.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/vnavmesh-v7.15.0.2/vnavmesh.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/vnavmesh-v7.15.0.2/vnavmesh.zip"
   },
   {
     "Author": "Critical_Impact, Lother",
