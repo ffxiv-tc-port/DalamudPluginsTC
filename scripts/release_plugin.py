@@ -76,7 +76,11 @@ def has_uncommitted_changes(repo_path):
 
 def wait_for_release_run(source_repo, tag, timeout_s=300, poll_s=8):
     """Poll for the release.yml run triggered by this tag and block until it
-    finishes. Returns (status, conclusion)."""
+    finishes. Returns (status, conclusion).
+
+    release.yml triggers on `push: tags: - 'v*'`, so the run's headBranch is
+    the tag name itself (e.g. "v7.15.0.50"), not the BRANCH constant - match
+    against the tag we just pushed, not the working branch."""
     deadline = time.time() + timeout_s
     run_id = None
     while time.time() < deadline:
@@ -88,7 +92,7 @@ def wait_for_release_run(source_repo, tag, timeout_s=300, poll_s=8):
         if out.returncode == 0 and (out.stdout or "").strip():
             runs = json.loads(out.stdout)
             for r in runs:
-                if r["event"] == "push" and r["headBranch"] == BRANCH:
+                if r["event"] == "push" and r["headBranch"] == tag:
                     run_id = r["databaseId"]
                     if r["status"] == "completed":
                         return r["status"], r["conclusion"]
