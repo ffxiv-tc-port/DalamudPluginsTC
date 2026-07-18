@@ -37,6 +37,7 @@ SOURCE_REPOS = {
     "Splatoon": "Lother/Splatoon",
     "vnavmesh": "Lother/vnavmesh",
     "InventoryTools": "Lother/InventoryTools",
+    "Lifestream": "Lother/Lifestream",
 }
 
 # InternalName -> icon path within the source repo (on its default branch).
@@ -56,6 +57,7 @@ ICON_PATHS = {
     "Splatoon": "Splatoon/res/icon.png",
     "vnavmesh": "icon2.png",
     "InventoryTools": "InventoryTools/Images/icon.png",
+    "Lifestream": "Lifestream/images/icon.png",
 }
 
 

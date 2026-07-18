@@ -362,5 +362,31 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/InventoryTools.png",
     "Punchline": "A plugin to help with managing your inventory.",
     "AcceptsFeedback": true
+  },
+  {
+    "Author": "NightmareXIV, Lother",
+    "Name": "Lifestream",
+    "InternalName": "Lifestream",
+    "AssemblyVersion": "0.0.0.0",
+    "Description": "One click to teleport to any world or aethernet destination.\nClick on aetheryte shards inside zone map to teleport to them.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/Lifestream",
+    "Tags": [
+      "teleport",
+      "aethernet",
+      "world",
+      "travel"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Lifestream.png",
+    "Punchline": "A plugin to speed up Aethernet travel and World changing.",
+    "AcceptsFeedback": false
   }
 ]
