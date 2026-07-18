@@ -62,7 +62,7 @@ ICON_PATHS = {
 
 
 def gh(*args, check=True):
-    result = subprocess.run([GH, *args], capture_output=True, text=True)
+    result = subprocess.run([GH, *args], capture_output=True, text=True, encoding="utf-8", errors="replace")
     if check and result.returncode != 0:
         raise RuntimeError(f"gh {' '.join(args)} failed:\n{result.stderr}")
     return result.stdout.strip()

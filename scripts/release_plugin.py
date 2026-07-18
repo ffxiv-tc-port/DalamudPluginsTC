@@ -52,7 +52,7 @@ VERSION_RE = re.compile(r"^v?(\d+)\.(\d+)\.(\d+)\.(\d+)$")
 
 def git(repo_path, *args, check=True):
     result = subprocess.run(["git", "-C", str(repo_path), *args],
-                             capture_output=True, text=True)
+                             capture_output=True, text=True, encoding="utf-8", errors="replace")
     if check and result.returncode != 0:
         raise RuntimeError(f"git -C {repo_path} {' '.join(args)} failed:\n{result.stderr}")
     return result.stdout.strip()
@@ -83,9 +83,9 @@ def wait_for_release_run(source_repo, tag, timeout_s=300, poll_s=8):
         out = subprocess.run(
             [GH, "run", "list", "--repo", source_repo, "--workflow=release.yml",
              "--limit", "5", "--json", "databaseId,headBranch,event,status,conclusion,displayTitle"],
-            capture_output=True, text=True,
+            capture_output=True, text=True, encoding="utf-8", errors="replace",
         )
-        if out.returncode == 0 and out.stdout.strip():
+        if out.returncode == 0 and (out.stdout or "").strip():
             runs = json.loads(out.stdout)
             for r in runs:
                 if r["event"] == "push" and r["headBranch"] == BRANCH:
