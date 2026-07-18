@@ -43,6 +43,7 @@ LOCAL_PATHS = {
     "Splatoon": r"D:\Splatoon",
     "vnavmesh": r"D:\vnavmesh",
     "InventoryTools": r"D:\InventoryTools",
+    "Lifestream": r"D:\Lifestream",
 }
 
 BRANCH = "tc-7.15"
