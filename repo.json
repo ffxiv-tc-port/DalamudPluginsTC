@@ -939,5 +939,32 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/XivTreasureParty-v7.15.0.1/XivTreasureParty.zip",
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/XivTreasureParty-v7.15.0.1/XivTreasureParty.zip"
+  },
+  {
+    "Author": "Kouzukii, Lother",
+    "Name": "Character Panel Refined",
+    "InternalName": "CharacterPanelRefined",
+    "AssemblyVersion": "7.15.0.3",
+    "Description": "Character Panel Refined 精簡了角色狀態面板中的無用資訊，並加入了會心與直擊機率等實用數值，以及預估輸出傷害，方便比較裝備優劣。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/CharacterPanelRefined",
+    "Tags": [
+      "Character",
+      "QoL",
+      "Stats"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/CharacterPanelRefined.png",
+    "Punchline": "Refine the character panel to display only useful information like crit and direct hit chance",
+    "AcceptsFeedback": false,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.15.0.3/CharacterPanelRefined.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.15.0.3/CharacterPanelRefined.zip"
   }
 ]
