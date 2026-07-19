@@ -44,6 +44,22 @@ LOCAL_PATHS = {
     "vnavmesh": r"D:\vnavmesh",
     "InventoryTools": r"D:\InventoryTools",
     "Lifestream": r"D:\Lifestream",
+    "SubmarineTracker": r"D:\SubmarineTracker",
+    "YesAlready": r"D:\YesAlready",
+    "GatherbuddyReborn": r"D:\GatherBuddyReborn",
+    "ItemVendorLocation": r"D:\ItemVendorLocation",
+    "CharacterPanelRefined": r"D:\CharacterPanelRefined",
+    "HuntHelper": r"D:\HuntHelper",
+    "LazyLoot": r"D:\LazyLoot",
+    "MiniMappingway": r"D:\MiniMappingway",
+    "NecroLens": r"D:\NecroLens",
+    "NotificationMaster": r"D:\NotificationMaster",
+    "PalacePal": r"D:\PalacePal",
+    "PixelPerfect": r"D:\PixelPerfect",
+    "PriceInsight": r"D:\PriceInsight",
+    "QoLBar": r"D:\QoLBar",
+    "SonarPlugin": r"D:\SonarPlugin",
+    "AvantGarde": r"D:\AvantGarde",
 }
 
 BRANCH = "tc-7.15"
