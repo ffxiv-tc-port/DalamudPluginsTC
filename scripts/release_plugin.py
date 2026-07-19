@@ -21,6 +21,7 @@ import shutil
 import subprocess
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import mirror_releases as mirror
@@ -78,13 +79,12 @@ def git(repo_path, *args, check=True):
     return result.stdout.strip()
 
 
-def next_tag(internal_name, source_repo):
-    rel = mirror.latest_release(source_repo)
-    if rel is None:
+def next_tag(internal_name, latest_tag):
+    if latest_tag is None:
         return "v7.15.0.1"
-    m = VERSION_RE.match(rel["tag"])
+    m = VERSION_RE.match(latest_tag)
     if not m:
-        raise RuntimeError(f"{internal_name}: latest tag {rel['tag']!r} doesn't match "
+        raise RuntimeError(f"{internal_name}: latest tag {latest_tag!r} doesn't match "
                             f"the vMAJOR.MINOR.PATCH.BUILD scheme, pick the next tag by hand")
     major, minor, patch, build = m.groups()
     return f"v{major}.{minor}.{patch}.{int(build) + 1}"
@@ -92,6 +92,18 @@ def next_tag(internal_name, source_repo):
 
 def has_uncommitted_changes(repo_path):
     return bool(git(repo_path, "status", "--short"))
+
+
+def already_released(repo_path, tag):
+    """True if the given tag already exists on origin and points at the
+    same commit as the local branch tip - i.e. HEAD has no new work since
+    that release, so cutting another tag would be a no-op duplicate."""
+    remote_sha = git(repo_path, "ls-remote", "origin", f"refs/tags/{tag}", check=False)
+    if not remote_sha:
+        return False
+    remote_sha = remote_sha.split()[0]
+    head_sha = git(repo_path, "rev-parse", "HEAD")
+    return remote_sha == head_sha
 
 
 def wait_for_release_run(source_repo, tag, timeout_s=300, poll_s=8):
@@ -135,7 +147,14 @@ def release_one(internal_name, source_repo, dry_run=False):
               f"commit or stash first")
         return False
 
-    tag = next_tag(internal_name, source_repo)
+    rel = mirror.latest_release(source_repo)
+    latest_tag = rel["tag"] if rel else None
+
+    if latest_tag is not None and already_released(repo_path, latest_tag):
+        print(f"[skip] {internal_name}: HEAD already released as {latest_tag}, nothing new to tag")
+        return True
+
+    tag = next_tag(internal_name, latest_tag)
     print(f"[{internal_name}] next tag: {tag}")
     if dry_run:
         return True
@@ -160,6 +179,8 @@ def main():
     parser.add_argument("--all", action="store_true", help="Release every plugin in SOURCE_REPOS")
     parser.add_argument("--dry-run", action="store_true", help="Only print the tag that would be cut")
     parser.add_argument("--skip-mirror", action="store_true", help="Don't run mirror_releases.py afterward")
+    parser.add_argument("--workers", type=int, default=8,
+                         help="How many plugins to release in parallel (default: 8)")
     args = parser.parse_args()
 
     if args.all:
@@ -174,8 +195,18 @@ def main():
         sys.exit("Nothing to do — pass plugin names or --all")
 
     results = {}
-    for name in targets:
-        results[name] = release_one(name, mirror.SOURCE_REPOS[name], dry_run=args.dry_run)
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        futures = {
+            pool.submit(release_one, name, mirror.SOURCE_REPOS[name], dry_run=args.dry_run): name
+            for name in targets
+        }
+        for future in as_completed(futures):
+            name = futures[future]
+            try:
+                results[name] = future.result()
+            except Exception as exc:
+                print(f"[FAIL] {name}: {exc}")
+                results[name] = False
 
     ok = [n for n, v in results.items() if v]
     failed = [n for n, v in results.items() if not v]
