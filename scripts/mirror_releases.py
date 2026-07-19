@@ -38,6 +38,22 @@ SOURCE_REPOS = {
     "vnavmesh": "Lother/vnavmesh",
     "InventoryTools": "Lother/InventoryTools",
     "Lifestream": "Lother/Lifestream",
+    "SubmarineTracker": "Lother/SubmarineTracker",
+    "YesAlready": "Lother/YesAlready",
+    "GatherbuddyReborn": "Lother/GatherBuddyReborn",
+    "ItemVendorLocation": "Lother/ItemVendorLocation",
+    "CharacterPanelRefined": "Lother/CharacterPanelRefined",
+    "HuntHelper": "Lother/HuntHelper",
+    "LazyLoot": "Lother/LazyLoot",
+    "MiniMappingway": "Lother/MiniMappingway",
+    "NecroLens": "Lother/NecroLens",
+    "NotificationMaster": "Lother/NotificationMaster",
+    "PalacePal": "Lother/PalacePal",
+    "PixelPerfect": "Lother/PixelPerfect",
+    "PriceInsight": "Lother/PriceInsight",
+    "QoLBar": "Lother/QoLBar",
+    "SonarPlugin": "Lother/SonarPlugin",
+    "AvantGarde": "Lother/AvantGarde",
 }
 
 # InternalName -> icon path within the source repo (on its default branch).
@@ -58,6 +74,22 @@ ICON_PATHS = {
     "vnavmesh": "icon2.png",
     "InventoryTools": "InventoryTools/Images/icon.png",
     "Lifestream": "Lifestream/images/icon.png",
+    "SubmarineTracker": "SubmarineTracker/images/icon.png",
+    "YesAlready": "Assets/yesalready_icon.png",
+    "GatherbuddyReborn": "images/icon.png",
+    "ItemVendorLocation": "Images/icon.png",
+    "CharacterPanelRefined": "CharacterPanelRefined/images/icon.png",
+    "HuntHelper": "Images/icon.png",
+    "NecroLens": "icon.png",
+    "NotificationMaster": "NotificationMaster/images/icon.png",
+    "PalacePal": "Assets/palacepal_icon.png",
+    "PixelPerfect": "images/icon.png",
+    "PriceInsight": "images/icon.png",
+    "AvantGarde": "Images/icon.png",
+    # LazyLoot, MiniMappingway, QoLBar, SonarPlugin: no local icon asset upstream
+    # (they only ever referenced external CDN URLs) - repo.json IconUrl points at
+    # the mirror path anyway, but icons/<Name>.png won't exist until someone
+    # manually sources and adds an icon + an ICON_PATHS entry for it.
 }
 
 
