@@ -55,6 +55,14 @@ SOURCE_REPOS = {
     "QoLBar": "Lother/QoLBar",
     "SonarPlugin": "Lother/SonarPlugin",
     "AvantGarde": "Lother/AvantGarde",
+    "Dynamis": "Lother/Dynamis",
+    # Dynamis's release.yml ships two plugins (Dynamis + the "with hosted
+    # PowerShell" variant) from one tag/release - see the asset-matching-by-
+    # InternalName logic above for how both get mirrored correctly from a
+    # single shared release.
+    "DynamisWithSMA": "Lother/Dynamis",
+    "ChatTwo": "Lother/ChatTwo",
+    "XivTreasureParty": "Lother/XivTreasureParty",
 }
 
 # InternalName -> icon path within the source repo (on its default branch).
@@ -88,6 +96,10 @@ ICON_PATHS = {
     "PixelPerfect": "images/icon.png",
     "PriceInsight": "images/icon.png",
     "AvantGarde": "Images/icon.png",
+    "Dynamis": "Dynamis/Resources/Dynamis128.png",
+    "DynamisWithSMA": "Dynamis/DynamisWithSMA128.png",
+    "ChatTwo": "ChatTwo/images/icon.png",
+    "XivTreasureParty": "XivTreasureParty/Resources/icon.png",
     # LazyLoot, MiniMappingway, QoLBar, SonarPlugin: no local icon asset upstream
     # (they only ever referenced external CDN URLs) - repo.json IconUrl points at
     # the mirror path anyway, but icons/<Name>.png won't exist until someone
@@ -174,11 +186,18 @@ def main():
             tmp = Path(tmp)
             local_files = []
             manifest = None
-            for asset in rel["assets"]:
+            # A single release can carry assets for more than one InternalName (e.g.
+            # Dynamis's release also ships DynamisWithSMA's zip+json under the same
+            # tag) - prefer this key's own <InternalName>.json/.zip when present,
+            # falling back to "whatever .json/.zip we find" only if there's just one
+            # of each (the common single-plugin-per-repo case).
+            own_assets = [a for a in rel["assets"] if Path(a["name"]).stem == internal_name]
+            assets_to_fetch = own_assets if own_assets else rel["assets"]
+            for asset in assets_to_fetch:
                 dest = tmp / asset["name"]
                 download_asset(asset["url"], dest)
                 local_files.append(dest)
-                if asset["name"].endswith(".json"):
+                if asset["name"].endswith(".json") and (not own_assets or Path(asset["name"]).stem == internal_name):
                     manifest = json.loads(dest.read_text(encoding="utf-8"))
 
             public_tag = f"{internal_name}-{tag}"
@@ -202,7 +221,9 @@ def main():
                     m = re.search(r"\d+\.\d+\.\d+\.\d+", tag)
                     if m:
                         entry["AssemblyVersion"] = m.group(0)
-                zip_asset = next((a["name"] for a in rel["assets"] if a["name"].endswith(".zip")), None)
+                zip_asset = next(
+                    (a["name"] for a in assets_to_fetch if a["name"].endswith(".zip")), None
+                )
                 if zip_asset:
                     url = f"https://github.com/{PUBLIC_REPO}/releases/download/{public_tag}/{zip_asset}"
                     entry["DownloadLinkInstall"] = url
