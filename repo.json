@@ -643,7 +643,7 @@
     "Author": "Liza Carvelli (Puni.sh), Lother",
     "Name": "Palace Pal",
     "InternalName": "PalacePal",
-    "AssemblyVersion": "7.15.0.1",
+    "AssemblyVersion": "7.15.0.2",
     "Description": "Shows possible trap & Accursed Hoard locations in Palace of The Dead, Heaven on High, and Eureka Orthos.\n\nThis plugin requires Splatoon in order to render various draws on the screen.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/PalacePal",
@@ -664,8 +664,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/PalacePal.png",
     "Punchline": "Shows possible trap & Accursed Hoard locations in Palace of The Dead, Heaven on High, and Eureka Orthos.",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/PalacePal-v7.15.0.1/PalacePal.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/PalacePal-v7.15.0.1/PalacePal.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/PalacePal-v7.15.0.2/PalacePal.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/PalacePal-v7.15.0.2/PalacePal.zip"
   },
   {
     "Author": "Haplo064, Lother",
