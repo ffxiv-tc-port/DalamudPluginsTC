@@ -61,6 +61,9 @@ LOCAL_PATHS = {
     "QoLBar": r"D:\QoLBar",
     "SonarPlugin": r"D:\SonarPlugin",
     "AvantGarde": r"D:\AvantGarde",
+    "Dynamis": r"D:\Dynamis",
+    "ChatTwo": r"D:\ChatTwo",
+    "XivTreasureParty": r"D:\XivTreasureParty",
 }
 
 BRANCH = "tc-7.15"
