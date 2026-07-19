@@ -807,7 +807,7 @@
     "Author": "Nylfae, Lother",
     "Name": "Dynamis",
     "InternalName": "Dynamis",
-    "AssemblyVersion": "0.0.0.0",
+    "AssemblyVersion": "7.15.0.1",
     "Description": "本外掛包含多種透過動態分析輔助遊戲逆向工程與原型製作的工具。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/Dynamis",
@@ -825,13 +825,15 @@
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Dynamis.png",
     "Punchline": "開發/除錯/逆向工程工具與實驗工作台。",
-    "AcceptsFeedback": true
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Dynamis-v7.15.0.1/Dynamis.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Dynamis-v7.15.0.1/Dynamis.zip"
   },
   {
     "Author": "Nylfae, Lother",
     "Name": "Dynamis (with Hosted PowerShell)",
     "InternalName": "DynamisWithSMA",
-    "AssemblyVersion": "0.0.0.0",
+    "AssemblyVersion": "7.15.0.1",
     "Description": "本外掛包含多種透過動態分析輔助遊戲逆向工程與原型製作的工具，此版本額外內建 PowerShell 主機。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/Dynamis",
@@ -850,14 +852,16 @@
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/DynamisWithSMA.png",
     "Punchline": "開發/除錯/逆向工程工具與實驗工作台（含內建 PowerShell）。",
-    "AcceptsFeedback": true
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.15.0.1/DynamisWithSMA.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.15.0.1/DynamisWithSMA.zip"
   },
   {
     "Author": "Infi, Anna, Lother",
     "Name": "Chat 2",
     "InternalName": "ChatTwo",
-    "AssemblyVersion": "0.0.0.0",
-    "Description": "Chat 2 是遊戲內建聊天視窗的完整重寫版外掛。",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "Chat 2 是遊戲內建聊天視窗的完整重寫版外掛。\n支援功能：\n\n- 無限分頁\n- 固定發送到特定頻道的分頁\n- 更靈活的過濾功能\n- RGB 頻道顏色\n- 完全可變字體大小\n- 側邊欄分頁\n- 未讀訊息計數\n- 表情符號\n- 截圖模式（隱藏名稱）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/ChatTwo",
     "Tags": [
@@ -875,15 +879,17 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/ChatTwo.png",
-    "Punchline": "電光石火 - 全新的聊天視窗，一個嶄新美妙的聊天窗口",
-    "AcceptsFeedback": true
+    "Punchline": "電光石火 - ♪ 全新的聊天視窗，一個嶄新美妙的聊天窗口 ♪",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/ChatTwo-v7.15.0.1/ChatTwo.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/ChatTwo-v7.15.0.1/ChatTwo.zip"
   },
   {
     "Author": "cycleapple, Lother",
     "Name": "XIV 藏寶圖工具小幫手",
     "InternalName": "XivTreasureParty",
-    "AssemblyVersion": "0.0.0.0",
-    "Description": "Dalamud 插件版本的 FFXIV 繁中藏寶圖工具小幫手。",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "Dalamud 插件版本的 FFXIV 繁中藏寶圖工具小幫手。可與網頁版（https://cycleapple.github.io/xiv-tc-treasure-finder/）使用者混合組隊，即時同步同一份清單。支援建立/加入房間、手動新增藏寶圖、打開藏寶圖時自動選取、遊戲內開地圖打旗標、以 /p 發送可點擊地圖連結、順序調整、完成勾選等。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/XivTreasureParty",
     "Tags": [
@@ -903,6 +909,8 @@
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/XivTreasureParty.png",
     "Punchline": "繁中藏寶圖組隊協作，與網頁版即時共享同一個房間。",
-    "AcceptsFeedback": true
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/XivTreasureParty-v7.15.0.1/XivTreasureParty.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/XivTreasureParty-v7.15.0.1/XivTreasureParty.zip"
   }
 ]
