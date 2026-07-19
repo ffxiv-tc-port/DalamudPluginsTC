@@ -506,33 +506,6 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.15.0.1/latest.zip"
   },
   {
-    "Author": "Kouzukii, Lother",
-    "Name": "Character Panel Refined",
-    "InternalName": "CharacterPanelRefined",
-    "AssemblyVersion": "7.15.0.1",
-    "Description": "Character Panel Refined 精簡了角色狀態面板中的無用資訊，並加入了會心與直擊機率等實用數值，以及預估輸出傷害，方便比較裝備優劣。",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/CharacterPanelRefined",
-    "Tags": [
-      "Character",
-      "QoL",
-      "Stats"
-    ],
-    "CategoryTags": [
-      "Utility"
-    ],
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/CharacterPanelRefined.png",
-    "Punchline": "Refine the character panel to display only useful information like crit and direct hit chance",
-    "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.15.0.1/CharacterPanelRefined.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.15.0.1/CharacterPanelRefined.zip"
-  },
-  {
     "Author": "img02, Lother",
     "Name": "Hunt Helper",
     "InternalName": "HuntHelper",
@@ -612,33 +585,6 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/MiniMappingway-v7.15.0.1/MiniMappingway.zip",
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/MiniMappingway-v7.15.0.1/MiniMappingway.zip"
-  },
-  {
-    "Author": "Jukka, Lother",
-    "Name": "NecroLens",
-    "InternalName": "NecroLens",
-    "AssemblyVersion": "7.15.0.1",
-    "Description": "DeepDungeon Helper. Radar for Mobs, Aggro, Sight and everything else.",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/NecroLens",
-    "Tags": [
-      "DeepDungeon",
-      "Radar",
-      "QoL"
-    ],
-    "CategoryTags": [
-      "Utility"
-    ],
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/NecroLens.png",
-    "Punchline": "A true Necromancer always know the DeepDungeon ... everyone else just uses a high tech!",
-    "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/NecroLens-v7.15.0.1/NecroLens.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/NecroLens-v7.15.0.1/NecroLens.zip"
   },
   {
     "Author": "NightmareXIV, Lother",
