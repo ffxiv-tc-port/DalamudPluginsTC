@@ -399,8 +399,8 @@
     "Author": "Infi, Lother",
     "Name": "Submarine Tracker",
     "InternalName": "SubmarineTracker",
-    "AssemblyVersion": "0.0.0.0",
-    "Description": "追蹤潛水艇的目前建裝、航線與時間。內建配置最佳化工具，並可自訂返航/維修提醒。",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "+ Tracker for current builds, routes and times \n+ Builder to improve, solve builds and optimize EXP\n+ Configurable notification for return and repairs \n+ Helpy filled useful information\n+ Custom loot overview with history and export\n+ Multiple overlays to help with daily tasks \n+ Supports multiple FCs  ",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/SubmarineTracker",
     "Tags": [
@@ -417,17 +417,17 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/SubmarineTracker.png",
-    "Punchline": "潛水艇建裝追蹤與提醒工具。",
+    "Punchline": "You do not talk about Fight Club, same for Submarines",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v0.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v0.0.0.0/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.1/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.1/latest.zip"
   },
   {
     "Author": "daemitus, croizat, Lother",
     "Name": "YesAlready",
     "InternalName": "YesAlready",
-    "AssemblyVersion": "0.0.0.0",
-    "Description": "自動點擊你設定的各種確認對話框。輸入對話文字即可加入清單，並支援 /regex/ 語法針對「非 yes/no」行為的對話框（例如選擇）做比對。",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "厭倦了在天守閣/伊迪爾夏爾禁地一直點確認嗎？受不了在副本裡一直按鍵嗎？YesAlready 可以自動點擊你設定的所有惱人對話框。只要輸入對話文字，就再也不用手動點了！支援 /regex/ 比對，也內建了幾個針對「看起來不是 yes/no，但行為類似」的對話框（例如分解）的模組。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/YesAlready",
     "Tags": [
@@ -444,17 +444,17 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/YesAlready.png",
-    "Punchline": "自動點擊你設定的各種確認對話框。",
+    "Punchline": "自動點擊你指定的各種確認對話框。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/YesAlready-v0.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/YesAlready-v0.0.0.0/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/YesAlready-v7.15.0.1/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/YesAlready-v7.15.0.1/latest.zip"
   },
   {
     "Author": "The Combat Reborn Team, Lother",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "0.0.0.0",
-    "Description": "透過路徑規劃簡化採集流程，找出節點/資源位置，並在 UI 追蹤特殊時段與蒐藏品。自動採集需要 vnavmesh。",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/GatherbuddyReborn",
     "Tags": [
@@ -473,17 +473,17 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
-    "Punchline": "採集與路徑規劃自動化。",
+    "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/GatherbuddyReborn-v0.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/GatherbuddyReborn-v0.0.0.0/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.15.0.1/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.15.0.1/latest.zip"
   },
   {
     "Author": "electr0sheep, Nuko, Lother",
     "Name": "Item Vendor Location",
     "InternalName": "ItemVendorLocation",
-    "AssemblyVersion": "0.0.0.0",
-    "Description": "在道具的右鍵選單新增選項，顯示可以在哪個 NPC 商人購買該道具。",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "Adds a context menu option for items that will show you where to find items you can buy off a vendor",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/ItemVendorLocation",
     "Tags": [
@@ -500,17 +500,17 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/ItemVendorLocation.png",
-    "Punchline": "顯示道具的商人購買地點。",
+    "Punchline": "Shows you where to buy vendor items",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/ItemVendorLocation-v0.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/ItemVendorLocation-v0.0.0.0/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.15.0.1/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.15.0.1/latest.zip"
   },
   {
     "Author": "Kouzukii, Lother",
     "Name": "Character Panel Refined",
     "InternalName": "CharacterPanelRefined",
-    "AssemblyVersion": "0.0.0.0",
-    "Description": "簡化角色狀態面板，只保留有用的資訊，並加入會心與直擊機率等數值，以及預估爆傷，方便判斷裝備搭配。",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "Character Panel Refined 精簡了角色狀態面板中的無用資訊，並加入了會心與直擊機率等實用數值，以及預估輸出傷害，方便比較裝備優劣。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/CharacterPanelRefined",
     "Tags": [
@@ -527,17 +527,17 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/CharacterPanelRefined.png",
-    "Punchline": "簡化角色面板，顯示會心/直擊機率等實用數值。",
+    "Punchline": "Refine the character panel to display only useful information like crit and direct hit chance",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/CharacterPanelRefined-v0.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/CharacterPanelRefined-v0.0.0.0/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.15.0.1/CharacterPanelRefined.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.15.0.1/CharacterPanelRefined.zip"
   },
   {
     "Author": "img02, Lother",
     "Name": "Hunt Helper",
     "InternalName": "HuntHelper",
-    "AssemblyVersion": "0.0.0.0",
-    "Description": "狩獵地圖顯示重生點、A 階列車紀錄器（可匯出/匯入分享）、語音朗讀、聊天通知，以及 S 階怪計數器。",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "Hunt map with spawns points, A-Rank train recorder (w/ export/import sharing), TTS, Chat notifications, Counters for S-Rank Spawns",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/HuntHelper",
     "Tags": [
@@ -554,17 +554,17 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/HuntHelper.png",
-    "Punchline": "狩獵雷達 + 列車紀錄器 + 通知 + S 階工具。",
+    "Punchline": "basically a hunt radar + train recorder + notifications + s rank utils +++.",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/HuntHelper-v0.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/HuntHelper-v0.0.0.0/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/HuntHelper-v7.15.0.1/HuntHelper.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/HuntHelper-v7.15.0.1/HuntHelper.zip"
   },
   {
     "Author": "53m1k0l0n/Gidedin (Puni.sh), Lother",
     "Name": "LazyLoot",
     "InternalName": "LazyLoot",
-    "AssemblyVersion": "0.0.0.0",
-    "Description": "自動處理戰利品擲骰，支援 need/needonly/greed/pass/passall 等多種參數，可設定角色與職業組合以防誤擲。",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "以指令執行擲骰，支援 need | needonly | greed | pass | passall 等各種參數。\n可設定聊天與跳出訊息輸出，以及擲骰延遲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/LazyLoot",
     "Tags": [
@@ -581,17 +581,17 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/LazyLoot.png",
-    "Punchline": "自動戰利品擲骰外掛。",
+    "Punchline": "打怪但懶得選骰的擲骰外掛。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/LazyLoot-v0.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LazyLoot-v0.0.0.0/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/LazyLoot-v7.15.0.1/LazyLoot.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LazyLoot-v7.15.0.1/LazyLoot.zip"
   },
   {
-    "Author": "JayceOfSpades, Lother",
+    "Author": "JayceOfSpades",
     "Name": "Mini-Mappingway",
     "InternalName": "MiniMappingway",
-    "AssemblyVersion": "0.0.0.0",
-    "Description": "在小地圖上顯示好友與公會成員位置，可自訂標記樣式，並切換只顯示好友、公會或兩者皆顯示。",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "A plugin to show your friends and FC members on the minimap. Customise the markers and toggle whether you want to see friends, FC members, or both, in the settings! Icon by @Miendoodle on twitter. Thanks nya for the idea!",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/MiniMappingway",
     "Tags": [
@@ -608,17 +608,17 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/MiniMappingway.png",
-    "Punchline": "在小地圖上顯示好友與公會成員。",
+    "Punchline": "A plugin to show your friends and FC members on the minimap",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/MiniMappingway-v0.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/MiniMappingway-v0.0.0.0/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/MiniMappingway-v7.15.0.1/MiniMappingway.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/MiniMappingway-v7.15.0.1/MiniMappingway.zip"
   },
   {
     "Author": "Jukka, Lother",
     "Name": "NecroLens",
     "InternalName": "NecroLens",
-    "AssemblyVersion": "0.0.0.0",
-    "Description": "深層迷宮小幫手，雷達顯示怪物位置、仇恨狀態、視野範圍等所有你需要的資訊。",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "DeepDungeon Helper. Radar for Mobs, Aggro, Sight and everything else.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/NecroLens",
     "Tags": [
@@ -635,17 +635,17 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/NecroLens.png",
-    "Punchline": "深層迷宮雷達工具。",
+    "Punchline": "A true Necromancer always know the DeepDungeon ... everyone else just uses a high tech!",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/NecroLens-v0.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/NecroLens-v0.0.0.0/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/NecroLens-v7.15.0.1/NecroLens.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/NecroLens-v7.15.0.1/NecroLens.zip"
   },
   {
     "Author": "NightmareXIV, Lother",
     "Name": "NotificationMaster",
     "InternalName": "NotificationMaster",
-    "AssemblyVersion": "0.0.0.0",
-    "Description": "在遊戲視窗縮小時，通知你各種事件：聊天訊息、地圖標記接近、找到副本、過場動畫結束、GP 恢復、登入錯誤、怪物血量低等。",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "Notifies you about various events while your game is minimized.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/NotificationMaster",
     "Tags": [
@@ -661,17 +661,17 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/NotificationMaster.png",
-    "Punchline": "遊戲縮小時的各種事件通知。",
+    "Punchline": "Currently supports notifications: chat messages, approaching map flag, duty found, ending of cutscenes, gp restoration, error during logging in, mob has been pulled.",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/NotificationMaster-v0.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/NotificationMaster-v0.0.0.0/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/NotificationMaster-v7.15.0.1/NotificationMaster.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/NotificationMaster-v7.15.0.1/NotificationMaster.zip"
   },
   {
     "Author": "Liza Carvelli (Puni.sh), Lother",
     "Name": "Palace Pal",
     "InternalName": "PalacePal",
-    "AssemblyVersion": "0.0.0.0",
-    "Description": "顯示米諾德斯的迷宮、天堂、優雷卡孤島可能的陷阱與寶物箱位置。此插件需要 Splatoon 才能顯示標記。",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "Shows possible trap & Accursed Hoard locations in Palace of The Dead, Heaven on High, and Eureka Orthos.\n\nThis plugin requires Splatoon in order to render various draws on the screen.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/PalacePal",
     "Tags": [
@@ -689,17 +689,17 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/PalacePal.png",
-    "Punchline": "深層迷宮陷阱與寶物箱位置提示。",
+    "Punchline": "Shows possible trap & Accursed Hoard locations in Palace of The Dead, Heaven on High, and Eureka Orthos.",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/PalacePal-v0.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/PalacePal-v0.0.0.0/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/PalacePal-v7.15.0.1/PalacePal.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/PalacePal-v7.15.0.1/PalacePal.zip"
   },
   {
     "Author": "Haplo064, Lother",
     "Name": "Pixel Perfect",
     "InternalName": "PixelPerfect",
-    "AssemblyVersion": "0.0.0.0",
-    "Description": "精準顯示你的角色碰撞箱位置，可自訂顯示樣式，受到高難度團隊認證。",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "Showing exactly where to stand since 2020. Endorsed by raiders!",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/PixelPerfect",
     "Tags": [
@@ -716,17 +716,17 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/PixelPerfect.png",
-    "Punchline": "顯示角色碰撞箱，可自訂樣式。",
+    "Punchline": "Reveals your hitbox, with customisable features. Endorsed by world first raiders!",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/PixelPerfect-v0.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/PixelPerfect-v0.0.0.0/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/PixelPerfect-v7.15.0.1/PixelPerfect.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/PixelPerfect-v7.15.0.1/PixelPerfect.zip"
   },
   {
     "Author": "Kouzukii, Lother",
     "Name": "Price Insight",
     "InternalName": "PriceInsight",
-    "AssemblyVersion": "0.0.0.0",
-    "Description": "在物品提示框上直接顯示菜市場（Universalis）的市場價格資訊。",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "Whenever you mouseover an item, it will show you the NQ/HQ marketboard prices at the bottom as well as the most recent purchase.\nPrices are retrieved from Universalis.app and cached for 90 minutes.\nTo refresh a price you can tap Alt while hovering over an item.\n",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/PriceInsight",
     "Tags": [
@@ -743,17 +743,17 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/PriceInsight.png",
-    "Punchline": "在道具提示框顯示市場價格。",
+    "Punchline": "See item marketboard prices on hover!",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/PriceInsight-v0.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/PriceInsight-v0.0.0.0/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/PriceInsight-v7.15.0.1/PriceInsight.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/PriceInsight-v7.15.0.1/PriceInsight.zip"
   },
   {
     "Author": "UnknownX, Lother",
     "Name": "QoL Bar",
     "InternalName": "QoLBar",
-    "AssemblyVersion": "0.0.0.0",
-    "Description": "提供簡單、可自訂且常駐顯示的介面，用來快速執行聊天指令或其他插件功能，取代反覆開關選單的麻煩。",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "A plugin designed to provide a simple, customizable and always available interface for chat commands\nor other plugins to alleviate the need for using macros and hotbar space to achieve similar results.\n\nThe plugin should initially appear as a small box on the bottom center of the game window.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/QoLBar",
     "Tags": [
@@ -770,17 +770,17 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/QoLBar.png",
-    "Punchline": "可自訂的 ImGui 快捷列。",
+    "Punchline": "Customizable ImGui hotbars",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/QoLBar-v0.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/QoLBar-v0.0.0.0/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/QoLBar-v7.15.0.1/QoLBar.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/QoLBar-v7.15.0.1/QoLBar.zip"
   },
   {
     "Author": "Sonar Team, Lother",
     "Name": "Sonar",
     "InternalName": "SonarPlugin",
-    "AssemblyVersion": "0.0.0.0",
-    "Description": "自動發送與接收狩獵/幻蒐目標的跨服情報。輸入 /sonar 開啟主視窗，/sonarconfig 進行設定。",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "Automatically send and receive hunt and fate relays. /sonar to open, /sonarconfig to configure. Support is only provided in the Sonar Support discord.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/SonarPlugin",
     "Tags": [
@@ -797,17 +797,17 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/SonarPlugin.png",
-    "Punchline": "自動狩獵/幻蒐情報分享。",
+    "Punchline": "Automatically send and receive hunt and fate relays.",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SonarPlugin-v0.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SonarPlugin-v0.0.0.0/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SonarPlugin-v7.15.0.1/SonarPlugin.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SonarPlugin-v7.15.0.1/SonarPlugin.zip"
   },
   {
     "Author": "NeNeppie, Lother",
     "Name": "Avant-Garde",
     "InternalName": "AvantGarde",
-    "AssemblyVersion": "0.0.0.0",
-    "Description": "群眾協力蒐集的資料庫，針對「流行前線」小遊戲的每一個提示分類，列出符合條件的裝備清單。",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "This plugin is a crowdsourced project, aiming to provide a comprehensive list for all hint categories.\nSee the github page for information on how you can contribute.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/AvantGarde",
     "Tags": [
@@ -824,9 +824,37 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/AvantGarde.png",
-    "Punchline": "流行前線提示分類裝備清單。",
+    "Punchline": "Displays a list of valid gear pieces beside hints in the Fashion Report minigame.",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AvantGarde-v0.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AvantGarde-v0.0.0.0/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AvantGarde-v7.15.0.1/AvantGarde.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AvantGarde-v7.15.0.1/AvantGarde.zip"
+  },
+  {
+    "Author": "veyn, croizat, Lother",
+    "Name": "Visland",
+    "InternalName": "visland",
+    "AssemblyVersion": "0.0.0.0",
+    "Description": "自動化採集、工房分配等島嶼度假村相關作業。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/visland",
+    "Tags": [
+      "island",
+      "sanctuary",
+      "gathering",
+      "workshop"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/visland.png",
+    "Punchline": "自動化島嶼度假村各項活動",
+    "AcceptsFeedback": false,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/visland-v7.15.0.1/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/visland-v7.15.0.1/latest.zip"
   }
 ]

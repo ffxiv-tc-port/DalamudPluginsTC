@@ -44,6 +44,7 @@ LOCAL_PATHS = {
     "vnavmesh": r"D:\vnavmesh",
     "InventoryTools": r"D:\InventoryTools",
     "Lifestream": r"D:\Lifestream",
+    "visland": r"D:\visland",
     "SubmarineTracker": r"D:\SubmarineTracker",
     "YesAlready": r"D:\YesAlready",
     "GatherbuddyReborn": r"D:\GatherBuddyReborn",
