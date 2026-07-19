@@ -24,11 +24,11 @@
   "QoLBar": "v7.15.0.1",
   "SonarPlugin": "v7.15.0.1",
   "AvantGarde": "v7.15.0.1",
-  "visland": "v7.15.0.1",
   "LazyLoot": "v7.15.0.1",
   "NotificationMaster": "v7.15.0.1",
   "PriceInsight": "v7.15.0.1",
   "CharacterPanelRefined": "v7.15.0.1",
   "HuntHelper": "v7.15.0.1",
-  "PalacePal": "v7.15.0.1"
+  "PalacePal": "v7.15.0.1",
+  "visland": "v7.15.0.1"
 }

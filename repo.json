@@ -833,7 +833,7 @@
     "Author": "veyn, croizat, Lother",
     "Name": "Visland",
     "InternalName": "visland",
-    "AssemblyVersion": "0.0.0.0",
+    "AssemblyVersion": "7.15.0.1",
     "Description": "自動化採集、工房分配等島嶼度假村相關作業。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/visland",
@@ -854,7 +854,7 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/visland.png",
     "Punchline": "自動化島嶼度假村各項活動",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/visland-v7.15.0.1/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/visland-v7.15.0.1/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/visland-v7.15.0.1/visland.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/visland-v7.15.0.1/visland.zip"
   }
 ]
