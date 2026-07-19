@@ -453,7 +453,7 @@
     "Author": "The Combat Reborn Team, Lother",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.15.0.2",
+    "AssemblyVersion": "7.15.0.3",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/GatherbuddyReborn",
@@ -475,8 +475,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.15.0.2/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.15.0.2/latest.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.15.0.3/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.15.0.3/latest.zip"
   },
   {
     "Author": "electr0sheep, Nuko, Lother",
