@@ -3,7 +3,7 @@
     "Author": "Snowy, KangasZ, Lother",
     "Name": "Eureka Helper",
     "InternalName": "EurekaHelper",
-    "AssemblyVersion": "7.15.0.62",
+    "AssemblyVersion": "7.15.0.63",
     "Description": "協助你進行優雷卡冒險的工具，已更新至《漂泊眾島》版本！輸入 /eurekahelper 開始使用。\n\n功能包含：\n- 遊戲內追蹤器 GUI\n- 副本追蹤器\n- 聖靈追蹤器\n- 魂武助手\n- 鬧鐘\n- 賺錢 NM 天氣時間提醒\n- 更多功能陸續推出",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/EurekaHelper",
@@ -37,7 +37,7 @@
     "Author": "Ottermandias, Lother",
     "Name": "Accountant",
     "InternalName": "Accountant",
-    "AssemblyVersion": "7.15.0.74",
+    "AssemblyVersion": "7.15.0.75",
     "Description": "記錄多名角色的雇員、飛艇、潛水艇、以太之輪與作物計時器，\n以及其他各種雜項任務進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/Accountant",
@@ -506,6 +506,33 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.15.0.1/latest.zip"
   },
   {
+    "Author": "Jukka, Lother",
+    "Name": "NecroLens",
+    "InternalName": "NecroLens",
+    "AssemblyVersion": "7.15.0.2",
+    "Description": "DeepDungeon Helper. Radar for Mobs, Aggro, Sight and everything else.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/NecroLens",
+    "Tags": [
+      "DeepDungeon",
+      "Radar",
+      "QoL"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/NecroLens.png",
+    "Punchline": "A true Necromancer always know the DeepDungeon ... everyone else just uses a high tech!",
+    "AcceptsFeedback": false,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/NecroLens-v7.15.0.2/NecroLens.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/NecroLens-v7.15.0.2/NecroLens.zip"
+  },
+  {
     "Author": "img02, Lother",
     "Name": "Hunt Helper",
     "InternalName": "HuntHelper",
@@ -779,7 +806,7 @@
     "Author": "veyn, croizat, Lother",
     "Name": "Visland",
     "InternalName": "visland",
-    "AssemblyVersion": "7.15.0.1",
+    "AssemblyVersion": "7.15.0.3",
     "Description": "自動化採集、工房分配等島嶼度假村相關作業。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/visland",
@@ -800,8 +827,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/visland.png",
     "Punchline": "自動化島嶼度假村各項活動",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/visland-v7.15.0.1/visland.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/visland-v7.15.0.1/visland.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/visland-v7.15.0.3/visland.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/visland-v7.15.0.3/visland.zip"
   },
   {
     "Author": "Nylfae, Lother",
