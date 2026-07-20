@@ -162,7 +162,7 @@
     "Author": "daemitus, croizat, Lother",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.15.0.23",
+    "AssemblyVersion": "7.15.0.24",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/SomethingNeedDoing",
@@ -181,8 +181,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.15.0.23/SomethingNeedDoing.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.15.0.23/SomethingNeedDoing.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.15.0.24/SomethingNeedDoing.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.15.0.24/SomethingNeedDoing.zip"
   },
   {
     "Author": "The Combat Reborn Team, Lother",
