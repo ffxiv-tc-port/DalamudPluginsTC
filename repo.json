@@ -399,7 +399,7 @@
     "Author": "Infi, Lother",
     "Name": "Submarine Tracker",
     "InternalName": "SubmarineTracker",
-    "AssemblyVersion": "7.15.0.3",
+    "AssemblyVersion": "7.15.0.4",
     "Description": "+ 追蹤目前的潛水艇配置、航線與所需時間\n+ 潛水艇配置建構器，協助改良配置並最佳化經驗值\n+ 可自訂的返航與維修通知\n+ 內建豐富資訊的 Helpy 助手\n+ 自訂戰利品總覽，含歷史紀錄與匯出功能\n+ 多種疊加層輔助你完成每日任務\n+ 支援多個部隊",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/SubmarineTracker",
@@ -419,8 +419,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/SubmarineTracker.png",
     "Punchline": "潛水艇的事，不能說。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.3/SubmarineTracker.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.3/SubmarineTracker.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.4/SubmarineTracker.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.4/SubmarineTracker.zip"
   },
   {
     "Author": "daemitus, croizat, Lother",
@@ -725,7 +725,7 @@
     "Author": "UnknownX, Lother",
     "Name": "QoL Bar",
     "InternalName": "QoLBar",
-    "AssemblyVersion": "7.15.0.4",
+    "AssemblyVersion": "7.15.0.5",
     "Description": "此外掛旨在為聊天指令或其他外掛提供簡單、可自訂且隨時可用的介面，\n減少為達成類似效果而需要使用巨集或佔用快捷列空間的需求。\n\n此外掛初次啟動時應會顯示在遊戲視窗底部中央的一個小方框。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/QoLBar",
@@ -745,8 +745,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/QoLBar.png",
     "Punchline": "可自訂的 ImGui 快捷列",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/QoLBar-v7.15.0.4/QoLBar.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/QoLBar-v7.15.0.4/QoLBar.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/QoLBar-v7.15.0.5/QoLBar.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/QoLBar-v7.15.0.5/QoLBar.zip"
   },
   {
     "Author": "Sonar Team, Lother",
