@@ -69,7 +69,7 @@
     "Author": "кайт машина (Puni.sh), Lother",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.15.0.96",
+    "AssemblyVersion": "7.15.0.97",
     "Description": "躺在床上就能收取並指派雇員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/AutoRetainer",
@@ -81,14 +81,14 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣雇員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.96/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.96/AutoRetainer.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.97/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.97/AutoRetainer.zip"
   },
   {
     "Author": "Taurenkey, Kagekazu, Lother",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.15.0.298",
+    "AssemblyVersion": "7.15.0.299",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/Saucy",
@@ -105,8 +105,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Saucy-v7.15.0.298/Saucy.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Saucy-v7.15.0.298/Saucy.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Saucy-v7.15.0.299/Saucy.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Saucy-v7.15.0.299/Saucy.zip"
   },
   {
     "Author": "apetih, Lother",
@@ -266,7 +266,7 @@
     "Author": "Taurenkey (Puni.sh), Lother",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.15.0.4",
+    "AssemblyVersion": "7.15.0.5",
     "Description": "整合各種功能的全能製作外掛。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/Artisan",
@@ -284,14 +284,14 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作外掛。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.4/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.4/Artisan.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.5/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.5/Artisan.zip"
   },
   {
     "Author": "NightmareXIV, Lother",
     "Name": "Splatoon",
     "InternalName": "Splatoon",
-    "AssemblyVersion": "7.15.0.5",
+    "AssemblyVersion": "7.15.0.6",
     "Description": "Splatoon 是一款強大的輔助工具。它以自訂路標系統徹底革新遊戲體驗，可建立無數量限制的成組路標、文字標籤與角色指示器，並具備精確到像素的定位能力。此功能讓玩家能更清楚辨識關鍵物件與事件，進而做出更快速的反應。請注意，此外掛本身不附帶任何預設檔，玩家可自行製作或匯入現成的預設檔，打造專屬於自己的遊戲體驗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/Splatoon",
@@ -310,8 +310,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Splatoon.png",
     "Punchline": "以無限、精準的路標重新定義 FFXIV 導航方式。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Splatoon-v7.15.0.5/Splatoon.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Splatoon-v7.15.0.5/Splatoon.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Splatoon-v7.15.0.6/Splatoon.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Splatoon-v7.15.0.6/Splatoon.zip"
   },
   {
     "Author": "veyn, Lother",
@@ -806,8 +806,8 @@
     "Author": "veyn, croizat, Lother",
     "Name": "Visland",
     "InternalName": "visland",
-    "AssemblyVersion": "7.15.0.4",
-    "Description": "自動化採集、工房分配等島嶼度假村相關作業。",
+    "AssemblyVersion": "7.15.0.5",
+    "Description": "自動化採集、開拓工坊排班等無人島相關作業。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/visland",
     "Tags": [
@@ -825,10 +825,10 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/visland.png",
-    "Punchline": "自動化島嶼度假村各項活動",
+    "Punchline": "自動化無人島各項活動",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/visland-v7.15.0.4/visland.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/visland-v7.15.0.4/visland.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/visland-v7.15.0.5/visland.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/visland-v7.15.0.5/visland.zip"
   },
   {
     "Author": "Nylfae, Lother",
