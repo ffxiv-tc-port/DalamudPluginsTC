@@ -69,7 +69,7 @@
     "Author": "кайт машина (Puni.sh), Lother",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.15.0.97",
+    "AssemblyVersion": "7.15.0.98",
     "Description": "躺在床上就能收取並指派雇員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/AutoRetainer",
@@ -81,8 +81,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣雇員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.97/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.97/AutoRetainer.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.98/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.98/AutoRetainer.zip"
   },
   {
     "Author": "Taurenkey, Kagekazu, Lother",
@@ -266,7 +266,7 @@
     "Author": "Taurenkey (Puni.sh), Lother",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.15.0.5",
+    "AssemblyVersion": "7.15.0.6",
     "Description": "整合各種功能的全能製作外掛。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/Artisan",
@@ -284,8 +284,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作外掛。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.5/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.5/Artisan.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.6/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.6/Artisan.zip"
   },
   {
     "Author": "NightmareXIV, Lother",
@@ -344,7 +344,7 @@
     "Author": "Critical_Impact, Lother",
     "Name": "Allagan Tools",
     "InternalName": "InventoryTools",
-    "AssemblyVersion": "7.15.0.4",
+    "AssemblyVersion": "7.15.0.5",
     "Description": "Allagan Tools 的主要目的是追蹤你所有角色/雇員/部隊倉庫中的道具。透過它的篩選系統，你將不再遺失任何道具的蹤跡，也不再不知道道具該收納在哪裡。\n\n雖然這是它的主要功能，但它還擁有相當豐富的其他功能，包括：\n\t- 製作規劃\n\t- 市場公告板整合\n\t- 在搜尋/整理及挑選製作材料時於背包中高亮顯示道具\n\t- 包含商人與取得來源等資訊的道具視窗\n\t- 可完整搜尋的任務/怪物/飛空艇/潛水艇視窗\n\t- 讓你能為特定道具設定複雜搜尋條件的篩選系統\n\t- 提示視窗整合，滑鼠懸停即可查看道具所在位置",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/InventoryTools",
@@ -364,8 +364,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/InventoryTools.png",
     "Punchline": "讓你的 FFXIV 井井有條，輕鬆定位/顯示道具應收納何處、規劃製作，並搜尋怪物、任務、飛空艇與潛水艇！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/InventoryTools-v7.15.0.4/InventoryTools.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/InventoryTools-v7.15.0.4/InventoryTools.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/InventoryTools-v7.15.0.5/InventoryTools.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/InventoryTools-v7.15.0.5/InventoryTools.zip"
   },
   {
     "Author": "NightmareXIV, Lother",
@@ -399,7 +399,7 @@
     "Author": "Infi, Lother",
     "Name": "Submarine Tracker",
     "InternalName": "SubmarineTracker",
-    "AssemblyVersion": "7.15.0.5",
+    "AssemblyVersion": "7.15.0.6",
     "Description": "+ 追蹤目前的潛水艇配置、航線與所需時間\n+ 潛水艇配置建構器，協助改良配置並最佳化經驗值\n+ 可自訂的返航與維修通知\n+ 內建豐富資訊的 Helpy 助手\n+ 自訂戰利品總覽，含歷史紀錄與匯出功能\n+ 多種疊加層輔助你完成每日任務\n+ 支援多個部隊",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/SubmarineTracker",
@@ -419,8 +419,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/SubmarineTracker.png",
     "Punchline": "潛水艇的事，不能說。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.5/SubmarineTracker.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.5/SubmarineTracker.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.6/SubmarineTracker.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.6/SubmarineTracker.zip"
   },
   {
     "Author": "daemitus, croizat, Lother",
@@ -725,7 +725,7 @@
     "Author": "UnknownX, Lother",
     "Name": "QoL Bar",
     "InternalName": "QoLBar",
-    "AssemblyVersion": "7.15.0.7",
+    "AssemblyVersion": "7.15.0.8",
     "Description": "此外掛旨在為聊天指令或其他外掛提供簡單、可自訂且隨時可用的介面，\n減少為達成類似效果而需要使用巨集或佔用快捷列空間的需求。\n\n此外掛初次啟動時應會顯示在遊戲視窗底部中央的一個小方框。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/QoLBar",
@@ -745,8 +745,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/QoLBar.png",
     "Punchline": "可自訂的 ImGui 快捷列",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/QoLBar-v7.15.0.7/QoLBar.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/QoLBar-v7.15.0.7/QoLBar.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/QoLBar-v7.15.0.8/QoLBar.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/QoLBar-v7.15.0.8/QoLBar.zip"
   },
   {
     "Author": "Sonar Team, Lother",
