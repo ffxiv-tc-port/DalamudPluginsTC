@@ -399,7 +399,7 @@
     "Author": "Infi, Lother",
     "Name": "Submarine Tracker",
     "InternalName": "SubmarineTracker",
-    "AssemblyVersion": "7.15.0.4",
+    "AssemblyVersion": "7.15.0.5",
     "Description": "+ 追蹤目前的潛水艇配置、航線與所需時間\n+ 潛水艇配置建構器，協助改良配置並最佳化經驗值\n+ 可自訂的返航與維修通知\n+ 內建豐富資訊的 Helpy 助手\n+ 自訂戰利品總覽，含歷史紀錄與匯出功能\n+ 多種疊加層輔助你完成每日任務\n+ 支援多個部隊",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/SubmarineTracker",
@@ -419,8 +419,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/SubmarineTracker.png",
     "Punchline": "潛水艇的事，不能說。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.4/SubmarineTracker.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.4/SubmarineTracker.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.5/SubmarineTracker.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.5/SubmarineTracker.zip"
   },
   {
     "Author": "daemitus, croizat, Lother",
@@ -643,7 +643,7 @@
     "Author": "Liza Carvelli (Puni.sh), Lother",
     "Name": "Palace Pal",
     "InternalName": "PalacePal",
-    "AssemblyVersion": "7.15.0.4",
+    "AssemblyVersion": "7.15.0.5",
     "Description": "顯示死者宮殿、天之御柱、正統優雷卡中可能的陷阱與寶藏位置。\n\n此外掛需要 Splatoon 才能在畫面上繪製各種標示。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/PalacePal",
@@ -664,8 +664,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/PalacePal.png",
     "Punchline": "顯示死者宮殿、天之御柱、正統優雷卡中可能的陷阱與寶藏位置。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/PalacePal-v7.15.0.4/PalacePal.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/PalacePal-v7.15.0.4/PalacePal.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/PalacePal-v7.15.0.5/PalacePal.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/PalacePal-v7.15.0.5/PalacePal.zip"
   },
   {
     "Author": "Haplo064, Lother",
@@ -943,7 +943,7 @@
     "Author": "Infi, Anna, Lother",
     "Name": "Chat 2",
     "InternalName": "ChatTwo",
-    "AssemblyVersion": "7.15.0.7",
+    "AssemblyVersion": "7.15.0.8",
     "Description": "Chat 2 是遊戲內建聊天視窗的完整重寫版外掛。\n支援功能：\n\n- 無限分頁\n- 固定發送到特定頻道的分頁\n- 更靈活的過濾功能\n- RGB 頻道顏色\n- 完全可變字體大小\n- 側邊欄分頁\n- 未讀訊息計數\n- 表情符號\n- 截圖模式（隱藏名稱）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/ChatTwo",
@@ -964,7 +964,7 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/ChatTwo.png",
     "Punchline": "電光石火 - ♪ 全新的聊天視窗，一個嶄新美妙的聊天窗口 ♪",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/ChatTwo-v7.15.0.7/ChatTwo.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/ChatTwo-v7.15.0.7/ChatTwo.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/ChatTwo-v7.15.0.8/ChatTwo.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/ChatTwo-v7.15.0.8/ChatTwo.zip"
   }
 ]
