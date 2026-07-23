@@ -1,5 +1,267 @@
 [
   {
+    "Author": "Ottermandias, Lother",
+    "Name": "Accountant",
+    "InternalName": "Accountant",
+    "AssemblyVersion": "7.15.0.79",
+    "Description": "記錄多名角色的雇員、飛艇、潛水艇、以太之輪與作物計時器，\n以及其他各種雜項任務進度。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/Accountant",
+    "Tags": [
+      "Airship",
+      "Gardening",
+      "Crops",
+      "Retainer",
+      "Multiple Characters",
+      "Account",
+      "Timer",
+      "Submarine",
+      "Submersible",
+      "Tasks",
+      "Cactpot"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Accountant.png",
+    "Punchline": "角色任務計時器。",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Accountant-v7.15.0.79/Accountant.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Accountant-v7.15.0.79/Accountant.zip"
+  },
+  {
+    "Author": "Taurenkey (Puni.sh), Lother",
+    "Name": "Artisan",
+    "InternalName": "Artisan",
+    "AssemblyVersion": "7.15.0.7",
+    "Description": "整合各種功能的全能製作插件。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/Artisan",
+    "Tags": [
+      "crafting"
+    ],
+    "CategoryTags": [
+      "Crafting & Gathering"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Artisan.png",
+    "Punchline": "一款「簡單」的製作插件。",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.7/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.7/Artisan.zip"
+  },
+  {
+    "Author": "Det (Puni.sh), Lother",
+    "Name": "AutoHook",
+    "InternalName": "AutoHook",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "自動幫你提鉤釣魚，你能相信嗎？\n支援自訂預設集、自動以小釣大、自動刺魚等功能。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/AutoHook",
+    "Tags": [
+      "Gathering",
+      "Fishing",
+      "Automation"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/AutoHook.png",
+    "Punchline": "讓釣魚不再無聊（或更無聊）。",
+    "AcceptsFeedback": false,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoHook-v7.15.0.1/AutoHook.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoHook-v7.15.0.1/AutoHook.zip"
+  },
+  {
+    "Author": "кайт машина (Puni.sh), Lother",
+    "Name": "AutoRetainer",
+    "InternalName": "AutoRetainer",
+    "AssemblyVersion": "7.15.0.99",
+    "Description": "躺在床上就能收取並指派雇員的遠航任務。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/AutoRetainer",
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/AutoRetainer.png",
+    "Punchline": "躺著也能派遣雇員出去探險。",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.99/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.99/AutoRetainer.zip"
+  },
+  {
+    "Author": "NeNeppie, Lother",
+    "Name": "Avant-Garde",
+    "InternalName": "AvantGarde",
+    "AssemblyVersion": "7.15.0.3",
+    "Description": "本插件為社群共同維護的專案，目標是為所有提示分類提供完整的裝備清單。\n如需了解如何參與貢獻，請參閱 GitHub 頁面。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/AvantGarde",
+    "Tags": [
+      "FashionReport",
+      "Glamour",
+      "QoL"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/AvantGarde.png",
+    "Punchline": "在潮流王小遊戲的提示旁顯示符合條件的裝備清單。",
+    "AcceptsFeedback": false,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AvantGarde-v7.15.0.3/AvantGarde.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AvantGarde-v7.15.0.3/AvantGarde.zip"
+  },
+  {
+    "Author": "The Combat Reborn Team, Lother",
+    "Name": "Bossmod Reborn",
+    "InternalName": "BossModReborn",
+    "AssemblyVersion": "7.15.0.54",
+    "Description": "繁體中文分支（TC-7.15）。提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/BossmodReborn",
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/BossModReborn.png",
+    "ImageUrls": [
+      "https://raw.githubusercontent.com/awgil/ffxiv_bossmod/master/Data/image1.png",
+      "https://raw.githubusercontent.com/awgil/ffxiv_bossmod/master/Data/image2.png",
+      "https://raw.githubusercontent.com/awgil/ffxiv_bossmod/master/Data/image3.png"
+    ],
+    "Punchline": "不再因副本機制失誤",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/BossModReborn-v7.15.0.54/BossModReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/BossModReborn-v7.15.0.54/BossModReborn.zip"
+  },
+  {
+    "Author": "Kouzukii, Lother",
+    "Name": "Character Panel Refined",
+    "InternalName": "CharacterPanelRefined",
+    "AssemblyVersion": "7.15.0.4",
+    "Description": "Character Panel Refined 精簡了角色狀態面板中的無用資訊，並加入了會心與直擊機率等實用數值，以及預估輸出傷害，方便比較裝備優劣。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/CharacterPanelRefined",
+    "Tags": [
+      "Character",
+      "QoL",
+      "Stats"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/CharacterPanelRefined.png",
+    "Punchline": "Refine the character panel to display only useful information like crit and direct hit chance",
+    "AcceptsFeedback": false,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.15.0.4/CharacterPanelRefined.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.15.0.4/CharacterPanelRefined.zip"
+  },
+  {
+    "Author": "Infi, Anna, Lother",
+    "Name": "Chat 2",
+    "InternalName": "ChatTwo",
+    "AssemblyVersion": "7.15.0.8",
+    "Description": "Chat 2 是遊戲內建聊天視窗的完整重寫版外掛。\n支援功能：\n\n- 無限分頁\n- 固定發送到特定頻道的分頁\n- 更靈活的過濾功能\n- RGB 頻道顏色\n- 完全可變字體大小\n- 側邊欄分頁\n- 未讀訊息計數\n- 表情符號\n- 截圖模式（隱藏名稱）",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/ChatTwo",
+    "Tags": [
+      "Social",
+      "UI",
+      "Chat",
+      "Replacement"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/ChatTwo.png",
+    "Punchline": "電光石火 - ♪ 全新的聊天視窗，一個嶄新美妙的聊天窗口 ♪",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/ChatTwo-v7.15.0.8/ChatTwo.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/ChatTwo-v7.15.0.8/ChatTwo.zip"
+  },
+  {
+    "Author": "Nylfae, Lother",
+    "Name": "Dynamis",
+    "InternalName": "Dynamis",
+    "AssemblyVersion": "7.15.0.3",
+    "Description": "本插件包含多種透過動態分析輔助遊戲逆向工程與原型製作的工具。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/Dynamis",
+    "Tags": [
+      "reverse-engineering",
+      "developer-tools"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Dynamis.png",
+    "Punchline": "開發/除錯/逆向工程工具與實驗工作台。",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Dynamis-v7.15.0.3/Dynamis.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Dynamis-v7.15.0.3/Dynamis.zip"
+  },
+  {
+    "Author": "Nylfae, Lother",
+    "Name": "Dynamis (with Hosted PowerShell)",
+    "InternalName": "DynamisWithSMA",
+    "AssemblyVersion": "7.15.0.3",
+    "Description": "本插件包含多種透過動態分析輔助遊戲逆向工程與原型製作的工具，此版本額外內建 PowerShell 主機。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/Dynamis",
+    "Tags": [
+      "reverse-engineering",
+      "developer-tools",
+      "powershell"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/DynamisWithSMA.png",
+    "Punchline": "開發/除錯/逆向工程工具與實驗工作台（含內建 PowerShell）。",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.15.0.3/DynamisWithSMA.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.15.0.3/DynamisWithSMA.zip"
+  },
+  {
     "Author": "Snowy, KangasZ, Lother",
     "Name": "Eureka Helper",
     "InternalName": "EurekaHelper",
@@ -34,270 +296,19 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/EurekaHelper-v7.15.0.68/EurekaHelper.zip"
   },
   {
-    "Author": "Ottermandias, Lother",
-    "Name": "Accountant",
-    "InternalName": "Accountant",
-    "AssemblyVersion": "7.15.0.79",
-    "Description": "記錄多名角色的雇員、飛艇、潛水艇、以太之輪與作物計時器，\n以及其他各種雜項任務進度。",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/Accountant",
-    "Tags": [
-      "Airship",
-      "Gardening",
-      "Crops",
-      "Retainer",
-      "Multiple Characters",
-      "Account",
-      "Timer",
-      "Submarine",
-      "Submersible",
-      "Tasks",
-      "Cactpot"
-    ],
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Accountant.png",
-    "Punchline": "角色任務計時器。",
-    "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Accountant-v7.15.0.79/Accountant.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Accountant-v7.15.0.79/Accountant.zip"
-  },
-  {
-    "Author": "кайт машина (Puni.sh), Lother",
-    "Name": "AutoRetainer",
-    "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.15.0.99",
-    "Description": "躺在床上就能收取並指派雇員的遠航任務。",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/AutoRetainer",
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/AutoRetainer.png",
-    "Punchline": "躺著也能派遣雇員出去探險。",
-    "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.99/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.99/AutoRetainer.zip"
-  },
-  {
-    "Author": "Taurenkey, Kagekazu, Lother",
-    "Name": "Saucy",
-    "InternalName": "Saucy",
-    "AssemblyVersion": "7.15.0.299",
-    "Description": "自動化部分金碟遊樂園小遊戲。",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/Saucy",
-    "Tags": [
-      "gold saucer",
-      "mgp",
-      "automation"
-    ],
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Saucy.png",
-    "Punchline": "當賺取 MGP 太費工夫的時候。",
-    "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Saucy-v7.15.0.299/Saucy.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Saucy-v7.15.0.299/Saucy.zip"
-  },
-  {
-    "Author": "apetih, Lother",
-    "Name": "Logogram Helper",
-    "InternalName": "LogogramHelper",
-    "AssemblyVersion": "7.15.0.8",
-    "Description": "進入聖言操縱者後，顯示優雷卡聖言技能所有可能組合的數量。",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/LogogramHelper",
-    "Tags": [
-      "eureka",
-      "logograms"
-    ],
-    "CategoryTags": [
-      "utility"
-    ],
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/LogogramHelper.png",
-    "Punchline": "優雷卡聖言技能輔助工具。",
-    "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/LogogramHelper-v7.15.0.8/LogogramHelper.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LogogramHelper-v7.15.0.8/LogogramHelper.zip"
-  },
-  {
-    "Author": "MgAl2O4, Lother",
-    "Name": "TriadBuddy",
-    "InternalName": "TriadBuddy",
-    "AssemblyVersion": "7.15.0.15",
-    "Description": "三張牌遊戲解牌工具，僅支援 NPC 對戰。\n- 小遊戲進行時提示下一步最佳出牌\n- 對戰前評估所有牌組預設\n- NPC 牌組優化器\n- 為卡牌收藏視窗新增更多細節",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/FFTriadBuddyDalamud",
-    "Tags": [
-      "solver",
-      "triad",
-      "triple triad"
-    ],
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "Punchline": "三張牌遊戲解牌助手",
-    "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/TriadBuddy-v7.15.0.15/TriadBuddy.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/TriadBuddy-v7.15.0.15/TriadBuddy.zip",
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/TriadBuddy.png"
-  },
-  {
-    "Author": "daemitus, croizat, Lother",
-    "Name": "Something Need Doing",
-    "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.15.0.25",
-    "Description": "現在不只能用於生產，功能更多！",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/SomethingNeedDoing",
-    "Tags": [
-      "crafting",
-      "automation",
-      "macros",
-      "lua",
-      "scripting"
-    ],
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
-    "Punchline": "工作，工作。",
-    "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.15.0.25/SomethingNeedDoing.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.15.0.25/SomethingNeedDoing.zip"
-  },
-  {
     "Author": "The Combat Reborn Team, Lother",
-    "Name": "Bossmod Reborn",
-    "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.15.0.54",
-    "Description": "繁體中文分支（TC-7.15）。提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
+    "Name": "GatherBuddy Reborn",
+    "InternalName": "GatherbuddyReborn",
+    "AssemblyVersion": "7.15.0.16",
+    "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/BossmodReborn",
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/BossModReborn.png",
-    "ImageUrls": [
-      "https://raw.githubusercontent.com/awgil/ffxiv_bossmod/master/Data/image1.png",
-      "https://raw.githubusercontent.com/awgil/ffxiv_bossmod/master/Data/image2.png",
-      "https://raw.githubusercontent.com/awgil/ffxiv_bossmod/master/Data/image3.png"
-    ],
-    "Punchline": "不再因副本機制失誤",
-    "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/BossModReborn-v7.15.0.54/BossModReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/BossModReborn-v7.15.0.54/BossModReborn.zip"
-  },
-  {
-    "Author": "Team Wrath, Lother",
-    "Name": "Wrath Combo",
-    "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.15.0.12",
-    "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/WrathCombo",
+    "RepoUrl": "https://github.com/Lother/GatherbuddyReborn",
     "Tags": [
-      "combo",
-      "wrath",
-      "wrathcombo",
-      "auto",
-      "autorotation",
-      "rotation",
-      "pve",
-      "pvp"
-    ],
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "Please check the project's GitHub for a full changelog.",
-    "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
-    "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/WrathCombo-v7.15.0.12/WrathCombo.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/WrathCombo-v7.15.0.12/WrathCombo.zip"
-  },
-  {
-    "Author": "Latihas, Lother",
-    "Name": "LatihasChocobo",
-    "InternalName": "LatihasChocobo",
-    "AssemblyVersion": "7.15.0.10",
-    "Description": "自動陸行鳥競賽",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/LatihasChocobo",
-    "Tags": [
-      "chocobo",
-      "racing",
-      "automation"
-    ],
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "Punchline": "自動陸行鳥競賽",
-    "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/LatihasChocobo-v7.15.0.10/LatihasChocobo.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LatihasChocobo-v7.15.0.10/LatihasChocobo.zip",
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/LatihasChocobo.png"
-  },
-  {
-    "Author": "Taurenkey (Puni.sh), Lother",
-    "Name": "Artisan",
-    "InternalName": "Artisan",
-    "AssemblyVersion": "7.15.0.7",
-    "Description": "整合各種功能的全能製作插件。",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/Artisan",
-    "Tags": [
-      "crafting"
-    ],
-    "CategoryTags": [
-      "Crafting & Gathering"
-    ],
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Artisan.png",
-    "Punchline": "一款「簡單」的製作插件。",
-    "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.7/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.7/Artisan.zip"
-  },
-  {
-    "Author": "NightmareXIV, Lother",
-    "Name": "Splatoon",
-    "InternalName": "Splatoon",
-    "AssemblyVersion": "7.15.0.7",
-    "Description": "Splatoon 是一款強大的輔助工具。它以自訂路標系統徹底革新遊戲體驗，可建立無數量限制的成組路標、文字標籤與角色指示器，並具備精確到像素的定位能力。此功能讓玩家能更清楚辨識關鍵物件與事件，進而做出更快速的反應。請注意，此插件本身不附帶任何預設檔，玩家可自行製作或匯入現成的預設檔，打造專屬於自己的遊戲體驗。",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/Splatoon",
-    "Tags": [
-      "Utility",
-      "Accessibility"
+      "Gathering",
+      "Automation",
+      "Botany",
+      "Mining",
+      "Fishing"
     ],
     "CategoryTags": [
       "Utility"
@@ -307,24 +318,24 @@
     "LoadSync": false,
     "CanUnloadAsync": false,
     "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Splatoon.png",
-    "Punchline": "以無限、精準的路標重新定義 FFXIV 導航方式。",
-    "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Splatoon-v7.15.0.7/Splatoon.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Splatoon-v7.15.0.7/Splatoon.zip"
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
+    "Punchline": "把採集與釣魚簡化到極致。",
+    "AcceptsFeedback": false,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.15.0.16/GatherbuddyReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.15.0.16/GatherbuddyReborn.zip"
   },
   {
-    "Author": "veyn, Lother",
-    "Name": "vnavmesh",
-    "InternalName": "vnavmesh",
-    "AssemblyVersion": "7.15.0.6",
-    "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
+    "Author": "img02, Lother",
+    "Name": "Hunt Helper",
+    "InternalName": "HuntHelper",
+    "AssemblyVersion": "7.15.0.4",
+    "Description": "顯示標記重生點的狩獵地圖、A級討伐車隊記錄器（可匯出/匯入分享）、語音播報、聊天通知，以及S級討伐重生計數器",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/vnavmesh",
+    "RepoUrl": "https://github.com/Lother/HuntHelper",
     "Tags": [
-      "navigation",
-      "movement",
-      "pathfinding"
+      "Hunt",
+      "Tracker",
+      "Notification"
     ],
     "CategoryTags": [
       "Utility"
@@ -334,11 +345,11 @@
     "LoadSync": false,
     "CanUnloadAsync": false,
     "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/vnavmesh.png",
-    "Punchline": "自動移動吧！",
-    "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/vnavmesh-v7.15.0.6/vnavmesh.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/vnavmesh-v7.15.0.6/vnavmesh.zip"
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/HuntHelper.png",
+    "Punchline": "打寶雷達＋車隊記錄器＋通知＋S級討伐輔助工具等一應俱全。",
+    "AcceptsFeedback": false,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/HuntHelper-v7.15.0.4/HuntHelper.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/HuntHelper-v7.15.0.4/HuntHelper.zip"
   },
   {
     "Author": "Critical_Impact, Lother",
@@ -366,6 +377,84 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/InventoryTools-v7.15.0.6/InventoryTools.zip",
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/InventoryTools-v7.15.0.6/InventoryTools.zip"
+  },
+  {
+    "Author": "electr0sheep, Nuko, Lother",
+    "Name": "Item Vendor Location",
+    "InternalName": "ItemVendorLocation",
+    "AssemblyVersion": "7.15.0.5",
+    "Description": "為道具新增右鍵選單選項，可查看該道具可在哪些商人處購買",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/ItemVendorLocation",
+    "Tags": [
+      "Vendor",
+      "Item",
+      "QoL"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/ItemVendorLocation.png",
+    "Punchline": "顯示可購買該道具的商人所在位置",
+    "AcceptsFeedback": false,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.15.0.5/ItemVendorLocation.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.15.0.5/ItemVendorLocation.zip"
+  },
+  {
+    "Author": "Latihas, Lother",
+    "Name": "LatihasChocobo",
+    "InternalName": "LatihasChocobo",
+    "AssemblyVersion": "7.15.0.10",
+    "Description": "自動陸行鳥競賽",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/LatihasChocobo",
+    "Tags": [
+      "chocobo",
+      "racing",
+      "automation"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "Punchline": "自動陸行鳥競賽",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/LatihasChocobo-v7.15.0.10/LatihasChocobo.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LatihasChocobo-v7.15.0.10/LatihasChocobo.zip",
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/LatihasChocobo.png"
+  },
+  {
+    "Author": "53m1k0l0n/Gidedin (Puni.sh), Lother",
+    "Name": "LazyLoot",
+    "InternalName": "LazyLoot",
+    "AssemblyVersion": "7.15.0.6",
+    "Description": "以指令執行擲骰，支援 need | needonly | greed | pass | passall 等各種參數。\n可設定聊天與跳出訊息輸出，以及擲骰延遲。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/LazyLoot",
+    "Tags": [
+      "Loot",
+      "Automation",
+      "QoL"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/LazyLoot.png",
+    "Punchline": "打怪但懶得選骰的擲骰插件。",
+    "AcceptsFeedback": false,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/LazyLoot-v7.15.0.6/LazyLoot.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LazyLoot-v7.15.0.6/LazyLoot.zip"
   },
   {
     "Author": "NightmareXIV, Lother",
@@ -396,195 +485,30 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Lifestream-v7.15.0.6/Lifestream.zip"
   },
   {
-    "Author": "Infi, Lother",
-    "Name": "Submarine Tracker",
-    "InternalName": "SubmarineTracker",
-    "AssemblyVersion": "7.15.0.6",
-    "Description": "+ 追蹤目前的潛水艇配置、航線與所需時間\n+ 潛水艇配置建構器，協助改良配置並最佳化經驗值\n+ 可自訂的返航與維修通知\n+ 內建豐富資訊的 Helpy 助手\n+ 自訂戰利品總覽，含歷史紀錄與匯出功能\n+ 多種疊加層輔助你完成每日任務\n+ 支援多個部隊",
+    "Author": "apetih, Lother",
+    "Name": "Logogram Helper",
+    "InternalName": "LogogramHelper",
+    "AssemblyVersion": "7.15.0.8",
+    "Description": "進入聖言操縱者後，顯示優雷卡聖言技能所有可能組合的數量。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/SubmarineTracker",
+    "RepoUrl": "https://github.com/Lother/LogogramHelper",
     "Tags": [
-      "Submarine",
-      "Tracker",
-      "FC"
+      "eureka",
+      "logograms"
     ],
     "CategoryTags": [
-      "Utility"
+      "utility"
     ],
     "DalamudApiLevel": 12,
     "LoadRequiredState": 0,
     "LoadSync": false,
     "CanUnloadAsync": false,
     "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/SubmarineTracker.png",
-    "Punchline": "潛水艇的事，不能說。",
-    "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.6/SubmarineTracker.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.6/SubmarineTracker.zip"
-  },
-  {
-    "Author": "daemitus, croizat, Lother",
-    "Name": "YesAlready",
-    "InternalName": "YesAlready",
-    "AssemblyVersion": "7.15.0.5",
-    "Description": "厭倦了在天守閣/伊迪爾夏爾禁地一直點確認嗎？受不了在副本裡一直按鍵嗎？YesAlready 可以自動點擊你設定的所有惱人對話框。只要輸入對話文字，就再也不用手動點了！支援 /regex/ 比對，也內建了幾個針對「看起來不是 yes/no，但行為類似」的對話框（例如分解）的模組。",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/YesAlready",
-    "Tags": [
-      "Automation",
-      "QoL",
-      "Dialogue"
-    ],
-    "CategoryTags": [
-      "Utility"
-    ],
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/YesAlready.png",
-    "Punchline": "自動點擊你指定的各種確認對話框。",
-    "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/YesAlready-v7.15.0.5/YesAlready.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/YesAlready-v7.15.0.5/YesAlready.zip"
-  },
-  {
-    "Author": "The Combat Reborn Team, Lother",
-    "Name": "GatherBuddy Reborn",
-    "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.15.0.16",
-    "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/GatherbuddyReborn",
-    "Tags": [
-      "Gathering",
-      "Automation",
-      "Botany",
-      "Mining",
-      "Fishing"
-    ],
-    "CategoryTags": [
-      "Utility"
-    ],
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
-    "Punchline": "把採集與釣魚簡化到極致。",
-    "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.15.0.16/GatherbuddyReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.15.0.16/GatherbuddyReborn.zip"
-  },
-  {
-    "Author": "electr0sheep, Nuko, Lother",
-    "Name": "Item Vendor Location",
-    "InternalName": "ItemVendorLocation",
-    "AssemblyVersion": "7.15.0.5",
-    "Description": "為道具新增右鍵選單選項，可查看該道具可在哪些商人處購買",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/ItemVendorLocation",
-    "Tags": [
-      "Vendor",
-      "Item",
-      "QoL"
-    ],
-    "CategoryTags": [
-      "Utility"
-    ],
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/ItemVendorLocation.png",
-    "Punchline": "顯示可購買該道具的商人所在位置",
-    "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.15.0.5/ItemVendorLocation.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.15.0.5/ItemVendorLocation.zip"
-  },
-  {
-    "Author": "Jukka, Lother",
-    "Name": "NecroLens",
-    "InternalName": "NecroLens",
-    "AssemblyVersion": "7.15.0.4",
-    "Description": "深層迷宮輔助工具。提供怪物雷達、仇恨、視野範圍等各種資訊。",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/NecroLens",
-    "Tags": [
-      "DeepDungeon",
-      "Radar",
-      "QoL"
-    ],
-    "CategoryTags": [
-      "Utility"
-    ],
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/NecroLens.png",
-    "Punchline": "真正的死靈術士永遠瞭若指掌深層迷宮……其他人只是用了高科技而已！",
-    "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/NecroLens-v7.15.0.4/NecroLens.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/NecroLens-v7.15.0.4/NecroLens.zip"
-  },
-  {
-    "Author": "img02, Lother",
-    "Name": "Hunt Helper",
-    "InternalName": "HuntHelper",
-    "AssemblyVersion": "7.15.0.4",
-    "Description": "顯示標記重生點的狩獵地圖、A級討伐車隊記錄器（可匯出/匯入分享）、語音播報、聊天通知，以及S級討伐重生計數器",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/HuntHelper",
-    "Tags": [
-      "Hunt",
-      "Tracker",
-      "Notification"
-    ],
-    "CategoryTags": [
-      "Utility"
-    ],
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/HuntHelper.png",
-    "Punchline": "打寶雷達＋車隊記錄器＋通知＋S級討伐輔助工具等一應俱全。",
-    "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/HuntHelper-v7.15.0.4/HuntHelper.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/HuntHelper-v7.15.0.4/HuntHelper.zip"
-  },
-  {
-    "Author": "53m1k0l0n/Gidedin (Puni.sh), Lother",
-    "Name": "LazyLoot",
-    "InternalName": "LazyLoot",
-    "AssemblyVersion": "7.15.0.6",
-    "Description": "以指令執行擲骰，支援 need | needonly | greed | pass | passall 等各種參數。\n可設定聊天與跳出訊息輸出，以及擲骰延遲。",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/LazyLoot",
-    "Tags": [
-      "Loot",
-      "Automation",
-      "QoL"
-    ],
-    "CategoryTags": [
-      "Utility"
-    ],
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/LazyLoot.png",
-    "Punchline": "打怪但懶得選骰的擲骰插件。",
-    "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/LazyLoot-v7.15.0.6/LazyLoot.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LazyLoot-v7.15.0.6/LazyLoot.zip"
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/LogogramHelper.png",
+    "Punchline": "優雷卡聖言技能輔助工具。",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/LogogramHelper-v7.15.0.8/LogogramHelper.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LogogramHelper-v7.15.0.8/LogogramHelper.zip"
   },
   {
     "Author": "JayceOfSpades",
@@ -612,6 +536,33 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/MiniMappingway-v7.15.0.3/MiniMappingway.zip",
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/MiniMappingway-v7.15.0.3/MiniMappingway.zip"
+  },
+  {
+    "Author": "Jukka, Lother",
+    "Name": "NecroLens",
+    "InternalName": "NecroLens",
+    "AssemblyVersion": "7.15.0.4",
+    "Description": "深層迷宮輔助工具。提供怪物雷達、仇恨、視野範圍等各種資訊。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/NecroLens",
+    "Tags": [
+      "DeepDungeon",
+      "Radar",
+      "QoL"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/NecroLens.png",
+    "Punchline": "真正的死靈術士永遠瞭若指掌深層迷宮……其他人只是用了高科技而已！",
+    "AcceptsFeedback": false,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/NecroLens-v7.15.0.4/NecroLens.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/NecroLens-v7.15.0.4/NecroLens.zip"
   },
   {
     "Author": "NightmareXIV, Lother",
@@ -749,6 +700,56 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/QoLBar-v7.15.0.9/QoLBar.zip"
   },
   {
+    "Author": "Taurenkey, Kagekazu, Lother",
+    "Name": "Saucy",
+    "InternalName": "Saucy",
+    "AssemblyVersion": "7.15.0.299",
+    "Description": "自動化部分金碟遊樂園小遊戲。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/Saucy",
+    "Tags": [
+      "gold saucer",
+      "mgp",
+      "automation"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Saucy.png",
+    "Punchline": "當賺取 MGP 太費工夫的時候。",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Saucy-v7.15.0.299/Saucy.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Saucy-v7.15.0.299/Saucy.zip"
+  },
+  {
+    "Author": "daemitus, croizat, Lother",
+    "Name": "Something Need Doing",
+    "InternalName": "SomethingNeedDoing",
+    "AssemblyVersion": "7.15.0.25",
+    "Description": "現在不只能用於生產，功能更多！",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/SomethingNeedDoing",
+    "Tags": [
+      "crafting",
+      "automation",
+      "macros",
+      "lua",
+      "scripting"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
+    "Punchline": "工作，工作。",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.15.0.25/SomethingNeedDoing.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.15.0.25/SomethingNeedDoing.zip"
+  },
+  {
     "Author": "Sonar Team, Lother",
     "Name": "Sonar",
     "InternalName": "SonarPlugin",
@@ -776,17 +777,16 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SonarPlugin-v7.15.0.5/SonarPlugin.zip"
   },
   {
-    "Author": "NeNeppie, Lother",
-    "Name": "Avant-Garde",
-    "InternalName": "AvantGarde",
-    "AssemblyVersion": "7.15.0.3",
-    "Description": "本插件為社群共同維護的專案，目標是為所有提示分類提供完整的裝備清單。\n如需了解如何參與貢獻，請參閱 GitHub 頁面。",
+    "Author": "NightmareXIV, Lother",
+    "Name": "Splatoon",
+    "InternalName": "Splatoon",
+    "AssemblyVersion": "7.15.0.7",
+    "Description": "Splatoon 是一款強大的輔助工具。它以自訂路標系統徹底革新遊戲體驗，可建立無數量限制的成組路標、文字標籤與角色指示器，並具備精確到像素的定位能力。此功能讓玩家能更清楚辨識關鍵物件與事件，進而做出更快速的反應。請注意，此插件本身不附帶任何預設檔，玩家可自行製作或匯入現成的預設檔，打造專屬於自己的遊戲體驗。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/AvantGarde",
+    "RepoUrl": "https://github.com/Lother/Splatoon",
     "Tags": [
-      "FashionReport",
-      "Glamour",
-      "QoL"
+      "Utility",
+      "Accessibility"
     ],
     "CategoryTags": [
       "Utility"
@@ -796,11 +796,62 @@
     "LoadSync": false,
     "CanUnloadAsync": false,
     "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/AvantGarde.png",
-    "Punchline": "在潮流王小遊戲的提示旁顯示符合條件的裝備清單。",
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Splatoon.png",
+    "Punchline": "以無限、精準的路標重新定義 FFXIV 導航方式。",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Splatoon-v7.15.0.7/Splatoon.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Splatoon-v7.15.0.7/Splatoon.zip"
+  },
+  {
+    "Author": "Infi, Lother",
+    "Name": "Submarine Tracker",
+    "InternalName": "SubmarineTracker",
+    "AssemblyVersion": "7.15.0.6",
+    "Description": "+ 追蹤目前的潛水艇配置、航線與所需時間\n+ 潛水艇配置建構器，協助改良配置並最佳化經驗值\n+ 可自訂的返航與維修通知\n+ 內建豐富資訊的 Helpy 助手\n+ 自訂戰利品總覽，含歷史紀錄與匯出功能\n+ 多種疊加層輔助你完成每日任務\n+ 支援多個部隊",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/SubmarineTracker",
+    "Tags": [
+      "Submarine",
+      "Tracker",
+      "FC"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/SubmarineTracker.png",
+    "Punchline": "潛水艇的事，不能說。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AvantGarde-v7.15.0.3/AvantGarde.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AvantGarde-v7.15.0.3/AvantGarde.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.6/SubmarineTracker.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.6/SubmarineTracker.zip"
+  },
+  {
+    "Author": "MgAl2O4, Lother",
+    "Name": "TriadBuddy",
+    "InternalName": "TriadBuddy",
+    "AssemblyVersion": "7.15.0.15",
+    "Description": "三張牌遊戲解牌工具，僅支援 NPC 對戰。\n- 小遊戲進行時提示下一步最佳出牌\n- 對戰前評估所有牌組預設\n- NPC 牌組優化器\n- 為卡牌收藏視窗新增更多細節",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/FFTriadBuddyDalamud",
+    "Tags": [
+      "solver",
+      "triad",
+      "triple triad"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "Punchline": "三張牌遊戲解牌助手",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/TriadBuddy-v7.15.0.15/TriadBuddy.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/TriadBuddy-v7.15.0.15/TriadBuddy.zip",
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/TriadBuddy.png"
   },
   {
     "Author": "veyn, croizat, Lother",
@@ -831,16 +882,17 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/visland-v7.15.0.6/visland.zip"
   },
   {
-    "Author": "Nylfae, Lother",
-    "Name": "Dynamis",
-    "InternalName": "Dynamis",
-    "AssemblyVersion": "7.15.0.3",
-    "Description": "本插件包含多種透過動態分析輔助遊戲逆向工程與原型製作的工具。",
+    "Author": "veyn, Lother",
+    "Name": "vnavmesh",
+    "InternalName": "vnavmesh",
+    "AssemblyVersion": "7.15.0.6",
+    "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/Dynamis",
+    "RepoUrl": "https://github.com/Lother/vnavmesh",
     "Tags": [
-      "reverse-engineering",
-      "developer-tools"
+      "navigation",
+      "movement",
+      "pathfinding"
     ],
     "CategoryTags": [
       "Utility"
@@ -850,38 +902,41 @@
     "LoadSync": false,
     "CanUnloadAsync": false,
     "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Dynamis.png",
-    "Punchline": "開發/除錯/逆向工程工具與實驗工作台。",
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/vnavmesh.png",
+    "Punchline": "自動移動吧！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Dynamis-v7.15.0.3/Dynamis.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Dynamis-v7.15.0.3/Dynamis.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/vnavmesh-v7.15.0.6/vnavmesh.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/vnavmesh-v7.15.0.6/vnavmesh.zip"
   },
   {
-    "Author": "Nylfae, Lother",
-    "Name": "Dynamis (with Hosted PowerShell)",
-    "InternalName": "DynamisWithSMA",
-    "AssemblyVersion": "7.15.0.3",
-    "Description": "本插件包含多種透過動態分析輔助遊戲逆向工程與原型製作的工具，此版本額外內建 PowerShell 主機。",
+    "Author": "Team Wrath, Lother",
+    "Name": "Wrath Combo",
+    "InternalName": "WrathCombo",
+    "AssemblyVersion": "7.15.0.12",
+    "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/Dynamis",
+    "RepoUrl": "https://github.com/Lother/WrathCombo",
     "Tags": [
-      "reverse-engineering",
-      "developer-tools",
-      "powershell"
-    ],
-    "CategoryTags": [
-      "Utility"
+      "combo",
+      "wrath",
+      "wrathcombo",
+      "auto",
+      "autorotation",
+      "rotation",
+      "pve",
+      "pvp"
     ],
     "DalamudApiLevel": 12,
     "LoadRequiredState": 0,
     "LoadSync": false,
     "CanUnloadAsync": false,
     "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/DynamisWithSMA.png",
-    "Punchline": "開發/除錯/逆向工程工具與實驗工作台（含內建 PowerShell）。",
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/WrathCombo.png",
+    "Changelog": "Please check the project's GitHub for a full changelog.",
+    "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.15.0.3/DynamisWithSMA.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.15.0.3/DynamisWithSMA.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/WrathCombo-v7.15.0.12/WrathCombo.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/WrathCombo-v7.15.0.12/WrathCombo.zip"
   },
   {
     "Author": "cycleapple, Lother",
@@ -913,17 +968,17 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/XivTreasureParty-v7.15.0.1/XivTreasureParty.zip"
   },
   {
-    "Author": "Kouzukii, Lother",
-    "Name": "Character Panel Refined",
-    "InternalName": "CharacterPanelRefined",
-    "AssemblyVersion": "7.15.0.4",
-    "Description": "Character Panel Refined 精簡了角色狀態面板中的無用資訊，並加入了會心與直擊機率等實用數值，以及預估輸出傷害，方便比較裝備優劣。",
+    "Author": "daemitus, croizat, Lother",
+    "Name": "YesAlready",
+    "InternalName": "YesAlready",
+    "AssemblyVersion": "7.15.0.5",
+    "Description": "厭倦了在天守閣/伊迪爾夏爾禁地一直點確認嗎？受不了在副本裡一直按鍵嗎？YesAlready 可以自動點擊你設定的所有惱人對話框。只要輸入對話文字，就再也不用手動點了！支援 /regex/ 比對，也內建了幾個針對「看起來不是 yes/no，但行為類似」的對話框（例如分解）的模組。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/CharacterPanelRefined",
+    "RepoUrl": "https://github.com/Lother/YesAlready",
     "Tags": [
-      "Character",
+      "Automation",
       "QoL",
-      "Stats"
+      "Dialogue"
     ],
     "CategoryTags": [
       "Utility"
@@ -933,38 +988,10 @@
     "LoadSync": false,
     "CanUnloadAsync": false,
     "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/CharacterPanelRefined.png",
-    "Punchline": "Refine the character panel to display only useful information like crit and direct hit chance",
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/YesAlready.png",
+    "Punchline": "自動點擊你指定的各種確認對話框。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.15.0.4/CharacterPanelRefined.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.15.0.4/CharacterPanelRefined.zip"
-  },
-  {
-    "Author": "Infi, Anna, Lother",
-    "Name": "Chat 2",
-    "InternalName": "ChatTwo",
-    "AssemblyVersion": "7.15.0.8",
-    "Description": "Chat 2 是遊戲內建聊天視窗的完整重寫版外掛。\n支援功能：\n\n- 無限分頁\n- 固定發送到特定頻道的分頁\n- 更靈活的過濾功能\n- RGB 頻道顏色\n- 完全可變字體大小\n- 側邊欄分頁\n- 未讀訊息計數\n- 表情符號\n- 截圖模式（隱藏名稱）",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Lother/ChatTwo",
-    "Tags": [
-      "Social",
-      "UI",
-      "Chat",
-      "Replacement"
-    ],
-    "CategoryTags": [
-      "Utility"
-    ],
-    "DalamudApiLevel": 12,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/ChatTwo.png",
-    "Punchline": "電光石火 - ♪ 全新的聊天視窗，一個嶄新美妙的聊天窗口 ♪",
-    "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/ChatTwo-v7.15.0.8/ChatTwo.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/ChatTwo-v7.15.0.8/ChatTwo.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/YesAlready-v7.15.0.5/YesAlready.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/YesAlready-v7.15.0.5/YesAlready.zip"
   }
 ]

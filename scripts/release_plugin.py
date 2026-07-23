@@ -30,6 +30,7 @@ GH = mirror.GH
 
 # InternalName -> local checkout path (relative to this repo's parent, D:\)
 LOCAL_PATHS = {
+    "AutoHook": r"D:\AutoHook",
     "EurekaHelper": r"D:\EurekaHelper",
     "Accountant": r"D:\Accountant",
     "AutoRetainer": r"D:\AutoRetainer",
