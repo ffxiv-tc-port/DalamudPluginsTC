@@ -87,7 +87,7 @@
     "Author": "кайт машина (Puni.sh), Lother",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.15.0.99",
+    "AssemblyVersion": "7.15.0.100",
     "Description": "躺在床上就能收取並指派雇員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/AutoRetainer",
@@ -99,8 +99,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣雇員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.99/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.99/AutoRetainer.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.100/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.100/AutoRetainer.zip"
   },
   {
     "Author": "NeNeppie, Lother",
