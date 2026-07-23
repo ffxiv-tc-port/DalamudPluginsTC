@@ -563,7 +563,7 @@
     "Author": "53m1k0l0n/Gidedin (Puni.sh), Lother",
     "Name": "LazyLoot",
     "InternalName": "LazyLoot",
-    "AssemblyVersion": "7.15.0.5",
+    "AssemblyVersion": "7.15.0.6",
     "Description": "以指令執行擲骰，支援 need | needonly | greed | pass | passall 等各種參數。\n可設定聊天與跳出訊息輸出，以及擲骰延遲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/LazyLoot",
@@ -583,8 +583,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/LazyLoot.png",
     "Punchline": "打怪但懶得選骰的擲骰插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/LazyLoot-v7.15.0.5/LazyLoot.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LazyLoot-v7.15.0.5/LazyLoot.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/LazyLoot-v7.15.0.6/LazyLoot.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LazyLoot-v7.15.0.6/LazyLoot.zip"
   },
   {
     "Author": "JayceOfSpades",
@@ -752,7 +752,7 @@
     "Author": "Sonar Team, Lother",
     "Name": "Sonar",
     "InternalName": "SonarPlugin",
-    "AssemblyVersion": "7.15.0.4",
+    "AssemblyVersion": "7.15.0.5",
     "Description": "自動傳送與接收打寶及 FATE 情報。輸入 /sonar 開啟主視窗，/sonarconfig 進行設定。技術支援僅提供於 Sonar Support Discord。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/SonarPlugin",
@@ -772,8 +772,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/SonarPlugin.png",
     "Punchline": "自動傳送與接收打寶及 FATE 情報。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SonarPlugin-v7.15.0.4/SonarPlugin.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SonarPlugin-v7.15.0.4/SonarPlugin.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SonarPlugin-v7.15.0.5/SonarPlugin.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SonarPlugin-v7.15.0.5/SonarPlugin.zip"
   },
   {
     "Author": "NeNeppie, Lother",
