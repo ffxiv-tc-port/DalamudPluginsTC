@@ -23,6 +23,7 @@ PUBLIC_REPO = "Lother/DalamudPluginsTC"
 
 # InternalName -> source repo (owner/name)
 SOURCE_REPOS = {
+    "AutoHook": "Lother/AutoHook",
     "EurekaHelper": "Lother/EurekaHelper",
     "Accountant": "Lother/Accountant",
     "AutoRetainer": "Lother/AutoRetainer",
@@ -100,6 +101,7 @@ ICON_PATHS = {
     "DynamisWithSMA": "Dynamis/DynamisWithSMA128.png",
     "ChatTwo": "ChatTwo/images/icon.png",
     "XivTreasureParty": "XivTreasureParty/Resources/icon.png",
+    "AutoHook": "images/icon.png",
     "TriadBuddy": "assets/icon.png",
     "LazyLoot": "images/icon.png",
     "QoLBar": "images/icon.png",
