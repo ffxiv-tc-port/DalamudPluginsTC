@@ -35,7 +35,7 @@
     "Author": "Taurenkey (Puni.sh), Lother",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.15.0.7",
+    "AssemblyVersion": "7.15.0.8",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/Artisan",
@@ -53,8 +53,8 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.7/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.7/Artisan.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.8/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.8/Artisan.zip"
   },
   {
     "Author": "Det (Puni.sh), Lother",
