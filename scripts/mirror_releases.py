@@ -100,10 +100,12 @@ ICON_PATHS = {
     "DynamisWithSMA": "Dynamis/DynamisWithSMA128.png",
     "ChatTwo": "ChatTwo/images/icon.png",
     "XivTreasureParty": "XivTreasureParty/Resources/icon.png",
-    # LazyLoot, MiniMappingway, QoLBar, SonarPlugin: no local icon asset upstream
-    # (they only ever referenced external CDN URLs) - repo.json IconUrl points at
-    # the mirror path anyway, but icons/<Name>.png won't exist until someone
-    # manually sources and adds an icon + an ICON_PATHS entry for it.
+    "TriadBuddy": "assets/icon.png",
+    "LazyLoot": "images/icon.png",
+    "QoLBar": "images/icon.png",
+    "MiniMappingway": "images/icon.png",
+    # SonarPlugin: no local icon asset upstream (only an external CDN IconUrl);
+    # icons/SonarPlugin.png is manually sourced from assets.ffxivsonar.com/dalamud/logo.png.
 }
 
 
