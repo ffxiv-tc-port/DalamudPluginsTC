@@ -64,6 +64,7 @@ SOURCE_REPOS = {
     "DynamisWithSMA": "Lother/Dynamis",
     "ChatTwo": "Lother/ChatTwo",
     "XivTreasureParty": "Lother/XivTreasureParty",
+    "SkipCutscene": "Lother/SkipCutscene",
 }
 
 # InternalName -> icon path within the source repo (on its default branch).
@@ -108,6 +109,10 @@ ICON_PATHS = {
     "MiniMappingway": "images/icon.png",
     # SonarPlugin: no local icon asset upstream (only an external CDN IconUrl);
     # icons/SonarPlugin.png is manually sourced from assets.ffxivsonar.com/dalamud/logo.png.
+    # SkipCutscene: upstream never shipped a plugin icon at all; sourced a
+    # thematically-fitting placeholder (FFXIV's "Sprint" action icon) via
+    # v2.xivapi.com/api/asset (same technique as LatihasChocobo's icon).
+    "SkipCutscene": "SkipCutscene/Resources/icon.png",
 }
 
 
