@@ -6,7 +6,7 @@
     "AssemblyVersion": "7.15.0.81",
     "Description": "記錄多名角色的雇員、飛艇、潛水艇、以太之輪與作物計時器，\n以及其他各種雜項任務進度。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Ottermandias/Accountant",
+    "RepoUrl": "https://github.com/Lother/Accountant",
     "Tags": [
       "Airship",
       "Gardening",
@@ -38,7 +38,7 @@
     "AssemblyVersion": "7.15.0.12",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/PunishXIV/Artisan",
+    "RepoUrl": "https://github.com/Lother/Artisan",
     "Tags": [
       "crafting"
     ],
@@ -63,7 +63,7 @@
     "AssemblyVersion": "7.15.0.2",
     "Description": "自動幫你提鉤釣魚,你能相信嗎?\n支援自訂預設集、自動以小釣大、自動刺魚等功能。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/PunishXIV/AutoHook",
+    "RepoUrl": "https://github.com/Lother/AutoHook",
     "Tags": [
       "Gathering",
       "Fishing",
@@ -90,7 +90,7 @@
     "AssemblyVersion": "7.15.0.106",
     "Description": "躺在床上就能收取並指派雇員的遠航任務。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/PunishXIV/AutoRetainer",
+    "RepoUrl": "https://github.com/Lother/AutoRetainer",
     "DalamudApiLevel": 12,
     "LoadRequiredState": 0,
     "LoadSync": false,
@@ -109,7 +109,7 @@
     "AssemblyVersion": "7.15.0.3",
     "Description": "本插件為社群共同維護的專案，目標是為所有提示分類提供完整的裝備清單。\n如需了解如何參與貢獻，請參閱 GitHub 頁面。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/NeNeppie/AvantGarde",
+    "RepoUrl": "https://github.com/Lother/AvantGarde",
     "Tags": [
       "FashionReport",
       "Glamour",
@@ -136,7 +136,7 @@
     "AssemblyVersion": "7.15.0.55",
     "Description": "繁體中文分支（TC-7.15）。提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/FFXIV-CombatReborn/BossModReborn",
+    "RepoUrl": "https://github.com/Lother/BossmodReborn",
     "DalamudApiLevel": 12,
     "LoadRequiredState": 0,
     "LoadSync": false,
@@ -160,7 +160,7 @@
     "AssemblyVersion": "7.15.0.4",
     "Description": "Character Panel Refined 精簡了角色狀態面板中的無用資訊，並加入了會心與直擊機率等實用數值，以及預估輸出傷害，方便比較裝備優劣。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Kouzukii/ffxiv-characterstatus-refined",
+    "RepoUrl": "https://github.com/Lother/CharacterPanelRefined",
     "Tags": [
       "Character",
       "QoL",
@@ -187,7 +187,7 @@
     "AssemblyVersion": "7.15.0.12",
     "Description": "Chat 2 是遊戲內建聊天視窗的完整重寫版外掛。\n支援功能：\n\n- 無限分頁\n- 固定發送到特定頻道的分頁\n- 更靈活的過濾功能\n- RGB 頻道顏色\n- 完全可變字體大小\n- 側邊欄分頁\n- 未讀訊息計數\n- 表情符號\n- 截圖模式（隱藏名稱）",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Infiziert90/ChatTwo",
+    "RepoUrl": "https://github.com/Lother/ChatTwo",
     "Tags": [
       "Social",
       "UI",
@@ -215,7 +215,7 @@
     "AssemblyVersion": "7.15.0.6",
     "Description": "本插件包含多種透過動態分析輔助遊戲逆向工程與原型製作的工具。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Exter-N/Dynamis",
+    "RepoUrl": "https://github.com/Lother/Dynamis",
     "Tags": [
       "reverse-engineering",
       "developer-tools"
@@ -241,7 +241,7 @@
     "AssemblyVersion": "7.15.0.6",
     "Description": "本插件包含多種透過動態分析輔助遊戲逆向工程與原型製作的工具，此版本額外內建 PowerShell 主機。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Exter-N/Dynamis",
+    "RepoUrl": "https://github.com/Lother/Dynamis",
     "Tags": [
       "reverse-engineering",
       "developer-tools",
@@ -268,7 +268,7 @@
     "AssemblyVersion": "7.15.0.68",
     "Description": "協助你進行優雷卡冒險的工具，已更新至《漂泊眾島》版本！輸入 /eurekahelper 開始使用。\n\n功能包含：\n- 遊戲內追蹤器 GUI\n- 副本追蹤器\n- 聖靈追蹤器\n- 魂武助手\n- 鬧鐘\n- 賺錢 NM 天氣時間提醒\n- 更多功能陸續推出",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/KangasZ/EurekaHelper",
+    "RepoUrl": "https://github.com/Lother/EurekaHelper",
     "Tags": [
       "Eureka",
       "Tracker",
@@ -302,7 +302,7 @@
     "AssemblyVersion": "7.15.0.17",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/FFXIV-CombatReborn/GatherBuddyReborn",
+    "RepoUrl": "https://github.com/Lother/GatherbuddyReborn",
     "Tags": [
       "Gathering",
       "Automation",
@@ -331,7 +331,7 @@
     "AssemblyVersion": "7.15.0.5",
     "Description": "顯示標記重生點的狩獵地圖、A級討伐車隊記錄器（可匯出/匯入分享）、語音播報、聊天通知，以及S級討伐重生計數器",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/img02/HuntHelper",
+    "RepoUrl": "https://github.com/Lother/HuntHelper",
     "Tags": [
       "Hunt",
       "Tracker",
@@ -358,7 +358,7 @@
     "AssemblyVersion": "7.15.0.7",
     "Description": "Allagan Tools 的主要目的是追蹤你所有角色/雇員/部隊倉庫中的道具。透過它的篩選系統，你將不再遺失任何道具的蹤跡，也不再不知道道具該收納在哪裡。\n\n雖然這是它的主要功能，但它還擁有相當豐富的其他功能，包括：\n\t- 製作規劃\n\t- 市場公告板整合\n\t- 在搜尋/整理及挑選製作材料時於背包中高亮顯示道具\n\t- 包含商人與取得來源等資訊的道具視窗\n\t- 可完整搜尋的任務/怪物/飛空艇/潛水艇視窗\n\t- 讓你能為特定道具設定複雜搜尋條件的篩選系統\n\t- 提示視窗整合，滑鼠懸停即可查看道具所在位置",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Critical-Impact/InventoryTools",
+    "RepoUrl": "https://github.com/Lother/InventoryTools",
     "Tags": [
       "inventory",
       "crafting",
@@ -385,7 +385,7 @@
     "AssemblyVersion": "7.15.0.6",
     "Description": "為道具新增右鍵選單選項，可查看該道具可在哪些商人處購買",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/electr0sheep/ItemVendorLocation",
+    "RepoUrl": "https://github.com/Lother/ItemVendorLocation",
     "Tags": [
       "Vendor",
       "Item",
@@ -412,7 +412,7 @@
     "AssemblyVersion": "7.15.0.10",
     "Description": "自動陸行鳥競賽",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Latihas/LatihasChocobo",
+    "RepoUrl": "https://github.com/Lother/LatihasChocobo",
     "Tags": [
       "chocobo",
       "racing",
@@ -436,7 +436,7 @@
     "AssemblyVersion": "7.15.0.6",
     "Description": "以指令執行擲骰，支援 need | needonly | greed | pass | passall 等各種參數。\n可設定聊天與跳出訊息輸出，以及擲骰延遲。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/PunishXIV/LazyLoot",
+    "RepoUrl": "https://github.com/Lother/LazyLoot",
     "Tags": [
       "Loot",
       "Automation",
@@ -463,7 +463,7 @@
     "AssemblyVersion": "7.15.0.7",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/NightmareXIV/Lifestream",
+    "RepoUrl": "https://github.com/Lother/Lifestream",
     "Tags": [
       "teleport",
       "aethernet",
@@ -491,7 +491,7 @@
     "AssemblyVersion": "7.15.0.8",
     "Description": "進入聖言操縱者後，顯示優雷卡聖言技能所有可能組合的數量。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/apetih/LogogramHelper",
+    "RepoUrl": "https://github.com/Lother/LogogramHelper",
     "Tags": [
       "eureka",
       "logograms"
@@ -517,7 +517,7 @@
     "AssemblyVersion": "7.15.0.3",
     "Description": "在小地圖上顯示好友與公會成員的插件。可在設定中自訂標記樣式，並切換是否顯示好友、公會成員或兩者！圖示由 twitter 上的 @Miendoodle 繪製。感謝 nya 提供的點子！",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/jaycewhite/MiniMappingway",
+    "RepoUrl": "https://github.com/Lother/MiniMappingway",
     "Tags": [
       "Minimap",
       "Friends",
@@ -544,7 +544,7 @@
     "AssemblyVersion": "7.15.0.5",
     "Description": "深層迷宮輔助工具。提供怪物雷達、仇恨、視野範圍等各種資訊。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Jukkales/NecroLens",
+    "RepoUrl": "https://github.com/Lother/NecroLens",
     "Tags": [
       "DeepDungeon",
       "Radar",
@@ -571,7 +571,7 @@
     "AssemblyVersion": "7.15.0.4",
     "Description": "在遊戲視窗縮到最小時，通知你各種遊戲內事件。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/NightmareXIV/NotificationMaster",
+    "RepoUrl": "https://github.com/Lother/NotificationMaster",
     "Tags": [
       "Notification",
       "QoL"
@@ -597,7 +597,7 @@
     "AssemblyVersion": "7.15.0.6",
     "Description": "顯示死者宮殿、天之御柱、正統優雷卡中可能的陷阱與寶藏位置。\n\n此插件需要 Splatoon 才能在畫面上繪製各種標示。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/PunishXIV/PalacePal",
+    "RepoUrl": "https://github.com/Lother/PalacePal",
     "Tags": [
       "DeepDungeon",
       "PotD",
@@ -625,7 +625,7 @@
     "AssemblyVersion": "7.15.0.3",
     "Description": "自 2020 年起精準顯示站位。深受高難度團隊玩家推薦！",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Haplo064/PixelPerfect",
+    "RepoUrl": "https://github.com/Lother/PixelPerfect",
     "Tags": [
       "Hitbox",
       "Raid",
@@ -652,7 +652,7 @@
     "AssemblyVersion": "7.15.0.3",
     "Description": "當你將滑鼠移到道具上時，會在下方顯示該道具的普通品/高品質市場公告板價格，以及最近一次的成交紀錄。\n價格資料來自 Universalis.app，並會快取 90 分鐘。\n若要重新整理價格，可在滑鼠懸停於道具上時按住 Alt 鍵。\n",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Kouzukii/ffxiv-priceinsight",
+    "RepoUrl": "https://github.com/Lother/PriceInsight",
     "Tags": [
       "Market",
       "Price",
@@ -679,7 +679,7 @@
     "AssemblyVersion": "7.15.0.10",
     "Description": "此插件旨在為聊天指令或其他插件提供簡單、可自訂且隨時可用的介面，\n減少為達成類似效果而需要使用巨集或佔用快捷列空間的需求。\n\n此插件初次啟動時應會顯示在遊戲視窗底部中央的一個小方框。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/UnknownX7/QoLBar",
+    "RepoUrl": "https://github.com/Lother/QoLBar",
     "Tags": [
       "Hotbar",
       "QoL",
@@ -706,7 +706,7 @@
     "AssemblyVersion": "7.15.0.302",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/PunishXIV/Saucy",
+    "RepoUrl": "https://github.com/Lother/Saucy",
     "Tags": [
       "gold saucer",
       "mgp",
@@ -730,7 +730,7 @@
     "AssemblyVersion": "7.15.0.27",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Jaksuhn/SomethingNeedDoing",
+    "RepoUrl": "https://github.com/Lother/SomethingNeedDoing",
     "Tags": [
       "crafting",
       "automation",
@@ -756,7 +756,7 @@
     "AssemblyVersion": "7.15.0.8",
     "Description": "自動傳送與接收打寶及 FATE 情報。輸入 /sonar 開啟主視窗，/sonarconfig 進行設定。技術支援僅提供於 Sonar Support Discord。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/FFXIV-Sonar/SonarDistrib",
+    "RepoUrl": "https://github.com/Lother/SonarPlugin",
     "Tags": [
       "Hunt",
       "Fate",
@@ -783,7 +783,7 @@
     "AssemblyVersion": "7.15.0.8",
     "Description": "Splatoon 是一款強大的輔助工具。它以自訂路標系統徹底革新遊戲體驗，可建立無數量限制的成組路標、文字標籤與角色指示器，並具備精確到像素的定位能力。此功能讓玩家能更清楚辨識關鍵物件與事件，進而做出更快速的反應。請注意，此插件本身不附帶任何預設檔，玩家可自行製作或匯入現成的預設檔，打造專屬於自己的遊戲體驗。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/PunishXIV/Splatoon",
+    "RepoUrl": "https://github.com/Lother/Splatoon",
     "Tags": [
       "Utility",
       "Accessibility"
@@ -809,7 +809,7 @@
     "AssemblyVersion": "7.15.0.6",
     "Description": "+ 追蹤目前的潛水艇配置、航線與所需時間\n+ 潛水艇配置建構器，協助改良配置並最佳化經驗值\n+ 可自訂的返航與維修通知\n+ 內建豐富資訊的 Helpy 助手\n+ 自訂戰利品總覽，含歷史紀錄與匯出功能\n+ 多種疊加層輔助你完成每日任務\n+ 支援多個部隊",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/Infiziert90/SubmarineTracker",
+    "RepoUrl": "https://github.com/Lother/SubmarineTracker",
     "Tags": [
       "Submarine",
       "Tracker",
@@ -836,7 +836,7 @@
     "AssemblyVersion": "7.15.0.15",
     "Description": "三張牌遊戲解牌工具，僅支援 NPC 對戰。\n- 小遊戲進行時提示下一步最佳出牌\n- 對戰前評估所有牌組預設\n- NPC 牌組優化器\n- 為卡牌收藏視窗新增更多細節",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/MgAl2O4/FFTriadBuddyDalamud",
+    "RepoUrl": "https://github.com/Lother/FFTriadBuddyDalamud",
     "Tags": [
       "solver",
       "triad",
@@ -860,7 +860,7 @@
     "AssemblyVersion": "7.15.0.7",
     "Description": "自動化採集、開拓工坊排班等無人島相關作業。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/awgil/ffxiv_visland",
+    "RepoUrl": "https://github.com/Lother/visland",
     "Tags": [
       "island",
       "sanctuary",
@@ -888,7 +888,7 @@
     "AssemblyVersion": "7.15.0.9",
     "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/awgil/ffxiv_navmesh",
+    "RepoUrl": "https://github.com/Lother/vnavmesh",
     "Tags": [
       "navigation",
       "movement",
@@ -915,7 +915,7 @@
     "AssemblyVersion": "7.15.0.13",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/PunishXIV/WrathCombo",
+    "RepoUrl": "https://github.com/Lother/WrathCombo",
     "Tags": [
       "combo",
       "wrath",
@@ -974,7 +974,7 @@
     "AssemblyVersion": "7.15.0.5",
     "Description": "厭倦了在天守閣/伊迪爾夏爾禁地一直點確認嗎？受不了在副本裡一直按鍵嗎？YesAlready 可以自動點擊你設定的所有惱人對話框。只要輸入對話文字，就再也不用手動點了！支援 /regex/ 比對，也內建了幾個針對「看起來不是 yes/no，但行為類似」的對話框（例如分解）的模組。",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/PunishXIV/YesAlready",
+    "RepoUrl": "https://github.com/Lother/YesAlready",
     "Tags": [
       "Automation",
       "QoL",
@@ -1001,7 +1001,7 @@
     "AssemblyVersion": "7.15.0.1",
     "Description": "幫助你跳過「任務輪盤：主線任務」中 50 級三個副本強制播放的過場動畫",
     "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/KangasZ/SkipCutscene",
+    "RepoUrl": "https://github.com/Lother/SkipCutscene",
     "Tags": [
       "cutscene",
       "msq",
