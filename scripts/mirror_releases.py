@@ -65,6 +65,7 @@ SOURCE_REPOS = {
     "ChatTwo": "Lother/ChatTwo",
     "XivTreasureParty": "Lother/XivTreasureParty",
     "SkipCutscene": "Lother/SkipCutscene",
+    "DailyDuty": "Lother/DailyDuty",
 }
 
 # InternalName -> icon path within the source repo (on its default branch).
@@ -113,6 +114,9 @@ ICON_PATHS = {
     # thematically-fitting placeholder (FFXIV's "Sprint" action icon) via
     # v2.xivapi.com/api/asset (same technique as LatihasChocobo's icon).
     "SkipCutscene": "SkipCutscene/Resources/icon.png",
+    # DailyDuty: upstream never shipped a plugin icon either; sourced the
+    # "Journal Stationery Set" item icon via v2.xivapi.com/api/asset.
+    "DailyDuty": "DailyDuty/Resources/icon.png",
 }
 
 

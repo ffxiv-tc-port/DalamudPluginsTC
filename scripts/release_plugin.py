@@ -67,6 +67,7 @@ LOCAL_PATHS = {
     "ChatTwo": r"D:\ChatTwo",
     "XivTreasureParty": r"D:\XivTreasureParty",
     "SkipCutscene": r"D:\SkipCutscene",
+    "DailyDuty": r"D:\DailyDuty",
 }
 
 BRANCH = "tc-7.15"
