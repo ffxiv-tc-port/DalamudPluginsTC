@@ -993,5 +993,32 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/YesAlready-v7.15.0.5/YesAlready.zip",
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/YesAlready-v7.15.0.5/YesAlready.zip"
+  },
+  {
+    "Author": "KangasZ, Lother",
+    "Name": "Skip Cutscene",
+    "InternalName": "SkipCutscene",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "幫助你跳過「任務輪盤：主線任務」中 50 級三個副本強制播放的過場動畫",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/SkipCutscene",
+    "Tags": [
+      "cutscene",
+      "msq",
+      "qol"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/SkipCutscene.png",
+    "Punchline": "跳過過場動畫",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/SkipCutscene-v7.15.0.1/SkipCutscene.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SkipCutscene-v7.15.0.1/SkipCutscene.zip"
   }
 ]
