@@ -57,11 +57,11 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.0.9/Artisan.zip"
   },
   {
-    "Author": "Det (Puni.sh), Lother",
+    "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
-    "AssemblyVersion": "7.15.0.1",
-    "Description": "自動幫你提鉤釣魚，你能相信嗎？\n支援自訂預設集、自動以小釣大、自動刺魚等功能。",
+    "AssemblyVersion": "7.15.0.2",
+    "Description": "自動幫你提鉤釣魚,你能相信嗎?\n支援自訂預設集、自動以小釣大、自動刺魚等功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/AutoHook",
     "Tags": [
@@ -78,10 +78,10 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/AutoHook.png",
-    "Punchline": "讓釣魚不再無聊（或更無聊）。",
+    "Punchline": "讓釣魚不再無聊(或更無聊)。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoHook-v7.15.0.1/AutoHook.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoHook-v7.15.0.1/AutoHook.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoHook-v7.15.0.2/AutoHook.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoHook-v7.15.0.2/AutoHook.zip"
   },
   {
     "Author": "кайт машина (Puni.sh), Lother",
