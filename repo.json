@@ -1025,7 +1025,7 @@
     "Author": "MidoriKami, Lother",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.15.0.1",
+    "AssemblyVersion": "7.15.0.2",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/DailyDuty",
@@ -1048,7 +1048,7 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/DailyDuty-v7.15.0.1/DailyDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/DailyDuty-v7.15.0.1/DailyDuty.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/DailyDuty-v7.15.0.2/DailyDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/DailyDuty-v7.15.0.2/DailyDuty.zip"
   }
 ]

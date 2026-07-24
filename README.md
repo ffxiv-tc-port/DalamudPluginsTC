@@ -75,10 +75,6 @@ https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/repo.json
 - **翻譯外部化**：程式碼保留英文原文作為鍵值，譯文存放於外部語言檔（ini／resx／json），跟隨上游更新時翻譯不會遺失
 - 修正了多個台服客戶端語言判斷問題（部分插件先前因此永遠顯示英文）
 
-## 授權
-
-各插件依照其原始授權條款發布，本倉庫僅提供 TC 相容分支的建置與分發。
-
 ## 貢獻 / 回報問題
 
 若插件在 TC 上有相容性問題，歡迎至對應插件的 GitHub repo 開 issue。
