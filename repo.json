@@ -912,7 +912,7 @@
     "Author": "Team Wrath, Lother",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.15.0.12",
+    "AssemblyVersion": "7.15.0.13",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/WrathCombo",
@@ -935,8 +935,8 @@
     "Changelog": "Please check the project's GitHub for a full changelog.",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/WrathCombo-v7.15.0.12/WrathCombo.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/WrathCombo-v7.15.0.12/WrathCombo.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/WrathCombo-v7.15.0.13/WrathCombo.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/WrathCombo-v7.15.0.13/WrathCombo.zip"
   },
   {
     "Author": "cycleapple, Lother",
