@@ -29,6 +29,7 @@ PUBLIC_REPO = "Lother/DalamudPluginsTC"
 # InternalName -> source repo (owner/name)
 SOURCE_REPOS = {
     "AutoHook": "Lother/AutoHook",
+    "AutoDuty": "Lother/AutoDuty",
     "EurekaHelper": "Lother/EurekaHelper",
     "Accountant": "Lother/Accountant",
     "AutoRetainer": "Lother/AutoRetainer",
@@ -122,6 +123,7 @@ ICON_PATHS = {
     # DailyDuty: upstream never shipped a plugin icon either; sourced the
     # "Journal Stationery Set" item icon via v2.xivapi.com/api/asset.
     "DailyDuty": "DailyDuty/Resources/icon.png",
+    "AutoDuty": "logo.png",
 }
 
 
