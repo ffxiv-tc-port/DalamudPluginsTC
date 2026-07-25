@@ -130,6 +130,31 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.1.1/AutoRetainer.zip"
   },
   {
+    "Author": "кайт машина (Puni.sh)",
+    "Name": "Avarice",
+    "InternalName": "Avarice",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "Positional feedback with pixel perfect rear/flank tracking, range indicators, and more.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/Avarice",
+    "Tags": [
+      "combat"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/Avarice.png",
+    "Punchline": "Positional feedback with pixel perfect rear/flank tracking, range indicators, and more.",
+    "AcceptsFeedback": false,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/Avarice-v7.15.0.1/Avarice.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Avarice-v7.15.0.1/Avarice.zip"
+  },
+  {
     "Author": "NeNeppie",
     "Name": "Avant-Garde",
     "InternalName": "AvantGarde",

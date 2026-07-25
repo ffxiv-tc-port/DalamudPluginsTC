@@ -32,6 +32,7 @@ GH = mirror.GH
 LOCAL_PATHS = {
     "AutoHook": r"D:\AutoHook",
     "AutoDuty": r"D:\AutoDuty",
+    "Avarice": r"D:\Avarice",
     "EurekaHelper": r"D:\EurekaHelper",
     "Accountant": r"D:\Accountant",
     "AutoRetainer": r"D:\AutoRetainer",

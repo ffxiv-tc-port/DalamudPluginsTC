@@ -30,6 +30,7 @@ PUBLIC_REPO = "Lother/DalamudPluginsTC"
 SOURCE_REPOS = {
     "AutoHook": "Lother/AutoHook",
     "AutoDuty": "Lother/AutoDuty",
+    "Avarice": "Lother/Avarice",
     "EurekaHelper": "Lother/EurekaHelper",
     "Accountant": "Lother/Accountant",
     "AutoRetainer": "Lother/AutoRetainer",
@@ -124,6 +125,7 @@ ICON_PATHS = {
     # "Journal Stationery Set" item icon via v2.xivapi.com/api/asset.
     "DailyDuty": "DailyDuty/Resources/icon.png",
     "AutoDuty": "logo.png",
+    "Avarice": "Assets/avarice_icon.png",
 }
 
 
