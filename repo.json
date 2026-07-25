@@ -1,6 +1,6 @@
 [
   {
-    "Author": "Ottermandias, Lother",
+    "Author": "Ottermandias",
     "Name": "Accountant",
     "InternalName": "Accountant",
     "AssemblyVersion": "7.15.0.81",
@@ -32,7 +32,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Accountant-v7.15.0.81/Accountant.zip"
   },
   {
-    "Author": "Taurenkey (Puni.sh), Lother",
+    "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
     "AssemblyVersion": "7.15.0.12",
@@ -84,7 +84,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoHook-v7.15.0.2/AutoHook.zip"
   },
   {
-    "Author": "кайт машина (Puni.sh), Lother",
+    "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
     "AssemblyVersion": "7.15.0.107",
@@ -103,7 +103,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.0.107/AutoRetainer.zip"
   },
   {
-    "Author": "NeNeppie, Lother",
+    "Author": "NeNeppie",
     "Name": "Avant-Garde",
     "InternalName": "AvantGarde",
     "AssemblyVersion": "7.15.0.3",
@@ -130,7 +130,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AvantGarde-v7.15.0.3/AvantGarde.zip"
   },
   {
-    "Author": "The Combat Reborn Team, Lother",
+    "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
     "AssemblyVersion": "7.15.0.58",
@@ -154,7 +154,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/BossModReborn-v7.15.0.58/BossModReborn.zip"
   },
   {
-    "Author": "Kouzukii, Lother",
+    "Author": "Kouzukii",
     "Name": "Character Panel Refined",
     "InternalName": "CharacterPanelRefined",
     "AssemblyVersion": "7.15.0.4",
@@ -181,7 +181,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.15.0.4/CharacterPanelRefined.zip"
   },
   {
-    "Author": "Infi, Anna, Lother",
+    "Author": "Infi, Anna",
     "Name": "Chat 2",
     "InternalName": "ChatTwo",
     "AssemblyVersion": "7.15.0.12",
@@ -209,7 +209,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/ChatTwo-v7.15.0.12/ChatTwo.zip"
   },
   {
-    "Author": "Nylfae, Lother",
+    "Author": "Nylfae",
     "Name": "Dynamis",
     "InternalName": "Dynamis",
     "AssemblyVersion": "7.15.0.7",
@@ -235,7 +235,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Dynamis-v7.15.0.7/Dynamis.zip"
   },
   {
-    "Author": "Nylfae, Lother",
+    "Author": "Nylfae",
     "Name": "Dynamis (with Hosted PowerShell)",
     "InternalName": "DynamisWithSMA",
     "AssemblyVersion": "7.15.0.7",
@@ -262,7 +262,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.15.0.7/DynamisWithSMA.zip"
   },
   {
-    "Author": "Snowy, KangasZ, Lother",
+    "Author": "Snowy, KangasZ",
     "Name": "Eureka Helper",
     "InternalName": "EurekaHelper",
     "AssemblyVersion": "7.15.0.68",
@@ -296,7 +296,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/EurekaHelper-v7.15.0.68/EurekaHelper.zip"
   },
   {
-    "Author": "The Combat Reborn Team, Lother",
+    "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
     "AssemblyVersion": "7.15.0.17",
@@ -325,7 +325,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.15.0.17/GatherbuddyReborn.zip"
   },
   {
-    "Author": "img02, Lother",
+    "Author": "img02",
     "Name": "Hunt Helper",
     "InternalName": "HuntHelper",
     "AssemblyVersion": "7.15.0.5",
@@ -352,7 +352,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/HuntHelper-v7.15.0.5/HuntHelper.zip"
   },
   {
-    "Author": "Critical_Impact, Lother",
+    "Author": "Critical_Impact",
     "Name": "Allagan Tools",
     "InternalName": "InventoryTools",
     "AssemblyVersion": "7.15.0.7",
@@ -379,7 +379,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/InventoryTools-v7.15.0.7/InventoryTools.zip"
   },
   {
-    "Author": "electr0sheep, Nuko, Lother",
+    "Author": "electr0sheep, Nuko",
     "Name": "Item Vendor Location",
     "InternalName": "ItemVendorLocation",
     "AssemblyVersion": "7.15.0.6",
@@ -406,7 +406,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.15.0.6/ItemVendorLocation.zip"
   },
   {
-    "Author": "Latihas, Lother",
+    "Author": "Latihas",
     "Name": "LatihasChocobo",
     "InternalName": "LatihasChocobo",
     "AssemblyVersion": "7.15.0.10",
@@ -430,7 +430,7 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/LatihasChocobo.png"
   },
   {
-    "Author": "53m1k0l0n/Gidedin (Puni.sh), Lother",
+    "Author": "53m1k0l0n/Gidedin (Puni.sh)",
     "Name": "LazyLoot",
     "InternalName": "LazyLoot",
     "AssemblyVersion": "7.15.0.6",
@@ -457,7 +457,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/LazyLoot-v7.15.0.6/LazyLoot.zip"
   },
   {
-    "Author": "NightmareXIV, Lother",
+    "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
     "AssemblyVersion": "7.15.0.7",
@@ -485,7 +485,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Lifestream-v7.15.0.7/Lifestream.zip"
   },
   {
-    "Author": "apetih, Lother",
+    "Author": "apetih",
     "Name": "Logogram Helper",
     "InternalName": "LogogramHelper",
     "AssemblyVersion": "7.15.0.8",
@@ -538,7 +538,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/MiniMappingway-v7.15.0.3/MiniMappingway.zip"
   },
   {
-    "Author": "Jukka, Lother",
+    "Author": "Jukka",
     "Name": "NecroLens",
     "InternalName": "NecroLens",
     "AssemblyVersion": "7.15.0.5",
@@ -565,7 +565,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/NecroLens-v7.15.0.5/NecroLens.zip"
   },
   {
-    "Author": "NightmareXIV, Lother",
+    "Author": "NightmareXIV",
     "Name": "NotificationMaster",
     "InternalName": "NotificationMaster",
     "AssemblyVersion": "7.15.0.4",
@@ -591,7 +591,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/NotificationMaster-v7.15.0.4/NotificationMaster.zip"
   },
   {
-    "Author": "Liza Carvelli (Puni.sh), Lother",
+    "Author": "Liza Carvelli (Puni.sh)",
     "Name": "Palace Pal",
     "InternalName": "PalacePal",
     "AssemblyVersion": "7.15.0.6",
@@ -619,7 +619,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/PalacePal-v7.15.0.6/PalacePal.zip"
   },
   {
-    "Author": "Haplo064, Lother",
+    "Author": "Haplo064",
     "Name": "Pixel Perfect",
     "InternalName": "PixelPerfect",
     "AssemblyVersion": "7.15.0.3",
@@ -646,7 +646,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/PixelPerfect-v7.15.0.3/PixelPerfect.zip"
   },
   {
-    "Author": "Kouzukii, Lother",
+    "Author": "Kouzukii",
     "Name": "Price Insight",
     "InternalName": "PriceInsight",
     "AssemblyVersion": "7.15.0.3",
@@ -673,7 +673,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/PriceInsight-v7.15.0.3/PriceInsight.zip"
   },
   {
-    "Author": "UnknownX, Lother",
+    "Author": "UnknownX",
     "Name": "QoL Bar",
     "InternalName": "QoLBar",
     "AssemblyVersion": "7.15.0.10",
@@ -700,7 +700,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/QoLBar-v7.15.0.10/QoLBar.zip"
   },
   {
-    "Author": "Taurenkey, Kagekazu, Lother",
+    "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
     "AssemblyVersion": "7.15.0.302",
@@ -724,7 +724,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Saucy-v7.15.0.302/Saucy.zip"
   },
   {
-    "Author": "daemitus, croizat, Lother",
+    "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
     "AssemblyVersion": "7.15.0.27",
@@ -750,7 +750,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.15.0.27/SomethingNeedDoing.zip"
   },
   {
-    "Author": "Sonar Team, Lother",
+    "Author": "Sonar Team",
     "Name": "Sonar",
     "InternalName": "SonarPlugin",
     "AssemblyVersion": "7.15.0.8",
@@ -777,7 +777,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SonarPlugin-v7.15.0.8/SonarPlugin.zip"
   },
   {
-    "Author": "NightmareXIV, Lother",
+    "Author": "NightmareXIV",
     "Name": "Splatoon",
     "InternalName": "Splatoon",
     "AssemblyVersion": "7.15.0.8",
@@ -803,7 +803,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Splatoon-v7.15.0.8/Splatoon.zip"
   },
   {
-    "Author": "Infi, Lother",
+    "Author": "Infi",
     "Name": "Submarine Tracker",
     "InternalName": "SubmarineTracker",
     "AssemblyVersion": "7.15.0.6",
@@ -830,7 +830,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.0.6/SubmarineTracker.zip"
   },
   {
-    "Author": "MgAl2O4, Lother",
+    "Author": "MgAl2O4",
     "Name": "TriadBuddy",
     "InternalName": "TriadBuddy",
     "AssemblyVersion": "7.15.0.15",
@@ -854,7 +854,7 @@
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/TriadBuddy.png"
   },
   {
-    "Author": "veyn, croizat, Lother",
+    "Author": "veyn, croizat",
     "Name": "Visland",
     "InternalName": "visland",
     "AssemblyVersion": "7.15.0.7",
@@ -882,7 +882,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/visland-v7.15.0.7/visland.zip"
   },
   {
-    "Author": "veyn, Lother",
+    "Author": "veyn",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
     "AssemblyVersion": "7.15.0.9",
@@ -909,7 +909,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/vnavmesh-v7.15.0.9/vnavmesh.zip"
   },
   {
-    "Author": "Team Wrath, Lother",
+    "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
     "AssemblyVersion": "7.15.0.13",
@@ -939,7 +939,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/WrathCombo-v7.15.0.13/WrathCombo.zip"
   },
   {
-    "Author": "cycleapple, Lother",
+    "Author": "cycleapple",
     "Name": "XIV 藏寶圖工具小幫手",
     "InternalName": "XivTreasureParty",
     "AssemblyVersion": "7.15.0.1",
@@ -968,7 +968,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/XivTreasureParty-v7.15.0.1/XivTreasureParty.zip"
   },
   {
-    "Author": "daemitus, croizat, Lother",
+    "Author": "daemitus, croizat",
     "Name": "YesAlready",
     "InternalName": "YesAlready",
     "AssemblyVersion": "7.15.0.7",
@@ -995,7 +995,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/YesAlready-v7.15.0.7/YesAlready.zip"
   },
   {
-    "Author": "KangasZ, Lother",
+    "Author": "KangasZ",
     "Name": "Skip Cutscene",
     "InternalName": "SkipCutscene",
     "AssemblyVersion": "7.15.0.1",
@@ -1022,7 +1022,7 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/SkipCutscene-v7.15.0.1/SkipCutscene.zip"
   },
   {
-    "Author": "MidoriKami, Lother",
+    "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
     "AssemblyVersion": "7.15.0.2",
