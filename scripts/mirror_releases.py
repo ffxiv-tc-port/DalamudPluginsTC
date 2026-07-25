@@ -218,14 +218,18 @@ def build_source_archive(source_repo, tag):
                 f"commit history: {leftover[:5]}"
             )
 
-        # Not a leak risk like .git, but not "source" either - trim repo/CI
-        # meta-files so the archive is just the buildable program (top-level
-        # and every submodule's own).
-        for meta_path in list(clone_dir.rglob(".github")) + list(clone_dir.rglob(".gitignore")):
-            if meta_path.is_dir():
-                shutil.rmtree(meta_path, onerror=_clear_readonly_and_retry)
-            elif meta_path.is_file():
-                meta_path.unlink()
+        # Not a leak risk like .git, but not "source" either - trim repo/CI/
+        # git-plumbing meta-files so the archive is just the buildable
+        # program (top-level and every submodule's own). .gitmodules in
+        # particular would otherwise describe every submodule as an
+        # external reference to fetch separately, which defeats the point
+        # of physically bundling the submodules' own source inline.
+        for pattern in (".github", ".gitignore", ".gitattributes", ".gitmodules"):
+            for meta_path in clone_dir.rglob(pattern):
+                if meta_path.is_dir():
+                    shutil.rmtree(meta_path, onerror=_clear_readonly_and_retry)
+                elif meta_path.is_file():
+                    meta_path.unlink()
 
         zip_base = workdir / f"source-{source_repo.replace('/', '_')}-{tag}"
         archive_path = Path(shutil.make_archive(str(zip_base), "zip", str(clone_dir)))
