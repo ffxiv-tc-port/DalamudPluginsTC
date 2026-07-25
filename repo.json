@@ -57,6 +57,33 @@
     "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/Artisan-v7.15.1.1/Artisan.zip"
   },
   {
+    "Author": "Herculezz",
+    "Name": "AutoDuty",
+    "InternalName": "AutoDuty",
+    "AssemblyVersion": "7.15.0.1",
+    "Description": "A plugin to run dungeons for you with Trust, Duty Support, Squadrons, Variants, and Regular, Requires BossMod, vnavmesh and a Rotation Plugin (Wrath Combo, BossMod AutoRotation, or RotationSolverReborn)",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/Lother/AutoDuty",
+    "Tags": [
+      "Duty",
+      "Automation",
+      "Pathfinding"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/AutoDuty.png",
+    "Punchline": "AutoDuty",
+    "AcceptsFeedback": false,
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoDuty-v7.15.0.1/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoDuty-v7.15.0.1/AutoDuty.zip"
+  },
+  {
     "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
