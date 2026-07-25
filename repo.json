@@ -60,8 +60,8 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.15.0.1",
-    "Description": "A plugin to run dungeons for you with Trust, Duty Support, Squadrons, Variants, and Regular, Requires BossMod, vnavmesh and a Rotation Plugin (Wrath Combo, BossMod AutoRotation, or RotationSolverReborn)",
+    "AssemblyVersion": "7.15.0.2",
+    "Description": "自動幫你跑副本，支援信賴的同伴、達人指引、士官兵團、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/Lother/AutoDuty",
     "Tags": [
@@ -78,10 +78,10 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/icons/AutoDuty.png",
-    "Punchline": "AutoDuty",
+    "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoDuty-v7.15.0.1/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoDuty-v7.15.0.1/AutoDuty.zip"
+    "DownloadLinkInstall": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoDuty-v7.15.0.2/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/Lother/DalamudPluginsTC/releases/download/AutoDuty-v7.15.0.2/AutoDuty.zip"
   },
   {
     "Author": "Det",
