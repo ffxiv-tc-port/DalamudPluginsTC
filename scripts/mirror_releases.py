@@ -154,6 +154,32 @@ def download_asset(asset_url, dest):
         )
 
 
+MAX_CHANGELOG_COMMITS = 25
+
+
+def get_changelog(source_repo, prev_tag, tag):
+    """Build a bullet-list changelog for repo.json's "Changelog" field from
+    the commit messages between the previously-mirrored tag and this one.
+    These commits are all authored by Claude during release work, so the
+    first line of each message is already a reasonable changelog entry -
+    no upstream release-notes body needed (those are just GitHub's
+    auto-generated compare links anyway, and point at a private repo the
+    end user can't open). Returns None if there's no previous tag to diff
+    against (first-ever mirror of this plugin) or the API call fails."""
+    if not prev_tag:
+        return None
+    out = gh("api", f"repos/{source_repo}/compare/{prev_tag}...{tag}", "--jq",
+              '[.commits[].commit.message | split("\\n")[0]] | reverse | .[]', check=False)
+    if not out:
+        return None
+    lines = [line for line in out.splitlines() if line.strip()]
+    if not lines:
+        return None
+    if len(lines) > MAX_CHANGELOG_COMMITS:
+        lines = lines[:MAX_CHANGELOG_COMMITS] + [f"...and {len(lines) - MAX_CHANGELOG_COMMITS} more commits"]
+    return "\n".join(f"- {line}" for line in lines)
+
+
 _source_archive_cache = {}
 _source_archive_locks_guard = threading.Lock()
 _source_archive_locks = defaultdict(threading.Lock)
@@ -280,7 +306,8 @@ def mirror_one(internal_name, source_repo, state, by_internal):
 
     tag = rel["tag"]
     public_tag = f"{internal_name}-{tag}"
-    already_current = state.get(internal_name) == tag
+    prev_tag = state.get(internal_name)
+    already_current = prev_tag == tag
 
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
@@ -357,6 +384,10 @@ def mirror_one(internal_name, source_repo, state, by_internal):
             url = f"https://github.com/{PUBLIC_REPO}/releases/download/{public_tag}/{zip_asset}"
             entry["DownloadLinkInstall"] = url
             entry["DownloadLinkUpdate"] = url
+
+        changelog = get_changelog(source_repo, prev_tag, tag)
+        if changelog:
+            entry["Changelog"] = changelog
 
         state[internal_name] = tag
         return True
