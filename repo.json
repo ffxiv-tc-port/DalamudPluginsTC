@@ -114,7 +114,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.15.1.1",
+    "AssemblyVersion": "7.15.1.2",
     "Description": "躺在床上就能收取並指派雇員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -126,8 +126,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣雇員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.1.1/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.1.1/AutoRetainer.zip"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.1.2/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.15.1.2/AutoRetainer.zip",
+    "Changelog": "- GC 供給列表交換模式:值沒變就不寫入原生記憶體、不洗 log\n- 清除內嵌 manifest 裡殘留的 Lother 網址/署名(org 遷移與先前移除 Author\n- 釘選版 Dalamud 下載來源合併進 DalamudPluginsTC,不再用獨立的 dalamud-tc-pin repo\n- release.yml 觸發改用 workflow_dispatch,不再依賴不穩定的自動 tag-push 派工\n- 在 submodule checkout 步驟加入組織 PAT,讓 CI 能存取私有 submodule\n- 將 dalamud-tc-pin 釘選版本下載來源從 Lother 改指向 ffxiv-tc-port 組織\n- 將 submodule 來源從 Lother 改指向 ffxiv-tc-port 組織"
   },
   {
     "Author": "кайт машина (Puni.sh)",
@@ -512,7 +513,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.15.1.2",
+    "AssemblyVersion": "7.15.1.3",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -533,8 +534,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速以太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.15.1.2/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.15.1.2/Lifestream.zip"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.15.1.3/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.15.1.3/Lifestream.zip",
+    "Changelog": "- 登入時清除殘留的導航路徑,避免蓋掉玩家輸入(含跳躍)\n- 清除內嵌 manifest 裡殘留的 Lother 網址/署名(org 遷移與先前移除 Author\n- 釘選版 Dalamud 下載來源合併進 DalamudPluginsTC,不再用獨立的 dalamud-tc-pin repo\n- release.yml 觸發改用 workflow_dispatch,不再依賴不穩定的自動 tag-push 派工\n- 在 submodule checkout 步驟加入組織 PAT,讓 CI 能存取私有 submodule\n- 將 dalamud-tc-pin 釘選版本下載來源從 Lother 改指向 ffxiv-tc-port 組織\n- 將 submodule 來源從 Lother 改指向 ffxiv-tc-port 組織"
   },
   {
     "Author": "apetih",
@@ -755,7 +757,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.15.1.1",
+    "AssemblyVersion": "7.15.1.2",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -772,8 +774,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.15.1.1/Saucy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.15.1.1/Saucy.zip"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.15.1.2/Saucy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.15.1.2/Saucy.zip",
+    "Changelog": "- release.yml 觸發改用 workflow_dispatch,不再依賴不穩定的自動 tag-push 派工\n- 清除測試 dispatch 時遺留在 README 的一行\n- test: retry auto-dispatch check (will revert)\n- Revert \"test: verify auto-dispatch after workflow resync (will revert)\"\n- test: verify auto-dispatch after workflow resync (will revert)\n- build-check 觸發加上分支推送,喚醒 Actions 事件派工(修正 tag 發版不觸發)\n- 在 submodule checkout 步驟加入組織 PAT,讓 CI 能存取私有 submodule\n- 將 dalamud-tc-pin 釘選版本下載來源從 Lother 改指向 ffxiv-tc-port 組織\n- 將 submodule 來源從 Lother 改指向 ffxiv-tc-port 組織"
   },
   {
     "Author": "daemitus, croizat",
@@ -937,7 +940,7 @@
     "Author": "veyn",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
-    "AssemblyVersion": "7.15.1.2",
+    "AssemblyVersion": "7.15.1.3",
     "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vnavmesh",
@@ -957,8 +960,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/vnavmesh.png",
     "Punchline": "自動移動吧！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.15.1.2/vnavmesh.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.15.1.2/vnavmesh.zip"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.15.1.3/vnavmesh.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.15.1.3/vnavmesh.zip",
+    "Changelog": "- 登入時清除殘留的導航路徑,避免蓋掉玩家輸入(含跳躍)\n- 清除內嵌 manifest 裡殘留的 Lother 網址/署名(org 遷移與先前移除 Author\n- 釘選版 Dalamud 下載來源合併進 DalamudPluginsTC,不再用獨立的 dalamud-tc-pin repo\n- release.yml 觸發改用 workflow_dispatch,不再依賴不穩定的自動 tag-push 派工\n- Revert \"test: verify Actions dispatch after manual enable (will revert)\"\n- test: verify Actions dispatch after manual enable (will revert)\n- 將 dalamud-tc-pin 釘選版本下載來源從 Lother 改指向 ffxiv-tc-port 組織"
   },
   {
     "Author": "Team Wrath",
