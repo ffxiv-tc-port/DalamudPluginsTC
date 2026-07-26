@@ -1020,7 +1020,7 @@
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.15.1.1/XivTreasureParty.zip"
   },
   {
-    "Author": "daemitus, croizat, Lother",
+    "Author": "daemitus, croizat",
     "Name": "YesAlready",
     "InternalName": "YesAlready",
     "AssemblyVersion": "7.15.1.1",
