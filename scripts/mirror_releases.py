@@ -74,6 +74,7 @@ SOURCE_REPOS = {
     "SkipCutscene": "ffxiv-tc-port/SkipCutscene",
     "DailyDuty": "ffxiv-tc-port/DailyDuty",
     "Questionable": "ffxiv-tc-port/Questionable",
+    "TextAdvance": "ffxiv-tc-port/TextAdvance",
 }
 
 # InternalName -> icon path within the source repo (on its default branch).

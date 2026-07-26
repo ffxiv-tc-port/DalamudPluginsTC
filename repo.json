@@ -1133,5 +1133,29 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.15.0.1/Questionable.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.15.0.1/Questionable.zip"
+  },
+  {
+    "Author": "NightmareXIV",
+    "Name": "TextAdvance",
+    "InternalName": "TextAdvance",
+    "AssemblyVersion": "0.0.0.0",
+    "Description": "Quest speedrunning assistance tool. Automatically confirm quest acceptation and completion, skip subtitles, cutscenes and most of prompts.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/ffxiv-tc-port/TextAdvance",
+    "Tags": [
+      "quests",
+      "utility"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TextAdvance.png",
+    "Punchline": "Quest speedrunning assistance tool. Automatically skips subtitle boxes and confirms cutscene skipping",
+    "AcceptsFeedback": false
   }
 ]
