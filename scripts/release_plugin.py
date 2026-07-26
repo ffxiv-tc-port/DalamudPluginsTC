@@ -138,13 +138,38 @@ def already_released(repo_path, tag):
     return remote_sha == head_sha
 
 
-def wait_for_release_run(source_repo, tag, timeout_s=300, poll_s=8):
-    """Poll for the release.yml run triggered by this tag and block until it
-    finishes. Returns (status, conclusion).
+def dispatch_release_run(source_repo, tag, retries=5, delay_s=3):
+    """Explicitly trigger release.yml via workflow_dispatch against the tag
+    just pushed, instead of relying on GitHub's automatic tag-push event
+    dispatch. The ffxiv-tc-port org migration (2026-07-26) left many repos
+    with unreliable automatic push/tag dispatch - some took 10+ minutes to
+    start firing, others never did even after manually clicking "Enable
+    Actions" in the web UI for that repo. workflow_dispatch was 100%
+    reliable in testing regardless of that state, so release.yml's trigger
+    was changed to workflow_dispatch-only and this is now the sole way a
+    release build gets started. Retries a few times since the just-pushed
+    tag ref can take a moment to be resolvable by the dispatch API."""
+    result = None
+    for attempt in range(1, retries + 1):
+        result = subprocess.run(
+            [GH, "workflow", "run", "release.yml", "--repo", source_repo, "--ref", tag],
+            capture_output=True, text=True, encoding="utf-8", errors="replace",
+        )
+        if result.returncode == 0:
+            return
+        if attempt < retries:
+            time.sleep(delay_s)
+    raise RuntimeError(f"gh workflow run release.yml --repo {source_repo} --ref {tag} "
+                        f"failed after {retries} attempts:\n{result.stderr}")
 
-    release.yml triggers on `push: tags: - 'v*'`, so the run's headBranch is
-    the tag name itself (e.g. "v7.15.0.50"), not the BRANCH constant - match
-    against the tag we just pushed, not the working branch."""
+
+def wait_for_release_run(source_repo, tag, timeout_s=300, poll_s=8):
+    """Poll for the release.yml run triggered by dispatch_release_run() and
+    block until it finishes. Returns (status, conclusion).
+
+    release.yml's only trigger is workflow_dispatch (see dispatch_release_run),
+    dispatched against the tag ref - so the run's headBranch is the tag name
+    itself (e.g. "v7.15.0.50"), not the BRANCH constant."""
     deadline = time.time() + timeout_s
     run_id = None
     while time.time() < deadline:
@@ -156,7 +181,7 @@ def wait_for_release_run(source_repo, tag, timeout_s=300, poll_s=8):
         if out.returncode == 0 and (out.stdout or "").strip():
             runs = json.loads(out.stdout)
             for r in runs:
-                if r["event"] == "push" and r["headBranch"] == tag:
+                if r["event"] == "workflow_dispatch" and r["headBranch"] == tag:
                     run_id = r["databaseId"]
                     if r["status"] == "completed":
                         return r["status"], r["conclusion"]
@@ -192,7 +217,8 @@ def release_one(internal_name, source_repo, dry_run=False):
 
     git(repo_path, "tag", tag)
     git(repo_path, "push", "origin", tag)
-    print(f"[{internal_name}] pushed {tag}, waiting for release.yml...")
+    dispatch_release_run(source_repo, tag)
+    print(f"[{internal_name}] pushed {tag}, dispatched release.yml, waiting for it...")
 
     status, conclusion = wait_for_release_run(source_repo, tag)
     if status != "completed" or conclusion != "success":
