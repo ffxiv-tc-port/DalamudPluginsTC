@@ -71,6 +71,7 @@ LOCAL_PATHS = {
     "SkipCutscene": r"D:\ffxiv-tc-port\SkipCutscene",
     "DailyDuty": r"D:\ffxiv-tc-port\DailyDuty",
     "Questionable": r"D:\ffxiv-tc-port\Questionable",
+    "TextAdvance": r"D:\ffxiv-tc-port\TextAdvance",
 }
 
 BRANCH = "tc-7.15"
