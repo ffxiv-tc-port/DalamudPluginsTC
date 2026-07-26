@@ -1107,5 +1107,29 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.15.1.1/DailyDuty.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.15.1.1/DailyDuty.zip"
+  },
+  {
+    "Author": "liza, qstxiv, & various contributors",
+    "Name": "Questionable",
+    "InternalName": "Questionable",
+    "AssemblyVersion": "0.0.0.0",
+    "Description": "A tiny little quest helper plugin, which does quests for you automatically where possible. Uses navmesh to automatically walk to all quest waypoints, and tries to automatically complete all steps along the way (excluding dungeons, single player duties and combat).",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
+    "Tags": [
+      "quests",
+      "msq"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 12,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
+    "Punchline": "A tiny quest helper plugin.",
+    "AcceptsFeedback": false
   }
 ]

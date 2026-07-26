@@ -70,6 +70,7 @@ LOCAL_PATHS = {
     "XivTreasureParty": r"D:\ffxiv-tc-port\XivTreasureParty",
     "SkipCutscene": r"D:\ffxiv-tc-port\SkipCutscene",
     "DailyDuty": r"D:\ffxiv-tc-port\DailyDuty",
+    "Questionable": r"D:\ffxiv-tc-port\Questionable",
 }
 
 BRANCH = "tc-7.15"
