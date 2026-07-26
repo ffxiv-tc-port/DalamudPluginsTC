@@ -99,6 +99,33 @@ def has_uncommitted_changes(repo_path):
     return bool(git(repo_path, "status", "--short"))
 
 
+def latest_git_tag(repo_path):
+    """Latest vMAJOR.MINOR.PATCH.BUILD tag reachable from HEAD, by version
+    sort. Derived from git tags rather than GitHub Releases so it stays
+    correct for a freshly-migrated repo that has every tag but no Release
+    objects yet (the ffxiv-tc-port org migration left the private repos in
+    exactly that state). `--merged HEAD` excludes upstream tags sitting on
+    commits that aren't ancestors of our branch (e.g. AutoHook's upstream
+    v6.x), so those can't be mistaken for our latest release."""
+    out = git(repo_path, "tag", "--merged", "HEAD")
+    versions = []
+    for line in out.splitlines():
+        line = line.strip()
+        # Our release tags are ALWAYS v-prefixed (v7.15.x.y). Skipping the
+        # bare-numeric ones excludes stray legacy/upstream tags that would
+        # otherwise sort higher than ours - e.g. LatihasChocobo carries
+        # "7.50.0.1" (no v) which is > v7.15.1.1 under version sort.
+        if not line.startswith("v"):
+            continue
+        m = VERSION_RE.match(line)
+        if m:
+            versions.append((tuple(int(x) for x in m.groups()), line))
+    if not versions:
+        return None
+    versions.sort()
+    return versions[-1][1]
+
+
 def already_released(repo_path, tag):
     """True if the given tag already exists on origin and points at the
     same commit as the local branch tip - i.e. HEAD has no new work since
@@ -152,8 +179,7 @@ def release_one(internal_name, source_repo, dry_run=False):
               f"commit or stash first")
         return False
 
-    rel = mirror.latest_release(source_repo)
-    latest_tag = rel["tag"] if rel else None
+    latest_tag = latest_git_tag(repo_path)
 
     if latest_tag is not None and already_released(repo_path, latest_tag):
         print(f"[skip] {internal_name}: HEAD already released as {latest_tag}, nothing new to tag")
