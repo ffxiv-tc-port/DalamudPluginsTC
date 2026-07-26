@@ -1,6 +1,6 @@
 # DalamudPluginsTC
 
-台服（TC，Traditional Chinese client）專用的第三方 Dalamud 插件倉庫，彙整 [Lother](https://github.com/Lother) 為 TC 用戶維護的 Dalamud 插件 fork。
+台服（TC，Traditional Chinese client）專用的第三方 Dalamud 插件倉庫，彙整並維護一批供 TC 用戶使用的 Dalamud 插件 fork。
 
 台服目前使用的 Dalamud 版本為 **API Level 12**，而許多插件的官方倉庫已更新至更新的 API 等級，導致無法直接在台服上安裝使用。本倉庫提供這些插件對應 TC 7.15 (API12) 的相容分支，並**已完成全面繁體中文化**（介面採台服官方譯名、對照官方遊戲資料表校訂），讓台服玩家也能使用這些插件。
 
@@ -11,7 +11,7 @@
 3. 在「自訂插件庫」（Custom Plugin Repositories）加入以下網址：
 
 ```
-https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/repo.json
+https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 ```
 
 4. 儲存後即可在插件安裝器中搜尋並安裝下方列出的插件
@@ -56,7 +56,7 @@ https://raw.githubusercontent.com/Lother/DalamudPluginsTC/main/repo.json
 | [**Dynamis**](https://github.com/Exter-N/Dynamis) | 開發 / 除錯 / 逆向工程工具與實驗工作台 |
 | [**Dynamis (with Hosted PowerShell)**](https://github.com/Exter-N/Dynamis) | Dynamis 含內建 PowerShell 版本 |
 | [**Chat 2**](https://github.com/Infiziert90/ChatTwo) | 全新的聊天視窗 |
-| [**XIV 藏寶圖工具小幫手**](https://github.com/Lother/XivTreasureParty) | 藏寶圖組隊協作，與網頁版即時共享房間 |
+| [**XIV 藏寶圖工具小幫手**](https://github.com/ffxiv-tc-port/XivTreasureParty) | 藏寶圖組隊協作，與網頁版即時共享房間 |
 | [**Character Panel Refined**](https://github.com/Kouzukii/ffxiv-characterstatus-refined) | 精簡角色面板，僅顯示暴擊率等實用資訊 |
 | [**AutoHook**](https://github.com/PunishXIV/AutoHook) | 自動甩竿 / 釣魚自動化 |
 | [**Skip Cutscene**](https://github.com/KangasZ/SkipCutscene) | 跳過任務輪盤：主線任務中強制播放的過場動畫 |
