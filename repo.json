@@ -518,7 +518,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.15.1.3",
+    "AssemblyVersion": "7.15.1.4",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -539,9 +539,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速以太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.15.1.3/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.15.1.3/Lifestream.zip",
-    "Changelog": "- 登入時清除殘留的導航路徑,避免蓋掉玩家輸入(含跳躍)\n- 清除內嵌 manifest 裡殘留的 Lother 網址/署名(org 遷移與先前移除 Author\n- 釘選版 Dalamud 下載來源合併進 DalamudPluginsTC,不再用獨立的 dalamud-tc-pin repo\n- release.yml 觸發改用 workflow_dispatch,不再依賴不穩定的自動 tag-push 派工\n- 在 submodule checkout 步驟加入組織 PAT,讓 CI 能存取私有 submodule\n- 將 dalamud-tc-pin 釘選版本下載來源從 Lother 改指向 ffxiv-tc-port 組織\n- 將 submodule 來源從 Lother 改指向 ffxiv-tc-port 組織"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.15.1.4/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.15.1.4/Lifestream.zip",
+    "Changelog": "- 降階「Legacy mode is now」log 從 Information 到 Debug,減少洗版"
   },
   {
     "Author": "apetih",
