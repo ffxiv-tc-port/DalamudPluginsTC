@@ -125,8 +125,18 @@ def latest_git_tag(repo_path):
         if not line.startswith("v"):
             continue
         m = VERSION_RE.match(line)
-        if m:
-            versions.append((tuple(int(x) for x in m.groups()), line))
+        if not m:
+            continue
+        ver = tuple(int(x) for x in m.groups())
+        # Only tags from our own era scheme count (major == ERA_FLOOR major,
+        # i.e. the TC game-patch number). Upstream repos ship 4-part v-tags
+        # with unrelated majors that version-sort above ours and ARE ancestors
+        # of HEAD once upstream history is merged in - e.g. Questionable's
+        # upstream v15.277.7.0, which --merged doesn't exclude and which once
+        # produced a bogus v15.277.7.1 release (2026-07-28).
+        if ver[0] != ERA_FLOOR[0]:
+            continue
+        versions.append((ver, line))
     if not versions:
         return None
     versions.sort()
