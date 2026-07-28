@@ -74,7 +74,10 @@ LOCAL_PATHS = {
     "TextAdvance": r"D:\ffxiv-tc-port\TextAdvance",
 }
 
-BRANCH = "tc-7.15"
+BRANCH = "tc-7.20"
+# TC 7.20 era floor: any repo whose latest tag predates this jumps straight
+# to v7.20.0.1 instead of incrementing its old 7.15-era build number.
+ERA_FLOOR = (7, 20)
 VERSION_RE = re.compile(r"^v?(\d+)\.(\d+)\.(\d+)\.(\d+)$")
 
 
@@ -88,13 +91,15 @@ def git(repo_path, *args, check=True):
 
 def next_tag(internal_name, latest_tag):
     if latest_tag is None:
-        return "v7.15.0.1"
+        return "v7.20.0.1"
     m = VERSION_RE.match(latest_tag)
     if not m:
         raise RuntimeError(f"{internal_name}: latest tag {latest_tag!r} doesn't match "
                             f"the vMAJOR.MINOR.PATCH.BUILD scheme, pick the next tag by hand")
-    major, minor, patch, build = m.groups()
-    return f"v{major}.{minor}.{patch}.{int(build) + 1}"
+    major, minor, patch, build = (int(x) for x in m.groups())
+    if (major, minor) < ERA_FLOOR:
+        return f"v{ERA_FLOOR[0]}.{ERA_FLOOR[1]}.0.1"
+    return f"v{major}.{minor}.{patch}.{build + 1}"
 
 
 def has_uncommitted_changes(repo_path):
