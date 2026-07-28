@@ -72,6 +72,8 @@ LOCAL_PATHS = {
     "DailyDuty": r"D:\ffxiv-tc-port\DailyDuty",
     "Questionable": r"D:\ffxiv-tc-port\Questionable",
     "TextAdvance": r"D:\ffxiv-tc-port\TextAdvance",
+    "Crossingway": r"D:\ffxiv-tc-port\Crossingway",
+    "IINACT": r"D:\ffxiv-tc-port\IINACT",
 }
 
 BRANCH = "tc-7.20"
