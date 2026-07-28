@@ -615,7 +615,7 @@
     "Author": "Jukka",
     "Name": "NecroLens",
     "InternalName": "NecroLens",
-    "AssemblyVersion": "7.15.1.1",
+    "AssemblyVersion": "7.20.0.1",
     "Description": "深層迷宮輔助工具。提供怪物雷達、仇恨、視野範圍等各種資訊。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/NecroLens",
@@ -627,7 +627,7 @@
     "CategoryTags": [
       "Utility"
     ],
-    "DalamudApiLevel": 12,
+    "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
     "LoadSync": false,
     "CanUnloadAsync": false,
@@ -635,8 +635,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/NecroLens.png",
     "Punchline": "真正的死靈術士永遠瞭若指掌深層迷宮……其他人只是用了高科技而已！",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.15.1.1/NecroLens.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.15.1.1/NecroLens.zip"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.1/NecroLens.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.1/NecroLens.zip",
+    "Changelog": "- CI 改用 API13 Dalamud pin (13.0.0.6)\n- 工具鏈與 manifest 對齊 API13\n- 修正 API13 型別漂移:BattleNpcSubKind 列舉名稱與 TerritoryChanged 參數型別\n- 移除 IGameNetwork 相依,改為直接掛鉤 PacketDispatcher.OnReceivePacket\n- Merge remote-tracking branch 'origin/tc-7.15' into tc-api13-draft\n- 清除內嵌 manifest 裡殘留的 Lother 網址/署名(org 遷移與先前移除 Author\n- 釘選版 Dalamud 下載來源合併進 DalamudPluginsTC,不再用獨立的 dalamud-tc-pin repo\n- release.yml 觸發改用 workflow_dispatch,不再依賴不穩定的自動 tag-push 派工\n- 將 dalamud-tc-pin 釘選版本下載來源從 Lother 改指向 ffxiv-tc-port 組織\n- Remove Lother from plugin Author credit (version number is our identifying marker, not the author field)\n- Merge branch 'tc-7.15-async-fix' into tc-api13-draft\n- Fix real API13 drift: drop IPlayerState, rename BaseId/LocalPlayer usages\n- Fix double-Dalamud-reference CS1704 by dropping manual DalamudLibPath refs\n- Revert \"Port to TC 7.15: downgrade to Dalamud.NET.Sdk 12.0.2 / old ImGuiNET, ECommons 3.0.0.8\""
   },
   {
     "Author": "NightmareXIV",
@@ -889,7 +890,7 @@
     "Author": "Infi",
     "Name": "Submarine Tracker",
     "InternalName": "SubmarineTracker",
-    "AssemblyVersion": "7.15.1.1",
+    "AssemblyVersion": "7.20.0.1",
     "Description": "+ 追蹤目前的潛水艇配置、航線與所需時間\n+ 潛水艇配置建構器，協助改良配置並最佳化經驗值\n+ 可自訂的返航與維修通知\n+ 內建豐富資訊的 Helpy 助手\n+ 自訂戰利品總覽，含歷史紀錄與匯出功能\n+ 多種疊加層輔助你完成每日任務\n+ 支援多個部隊",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SubmarineTracker",
@@ -901,7 +902,7 @@
     "CategoryTags": [
       "Utility"
     ],
-    "DalamudApiLevel": 12,
+    "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
     "LoadSync": false,
     "CanUnloadAsync": false,
@@ -909,8 +910,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SubmarineTracker.png",
     "Punchline": "潛水艇的事，不能說。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.1.1/SubmarineTracker.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SubmarineTracker-v7.15.1.1/SubmarineTracker.zip"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SubmarineTracker-v7.20.0.1/SubmarineTracker.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SubmarineTracker-v7.20.0.1/SubmarineTracker.zip",
+    "Changelog": "- CI 釘選版 Dalamud 改用 API13 (dalamud-pin-v13.0.0.6/dalamud-api13-net9.zip)\n- 工具鏈與資訊清單升級至 Dalamud API13\n- IObjectTable.LocalPlayer 於 API13 移至 IClientState.LocalPlayer\n- Merge remote-tracking branch 'origin/tc-7.15' into tc-api13-draft\n- 清除內嵌 manifest 裡殘留的 Lother 網址/署名(org 遷移與先前移除 Author\n- 釘選版 Dalamud 下載來源合併進 DalamudPluginsTC,不再用獨立的 dalamud-tc-pin repo\n- release.yml 觸發改用 workflow_dispatch,不再依賴不穩定的自動 tag-push 派工\n- 將 dalamud-tc-pin 釘選版本下載來源從 Lother 改指向 ffxiv-tc-port 組織\n- Remove Lother from plugin Author credit (version number is our identifying marker, not the author field)\n- API13 port: ImRaii.ColorDisposable -> ImRaii.Color\n- API13 port: replace IPlayerState with IClientState.LocalContentId\n- Revert \"Port to TC 7.15: downgrade to old ImGuiNET/Dalamud.NET.Sdk 12.0.2 API generation\""
   },
   {
     "Author": "MgAl2O4",
