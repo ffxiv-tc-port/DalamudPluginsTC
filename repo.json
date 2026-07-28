@@ -245,7 +245,7 @@
     "Author": "Infi, Anna",
     "Name": "Chat 2",
     "InternalName": "ChatTwo",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "Chat 2 是遊戲內建聊天視窗的完整重寫版外掛。\n支援功能：\n\n- 無限分頁\n- 固定發送到特定頻道的分頁\n- 更靈活的過濾功能\n- RGB 頻道顏色\n- 完全可變字體大小\n- 側邊欄分頁\n- 未讀訊息計數\n- 表情符號\n- 截圖模式（隱藏名稱）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ChatTwo",
@@ -266,9 +266,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ChatTwo.png",
     "Punchline": "電光石火 - ♪ 全新的聊天視窗，一個嶄新美妙的聊天窗口 ♪",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.1/ChatTwo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.1/ChatTwo.zip",
-    "Changelog": "- CI 改用 API13 Dalamud pin (13.0.0.6)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 清除內嵌 manifest 裡殘留的 Lother 網址/署名(org 遷移與先前移除 Author\n- 釘選版 Dalamud 下載來源合併進 DalamudPluginsTC,不再用獨立的 dalamud-tc-pin repo\n- release.yml 觸發改用 workflow_dispatch,不再依賴不穩定的自動 tag-push 派工\n- 將 dalamud-tc-pin 釘選版本下載來源從 Lother 改指向 ffxiv-tc-port 組織\n- Remove Lother from plugin Author credit (version number is our identifying marker, not the author field)\n- Merge branch 'tc-7.15-async-fix' into tc-api13-draft\n- Fix remaining real API13 compile errors, clean build verified\n- Revert TC's API13/API15 downgrade, restore modern ImGui bindings for API13 port"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.2/ChatTwo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.2/ChatTwo.zip",
+    "Changelog": "- 新增「攔截遊戲聊天快捷鍵」開關：關閉後 Enter／斜線／頻道快捷鍵交回遊戲原生聊天輸入框（預設維持攔截），設定位於「聊天視窗」分頁"
   },
   {
     "Author": "Nylfae",
