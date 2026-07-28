@@ -2,7 +2,9 @@
 
 台服（TC，Traditional Chinese client）專用的第三方 Dalamud 插件倉庫，彙整並維護一批供 TC 用戶使用的 Dalamud 插件 fork。
 
-台服目前使用的 Dalamud 版本為 **API Level 12**，而許多插件的官方倉庫已更新至更新的 API 等級，導致無法直接在台服上安裝使用。本倉庫提供這些插件對應 TC 7.15 (API12) 的相容分支，並**已完成全面繁體中文化**（介面採台服官方譯名、對照官方遊戲資料表校訂），讓台服玩家也能使用這些插件。
+台服目前使用的 Dalamud 版本為 **API Level 13**，而許多插件的官方倉庫要求的 API 等級與台服不同，導致無法直接在台服上安裝使用。本倉庫提供這些插件對應 TC 7.20 (API13) 的相容分支，並**已完成全面繁體中文化**（介面採台服官方譯名、對照官方遊戲資料表校訂），讓台服玩家也能使用這些插件。
+
+> 舊版 TC 7.15 (API12) 時代的插件庫已封存於 [`tc-7.15` 分支](https://github.com/ffxiv-tc-port/DalamudPluginsTC/tree/tc-7.15)，仍在使用 7.15 客戶端者可改用該分支的凍結網址。
 
 ## 使用方式
 
@@ -61,11 +63,11 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 | [**AutoHook**](https://github.com/PunishXIV/AutoHook) | 自動甩竿 / 釣魚自動化 |
 | [**Skip Cutscene**](https://github.com/KangasZ/SkipCutscene) | 跳過任務輪盤：主線任務中強制播放的過場動畫 |
 
-所有插件皆為 **TC 7.15 (Dalamud API Level 12)** 相容分支，並持續同步上游更新。
+所有插件皆為 **TC 7.20 (Dalamud API Level 13)** 相容分支，並持續同步上游更新。
 
 ## 為什麼需要這個倉庫？
 
-台服使用的 Dalamud 版本落後於官方插件倉庫所要求的 API 等級，導致許多實用插件無法直接安裝。本倉庫維護這些插件對應 API12 的相容版本，並視情況修正因客戶端差異（如記憶體結構位移、語言判斷等）導致的相容性問題。
+台服使用的 Dalamud 版本與官方插件倉庫所要求的 API 等級不一致，導致許多實用插件無法直接安裝。本倉庫維護這些插件對應 API13 的相容版本，並視情況修正因客戶端差異（如記憶體結構位移、語言判斷等）導致的相容性問題。
 
 ## 繁體中文化
 

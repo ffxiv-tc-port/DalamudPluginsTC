@@ -374,9 +374,14 @@ def mirror_one(internal_name, source_repo, state, by_internal):
             return True
 
         if manifest:
-            for key in ("AssemblyVersion", "Description", "Punchline", "Author"):
+            for key in ("AssemblyVersion", "Description", "Punchline", "Author",
+                        "DalamudApiLevel"):
                 if key in manifest:
                     entry[key] = manifest[key]
+            # Keep the testing level in lockstep with the real one so the era
+            # bump (API12->13) can't leave a stale testing filter behind.
+            if "DalamudApiLevel" in manifest and "TestingDalamudApiLevel" in entry:
+                entry["TestingDalamudApiLevel"] = manifest["DalamudApiLevel"]
         else:
             # No manifest asset published; fall back to parsing the tag itself
             # (e.g. "v7.15.0.47" or "7.15.0.5-cn" -> "7.15.0.47" / "7.15.0.5").
