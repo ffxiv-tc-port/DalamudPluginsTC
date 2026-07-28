@@ -1196,5 +1196,64 @@
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.4/TextAdvance.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.4/TextAdvance.zip",
     "Changelog": "- 修復設定視窗分頁列 NotImplementedException 崩潰(ECommons EzTabBar 改用 ImGui.BeginTabItem)"
+  },
+  {
+    "Author": "Styr1x, PlusoneChiang",
+    "Name": "Crossingway",
+    "InternalName": "Crossingway",
+    "AssemblyVersion": "7.20.0.1",
+    "Description": "在遊戲內渲染 Chromium 瀏覽器覆蓋層,可顯示 IINACT/ACT 戰鬥數據網頁介面、Cactbot 時間軸、YouTube、任意網頁等。\n使用設定按鈕或輸入 /cw config 開啟設定。\nFork 自 Styr1x/Browsingway(繁體中文版客戶端,API 13 / .NET 9)。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/ffxiv-tc-port/Crossingway",
+    "Tags": [
+      "framework",
+      "browser",
+      "inlay",
+      "overlay",
+      "chromium",
+      "act"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 13,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Crossingway.png",
+    "Punchline": "在遊戲內渲染瀏覽器覆蓋層。",
+    "AcceptsFeedback": false,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Crossingway-v7.20.0.1/Crossingway.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Crossingway-v7.20.0.1/Crossingway.zip",
+    "Changelog": "- 修復設定視窗分頁列 NotImplementedException 崩潰(ECommons EzTabBar 改用 ImGui.BeginTabItem)"
+  },
+  {
+    "Author": "Usagi, PlusoneChiang",
+    "Name": "IINACT",
+    "InternalName": "IINACT",
+    "AssemblyVersion": "7.20.0.1",
+    "Description": "在類 ACT 環境中直接執行 FFXIV_ACT_Plugin 的戰鬥數據解析外掛,內建深度改造的 Overlay Plugin 移植版,無需另外安裝 ACT。\n可搭配 Crossingway 在遊戲內顯示戰鬥數據覆蓋層。\nFork 自 marzent/IINACT(繁體中文版客戶端,API 13 / .NET 9,TC opcodes 由 PlusoneChiang 維護)。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/ffxiv-tc-port/IINACT",
+    "Tags": [
+      "parsing",
+      "plugin",
+      "ACT"
+    ],
+    "CategoryTags": [
+      "Utility"
+    ],
+    "DalamudApiLevel": 13,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/IINACT.png",
+    "Punchline": "免 ACT 的戰鬥數據解析外掛。",
+    "AcceptsFeedback": false,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.1/IINACT.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.1/IINACT.zip",
+    "Changelog": "- 修復設定視窗分頁列 NotImplementedException 崩潰(ECommons EzTabBar 改用 ImGui.BeginTabItem)"
   }
 ]

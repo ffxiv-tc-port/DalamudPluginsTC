@@ -75,6 +75,8 @@ SOURCE_REPOS = {
     "DailyDuty": "ffxiv-tc-port/DailyDuty",
     "Questionable": "ffxiv-tc-port/Questionable",
     "TextAdvance": "ffxiv-tc-port/TextAdvance",
+    "Crossingway": "ffxiv-tc-port/Crossingway",
+    "IINACT": "ffxiv-tc-port/IINACT",
 }
 
 # InternalName -> icon path within the source repo (on its default branch).
@@ -128,6 +130,8 @@ ICON_PATHS = {
     "DailyDuty": "DailyDuty/Resources/icon.png",
     "AutoDuty": "logo.png",
     "Avarice": "Assets/avarice_icon.png",
+    "Crossingway": "Crossingway/images/icon.png",
+    "IINACT": "images/icon.png",
     # Questionable: no local icon asset in the repo, upstream's own manifest points at
     # an external CDN IconUrl (puni.sh); icons/Questionable.png is manually sourced from
     # the actual upstream icon at github.com/qstxiv/icons/raw/main/Questionable.png

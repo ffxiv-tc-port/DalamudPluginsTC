@@ -62,6 +62,8 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 | [**Character Panel Refined**](https://github.com/Kouzukii/ffxiv-characterstatus-refined) | 精簡角色面板，僅顯示暴擊率等實用資訊 |
 | [**AutoHook**](https://github.com/PunishXIV/AutoHook) | 自動甩竿 / 釣魚自動化 |
 | [**Skip Cutscene**](https://github.com/KangasZ/SkipCutscene) | 跳過任務輪盤：主線任務中強制播放的過場動畫 |
+| [**IINACT**](https://github.com/marzent/IINACT) | 免 ACT 的戰鬥數據解析外掛(內建 Overlay Plugin 移植版,TC opcodes 由 PlusoneChiang 維護) |
+| [**Crossingway**](https://github.com/Styr1x/Browsingway) | 遊戲內 Chromium 瀏覽器覆蓋層(可搭配 IINACT 顯示戰鬥數據、Cactbot 時間軸等) |
 
 所有插件皆為 **TC 7.20 (Dalamud API Level 13)** 相容分支，並持續同步上游更新。
 
