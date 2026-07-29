@@ -274,7 +274,7 @@
     "Author": "Nylfae",
     "Name": "Dynamis",
     "InternalName": "Dynamis",
-    "AssemblyVersion": "7.20.0.3",
+    "AssemblyVersion": "7.20.0.4",
     "Description": "本插件包含多種透過動態分析輔助遊戲逆向工程與原型製作的工具。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Dynamis",
@@ -293,15 +293,15 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Dynamis.png",
     "Punchline": "開發/除錯/逆向工程工具與實驗工作台。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Dynamis-v7.20.0.3/Dynamis.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Dynamis-v7.20.0.3/Dynamis.zip",
-    "Changelog": "- 修正 TC 7.20 簽名:hosting 啟動失敗 (_freeMemory 掃描不到)"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Dynamis-v7.20.0.4/Dynamis.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Dynamis-v7.20.0.4/Dynamis.zip",
+    "Changelog": "- 合併上游 Dynamis 0.1.4.2（8 個 commit，純修正無 API 變更）\n- 0.1.4.2\n- Fix Changelog responding to main command\n- Fix IPFD arg count mismatch\n- 0.1.4.1\n- Add null check in NanoCOM probe\n- Try to make IPFD less finicky\n- Add interface visibility settings\n- Optimize annotation string manipulations"
   },
   {
     "Author": "Nylfae",
     "Name": "Dynamis (with Hosted PowerShell)",
     "InternalName": "DynamisWithSMA",
-    "AssemblyVersion": "7.20.0.3",
+    "AssemblyVersion": "7.20.0.4",
     "Description": "本插件包含多種透過動態分析輔助遊戲逆向工程與原型製作的工具，此版本額外內建 PowerShell 主機。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Dynamis",
@@ -321,9 +321,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DynamisWithSMA.png",
     "Punchline": "開發/除錯/逆向工程工具與實驗工作台（含內建 PowerShell）。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.20.0.3/DynamisWithSMA.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.20.0.3/DynamisWithSMA.zip",
-    "Changelog": "- 修正 TC 7.20 簽名:hosting 啟動失敗 (_freeMemory 掃描不到)"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.20.0.4/DynamisWithSMA.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.20.0.4/DynamisWithSMA.zip",
+    "Changelog": "- 合併上游 Dynamis 0.1.4.2（8 個 commit，純修正無 API 變更）\n- 0.1.4.2\n- Fix Changelog responding to main command\n- Fix IPFD arg count mismatch\n- 0.1.4.1\n- Add null check in NanoCOM probe\n- Try to make IPFD less finicky\n- Add interface visibility settings\n- Optimize annotation string manipulations"
   },
   {
     "Author": "Snowy, KangasZ",
@@ -890,7 +890,7 @@
     "Author": "Infi",
     "Name": "Submarine Tracker",
     "InternalName": "SubmarineTracker",
-    "AssemblyVersion": "7.20.0.4",
+    "AssemblyVersion": "7.20.0.5",
     "Description": "+ 追蹤目前的潛水艇配置、航線與所需時間\n+ 潛水艇配置建構器，協助改良配置並最佳化經驗值\n+ 可自訂的返航與維修通知\n+ 內建豐富資訊的 Helpy 助手\n+ 自訂戰利品總覽，含歷史紀錄與匯出功能\n+ 多種疊加層輔助你完成每日任務\n+ 支援多個公會",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SubmarineTracker",
@@ -910,9 +910,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SubmarineTracker.png",
     "Punchline": "潛水艇的事，不能說。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SubmarineTracker-v7.20.0.4/SubmarineTracker.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SubmarineTracker-v7.20.0.4/SubmarineTracker.zip",
-    "Changelog": "- 修正拖曳等級滑桿時每畫格同步寫設定檔"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SubmarineTracker-v7.20.0.5/SubmarineTracker.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SubmarineTracker-v7.20.0.5/SubmarineTracker.zip",
+    "Changelog": "- 合併上游 SubmarineTracker（2 個 commit）\n- - Implement option to ignore escape closing windows\n- - Remove FC requirement for route calculations"
   },
   {
     "Author": "MgAl2O4",
