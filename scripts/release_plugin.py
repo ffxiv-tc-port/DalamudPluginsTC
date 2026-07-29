@@ -123,16 +123,41 @@ def latest_git_tag(repo_path):
     return versions[-1][1]
 
 
-def already_released(repo_path, tag):
+def tag_points_at_head(repo_path, tag):
     """True if the given tag already exists on origin and points at the
-    same commit as the local branch tip - i.e. HEAD has no new work since
-    that release, so cutting another tag would be a no-op duplicate."""
+    same commit as the local branch tip."""
     remote_sha = git(repo_path, "ls-remote", "origin", f"refs/tags/{tag}", check=False)
     if not remote_sha:
         return False
     remote_sha = remote_sha.split()[0]
     head_sha = git(repo_path, "rev-parse", "HEAD")
     return remote_sha == head_sha
+
+
+def release_has_assets(source_repo, tag):
+    """True if a GitHub release exists for the tag AND carries at least one
+    asset. A tag alone proves nothing: release_one pushes the tag BEFORE the
+    CI run, so a failed/timed-out build leaves the tag in place with no
+    release behind it. Judging "already released" by tag existence alone then
+    permanently skips that plugin on every rerun (the tag matches HEAD, so it
+    looks done) - the only escape used to be manually deleting the tag."""
+    result = subprocess.run(
+        [GH, "release", "view", tag, "--repo", source_repo,
+         "--json", "assets", "-q", ".assets | length"],
+        capture_output=True, text=True, encoding="utf-8", errors="replace",
+    )
+    if result.returncode != 0:
+        return False
+    try:
+        return int(result.stdout.strip()) > 0
+    except ValueError:
+        return False
+
+
+def already_released(repo_path, source_repo, tag):
+    """True only if the tag points at HEAD AND its release build actually
+    succeeded (a release with assets exists)."""
+    return tag_points_at_head(repo_path, tag) and release_has_assets(source_repo, tag)
 
 
 def dispatch_release_run(source_repo, tag, retries=5, delay_s=3):
@@ -256,19 +281,30 @@ def release_one(internal_name, source_repo, dry_run=False):
 
     latest_tag = latest_git_tag(repo_path)
 
-    if latest_tag is not None and already_released(repo_path, latest_tag):
-        say(f"[skip] {internal_name}: HEAD already released as {latest_tag}, nothing new to tag")
-        return True
+    if latest_tag is not None and tag_points_at_head(repo_path, latest_tag):
+        if release_has_assets(source_repo, latest_tag):
+            say(f"[skip] {internal_name}: HEAD already released as {latest_tag}, nothing new to tag")
+            return True
+        # Tag exists at HEAD but its release build never succeeded (failed or
+        # timed-out CI after the tag push). Re-dispatch the SAME tag instead of
+        # cutting a duplicate - and instead of the old behavior, which judged
+        # by tag existence alone and skipped here forever.
+        say(f"[{internal_name}] {latest_tag} exists at HEAD but has no release assets - re-dispatching CI")
+        if dry_run:
+            return True
+        tag = latest_tag
+        dispatch_release_run(source_repo, tag)
+        say(f"[{internal_name}] re-dispatched release.yml for {tag}, waiting for CI...")
+    else:
+        tag = next_tag(internal_name, latest_tag)
+        say(f"[{internal_name}] next tag: {tag}")
+        if dry_run:
+            return True
 
-    tag = next_tag(internal_name, latest_tag)
-    say(f"[{internal_name}] next tag: {tag}")
-    if dry_run:
-        return True
-
-    git(repo_path, "tag", tag)
-    git(repo_path, "push", "origin", tag)
-    dispatch_release_run(source_repo, tag)
-    say(f"[{internal_name}] pushed {tag}, dispatched release.yml, waiting for CI...")
+        git(repo_path, "tag", tag)
+        git(repo_path, "push", "origin", tag)
+        dispatch_release_run(source_repo, tag)
+        say(f"[{internal_name}] pushed {tag}, dispatched release.yml, waiting for CI...")
 
     status, conclusion = wait_for_release_run(source_repo, tag)
     if status != "completed" or conclusion != "success":
