@@ -118,7 +118,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.7",
+    "AssemblyVersion": "7.20.0.8",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -130,9 +130,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.7/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.7/AutoRetainer.zip",
-    "Changelog": "- 統一術語:雇員改僱員"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.8/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.8/AutoRetainer.zip",
+    "Changelog": "- 修正商人互動非等冪重試、清理繁中翻譯殘留字\n- fix item ids for collectables (#155)"
   },
   {
     "Author": "кайт машина (Puni.sh)",
@@ -364,7 +364,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.20.0.8",
+    "AssemblyVersion": "7.20.0.9",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -386,9 +386,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.8/GatherbuddyReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.8/GatherbuddyReborn.zip",
-    "Changelog": "- 限時採集點達標後改為用完剩餘採集次數,不再提早關閉採集視窗"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.9/GatherbuddyReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.9/GatherbuddyReborn.zip",
+    "Changelog": "- 修復魚類全被過濾時開啟釣魚計時視窗崩潰,並修正 ECommons EzTabBar stub 例外"
   },
   {
     "Author": "img02",
@@ -670,7 +670,7 @@
     "Author": "Liza Carvelli (Puni.sh)",
     "Name": "Palace Pal",
     "InternalName": "PalacePal",
-    "AssemblyVersion": "7.20.0.2",
+    "AssemblyVersion": "7.20.0.3",
     "Description": "顯示死者宮殿、天之御柱、正統優雷卡中可能的陷阱與寶藏位置。\n\n此插件需要 Splatoon 才能在畫面上繪製各種標示。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PalacePal",
@@ -691,9 +691,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/PalacePal.png",
     "Punchline": "顯示死者宮殿、天之御柱、正統優雷卡中可能的陷阱與寶藏位置。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.2/PalacePal.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.2/PalacePal.zip",
-    "Changelog": "- 修正 TraditionalChinese 語言值導致整個外掛載入失敗"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.3/PalacePal.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.3/PalacePal.zip",
+    "Changelog": "- 修正本地陷阱偵測偏移錯誤,並更正繁中譯名為官方「魔陶器」系列"
   },
   {
     "Author": "Haplo064",
@@ -972,7 +972,7 @@
     "Author": "veyn",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
-    "AssemblyVersion": "7.20.0.3",
+    "AssemblyVersion": "7.20.0.4",
     "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vnavmesh",
@@ -992,9 +992,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/vnavmesh.png",
     "Punchline": "自動移動吧！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.3/vnavmesh.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.3/vnavmesh.zip",
-    "Changelog": "- 修正 TC 7.20 攝影機結構位移(+0x10)造成 Legacy 模式移動方向錯誤"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.4/vnavmesh.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.4/vnavmesh.zip",
+    "Changelog": "- 修正圓柱碰撞器的 scale Z 分量誤用 bbox Z 差值"
   },
   {
     "Author": "Team Wrath",
@@ -1260,7 +1260,7 @@
     "Author": "Ice",
     "Name": "Chilled Leves",
     "InternalName": "ChilledLeves",
-    "AssemblyVersion": "7.20.0.2",
+    "AssemblyVersion": "7.20.0.3",
     "Description": "理符任務輔助工具：讓你挑選想接的理符任務，並自動前往接取、執行與繳交。注意：必須先安裝 vnavmesh 才能使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ChilledLeves",
@@ -1280,9 +1280,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ChilledLeves.png",
     "Punchline": "理符任務，冰鎮上桌。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.2/ChilledLeves.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.2/ChilledLeves.zip",
-    "Changelog": "- 介面繁體中文化：接上 ECommons .Loc() 與 LanguageChineseTraditional.ini"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.3/ChilledLeves.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.3/ChilledLeves.zip",
+    "Changelog": "- 修正委託清單狀態圖示紋理載入中的 NRE 風險\n- 修正香煎草原(Kugane)釣魚委託 NPC Geimrael 座標偏移"
   },
   {
     "Author": "Ice",
