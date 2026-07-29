@@ -28,60 +28,29 @@ import mirror_releases as mirror
 
 GH = mirror.GH
 
-# InternalName -> local checkout path (relative to this repo's parent, D:\)
+FLEET_ROOT = Path(r"D:\ffxiv-tc-port")
+
+# InternalNames that do NOT have a checkout of their own because they ship from
+# another plugin's repo and tag. Releasing these directly is meaningless - they
+# come along for free when their host repo is released.
+#   DynamisWithSMA: second asset pair produced by Dynamis's own release.yml.
+ALIAS_INTERNAL_NAMES = {"DynamisWithSMA"}
+
+# InternalName -> local checkout, DERIVED from mirror.SOURCE_REPOS rather than
+# hand-listed. Verified 2026-07-29 against the previous hand-written table:
+# all 52 real checkouts are exactly FLEET_ROOT / <repo name>, zero exceptions -
+# including the ones that look like exceptions (TriadBuddy ->
+# FFTriadBuddyDalamud, BossModReborn -> BossmodReborn, GatherbuddyReborn ->
+# GatherBuddyReborn), because the repo name already encodes the difference.
+#
+# This used to be a third registration point next to SOURCE_REPOS and
+# ICON_PATHS, and on 2026-07-29 forgetting it made all 8 newly-onboarded
+# plugins silently `[skip] no LOCAL_PATHS entry` on release. Deriving it
+# removes that failure mode entirely.
 LOCAL_PATHS = {
-    "ChilledLeves": r"D:\ffxiv-tc-port\ChilledLeves",
-    "ICE": r"D:\ffxiv-tc-port\ICE",
-    "Deliveroo": r"D:\ffxiv-tc-port\Deliveroo",
-    "Gearsetter": r"D:\ffxiv-tc-port\Gearsetter",
-    "vfaux": r"D:\ffxiv-tc-port\vfaux",
-    "Marketbuddy": r"D:\ffxiv-tc-port\Marketbuddy",
-    "JobBars": r"D:\ffxiv-tc-port\JobBars",
-    "BOCCHI": r"D:\ffxiv-tc-port\BOCCHI",
-    "AutoHook": r"D:\ffxiv-tc-port\AutoHook",
-    "AutoDuty": r"D:\ffxiv-tc-port\AutoDuty",
-    "Avarice": r"D:\ffxiv-tc-port\Avarice",
-    "EurekaHelper": r"D:\ffxiv-tc-port\EurekaHelper",
-    "Accountant": r"D:\ffxiv-tc-port\Accountant",
-    "AutoRetainer": r"D:\ffxiv-tc-port\AutoRetainer",
-    "Saucy": r"D:\ffxiv-tc-port\Saucy",
-    "LogogramHelper": r"D:\ffxiv-tc-port\LogogramHelper",
-    "TriadBuddy": r"D:\ffxiv-tc-port\FFTriadBuddyDalamud",
-    "SomethingNeedDoing": r"D:\ffxiv-tc-port\SomethingNeedDoing",
-    "BossModReborn": r"D:\ffxiv-tc-port\BossmodReborn",
-    "WrathCombo": r"D:\ffxiv-tc-port\WrathCombo",
-    "LatihasChocobo": r"D:\ffxiv-tc-port\LatihasChocobo",
-    "Artisan": r"D:\ffxiv-tc-port\Artisan",
-    "Splatoon": r"D:\ffxiv-tc-port\Splatoon",
-    "vnavmesh": r"D:\ffxiv-tc-port\vnavmesh",
-    "InventoryTools": r"D:\ffxiv-tc-port\InventoryTools",
-    "Lifestream": r"D:\ffxiv-tc-port\Lifestream",
-    "visland": r"D:\ffxiv-tc-port\visland",
-    "SubmarineTracker": r"D:\ffxiv-tc-port\SubmarineTracker",
-    "YesAlready": r"D:\ffxiv-tc-port\YesAlready",
-    "GatherbuddyReborn": r"D:\ffxiv-tc-port\GatherBuddyReborn",
-    "ItemVendorLocation": r"D:\ffxiv-tc-port\ItemVendorLocation",
-    "CharacterPanelRefined": r"D:\ffxiv-tc-port\CharacterPanelRefined",
-    "HuntHelper": r"D:\ffxiv-tc-port\HuntHelper",
-    "LazyLoot": r"D:\ffxiv-tc-port\LazyLoot",
-    "MiniMappingway": r"D:\ffxiv-tc-port\MiniMappingway",
-    "NecroLens": r"D:\ffxiv-tc-port\NecroLens",
-    "NotificationMaster": r"D:\ffxiv-tc-port\NotificationMaster",
-    "PalacePal": r"D:\ffxiv-tc-port\PalacePal",
-    "PixelPerfect": r"D:\ffxiv-tc-port\PixelPerfect",
-    "PriceInsight": r"D:\ffxiv-tc-port\PriceInsight",
-    "QoLBar": r"D:\ffxiv-tc-port\QoLBar",
-    "SonarPlugin": r"D:\ffxiv-tc-port\SonarPlugin",
-    "AvantGarde": r"D:\ffxiv-tc-port\AvantGarde",
-    "Dynamis": r"D:\ffxiv-tc-port\Dynamis",
-    "ChatTwo": r"D:\ffxiv-tc-port\ChatTwo",
-    "XivTreasureParty": r"D:\ffxiv-tc-port\XivTreasureParty",
-    "SkipCutscene": r"D:\ffxiv-tc-port\SkipCutscene",
-    "DailyDuty": r"D:\ffxiv-tc-port\DailyDuty",
-    "Questionable": r"D:\ffxiv-tc-port\Questionable",
-    "TextAdvance": r"D:\ffxiv-tc-port\TextAdvance",
-    "Crossingway": r"D:\ffxiv-tc-port\Crossingway",
-    "IINACT": r"D:\ffxiv-tc-port\IINACT",
+    name: str(FLEET_ROOT / src.split("/", 1)[1])
+    for name, src in mirror.SOURCE_REPOS.items()
+    if name not in ALIAS_INTERNAL_NAMES
 }
 
 BRANCH = "tc-7.20"
@@ -190,31 +159,51 @@ def dispatch_release_run(source_repo, tag, retries=5, delay_s=3):
                         f"failed after {retries} attempts:\n{result.stderr}")
 
 
-def wait_for_release_run(source_repo, tag, timeout_s=300, poll_s=8):
+def _poll_release_run(source_repo, tag):
+    """One lookup of the dispatched run. Returns (found, status, conclusion)."""
+    out = subprocess.run(
+        [GH, "run", "list", "--repo", source_repo, "--workflow=release.yml",
+         "--limit", "5", "--json", "databaseId,headBranch,event,status,conclusion,displayTitle"],
+        capture_output=True, text=True, encoding="utf-8", errors="replace",
+    )
+    if out.returncode != 0 or not (out.stdout or "").strip():
+        return False, None, None
+    for r in json.loads(out.stdout):
+        if r["event"] == "workflow_dispatch" and r["headBranch"] == tag:
+            return True, r["status"], r["conclusion"]
+    return False, None, None
+
+
+def wait_for_release_run(source_repo, tag, timeout_s=900, poll_s=8):
     """Poll for the release.yml run triggered by dispatch_release_run() and
     block until it finishes. Returns (status, conclusion).
 
     release.yml's only trigger is workflow_dispatch (see dispatch_release_run),
     dispatched against the tag ref - so the run's headBranch is the tag name
-    itself (e.g. "v7.15.0.50"), not the BRANCH constant."""
+    itself (e.g. "v7.15.0.50"), not the BRANCH constant.
+
+    timeout_s was 300 until 2026-07-29, which was SHORTER THAN REAL BUILDS and
+    the live source of this script's documented history of false negatives:
+    measured release.yml durations at the time were BossModReborn 387s and
+    Artisan 343s, both of which reported [FAIL] on releases that had actually
+    succeeded. Raised to 900s, and the deadline is now followed by one final
+    lookup so a run that completes in the last poll interval isn't misreported."""
     deadline = time.time() + timeout_s
-    run_id = None
+    seen = False
     while time.time() < deadline:
-        out = subprocess.run(
-            [GH, "run", "list", "--repo", source_repo, "--workflow=release.yml",
-             "--limit", "5", "--json", "databaseId,headBranch,event,status,conclusion,displayTitle"],
-            capture_output=True, text=True, encoding="utf-8", errors="replace",
-        )
-        if out.returncode == 0 and (out.stdout or "").strip():
-            runs = json.loads(out.stdout)
-            for r in runs:
-                if r["event"] == "workflow_dispatch" and r["headBranch"] == tag:
-                    run_id = r["databaseId"]
-                    if r["status"] == "completed":
-                        return r["status"], r["conclusion"]
-                    break
+        found, status, conclusion = _poll_release_run(source_repo, tag)
+        seen = seen or found
+        if found and status == "completed":
+            return status, conclusion
         time.sleep(poll_s)
-    return ("timeout", None) if run_id is None else ("timeout", "unknown")
+
+    # One last look - the loop can exit with a run that finished during the
+    # final sleep, and reporting FAIL for a successful release is worse than
+    # waiting one more round-trip.
+    found, status, conclusion = _poll_release_run(source_repo, tag)
+    if found and status == "completed":
+        return status, conclusion
+    return ("timeout", None) if not (seen or found) else ("timeout", "unknown")
 
 
 def release_one(internal_name, source_repo, dry_run=False):
@@ -268,12 +257,22 @@ def main():
     args = parser.parse_args()
 
     if args.all:
-        targets = list(mirror.SOURCE_REPOS.keys())
+        # Exclude alias InternalNames: they have no checkout of their own, so
+        # including them made every single --all run report a phantom failure
+        # ("[skip] DynamisWithSMA: no LOCAL_PATHS entry"). A run that always
+        # ends with "1 failed" trains you to ignore the failure count, which is
+        # worse than the non-problem it was reporting.
+        targets = [n for n in mirror.SOURCE_REPOS if n not in ALIAS_INTERNAL_NAMES]
     else:
         targets = args.plugins
         unknown = [t for t in targets if t not in mirror.SOURCE_REPOS]
         if unknown:
             sys.exit(f"Unknown plugin(s): {unknown}. Known: {list(mirror.SOURCE_REPOS.keys())}")
+        aliases = [t for t in targets if t in ALIAS_INTERNAL_NAMES]
+        if aliases:
+            sys.exit(f"{aliases} ship from another plugin's repo and cannot be released "
+                     f"directly - release the host plugin instead (e.g. Dynamis for "
+                     f"DynamisWithSMA).")
 
     if not targets:
         sys.exit("Nothing to do — pass plugin names or --all")
@@ -299,8 +298,21 @@ def main():
     if args.dry_run or args.skip_mirror or not ok:
         return
 
+    if args.all:
+        scope = None  # full sweep; we touched everything anyway
+    else:
+        # Scope the mirror to what we actually released - a full sweep is ~156
+        # `gh` round-trips regardless of how little changed.
+        #
+        # Expand by SOURCE REPO, not by name: releasing Dynamis also builds
+        # DynamisWithSMA's assets from the same tag, and mirroring only
+        # "Dynamis" would leave DynamisWithSMA's feed entry pointing at the
+        # previous release.
+        released_repos = {mirror.SOURCE_REPOS[n] for n in ok}
+        scope = sorted(n for n, r in mirror.SOURCE_REPOS.items() if r in released_repos)
+
     print("\nRunning mirror_releases.py to sync repo.json...")
-    mirror.main()
+    mirror.main(only=scope)
 
 
 if __name__ == "__main__":

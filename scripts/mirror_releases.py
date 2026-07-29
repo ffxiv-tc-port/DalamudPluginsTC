@@ -339,7 +339,19 @@ def mirror_one(internal_name, source_repo, state, by_internal):
         tmp = Path(tmp)
         local_files = []
         manifest = None
-        own_assets = [a for a in rel["assets"] if Path(a["name"]).stem == internal_name]
+        # Case-INSENSITIVE stem match. GatherbuddyReborn publishes its manifest as
+        # "GatherBuddyReborn.json" (capital B) while its InternalName is
+        # "GatherbuddyReborn" - a one-character difference that made the manifest
+        # invisible here for the plugin's entire life, so its Description /
+        # Punchline / Author / DalamudApiLevel were NEVER synced (it silently fell
+        # through to the parse-version-out-of-the-tag path below). Harmless so far
+        # only because those fields happened to be hand-correct; the real danger is
+        # DalamudApiLevel going stale across an API bump, which is the field Dalamud
+        # uses to decide whether to offer the plugin at all. Found 2026-07-29.
+        # Verified no two InternalNames collide when lowercased, and that
+        # Dynamis/DynamisWithSMA still separate correctly.
+        own_assets = [a for a in rel["assets"]
+                      if Path(a["name"]).stem.lower() == internal_name.lower()]
         assets_to_fetch = own_assets if own_assets else rel["assets"]
 
         existing = gh("release", "view", public_tag, "--repo", PUBLIC_REPO,
@@ -356,10 +368,18 @@ def mirror_one(internal_name, source_repo, state, by_internal):
               else f"[fixing up] {internal_name}: {tag} (missing source asset)")
 
         for asset in assets_to_fetch:
+            is_manifest = asset["name"].endswith(".json") and (
+                not own_assets
+                or Path(asset["name"]).stem.lower() == internal_name.lower())
+            # When the public release already carries every asset, the only thing
+            # still needed from the source release is the manifest (to refresh
+            # repo.json) - don't re-download multi-MB zips just to throw them away.
+            if release_exists and not is_manifest:
+                continue
             dest = tmp / asset["name"]
             download_asset(asset["url"], dest)
             local_files.append(dest)
-            if asset["name"].endswith(".json") and (not own_assets or Path(asset["name"]).stem == internal_name):
+            if is_manifest:
                 manifest = json.loads(dest.read_text(encoding="utf-8"))
 
         # Bundle a matching source snapshot alongside the binary, uniformly for
@@ -368,10 +388,17 @@ def mirror_one(internal_name, source_repo, state, by_internal):
         # .git is stripped (top-level + every submodule's own) so this can't
         # leak real commit-author identity, only the "Lother" alias already
         # public via every RepoUrl in repo.json.
-        src_zip = build_source_archive(source_repo, tag)
-        named_src_zip = tmp / f"{internal_name}-source.zip"
-        if src_zip != named_src_zip:
-            shutil.copyfile(src_zip, named_src_zip)
+        #
+        # Only built when it's actually going to be uploaded - this is the single
+        # most expensive operation in the script (a full recursive clone of the
+        # tagged commit), and the "already mirrored, just refreshing repo.json"
+        # path has no use for it.
+        named_src_zip = None
+        if not release_exists or not has_source_asset:
+            src_zip = build_source_archive(source_repo, tag)
+            named_src_zip = tmp / f"{internal_name}-source.zip"
+            if src_zip != named_src_zip:
+                shutil.copyfile(src_zip, named_src_zip)
 
         if not release_exists:
             gh("release", "create", public_tag,
@@ -389,8 +416,16 @@ def mirror_one(internal_name, source_repo, state, by_internal):
 
         entry = by_internal.get(internal_name)
         if entry is None:
-            print(f"[warn] {internal_name} not present in repo.json, skipping metadata update")
-            state[internal_name] = tag
+            # Deliberately do NOT record state here. Recording it would make the
+            # next run see already_current==True and short-circuit to
+            # "[up to date]", so the metadata would never be written even after
+            # somebody adds the repo.json entry - the plugin would sit on
+            # placeholder version/download links forever and the only fix would be
+            # hand-editing release-state.json. Leaving state unset costs one
+            # repeated asset download next run and then self-heals.
+            print(f"[warn] {internal_name}: no repo.json entry - release mirrored, but "
+                  f"metadata NOT synced and state NOT recorded. Add the entry and "
+                  f"re-run; it will pick up from here.")
             return True
 
         if manifest:
@@ -424,34 +459,68 @@ def mirror_one(internal_name, source_repo, state, by_internal):
         return True
 
 
-def main():
+def main(only=None):
+    """Mirror releases into this repo's releases + repo.json.
+
+    `only` restricts the run to specific InternalNames; None sweeps everything.
+    A full sweep costs >= 2 `gh` calls per plugin (latest_release + release view)
+    plus one per icon - ~156 round-trips across 53 plugins even when nothing has
+    changed - so release_plugin.py passes just the plugins it actually released.
+    """
     state = load_json(STATE_FILE, {})
     repo_json = load_json(REPO_JSON, [])
     by_internal = {e["InternalName"]: e for e in repo_json}
 
+    if only is not None:
+        unknown = sorted(set(only) - set(SOURCE_REPOS))
+        if unknown:
+            print(f"[warn] not in SOURCE_REPOS, ignoring: {unknown}")
+    targets = {n: r for n, r in SOURCE_REPOS.items()
+               if only is None or n in set(only)}
+
     changed = False
 
-    for internal_name, source_repo in SOURCE_REPOS.items():
-        entry = by_internal.get(internal_name)
-        if entry is not None and sync_icon(internal_name, source_repo, entry):
-            print(f"[icon updated] {internal_name}")
-            changed = True
-
-    def run_and_persist(internal_name, source_repo):
-        result = mirror_one(internal_name, source_repo, state, by_internal)
+    def persist(also_repo_json):
         # state/repo_json/by_internal are shared across threads - only the
         # persistence (and the entry mutations inside mirror_one, which all
         # happen before this point in the same call) need serializing.
         with _persist_lock:
-            STATE_FILE.write_text(json.dumps(state, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-            if result:
-                REPO_JSON.write_text(json.dumps(repo_json, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+            STATE_FILE.write_text(json.dumps(state, indent=2, ensure_ascii=False) + "\n",
+                                  encoding="utf-8")
+            if also_repo_json:
+                REPO_JSON.write_text(json.dumps(repo_json, indent=2, ensure_ascii=False) + "\n",
+                                     encoding="utf-8")
+
+    # Icon sync used to be a serial loop over every plugin - ~50 `gh api`
+    # round-trips completed before any mirroring even started, and the single
+    # slowest part of an otherwise no-op run. Each call touches a different
+    # plugin's own repo.json entry and its own icons/<name>.png, so there is
+    # nothing to serialize.
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        icon_futures = {
+            pool.submit(sync_icon, name, repo, by_internal[name]): name
+            for name, repo in targets.items() if name in by_internal
+        }
+        for future in as_completed(icon_futures):
+            name = icon_futures[future]
+            try:
+                if future.result():
+                    print(f"[icon updated] {name}")
+                    changed = True
+            except Exception as exc:
+                print(f"[FAIL] icon {name}: {exc}")
+    if changed:
+        persist(True)
+
+    def run_and_persist(internal_name, source_repo):
+        result = mirror_one(internal_name, source_repo, state, by_internal)
+        persist(result)
         return result
 
     with ThreadPoolExecutor(max_workers=8) as pool:
         futures = {
             pool.submit(run_and_persist, name, repo): name
-            for name, repo in SOURCE_REPOS.items()
+            for name, repo in targets.items()
         }
         for future in as_completed(futures):
             name = futures[future]
@@ -462,8 +531,10 @@ def main():
                 print(f"[FAIL] {name}: {exc}")
 
     shutil.rmtree(_SOURCE_ARCHIVE_DIR, ignore_errors=True)
-    print("done" if changed else "no repo.json changes")
+    scope = f"{len(targets)} plugin(s) checked"
+    print(f"done ({scope})" if changed else f"no repo.json changes ({scope})")
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    main(only=sys.argv[1:] or None)
