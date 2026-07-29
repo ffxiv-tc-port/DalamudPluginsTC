@@ -1311,29 +1311,6 @@
   },
   {
     "Author": "Liza Carvelli",
-    "Name": "Deliveroo",
-    "InternalName": "Deliveroo",
-    "AssemblyVersion": "7.20.0.1",
-    "Description": "把大國防聯軍的例行雜務自動化。自動將背包裡的裝備繳交給人事官換取軍票，並依照你設定的清單向軍需官批次採購物品，過程中的確認視窗都會自動處理。\n可設定軍票保留下限、各物品的採購數量與優先順序、達到指定階級時暫停，也支援檢查雇員背包的庫存量。",
-    "ApplicableVersion": "any",
-    "RepoUrl": "https://github.com/ffxiv-tc-port/Deliveroo",
-    "Tags": [],
-    "CategoryTags": [
-      "Utility"
-    ],
-    "DalamudApiLevel": 13,
-    "LoadRequiredState": 0,
-    "LoadSync": false,
-    "CanUnloadAsync": false,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Deliveroo.png",
-    "Punchline": "自動繳交裝備換軍票，並自動採購軍需品",
-    "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Deliveroo-v7.20.0.1/Deliveroo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Deliveroo-v7.20.0.1/Deliveroo.zip"
-  },
-  {
-    "Author": "Liza Carvelli",
     "Name": "Gearsetter",
     "InternalName": "Gearsetter",
     "AssemblyVersion": "7.20.0.1",
