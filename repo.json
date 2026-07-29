@@ -62,7 +62,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.7",
+    "AssemblyVersion": "7.20.0.8",
     "Description": "自動幫你跑副本，支援信賴的同伴、達人指引、士官兵團、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -82,9 +82,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.7/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.7/AutoDuty.zip",
-    "Changelog": "- 補完主視窗分頁、路徑動作表與指令說明的繁中在地化"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.8/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.8/AutoDuty.zip",
+    "Changelog": "- 統一士官兵團/青魔道士/小隊官方譯名"
   },
   {
     "Author": "Det",
@@ -531,7 +531,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.5",
+    "AssemblyVersion": "7.20.0.6",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -552,9 +552,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速以太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.5/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.5/Lifestream.zip",
-    "Changelog": "- 補完主視窗分頁、/li 指令說明與各疊層視窗的繁中在地化"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.6/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.6/Lifestream.zip",
+    "Changelog": "- zh-TW 修正 + 移植上游兩則房屋傳送修正"
   },
   {
     "Author": "apetih",
@@ -1000,7 +1000,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.20.0.5",
+    "AssemblyVersion": "7.20.0.6",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1020,11 +1020,11 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 修正拖曳「最大目標距離」滑桿時每畫格同步寫設定檔",
+    "Changelog": "- 修正殘留簡體字串與隊伍列表用語",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.5/WrathCombo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.5/WrathCombo.zip"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.6/WrathCombo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.6/WrathCombo.zip"
   },
   {
     "Author": "cycleapple",
@@ -1174,7 +1174,7 @@
     "Author": "NightmareXIV",
     "Name": "TextAdvance",
     "InternalName": "TextAdvance",
-    "AssemblyVersion": "7.20.0.5",
+    "AssemblyVersion": "7.20.0.6",
     "Description": "Quest speedrunning assistance tool. Automatically confirms quest acceptance and completion, skips subtitles, cutscenes, and most prompts. Includes optional Splatoon-based quest target indicators and vnavmesh-based auto-navigation to quest objectives.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TextAdvance",
@@ -1193,9 +1193,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TextAdvance.png",
     "Punchline": "Quest speedrunning assistance tool. Automatically skips subtitle boxes and confirms cutscene skipping",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.5/TextAdvance.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.5/TextAdvance.zip",
-    "Changelog": "- /at 指令說明沒接在地化,而且第一行還會印出字面的反斜線 n"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.6/TextAdvance.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.6/TextAdvance.zip",
+    "Changelog": "- zh-TW:修正「飛輪固定器」「疾跑」為官方技能名"
   },
   {
     "Author": "Styr1x, PlusoneChiang",
@@ -1389,7 +1389,7 @@
     "Author": "ocealot",
     "Name": "JobBars",
     "InternalName": "JobBars",
-    "AssemblyVersion": "7.20.0.2",
+    "AssemblyVersion": "7.20.0.3",
     "Description": "在遊戲原本的職業量譜之外，額外提供自訂量譜、隊伍增益計時器、減傷追蹤、技能冷卻與滑鼠游標特效等顯示。圖示由 PAPACHIN 提供。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/JobBars",
@@ -1412,9 +1412,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/JobBars.png",
     "Punchline": "額外職業量譜",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/JobBars-v7.20.0.2/JobBars.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/JobBars-v7.20.0.2/JobBars.zip",
-    "Changelog": "- 介面繁體中文化：新增外部化 loc 機制與 LanguageChineseTraditional.ini"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/JobBars-v7.20.0.3/JobBars.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/JobBars-v7.20.0.3/JobBars.zip",
+    "Changelog": "- 修正 Dispose 執行緒安全與 Tick 每幀配置"
   },
   {
     "Author": "Faye",
