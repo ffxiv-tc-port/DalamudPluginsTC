@@ -1260,7 +1260,7 @@
     "Author": "Ice",
     "Name": "Chilled Leves",
     "InternalName": "ChilledLeves",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "理符任務輔助工具：讓你挑選想接的理符任務，並自動前往接取、執行與繳交。注意：必須先安裝 vnavmesh 才能使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ChilledLeves",
@@ -1280,14 +1280,15 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ChilledLeves.png",
     "Punchline": "理符任務，冰鎮上桌。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.1/ChilledLeves.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.1/ChilledLeves.zip"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.2/ChilledLeves.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.2/ChilledLeves.zip",
+    "Changelog": "- 介面繁體中文化：接上 ECommons .Loc() 與 LanguageChineseTraditional.ini"
   },
   {
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.20.0.2",
+    "AssemblyVersion": "7.20.0.3",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1305,15 +1306,15 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.2/ICE.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.2/ICE.zip",
-    "Changelog": "- 修正設定檔並行寫入導致啟動時 527 次寫入失敗"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.3/ICE.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.3/ICE.zip",
+    "Changelog": "- ICE 介面繁體中文化（ECommons .Loc() + LanguageChineseTraditional.ini，468 條）"
   },
   {
     "Author": "Liza Carvelli",
     "Name": "Gearsetter",
     "InternalName": "Gearsetter",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "瀏覽各職業可以裝備的所有裝備，並列出你目前套裝還能升級的部位。\n裝備瀏覽器可依職業與部位分類檢視，並提供「只顯示等級符合的裝備」、「只顯示已擁有的裝備」、「隱藏 NQ 裝備」等篩選，同時標示每件裝備的取得來源。\n指令：/gup 顯示所有套裝的可升級部位、/gbrowser 開關裝備瀏覽器。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Gearsetter",
@@ -1332,14 +1333,15 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Gearsetter.png",
     "Punchline": "查詢各職業可換裝的裝備升級",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Gearsetter-v7.20.0.1/Gearsetter.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Gearsetter-v7.20.0.1/Gearsetter.zip"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Gearsetter-v7.20.0.2/Gearsetter.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Gearsetter-v7.20.0.2/Gearsetter.zip",
+    "Changelog": "- 介面繁體中文化：新增外部化 loc 機制與 LanguageChineseTraditional.ini"
   },
   {
     "Author": "veyn",
     "Name": "Easier Faux Hollows",
     "InternalName": "vfaux",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "幻巧拼圖求解輔助。以 ezFauxHollows 為基礎，但改用已知圖樣資料庫比對，而非通用求解演算法，因此需要翻開的格數更少。開啟幻巧拼圖介面後會直接在遊戲原生面板上為各格著色：藍色代表已確定的雙劍、黃色代表已確定的箱子或寶箱、紫色代表可能的狐狸，綠色則是目前期望值最高的格子。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vfaux",
@@ -1355,14 +1357,15 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/vfaux.png",
     "Punchline": "以已知圖樣求解幻巧拼圖",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vfaux-v7.20.0.1/vfaux.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vfaux-v7.20.0.1/vfaux.zip"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vfaux-v7.20.0.2/vfaux.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vfaux-v7.20.0.2/vfaux.zip",
+    "Changelog": "- 介面繁體中文化：新增外部化 loc 機制與 LanguageChineseTraditional.ini"
   },
   {
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 金幣並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1378,14 +1381,15 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點金幣！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.1/Marketbuddy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.1/Marketbuddy.zip"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.2/Marketbuddy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.2/Marketbuddy.zip",
+    "Changelog": "- 介面繁體中文化：新增外部化 loc 機制與 LanguageChineseTraditional.ini"
   },
   {
     "Author": "ocealot",
     "Name": "JobBars",
     "InternalName": "JobBars",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "在遊戲原本的職業量譜之外，額外提供自訂量譜、隊伍增益計時器、減傷追蹤、技能冷卻與滑鼠游標特效等顯示。圖示由 PAPACHIN 提供。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/JobBars",
@@ -1408,14 +1412,15 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/JobBars.png",
     "Punchline": "額外職業量譜",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/JobBars-v7.20.0.1/JobBars.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/JobBars-v7.20.0.1/JobBars.zip"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/JobBars-v7.20.0.2/JobBars.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/JobBars-v7.20.0.2/JobBars.zip",
+    "Changelog": "- 介面繁體中文化：新增外部化 loc 機制與 LanguageChineseTraditional.ini"
   },
   {
     "Author": "Faye",
     "Name": "Better Occult Crescent & Chest Helper Interface",
     "InternalName": "BOCCHI",
-    "AssemblyVersion": "7.20.0.2",
+    "AssemblyVersion": "7.20.0.3",
     "Description": "⚠️ 台服 7.20 目前還沒有「蜃景新月島」這個內容，本外掛現在裝了不會有任何反應。已先行移植好放著，等台服更新到該版本即可直接使用。\n\n讓你在「蜃景新月島」玩得更順手。\n- 不用再自己走路、自己找寶箱。\n- 小巧的 FATE 與關鍵遭遇面板，會顯示該場獎勵，還能自動幫你導航過去。\n- 附贈一個非常違規的「非法模式」，給那些寧可出去曬太陽的人。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BOCCHI",
@@ -1442,8 +1447,8 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/BOCCHI.png",
     "Punchline": "讓你在「蜃景新月島」玩得更順手。（台服尚未開放該內容）",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.2/BOCCHI.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.2/BOCCHI.zip",
-    "Changelog": "- 修正卸載時 IPC 例外中斷整條 dispose 鏈"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.3/BOCCHI.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.3/BOCCHI.zip",
+    "Changelog": "- 新增繁體中文在地化(Translations/tw)並接上載入邏輯"
   }
 ]
