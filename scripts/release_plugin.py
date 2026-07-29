@@ -20,6 +20,7 @@ import re
 import shutil
 import subprocess
 import sys
+import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -159,19 +160,33 @@ def dispatch_release_run(source_repo, tag, retries=5, delay_s=3):
                         f"failed after {retries} attempts:\n{result.stderr}")
 
 
+# Progress reporting. A release spends minutes inside wait_for_release_run() and
+# used to print nothing at all between "dispatched" and the final verdict, so both
+# the operator and anyone reading the transcript just saw a hang. Every line is
+# flushed immediately and prefixed with elapsed time.
+_print_lock = threading.Lock()
+_RUN_START = time.time()
+
+
+def say(msg):
+    with _print_lock:
+        print(f"[{time.time() - _RUN_START:6.1f}s] {msg}", flush=True)
+
+
 def _poll_release_run(source_repo, tag):
-    """One lookup of the dispatched run. Returns (found, status, conclusion)."""
+    """One lookup of the dispatched run. Returns (found, status, conclusion, url)."""
     out = subprocess.run(
         [GH, "run", "list", "--repo", source_repo, "--workflow=release.yml",
-         "--limit", "5", "--json", "databaseId,headBranch,event,status,conclusion,displayTitle"],
+         "--limit", "5", "--json",
+         "databaseId,headBranch,event,status,conclusion,displayTitle,url"],
         capture_output=True, text=True, encoding="utf-8", errors="replace",
     )
     if out.returncode != 0 or not (out.stdout or "").strip():
-        return False, None, None
+        return False, None, None, None
     for r in json.loads(out.stdout):
         if r["event"] == "workflow_dispatch" and r["headBranch"] == tag:
-            return True, r["status"], r["conclusion"]
-    return False, None, None
+            return True, r["status"], r["conclusion"], r.get("url")
+    return False, None, None, None
 
 
 def wait_for_release_run(source_repo, tag, timeout_s=900, poll_s=8):
@@ -188,11 +203,31 @@ def wait_for_release_run(source_repo, tag, timeout_s=900, poll_s=8):
     Artisan 343s, both of which reported [FAIL] on releases that had actually
     succeeded. Raised to 900s, and the deadline is now followed by one final
     lookup so a run that completes in the last poll interval isn't misreported."""
+    name = source_repo.split("/")[-1]
     deadline = time.time() + timeout_s
+    started = time.time()
     seen = False
+    announced_url = False
+    last_status = None
+    next_heartbeat = started + 30
+
     while time.time() < deadline:
-        found, status, conclusion = _poll_release_run(source_repo, tag)
+        found, status, conclusion, url = _poll_release_run(source_repo, tag)
         seen = seen or found
+
+        if found and not announced_url and url:
+            say(f"  {name} {tag}: run started -> {url}")
+            announced_url = True
+        if found and status != last_status:
+            say(f"  {name} {tag}: {status}")
+            last_status = status
+        elif time.time() >= next_heartbeat:
+            # Say something even when nothing changed, so a long build is
+            # visibly alive rather than looking like a hang.
+            elapsed = int(time.time() - started)
+            say(f"  {name} {tag}: still {last_status or 'queued'} ({elapsed}s elapsed)")
+            next_heartbeat = time.time() + 30
+
         if found and status == "completed":
             return status, conclusion
         time.sleep(poll_s)
@@ -200,7 +235,7 @@ def wait_for_release_run(source_repo, tag, timeout_s=900, poll_s=8):
     # One last look - the loop can exit with a run that finished during the
     # final sleep, and reporting FAIL for a successful release is worse than
     # waiting one more round-trip.
-    found, status, conclusion = _poll_release_run(source_repo, tag)
+    found, status, conclusion, _ = _poll_release_run(source_repo, tag)
     if found and status == "completed":
         return status, conclusion
     return ("timeout", None) if not (seen or found) else ("timeout", "unknown")
@@ -209,40 +244,38 @@ def wait_for_release_run(source_repo, tag, timeout_s=900, poll_s=8):
 def release_one(internal_name, source_repo, dry_run=False):
     repo_path = LOCAL_PATHS.get(internal_name)
     if repo_path is None:
-        print(f"[skip] {internal_name}: no LOCAL_PATHS entry")
+        say(f"[skip] {internal_name}: no LOCAL_PATHS entry")
         return False
     if not Path(repo_path).exists():
-        print(f"[skip] {internal_name}: {repo_path} does not exist")
+        say(f"[skip] {internal_name}: {repo_path} does not exist")
         return False
 
     if has_uncommitted_changes(repo_path):
-        print(f"[skip] {internal_name}: uncommitted changes in {repo_path}, "
-              f"commit or stash first")
+        say(f"[skip] {internal_name}: uncommitted changes in {repo_path}, commit or stash first")
         return False
 
     latest_tag = latest_git_tag(repo_path)
 
     if latest_tag is not None and already_released(repo_path, latest_tag):
-        print(f"[skip] {internal_name}: HEAD already released as {latest_tag}, nothing new to tag")
+        say(f"[skip] {internal_name}: HEAD already released as {latest_tag}, nothing new to tag")
         return True
 
     tag = next_tag(internal_name, latest_tag)
-    print(f"[{internal_name}] next tag: {tag}")
+    say(f"[{internal_name}] next tag: {tag}")
     if dry_run:
         return True
 
     git(repo_path, "tag", tag)
     git(repo_path, "push", "origin", tag)
     dispatch_release_run(source_repo, tag)
-    print(f"[{internal_name}] pushed {tag}, dispatched release.yml, waiting for it...")
+    say(f"[{internal_name}] pushed {tag}, dispatched release.yml, waiting for CI...")
 
     status, conclusion = wait_for_release_run(source_repo, tag)
     if status != "completed" or conclusion != "success":
-        print(f"[FAIL] {internal_name}: release.yml {status}/{conclusion} — "
-              f"check https://github.com/{source_repo}/actions")
+        say(f"[FAIL] {internal_name}: release.yml {status}/{conclusion} - check https://github.com/{source_repo}/actions")
         return False
 
-    print(f"[ok] {internal_name}: {tag} released")
+    say(f"[ok] {internal_name}: {tag} released")
     return True
 
 
@@ -283,17 +316,20 @@ def main():
             pool.submit(release_one, name, mirror.SOURCE_REPOS[name], dry_run=args.dry_run): name
             for name in targets
         }
+        done = 0
         for future in as_completed(futures):
             name = futures[future]
+            done += 1
             try:
                 results[name] = future.result()
             except Exception as exc:
-                print(f"[FAIL] {name}: {exc}")
+                say(f"[FAIL] {name}: {exc}")
                 results[name] = False
+            say(f"--- {done}/{len(futures)} plugin(s) finished ---")
 
     ok = [n for n, v in results.items() if v]
     failed = [n for n, v in results.items() if not v]
-    print(f"\n{len(ok)} succeeded, {len(failed)} failed/skipped: {failed}")
+    say(f"{len(ok)} succeeded, {len(failed)} failed/skipped: {failed}")
 
     if args.dry_run or args.skip_mirror or not ok:
         return
@@ -311,7 +347,7 @@ def main():
         released_repos = {mirror.SOURCE_REPOS[n] for n in ok}
         scope = sorted(n for n, r in mirror.SOURCE_REPOS.items() if r in released_repos)
 
-    print("\nRunning mirror_releases.py to sync repo.json...")
+    say(f"mirroring {len(scope) if scope else len(mirror.SOURCE_REPOS)} plugin(s) into repo.json...")
     mirror.main(only=scope)
 
 
