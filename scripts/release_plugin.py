@@ -30,6 +30,14 @@ GH = mirror.GH
 
 # InternalName -> local checkout path (relative to this repo's parent, D:\)
 LOCAL_PATHS = {
+    "ChilledLeves": r"D:\ffxiv-tc-port\ChilledLeves",
+    "ICE": r"D:\ffxiv-tc-port\ICE",
+    "Deliveroo": r"D:\ffxiv-tc-port\Deliveroo",
+    "Gearsetter": r"D:\ffxiv-tc-port\Gearsetter",
+    "vfaux": r"D:\ffxiv-tc-port\vfaux",
+    "Marketbuddy": r"D:\ffxiv-tc-port\Marketbuddy",
+    "JobBars": r"D:\ffxiv-tc-port\JobBars",
+    "BOCCHI": r"D:\ffxiv-tc-port\BOCCHI",
     "AutoHook": r"D:\ffxiv-tc-port\AutoHook",
     "AutoDuty": r"D:\ffxiv-tc-port\AutoDuty",
     "Avarice": r"D:\ffxiv-tc-port\Avarice",

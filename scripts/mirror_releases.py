@@ -28,6 +28,14 @@ PUBLIC_REPO = "ffxiv-tc-port/DalamudPluginsTC"
 
 # InternalName -> source repo (owner/name)
 SOURCE_REPOS = {
+    "BOCCHI": "ffxiv-tc-port/BOCCHI",
+    "JobBars": "ffxiv-tc-port/JobBars",
+    "Marketbuddy": "ffxiv-tc-port/Marketbuddy",
+    "vfaux": "ffxiv-tc-port/vfaux",
+    "Gearsetter": "ffxiv-tc-port/Gearsetter",
+    "Deliveroo": "ffxiv-tc-port/Deliveroo",
+    "ICE": "ffxiv-tc-port/ICE",
+    "ChilledLeves": "ffxiv-tc-port/ChilledLeves",
     "AutoHook": "ffxiv-tc-port/AutoHook",
     "AutoDuty": "ffxiv-tc-port/AutoDuty",
     "Avarice": "ffxiv-tc-port/Avarice",
@@ -83,6 +91,14 @@ SOURCE_REPOS = {
 # raw.githubusercontent.com can't serve files from private repos anonymously,
 # so we mirror the icon into this public repo instead.
 ICON_PATHS = {
+    "BOCCHI": "assets/icon.png",
+    "JobBars": "assets/icon.png",
+    "Marketbuddy": "Marketbuddy/Marketbuddy.png",
+    "vfaux": "icon.png",
+    "Gearsetter": "Gearsetter/Gearsetter.png",
+    "Deliveroo": "Deliveroo/Deliveroo.png",
+    "ICE": "Data/Icon.png",
+    "ChilledLeves": "Data/Icon.png",
     "EurekaHelper": "EurekaHelper/Resources/icon.png",
     "Accountant": "images/icon.png",
     "AutoRetainer": "AutoRetainer/res/autoretainer.png",
