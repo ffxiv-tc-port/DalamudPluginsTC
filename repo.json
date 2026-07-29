@@ -394,7 +394,7 @@
     "Author": "img02",
     "Name": "Hunt Helper",
     "InternalName": "HuntHelper",
-    "AssemblyVersion": "7.20.0.3",
+    "AssemblyVersion": "7.20.0.4",
     "Description": "顯示標記重生點的狩獵地圖、A級討伐車隊記錄器（可匯出/匯入分享）、語音播報、聊天通知，以及S級討伐重生計數器",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/HuntHelper",
@@ -414,9 +414,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/HuntHelper.png",
     "Punchline": "打寶雷達＋車隊記錄器＋通知＋S級討伐輔助工具等一應俱全。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.3/HuntHelper.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.3/HuntHelper.zip",
-    "Changelog": "- 修正 ClientLanguage 判斷:TC 客戶端在新版 Dalamud 回報 7 而非 4"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.4/HuntHelper.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.4/HuntHelper.zip",
+    "Changelog": "- IsHunt/GetHuntRank 改用攤平索引查表,不再每偵線性掃 6 個字典"
   },
   {
     "Author": "Critical_Impact",
@@ -783,7 +783,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.20.0.3",
+    "AssemblyVersion": "7.20.0.4",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -800,9 +800,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.3/Saucy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.3/Saucy.zip",
-    "Changelog": "- 補上側欄標題與牌組快取按鈕的缺漏譯文，並修正 Cliffhanger 官方名稱"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.4/Saucy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.4/Saucy.zip",
+    "Changelog": "- 修正三張牌賭場統計誤計與重賽計分競態，強化 MGP 讀取容錯"
   },
   {
     "Author": "daemitus, croizat",
@@ -918,7 +918,7 @@
     "Author": "MgAl2O4",
     "Name": "TriadBuddy",
     "InternalName": "TriadBuddy",
-    "AssemblyVersion": "7.20.0.2",
+    "AssemblyVersion": "7.20.0.3",
     "Description": "三張牌遊戲解牌工具，僅支援 NPC 對戰。\n- 小遊戲進行時提示下一步最佳出牌\n- 對戰前評估所有牌組預設\n- NPC 牌組優化器\n- 為卡牌收藏視窗新增更多細節",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/FFTriadBuddyDalamud",
@@ -934,10 +934,10 @@
     "LoadPriority": 0,
     "Punchline": "三張牌遊戲解牌助手",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.2/TriadBuddy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.2/TriadBuddy.zip",
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.3/TriadBuddy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.3/TriadBuddy.zip",
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TriadBuddy.png",
-    "Changelog": "- 插件 manifest DalamudApiLevel 修正為 13,打包工具/SDK 對齊 API13"
+    "Changelog": "- 修正錦標賽牌組求解背景執行緒吞例外導致 UI 卡在「計算中」\n- 修正過期的開發筆記:triadbuddy-dev skill"
   },
   {
     "Author": "veyn, croizat",
@@ -1060,7 +1060,7 @@
     "Author": "daemitus, croizat",
     "Name": "YesAlready",
     "InternalName": "YesAlready",
-    "AssemblyVersion": "7.20.0.3",
+    "AssemblyVersion": "7.20.0.4",
     "Description": "厭倦了在天守閣/伊迪爾夏爾禁地一直點確認嗎？受不了在副本裡一直按鍵嗎？YesAlready 可以自動點擊你設定的所有惱人對話框。只要輸入對話文字，就再也不用手動點了！支援 /regex/ 比對，也內建了幾個針對「看起來不是 yes/no，但行為類似」的對話框（例如分解）的模組。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/YesAlready",
@@ -1080,9 +1080,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/YesAlready.png",
     "Punchline": "自動點擊你指定的各種確認對話框。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.3/YesAlready.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.3/YesAlready.zip",
-    "Changelog": "- 修正拖曳百分比滑桿時每畫格同步寫設定檔"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.4/YesAlready.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.4/YesAlready.zip",
+    "Changelog": "- 修正拖曳資料夾到自己或子孫底下時子樹脫離根節點的資料遺失"
   },
   {
     "Author": "KangasZ",
@@ -1314,7 +1314,7 @@
     "Author": "Liza Carvelli",
     "Name": "Gearsetter",
     "InternalName": "Gearsetter",
-    "AssemblyVersion": "7.20.0.2",
+    "AssemblyVersion": "7.20.0.3",
     "Description": "瀏覽各職業可以裝備的所有裝備，並列出你目前套裝還能升級的部位。\n裝備瀏覽器可依職業與部位分類檢視，並提供「只顯示等級符合的裝備」、「只顯示已擁有的裝備」、「隱藏 NQ 裝備」等篩選，同時標示每件裝備的取得來源。\n指令：/gup 顯示所有套裝的可升級部位、/gbrowser 開關裝備瀏覽器。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Gearsetter",
@@ -1333,9 +1333,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Gearsetter.png",
     "Punchline": "查詢各職業可換裝的裝備升級",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Gearsetter-v7.20.0.2/Gearsetter.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Gearsetter-v7.20.0.2/Gearsetter.zip",
-    "Changelog": "- 介面繁體中文化：新增外部化 loc 機制與 LanguageChineseTraditional.ini"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Gearsetter-v7.20.0.3/Gearsetter.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Gearsetter-v7.20.0.3/Gearsetter.zip",
+    "Changelog": "- 裝備瀏覽器加上庫存快取,不再每幀重掃全部背包+防具庫"
   },
   {
     "Author": "veyn",
@@ -1365,7 +1365,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.20.0.2",
+    "AssemblyVersion": "7.20.0.3",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 金幣並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1381,9 +1381,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點金幣！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.2/Marketbuddy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.2/Marketbuddy.zip",
-    "Changelog": "- 介面繁體中文化：新增外部化 loc 機制與 LanguageChineseTraditional.ini"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.3/Marketbuddy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.3/Marketbuddy.zip",
+    "Changelog": "- 修正拖曳位置設定每幀寫入設定檔"
   },
   {
     "Author": "ocealot",
