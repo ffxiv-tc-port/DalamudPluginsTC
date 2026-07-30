@@ -29,7 +29,6 @@ PUBLIC_REPO = "ffxiv-tc-port/DalamudPluginsTC"
 # InternalName -> source repo (owner/name)
 SOURCE_REPOS = {
     "BOCCHI": "ffxiv-tc-port/BOCCHI",
-    "JobBars": "ffxiv-tc-port/JobBars",
     "Marketbuddy": "ffxiv-tc-port/Marketbuddy",
     "vfaux": "ffxiv-tc-port/vfaux",
     "Gearsetter": "ffxiv-tc-port/Gearsetter",
@@ -93,7 +92,6 @@ SOURCE_REPOS = {
 ICON_PATHS = {
     "TCToolbox": "images/icon.png",
     "BOCCHI": "assets/icon.png",
-    "JobBars": "assets/icon.png",
     "Marketbuddy": "Marketbuddy/Marketbuddy.png",
     "vfaux": "icon.png",
     "Gearsetter": "Gearsetter/Gearsetter.png",
