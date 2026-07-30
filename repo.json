@@ -1455,7 +1455,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：部隊合建素材一鍵全交、野外陸行鳥自動餵食基薩爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1471,8 +1471,8 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.1/TCToolbox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.1/TCToolbox.zip",
-    "Changelog": ""
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.2/TCToolbox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.2/TCToolbox.zip",
+    "Changelog": "- 小隊列表標記修正：隊員序號的隱藏／還原改為逐節點比對實際可見狀態，不再靠快取提早返回——小隊列表 addon 換區重建後節點會回到預設可見，快取狀態會讓序號再也不被隱藏\n- 新增目標情報界面最佳化（OptimizedTargetInfo）：目標與焦點目標疊出實際體力數值（萬／億簡寫可選）、百分比與詠唱剩餘秒數，另可顯示一鍵清除焦點目標按鈕；資料讀 ObjectTable、UI 走 ImGui 疊圖，零 hook 不注入原生節點。DR 的放大自身狀態效果與節點外觀改寫未移植（需重排原生節點）\n- 新增自動物品頁面轉移（AutoInventoryTransfer）：按住指定鍵右鍵點物品即搬至對應頁面（背包⇄雇員／部隊置物櫃／陸行鳥鞍袋、兵裝庫→背包），走 InventoryManager.MoveItemSlot 與遊戲拖放同一路徑、位址由 ClientStructs 解析不自帶 sig；先驗可疊同款再驗空位，滿了提示不動作，預設觸發鍵「無」＝停用並在設定內註明與 Marketbuddy／AutoRetainer 快速上架的鍵位衝突\n- 新增敵對列表界面最佳化（OptimizedEnemyList）：每列疊上體力數值／百分比、詠唱技名與剩餘秒數、以及正在打你的標示；資料全讀遊戲餵給該 UI 的 NumberArray／StringArray 與 ObjectTable，零 hook、不改行為。DR 原版的 3 個記憶體 patch 一律不抄，UI 走 ImGui 疊圖不注入原生節點\n- 新增阻止標題動畫（AutoBlockTitleMovie）：標題與角色選擇畫面每 tick 歸零 AgentLobby.IdleTime，待機宣傳影片不播、閒置也不會被踢回標題；純資料寫入非 code patch，登入後自動停止。獨立於 AutoRetainer（AR 同一行只在 MultiMode 等待登入時生效）\n- 新增小隊列表顯示目標標記（MarkerInPartyList）：輪詢 MarkingController 標記表並以 AgentHUD EntityId 對位，用 ImGui 疊圖畫在 _PartyList 節點螢幕座標上，零 hook 且不注入原生節點（無 finalize 生命週期風險）；圖示走 Lumina Marker 表，隊員序號隱藏為唯一原生節點改動並在停用時還原\n- 新增自動選中目標（AutoRetarget）：無目標時自動選最近的敵對 BattleNpc，可選迷失者／迷失少女優先（搶既有目標）；純 ObjectTable 枚舉零 hook，稀有敵以 BNpcName row 6737/6738 比對（已對台服 EXD dump 驗證）、顯示名走 Lumina 表不寫死中文\n- 新增自動精製魔晶石（AutoMaterialize）：精製視窗上疊一鍵按鈕，逐件精製背包與兵裝庫內精鍊度已滿的裝備並自動確認對話框；呼叫遊戲自身精製函式（sig 台服 7.20 唯一命中）並以回傳碼判定，背包滿／戰鬥中／視窗關閉自動停止，道具名走 Lumina Item 表\n- 新增自動隱藏橫幅（AutoHideBanners）：hook 遊戲橫幅設圖函式，選中的橫幅 ID 直接不建立節點、音效一併不播（sig 台服 7.20 唯一命中）；宇宙探索任務鏈橫幅另走節點隱藏並在停用時還原，預覽圖以 FileExists 實測語言子資料夾不猜語言代碼\n- 新增任務搜索器設置最佳化（OptimizedDutyFinderSetting）：搜索器視窗上方加一排圖示按鈕直接切換中途參戰／解除限制／等級同步／最低品級／超越之力無效化／自由探索／練級隨機限制與分配方式，走遊戲自己的套用設定函式（sig 台服 7.20 唯一命中），UI 用 ImGui 疊圖不注入原生節點，tooltip 全取自 Lumina Addon 表\n- 新增自動最優隊員推薦（AutoPlayerCommend）：副本完成後自動開推薦視窗並給對位隊友（同職業＞同職能＞職能親和），解析 VoteMvp AtkValues 比對名稱與職業圖示、AgentId.ContentsMvp 合成事件送出，零 hook；可右鍵指定本局對象或指定自己＝不推薦，職業名走 Lumina ClassJob 表\n- 新增自動重複點擊（AutoConstantlyClick）：在遊戲快捷欄輸入處理範圍內把「按住」翻譯成週期性「剛按下」，間隔可調；sig 已對台服 7.20 主程式離線驗證唯一命中，不寫記憶體、不模擬按鍵、不動冷卻與佇列判定（手把模式未移植）\n- 新增防自動掛機登出（AutoAntiAfk）：每秒歸零 InputTimerModule 的閒置計時欄位，副本／PvP／無人島上限一併涵蓋；純資料寫入不做 code patch、不模擬按鍵，待機動作計時器另設選項預設不動"
   }
 ]
