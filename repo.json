@@ -531,7 +531,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.8",
+    "AssemblyVersion": "7.20.0.9",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -552,9 +552,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速以太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.8/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.8/Lifestream.zip",
-    "Changelog": "- 新增自訂座標地點（/li goto 名稱）：可從當前位置一鍵儲存，執行時傳送至該區最近以太之光並以 vnavmesh 走路（軟依賴，未安裝改標地圖旗點）；傳送＋導航實作，不做記憶體改座標瞬移"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.9/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.9/Lifestream.zip",
+    "Changelog": "- DTR 分線圖示可點擊快捷切線：左鍵開分線選單（標記目前分線、點選即走既有切線流程），右鍵在無分線資料時直接初始化；選單／提示文字繁中化\n- 分線資料改為可一鍵初始化：分線數優先數選單實際列出的分線項目（比上游只讀靜態位址可靠），並新增自動跑合法流程的初始化任務（互動水晶→讀清單→關閉選單），取代 overlay「請先手動點一次以太之光」死路提示"
   },
   {
     "Author": "apetih",
