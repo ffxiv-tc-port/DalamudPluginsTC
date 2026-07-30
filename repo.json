@@ -808,7 +808,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.20.0.6",
+    "AssemblyVersion": "7.20.0.7",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -827,9 +827,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.6/SomethingNeedDoing.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.6/SomethingNeedDoing.zip",
-    "Changelog": "- release.yml:容忍 unzip 警告性 exit 1,但驗證 Dalamud.dll 確實存在\n- 補上游三處修正:Lua Dispose 例外防護、刪除巨集解除觸發器註冊、release.yml 不再吞下載失敗"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.7/SomethingNeedDoing.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.7/SomethingNeedDoing.zip",
+    "Changelog": "- Entity 模組新增 GetNearbyObjects(range):一次回傳範圍內全部物件,取代逐格掃描\n- 補上游兩處修正:Entity 加 IsTargetable/NearestOtherCharacter、指令解析放寬字元限制\n- 修正 GetInventoryItem 兩個 overload 在 Lua 註冊互相覆蓋:槽位版改名 GetInventoryItemInSlot\n- Chat 模組加頻道過濾:新增 GetLastSystemMessage 與 GetLastMessageOfType,防路人聊天蓋掉系統狀態訊息\n- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16"
   },
   {
     "Author": "Sonar Team",
