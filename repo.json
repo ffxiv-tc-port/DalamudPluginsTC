@@ -943,7 +943,7 @@
     "Author": "veyn, croizat",
     "Name": "Visland",
     "InternalName": "visland",
-    "AssemblyVersion": "7.20.0.5",
+    "AssemblyVersion": "7.20.0.6",
     "Description": "自動化採集、開拓工坊排班等無人島相關作業。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/visland",
@@ -964,9 +964,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/visland.png",
     "Punchline": "自動化無人島各項活動",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.5/visland.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.5/visland.zip",
-    "Changelog": "- 接上 /visland 指令說明與四處常駐 UI 文字的在地化"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.6/visland.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.6/visland.zip",
+    "Changelog": "- 補上工房排班套用時三句 chat 訊息的在地化\n- 修正最近傳送點計算的座標系混用\n- 修復 OC 剪貼簿匯入與 /favors 在台服靜默失效\n- 復活「錯誤自動停路線」:接回上游 reorg 誤刪的事件訂閱\n- 修正初始化吞例外與移動特徵碼不可失敗的殭屍外掛風險\n- 修正 build-check gate 在無 VersionPrefix 時必炸的既有 bug\n- 清理殭屍 .gitmodules 條目(對應子模組實體早已移除)\n- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16"
   },
   {
     "Author": "veyn",
