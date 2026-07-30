@@ -192,7 +192,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.20.0.8",
+    "AssemblyVersion": "7.20.0.9",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -209,9 +209,9 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.8/BossModReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.8/BossModReborn.zip",
-    "Changelog": "- 戰鬥提示、指令說明與冷卻計劃器改為繁中；卸載 replay 不再卡幀"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.9/BossModReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.9/BossModReborn.zip",
+    "Changelog": "- sig 韌性化:MovementOverride/QuestBattle 載入期致命特徵碼改為降級\n- FRU 絕光暗未來:中場光之水晶碰撞納入場地邊界\n- 黑風海底 阿卡德米亞·安逸德:修正潮汐斷頭台漏顯示與三王模組現代化\n- 輝煌神域 A23 哈羅妮:改善長槍、洛科斯與四方槍試煉的預測與提示\n- 天空之都 Nidhogg:熱燄尾掃矩形補上向後延伸\n- WorldStateGameSync:修正任務錄製器 actor 消失\n- Ex1 華勒吉曼達 EX:山炎塔預告時間改用倍精度(0.4f→0.4d)\n- TEA:修正 P1 狂液怒濤毒圈半徑(5→7)\n- Ex4 澤蓮尼亞 EX:修正環形扇區塔浮點捨入錯誤\n- NormalMovement:ForcedMovement 非空時不再執行走位\n- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16"
   },
   {
     "Author": "Kouzukii",
