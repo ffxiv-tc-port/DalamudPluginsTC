@@ -1116,7 +1116,7 @@
     "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.20.0.14",
+    "AssemblyVersion": "7.20.0.15",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/DailyDuty",
@@ -1139,9 +1139,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.14/DailyDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.14/DailyDuty.zip",
-    "Changelog": "- 巡邏改為飛行+偵測圈判定,不再需要飛到每個座標上\n- 聊天提醒加上可點擊連結,直接開啟對應模組設定"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.15/DailyDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.15/DailyDuty.zip",
+    "Changelog": "- 修正週常大型/團隊任務兩個模組的繁中名稱對調"
   },
   {
     "Author": "liza, qstxiv, & various contributors",
