@@ -531,7 +531,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.7",
+    "AssemblyVersion": "7.20.0.8",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -552,9 +552,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速以太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.7/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.7/Lifestream.zip",
-    "Changelog": "- 切線新增兩個預設關閉選項：附近無以太之光時先傳送至本區以太之光再切線、切換完成後重新召喚原坐騎\n- 修正伺服器資訊列分線顯示：上游以 territory id 查分線圖示導致永不顯示，且同地圖切線不觸發 TerritoryChanged；改為輪詢分線編號\n- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16\n- ClickLib 子模組改指 org fork 備援"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.8/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.8/Lifestream.zip",
+    "Changelog": "- 新增自訂座標地點（/li goto 名稱）：可從當前位置一鍵儲存，執行時傳送至該區最近以太之光並以 vnavmesh 走路（軟依賴，未安裝改標地圖旗點）；傳送＋導航實作，不做記憶體改座標瞬移"
   },
   {
     "Author": "apetih",
@@ -587,7 +587,7 @@
     "Author": "JayceOfSpades",
     "Name": "Mini-Mappingway",
     "InternalName": "MiniMappingway",
-    "AssemblyVersion": "7.20.0.4",
+    "AssemblyVersion": "7.20.0.5",
     "Description": "在小地圖上顯示好友與公會成員的插件。可在設定中自訂標記樣式，並切換是否顯示好友、公會成員或兩者！圖示由 twitter 上的 @Miendoodle 繪製。感謝 nya 提供的點子！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/MiniMappingway",
@@ -607,9 +607,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/MiniMappingway.png",
     "Punchline": "在小地圖上顯示好友與公會成員的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/MiniMappingway-v7.20.0.4/MiniMappingway.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/MiniMappingway-v7.20.0.4/MiniMappingway.zip",
-    "Changelog": "- 新增 PvP 玩家雷達（螢幕標點）：紛爭前線敵我標示、點半徑／僅顯示點／隱藏友方／PvP 外顯示開關，預設關閉\n- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/MiniMappingway-v7.20.0.5/MiniMappingway.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/MiniMappingway-v7.20.0.5/MiniMappingway.zip",
+    "Changelog": "- PvP 雷達改依紛爭前線三方陣營上色：以 CharacterData.Battalion（遊戲自身敵我判定欄位）歸隊，黑渦團／雙蛇黨／恆輝隊各自可調色，自己那隊用友方色，無陣營資料退回敵紅友藍"
   },
   {
     "Author": "Jukka",
@@ -943,7 +943,7 @@
     "Author": "veyn, croizat",
     "Name": "Visland",
     "InternalName": "visland",
-    "AssemblyVersion": "7.20.0.7",
+    "AssemblyVersion": "7.20.0.8",
     "Description": "自動化採集、開拓工坊排班等無人島相關作業。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/visland",
@@ -964,9 +964,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/visland.png",
     "Punchline": "自動化無人島各項活動",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.7/visland.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.7/visland.zip",
-    "Changelog": "- 排程套用不再假設 C1 固定休：休日改從空閒日自動挑選（最低位＋最高位），C1 空閒時行為與舊版完全一致\n- 工房新增「休息日」分頁：14 格自由勾選本週期／下週期休日（0～4 天，解除每週雙休限制），已完成／進行中日子鎖定"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.8/visland.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.8/visland.zip",
+    "Changelog": "- 休息日寫入加上生效驗證：寫入後 5 秒內比對 RestCycles，未生效即紅字標示（鎖定零休 mask 被 agent sentinel／伺服器拒絕的風險點），等待期間顯示目標狀態並鎖定勾選"
   },
   {
     "Author": "veyn",
