@@ -84,12 +84,14 @@ SOURCE_REPOS = {
     "TextAdvance": "ffxiv-tc-port/TextAdvance",
     "Crossingway": "ffxiv-tc-port/Crossingway",
     "IINACT": "ffxiv-tc-port/IINACT",
+    "TCToolbox": "ffxiv-tc-port/TCToolbox",
 }
 
 # InternalName -> icon path within the source repo (on its default branch).
 # raw.githubusercontent.com can't serve files from private repos anonymously,
 # so we mirror the icon into this public repo instead.
 ICON_PATHS = {
+    "TCToolbox": "images/icon.png",
     "BOCCHI": "assets/icon.png",
     "JobBars": "assets/icon.png",
     "Marketbuddy": "Marketbuddy/Marketbuddy.png",
