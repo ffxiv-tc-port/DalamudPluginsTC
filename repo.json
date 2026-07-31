@@ -192,7 +192,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.20.0.11",
+    "AssemblyVersion": "7.20.0.12",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -209,9 +209,9 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.11/BossModReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.11/BossModReborn.zip",
-    "Changelog": "- AI 的 DTR 改用成對圖示表示開關，不再顯示 AI: On/Off"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.12/BossModReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.12/BossModReborn.zip",
+    "Changelog": "- DTR：左鍵輪流切換 preset 不再跳選單、右鍵開設定、補上滑鼠說明"
   },
   {
     "Author": "Kouzukii",
@@ -972,7 +972,7 @@
     "Author": "veyn",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
-    "AssemblyVersion": "7.20.0.6",
+    "AssemblyVersion": "7.20.0.7",
     "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vnavmesh",
@@ -992,15 +992,15 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/vnavmesh.png",
     "Punchline": "自動移動吧！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.6/vnavmesh.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.6/vnavmesh.zip",
-    "Changelog": "- DTR 狀態改用圖示表達，不再顯示 Mesh 前綴文字"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.7/vnavmesh.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.7/vnavmesh.zip",
+    "Changelog": "- DTR：補上滑鼠說明與圖示對照，右鍵開啟主視窗"
   },
   {
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.20.0.8",
+    "AssemblyVersion": "7.20.0.9",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1020,11 +1020,11 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 除錯視窗的區域名稱查詢改為索引查表",
+    "Changelog": "- DTR 只留圖示，開關狀態與細節改放滑鼠說明",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.8/WrathCombo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.8/WrathCombo.zip"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.9/WrathCombo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.9/WrathCombo.zip"
   },
   {
     "Author": "cycleapple",
@@ -1232,7 +1232,7 @@
     "Author": "Usagi, PlusoneChiang",
     "Name": "IINACT",
     "InternalName": "IINACT",
-    "AssemblyVersion": "7.20.0.6",
+    "AssemblyVersion": "7.20.0.7",
     "Description": "在類 ACT 環境中直接執行 FFXIV_ACT_Plugin 的戰鬥數據解析外掛,內建深度改造的 Overlay Plugin 移植版,無需另外安裝 ACT。\n可搭配 Crossingway 在遊戲內顯示戰鬥數據覆蓋層。\nFork 自 marzent/IINACT(繁體中文版客戶端,API 13 / .NET 9,TC opcodes 由 PlusoneChiang 維護)。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/IINACT",
@@ -1252,9 +1252,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/IINACT.png",
     "Punchline": "免 ACT 的戰鬥數據解析外掛。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.6/IINACT.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.6/IINACT.zip",
-    "Changelog": "- opcode 缺漏的警告訊息改為繁體中文"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.7/IINACT.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.7/IINACT.zip",
+    "Changelog": "- 個人 DPS 分母修正：戰鬥窗口之間的空檔不再算成戰鬥時間"
   },
   {
     "Author": "Ice",
