@@ -311,8 +311,33 @@ def release_one(internal_name, source_repo, dry_run=False):
         say(f"[FAIL] {internal_name}: release.yml {status}/{conclusion} - check https://github.com/{source_repo}/actions")
         return False
 
+    if not wait_for_release_visible(source_repo, tag):
+        say(f"[FAIL] {internal_name}: {tag} 的 release 在 CI 完成後仍查不到 - "
+            f"check https://github.com/{source_repo}/releases")
+        return False
+
     say(f"[ok] {internal_name}: {tag} released")
     return True
+
+
+def wait_for_release_visible(source_repo, tag, timeout_s=120, interval_s=5):
+    """CI run 回報 completed 之後，release 還要幾秒才查得到。
+
+    2026-07-31 實測：Artisan v7.20.0.37 的 run 在 12:12:5x 就 completed，
+    但 release 的 publishedAt 是 12:13:06 —— mirror 在那 10 秒的空窗裡跑，
+    於是把「上一版」(v7.20.0.36) 寫進 repo.json，外掛清單拿到的是舊版而且
+    完全沒有錯誤訊息。等到 release 真的查得到再回報成功。
+    """
+    deadline = time.time() + timeout_s
+    while time.time() < deadline:
+        proc = subprocess.run(
+            ["gh", "release", "view", tag, "--repo", source_repo, "--json", "tagName"],
+            capture_output=True, text=True,
+        )
+        if proc.returncode == 0:
+            return True
+        time.sleep(interval_s)
+    return False
 
 
 def main():
