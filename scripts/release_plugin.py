@@ -16,6 +16,7 @@ Usage:
 """
 import argparse
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -26,6 +27,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import mirror_releases as mirror
+from app_token import get_installation_token
 
 GH = mirror.GH
 
@@ -171,11 +173,19 @@ def dispatch_release_run(source_repo, tag, retries=5, delay_s=3):
     was changed to workflow_dispatch-only and this is now the sole way a
     release build gets started. Retries a few times since the just-pushed
     tag ref can take a moment to be resolvable by the dispatch API."""
+    # 用 GitHub App 的 installation token 觸發，run 就會顯示 TCToolBox[bot] 而不是
+    # 操作者本人（org 本身不能當 actor，只能是使用者或 App）。沒設定就自然退回 gh 自己
+    # 的登入憑證，發版流程完全不受影響——所以這是純加值，不是新的必要條件。
+    env = None
+    app_token = get_installation_token()
+    if app_token:
+        env = {**os.environ, "GH_TOKEN": app_token}
+
     result = None
     for attempt in range(1, retries + 1):
         result = subprocess.run(
             [GH, "workflow", "run", "release.yml", "--repo", source_repo, "--ref", tag],
-            capture_output=True, text=True, encoding="utf-8", errors="replace",
+            capture_output=True, text=True, encoding="utf-8", errors="replace", env=env,
         )
         if result.returncode == 0:
             return
