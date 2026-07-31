@@ -587,7 +587,7 @@
     "Author": "JayceOfSpades",
     "Name": "Mini-Mappingway",
     "InternalName": "MiniMappingway",
-    "AssemblyVersion": "7.20.0.5",
+    "AssemblyVersion": "7.20.0.6",
     "Description": "在小地圖上顯示好友與公會成員的插件。可在設定中自訂標記樣式，並切換是否顯示好友、公會成員或兩者！圖示由 twitter 上的 @Miendoodle 繪製。感謝 nya 提供的點子！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/MiniMappingway",
@@ -607,15 +607,15 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/MiniMappingway.png",
     "Punchline": "在小地圖上顯示好友與公會成員的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/MiniMappingway-v7.20.0.5/MiniMappingway.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/MiniMappingway-v7.20.0.5/MiniMappingway.zip",
-    "Changelog": "- PvP 雷達改依紛爭前線三方陣營上色：以 CharacterData.Battalion（遊戲自身敵我判定欄位）歸隊，黑渦團／雙蛇黨／恆輝隊各自可調色，自己那隊用友方色，無陣營資料退回敵紅友藍"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/MiniMappingway-v7.20.0.6/MiniMappingway.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/MiniMappingway-v7.20.0.6/MiniMappingway.zip",
+    "Changelog": "- 修正 _NaviMap 節點解參考崩潰風險：解參考移到 UldManager 載入完成之後，逐跳補上 null 與節點型別檢查，讀取失敗即保留前值"
   },
   {
     "Author": "Jukka",
     "Name": "NecroLens",
     "InternalName": "NecroLens",
-    "AssemblyVersion": "7.20.0.5",
+    "AssemblyVersion": "7.20.0.6",
     "Description": "深層迷宮輔助工具。提供怪物雷達、仇恨、視野範圍等各種資訊。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/NecroLens",
@@ -635,9 +635,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/NecroLens.png",
     "Punchline": "真正的死靈術士永遠瞭若指掌深層迷宮……其他人只是用了高科技而已！",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.5/NecroLens.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.5/NecroLens.zip",
-    "Changelog": "- 補上陷阱/模仿怪寶箱/傳送裝置名稱/回程裝置四個介面開關\n- 寶箱可互動範圍圈不再受「是否高亮寶箱」開關連坐\n- 改用深宮結構取代封包 opcode,並修正 /pomander 會用錯魔陶器\n- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.6/NecroLens.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.6/NecroLens.zip",
+    "Changelog": "- 修正深層迷宮傳送點進度的節點解參考崩潰風險：五層跳轉逐跳補上 null 與節點型別檢查，NodeList[1] 補上界檢查，任一跳失敗即回傳 0"
   },
   {
     "Author": "NightmareXIV",
