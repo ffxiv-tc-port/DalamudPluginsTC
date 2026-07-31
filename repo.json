@@ -560,7 +560,7 @@
     "Author": "apetih",
     "Name": "Logogram Helper",
     "InternalName": "LogogramHelper",
-    "AssemblyVersion": "7.20.0.2",
+    "AssemblyVersion": "7.20.0.3",
     "Description": "進入聖言操縱者後，顯示優雷卡聖言技能所有可能組合的數量。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/LogogramHelper",
@@ -579,9 +579,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/LogogramHelper.png",
     "Punchline": "優雷卡聖言技能輔助工具。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LogogramHelper-v7.20.0.2/LogogramHelper.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LogogramHelper-v7.20.0.2/LogogramHelper.zip",
-    "Changelog": "- 補上 7 條缺少的繁中譯文"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LogogramHelper-v7.20.0.3/LogogramHelper.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LogogramHelper-v7.20.0.3/LogogramHelper.zip",
+    "Changelog": "- 修正文理技能詳情視窗在優雷卡繪製時拋出 NullReferenceException\n- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16"
   },
   {
     "Author": "JayceOfSpades",
@@ -890,7 +890,7 @@
     "Author": "Infi",
     "Name": "Submarine Tracker",
     "InternalName": "SubmarineTracker",
-    "AssemblyVersion": "7.20.0.5",
+    "AssemblyVersion": "7.20.0.6",
     "Description": "+ 追蹤目前的潛水艇配置、航線與所需時間\n+ 潛水艇配置建構器，協助改良配置並最佳化經驗值\n+ 可自訂的返航與維修通知\n+ 內建豐富資訊的 Helpy 助手\n+ 自訂戰利品總覽，含歷史紀錄與匯出功能\n+ 多種疊加層輔助你完成每日任務\n+ 支援多個公會",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SubmarineTracker",
@@ -910,9 +910,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SubmarineTracker.png",
     "Punchline": "潛水艇的事，不能說。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SubmarineTracker-v7.20.0.5/SubmarineTracker.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SubmarineTracker-v7.20.0.5/SubmarineTracker.zip",
-    "Changelog": "- 合併上游 SubmarineTracker（2 個 commit）\n- - Implement option to ignore escape closing windows\n- - Remove FC requirement for route calculations"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SubmarineTracker-v7.20.0.6/SubmarineTracker.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SubmarineTracker-v7.20.0.6/SubmarineTracker.zip",
+    "Changelog": "- DTR 的潛水艇數量改用 1/27 格式，省掉分隔線與空白\n- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16"
   },
   {
     "Author": "MgAl2O4",
@@ -1424,7 +1424,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.20.0.14",
+    "AssemblyVersion": "7.20.0.15",
     "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：部隊合建素材一鍵全交、野外陸行鳥自動餵食基薩爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1440,8 +1440,8 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.14/TCToolbox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.14/TCToolbox.zip",
-    "Changelog": "- 周邊玩家 DTR 提示改為只預覽 5 人"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.15/TCToolbox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.15/TCToolbox.zip",
+    "Changelog": "- 周邊玩家 DTR 改用圖示取代文字前綴，右鍵開啟主視窗並補上滑鼠說明"
   }
 ]
