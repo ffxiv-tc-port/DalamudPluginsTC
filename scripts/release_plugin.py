@@ -29,6 +29,9 @@ from pathlib import Path
 import mirror_releases as mirror
 from app_token import get_installation_token
 
+# 預設不允許以個人身分觸發 workflow(見下方 dispatch 處的說明)。由 --allow-personal-identity 開啟。
+ALLOW_PERSONAL_IDENTITY = False
+
 GH = mirror.GH
 
 FLEET_ROOT = Path(r"D:\ffxiv-tc-port")
@@ -174,12 +177,27 @@ def dispatch_release_run(source_repo, tag, retries=5, delay_s=3):
     release build gets started. Retries a few times since the just-pushed
     tag ref can take a moment to be resolvable by the dispatch API."""
     # 用 GitHub App 的 installation token 觸發，run 就會顯示 TCToolBox[bot] 而不是
-    # 操作者本人（org 本身不能當 actor，只能是使用者或 App）。沒設定就自然退回 gh 自己
-    # 的登入憑證，發版流程完全不受影響——所以這是純加值，不是新的必要條件。
+    # 操作者本人（org 本身不能當 actor，只能是使用者或 App）。
+    #
+    # 🔴 這裡原本是「拿不到就靜默退回個人憑證」，理由是「純加值、不該擋住發版」。
+    # 那個判斷的代價在 2026-08-01 具體化了：環境變數沒被 shell 繼承 → token 拿不到 →
+    # 51 次發版全部以個人身分觸發，而 workflow run 的 actor 是**改寫 git 歷史碰不到的
+    # API 欄位**，等於把先前清乾淨的身分足跡又寫回去，全程零警告。
+    #
+    # 現在改成預設拒絕。要用個人身分發版必須明確加 --allow-personal-identity，
+    # 讓它成為一個看得見的決定而不是一個沉默的預設值。
     env = None
     app_token = get_installation_token()
     if app_token:
         env = {**os.environ, "GH_TOKEN": app_token}
+    elif not ALLOW_PERSONAL_IDENTITY:
+        raise RuntimeError(
+            f"拿不到 TCToolBox App 的 installation token，拒絕以個人身分發版 {source_repo}。\n"
+            f"  workflow run 的 actor 會變成你本人，而那是清不掉的公開足跡。\n"
+            f"  修法：確認 TCTOOLBOX_APP_ID / TCTOOLBOX_APP_KEY 已設定"
+            f"（app_token.py 會自動從 Windows User 層級登錄檔讀，不必重開 shell）。\n"
+            f"  真的要用個人身分：加上 --allow-personal-identity。"
+        )
 
     result = None
     for attempt in range(1, retries + 1):
@@ -359,6 +377,9 @@ def main():
     parser.add_argument("--workers", type=int, default=8,
                          help="How many plugins to release in parallel (default: 8)")
     args = parser.parse_args()
+
+    global ALLOW_PERSONAL_IDENTITY
+    ALLOW_PERSONAL_IDENTITY = args.allow_personal_identity
 
     if args.all:
         # Exclude alias InternalNames: they have no checkout of their own, so

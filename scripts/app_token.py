@@ -72,11 +72,34 @@ def _api(path: str, token: str, method: str = "GET") -> dict:
         return json.loads(resp.read().decode())
 
 
+def _from_user_env(name: str) -> str:
+    """從 Windows 的 User 層級環境變數讀值。
+
+    ⚠️ 這個 fallback 是實際事故換來的：`setx` 設的 User 層級變數只有**之後**才建立的
+    行程才讀得到，而長時間執行的 shell／編輯器 session 是在那之前啟動的，於是
+    `os.environ` 永遠拿不到——2026-08-01 就因此讓 51 次發版退回個人身分而全程無警告。
+    直接查登錄檔可以繞過繼承問題。
+    """
+    if os.name != "nt":
+        return ""
+    try:
+        import winreg
+
+        with winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Environment") as key:
+            return str(winreg.QueryValueEx(key, name)[0]).strip()
+    except Exception:
+        return ""
+
+
 def get_installation_token(org: str = ORG) -> str | None:
     """回傳可用的 installation token；未設定或失敗時回傳 None（呼叫端退回 PAT）。"""
-    app_id = os.environ.get("TCTOOLBOX_APP_ID", "").strip()
-    key_path = os.environ.get("TCTOOLBOX_APP_KEY", "").strip()
+    app_id = os.environ.get("TCTOOLBOX_APP_ID", "").strip() or _from_user_env("TCTOOLBOX_APP_ID")
+    key_path = os.environ.get("TCTOOLBOX_APP_KEY", "").strip() or _from_user_env("TCTOOLBOX_APP_KEY")
     if not app_id or not key_path:
+        # 🔴 這裡以前是靜默 return None，是唯一一條不出聲的失敗路徑——
+        # 也正是它讓身分外洩無聲無息地發生。任何退回個人身分的情況都必須看得見。
+        print("[app_token] ⚠️ 未設定 TCTOOLBOX_APP_ID / TCTOOLBOX_APP_KEY，"
+              "將退回使用你自己的 GitHub 憑證（workflow run 的 actor 會是你本人）")
         return None
 
     cached = _cache.get(org)
