@@ -4,8 +4,6 @@
 
 台服目前使用的 Dalamud 為 **API Level 13**，而多數插件的官方版本已隨國際服前進到更新的 API 等級，無法直接在台服安裝。本倉庫維護這些插件對應 **TC 7.20（API13）** 的相容分支，並**已完成全面繁體中文化**（介面採台服官方譯名、對照官方遊戲資料表校訂）。
 
-> 舊版 TC 7.15（API12）時代的插件庫已封存於 [`tc-7.15` 分支](https://github.com/ffxiv-tc-port/DalamudPluginsTC/tree/tc-7.15)，仍在使用 7.15 客戶端者可改用該分支的凍結網址。
-
 ## 使用方式
 
 1. 開啟遊戲內插件安裝器
@@ -122,7 +120,6 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 
 所有收錄插件的介面均已翻譯為繁體中文：
 
-- **台服官方譯名**：術語對照 [台服遊戲資料表](https://github.com/aliceric27/ffxiv-datamining-tc) 逐項校訂（如乙太之光、公會工坊、精選、九宮幻卡、採掘師／園藝師／漁師等）
 - **翻譯外部化**：程式碼保留英文原文作為鍵值，譯文存放於外部語言檔（ini／resx／json），跟隨上游更新時翻譯不會遺失
 - 修正了多個台服客戶端語言判斷問題（部分插件先前因此永遠顯示英文）
 
