@@ -376,6 +376,11 @@ def main():
     parser.add_argument("--skip-mirror", action="store_true", help="Don't run mirror_releases.py afterward")
     parser.add_argument("--workers", type=int, default=8,
                          help="How many plugins to release in parallel (default: 8)")
+    # 這個旗標的檢查邏輯在 0ed7a65 就加好了,但當時漏了在這裡註冊,
+    # 導致 main() 一開頭就 AttributeError —— 也就是任何發版都跑不起來。
+    parser.add_argument("--allow-personal-identity", action="store_true",
+                         help="允許在拿不到 TCToolBox App token 時以個人身分觸發 workflow "
+                              "(run 的 actor 是不可變欄位,改 git 歷史蓋不掉,平常不要用)")
     args = parser.parse_args()
 
     global ALLOW_PERSONAL_IDENTITY
