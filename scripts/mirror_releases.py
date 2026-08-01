@@ -18,6 +18,8 @@ from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
+from app_token import get_installation_token
+
 GH = shutil.which("gh") or r"C:\Program Files\GitHub CLI\gh.exe"
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -153,8 +155,41 @@ ICON_PATHS = {
 }
 
 
+_APP_TOKEN_CACHE: list = []
+
+
+def _gh_env():
+    """讓 `gh` 用 TCToolBox App 的 installation token，而不是本機登入的個人 PAT。
+
+    🔴 為什麼需要這個：這個腳本是**在本機跑**的（DalamudPluginsTC 沒有
+    `.github/workflows/`），所以 `gh release create` 會用本機 `gh auth` 的憑證 ——
+    也就是使用者本人的 PAT。結果是這個 repo 的 474 個 release 全部
+    `author.login = Lother`，而**改寫 git 歷史完全碰不到那個欄位**
+    （2026-08-01 實查：51 個外掛 repo 都是 `github-actions[bot]`，只有這裡是 Lother）。
+
+    拿得到 App token 就用它（release 會顯示成 `tctoolbox[bot]`）；
+    拿不到就回 None 讓 `gh` 退回原本行為 —— 不要因為 token 拿不到就整個發版失敗。
+    """
+    if not _APP_TOKEN_CACHE:
+        try:
+            _APP_TOKEN_CACHE.append(get_installation_token())
+        except Exception:
+            _APP_TOKEN_CACHE.append(None)
+
+    token = _APP_TOKEN_CACHE[0]
+    if not token:
+        return None
+
+    env = os.environ.copy()
+    # ⚠️ 兩個都要設：gh 會優先讀 GH_TOKEN，但某些子命令看 GITHUB_TOKEN。
+    env["GH_TOKEN"] = token
+    env["GITHUB_TOKEN"] = token
+    return env
+
+
 def gh(*args, check=True):
-    result = subprocess.run([GH, *args], capture_output=True, text=True, encoding="utf-8", errors="replace")
+    result = subprocess.run([GH, *args], capture_output=True, text=True,
+                            encoding="utf-8", errors="replace", env=_gh_env())
     if check and result.returncode != 0:
         raise RuntimeError(f"gh {' '.join(args)} failed:\n{result.stderr}")
     return result.stdout.strip()
