@@ -86,6 +86,7 @@ SOURCE_REPOS = {
     "Crossingway": "ffxiv-tc-port/Crossingway",
     "IINACT": "ffxiv-tc-port/IINACT",
     "TCToolbox": "ffxiv-tc-port/TCToolbox",
+    "WondrousTailsSolver": "ffxiv-tc-port/EzWondrousTails",
 }
 
 # InternalName -> icon path within the source repo (on its default branch).
@@ -152,6 +153,7 @@ ICON_PATHS = {
     # an external CDN IconUrl (puni.sh); icons/Questionable.png is manually sourced from
     # the actual upstream icon at github.com/qstxiv/icons/raw/main/Questionable.png
     # (converted RGB->RGBA to avoid the broken-icon-question-mark bug).
+    "WondrousTailsSolver": "res/icon.png",
 }
 
 

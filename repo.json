@@ -1443,5 +1443,31 @@
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.22/TCToolbox.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.22/TCToolbox.zip",
     "Changelog": "- 新增老主顧交易總覽（CustomDeliveriesOverview）：唯讀視窗列出各老主顧的滿意度等級、當前等級進度、本週已交易次數與全體共用的週上限；靜態資料讀 Lumina 表（NPC 名與任務名走台服繁中 EXD 不寫死）、動態狀態讀 SatisfactionSupplyManager 唯讀欄位，零 hook、零寫入、零封包，連原生查詢函式都不呼叫（總用量自行加總、解鎖判定用滿意度等級欄位）；讀不到或索引越界一律顯示「－」不解參考。DR 舊模組的記憶體改座標瞬移與未實作的「本週報酬增加」一概不做\n- ci: 清掉描述已移除 gate 的過期註解\n- CI：修正 build-check 從未真正建置的問題"
+  },
+  {
+    "Author": "daemitus, MidoriKami",
+    "Name": "ezWondrousTails",
+    "InternalName": "WondrousTailsSolver",
+    "AssemblyVersion": "0.0.0.0",
+    "Description": "直接在遊戲原生的天書奇談面板上顯示連線機率:依目前已貼上的印花,算出最終貼出 1/2/3 條故事線的機率,並同時列出「重新貼」(消耗 2 奇想點把印花隨機重貼)之後的平均機率。數值會依優於或劣於重貼期望值以不同顏色標示,一眼就能判斷該不該花奇想點重抽。純唯讀計算,不會替你操作。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/ffxiv-tc-port/EzWondrousTails",
+    "Tags": [
+      "wondrous tails",
+      "weekly bingo",
+      "天書奇談",
+      "probability"
+    ],
+    "CategoryTags": [
+      "Utilities"
+    ],
+    "DalamudApiLevel": 13,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WondrousTailsSolver.png",
+    "Punchline": "在天書奇談面板顯示故事線機率",
+    "AcceptsFeedback": true
   }
 ]
