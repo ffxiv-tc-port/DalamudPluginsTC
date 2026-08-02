@@ -118,7 +118,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.22",
+    "AssemblyVersion": "7.20.0.23",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -130,9 +130,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.22/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.22/AutoRetainer.zip",
-    "Changelog": "- 軍票繳交:改抄 DailyRoutines 的主動刷新機制,不再空等遊戲自己重建清單"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.23/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.23/AutoRetainer.zip",
+    "Changelog": "- 雇員存入:卡住的格子不再無限重試,並加上耗時拆解診斷\n- 雇員取回 IPC:記住已送出的格子,指令放大從 2.48 倍降到接近 1 倍"
   },
   {
     "Author": "кайт машина (Puni.sh)",
@@ -808,7 +808,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.20.0.14",
+    "AssemblyVersion": "7.20.0.15",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -827,9 +827,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.14/SomethingNeedDoing.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.14/SomethingNeedDoing.zip",
-    "Changelog": "- Lua API MoveItemSlot:目的地滿的時候改為不搬並記錄,不再與 0 號格對調\n- 修正 Lua API Inventory MoveItemSlot 漏帶 a6 旗標造成的靜默只改本機\n- 取物巨集改成「整輪送完再判定」,不逐格精算"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.15/SomethingNeedDoing.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.15/SomethingNeedDoing.zip",
+    "Changelog": "- 取物巨集:每輪的收尾方式一併記進 log\n- 取物巨集:每格只送一個指令,並誠實回報撞到輪數上限"
   },
   {
     "Author": "Sonar Team",
