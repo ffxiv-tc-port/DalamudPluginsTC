@@ -15,6 +15,7 @@ Usage:
     python3 scripts/release_plugin.py --all --dry-run
 """
 import argparse
+import base64
 import json
 import os
 import re
@@ -66,12 +67,52 @@ ERA_FLOOR = (7, 20)
 VERSION_RE = re.compile(r"^v?(\d+)\.(\d+)\.(\d+)\.(\d+)$")
 
 
-def git(repo_path, *args, check=True):
-    result = subprocess.run(["git", "-C", str(repo_path), *args],
-                             capture_output=True, text=True, encoding="utf-8", errors="replace")
+def git(repo_path, *args, check=True, extra_config=()):
+    cmd = ["git"]
+    for c in extra_config:
+        cmd += ["-c", c]
+    cmd += ["-C", str(repo_path), *args]
+    result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
     if check and result.returncode != 0:
-        raise RuntimeError(f"git -C {repo_path} {' '.join(args)} failed:\n{result.stderr}")
+        # 別把 extraheader（含 token）漏進例外訊息裡
+        safe = " ".join(a for a in args)
+        raise RuntimeError(f"git -C {repo_path} {safe} failed:\n{result.stderr}")
     return result.stdout.strip()
+
+
+def git_push_as_app(repo_path, *args):
+    """以 TCToolBox App 的身分推送。
+
+    🔴 為什麼一定要這樣推：`push` 觸發的 workflow run，其 `actor.login` 是由**推送當下的
+    HTTP 驗證身分**決定的，跟 commit 的 author/committer 完全無關。用個人憑證推 → 每推一次
+    就在 Actions 頁面留下一筆掛著使用者真名的 run（2026-08-02 實測：清乾淨之後只要有人再推
+    一次就又長出來一筆，清除變成跑步機）。
+
+    做法沿用 `_rewrite/push_as_app.py`：把 installation token 透過 `-c http.<url>.extraheader`
+    只餵給這一次 git 子行程 —— **不寫 .git/config（local/global 都不動）、不留檔案痕跡**，
+    使用者手動 git push 的行為完全不受影響。
+
+    ⚠️ 拿不到 token 就**中止**而不是靜默退回個人身分（那正是 2026-08-01 那批 51 筆的成因）。
+    真的要用個人身分推，明確加 --allow-personal-identity。
+    """
+    token = None
+    try:
+        token = get_installation_token()
+    except Exception as exc:  # noqa: BLE001 - 取 token 失敗一律當作沒有
+        say(f"[warn] 取得 App token 失敗：{exc}")
+
+    if not token:
+        if ALLOW_PERSONAL_IDENTITY:
+            say("[warn] 沒有 App token，改用個人身分推送（--allow-personal-identity）")
+            return git(repo_path, *args)
+        raise RuntimeError(
+            "拿不到 TCToolBox App installation token，中止推送。\n"
+            "這是刻意的：用個人憑證推送會讓 workflow run 掛上使用者真名。\n"
+            "要強制用個人身分請加 --allow-personal-identity。")
+
+    header = base64.b64encode(f"x-access-token:{token}".encode()).decode()
+    return git(repo_path, *args,
+               extra_config=[f"http.https://github.com/.extraheader=Authorization: Basic {header}"])
 
 
 def next_tag(internal_name, latest_tag):
@@ -330,7 +371,7 @@ def release_one(internal_name, source_repo, dry_run=False):
             return True
 
         git(repo_path, "tag", tag)
-        git(repo_path, "push", "origin", tag)
+        git_push_as_app(repo_path, "push", "origin", tag)
         dispatch_release_run(source_repo, tag)
         say(f"[{internal_name}] pushed {tag}, dispatched release.yml, waiting for CI...")
 
