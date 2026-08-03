@@ -35,6 +35,17 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 REPO_JSON = REPO_ROOT / "repo.json"
 
+# ⚠️ 這支腳本的訊息全是中文，而它幾乎總是被當子行程呼叫（stdout 是 pipe）。
+# Windows 上 Python 對 pipe 用 **locale** 編碼（cp950），呼叫端卻用 utf-8 解碼 ——
+# 中文於是變成一串 U+FFFD，接著呼叫端要把 U+FFFD 印到 cp950 主控台時直接
+# UnicodeEncodeError 中止。2026-08-03 實際害 --wait 發版停在 mirror 之後、
+# commit 之前。這裡固定成 UTF-8，讓輸出跟呼叫端的解碼假設一致。
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+    except (AttributeError, ValueError):
+        pass
+
 
 def git_show(ref: str, path: str) -> str | None:
     """讀出某個 ref 上的檔案內容；讀不到回 None（例如 repo.json 是全新檔案）。

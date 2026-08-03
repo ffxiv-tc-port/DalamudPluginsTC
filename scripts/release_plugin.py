@@ -36,6 +36,34 @@ from pathlib import Path
 import mirror_releases as mirror
 from app_token import get_installation_token
 
+# 🔴 別讓「印一行字」有能力中止發版。
+#
+# 實際事故（2026-08-03，--wait 發 ICE）：publish_feed_locally() 印子行程輸出時丟
+# UnicodeEncodeError 而中止，**中止點在 mirror 已經改完檔案、commit 還沒做之間** ——
+# feed 被改好了卻沒提交，留下髒工作樹，而且整件事包在一個看起來像「發版失敗」的例外裡。
+#
+# 這個 console 是 cp950。中文本身在 cp950 編得出來，編不出來的是 U+FFFD（子行程輸出
+# 解碼失敗留下的替代字元）和 emoji。errors="replace" 讓這些字變成 "?" 而不是例外。
+# ⚠️ 這裡只改 errors 不改 encoding：改成 utf-8 會讓中文在 cp950 主控台變成亂碼。
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(errors="replace")
+    except (AttributeError, ValueError):  # 被重導向或不支援時無所謂
+        pass
+
+
+def child_env():
+    """給我們自己的 Python 子腳本用的環境。
+
+    ⚠️ 子行程的 stdout 是 pipe 時，Python 用 **locale** 編碼（這台機器是 cp950），
+    而呼叫端是用 utf-8 解碼 —— 中文於是變成一串 U+FFFD。實測：
+        子行程送出 b'...OK\\xa1]53 \\xad\\xd3...'（cp950 的「（53 個」）
+        我方 utf-8 解碼 -> '...OK\\ufffd]53 \\ufffd\\u04f1...'
+    設 PYTHONIOENCODING 讓兩邊講同一種編碼，從源頭消掉替代字元。
+    """
+    return {**os.environ, "PYTHONIOENCODING": "utf-8"}
+
+
 # 預設不允許以個人身分觸發 workflow(見下方 dispatch 處的說明)。由 --allow-personal-identity 開啟。
 ALLOW_PERSONAL_IDENTITY = False
 
@@ -426,9 +454,13 @@ def wait_for_release_visible(source_repo, tag, timeout_s=120, interval_s=5):
     """
     deadline = time.time() + timeout_s
     while time.time() < deadline:
+        # ⚠️ 顯式 encoding="utf-8"：text=True 單獨用會拿 runner 的 locale 解碼
+        # （這台是 cp950），gh 送出的是 UTF-8，遇到解不開的位元組就 UnicodeDecodeError
+        # —— 而這裡只是在等 release 出現，不該有能力讓整輪發版中止。
+        # 順帶把裸字串 "gh" 換成 GH 常數，跟本檔其他呼叫一致（gh 不在 PATH 時才找得到）。
         proc = subprocess.run(
-            ["gh", "release", "view", tag, "--repo", source_repo, "--json", "tagName"],
-            capture_output=True, text=True,
+            [GH, "release", "view", tag, "--repo", source_repo, "--json", "tagName"],
+            capture_output=True, text=True, encoding="utf-8", errors="replace",
         )
         if proc.returncode == 0:
             return True
@@ -436,8 +468,50 @@ def wait_for_release_visible(source_repo, tag, timeout_s=120, interval_s=5):
     return False
 
 
-def publish_feed_locally():
-    """--wait 的退路：本機 mirror 之後把 feed commit + push 出去。
+# mirror 會改寫的、且只有 mirror 會改寫的檔案。失敗還原時只碰這幾個，
+# 才不會把別的 agent 同時在做的事一起還原掉。
+FEED_FILES = ("repo.json", "scripts/release-state.json")
+
+
+def _restore_feed_files(snapshot):
+    """把 repo.json / release-state.json 還原成 mirror 之前的位元組，並清空索引。
+
+    🔴 為什麼一定要還原：這個 repo 有一個排程 workflow 每 15 分鐘也在寫同一批檔案。
+    留下「檔案已改、commit 未做」的中間狀態，下一次 `git pull` 就會跟 CI 的 commit
+    撞在一起；而且**留在索引裡的變更會讓其他 agent 的 `git pull --rebase` 直接失敗**
+    （"cannot pull with rebase: Your index contains uncommitted changes"）。
+
+    這麼做是安全的，因為 mirror 的產出是**可重算的** —— 排程 workflow 會從 GitHub
+    的 release 重新推導出一模一樣的 repo.json。丟掉本機這份不會損失任何資訊。
+    """
+    for rel, data in snapshot.items():
+        path = REPO_ROOT / rel
+        try:
+            if data is None:
+                if path.exists():
+                    path.unlink()
+            elif path.read_bytes() != data:
+                path.write_bytes(data)
+        except OSError as exc:
+            say(f"[warn] 還原 {rel} 失敗：{exc}")
+    # 只 unstage 我們自己 add 的路徑，別動別人可能已經 stage 的東西。
+    git(REPO_ROOT, "reset", "-q", "--", *FEED_FILES, "icons", check=False)
+    say("[feed] 已把 repo.json / release-state.json 還原成 mirror 之前的狀態，索引已清空。")
+    say("[feed] 這一輪的同步交給排程 workflow（它會從 release 重新推導，結果一樣）。")
+
+
+def _run_child(script_name):
+    """跑我們自己的 Python 子腳本，回傳 (returncode, stdout, stderr)。"""
+    proc = subprocess.run(
+        [sys.executable, str(REPO_ROOT / "scripts" / script_name)],
+        capture_output=True, text=True, encoding="utf-8", errors="replace",
+        env=child_env(),
+    )
+    return proc.returncode, proc.stdout or "", proc.stderr or ""
+
+
+def mirror_and_publish(scope):
+    """--wait 的退路：跑 mirror，然後把 feed commit + push 出去。**全有或全無。**
 
     平常這件事由 .github/workflows/mirror-releases.yml 在 CI 做。只有排程 workflow
     壞掉、需要人工頂上時才會走到這裡。
@@ -445,19 +519,60 @@ def publish_feed_locally():
     🔴 為什麼一定要 commit + push：mirror 只改本機檔案。少了這一步的結果是
     「release 建好了、repo.json 在本機是對的，但遠端的 feed 沒動」—— 使用者的
     外掛清單看不到新版，而本機看起來一切正常，**零徵兆**。
+
+    🔴 為什麼快照要在 mirror **之前**拍：第一版把快照放在「mirror 之後、commit
+    之前」，於是還原只是把檔案還原成**已經被 mirror 改過**的樣子 —— 等於沒還原。
+    測出來才發現（還原後位元組比對不相等）。而且 mirror 自己是**逐外掛增量寫檔**的，
+    它跑到一半失敗同樣會留下半套的 repo.json，一起被這個快照涵蓋。
     """
-    # RepoUrl 保險：跟 CI 走同一支腳本，避免兩邊的判準漂移。
-    guard = subprocess.run(
-        [sys.executable, str(REPO_ROOT / "scripts" / "verify_repo_json.py")],
-        capture_output=True, text=True, encoding="utf-8", errors="replace",
-    )
-    say((guard.stdout or guard.stderr).strip())
-    if guard.returncode != 0:
-        say("[FAIL] repo.json 保險檢查沒過，不 commit。")
+    # ⚠️ 偵測而不是上鎖。這個 checkout 今天實際發生過兩個 agent 交錯提交，而
+    # feed 檔案在進來時就已經髒掉，只可能是「另一輪 mirror 正在進行」或「上一輪
+    # 死在半路」——兩種情況繼續做下去都會把對方的結果混進我們的 commit。
+    # 真正的跨行程鎖在這裡不划算：排程 workflow 跑在自己的 runner 上，本機的鎖檔
+    # 對它無效，而 origin/main 的原子性 git 本來就保證了（非快進會被拒，下面有重試）。
+    dirty = git(REPO_ROOT, "status", "--porcelain", "--", *FEED_FILES, check=False)
+    if dirty:
+        say(f"[FAIL] 開始前 feed 檔案就已經有未提交的變更：\n{dirty}")
+        say("       可能是另一輪 mirror 正在跑，或上一輪死在半路。")
+        say("       先確認那份變更該不該留（`git diff repo.json`），再重跑。")
         return False
 
-    paths = [p for p in ("repo.json", "scripts/release-state.json", "icons")
-             if (REPO_ROOT / p).exists()]
+    snapshot = {}
+    for rel in FEED_FILES:
+        path = REPO_ROOT / rel
+        snapshot[rel] = path.read_bytes() if path.exists() else None
+
+    try:
+        n = len(scope) if scope else len(mirror.SOURCE_REPOS)
+        say(f"mirroring {n} plugin(s) into repo.json...")
+        mirror.main(only=scope)
+        return _publish_feed_inner()
+    except Exception as exc:  # noqa: BLE001 - 這裡要攔的就是「任何」失敗
+        say(f"[FAIL] feed 發佈失敗：{exc!r}")
+        # 失敗可能落在兩個位置，處置不同：
+        #   commit 之前 -> 檔案髒但沒進歷史，還原成進來時的樣子。
+        #   commit 之後(push 失敗) -> 工作樹本來就乾淨，**不要** reset，那會丟掉
+        #                              一個正確的 commit；留著讓人決定怎麼推。
+        ahead = git(REPO_ROOT, "rev-list", "--count", "origin/main..HEAD", check=False)
+        if ahead not in ("", "0"):
+            say(f"[feed] 已經 commit 但沒推出去（本地領先 origin/main {ahead} 筆），"
+                f"工作樹是乾淨的。要嘛手動 push_as_app 重推，要嘛就讓排程 workflow "
+                f"自己同步一次（內容會一樣），再把這筆本地 commit drop 掉。")
+        else:
+            _restore_feed_files(snapshot)
+        return False
+
+
+def _publish_feed_inner():
+    # RepoUrl 保險：跟 CI 走同一支腳本，避免兩邊的判準漂移。
+    rc, out, err = _run_child("verify_repo_json.py")
+    say((out or err).strip())
+    if rc != 0:
+        # ⚠️ raise 而不是 return False：return 會跳過外層的還原，把一份沒通過保險的
+        # repo.json 留在工作樹裡 —— 正是最不該留下的東西。
+        raise RuntimeError("repo.json 保險檢查沒過（見上方訊息），不 commit。")
+
+    paths = [p for p in (*FEED_FILES, "icons") if (REPO_ROOT / p).exists()]
     git(REPO_ROOT, "config", "--local", "user.name", COMMIT_NAME)
     git(REPO_ROOT, "config", "--local", "user.email", COMMIT_EMAIL)
     git(REPO_ROOT, "add", "--", *paths)
@@ -465,14 +580,9 @@ def publish_feed_locally():
         say("[feed] 沒有變更，不需要 commit")
         return True
 
-    msg = subprocess.run(
-        [sys.executable, str(REPO_ROOT / "scripts" / "feed_commit_message.py")],
-        capture_output=True, encoding="utf-8", errors="replace",
-    )
-    if msg.returncode != 0:
-        say(f"[FAIL] 產生 commit 訊息失敗：{msg.stderr}")
-        return False
-    message = msg.stdout
+    rc, message, err = _run_child("feed_commit_message.py")
+    if rc != 0 or not message.strip():
+        raise RuntimeError(f"產生 commit 訊息失敗（rc={rc}）：{err.strip()}")
     subject = message.splitlines()[0]
 
     # ⚠️ 訊息走檔案，不要用 -m 接中文多行。踩過的雷：shell here-string 被當字面量，
@@ -489,25 +599,31 @@ def publish_feed_locally():
 
     actual = git(REPO_ROOT, "log", "-1", "--format=%s")
     if actual != subject:
-        raise RuntimeError(f"🔴 commit 主旨不如預期。\n  預期: {subject!r}\n  實際: {actual!r}")
+        raise RuntimeError(f"commit 主旨不如預期。預期 {subject!r}，實際 {actual!r}")
     say(f"[feed] committed: {actual}")
 
-    # 這個 checkout 可能有別的 agent 同時在動（2026-08-03 實測），落後就先 rebase。
+    # 這個 checkout 可能有別的 agent 同時在動，而排程 workflow 也在推同一個分支，
+    # 所以推不上去是預期內的事 —— rebase 之後重試。
+    for attempt in (1, 2, 3):
+        _rebase_if_behind()
+        proc = subprocess.run(
+            [sys.executable, str(PUSH_AS_APP), str(REPO_ROOT), "origin", "main"],
+            capture_output=True, text=True, encoding="utf-8", errors="replace",
+            env=child_env(),
+        )
+        if proc.returncode == 0:
+            say(f"[feed] pushed（第 {attempt} 次嘗試）。本地最新三筆:\n"
+                f"{git(REPO_ROOT, 'log', '--oneline', '-3')}")
+            return True
+        say(f"[feed] 第 {attempt} 次推送失敗：{((proc.stdout or '') + (proc.stderr or '')).strip()}")
+    raise RuntimeError("push_as_app 連續三次失敗，feed 沒有推出去")
+
+
+def _rebase_if_behind():
     git(REPO_ROOT, "fetch", "origin", "main")
     if git(REPO_ROOT, "rev-list", "--count", "HEAD..origin/main") not in ("", "0"):
         say("[feed] 落後遠端，先 rebase")
         git(REPO_ROOT, "-c", "rebase.autoStash=true", "rebase", "origin/main")
-
-    proc = subprocess.run(
-        [sys.executable, str(PUSH_AS_APP), str(REPO_ROOT), "origin", "main"],
-        capture_output=True, text=True, encoding="utf-8", errors="replace",
-    )
-    if proc.returncode != 0:
-        say(f"[FAIL] push_as_app 回傳 {proc.returncode}:\n"
-            f"{((proc.stdout or '') + (proc.stderr or '')).strip()}")
-        return False
-    say(f"[feed] pushed。本地最新三筆:\n{git(REPO_ROOT, 'log', '--oneline', '-3')}")
-    return True
 
 
 def main():
@@ -599,9 +715,7 @@ def main():
         released_repos = {mirror.SOURCE_REPOS[n] for n in ok}
         scope = sorted(n for n, r in mirror.SOURCE_REPOS.items() if r in released_repos)
 
-    say(f"mirroring {len(scope) if scope else len(mirror.SOURCE_REPOS)} plugin(s) into repo.json...")
-    mirror.main(only=scope)
-    publish_feed_locally()
+    mirror_and_publish(scope)
 
 
 if __name__ == "__main__":
