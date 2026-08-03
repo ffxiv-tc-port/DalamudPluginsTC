@@ -1,0 +1,170 @@
+# 同步外掛發版到 feed
+#
+# 本機的 release_plugin.py 現在只負責「推 tag + 觸發外掛 repo 的 release.yml」就返回，
+# 完全不等 CI（以前要等 60~190 秒/外掛，一輪十幾個版本＝半小時的空窗）。
+# 誰把建好的 release 同步進 repo.json？就是這個 workflow。
+#
+#   本機 release_plugin.py   →  tag + push + dispatch  →  結束（秒級）
+#   外掛 repo 的 release.yml →  建置 + 建 release
+#   這個 workflow（排程）     →  mirror_releases.py → 有 diff 就 commit + push
+#
+# 為什麼是排程而不是跨 repo 的 repository_dispatch：跨 repo dispatch 需要在 52 個
+# 外掛 repo 裡各放一顆 PAT 或 App token 當 secret，而「不要再建新的 PAT」是紅線。
+# 排程只用預設的 GITHUB_TOKEN，零新增秘密。
+#
+# 📌 這個檔案是 2026-07-17 被刪掉的 mirror-releases.yml 的復活版。當初刪掉的理由是
+# 「每小時跑一次，沒變更也燒一個 Actions run」—— 那個理由在 2026-08-01 org 全公開
+# 之後已經失效（公開 repo 的 Actions 免費）。但舊版有三個缺陷，這裡都修掉了：
+#   1. 用 secrets.MIRROR_TOKEN（一顆 PAT）。現在全 public，預設 GITHUB_TOKEN 就讀得到。
+#   2. commit 身分是 github-actions[bot]，訊息永遠是 "Mirror plugin releases"。
+#   3. 🔴 沒有任何失敗偵測。mirror_releases.py 是**逐外掛 catch 例外**的：某個外掛炸了
+#      它只印一行 [FAIL] 然後**照樣以 0 離開**，run 是綠的。舊版會把這種失敗完全吃掉。
+name: 同步外掛發版到 feed
+
+on:
+  schedule:
+    # 每 15 分鐘。外掛自己的 release.yml 要跑 5~7 分鐘，所以從「本機推 tag」到
+    # 「feed 上線」的實際延遲約 10~20 分鐘。
+    #
+    # ⚠️ 頻率的上限是 API 額度不是 Actions 額度：GITHUB_TOKEN 是 1000 requests/hour
+    # /repo，而一次全掃約 156 個請求（53 個外掛 × 2 + ~50 次圖示檢查），
+    # 4 次/小時 ≈ 624，約 62%。要再密就得先讓全掃變便宜（見 README 的待辦）。
+    - cron: "*/15 * * * *"
+  # 需要立刻收一次時用。⚠️ 手動點網頁 UI 觸發會讓 run 的 actor 變成點的人；
+  # 要保持組織身分請用 App token 呼叫 API（本機 scripts/app_token.py 那條路）。
+  workflow_dispatch:
+
+# 🔴 排隊，不是取消。取消會整個丟掉一次同步，而下一班要 15 分鐘後才來 ——
+# 「少同步一次」在這裡是靜默的：feed 看起來正常，只是少了一個版本。
+concurrency:
+  group: mirror-feed
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  # ⚠️ 只有一個 job，而且沒有 job 層級的 if:。
+  # 記憶裡有一顆雷：被 if: 擋掉的 job 顯示成 skipped，而一個「全部 skipped」的 run
+  # 在 `gh run list` 看起來跟成功一模一樣。要跳過就跳過 step，不要跳過 job。
+  mirror:
+    name: mirror releases into repo.json
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # 要能 `git show HEAD:repo.json` 以及在推送被搶先時 rebase。
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 同步 release 並更新 repo.json
+        shell: bash
+        env:
+          # 全 org 已是 public，預設 token 讀得到別的 repo 的 release 與原始碼，
+          # 也寫得了本 repo 的 release（permissions.contents: write）。
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          python3 scripts/mirror_releases.py 2>&1 | tee mirror.log
+
+      - name: 🔴 逐外掛失敗偵測（mirror 自己不會用離開碼告訴你）
+        shell: bash
+        run: |
+          set -uo pipefail
+          if grep -n '^\[FAIL\]' mirror.log; then
+            {
+              echo "### 🔴 有外掛同步失敗"
+              echo ""
+              echo '```'
+              grep -n '^\[FAIL\]' mirror.log
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+            echo "::error title=mirror 有外掛失敗::mirror_releases.py 逐外掛 catch 例外且不改離開碼，只能從輸出判斷"
+            exit 1
+          fi
+          if grep -n '^\[warn\]' mirror.log; then
+            {
+              echo "### ⚠️ 警告（不致命，但要看）"
+              echo ""
+              echo '```'
+              grep -n '^\[warn\]' mirror.log
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+          echo "沒有 [FAIL] 行。"
+
+      - name: 🔴 repo.json 保險（RepoUrl 不可變）
+        shell: bash
+        run: python3 scripts/verify_repo_json.py
+
+      - name: 有沒有變更
+        id: diff
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add -- repo.json scripts/release-state.json icons
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "沒有新的發版，什麼都不做。" | tee -a "$GITHUB_STEP_SUMMARY"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --cached --name-only
+          fi
+
+      - name: commit + push
+        if: steps.diff.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Claude Sonnet 5"
+          git config user.email "noreply@anthropic.com"
+
+          # ⚠️ 訊息一律走檔案，不要用 -m 接多行/中文。
+          # 踩過的雷：shell here-string 在某些工具下會被當字面量，commit 成功、零錯誤，
+          # 但主旨變成一個 "@" —— 而 changelog 自動化是逐字讀第一行的。
+          python3 scripts/feed_commit_message.py > "$RUNNER_TEMP/feed-msg.txt"
+          echo "--- commit 訊息 ---"
+          cat "$RUNNER_TEMP/feed-msg.txt"
+          echo "-------------------"
+          git commit -F "$RUNNER_TEMP/feed-msg.txt"
+
+          # push 之後主旨驗一次 —— 上面那顆雷唯一的偵測手段就是回頭讀。
+          subject="$(git log -1 --format='%s')"
+          author="$(git log -1 --format='%an <%ae>')"
+          echo "主旨: $subject"
+          echo "作者: $author"
+          case "$subject" in
+            同步*) : ;;
+            *) echo "::error title=commit 主旨不對::$subject"; exit 1 ;;
+          esac
+          if [ "$author" != "Claude Sonnet 5 <noreply@anthropic.com>" ]; then
+            echo "::error title=commit 身分不對::$author"
+            exit 1
+          fi
+
+          # 本機同時也在推這個分支（實測過兩個 agent 同時 commit），所以 push 要能重試。
+          pushed=0
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "第 $attempt 次嘗試推送成功"
+              pushed=1
+              break
+            fi
+            echo "推送被拒（遠端有新 commit），rebase 後重試"
+            git pull --rebase origin main
+          done
+          if [ "$pushed" != 1 ]; then
+            echo "::error title=push 連續三次失敗::feed 沒有更新"
+            exit 1
+          fi
+
+          {
+            echo "### ✅ feed 已更新"
+            echo ""
+            echo "\`$subject\`"
+          } >> "$GITHUB_STEP_SUMMARY"

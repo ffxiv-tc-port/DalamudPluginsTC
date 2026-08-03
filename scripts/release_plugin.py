@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
-"""Local release automation: tag + push a plugin repo, wait for its
-release.yml to finish, then mirror everything into this repo's own
-repo.json/releases.
+"""Local release automation: 推 tag + 觸發外掛 repo 的 release.yml，然後就結束。
 
-Replaces the old hourly `mirror-releases.yml` GitHub Actions cron (removed
-2026-07-17) - that workflow burned an Actions run every hour even when
-nothing changed. Since every actual release is cut by hand from this
-machine anyway, running the sync locally right after is both free and
-faster (no waiting for the next cron tick).
-
-Usage:
     python3 scripts/release_plugin.py --all
     python3 scripts/release_plugin.py EurekaHelper Accountant
     python3 scripts/release_plugin.py --all --dry-run
+
+**本機不再等 CI，也不再自己 mirror。** 誰把建好的 release 同步進 repo.json？
+本 repo 的排程 workflow `.github/workflows/mirror-releases.yml`（每 15 分鐘）。
+
+    本機這支腳本          →  tag + push + dispatch  →  結束（秒級）
+    外掛 repo release.yml →  建置 + 建 release
+    本 repo 排程 workflow  →  mirror_releases.py → 有 diff 就 commit + push
+
+2026-08-03 之前這支腳本是同步的：dispatch 之後就地 `wait_for_release_run`
+（timeout 900s）+ `wait_for_release_visible`，再跑 `mirror.main()`。一個外掛
+60~190 秒，一輪十幾個版本就是半小時的空窗，而那半小時純粹是在等 GitHub。
+
+⚠️ `--wait` 保留舊行為（等 CI + 本機 mirror + commit + push），當作排程 workflow
+壞掉時的退路。差別是它現在**會 commit 並推送 feed** —— 舊版只改檔案不 commit，
+而「版本上線了但使用者的 feed 看不到」是零徵兆的失敗（2026-08-03 差點出事）。
 """
 import argparse
 import base64
@@ -36,6 +42,13 @@ ALLOW_PERSONAL_IDENTITY = False
 GH = mirror.GH
 
 FLEET_ROOT = Path(r"D:\ffxiv-tc-port")
+
+REPO_ROOT = mirror.REPO_ROOT
+# 🔴 推送 feed 一律走這支（TCToolBox App，App ID 4448133）。用 `git push` 會讓
+# 後續 workflow run 的 actor 變成個人帳號，而那是改寫 git 歷史碰不到的 API 欄位。
+PUSH_AS_APP = FLEET_ROOT / "_rewrite" / "push_as_app.py"
+COMMIT_NAME = "Claude Sonnet 5"
+COMMIT_EMAIL = "noreply@anthropic.com"
 
 # InternalNames that do NOT have a checkout of their own because they ship from
 # another plugin's repo and tag. Releasing these directly is meaningless - they
@@ -335,7 +348,13 @@ def wait_for_release_run(source_repo, tag, timeout_s=900, poll_s=8):
     return ("timeout", None) if not (seen or found) else ("timeout", "unknown")
 
 
-def release_one(internal_name, source_repo, dry_run=False):
+def release_one(internal_name, source_repo, dry_run=False, wait=False):
+    """推 tag + 觸發 release.yml。
+
+    wait=False（預設）: dispatch 完就返回，CI 跑多久與本機無關 —— 之後由本 repo 的
+    排程 workflow 把 release 同步進 repo.json。
+    wait=True: 舊行為，就地等 CI 跑完並確認 release 真的查得到。
+    """
     repo_path = LOCAL_PATHS.get(internal_name)
     if repo_path is None:
         say(f"[skip] {internal_name}: no LOCAL_PATHS entry")
@@ -363,7 +382,7 @@ def release_one(internal_name, source_repo, dry_run=False):
             return True
         tag = latest_tag
         dispatch_release_run(source_repo, tag)
-        say(f"[{internal_name}] re-dispatched release.yml for {tag}, waiting for CI...")
+        say(f"[{internal_name}] re-dispatched release.yml for {tag}")
     else:
         tag = next_tag(internal_name, latest_tag)
         say(f"[{internal_name}] next tag: {tag}")
@@ -373,8 +392,16 @@ def release_one(internal_name, source_repo, dry_run=False):
         git(repo_path, "tag", tag)
         git_push_as_app(repo_path, "push", "origin", tag)
         dispatch_release_run(source_repo, tag)
-        say(f"[{internal_name}] pushed {tag}, dispatched release.yml, waiting for CI...")
+        say(f"[{internal_name}] pushed {tag}, dispatched release.yml")
 
+    if not wait:
+        # 🔑 本機的工作到此為止。CI 建置要 5~7 分鐘，等它是純粹的空轉；
+        # repo.json 由本 repo 的排程 workflow 回寫（見模組 docstring）。
+        say(f"[ok] {internal_name}: {tag} 已觸發 -> "
+            f"https://github.com/{source_repo}/actions")
+        return True
+
+    say(f"[{internal_name}] waiting for CI...")
     status, conclusion = wait_for_release_run(source_repo, tag)
     if status != "completed" or conclusion != "success":
         say(f"[FAIL] {internal_name}: release.yml {status}/{conclusion} - check https://github.com/{source_repo}/actions")
@@ -409,12 +436,91 @@ def wait_for_release_visible(source_repo, tag, timeout_s=120, interval_s=5):
     return False
 
 
+def publish_feed_locally():
+    """--wait 的退路：本機 mirror 之後把 feed commit + push 出去。
+
+    平常這件事由 .github/workflows/mirror-releases.yml 在 CI 做。只有排程 workflow
+    壞掉、需要人工頂上時才會走到這裡。
+
+    🔴 為什麼一定要 commit + push：mirror 只改本機檔案。少了這一步的結果是
+    「release 建好了、repo.json 在本機是對的，但遠端的 feed 沒動」—— 使用者的
+    外掛清單看不到新版，而本機看起來一切正常，**零徵兆**。
+    """
+    # RepoUrl 保險：跟 CI 走同一支腳本，避免兩邊的判準漂移。
+    guard = subprocess.run(
+        [sys.executable, str(REPO_ROOT / "scripts" / "verify_repo_json.py")],
+        capture_output=True, text=True, encoding="utf-8", errors="replace",
+    )
+    say((guard.stdout or guard.stderr).strip())
+    if guard.returncode != 0:
+        say("[FAIL] repo.json 保險檢查沒過，不 commit。")
+        return False
+
+    paths = [p for p in ("repo.json", "scripts/release-state.json", "icons")
+             if (REPO_ROOT / p).exists()]
+    git(REPO_ROOT, "config", "--local", "user.name", COMMIT_NAME)
+    git(REPO_ROOT, "config", "--local", "user.email", COMMIT_EMAIL)
+    git(REPO_ROOT, "add", "--", *paths)
+    if not git(REPO_ROOT, "diff", "--cached", "--name-only"):
+        say("[feed] 沒有變更，不需要 commit")
+        return True
+
+    msg = subprocess.run(
+        [sys.executable, str(REPO_ROOT / "scripts" / "feed_commit_message.py")],
+        capture_output=True, encoding="utf-8", errors="replace",
+    )
+    if msg.returncode != 0:
+        say(f"[FAIL] 產生 commit 訊息失敗：{msg.stderr}")
+        return False
+    message = msg.stdout
+    subject = message.splitlines()[0]
+
+    # ⚠️ 訊息走檔案，不要用 -m 接中文多行。踩過的雷：shell here-string 被當字面量，
+    # commit 成功、零錯誤，主旨卻變成一個 "@"。
+    msg_path = REPO_ROOT / ".git" / "FEED_COMMIT_MSG"
+    msg_path.write_text(message, encoding="utf-8")
+    try:
+        git(REPO_ROOT, "commit", "-F", str(msg_path))
+    finally:
+        try:
+            msg_path.unlink()
+        except OSError:
+            pass
+
+    actual = git(REPO_ROOT, "log", "-1", "--format=%s")
+    if actual != subject:
+        raise RuntimeError(f"🔴 commit 主旨不如預期。\n  預期: {subject!r}\n  實際: {actual!r}")
+    say(f"[feed] committed: {actual}")
+
+    # 這個 checkout 可能有別的 agent 同時在動（2026-08-03 實測），落後就先 rebase。
+    git(REPO_ROOT, "fetch", "origin", "main")
+    if git(REPO_ROOT, "rev-list", "--count", "HEAD..origin/main") not in ("", "0"):
+        say("[feed] 落後遠端，先 rebase")
+        git(REPO_ROOT, "-c", "rebase.autoStash=true", "rebase", "origin/main")
+
+    proc = subprocess.run(
+        [sys.executable, str(PUSH_AS_APP), str(REPO_ROOT), "origin", "main"],
+        capture_output=True, text=True, encoding="utf-8", errors="replace",
+    )
+    if proc.returncode != 0:
+        say(f"[FAIL] push_as_app 回傳 {proc.returncode}:\n"
+            f"{((proc.stdout or '') + (proc.stderr or '')).strip()}")
+        return False
+    say(f"[feed] pushed。本地最新三筆:\n{git(REPO_ROOT, 'log', '--oneline', '-3')}")
+    return True
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("plugins", nargs="*", help="InternalNames to release (default: none unless --all)")
     parser.add_argument("--all", action="store_true", help="Release every plugin in SOURCE_REPOS")
     parser.add_argument("--dry-run", action="store_true", help="Only print the tag that would be cut")
-    parser.add_argument("--skip-mirror", action="store_true", help="Don't run mirror_releases.py afterward")
+    parser.add_argument("--skip-mirror", action="store_true",
+                         help="--wait 時不要跑 mirror_releases.py（沒有 --wait 時本來就不會跑）")
+    parser.add_argument("--wait", action="store_true",
+                         help="退路模式：就地等 CI 跑完，然後本機 mirror + commit + push feed。"
+                              "平常不需要 —— repo.json 由本 repo 的排程 workflow "
+                              "(.github/workflows/mirror-releases.yml) 每 15 分鐘回寫一次。")
     parser.add_argument("--workers", type=int, default=8,
                          help="How many plugins to release in parallel (default: 8)")
     # 這個旗標的檢查邏輯在 0ed7a65 就加好了,但當時漏了在這裡註冊,
@@ -451,7 +557,8 @@ def main():
     results = {}
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         futures = {
-            pool.submit(release_one, name, mirror.SOURCE_REPOS[name], dry_run=args.dry_run): name
+            pool.submit(release_one, name, mirror.SOURCE_REPOS[name],
+                        dry_run=args.dry_run, wait=args.wait): name
             for name in targets
         }
         done = 0
@@ -468,6 +575,13 @@ def main():
     ok = [n for n, v in results.items() if v]
     failed = [n for n, v in results.items() if not v]
     say(f"{len(ok)} succeeded, {len(failed)} failed/skipped: {failed}")
+
+    if not args.wait:
+        # 預設路徑：本機到此為止。
+        say("本機工作結束。repo.json 由本 repo 的排程 workflow 回寫（每 15 分鐘）：")
+        say("  https://github.com/ffxiv-tc-port/DalamudPluginsTC/actions/workflows/mirror-releases.yml")
+        say("  收完之後記得 `git pull` 才會看到更新後的 repo.json / release-state.json。")
+        return
 
     if args.dry_run or args.skip_mirror or not ok:
         return
@@ -487,6 +601,7 @@ def main():
 
     say(f"mirroring {len(scope) if scope else len(mirror.SOURCE_REPOS)} plugin(s) into repo.json...")
     mirror.main(only=scope)
+    publish_feed_locally()
 
 
 if __name__ == "__main__":
