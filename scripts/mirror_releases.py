@@ -166,8 +166,8 @@ def _gh_env():
     🔴 為什麼需要這個：這個腳本是**在本機跑**的（DalamudPluginsTC 沒有
     `.github/workflows/`），所以 `gh release create` 會用本機 `gh auth` 的憑證 ——
     也就是使用者本人的 PAT。結果是這個 repo 的 474 個 release 全部
-    `author.login = Lother`，而**改寫 git 歷史完全碰不到那個欄位**
-    （2026-08-01 實查：51 個外掛 repo 都是 `github-actions[bot]`，只有這裡是 Lother）。
+    `author.login` 都是個人帳號，而**改寫 git 歷史完全碰不到那個欄位**
+    （2026-08-01 實查：51 個外掛 repo 都是 `github-actions[bot]`，只有這裡是個人帳號）。
 
     拿得到 App token 就用它（release 會顯示成 `tctoolbox[bot]`）；
     拿不到就回 None 讓 `gh` 退回原本行為 —— 不要因為 token 拿不到就整個發版失敗。
@@ -421,8 +421,8 @@ def mirror_one(internal_name, source_repo, state, by_internal):
         # every plugin regardless of upstream license - see the 2026-07-25
         # license-audit decision (memory: project_license_audit_20260725).
         # .git is stripped (top-level + every submodule's own) so this can't
-        # leak real commit-author identity, only the "Lother" alias already
-        # public via every RepoUrl in repo.json.
+        # leak commit-author identity - the snapshot carries only what is
+        # already public via every RepoUrl in repo.json.
         #
         # Only built when it's actually going to be uploaded - this is the single
         # most expensive operation in the script (a full recursive clone of the

@@ -1,7 +1,7 @@
 """用 GitHub App 的私鑰換取 installation token。
 
 為什麼要這個：`release_plugin.py` 原本用使用者自己的 PAT 去 dispatch release.yml，
-於是 Actions 的 run 會顯示成該使用者觸發（`actor: Lother`）。GitHub 的 run 一定歸屬到
+於是 Actions 的 run 會顯示成該使用者觸發（`actor` 是個人帳號）。GitHub 的 run 一定歸屬到
 「使用者」或「GitHub App」——**org 本身不能當 actor**——所以要讓它顯示成組織名義，
 唯一的做法是建一個 App 並用它的 installation token 來 dispatch，run 就會顯示
 `TCToolBox[bot]`。
