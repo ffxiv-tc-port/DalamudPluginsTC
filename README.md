@@ -1,6 +1,6 @@
 # DalamudPluginsTC
 
-台服（TC，Traditional Chinese client）專用的第三方 Dalamud 插件庫，收錄並持續維護 **52 個**對應台服客戶端的插件 fork。
+台服（TC，Traditional Chinese client）專用的第三方 Dalamud 插件庫，收錄並持續維護 **53 個**對應台服客戶端的插件 fork。
 
 台服目前使用的 Dalamud 為 **API Level 13**，而多數插件的官方版本已隨國際服前進到更新的 API 等級，無法直接在台服安裝。本倉庫維護這些插件對應 **TC 7.20（API13）** 的相容分支，並**已完成全面繁體中文化**（介面採台服官方譯名、對照官方遊戲資料表校訂）。
 
@@ -78,6 +78,7 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 | [**LatihasChocobo**](https://github.com/ffxiv-tc-port/LatihasChocobo) | [Latihas](https://github.com/Latihas/LatihasChocobo) | 自動陸行鳥競賽 |
 | [**Avant-Garde**](https://github.com/ffxiv-tc-port/AvantGarde) | [NeNeppie](https://github.com/NeNeppie/AvantGarde) | 潮流王小遊戲的符合條件裝備提示 |
 | [**Easier Faux Hollows**](https://github.com/ffxiv-tc-port/vfaux) | [awgil](https://github.com/awgil/vfaux) | 以已知圖樣求解幻巧拼圖 |
+| [**ezWondrousTails**](https://github.com/ffxiv-tc-port/EzWondrousTails) | [daemitus](https://github.com/daemitus/WondrousTailsSolver) | 在天書奇談面板顯示連線機率與「重新貼」的期望值 |
 
 ### 雇員與市場
 
