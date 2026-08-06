@@ -36,7 +36,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.20.0.48",
+    "AssemblyVersion": "7.20.0.49",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -54,9 +54,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.48/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.48/Artisan.zip",
-    "Changelog": "- Raphael 解算結果改為可依製作狀態機會性偏離\n- 模擬器修正快速改革為自由動作、品質計算捨入順序"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.49/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.49/Artisan.zip",
+    "Changelog": "- 雇員取素材改為整疊取出並修正壓制 AutoRetainer 的反向判斷,Raphael 被忽略的解改為可見"
   },
   {
     "Author": "Herculezz",
@@ -531,7 +531,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.24",
+    "AssemblyVersion": "7.20.0.25",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -552,9 +552,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速以太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.24/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.24/Lifestream.zip",
-    "Changelog": "- 指令說明補上 /li panel 與先前漏掉的 /li goto\n- 座標瞬移的風險說明改為與 DR 原始碼一致的精確敘述\n- 傳送面板排乙太之光佇列失敗時降級為聊天欄錯誤,不讓例外打斷視窗繪製\n- 新增傳送面板(搜尋/我的最愛/備註/地圖預覽)與兩個預設關閉的進階傳送選項"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.25/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.25/Lifestream.zip",
+    "Changelog": "- 傳送面板：右鍵選單不再重複兩份、有自訂落點的項目改亮淺藍、座標瞬移改為面板核取方塊；新增我的最愛視窗（自訂排序與分類）與野外導航自動上坐騎"
   },
   {
     "Author": "apetih",
@@ -783,7 +783,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.20.0.11",
+    "AssemblyVersion": "7.20.0.12",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -800,9 +800,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.11/Saucy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.11/Saucy.zip",
-    "Changelog": "- 仙人微彩：求解移到背景執行緒、選線加確認閂、暖機與節奏可調\n- 修正台服確認框防護整條靜默失效：補上繁中比對詞並填回兩個空殼判斷\n- 新增孤樹無援自動遊玩模組：純讀畫面資料，不碰封包\n- CI：修正 build-check 從未真正建置的問題"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.12/Saucy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.12/Saucy.zip",
+    "Changelog": "- 孤樹無援解除對 DR 的依賴：指針改讀遊戲自己的 0-10000 刻度、回饋改用量表落差、力量表照遊戲判定式重算"
   },
   {
     "Author": "daemitus, croizat",
@@ -1116,7 +1116,7 @@
     "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.20.0.23",
+    "AssemblyVersion": "7.20.0.24",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/DailyDuty",
@@ -1139,9 +1139,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.23/DailyDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.23/DailyDuty.zip",
-    "Changelog": "- 仙人仙彩倒數支援台服：補上陸行鳥資料中心的開獎時刻\n- CI：修正 build-check 從未真正建置的問題"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.24/DailyDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.24/DailyDuty.zip",
+    "Changelog": "- 討伐佈告板捷徑:按鈕依狀態隱藏,巡邏改為等網格建好而不是謊報完成"
   },
   {
     "Author": "liza, qstxiv, & various contributors",
@@ -1288,7 +1288,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.20.0.38",
+    "AssemblyVersion": "7.20.0.39",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1306,9 +1306,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.38/ICE.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.38/ICE.zip",
-    "Changelog": "- 機甲行動疊加層畫出目標實際點位與 hitbox，並直接標示有沒有被範圍蓋到"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.39/ICE.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.39/ICE.zip",
+    "Changelog": "- 時段任務表失效時給得出可辨識的錯誤:補三層 Information 診斷"
   },
   {
     "Author": "Liza Carvelli",
