@@ -90,7 +90,7 @@
     "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
-    "AssemblyVersion": "7.20.0.10",
+    "AssemblyVersion": "7.20.0.11",
     "Description": "自動幫你提鉤釣魚,你能相信嗎?\n支援自訂預設集、自動以小釣大、自動刺魚等功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoHook",
@@ -110,9 +110,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoHook.png",
     "Punchline": "讓釣魚不再無聊(或更無聊)。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.10/AutoHook.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.10/AutoHook.zip",
-    "Changelog": "- 華麗提鉤順位改三態：自動判斷任務要數量還是要評價\n- 華麗提鉤不去勾「preset 刻意要放走」的咬鉤\n- 偵錯頁的 WKSManager 偏移掃描會讀出結構外約 6KB，收上界並改成可指定搜尋值\n- 華麗提鉤獨立成一層：可用時就用，用不了時不再降級成普通提鉤\n- 修正宇宙探索的餌 ID 讀錯偏移：0xC9C 讀到的是任務完成旗標不是餌"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.11/AutoHook.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.11/AutoHook.zip",
+    "Changelog": "- 修「一直不提鉤，只有華麗提鉤 CD 完才會提」：真因是 preset 的提鉤時間窗\n- 崩潰修復：資源檔的空字串會變成空指標，畫出來就整個遊戲結束\n- 宇宙釣魚加入純量測記錄，把咬鉤力道與魚的尺寸對起來"
   },
   {
     "Author": "кайт машина (Puni.sh)",
@@ -1288,7 +1288,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.20.0.42",
+    "AssemblyVersion": "7.20.0.43",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1306,9 +1306,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.42/ICE.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.42/ICE.zip",
-    "Changelog": "- 任務資訊表的銀／金星門檻：時間型任務改畫成 mm:ss，不再顯示 15100 這種假分數\n- 機甲行動目標標示：無名任務目標改用資料表與標記配對辨識，過濾從「可不可選取」改成「是不是任務目標」\n- 疊加層「目前任務」顯示改版：時間型任務不再一片空白，銀／金達成狀態改成兩態標示\n- ECommons 更新至 0a6018a:GetNodeByIDChain 走訪鏈補判空"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.43/ICE.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.43/ICE.zip",
+    "Changelog": "- 疊加層顯示「距金星還差多少」，並在跨過金星門檻時通知一次\n- 三處 WKSManager 未判空解參考補守衛：宇宙區外讀分數不再是攔不到的存取違規\n- ECommons repin a70d4e5：時間型任務的門檻不再被抽成假分數\n- 機甲行動目標分身份：協助員不再吃到駕駛員的目標白名單，並顯示自己身份的指示文字\n- 疊加層：評價／剩餘時間那一列被黏在任務名同一行的版面錯誤"
   },
   {
     "Author": "Liza Carvelli",
