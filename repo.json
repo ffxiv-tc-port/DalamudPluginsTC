@@ -36,7 +36,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.20.0.52",
+    "AssemblyVersion": "7.20.0.53",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -54,15 +54,15 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.52/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.52/Artisan.zip",
-    "Changelog": "- 整疊取素材的背包空格閾值改為可設定,預設維持 2"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.53/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.53/Artisan.zip",
+    "Changelog": "- 修補三處 AtkComponentButton.IsEnabled 空指標解參考造成的崩潰\n- ECommons 更新至 00e6c4c:UI 輔助層 IsEnabled 的 OwnerNode 空指標加固"
   },
   {
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.14",
+    "AssemblyVersion": "7.20.0.15",
     "Description": "自動幫你跑副本，支援信賴的同伴、達人指引、士官兵團、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -82,9 +82,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.14/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.14/AutoDuty.zip",
-    "Changelog": "- 跨外掛 IPC 呼叫失敗不再完全靜默，並修正 EnqueueHET 的簽名"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.15/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.15/AutoDuty.zip",
+    "Changelog": "- ECommons 更新至 00e6c4c:IsEnabled 的 OwnerNode 空指標全面加固"
   },
   {
     "Author": "Det",
@@ -118,7 +118,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.35",
+    "AssemblyVersion": "7.20.0.36",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -130,15 +130,15 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.35/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.35/AutoRetainer.zip",
-    "Changelog": "- 修正 21 處讀取按鈕啟用狀態時會讓遊戲崩潰的空指標解參考\n- 修正僱員存入計畫複製的三個上游錯誤:重複通知、判錯對象、寫到錯的角色"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.36/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.36/AutoRetainer.zip",
+    "Changelog": "- ECommons 更新至 00e6c4c:IsEnabled 的 OwnerNode 空指標全面加固"
   },
   {
     "Author": "кайт машина (Puni.sh)",
     "Name": "Avarice",
     "InternalName": "Avarice",
-    "AssemblyVersion": "7.20.0.9",
+    "AssemblyVersion": "7.20.0.10",
     "Description": "Positional feedback with pixel perfect rear/flank tracking, range indicators, and more.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Avarice",
@@ -156,9 +156,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Avarice.png",
     "Punchline": "Positional feedback with pixel perfect rear/flank tracking, range indicators, and more.",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.9/Avarice.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.9/Avarice.zip",
-    "Changelog": "- 更新 ECommons 子模組:UI 輔助層兩處空指標加固(按鈕點擊與 AtkValues 讀取)\n- 更新 ECommons pin:fe83e2c5→db0ceca7,帶入台服世界公開性根因修正\n- CI：修正 build-check 從未真正建置的問題"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.10/Avarice.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.10/Avarice.zip",
+    "Changelog": "- ECommons 更新至 00e6c4c:IsEnabled 的 OwnerNode 空指標全面加固"
   },
   {
     "Author": "NeNeppie",
@@ -478,7 +478,7 @@
     "Author": "Latihas",
     "Name": "LatihasChocobo",
     "InternalName": "LatihasChocobo",
-    "AssemblyVersion": "7.20.0.3",
+    "AssemblyVersion": "7.20.0.4",
     "Description": "自動陸行鳥競賽",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/LatihasChocobo",
@@ -494,10 +494,10 @@
     "LoadPriority": 0,
     "Punchline": "自動陸行鳥競賽",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.3/LatihasChocobo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.3/LatihasChocobo.zip",
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.4/LatihasChocobo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.4/LatihasChocobo.zip",
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/LatihasChocobo.png",
-    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16\n- 補上 latihaschocobo-dev skill 缺漏的建置與環境章節"
+    "Changelog": "- 修掉按鈕點擊與節點走訪的存取違規入口：IsEnabled 前先驗 OwnerNode、原生取元件前先驗節點\n- CI：空提交，驗證 build-check 的 push 觸發已恢復\n- CI：註記 build-check 的 branches 不可刪除\n- CI：修正 build-check 從未真正建置的問題"
   },
   {
     "Author": "53m1k0l0n/Gidedin (Puni.sh)",
@@ -531,7 +531,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.27",
+    "AssemblyVersion": "7.20.0.28",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -552,9 +552,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速以太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.27/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.27/Lifestream.zip",
-    "Changelog": "- 修 Lifestream 讀取按鈕啟用狀態時的 AVE 入口:12 處全部先驗 OwnerNode 再讀 IsEnabled"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.28/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.28/Lifestream.zip",
+    "Changelog": "- ECommons 更新至 00e6c4c:IsEnabled 的 OwnerNode 空指標全面加固"
   },
   {
     "Author": "apetih",
@@ -808,7 +808,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.20.0.17",
+    "AssemblyVersion": "7.20.0.18",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -827,9 +827,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.17/SomethingNeedDoing.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.17/SomethingNeedDoing.zip",
-    "Changelog": "- /equip 選單掃描修正索引上下界,不再越界例外或誤送關閉指令"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.18/SomethingNeedDoing.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.18/SomethingNeedDoing.zip",
+    "Changelog": "- 修掉 Lua 巨集介面包裝的空指標崩潰:按鈕狀態、節點與 AtkValue\n- ECommons 子模組更新到 00e6c4c:UI 輔助層 AVE 加固"
   },
   {
     "Author": "Sonar Team",
@@ -863,7 +863,7 @@
     "Author": "NightmareXIV",
     "Name": "Splatoon",
     "InternalName": "Splatoon",
-    "AssemblyVersion": "7.20.0.14",
+    "AssemblyVersion": "7.20.0.15",
     "Description": "Splatoon 是一款強大的輔助工具。它以自訂路標系統徹底革新遊戲體驗，可建立無數量限制的成組路標、文字標籤與角色指示器，並具備精確到像素的定位能力。此功能讓玩家能更清楚辨識關鍵物件與事件，進而做出更快速的反應。請注意，此插件本身不附帶任何預設檔，玩家可自行製作或匯入現成的預設檔，打造專屬於自己的遊戲體驗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Splatoon",
@@ -882,9 +882,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Splatoon.png",
     "Punchline": "以無限、精準的路標重新定義 FFXIV 導航方式。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.14/Splatoon.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.14/Splatoon.zip",
-    "Changelog": "- 自動產生:更新 SplatoonScripts/update.csv\n- 跨外掛 IPC 呼叫失敗不再完全靜默，並修掉 SimpleMitigations 的每幀例外\n- 移除驗證用的暫時 workflow(已完成驗證:腳本壞掉時 build-check 紅、發版建置綠)\n- 驗證用(暫時):註冊 zz verify release build,驗完即刪\n- CI:腳本編譯失敗不再擋發版,並修好希臘字母類別名永遠無法更新的問題"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.15/Splatoon.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.15/Splatoon.zip",
+    "Changelog": "- 官方腳本版本遞增:AutoRetainerCreation 與 GenericTest4,讓既有使用者收到空指標修補\n- 修補官方腳本兩支的 IsEnabled 空指標解參考造成的崩潰\n- ECommons 更新至 00e6c4c:UI 輔助層 IsEnabled 的 OwnerNode 空指標加固"
   },
   {
     "Author": "Infi",
@@ -943,7 +943,7 @@
     "Author": "veyn, croizat",
     "Name": "Visland",
     "InternalName": "visland",
-    "AssemblyVersion": "7.20.0.11",
+    "AssemblyVersion": "7.20.0.12",
     "Description": "自動化採集、開拓工坊排班等無人島相關作業。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/visland",
@@ -964,9 +964,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/visland.png",
     "Punchline": "自動化無人島各項活動",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.11/visland.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.11/visland.zip",
-    "Changelog": "- 工房排程新增「請求盡量排在最早的生產日」,並把請求佔用的產能與代價寫進報告\n- 工房排程補滿第 6、7 天,並修掉開視窗就偷改下週休息日的未爆彈"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.12/visland.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.12/visland.zip",
+    "Changelog": "- 修掉採集視窗核取方塊讀 IsEnabled 造成的存取違規入口，並把「讀不到」和「已確認停用」分開"
   },
   {
     "Author": "veyn",
@@ -1000,7 +1000,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.20.0.15",
+    "AssemblyVersion": "7.20.0.16",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1020,11 +1020,11 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 跨外掛 IPC 呼叫失敗不再完全靜默",
+    "Changelog": "- ECommons 更新至 00e6c4c:IsEnabled 的 OwnerNode 空指標全面加固",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.15/WrathCombo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.15/WrathCombo.zip"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.16/WrathCombo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.16/WrathCombo.zip"
   },
   {
     "Author": "cycleapple",
@@ -1060,7 +1060,7 @@
     "Author": "daemitus, croizat",
     "Name": "YesAlready",
     "InternalName": "YesAlready",
-    "AssemblyVersion": "7.20.0.10",
+    "AssemblyVersion": "7.20.0.11",
     "Description": "厭倦了在天守閣/伊迪爾夏爾禁地一直點確認嗎？受不了在副本裡一直按鍵嗎？YesAlready 可以自動點擊你設定的所有惱人對話框。只要輸入對話文字，就再也不用手動點了！支援 /regex/ 比對，也內建了幾個針對「看起來不是 yes/no，但行為類似」的對話框（例如分解）的模組。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/YesAlready",
@@ -1080,9 +1080,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/YesAlready.png",
     "Punchline": "自動點擊你指定的各種確認對話框。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.10/YesAlready.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.10/YesAlready.zip",
-    "Changelog": "- 修正對話框在 Setup 當下還沒顯示就被整個放棄（道具交易確認框靜默不點），並把招募加入／收藏品的比對改讀 Addon 表"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.11/YesAlready.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.11/YesAlready.zip",
+    "Changelog": "- 修掉六處按鈕狀態的空指標崩潰:抽獎、鑑定、精選與雇員派遣\n- ECommons 子模組更新到 00e6c4c:UI 輔助層 AVE 加固"
   },
   {
     "Author": "KangasZ",
@@ -1147,7 +1147,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.20.0.14",
+    "AssemblyVersion": "7.20.0.15",
     "Description": "A tiny little quest helper plugin, which does quests for you automatically where possible. Uses navmesh to automatically walk to all quest waypoints, and tries to automatically complete all steps along the way (excluding dungeons, single player duties and combat).\n\nNot all quests are supported, check the discord or git repository for an up-to-date list.\n\nRequired Plugins: vnavmesh, TextAdvance, Lifestream",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1166,15 +1166,15 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "A tiny quest helper plugin.",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.14/Questionable.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.14/Questionable.zip",
-    "Changelog": "- 跨外掛 IPC 讀取失敗改為優雅降級,不再中止整個任務佇列"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.15/Questionable.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.15/Questionable.zip",
+    "Changelog": "- ECommons 更新至 00e6c4c:IsEnabled 的 OwnerNode 空指標全面加固"
   },
   {
     "Author": "NightmareXIV",
     "Name": "TextAdvance",
     "InternalName": "TextAdvance",
-    "AssemblyVersion": "7.20.0.15",
+    "AssemblyVersion": "7.20.0.16",
     "Description": "Quest speedrunning assistance tool. Automatically confirms quest acceptance and completion, skips subtitles, cutscenes, and most prompts. Includes optional Splatoon-based quest target indicators and vnavmesh-based auto-navigation to quest objectives.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TextAdvance",
@@ -1193,9 +1193,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TextAdvance.png",
     "Punchline": "Quest speedrunning assistance tool. Automatically skips subtitle boxes and confirms cutscene skipping",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.15/TextAdvance.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.15/TextAdvance.zip",
-    "Changelog": "- 修正台服裝備箱挑選:繁中職能字串、飾品箱比對錯變數、比對失敗不再亂選"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.16/TextAdvance.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.16/TextAdvance.zip",
+    "Changelog": "- 修掉五處介面節點的空指標崩潰:接任務、交任務、選獎勵與跳過過場\n- ECommons 子模組更新到 00e6c4c:UI 輔助層 AVE 加固"
   },
   {
     "Author": "Styr1x, PlusoneChiang",
@@ -1260,7 +1260,7 @@
     "Author": "Ice",
     "Name": "Chilled Leves",
     "InternalName": "ChilledLeves",
-    "AssemblyVersion": "7.20.0.12",
+    "AssemblyVersion": "7.20.0.13",
     "Description": "理符任務輔助工具：讓你挑選想接的理符任務，並自動前往接取、執行與繳交。注意：必須先安裝 vnavmesh 才能使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ChilledLeves",
@@ -1280,15 +1280,15 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ChilledLeves.png",
     "Punchline": "理符任務，冰鎮上桌。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.12/ChilledLeves.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.12/ChilledLeves.zip",
-    "Changelog": "- 跨外掛 IPC 呼叫失敗不再完全靜默"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.13/ChilledLeves.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.13/ChilledLeves.zip",
+    "Changelog": "- 修補 UI 節點存取的 AccessViolation 入口:IsEnabled 與節點走訪補上判空\n- ECommons 更新至 00e6c4c:UI 輔助層 IsEnabled 的 OwnerNode 空解參考加固"
   },
   {
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.20.0.40",
+    "AssemblyVersion": "7.20.0.41",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1306,9 +1306,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.40/ICE.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.40/ICE.zip",
-    "Changelog": "- Merge branch 'feat/mecha-markers' into tc-7.20\n- ICE:修正 31 處誤導性註解,明確標示守衛已經在下方(純文件、零行為變化)\n- ICE:寫死的 545 任務分界改成載入時印一行診斷,不動門檻本身\n- 部署閘門:目的指示改用不解指標的掃描路徑當預設,vector 移到預設關的選項後面\n- 機甲行動三件:目的指示標示、右鍵選單、紀錄預設遮蔽他人角色名\n- 任務篩選按鈕看得出哪個開著:選中改用 <n> 括號＋ButtonActive 底色＋文字色外框"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.41/ICE.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.41/ICE.zip",
+    "Changelog": "- 修補 UI 節點存取的 AccessViolation 入口:IsEnabled 與裸節點鏈全面補上判空\n- ECommons 更新至 00e6c4c:UI 輔助層 IsEnabled 的 OwnerNode 空解參考加固"
   },
   {
     "Author": "Liza Carvelli",
@@ -1424,7 +1424,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.20.0.29",
+    "AssemblyVersion": "7.20.0.30",
     "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：部隊合建素材一鍵全交、野外陸行鳥自動餵食基薩爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1440,9 +1440,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.29/TCToolbox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.29/TCToolbox.zip",
-    "Changelog": "- 品質偏好改成先驗證候選指標再解參考,失敗形式從崩潰降成偏好失效\n- 自動繳交道具新增品質偏好:無偏好/偏好優質品/偏好普通品,預設維持無偏好"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.30/TCToolbox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.30/TCToolbox.zip",
+    "Changelog": "- 修掉自動接受任務在 UiHelper 之外搶先讀 IsEnabled 造成的存取違規入口"
   },
   {
     "Author": "daemitus, MidoriKami",
