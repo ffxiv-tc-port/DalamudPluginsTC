@@ -36,7 +36,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.20.0.54",
+    "AssemblyVersion": "7.20.0.55",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -54,15 +54,15 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.54/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.54/Artisan.zip",
-    "Changelog": "- 配方頁的「做得起來嗎」提示改成跑 N 次隨機模擬報分布，不再用單次決定性模擬下結論\n- 奇蹟之材改用真時鐘計時，前瞻模擬的步數估計由 15 步改為 21 步\n- 機會性偏離：比較模擬品質前先夾到配方上限，不再為了無效的溢出品質浪費回合\n- ECommons 更新至 0a6018a:GetNodeByIDChain 走訪鏈補判空\n- 修掉九處原生陣列越界索引造成的崩潰:素材指派、修理確認與補給任務清單"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.55/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.55/Artisan.zip",
+    "Changelog": "- 修正熱鍵列外框的懸空 static 指標與判空順序寫反"
   },
   {
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.15",
+    "AssemblyVersion": "7.20.0.16",
     "Description": "自動幫你跑副本，支援信賴的同伴、達人指引、士官兵團、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -82,9 +82,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.15/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.15/AutoDuty.zip",
-    "Changelog": "- ECommons 更新至 00e6c4c:IsEnabled 的 OwnerNode 空指標全面加固"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.16/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.16/AutoDuty.zip",
+    "Changelog": "- 修正 QueueHelper 排隊路徑上的四處無防護原生解參考\n- ECommons 更新至 0a6018a:GetNodeByIDChain 走訪鏈補判空"
   },
   {
     "Author": "Det",
@@ -727,7 +727,7 @@
     "Author": "Kouzukii",
     "Name": "Price Insight",
     "InternalName": "PriceInsight",
-    "AssemblyVersion": "7.20.0.7",
+    "AssemblyVersion": "7.20.0.8",
     "Description": "當你將滑鼠移到道具上時，會在下方顯示該道具的普通品/高品質市場公告板價格，以及最近一次的成交紀錄。\n價格資料來自 Universalis.app，並會快取 90 分鐘。\n若要重新整理價格，可在滑鼠懸停於道具上時按住 Alt 鍵。\n",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PriceInsight",
@@ -747,9 +747,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/PriceInsight.png",
     "Punchline": "滑鼠懸停即可查看道具的市場公告板價格！",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PriceInsight-v7.20.0.7/PriceInsight.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PriceInsight-v7.20.0.7/PriceInsight.zip",
-    "Changelog": "- Universalis 5xx 重試擴大涵蓋 408/429\n- CI：修正 build-check 從未真正建置的問題"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PriceInsight-v7.20.0.8/PriceInsight.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PriceInsight-v7.20.0.8/PriceInsight.zip",
+    "Changelog": "- 修正道具提示視窗高度調整的四層裸鏈解參考"
   },
   {
     "Author": "UnknownX",
@@ -808,7 +808,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.20.0.19",
+    "AssemblyVersion": "7.20.0.20",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -827,9 +827,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.19/SomethingNeedDoing.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.19/SomethingNeedDoing.zip",
-    "Changelog": "- ECommons 更新至 0a6018a:GetNodeByIDChain 走訪鏈補判空"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.20/SomethingNeedDoing.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.20/SomethingNeedDoing.zip",
+    "Changelog": "- 修正 SomethingNeedDoing 對 AutoHook 失效的 IPC 訂閱，並補上刺魚 preset 切換"
   },
   {
     "Author": "Sonar Team",
@@ -863,7 +863,7 @@
     "Author": "NightmareXIV",
     "Name": "Splatoon",
     "InternalName": "Splatoon",
-    "AssemblyVersion": "7.20.0.15",
+    "AssemblyVersion": "7.20.0.16",
     "Description": "Splatoon 是一款強大的輔助工具。它以自訂路標系統徹底革新遊戲體驗，可建立無數量限制的成組路標、文字標籤與角色指示器，並具備精確到像素的定位能力。此功能讓玩家能更清楚辨識關鍵物件與事件，進而做出更快速的反應。請注意，此插件本身不附帶任何預設檔，玩家可自行製作或匯入現成的預設檔，打造專屬於自己的遊戲體驗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Splatoon",
@@ -882,9 +882,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Splatoon.png",
     "Punchline": "以無限、精準的路標重新定義 FFXIV 導航方式。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.15/Splatoon.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.15/Splatoon.zip",
-    "Changelog": "- 官方腳本版本遞增:AutoRetainerCreation 與 GenericTest4,讓既有使用者收到空指標修補\n- 修補官方腳本兩支的 IsEnabled 空指標解參考造成的崩潰\n- ECommons 更新至 00e6c4c:UI 輔助層 IsEnabled 的 OwnerNode 空指標加固"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.16/Splatoon.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.16/Splatoon.zip",
+    "Changelog": "- 攝影機角度改成每次重讀，不再跨幀保存 float 指標\n- ECommons 更新至 0a6018a:GetNodeByIDChain 走訪鏈補判空"
   },
   {
     "Author": "Infi",
@@ -943,7 +943,7 @@
     "Author": "veyn, croizat",
     "Name": "Visland",
     "InternalName": "visland",
-    "AssemblyVersion": "7.20.0.13",
+    "AssemblyVersion": "7.20.0.14",
     "Description": "自動化採集、開拓工坊排班等無人島相關作業。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/visland",
@@ -964,9 +964,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/visland.png",
     "Punchline": "自動化無人島各項活動",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.13/visland.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.13/visland.zip",
-    "Changelog": "- 修掉採集視窗每幀讀取的裸節點鏈與 AtkValues 無邊界索引，並把「讀不到」和「數值是 0」分開"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.14/visland.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.14/visland.zip",
+    "Changelog": "- 採集 addon 包裝改成每次用時重查，不再跨幀保存 PostSetup 給的原生指標\n- 修掉出口自動化偵錯視窗的葉節點條件反轉，並補上展開體從沒跑過的四處判空"
   },
   {
     "Author": "veyn",
@@ -1260,7 +1260,7 @@
     "Author": "Ice",
     "Name": "Chilled Leves",
     "InternalName": "ChilledLeves",
-    "AssemblyVersion": "7.20.0.13",
+    "AssemblyVersion": "7.20.0.14",
     "Description": "理符任務輔助工具：讓你挑選想接的理符任務，並自動前往接取、執行與繳交。注意：必須先安裝 vnavmesh 才能使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ChilledLeves",
@@ -1280,9 +1280,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ChilledLeves.png",
     "Punchline": "理符任務，冰鎮上桌。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.13/ChilledLeves.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.13/ChilledLeves.zip",
-    "Changelog": "- 修補 UI 節點存取的 AccessViolation 入口:IsEnabled 與節點走訪補上判空\n- ECommons 更新至 00e6c4c:UI 輔助層 IsEnabled 的 OwnerNode 空解參考加固"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.14/ChilledLeves.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.14/ChilledLeves.zip",
+    "Changelog": "- 修正 GuildLeve 讀取 AtkValues 沒有上界檢查的越界解參考\n- ECommons 更新至 0a6018a:GetNodeByIDChain 走訪鏈補判空"
   },
   {
     "Author": "Ice",
@@ -1365,7 +1365,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.20.0.24",
+    "AssemblyVersion": "7.20.0.25",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 金幣並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1381,15 +1381,15 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點金幣！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.24/Marketbuddy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.24/Marketbuddy.zip",
-    "Changelog": "- 兩顆手動下架按鈕改為遵守「下架收回至」設定"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.25/Marketbuddy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.25/Marketbuddy.zip",
+    "Changelog": "- 修正關閉比價視窗與 RetainerSell 數值輸入的無防護原生解參考"
   },
   {
     "Author": "Faye",
     "Name": "Better Occult Crescent & Chest Helper Interface",
     "InternalName": "BOCCHI",
-    "AssemblyVersion": "7.20.0.7",
+    "AssemblyVersion": "7.20.0.8",
     "Description": "⚠️ 台服 7.20 目前還沒有「蜃景新月島」這個內容，本外掛現在裝了不會有任何反應。已先行移植好放著，等台服更新到該版本即可直接使用。\n\n讓你在「蜃景新月島」玩得更順手。\n- 不用再自己走路、自己找寶箱。\n- 小巧的 FATE 與關鍵遭遇面板，會顯示該場獎勵，還能自動幫你導航過去。\n- 附贈一個非常違規的「非法模式」，給那些寧可出去曬太陽的人。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BOCCHI",
@@ -1416,9 +1416,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/BOCCHI.png",
     "Punchline": "讓你在「蜃景新月島」玩得更順手。（台服尚未開放該內容）",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.7/BOCCHI.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.7/BOCCHI.zip",
-    "Changelog": "- 尋路:節點到乙太之光距離表改用 TryGetValue,避免資料檔失同步時丟例外\n- CI：修正 build-check 從未真正建置的問題"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.8/BOCCHI.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.8/BOCCHI.zip",
+    "Changelog": "- Enemy 改成建構當下取值的快照，不再保存 BattleChara 指標"
   },
   {
     "Author": "ffxiv-tc-port",
