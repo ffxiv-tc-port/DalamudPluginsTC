@@ -118,7 +118,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.34",
+    "AssemblyVersion": "7.20.0.35",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -130,9 +130,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.34/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.34/AutoRetainer.zip",
-    "Changelog": "- Merge branch 'feat/retainer-slots' into tc-7.20\n- 僱員清單每列各自顯示自己的背包剩餘空格,沒資料畫「?」不畫 0\n- 修正選取僱員命中後不中止掃描,並停止對點不到的空格宣稱成功"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.35/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.35/AutoRetainer.zip",
+    "Changelog": "- 修正 21 處讀取按鈕啟用狀態時會讓遊戲崩潰的空指標解參考\n- 修正僱員存入計畫複製的三個上游錯誤:重複通知、判錯對象、寫到錯的角色"
   },
   {
     "Author": "кайт машина (Puni.sh)",
@@ -450,7 +450,7 @@
     "Author": "electr0sheep, Nuko",
     "Name": "Item Vendor Location",
     "InternalName": "ItemVendorLocation",
-    "AssemblyVersion": "7.20.0.8",
+    "AssemblyVersion": "7.20.0.9",
     "Description": "為道具新增右鍵選單選項，可查看該道具可在哪些商人處購買",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ItemVendorLocation",
@@ -470,9 +470,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ItemVendorLocation.png",
     "Punchline": "顯示可購買該道具的商人所在位置",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.20.0.8/ItemVendorLocation.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.20.0.8/ItemVendorLocation.zip",
-    "Changelog": "- 收藏品交易所職業列舉全部改成顯式值,插入新項目不再整批靜默位移"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.20.0.9/ItemVendorLocation.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.20.0.9/ItemVendorLocation.zip",
+    "Changelog": "- 兌換商店與染色視窗查商人:加版面守衛與偏移診斷,並補上 HQ/收藏品正規化"
   },
   {
     "Author": "Latihas",
@@ -531,7 +531,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.26",
+    "AssemblyVersion": "7.20.0.27",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -552,9 +552,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速以太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.26/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.26/Lifestream.zip",
-    "Changelog": "- 移除兩條已無呼叫點的繁中翻譯條目\n- 野外導航自動上坐騎改為預設開啟"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.27/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.27/Lifestream.zip",
+    "Changelog": "- 修 Lifestream 讀取按鈕啟用狀態時的 AVE 入口:12 處全部先驗 OwnerNode 再讀 IsEnabled"
   },
   {
     "Author": "apetih",
@@ -783,7 +783,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.20.0.12",
+    "AssemblyVersion": "7.20.0.13",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -800,9 +800,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.12/Saucy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.12/Saucy.zip",
-    "Changelog": "- 孤樹無援解除對 DR 的依賴：指針改讀遊戲自己的 0-10000 刻度、回饋改用量表落差、力量表照遊戲判定式重算"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.13/Saucy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.13/Saucy.zip",
+    "Changelog": "- 修 Saucy 讀取按鈕啟用狀態時的 AVE 入口:6 處全部先驗 OwnerNode 再讀 IsEnabled"
   },
   {
     "Author": "daemitus, croizat",
@@ -1288,7 +1288,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.20.0.39",
+    "AssemblyVersion": "7.20.0.40",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1306,9 +1306,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.39/ICE.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.39/ICE.zip",
-    "Changelog": "- 時段任務表失效時給得出可辨識的錯誤:補三層 Information 診斷"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.40/ICE.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.40/ICE.zip",
+    "Changelog": "- Merge branch 'feat/mecha-markers' into tc-7.20\n- ICE:修正 31 處誤導性註解,明確標示守衛已經在下方(純文件、零行為變化)\n- ICE:寫死的 545 任務分界改成載入時印一行診斷,不動門檻本身\n- 部署閘門:目的指示改用不解指標的掃描路徑當預設,vector 移到預設關的選項後面\n- 機甲行動三件:目的指示標示、右鍵選單、紀錄預設遮蔽他人角色名\n- 任務篩選按鈕看得出哪個開著:選中改用 <n> 括號＋ButtonActive 底色＋文字色外框"
   },
   {
     "Author": "Liza Carvelli",

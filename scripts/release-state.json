@@ -1,8 +1,8 @@
 {
   "EurekaHelper": "v7.20.0.9",
   "Accountant": "v7.20.0.9",
-  "AutoRetainer": "v7.20.0.34",
-  "Saucy": "v7.20.0.12",
+  "AutoRetainer": "v7.20.0.35",
+  "Saucy": "v7.20.0.13",
   "LogogramHelper": "v7.20.0.5",
   "TriadBuddy": "v7.20.0.4",
   "SomethingNeedDoing": "v7.20.0.17",
@@ -14,11 +14,11 @@
   "vnavmesh": "v7.20.0.14",
   "InventoryTools": "v7.20.0.9",
   "visland": "v7.20.0.10",
-  "Lifestream": "v7.20.0.26",
+  "Lifestream": "v7.20.0.27",
   "SubmarineTracker": "v7.20.0.8",
   "YesAlready": "v7.20.0.10",
   "GatherbuddyReborn": "v7.20.0.17",
-  "ItemVendorLocation": "v7.20.0.8",
+  "ItemVendorLocation": "v7.20.0.9",
   "HuntHelper": "v7.20.0.7",
   "LazyLoot": "v7.20.0.6",
   "MiniMappingway": "v7.20.0.8",
@@ -49,7 +49,7 @@
   "Gearsetter": "v7.20.0.4",
   "ChilledLeves": "v7.20.0.12",
   "BOCCHI": "v7.20.0.7",
-  "ICE": "v7.20.0.39",
+  "ICE": "v7.20.0.40",
   "TCToolbox": "v7.20.0.28",
   "WondrousTailsSolver": "v7.20.0.1"
 }
