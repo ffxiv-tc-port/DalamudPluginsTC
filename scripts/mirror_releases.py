@@ -6,6 +6,7 @@ Runs only inside the DalamudPluginsTC repo's own GitHub Actions workflow,
 using a token that is never stored in the source plugin repos.
 """
 import base64
+import datetime
 import json
 import os
 import re
@@ -198,9 +199,12 @@ def gh(*args, check=True):
 
 
 def latest_release(repo):
+    # `published_at` feeds repo.json's LastUpdate, which is what Dalamud's
+    # changelog page sorts by - without it every entry lands on 1970-01-01.
     out = gh("api", f"repos/{repo}/releases", "--jq",
               "sort_by(.published_at) | reverse | .[0] "
-              "| {tag: .tag_name, assets: [.assets[] | {name, url}]}",
+              "| {tag: .tag_name, published: .published_at, "
+              "assets: [.assets[] | {name, url}]}",
               check=False)
     if not out or out == "null":
         return None
@@ -489,6 +493,20 @@ def mirror_one(internal_name, source_repo, state, by_internal):
         changelog = get_changelog(source_repo, prev_tag, tag)
         if changelog:
             entry["Changelog"] = changelog
+
+        # Dalamud's changelog page builds its entries straight off the manifest
+        # and sorts them by LastUpdate (Unix seconds). Missing field -> the
+        # constructor falls back to epoch 0, so every plugin shows 1970-01-01
+        # and the ordering carries no information.
+        published = rel.get("published")
+        if published:
+            try:
+                ts = datetime.datetime.strptime(
+                    published, "%Y-%m-%dT%H:%M:%SZ"
+                ).replace(tzinfo=datetime.timezone.utc)
+                entry["LastUpdate"] = int(ts.timestamp())
+            except ValueError:
+                pass  # keep whatever was there rather than writing a bogus date
 
         state[internal_name] = tag
         return True
