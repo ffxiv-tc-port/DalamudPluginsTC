@@ -30,7 +30,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.9/Accountant.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.9/Accountant.zip",
-    "Changelog": "- 版號 +1：例行發版量測（本次無功能異動，用於驗證發版流程與量測 NuGet 快取命中率）"
+    "Changelog": "- 版號 +1：例行發版量測（本次無功能異動，用於驗證發版流程與量測 NuGet 快取命中率）",
+    "LastUpdate": 1785603736
   },
   {
     "Author": "Taurenkey (Puni.sh)",
@@ -56,7 +57,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.60/Artisan.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.60/Artisan.zip",
-    "Changelog": "- 修正 3 處不可信來源的裸 Lumina GetRow 呼叫"
+    "Changelog": "- 修正 3 處不可信來源的裸 Lumina GetRow 呼叫",
+    "LastUpdate": 1786078607
   },
   {
     "Author": "Herculezz",
@@ -84,7 +86,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.17/AutoDuty.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.17/AutoDuty.zip",
-    "Changelog": "- 相機覆寫 detour 補 fail-closed，例外不再穿出到原生框架"
+    "Changelog": "- 相機覆寫 detour 補 fail-closed，例外不再穿出到原生框架",
+    "LastUpdate": 1786010650
   },
   {
     "Author": "Det",
@@ -112,7 +115,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.17/AutoHook.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.17/AutoHook.zip",
-    "Changelog": "- 補上條件式換 preset，讓宇宙釣魚的多階段 preset 真的會推進"
+    "Changelog": "- 補上條件式換 preset，讓宇宙釣魚的多階段 preset 真的會推進",
+    "LastUpdate": 1786076605
   },
   {
     "Author": "кайт машина (Puni.sh)",
@@ -132,7 +136,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.39/AutoRetainer.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.39/AutoRetainer.zip",
-    "Changelog": "- 修正 5 處不可信來源的裸 Lumina GetRow 呼叫"
+    "Changelog": "- 修正 5 處不可信來源的裸 Lumina GetRow 呼叫",
+    "LastUpdate": 1786078601
   },
   {
     "Author": "кайт машина (Puni.sh)",
@@ -158,7 +163,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.10/Avarice.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.10/Avarice.zip",
-    "Changelog": "- ECommons 更新至 00e6c4c:IsEnabled 的 OwnerNode 空指標全面加固"
+    "Changelog": "- ECommons 更新至 00e6c4c:IsEnabled 的 OwnerNode 空指標全面加固",
+    "LastUpdate": 1785991491
   },
   {
     "Author": "NeNeppie",
@@ -186,7 +192,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AvantGarde-v7.20.0.3/AvantGarde.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AvantGarde-v7.20.0.3/AvantGarde.zip",
-    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16"
+    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16",
+    "LastUpdate": 1785603685
   },
   {
     "Author": "The Combat Reborn Team",
@@ -211,7 +218,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.23/BossModReborn.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.23/BossModReborn.zip",
-    "Changelog": "- 為 ActionManagerEx 的 4 支戰鬥核心 detour 補上防護"
+    "Changelog": "- 為 ActionManagerEx 的 4 支戰鬥核心 detour 補上防護",
+    "LastUpdate": 1786082196
   },
   {
     "Author": "Kouzukii",
@@ -239,7 +247,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.7/CharacterPanelRefined.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.7/CharacterPanelRefined.zip",
-    "Changelog": "- 版號 +1：例行發版量測（本次無功能異動，用於驗證發版流程與量測 NuGet 快取命中率）"
+    "Changelog": "- 版號 +1：例行發版量測（本次無功能異動，用於驗證發版流程與量測 NuGet 快取命中率）",
+    "LastUpdate": 1785603628
   },
   {
     "Author": "Infi, Anna",
@@ -268,7 +277,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.9/ChatTwo.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.9/ChatTwo.zip",
-    "Changelog": "- ChangeChannelName detour:RaptureShellModule 取不到時不再讓例外逸出到原生層"
+    "Changelog": "- ChangeChannelName detour:RaptureShellModule 取不到時不再讓例外逸出到原生層",
+    "LastUpdate": 1786082190
   },
   {
     "Author": "Nylfae",
@@ -295,7 +305,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Dynamis-v7.20.0.5/Dynamis.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Dynamis-v7.20.0.5/Dynamis.zip",
-    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16"
+    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16",
+    "LastUpdate": 1785603581
   },
   {
     "Author": "Nylfae",
@@ -323,7 +334,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.20.0.5/DynamisWithSMA.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.20.0.5/DynamisWithSMA.zip",
-    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16"
+    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16",
+    "LastUpdate": 1785603572
   },
   {
     "Author": "Snowy, KangasZ",
@@ -358,7 +370,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EurekaHelper-v7.20.0.9/EurekaHelper.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EurekaHelper-v7.20.0.9/EurekaHelper.zip",
-    "Changelog": "- 視覺輔助強化：隱藏陷阱／傳送門兩態標示、未知仇恨範圍不再靜默消失、尋寶推算誤差顯示在列上\n- CI：修正 build-check 從未真正建置的問題"
+    "Changelog": "- 視覺輔助強化：隱藏陷阱／傳送門兩態標示、未知仇恨範圍不再靜默消失、尋寶推算誤差顯示在列上\n- CI：修正 build-check 從未真正建置的問題",
+    "LastUpdate": 1785983136
   },
   {
     "Author": "The Combat Reborn Team",
@@ -388,7 +401,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.19/GatherbuddyReborn.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.19/GatherbuddyReborn.zip",
-    "Changelog": "- FishingParser 兩支 detour 補上 fail-closed 防護"
+    "Changelog": "- FishingParser 兩支 detour 補上 fail-closed 防護",
+    "LastUpdate": 1786078582
   },
   {
     "Author": "img02",
@@ -416,7 +430,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.7/HuntHelper.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.7/HuntHelper.zip",
-    "Changelog": "- 版號 +1：例行發版量測（本次無功能異動，用於驗證發版流程與量測 NuGet 快取命中率）"
+    "Changelog": "- 版號 +1：例行發版量測（本次無功能異動，用於驗證發版流程與量測 NuGet 快取命中率）",
+    "LastUpdate": 1785603541
   },
   {
     "Author": "Critical_Impact",
@@ -444,7 +459,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.9/InventoryTools.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.9/InventoryTools.zip",
-    "Changelog": "- 新增台服世界公開性共用 helper,修正 6 處世界選擇器選不到台服的問題"
+    "Changelog": "- 新增台服世界公開性共用 helper,修正 6 處世界選擇器選不到台服的問題",
+    "LastUpdate": 1785654187
   },
   {
     "Author": "electr0sheep, Nuko",
@@ -472,7 +488,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.20.0.9/ItemVendorLocation.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.20.0.9/ItemVendorLocation.zip",
-    "Changelog": "- 兌換商店與染色視窗查商人:加版面守衛與偏移診斷,並補上 HQ/收藏品正規化"
+    "Changelog": "- 兌換商店與染色視窗查商人:加版面守衛與偏移診斷,並補上 HQ/收藏品正規化",
+    "LastUpdate": 1785985792
   },
   {
     "Author": "Latihas",
@@ -497,7 +514,8 @@
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.5/LatihasChocobo.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.5/LatihasChocobo.zip",
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/LatihasChocobo.png",
-    "Changelog": "- 修掉每幀路徑上的裸節點鏈與無邊界索引：加速判定、體力、進度與道具判定全部逐層驗過才解參考"
+    "Changelog": "- 修掉每幀路徑上的裸節點鏈與無邊界索引：加速判定、體力、進度與道具判定全部逐層驗過才解參考",
+    "LastUpdate": 1785998627
   },
   {
     "Author": "53m1k0l0n/Gidedin (Puni.sh)",
@@ -525,7 +543,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LazyLoot-v7.20.0.7/LazyLoot.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LazyLoot-v7.20.0.7/LazyLoot.zip",
-    "Changelog": "- DTR 精簡為單字：需／貪／跳／停，完整說明移進滑鼠提示\n- CI：修正 build-check 從未真正建置的問題"
+    "Changelog": "- DTR 精簡為單字：需／貪／跳／停，完整說明移進滑鼠提示\n- CI：修正 build-check 從未真正建置的問題",
+    "LastUpdate": 1785998635
   },
   {
     "Author": "NightmareXIV",
@@ -554,7 +573,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.31/Lifestream.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.31/Lifestream.zip",
-    "Changelog": "- Game/Memory 三支 detour 補上 fail-closed 防護與裸指標判空"
+    "Changelog": "- Game/Memory 三支 detour 補上 fail-closed 防護與裸指標判空",
+    "LastUpdate": 1786078601
   },
   {
     "Author": "apetih",
@@ -581,7 +601,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LogogramHelper-v7.20.0.5/LogogramHelper.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LogogramHelper-v7.20.0.5/LogogramHelper.zip",
-    "Changelog": "- 文理名稱查表改用 TryGetValue,避免兩個資料檔失同步時整個視窗或提示框拋例外\n- CI：修正 build-check 從未真正建置的問題"
+    "Changelog": "- 文理名稱查表改用 TryGetValue,避免兩個資料檔失同步時整個視窗或提示框拋例外\n- CI：修正 build-check 從未真正建置的問題",
+    "LastUpdate": 1785719524
   },
   {
     "Author": "JayceOfSpades",
@@ -609,7 +630,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/MiniMappingway-v7.20.0.10/MiniMappingway.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/MiniMappingway-v7.20.0.10/MiniMappingway.zip",
-    "Changelog": "- PvP 雷達目標連線改成節流掃描,不再每幀對每個玩家解參考"
+    "Changelog": "- PvP 雷達目標連線改成節流掃描,不再每幀對每個玩家解參考",
+    "LastUpdate": 1786076607
   },
   {
     "Author": "Jukka",
@@ -637,7 +659,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.8/NecroLens.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.8/NecroLens.zip",
-    "Changelog": "- 版號 +1：例行發版量測（本次無功能異動，用於驗證發版流程與量測 NuGet 快取命中率）"
+    "Changelog": "- 版號 +1：例行發版量測（本次無功能異動，用於驗證發版流程與量測 NuGet 快取命中率）",
+    "LastUpdate": 1785603421
   },
   {
     "Author": "NightmareXIV",
@@ -664,7 +687,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.5/NotificationMaster.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.5/NotificationMaster.zip",
-    "Changelog": "- 移除 CI 對 PRIVATE_SUBMODULE_TOKEN 的引用\n- @"
+    "Changelog": "- 移除 CI 對 PRIVATE_SUBMODULE_TOKEN 的引用\n- @",
+    "LastUpdate": 1785603413
   },
   {
     "Author": "Liza Carvelli (Puni.sh)",
@@ -693,7 +717,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.5/PalacePal.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.5/PalacePal.zip",
-    "Changelog": "- 移除 CI 對 PRIVATE_SUBMODULE_TOKEN 的引用\n- 重釘 PunishLib 子模組 pin：對應作者身分改寫後的新 SHA"
+    "Changelog": "- 移除 CI 對 PRIVATE_SUBMODULE_TOKEN 的引用\n- 重釘 PunishLib 子模組 pin：對應作者身分改寫後的新 SHA",
+    "LastUpdate": 1785603405
   },
   {
     "Author": "Haplo064",
@@ -721,7 +746,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PixelPerfect-v7.20.0.3/PixelPerfect.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PixelPerfect-v7.20.0.3/PixelPerfect.zip",
-    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16"
+    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16",
+    "LastUpdate": 1785603396
   },
   {
     "Author": "Kouzukii",
@@ -749,7 +775,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PriceInsight-v7.20.0.8/PriceInsight.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PriceInsight-v7.20.0.8/PriceInsight.zip",
-    "Changelog": "- 修正道具提示視窗高度調整的四層裸鏈解參考"
+    "Changelog": "- 修正道具提示視窗高度調整的四層裸鏈解參考",
+    "LastUpdate": 1786001813
   },
   {
     "Author": "UnknownX",
@@ -777,7 +804,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/QoLBar-v7.20.0.5/QoLBar.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/QoLBar-v7.20.0.5/QoLBar.zip",
-    "Changelog": "- 版號 +1：例行發版量測（本次無功能異動，用於驗證發版流程與量測 NuGet 快取命中率）"
+    "Changelog": "- 版號 +1：例行發版量測（本次無功能異動，用於驗證發版流程與量測 NuGet 快取命中率）",
+    "LastUpdate": 1785603383
   },
   {
     "Author": "Taurenkey, Kagekazu",
@@ -802,7 +830,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.18/Saucy.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.18/Saucy.zip",
-    "Changelog": "- 孤樹無援力量表最後一階補收比目標更窄的格子\n- 孤樹無援探測策略：粗掃候選範圍往內縮，不再把刀浪費在端點上\n- 修復孤樹無援點不到泰坦：出手條件少了「當幀真的落在目標格裡」"
+    "Changelog": "- 孤樹無援力量表最後一階補收比目標更窄的格子\n- 孤樹無援探測策略：粗掃候選範圍往內縮，不再把刀浪費在端點上\n- 修復孤樹無援點不到泰坦：出手條件少了「當幀真的落在目標格裡」",
+    "LastUpdate": 1786029092
   },
   {
     "Author": "daemitus, croizat",
@@ -829,7 +858,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.20/SomethingNeedDoing.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.20/SomethingNeedDoing.zip",
-    "Changelog": "- 修正 SomethingNeedDoing 對 AutoHook 失效的 IPC 訂閱，並補上刺魚 preset 切換"
+    "Changelog": "- 修正 SomethingNeedDoing 對 AutoHook 失效的 IPC 訂閱，並補上刺魚 preset 切換",
+    "LastUpdate": 1786001809
   },
   {
     "Author": "Sonar Team",
@@ -857,7 +887,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SonarPlugin-v7.20.0.6/SonarPlugin.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SonarPlugin-v7.20.0.6/SonarPlugin.zip",
-    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16"
+    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16",
+    "LastUpdate": 1785603342
   },
   {
     "Author": "NightmareXIV",
@@ -884,7 +915,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.16/Splatoon.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.16/Splatoon.zip",
-    "Changelog": "- 攝影機角度改成每次重讀，不再跨幀保存 float 指標\n- ECommons 更新至 0a6018a:GetNodeByIDChain 走訪鏈補判空"
+    "Changelog": "- 攝影機角度改成每次重讀，不再跨幀保存 float 指標\n- ECommons 更新至 0a6018a:GetNodeByIDChain 走訪鏈補判空",
+    "LastUpdate": 1786001827
   },
   {
     "Author": "Infi",
@@ -912,7 +944,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SubmarineTracker-v7.20.0.9/SubmarineTracker.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SubmarineTracker-v7.20.0.9/SubmarineTracker.zip",
-    "Changelog": "- 修正 NextOverlay 對哨兵海域值的無防護 GetRow\n- CI：修正 build-check 從未真正建置的問題"
+    "Changelog": "- 修正 NextOverlay 對哨兵海域值的無防護 GetRow\n- CI：修正 build-check 從未真正建置的問題",
+    "LastUpdate": 1786082186
   },
   {
     "Author": "MgAl2O4",
@@ -937,7 +970,8 @@
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.4/TriadBuddy.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.4/TriadBuddy.zip",
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TriadBuddy.png",
-    "Changelog": "- ci: triad-shared 改指向組織自有 FFTriadBuddy fork\n- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16"
+    "Changelog": "- ci: triad-shared 改指向組織自有 FFTriadBuddy fork\n- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16",
+    "LastUpdate": 1785603272
   },
   {
     "Author": "veyn, croizat",
@@ -966,7 +1000,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.15/visland.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.15/visland.zip",
-    "Changelog": "- 改用加固版 ECommons 子模組，蓋掉 AutoRetainerAPI 帶進來的未加固 3.0.1.5\n- 移動覆寫 detour 補 fail-closed，相機特徵碼斷掉不再每幀擲例外"
+    "Changelog": "- 改用加固版 ECommons 子模組，蓋掉 AutoRetainerAPI 帶進來的未加固 3.0.1.5\n- 移動覆寫 detour 補 fail-closed，相機特徵碼斷掉不再每幀擲例外",
+    "LastUpdate": 1786010654
   },
   {
     "Author": "veyn",
@@ -994,7 +1029,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.16/vnavmesh.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.16/vnavmesh.zip",
-    "Changelog": "- RaycastDetour 的裸指標記錄補上判空"
+    "Changelog": "- RaycastDetour 的裸指標記錄補上判空",
+    "LastUpdate": 1786078580
   },
   {
     "Author": "Team Wrath",
@@ -1024,7 +1060,8 @@
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.18/WrathCombo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.18/WrathCombo.zip"
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.18/WrathCombo.zip",
+    "LastUpdate": 1786078580
   },
   {
     "Author": "cycleapple",
@@ -1054,7 +1091,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.20.0.4/XivTreasureParty.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.20.0.4/XivTreasureParty.zip",
-    "Changelog": "- 自動開圖打旗標改為獨立開關，不再依賴自動預選\n- 新增可自訂喊寶頻道功能\n- CI：修正 build-check 從未真正建置的問題"
+    "Changelog": "- 自動開圖打旗標改為獨立開關，不再依賴自動預選\n- 新增可自訂喊寶頻道功能\n- CI：修正 build-check 從未真正建置的問題",
+    "LastUpdate": 1785606503
   },
   {
     "Author": "daemitus, croizat",
@@ -1082,7 +1120,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.12/YesAlready.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.12/YesAlready.zip",
-    "Changelog": "- ECommons 更新至 0a6018a:GetNodeByIDChain 走訪鏈補判空\n- 修掉五處 AtkValues 越界讀取造成的崩潰:公會令難度、數量輸入、收藏品確認與雇員整理"
+    "Changelog": "- ECommons 更新至 0a6018a:GetNodeByIDChain 走訪鏈補判空\n- 修掉五處 AtkValues 越界讀取造成的崩潰:公會令難度、數量輸入、收藏品確認與雇員整理",
+    "LastUpdate": 1785998632
   },
   {
     "Author": "KangasZ",
@@ -1110,7 +1149,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SkipCutscene-v7.20.0.2/SkipCutscene.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SkipCutscene-v7.20.0.2/SkipCutscene.zip",
-    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16"
+    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16",
+    "LastUpdate": 1785603358
   },
   {
     "Author": "MidoriKami",
@@ -1141,7 +1181,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.25/DailyDuty.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.25/DailyDuty.zip",
-    "Changelog": "- 討伐佈告板捷徑:該週標的打完後也隱藏按鈕,只在真的可按時顯示\n- 副本收藏品改用獨立視窗:完整清單加已取得標記,不再改原生任務列表"
+    "Changelog": "- 討伐佈告板捷徑:該週標的打完後也隱藏按鈕,只在真的可按時顯示\n- 副本收藏品改用獨立視窗:完整清單加已取得標記,不再改原生任務列表",
+    "LastUpdate": 1785983143
   },
   {
     "Author": "liza, qstxiv, & various contributors",
@@ -1168,7 +1209,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.17/Questionable.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.17/Questionable.zip",
-    "Changelog": "- InterruptHandler 的封包 detour 補上裸指標判空"
+    "Changelog": "- InterruptHandler 的封包 detour 補上裸指標判空",
+    "LastUpdate": 1786078596
   },
   {
     "Author": "NightmareXIV",
@@ -1195,7 +1237,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.16/TextAdvance.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.16/TextAdvance.zip",
-    "Changelog": "- 修掉五處介面節點的空指標崩潰:接任務、交任務、選獎勵與跳過過場\n- ECommons 子模組更新到 00e6c4c:UI 輔助層 AVE 加固"
+    "Changelog": "- 修掉五處介面節點的空指標崩潰:接任務、交任務、選獎勵與跳過過場\n- ECommons 子模組更新到 00e6c4c:UI 輔助層 AVE 加固",
+    "LastUpdate": 1785991508
   },
   {
     "Author": "Styr1x, PlusoneChiang",
@@ -1226,7 +1269,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Crossingway-v7.20.0.3/Crossingway.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Crossingway-v7.20.0.3/Crossingway.zip",
-    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16"
+    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16",
+    "LastUpdate": 1785603597
   },
   {
     "Author": "Usagi, PlusoneChiang",
@@ -1254,7 +1298,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.9/IINACT.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.9/IINACT.zip",
-    "Changelog": "- CombatantMemoryManager 記錄 FindCandidate 實際選中的版本（Info 級）\n- CI：修正 build-check 從未真正建置的問題"
+    "Changelog": "- CombatantMemoryManager 記錄 FindCandidate 實際選中的版本（Info 級）\n- CI：修正 build-check 從未真正建置的問題",
+    "LastUpdate": 1786010672
   },
   {
     "Author": "Ice",
@@ -1282,7 +1327,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.14/ChilledLeves.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.14/ChilledLeves.zip",
-    "Changelog": "- 修正 GuildLeve 讀取 AtkValues 沒有上界檢查的越界解參考\n- ECommons 更新至 0a6018a:GetNodeByIDChain 走訪鏈補判空"
+    "Changelog": "- 修正 GuildLeve 讀取 AtkValues 沒有上界檢查的越界解參考\n- ECommons 更新至 0a6018a:GetNodeByIDChain 走訪鏈補判空",
+    "LastUpdate": 1786001806
   },
   {
     "Author": "Ice",
@@ -1308,7 +1354,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.52/ICE.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.52/ICE.zip",
-    "Changelog": "- 修正兩處繪製路徑上的無防護 GetRow：地圖標記測試與採購清單"
+    "Changelog": "- 修正兩處繪製路徑上的無防護 GetRow：地圖標記測試與採購清單",
+    "LastUpdate": 1786082186
   },
   {
     "Author": "Liza Carvelli",
@@ -1335,7 +1382,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Gearsetter-v7.20.0.4/Gearsetter.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Gearsetter-v7.20.0.4/Gearsetter.zip",
-    "Changelog": "- ci: LLib 改指向組織自有 fork\n- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16"
+    "Changelog": "- ci: LLib 改指向組織自有 fork\n- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16",
+    "LastUpdate": 1785603548
   },
   {
     "Author": "veyn",
@@ -1359,7 +1407,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vfaux-v7.20.0.3/vfaux.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vfaux-v7.20.0.3/vfaux.zip",
-    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16"
+    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16",
+    "LastUpdate": 1785603242
   },
   {
     "Author": "Chalkos",
@@ -1383,7 +1432,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.26/Marketbuddy.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.26/Marketbuddy.zip",
-    "Changelog": "- 全僱員下架加上單價門檻與僱員跳過名單"
+    "Changelog": "- 全僱員下架加上單價門檻與僱員跳過名單",
+    "LastUpdate": 1786020502
   },
   {
     "Author": "Faye",
@@ -1418,7 +1468,8 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.9/BOCCHI.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.9/BOCCHI.zip",
-    "Changelog": "- 依裁決移除遙測模組(Data/Crowdsourcing),連同寫死的 API 金鑰與端點"
+    "Changelog": "- 依裁決移除遙測模組(Data/Crowdsourcing),連同寫死的 API 金鑰與端點",
+    "LastUpdate": 1786012303
   },
   {
     "Author": "ffxiv-tc-port",
@@ -1442,7 +1493,8 @@
     "AcceptsFeedback": false,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.32/TCToolbox.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.32/TCToolbox.zip",
-    "Changelog": "- 自動繳交道具：按交出鈕前先確認道具真的都放進去了\n- 自動繳交道具改成白名單：只在確定是任務交付時才動作"
+    "Changelog": "- 自動繳交道具：按交出鈕前先確認道具真的都放進去了\n- 自動繳交道具改成白名單：只在確定是任務交付時才動作",
+    "LastUpdate": 1786076610
   },
   {
     "Author": "daemitus, MidoriKami",
@@ -1470,6 +1522,7 @@
     "Punchline": "在天書奇談面板顯示故事線機率",
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WondrousTailsSolver-v7.20.0.1/WondrousTailsSolver.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WondrousTailsSolver-v7.20.0.1/WondrousTailsSolver.zip"
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WondrousTailsSolver-v7.20.0.1/WondrousTailsSolver.zip",
+    "LastUpdate": 1785607874
   }
 ]
