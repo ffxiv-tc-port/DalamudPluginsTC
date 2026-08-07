@@ -82,7 +82,10 @@ COMMIT_EMAIL = "noreply@anthropic.com"
 # another plugin's repo and tag. Releasing these directly is meaningless - they
 # come along for free when their host repo is released.
 #   DynamisWithSMA: second asset pair produced by Dynamis's own release.yml.
-ALIAS_INTERNAL_NAMES = {"DynamisWithSMA"}
+#   GatheringPathRenderer: second asset pair produced by Questionable's own
+#   release.yml (same tag/release as Questionable itself) - see the SOURCE_REPOS
+#   comment in mirror_releases.py.
+ALIAS_INTERNAL_NAMES = {"DynamisWithSMA", "GatheringPathRenderer"}
 
 # InternalName -> local checkout, DERIVED from mirror.SOURCE_REPOS rather than
 # hand-listed. Verified 2026-07-29 against the previous hand-written table:

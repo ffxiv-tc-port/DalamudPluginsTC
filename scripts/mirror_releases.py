@@ -83,6 +83,10 @@ SOURCE_REPOS = {
     "SkipCutscene": "ffxiv-tc-port/SkipCutscene",
     "DailyDuty": "ffxiv-tc-port/DailyDuty",
     "Questionable": "ffxiv-tc-port/Questionable",
+    # GatheringPathRenderer 是 Questionable repo 底下的第二個出貨 root（同一個 tag
+    # 的 release.yml 一次建兩組資產），跟 Dynamis/DynamisWithSMA 完全同構——見上面
+    # DynamisWithSMA 的註解。
+    "GatheringPathRenderer": "ffxiv-tc-port/Questionable",
     "TextAdvance": "ffxiv-tc-port/TextAdvance",
     "Crossingway": "ffxiv-tc-port/Crossingway",
     "IINACT": "ffxiv-tc-port/IINACT",
@@ -155,6 +159,12 @@ ICON_PATHS = {
     # the actual upstream icon at github.com/qstxiv/icons/raw/main/Questionable.png
     # (converted RGB->RGBA to avoid the broken-icon-question-mark bug).
     "WondrousTailsSolver": "res/icon.png",
+    # GatheringPathRenderer: 刻意不在這裡列——upstream 自己的 repo 裡從沒放過圖示檔
+    # (upstream 自己的 release.yml 甚至從沒建置過這個子專案,純粹是掛在 repo 裡的
+    # maintainer 用工具，manifest 的 Punchline 也自己承認是 "[Questionable dev
+    # plugin]"),也沒有第三方 icon 倉庫可以借。留空不是遺漏：manifest 沒有 IconUrl
+    # 時 Dalamud 有自己的 DefaultIcon 後備（PluginImageCache.DownloadPluginIconAsync
+    # 在 url 是空字串時直接回 null,呼叫端會退到內建的通用外掛圖示),不是破圖。
 }
 
 
