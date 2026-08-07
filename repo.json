@@ -64,7 +64,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.18",
+    "AssemblyVersion": "7.20.0.19",
     "Description": "自動幫你跑副本，支援信賴的同伴、達人指引、士官兵團、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -84,10 +84,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.18/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.18/AutoDuty.zip",
-    "Changelog": "- 路徑檔更新來源改指本 fork,並重建 md5s.json\n- 同步上游 200 個副本路徑檔(171 個更新、29 個新副本)",
-    "LastUpdate": 1786095097
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.19/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.19/AutoDuty.zip",
+    "Changelog": "- zh-TW 補上本輪新增介面的 27 條翻譯\n- Info 分頁改列本艦隊 fork 的相依外掛,只開網頁不自動安裝\n- 移植上游 Multibox 多開協調:連線層、設定與界面\n- bug 回報網址改指本 fork 的 issues 頁面",
+    "LastUpdate": 1786101372
   },
   {
     "Author": "Det",
@@ -1334,7 +1334,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.20.0.54",
+    "AssemblyVersion": "7.20.0.55",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1352,10 +1352,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.54/ICE.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.54/ICE.zip",
-    "Changelog": "- 修正據點點數購物卡在交易視窗：台服兌換 NPC 直接開商店、沒有選單",
-    "LastUpdate": 1786097912
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.55/ICE.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.55/ICE.zip",
+    "Changelog": "- 學會狀態查詢加上失效閂：繪製路徑擲一次例外整個 ICE 介面就回不來了\n- 據點點數購物：加上「已學會就不買」與「尊重遊戲的已學會提示」兩個開關",
+    "LastUpdate": 1786101376
   },
   {
     "Author": "Liza Carvelli",
