@@ -122,7 +122,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.41",
+    "AssemblyVersion": "7.20.0.42",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -134,10 +134,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.41/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.41/AutoRetainer.zip",
-    "Changelog": "- 多角色模式執行中不再鎖住「啟用」核取方塊，改成永遠可手動介入\n- 移除「從 Discard Helper 匯入」按鈕\n- 背包清理與存放管理的修飾鍵改為可設定,統一收進快捷鍵設定頁",
-    "LastUpdate": 1786100237
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.42/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.42/AutoRetainer.zip",
+    "Changelog": "- 潛水艇點計畫可選擇「航距不足就砍掉跑不到的點」,不再整份點滿出不了航",
+    "LastUpdate": 1786126866
   },
   {
     "Author": "кайт машина (Puni.sh)",
