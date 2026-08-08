@@ -1334,7 +1334,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.20.0.61",
+    "AssemblyVersion": "7.20.0.62",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1352,10 +1352,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.61/ICE.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.61/ICE.zip",
-    "Changelog": "- 新增機甲事件錄製 debug 模式：開著跑一場事件，log 就有完整的目標判定證據",
-    "LastUpdate": 1786189596
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.62/ICE.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.62/ICE.zip",
+    "Changelog": "- 機甲目標分級補上第三條線索：家族內用 ObjectKind 判身份，CardStand 是協助員的 per-player 目標\n- 修正協助員的機甲目標被靜默濾掉：身份分群改由資料表群組驅動，判定不再依賴物件名稱",
+    "LastUpdate": 1786192268
   },
   {
     "Author": "Liza Carvelli",
