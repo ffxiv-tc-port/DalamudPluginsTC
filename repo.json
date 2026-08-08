@@ -1036,7 +1036,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.20.0.20",
+    "AssemblyVersion": "7.20.0.21",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1056,12 +1056,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 補齊繁中字典層剩餘缺口，並修正三處既有翻譯因排序被自己蓋掉的死碼",
+    "Changelog": "- 全庫掃描並修正字典串接順序死碼(ReplacementsDictionary 排序遮蔽)\n- ECommons 更新至 73b7eb1:Map/Player 五處取列後直接解參考補上空值分支\n- GNB「Lost X」(布爾扎失傳技能)批次補上官方繁中譯名\n- BLM PvP「Lethargy」譯名統一為台服官方技能名「昏沉」",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.20/WrathCombo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.20/WrathCombo.zip",
-    "LastUpdate": 1786169495
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.21/WrathCombo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.21/WrathCombo.zip",
+    "LastUpdate": 1786176560
   },
   {
     "Author": "cycleapple",
