@@ -64,7 +64,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.19",
+    "AssemblyVersion": "7.20.0.20",
     "Description": "自動幫你跑副本，支援信賴的同伴、達人指引、士官兵團、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -84,10 +84,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.19/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.19/AutoDuty.zip",
-    "Changelog": "- zh-TW 補上本輪新增介面的 27 條翻譯\n- Info 分頁改列本艦隊 fork 的相依外掛,只開網頁不自動安裝\n- 移植上游 Multibox 多開協調:連線層、設定與界面\n- bug 回報網址改指本 fork 的 issues 頁面",
-    "LastUpdate": 1786101372
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.20/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.20/AutoDuty.zip",
+    "Changelog": "- 重建 md5s.json:涵蓋新匯入的 63 個路徑檔(300 → 326 條)\n- 匯入先前因缺動作而跳過的 63 個上游路徑檔(26 新增、37 更新)\n- 補齊上游路徑檔用到的 5 個動作與整套步驟條件引擎",
+    "LastUpdate": 1786170112
   },
   {
     "Author": "Det",
