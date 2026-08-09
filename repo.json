@@ -122,7 +122,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.47",
+    "AssemblyVersion": "7.20.0.48",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -134,10 +134,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.47/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.47/AutoRetainer.zip",
-    "Changelog": "- 潛艇點位計畫被遊戲擋掉的點改記 Information：航距不足時「設了 MROJZ 卻跑了 OJ」不再靜默",
-    "LastUpdate": 1786205128
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.48/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.48/AutoRetainer.zip",
+    "Changelog": "- 批次存賣的重複道具判斷改記道具清單：前一個雇員把玩家身上的東西收走後，後面的雇員也能正確跳過\n- 自動購買燃料開著時青磷水不再存進雇員：斷掉「存光→買滿→再存光」的無限重購\n- 批次存賣不再空開雇員：共用背包的工作被前一個雇員做完後，沒有自己專屬工作的雇員直接跳過",
+    "LastUpdate": 1786285639
   },
   {
     "Author": "кайт машина (Puni.sh)",
