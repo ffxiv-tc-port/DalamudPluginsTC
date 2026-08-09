@@ -977,7 +977,7 @@
     "Author": "veyn, croizat",
     "Name": "Visland",
     "InternalName": "visland",
-    "AssemblyVersion": "7.20.0.18",
+    "AssemblyVersion": "7.20.0.19",
     "Description": "自動化採集、開拓工坊排班等無人島相關作業。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/visland",
@@ -998,10 +998,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/visland.png",
     "Punchline": "自動化無人島各項活動",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.18/visland.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.18/visland.zip",
-    "Changelog": "- 路線評分改成每幀算一次,不要留在排序比較器裡\n- 缺料總表補兩道原生層閘門:未登入時完全不讀,在途數量只在島上讀\n- 在地化修正:兩處「工房」改成台服官方唯一寫法「工坊」\n- 缺料總表新增「路線」欄:用採集圓座標把已存路線對到材料,一鍵手動執行覆蓋最多缺料的那條\n- 新增缺料總表分頁:逐材料算出「需求 - 庫存 - 在途」,讀不到的來源畫 ? 不畫 0",
-    "LastUpdate": 1786278748
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.19/visland.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.19/visland.zip",
+    "Changelog": "- 出口自動賣新增「保留工坊還需要的量」開關(預設關):賣到剩 max(門檻, 兩週需求 - 在途)\n- 屯貨倉庫新增「補缺口」派遣策略:挑覆蓋最多缺料的遠征地,第二個倉庫貪婪補第一個沒蓋到的",
+    "LastUpdate": 1786282701
   },
   {
     "Author": "veyn",
