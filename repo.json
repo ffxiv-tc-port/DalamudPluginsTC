@@ -1334,7 +1334,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.20.0.69",
+    "AssemblyVersion": "7.20.0.70",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1352,10 +1352,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.69/ICE.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.69/ICE.zip",
-    "Changelog": "- 側欄的月球選擇／職業選擇／宇宙工具經驗值補上顯示開關，可以像其他項目一樣關掉",
-    "LastUpdate": 1786206427
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.70/ICE.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.70/ICE.zip",
+    "Changelog": "- 設定頁內部整理：安全與轉盤設定改為即時讀取，清掉三處死碼與一次多餘存檔\n- 快速套用回報設定的職業下拉指定寬度，避免設定欄寬度逐幀跳動\n- 偵錯視窗七個按鈕補上繁中：說明／清除／坐騎／刪除／移除\n- 任務頁大改：模式下拉直接放在列上、新增搜尋與篩選列、檢視可就地切換\n- 快速套用回報設定改成就地展開，並在套用前顯示會動到幾個任務\n- 任務優先度頁改成四個可收合分節：三組拖曳清單不再一次全部攤開",
+    "LastUpdate": 1786256035
   },
   {
     "Author": "Liza Carvelli",
