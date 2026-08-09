@@ -64,7 +64,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.22",
+    "AssemblyVersion": "7.20.0.23",
     "Description": "自動幫你跑副本，支援信賴的同伴、達人指引、士官兵團、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -84,10 +84,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.22/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.22/AutoDuty.zip",
-    "Changelog": "- hook 轉呼叫改用 OriginalDisposeSafe：卸載競態不再擲例外殺行程\n- ECommons 重釘至 987605d：hook 轉呼叫改用 OriginalDisposeSafe，卸載競態不再擲例外\n- 註記 VariantVote 刻意不移植的查證結論:台服無 1315 副本,防止重跑整輪調查",
-    "LastUpdate": 1786182631
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.23/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.23/AutoDuty.zip",
+    "Changelog": "- Wrath Combo 租約釋放改成先確認對方放掉才丟本機 handle:釋放失敗不再靜默把租約留在 WC 端",
+    "LastUpdate": 1786290727
   },
   {
     "Author": "Det",
@@ -550,7 +550,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.36",
+    "AssemblyVersion": "7.20.0.37",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -571,10 +571,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速以太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.36/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.36/Lifestream.zip",
-    "Changelog": "- 等 vnavmesh 網格那步直接傳 IsReady：IPC 叫不動時中止一次，不要空轉 120 秒每幀洗聊天欄\n- 蒼天街傳送落地後離乙太之光太遠：改成先用 vnavmesh 走過去，走不了就明確報錯",
-    "LastUpdate": 1786206688
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.37/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.37/Lifestream.zip",
+    "Changelog": "- 自訂別名的導航移動改成三態處理 vnavmesh 就緒查詢:缺席時立刻中止而不是空轉 30 秒洗上千行錯誤",
+    "LastUpdate": 1786290739
   },
   {
     "Author": "apetih",
@@ -1156,7 +1156,7 @@
     "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.20.0.28",
+    "AssemblyVersion": "7.20.0.29",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/DailyDuty",
@@ -1179,10 +1179,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.28/DailyDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.28/DailyDuty.zip",
-    "Changelog": "- 任務設定含已失效的資料列 id 時不再讓模組視窗消失",
-    "LastUpdate": 1786185015
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.29/DailyDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.29/DailyDuty.zip",
+    "Changelog": "- 待辦清單版面的三個下拉選單改用已接在地化的 EnumCombo,並補上錨定角落的四個翻譯鍵",
+    "LastUpdate": 1786290723
   },
   {
     "Author": "liza, qstxiv, & various contributors",
