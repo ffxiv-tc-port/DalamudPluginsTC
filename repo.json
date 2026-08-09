@@ -199,7 +199,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.20.0.38",
+    "AssemblyVersion": "7.20.0.39",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -216,10 +216,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.38/BossModReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.38/BossModReborn.zip",
-    "Changelog": "- 循環策略編輯器 v2 的新介面文字接上在地化，並清掉版面改版後留下的孤兒譯文\n- 循環策略框架換成 v2 終態：策略設定由單一結構改為多型的軌／浮點／整數三型\n- 策略選項改用具名引數，讓同一份呼叫在新舊循環框架下都合法\n- 循環預設資料庫首次載入時自動備份原檔",
-    "LastUpdate": 1786291694
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.39/BossModReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.39/BossModReborn.zip",
+    "Changelog": "- 補上 Positional 列舉的四個顯示值(Any/Flank/Rear/Front)\n- 補上這批翻譯新產生的收斂缺口:策略編輯器的「Target」與重播分析視窗的「Analysis」/「Target」\n- 循環策略編輯器長尾翻譯第七批(收尾):option 說明句補 277 條,長尾翻譯完成\n- 循環策略編輯器長尾翻譯第六批:option 說明句補 134 條(方向站位、Normal/Only use 系列、量表消耗策略)\n- 循環策略編輯器長尾翻譯第五批:option 說明句補 145 條(Force use of 系列、跳躍方向、彈匣數條件)\n- 循環策略編輯器長尾翻譯第四批:option 說明句補 275 條(Allow/Delay/Do not/Forbid/Force 開頭系列)\n- 循環策略編輯器長尾翻譯第三批:track 顯示鍵全數翻完,僅餘幻朱雀(Occult Crescent)資料缺口\n- 循環策略編輯器長尾翻譯第二批:track 顯示鍵補齊到 314 條(含 39 條跨技能群組標籤)\n- 循環策略編輯器長尾翻譯第一批:修正兩個字串收斂缺口並補 200 條技能名譯文",
+    "LastUpdate": 1786297687
   },
   {
     "Author": "Kouzukii",
