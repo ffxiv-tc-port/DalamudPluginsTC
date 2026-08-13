@@ -122,7 +122,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.56",
+    "AssemblyVersion": "7.20.0.57",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -134,10 +134,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.56/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.56/AutoRetainer.zip",
-    "Changelog": "- 稀有品繳交循環:拿掉兩個設了目的地就永遠碰不到的備用移動死路",
-    "LastUpdate": 1786350830
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.57/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.57/AutoRetainer.zip",
+    "Changelog": "- ECommons.IPC 遷移階段 2:Lifestream 呼叫改用套件實例,套件給不了的成員收進側車類\n- ECommons.IPC 遷移階段 1:接上 ECommons.IPC 子模組並把它加進方案成員",
+    "LastUpdate": 1786605254
   },
   {
     "Author": "кайт машина (Puni.sh)",
