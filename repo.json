@@ -199,7 +199,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.20.0.53",
+    "AssemblyVersion": "7.20.0.54",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -216,10 +216,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.53/BossModReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.53/BossModReborn.zip",
-    "Changelog": "- 深牢小地圖修正大房間層寶箱消失：摘要改成本層累積、座標閘門加降級遲滯、Unknown 補上死因診斷",
-    "LastUpdate": 1786628562
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.54/BossModReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.54/BossModReborn.zip",
+    "Changelog": "- 深牢修正天之御柱魔石滿箱不會自動使用：滿額訊息補接 HoH 專屬的 9208",
+    "LastUpdate": 1786630101
   },
   {
     "Author": "Kouzukii",
