@@ -199,7 +199,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.20.0.57",
+    "AssemblyVersion": "7.20.0.58",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -216,10 +216,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.57/BossModReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.57/BossModReborn.zip",
-    "Changelog": "- 修正深牢自動趕路站著不動：寶箱目標區從同分平台改成距離梯度，算不出目的地時交還移動擁有權",
-    "LastUpdate": 1786636638
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.58/BossModReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.58/BossModReborn.zip",
+    "Changelog": "- 深牢大廳層：改用定時取樣做房間位置普查，原本那份「房號變化時」的樣本擬合不出格心\n- 修正自動移動走走停停：交還移動擁有權改成遲滯 0.5 秒，並加上「走得到的最高權重」診斷",
+    "LastUpdate": 1786643283
   },
   {
     "Author": "Kouzukii",
