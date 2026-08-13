@@ -199,7 +199,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.20.0.51",
+    "AssemblyVersion": "7.20.0.52",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -216,10 +216,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.51/BossModReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.51/BossModReborn.zip",
-    "Changelog": "- 技能調整：職業分頁改顯示官方職業名，並把 16 個譯錯或沒翻的技能名對照台服資料表修正\n- 新增「預測減傷」循環模組：依預測到的全體傷害與坦克死刑提前開減傷，只按能力技不搶 GCD",
-    "LastUpdate": 1786623457
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.52/BossModReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.52/BossModReborn.zip",
+    "Changelog": "- 預測減傷加上傷害屬性配對：判得出物理／魔法就只推有效的減傷，判不出預設不推\n- 修正「自動移動」與 AI 自動閃避同時開啟時角色會抖動：移動改為只有一個擁有者",
+    "LastUpdate": 1786626153
   },
   {
     "Author": "Kouzukii",
