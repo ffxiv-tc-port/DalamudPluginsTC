@@ -284,7 +284,7 @@
     "Author": "Nylfae",
     "Name": "Dynamis",
     "InternalName": "Dynamis",
-    "AssemblyVersion": "7.20.0.5",
+    "AssemblyVersion": "7.20.0.6",
     "Description": "本插件包含多種透過動態分析輔助遊戲逆向工程與原型製作的工具。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Dynamis",
@@ -303,16 +303,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Dynamis.png",
     "Punchline": "開發/除錯/逆向工程工具與實驗工作台。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Dynamis-v7.20.0.5/Dynamis.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Dynamis-v7.20.0.5/Dynamis.zip",
-    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16",
-    "LastUpdate": 1785603581
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Dynamis-v7.20.0.6/Dynamis.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Dynamis-v7.20.0.6/Dynamis.zip",
+    "Changelog": "- CI：修正 build-check 從未真正建置的問題",
+    "LastUpdate": 1786826438
   },
   {
     "Author": "Nylfae",
     "Name": "Dynamis (with Hosted PowerShell)",
     "InternalName": "DynamisWithSMA",
-    "AssemblyVersion": "7.20.0.5",
+    "AssemblyVersion": "7.20.0.6",
     "Description": "本插件包含多種透過動態分析輔助遊戲逆向工程與原型製作的工具，此版本額外內建 PowerShell 主機。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Dynamis",
@@ -332,10 +332,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DynamisWithSMA.png",
     "Punchline": "開發/除錯/逆向工程工具與實驗工作台（含內建 PowerShell）。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.20.0.5/DynamisWithSMA.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.20.0.5/DynamisWithSMA.zip",
-    "Changelog": "- CI：Dalamud pin 升級 13.0.0.6 → 13.0.0.16",
-    "LastUpdate": 1785603572
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.20.0.6/DynamisWithSMA.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.20.0.6/DynamisWithSMA.zip",
+    "Changelog": "- CI：修正 build-check 從未真正建置的問題",
+    "LastUpdate": 1786826438
   },
   {
     "Author": "Snowy, KangasZ",
