@@ -199,7 +199,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.20.0.62",
+    "AssemblyVersion": "7.20.0.63",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -216,10 +216,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.62/BossModReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.62/BossModReborn.zip",
-    "Changelog": "- 深牢房心網格擬合：門檻拿實測校準 15y→30y，並擋掉王層補出來的幽靈房心",
-    "LastUpdate": 1786791127
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.63/BossModReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.63/BossModReborn.zip",
+    "Changelog": "- 新增設定變更紀錄視窗：版本升級後第一次開遊戲列出新選項與行為變更，一個既有設定值都不動\n- 多開解鎖改成可以關的選項，預設關閉：原本每次載入外掛都無條件解除遊戲的單一實例鎖\n- 補齊 8 個 2.0 任務單挑模組：7 個職業任務＋1 個主線，ID 逐一對台服資料表驗過",
+    "LastUpdate": 1786795385
   },
   {
     "Author": "Kouzukii",
