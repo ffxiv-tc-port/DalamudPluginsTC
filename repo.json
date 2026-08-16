@@ -64,7 +64,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.26",
+    "AssemblyVersion": "7.20.0.27",
     "Description": "自動幫你跑副本，支援信賴的同伴、達人指引、士官兵團、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -84,10 +84,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.26/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.26/AutoDuty.zip",
-    "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)",
-    "LastUpdate": 1786827419
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.27/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.27/AutoDuty.zip",
+    "Changelog": "- repin 子模組:ECommons.IPC 跟到 1.0.0.24,WrathCombo.API 跟到新月島三端點",
+    "LastUpdate": 1786878824
   },
   {
     "Author": "Det",
@@ -122,7 +122,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.60",
+    "AssemblyVersion": "7.20.0.61",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -134,10 +134,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.60/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.60/AutoRetainer.zip",
-    "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)",
-    "LastUpdate": 1786827416
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.61/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.61/AutoRetainer.zip",
+    "Changelog": "- repin 子模組 ECommons.IPC 跟到 1.0.0.24",
+    "LastUpdate": 1786878832
   },
   {
     "Author": "кайт машина (Puni.sh)",
@@ -254,7 +254,7 @@
     "Author": "Infi, Anna",
     "Name": "Chat 2",
     "InternalName": "ChatTwo",
-    "AssemblyVersion": "7.20.0.21",
+    "AssemblyVersion": "7.20.0.22",
     "Description": "Chat 2 是遊戲內建聊天視窗的完整重寫版外掛。\n支援功能：\n\n- 無限分頁\n- 固定發送到特定頻道的分頁\n- 更靈活的過濾功能\n- RGB 頻道顏色\n- 完全可變字體大小\n- 側邊欄分頁\n- 未讀訊息計數\n- 表情符號\n- 截圖模式（隱藏名稱）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ChatTwo",
@@ -275,10 +275,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ChatTwo.png",
     "Punchline": "電光石火 - ♪ 全新的聊天視窗，一個嶄新美妙的聊天窗口 ♪",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.21/ChatTwo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.21/ChatTwo.zip",
-    "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)",
-    "LastUpdate": 1786827548
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.22/ChatTwo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.22/ChatTwo.zip",
+    "Changelog": "- AddonChatLog.OnRefresh 的第二個參數不是 eventId 是 valueCount：補上界防護與自證診斷",
+    "LastUpdate": 1786878822
   },
   {
     "Author": "Nylfae",
@@ -637,7 +637,7 @@
     "Author": "Jukka",
     "Name": "NecroLens",
     "InternalName": "NecroLens",
-    "AssemblyVersion": "7.20.0.12",
+    "AssemblyVersion": "7.20.0.13",
     "Description": "深層迷宮輔助工具。提供怪物雷達、仇恨、視野範圍等各種資訊。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/NecroLens",
@@ -657,10 +657,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/NecroLens.png",
     "Punchline": "真正的死靈術士永遠瞭若指掌深層迷宮……其他人只是用了高科技而已！",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.12/NecroLens.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.12/NecroLens.zip",
-    "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)",
-    "LastUpdate": 1786827516
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.13/NecroLens.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.13/NecroLens.zip",
+    "Changelog": "- 怪物資料的網路備援改指本 org 的 fork，ref 用 HEAD 不寫死分支",
+    "LastUpdate": 1786878797
   },
   {
     "Author": "NightmareXIV",
@@ -1334,7 +1334,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.20.0.75",
+    "AssemblyVersion": "7.20.0.76",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1352,10 +1352,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.75/ICE.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.75/ICE.zip",
-    "Changelog": "- 任務 ID 0 不再被寫進設定檔，並清掉既有設定檔裡已經累積的那一筆\n- 任務逾時現在會在 log 指名是哪一步逾時，原本只丟一個訊息空白的例外\n- 自我修理的收尾步驟永遠不回報完成，把整個任務佇列卡住 30 分鐘",
-    "LastUpdate": 1786866520
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.76/ICE.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.76/ICE.zip",
+    "Changelog": "- 沒帶 prefix 的 log 不再每行走一次堆疊：呼叫點前綴改成算一次就快取\n- 認不出來的確認框不再每半秒噴 110 行逐字元 dump，把回報用的 log 視窗洗光\n- 別的外掛先把裝備修好時，ICE 不再永遠卡在修理狀態",
+    "LastUpdate": 1786878823
   },
   {
     "Author": "Liza Carvelli",
@@ -1439,7 +1439,7 @@
     "Author": "Faye",
     "Name": "Better Occult Crescent & Chest Helper Interface",
     "InternalName": "BOCCHI",
-    "AssemblyVersion": "7.20.0.12",
+    "AssemblyVersion": "7.20.0.13",
     "Description": "⚠️ 台服 7.20 目前還沒有「蜃景新月島」這個內容，本外掛現在裝了不會有任何反應。已先行移植好放著，等台服更新到該版本即可直接使用。\n\n讓你在「蜃景新月島」玩得更順手。\n- 不用再自己走路、自己找寶箱。\n- 小巧的 FATE 與關鍵遭遇面板，會顯示該場獎勵，還能自動幫你導航過去。\n- 附贈一個非常違規的「非法模式」，給那些寧可出去曬太陽的人。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BOCCHI",
@@ -1466,16 +1466,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/BOCCHI.png",
     "Punchline": "讓你在「蜃景新月島」玩得更順手。（台服尚未開放該內容）",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.12/BOCCHI.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.12/BOCCHI.zip",
-    "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)",
-    "LastUpdate": 1786827403
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.13/BOCCHI.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.13/BOCCHI.zip",
+    "Changelog": "- FATE 進度樣本改成跨幀累積:「預計完成時間」不再永遠算不出來\n- 修正 BOCCHI.sln 建置把 Debug 版 Ocelot.dll 靜默打包進 Release 輸出",
+    "LastUpdate": 1786878820
   },
   {
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.20.0.42",
+    "AssemblyVersion": "7.20.0.43",
     "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：部隊合建素材一鍵全交、野外陸行鳥自動餵食基薩爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1491,10 +1491,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.42/TCToolbox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.42/TCToolbox.zip",
-    "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)",
-    "LastUpdate": 1786827602
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.43/TCToolbox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.43/TCToolbox.zip",
+    "Changelog": "- 浮動視窗標題改成引用 DisplayName：模組顯示名不再有第二份會漂移的字面值",
+    "LastUpdate": 1786878797
   },
   {
     "Author": "daemitus, MidoriKami",
