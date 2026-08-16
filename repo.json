@@ -199,7 +199,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.20.0.72",
+    "AssemblyVersion": "7.20.0.73",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -216,10 +216,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.72/BossModReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.72/BossModReborn.zip",
-    "Changelog": "- 白虎征魂戰場地邊界改成量測值並加上空中階段縮圈:修 AI 躲荒彈時把人帶出場地摔死",
-    "LastUpdate": 1786899241
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.73/BossModReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.73/BossModReborn.zip",
+    "Changelog": "- 補上「預設掛載判斷有沒有被執行」的診斷:查 preset 開著不迴避時卡在這個分辨上",
+    "LastUpdate": 1786899761
   },
   {
     "Author": "Kouzukii",
