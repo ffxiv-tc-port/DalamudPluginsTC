@@ -31,7 +31,10 @@
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.11/Accountant.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.11/Accountant.zip",
     "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)",
-    "LastUpdate": 1786827420
+    "LastUpdate": 1786827420,
+    "CategoryTags": [
+      "Inventory"
+    ]
   },
   {
     "Author": "Taurenkey (Puni.sh)",
@@ -45,7 +48,7 @@
       "crafting"
     ],
     "CategoryTags": [
-      "Crafting & Gathering"
+      "Jobs"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -103,7 +106,7 @@
       "Automation"
     ],
     "CategoryTags": [
-      "Utility"
+      "Jobs"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -137,7 +140,10 @@
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.63/AutoRetainer.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.63/AutoRetainer.zip",
     "Changelog": "- 潛水艇收完報告後不再卡在選單:台服個別潛艇選單的收尾是「退出」而非「取消」,補進退出比對字串",
-    "LastUpdate": 1786888047
+    "LastUpdate": 1786888047,
+    "CategoryTags": [
+      "Inventory"
+    ]
   },
   {
     "Author": "кайт машина (Puni.sh)",
@@ -151,7 +157,7 @@
       "combat"
     ],
     "CategoryTags": [
-      "Utility"
+      "Jobs"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -180,7 +186,7 @@
       "QoL"
     ],
     "CategoryTags": [
-      "Utility"
+      "Minigames"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -219,7 +225,10 @@
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.78/BossModReborn.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.78/BossModReborn.zip",
     "Changelog": "- 深牢仇恨迴避改用禁區並吃 NecroLens 逐怪資料：視覺怪畫面向扇形，路線才真的會彎",
-    "LastUpdate": 1786959825
+    "LastUpdate": 1786959825,
+    "CategoryTags": [
+      "Jobs"
+    ]
   },
   {
     "Author": "Kouzukii",
@@ -235,7 +244,7 @@
       "Stats"
     ],
     "CategoryTags": [
-      "Utility"
+      "UI"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -265,7 +274,8 @@
       "Replacement"
     ],
     "CategoryTags": [
-      "Utility"
+      "Social",
+      "UI"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -389,7 +399,7 @@
       "Fishing"
     ],
     "CategoryTags": [
-      "Utility"
+      "Jobs"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -447,7 +457,7 @@
       "market board"
     ],
     "CategoryTags": [
-      "Inventory & Retainers"
+      "Inventory"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -476,7 +486,7 @@
       "QoL"
     ],
     "CategoryTags": [
-      "Utility"
+      "Inventory"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -515,7 +525,10 @@
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.6/LatihasChocobo.zip",
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/LatihasChocobo.png",
     "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)",
-    "LastUpdate": 1786827564
+    "LastUpdate": 1786827564,
+    "CategoryTags": [
+      "Minigames"
+    ]
   },
   {
     "Author": "53m1k0l0n/Gidedin (Puni.sh)",
@@ -589,7 +602,7 @@
       "logograms"
     ],
     "CategoryTags": [
-      "utility"
+      "Utility"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -618,7 +631,7 @@
       "FC"
     ],
     "CategoryTags": [
-      "Utility"
+      "Social"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -763,7 +776,7 @@
       "QoL"
     ],
     "CategoryTags": [
-      "Utility"
+      "Inventory"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -792,7 +805,7 @@
       "Macro"
     ],
     "CategoryTags": [
-      "Utility"
+      "UI"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -831,7 +844,10 @@
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.22/Saucy.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.22/Saucy.zip",
     "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)",
-    "LastUpdate": 1786827427
+    "LastUpdate": 1786827427,
+    "CategoryTags": [
+      "Minigames"
+    ]
   },
   {
     "Author": "daemitus, croizat",
@@ -859,7 +875,10 @@
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.25/SomethingNeedDoing.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.25/SomethingNeedDoing.zip",
     "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)",
-    "LastUpdate": 1786827355
+    "LastUpdate": 1786827355,
+    "CategoryTags": [
+      "Utility"
+    ]
   },
   {
     "Author": "Sonar Team",
@@ -932,7 +951,7 @@
       "FC"
     ],
     "CategoryTags": [
-      "Utility"
+      "Inventory"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -971,7 +990,10 @@
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.5/TriadBuddy.zip",
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TriadBuddy.png",
     "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)\n- CI：修正 build-check 從未真正建置的問題",
-    "LastUpdate": 1786827457
+    "LastUpdate": 1786827457,
+    "CategoryTags": [
+      "Minigames"
+    ]
   },
   {
     "Author": "veyn, croizat",
@@ -1061,7 +1083,10 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.26/WrathCombo.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.26/WrathCombo.zip",
-    "LastUpdate": 1786827532
+    "LastUpdate": 1786827532,
+    "CategoryTags": [
+      "Jobs"
+    ]
   },
   {
     "Author": "cycleapple",
@@ -1079,7 +1104,7 @@
       "Chinese"
     ],
     "CategoryTags": [
-      "utility"
+      "Social"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -1257,7 +1282,7 @@
       "act"
     ],
     "CategoryTags": [
-      "Utility"
+      "UI"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -1315,7 +1340,7 @@
       "Gatherers"
     ],
     "CategoryTags": [
-      "Crafting & Gathering"
+      "Jobs"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -1342,7 +1367,7 @@
       "Gatherers"
     ],
     "CategoryTags": [
-      "Crafting & Gathering"
+      "Jobs"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -1370,7 +1395,7 @@
       "gearsets"
     ],
     "CategoryTags": [
-      "Utility"
+      "Inventory"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -1395,7 +1420,7 @@
     "RepoUrl": "https://github.com/ffxiv-tc-port/vfaux",
     "Tags": [],
     "CategoryTags": [
-      "Utility"
+      "Minigames"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -1420,7 +1445,7 @@
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
     "Tags": [],
     "CategoryTags": [
-      "Inventory & Retainers"
+      "Inventory"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -1481,7 +1506,7 @@
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
     "Tags": [],
     "CategoryTags": [
-      "Utilities"
+      "Utility"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -1511,7 +1536,7 @@
       "probability"
     ],
     "CategoryTags": [
-      "Utilities"
+      "Minigames"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -1535,7 +1560,9 @@
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
     "Tags": [],
-    "CategoryTags": [],
+    "CategoryTags": [
+      "Utility"
+    ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
     "LoadSync": false,
