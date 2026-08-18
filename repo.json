@@ -913,7 +913,7 @@
     "Author": "NightmareXIV",
     "Name": "Splatoon",
     "InternalName": "Splatoon",
-    "AssemblyVersion": "7.20.0.22",
+    "AssemblyVersion": "7.20.0.23",
     "Description": "Splatoon 是一款強大的輔助工具。它以自訂路標系統徹底革新遊戲體驗，可建立無數量限制的成組路標、文字標籤與角色指示器，並具備精確到像素的定位能力。此功能讓玩家能更清楚辨識關鍵物件與事件，進而做出更快速的反應。請注意，此插件本身不附帶任何預設檔，玩家可自行製作或匯入現成的預設檔，打造專屬於自己的遊戲體驗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Splatoon",
@@ -932,10 +932,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Splatoon.png",
     "Punchline": "以無限、精準的路標重新定義 FFXIV 導航方式。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.22/Splatoon.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.22/Splatoon.zip",
-    "Changelog": "- 同步上游官方腳本:新增 17 支上游腳本並重生成 update.csv\n- 同步上游官方腳本:12 支既有腳本更新至上游新版並重生成 update.csv",
-    "LastUpdate": 1787066612
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.23/Splatoon.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.23/Splatoon.zip",
+    "Changelog": "- 重新釘 ECommons 到 b686f5b:補上 log 寫入端閘門與原生取得器判空\n- 官方腳本的 LocalPlayer 改走 IObjectTable、DataId 改為 BaseId，清掉 SplatoonScriptsOfficial 全部 258 處 API13 過時警告\n- 繁中語言檔補上三條只有鍵沒有值的條目：物件記錄表的兩個百分比欄與 VFX 的經過時間\n- 兩支官方腳本對 EventFramework.Instance() 的回傳值直接解參考，不在副本裡就會踩到空指標\n- 反向移植泛型腳本基底 SplatoonScript<T>,並修掉會讓它靜默失效的腳本辨識條件\n- 反向移植上游 Controller 的九個加法 API:每腳本 TaskManager、優先度定位、批次註冊元素、Hide\n- 反向移植上游的「注意視窗」:腳本可以在機制進行中把一行字推到畫面正中央\n- 方案檔漏一行讓 ScriptUpdateFileGenerator 在命令列建置時被靜默跳過,產生器也不再走進 bin/obj\n- Splatoon：本體的 LocalPlayer 改走 IObjectTable、DataId 改為 BaseId，清掉 84 處 API13 過時警告\n- FRU 的 P4 Crystallize Time 與 P1 Fall of Faith:設定介面早就是中文,下拉選項卻一直是英文\n- 下拉選單的選項跟著介面一起翻譯:目標替代、渲染引擎、優先度通知等 6 處原本固定顯示英文列舉名",
+    "LastUpdate": 1787089101
   },
   {
     "Author": "Infi",
@@ -1241,7 +1241,7 @@
     "Author": "NightmareXIV",
     "Name": "TextAdvance",
     "InternalName": "TextAdvance",
-    "AssemblyVersion": "7.20.0.22",
+    "AssemblyVersion": "7.20.0.23",
     "Description": "Quest speedrunning assistance tool. Automatically confirms quest acceptance and completion, skips subtitles, cutscenes, and most prompts. Includes optional Splatoon-based quest target indicators and vnavmesh-based auto-navigation to quest objectives.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TextAdvance",
@@ -1260,10 +1260,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TextAdvance.png",
     "Punchline": "Quest speedrunning assistance tool. Automatically skips subtitle boxes and confirms cutscene skipping",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.22/TextAdvance.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.22/TextAdvance.zip",
-    "Changelog": "- 更新 ECommons 子模組至 446c74b:修正卸載期間五個 hook 讀取已清空欄位的崩潰風險",
-    "LastUpdate": 1787066595
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.23/TextAdvance.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.23/TextAdvance.zip",
+    "Changelog": "- 重新釘 ECommons 到 b686f5b:補上 log 寫入端閘門與原生取得器判空\n- TextAdvance：LocalPlayer 改走 IObjectTable、DataId 改為 BaseId，清掉 26 處 API13 過時警告\n- 修正方案組態對應:ECommons 不再被建成上游 2024 年就刪掉的 ReleaseForms 組態",
+    "LastUpdate": 1787089201
   },
   {
     "Author": "Styr1x, PlusoneChiang",
