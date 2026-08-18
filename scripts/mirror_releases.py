@@ -6,6 +6,7 @@ Runs only inside the DalamudPluginsTC repo's own GitHub Actions workflow,
 using a token that is never stored in the source plugin repos.
 """
 import base64
+import copy
 import datetime
 import json
 import os
@@ -13,6 +14,7 @@ import re
 import shutil
 import stat
 import subprocess
+import sys
 import tempfile
 import threading
 from collections import defaultdict
@@ -209,13 +211,24 @@ def gh(*args, check=True):
 
 
 def latest_release(repo):
-    # `published_at` feeds repo.json's LastUpdate, which is what Dalamud's
-    # changelog page sorts by - without it every entry lands on 1970-01-01.
+    """這個外掛最新的一個 release（含資產清單），沒有 release 就回 None。
+
+    `published_at` feeds repo.json's LastUpdate, which is what Dalamud's
+    changelog page sorts by - without it every entry lands on 1970-01-01.
+
+    🔴 `check=True` 是刻意的（2026-08-18 改；以前是 `check=False`）。舊寫法讓
+    「GitHub 回 5xx／被限流／網路斷」與「這個 repo 真的還沒有 release」得到
+    **一模一樣的空字串**，兩者一起被印成 `[skip] no releases found` —— 平台抖
+    一下就靜默少同步一個外掛，而 run 是全綠的。現在讓它拋出去，交給 main() 的
+    逐外掛分級（MirrorReport）處理：有既有 feed 條目就記 [warn] 沿用舊條目，
+    真的沒有可沿用的條目才 [FAIL]。
+    「真的沒有 release」走的是另一條路：API 回 200 + 空陣列 → jq 得到 "null"，
+    離開碼 0，照樣回 None —— 兩種情況從此可以分辨。
+    """
     out = gh("api", f"repos/{repo}/releases", "--jq",
               "sort_by(.published_at) | reverse | .[0] "
               "| {tag: .tag_name, published: .published_at, "
-              "assets: [.assets[] | {name, url}]}",
-              check=False)
+              "assets: [.assets[] | {name, url}]}")
     if not out or out == "null":
         return None
     return json.loads(out)
@@ -348,13 +361,19 @@ def load_json(path, default):
     return default
 
 
-def sync_icon(internal_name, source_repo, entry):
+def sync_icon(internal_name, source_repo, entry, report=None):
     icon_path = ICON_PATHS.get(internal_name)
     if not icon_path:
         return False
     out = gh("api", f"repos/{source_repo}/contents/{icon_path}", "--jq", ".content", check=False)
     if not out:
-        print(f"[warn] {internal_name}: could not fetch icon at {icon_path}")
+        # 圖示是純外觀：抓不到就沿用 icons/ 裡的舊檔與條目既有的 IconUrl，
+        # 版本與下載連結完全不受影響 —— 一律 warn，不算「這個外掛失敗」。
+        msg = f"could not fetch icon at {icon_path}"
+        if report is not None:
+            report.warn("icon", internal_name, msg)
+        else:
+            print(f"[warn] {internal_name}: {msg}")
         return False
     ICONS_DIR.mkdir(exist_ok=True)
     dest = ICONS_DIR / f"{internal_name}.png"
@@ -369,7 +388,150 @@ def sync_icon(internal_name, source_repo, entry):
 _persist_lock = threading.Lock()
 
 
-def mirror_one(internal_name, source_repo, state, by_internal):
+# ── 逐外掛失敗分級（2026-08-18 加） ──────────────────────────────────────
+# 起因：2026-08-17 晚 GitHub 平台事故期間，**單一外掛**的暫時性 API 錯誤讓整輪
+# mirror 以失敗收場（workflow 的 `grep ^[FAIL]` 一律 exit 1），其餘 50 幾個外掛
+# 已經建好的 release 全部沒能寫進 feed —— 一個外掛的暫時性錯誤擋住所有人的更新。
+#
+# 分級規則（[warn] 繼續跑、[FAIL] 停下不寫 feed）：
+#   [warn] mirror        單一外掛抓 release／資產／上傳失敗，而它在 repo.json
+#                        **有**既有條目 → 把該條目與 release-state 還原成這一輪
+#                        開始前的樣子（不留半套資料），其餘外掛照常處理。
+#   [warn] icon          圖示同步失敗（純外觀）。
+#   [warn] orphan        release 鏡像成功但 repo.json 沒有條目（既有行為，不改）。
+#   [FAIL] all-failed    ① 所有外掛都失敗 —— 平台級問題，寫 feed 沒有意義。
+#   [FAIL] persist       ② repo.json／release-state.json 寫入失敗（feed 本身壞了）。
+#   [FAIL] no-feed-entry ③ 失敗的外掛在 repo.json 沒有既有條目可沿用 —— 新外掛
+#                        首發不能靜默漏（漏掉的表現是「使用者清單裡沒這個外掛」，
+#                        零徵兆）。
+#   [FAIL] unexpected    分級邏輯本身有洞（不該發生 → 當硬失敗，不要吞）。
+#
+# 🔴 離開碼只由 __main__ 決定，不由 main() 決定：release_plugin.py 是 import 進來
+# 直接呼叫 main() 的，它的行為必須跟加固前一樣。
+
+
+class FeedWriteError(RuntimeError):
+    """repo.json／release-state.json 寫不進去 —— feed 本身壞了，硬失敗。"""
+
+
+def _flatten(text, limit=400):
+    """把例外訊息壓成單行。
+
+    🔴 為什麼一定要壓：`gh()` 的 RuntimeError 直接夾了多行 stderr，原樣印出去會
+    讓「行首標記」這個契約破功（workflow 的保險就是對行首的 [FAIL] 做 grep），
+    續行的內容還可能長得像另一個標記。壓成單行之後，一筆結果永遠只佔一行。
+    """
+    flat = " ".join(str(text).split())
+    return flat if len(flat) <= limit else flat[:limit] + " ...(截斷)"
+
+
+CR_CHAR = chr(13)
+LF_CHAR = chr(10)
+
+
+def _gha_escape(text):
+    """GitHub Actions 的 workflow command 資料段跳脫（%, CR, LF）。"""
+    return (str(text).replace("%", "%25")
+                     .replace(CR_CHAR, "%0D")
+                     .replace(LF_CHAR, "%0A"))
+
+
+class MirrorReport:
+    """一輪 mirror 的逐外掛結果。執行緒安全（8 個 worker 同時在寫）。"""
+
+    def __init__(self, targets=0):
+        self.targets = targets
+        self._lock = threading.Lock()
+        self.ok = []
+        self.warns = []   # [(kind, name, reason)]
+        self.fatals = []  # [(kind, name, reason)]
+
+    def add_ok(self, name):
+        with self._lock:
+            self.ok.append(name)
+
+    def warn(self, kind, name, reason):
+        reason = _flatten(reason)
+        with self._lock:
+            self.warns.append((kind, name, reason))
+        print(f"[warn] {kind} {name}: {reason}")
+
+    def fatal(self, kind, name, reason):
+        reason = _flatten(reason)
+        with self._lock:
+            self.fatals.append((kind, name, reason))
+        print(f"[FAIL] {kind} {name}: {reason}")
+
+    @property
+    def failed_plugins(self):
+        """外掛層級失敗的名字集合。圖示與 orphan 不算 —— 它們不影響版本/下載連結，
+        拿它們去湊「全部都失敗」會把一次正常的 run 誤判成平台事故。"""
+        with self._lock:
+            return ({n for k, n, _ in self.warns if k == "mirror"}
+                    | {n for k, n, _ in self.fatals if k in ("mirror", "no-feed-entry")})
+
+    @property
+    def hard_fail(self):
+        with self._lock:
+            return bool(self.fatals)
+
+    def print_tail(self):
+        """把結果重印一次在 log 尾巴，這樣光看 log 最後 20 行就知道發生什麼事。
+        前綴 `[summary]` 是刻意的：workflow 那道「行首 [FAIL] 就停」的保險不能被
+        這裡的重印餵出假陽性。"""
+        print("")
+        print("=== mirror 結果 ===")
+        print(f"[summary] targets={self.targets} ok={len(self.ok)} "
+              f"warn={len(self.warns)} fatal={len(self.fatals)}")
+        for kind, name, reason in self.warns:
+            print(f"[summary][warn] {kind} {name}: {reason}")
+        for kind, name, reason in self.fatals:
+            print(f"[summary][FAIL] {kind} {name}: {reason}")
+
+    def _table(self, rows):
+        out = ["| 外掛 | 類別 | 原因 |", "| --- | --- | --- |"]
+        for kind, name, reason in rows:
+            cells = [str(c).replace("|", "\\|") for c in (name, kind, reason)]
+            out.append("| " + " | ".join(cells) + " |")
+        return out
+
+    def emit_github(self):
+        """寫 run summary 與 annotation。本機跑（release_plugin.py 的退路模式）時
+        這兩個環境變數都不存在，等於沒作用。
+
+        🔑 這個區塊是整份 summary 的**第一段**（後面的步驟才會往下追加），所以
+        「有 warn」與「全綠」在 run 頁面第一眼就分得出來。"""
+        if os.environ.get("GITHUB_ACTIONS"):
+            for kind, name, reason in self.warns:
+                print(f"::warning title=mirror {kind} {name}::{_gha_escape(reason)}")
+        path = os.environ.get("GITHUB_STEP_SUMMARY")
+        if not path:
+            return
+        lines = []
+        if self.fatals:
+            lines.append(f"## 🔴 mirror 硬失敗（{len(self.fatals)} 筆）— feed **沒有**更新")
+            lines.append("")
+            lines += self._table(self.fatals)
+            if self.warns:
+                lines.append("")
+                lines.append(f"另有 {len(self.warns)} 筆警告：")
+                lines.append("")
+                lines += self._table(self.warns)
+        elif self.warns:
+            lines.append(f"## ⚠️ 有 {len(self.warns)} 筆警告（不是全綠）")
+            lines.append("")
+            lines.append(f"其餘 {len(self.ok)} 個外掛照常更新。`mirror` 類的警告代表該外掛"
+                         "**沿用 feed 既有條目**（沒有寫入半套資料），下一班（15 分鐘後）"
+                         "自動重試。")
+            lines.append("")
+            lines += self._table(self.warns)
+        else:
+            lines.append(f"## ✅ mirror 全綠（{self.targets} 個外掛，0 警告）")
+        with open(path, "a", encoding="utf-8") as f:
+            f.write(LF_CHAR.join(lines) + LF_CHAR)
+
+
+def mirror_one(internal_name, source_repo, state, by_internal, report=None):
     """Mirror one plugin's latest release (binary + source archive) into the
     public repo and update its repo.json entry in place. Returns True if
     this repo's state actually changed (new release mirrored or asset
@@ -472,9 +634,17 @@ def mirror_one(internal_name, source_repo, state, by_internal):
             # placeholder version/download links forever and the only fix would be
             # hand-editing release-state.json. Leaving state unset costs one
             # repeated asset download next run and then self-heals.
-            print(f"[warn] {internal_name}: no repo.json entry - release mirrored, but "
-                  f"metadata NOT synced and state NOT recorded. Add the entry and "
-                  f"re-run; it will pick up from here.")
+            msg = ("no repo.json entry - release mirrored, but metadata NOT synced "
+                   "and state NOT recorded. Add the entry and re-run; it will pick "
+                   "up from here.")
+            # ⚠️ 這是**成功路徑**的警告（release 真的鏡像好了），跟分級規則 ③ 的
+            # no-feed-entry 不是同一件事 —— 那個是「失敗且沒有舊條目可沿用」。
+            # 這裡維持既有的 warn：升成硬失敗會讓一個少填的條目擋住其他 50 幾個
+            # 外掛的 feed，正是這次加固要消滅的形狀。
+            if report is not None:
+                report.warn("orphan", internal_name, msg)
+            else:
+                print(f"[warn] {internal_name}: {msg}")
             return True
 
         if manifest:
@@ -529,17 +699,24 @@ def main(only=None):
     A full sweep costs >= 2 `gh` calls per plugin (latest_release + release view)
     plus one per icon - ~156 round-trips across 53 plugins even when nothing has
     changed - so release_plugin.py passes just the plugins it actually released.
+
+    回傳 MirrorReport（見上面的分級規則）。🔴 **不會**因為逐外掛失敗而拋例外、
+    也**不會**自己決定離開碼 —— release_plugin.py 的 --wait 退路模式是 import
+    進來直接呼叫這個函式的，它的行為必須跟加固前一樣。離開碼只在 __main__ 決定。
     """
     state = load_json(STATE_FILE, {})
     repo_json = load_json(REPO_JSON, [])
     by_internal = {e["InternalName"]: e for e in repo_json}
 
+    targets = {n: r for n, r in SOURCE_REPOS.items()
+               if only is None or n in set(only)}
+    report = MirrorReport(len(targets))
+
     if only is not None:
         unknown = sorted(set(only) - set(SOURCE_REPOS))
         if unknown:
-            print(f"[warn] not in SOURCE_REPOS, ignoring: {unknown}")
-    targets = {n: r for n, r in SOURCE_REPOS.items()
-               if only is None or n in set(only)}
+            report.warn("unknown-name", ",".join(unknown),
+                        "not in SOURCE_REPOS, ignoring")
 
     changed = False
 
@@ -548,11 +725,17 @@ def main(only=None):
         # persistence (and the entry mutations inside mirror_one, which all
         # happen before this point in the same call) need serializing.
         with _persist_lock:
-            STATE_FILE.write_text(json.dumps(state, indent=2, ensure_ascii=False) + "\n",
-                                  encoding="utf-8")
-            if also_repo_json:
-                REPO_JSON.write_text(json.dumps(repo_json, indent=2, ensure_ascii=False) + "\n",
-                                     encoding="utf-8")
+            try:
+                STATE_FILE.write_text(json.dumps(state, indent=2, ensure_ascii=False) + "\n",
+                                      encoding="utf-8")
+                if also_repo_json:
+                    REPO_JSON.write_text(json.dumps(repo_json, indent=2, ensure_ascii=False) + "\n",
+                                         encoding="utf-8")
+            except Exception as exc:  # noqa: BLE001
+                # 分級規則 ②：feed 檔案寫不進去，跟「某個外掛抓不到 release」是
+                # 完全不同的等級 —— 繼續跑只會產出一份殘缺的 feed。
+                report.fatal("persist", "-", f"feed 檔案寫入失敗: {exc!r}")
+                raise FeedWriteError(str(exc)) from exc
 
     # Icon sync used to be a serial loop over every plugin - ~50 `gh api`
     # round-trips completed before any mirroring even started, and the single
@@ -561,7 +744,7 @@ def main(only=None):
     # nothing to serialize.
     with ThreadPoolExecutor(max_workers=8) as pool:
         icon_futures = {
-            pool.submit(sync_icon, name, repo, by_internal[name]): name
+            pool.submit(sync_icon, name, repo, by_internal[name], report): name
             for name, repo in targets.items() if name in by_internal
         }
         for future in as_completed(icon_futures):
@@ -570,13 +753,49 @@ def main(only=None):
                 if future.result():
                     print(f"[icon updated] {name}")
                     changed = True
-            except Exception as exc:
-                print(f"[FAIL] icon {name}: {exc}")
+            except Exception as exc:  # noqa: BLE001
+                # sync_icon 只有在寫檔成功之後才碰 entry["IconUrl"]，所以這裡不
+                # 需要還原條目。
+                report.warn("icon", name, exc)
     if changed:
         persist(True)
 
     def run_and_persist(internal_name, source_repo):
-        result = mirror_one(internal_name, source_repo, state, by_internal)
+        # 🔴 快照要在動任何東西**之前**拍。mirror_one 是就地改 by_internal 裡那個
+        # dict（它就是 repo_json 清單裡的同一個物件），而 persist() 是逐外掛增量
+        # 寫檔的 —— 別的執行緒隨時會把「這個外掛改到一半」的樣子寫進 repo.json。
+        entry = by_internal.get(internal_name)
+        with _persist_lock:
+            entry_snapshot = copy.deepcopy(entry) if entry is not None else None
+            state_snapshot = state.get(internal_name)
+
+        try:
+            result = mirror_one(internal_name, source_repo, state, by_internal, report)
+        except Exception as exc:  # noqa: BLE001
+            with _persist_lock:
+                if entry_snapshot is not None:
+                    # clear()+update() 而不是換掉物件：repo_json 清單裡存的是同一個
+                    # 參考，換物件還原不到已經寫出去的那份。
+                    entry.clear()
+                    entry.update(entry_snapshot)
+                if state_snapshot is None:
+                    state.pop(internal_name, None)
+                else:
+                    state[internal_name] = state_snapshot
+            if entry_snapshot is None:
+                report.fatal("no-feed-entry", internal_name,
+                             f"同步失敗，而 repo.json 沒有既有條目可沿用（新外掛首發？）: {exc}")
+            else:
+                report.warn("mirror", internal_name,
+                            f"同步失敗，沿用 feed 既有條目 "
+                            f"{entry_snapshot.get('AssemblyVersion', '?')}: {exc}")
+            # 🔴 還原完一定要再寫一次檔：這個外掛可能是最後一個結束的，而別的
+            # 執行緒早就把它半套的樣子寫進 repo.json 了 —— 只改記憶體不刷回磁碟
+            # 等於沒還原。
+            persist(True)
+            return False
+
+        report.add_ok(internal_name)
         persist(result)
         return result
 
@@ -590,14 +809,30 @@ def main(only=None):
             try:
                 if future.result():
                     changed = True
-            except Exception as exc:
-                print(f"[FAIL] {name}: {exc}")
+            except FeedWriteError:
+                pass  # persist() 已經記成 fatal 了，不要重複記
+            except Exception as exc:  # noqa: BLE001
+                # run_and_persist 已經把所有可預期的失敗分級掉了；走到這裡代表
+                # 分級邏輯自己有洞 —— 當硬失敗，不要靜默吞掉。
+                report.fatal("unexpected", name, exc)
+
+    # 分級規則 ①：全部都失敗＝平台級問題（2026-08-17 那一晚就是這個形狀，只是
+    # 當時連一個外掛失敗都會擋住全部）。這時候寫 feed 沒有意義，硬失敗停下來。
+    failed = report.failed_plugins
+    if targets and len(failed) == len(targets):
+        report.fatal("all-failed", "*",
+                     f"{len(targets)} 個外掛全部失敗 —— 判定為平台級問題，這一輪不寫 feed")
 
     shutil.rmtree(_SOURCE_ARCHIVE_DIR, ignore_errors=True)
     scope = f"{len(targets)} plugin(s) checked"
     print(f"done ({scope})" if changed else f"no repo.json changes ({scope})")
+    report.print_tail()
+    report.emit_github()
+    return report
 
 
 if __name__ == "__main__":
-    import sys
-    main(only=sys.argv[1:] or None)
+    _report = main(only=sys.argv[1:] or None)
+    # 🔴 離開碼在這裡、而且只在這裡決定。0 = 成功（可能帶 warn），2 = 硬失敗。
+    # workflow 靠這個離開碼決定要不要繼續走到 commit + push。
+    sys.exit(2 if _report.hard_fail else 0)

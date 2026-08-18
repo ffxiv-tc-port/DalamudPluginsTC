@@ -19,6 +19,18 @@
 #   2. commit 身分是 github-actions[bot]，訊息永遠是 "Mirror plugin releases"。
 #   3. 🔴 沒有任何失敗偵測。mirror_releases.py 是**逐外掛 catch 例外**的：某個外掛炸了
 #      它只印一行 [FAIL] 然後**照樣以 0 離開**，run 是綠的。舊版會把這種失敗完全吃掉。
+#
+# 📌 2026-08-18 再改一次（[warn] 化）。上一版的偵測是「log 裡出現任何 [FAIL] 就 exit 1」，
+# 於是 2026-08-17 晚 GitHub 平台事故時，**單一外掛**的暫時性 API 錯誤讓整輪 FAIL，
+# 其餘 50 幾個外掛已經建好的 release 全部沒能寫進 feed —— 一個外掛的暫時性錯誤擋住
+# 所有人的更新。現在分級由 mirror_releases.py 自己做（規則寫在那支腳本 MirrorReport
+# 的上方註解），這裡只看它的離開碼：
+#   0 = 成功。可能帶 [warn] —— 那些外掛沿用 feed 既有條目（不寫半套資料），
+#       其餘外掛照常更新，下一班（15 分鐘後）自動重試。
+#   2 = 硬失敗。三種：①全部外掛都失敗（平台級，寫 feed 沒意義）②feed 檔案寫入失敗
+#       ③失敗的外掛在 repo.json 沒有既有條目可沿用（新外掛首發不能靜默漏）。
+# ⚠️ 「成功但有 warn」與「全綠」要一眼分得出來：腳本會把 ⚠️ 計數表寫在 run summary
+#    的**最上面**（它是第一個寫 summary 的步驟），並對每筆 warn 送一則 annotation。
 name: 同步外掛發版到 feed
 
 on:
@@ -63,40 +75,50 @@ jobs:
           python-version: '3.12'
 
       - name: 同步 release 並更新 repo.json
+        id: mirror
         shell: bash
         env:
           # 全 org 已是 public，預設 token 讀得到別的 repo 的 release 與原始碼，
           # 也寫得了本 repo 的 release（permissions.contents: write）。
           GH_TOKEN: ${{ github.token }}
         run: |
-          set -euo pipefail
+          # ⚠️ 這一步刻意**不**用 `set -e`：離開碼要交給下一步判。在這裡 abort 會讓
+          # 腳本已經寫進 $GITHUB_STEP_SUMMARY 的分級表沒有人去解讀，而且 run 頁面
+          # 只剩一句「Process completed with exit code 2」。
+          set -uo pipefail
           python3 scripts/mirror_releases.py 2>&1 | tee mirror.log
+          # 🔴 接了管線之後 $? 是 tee 的（永遠 0）—— 要 PIPESTATUS[0] 才是 python 的。
+          rc="${PIPESTATUS[0]}"
+          echo "rc=$rc" >> "$GITHUB_OUTPUT"
+          echo "mirror_releases.py 離開碼：$rc"
 
-      - name: 🔴 逐外掛失敗偵測（mirror 自己不會用離開碼告訴你）
+      - name: 🔴 失敗分級（warn 繼續、FAIL 停）
         shell: bash
         run: |
           set -uo pipefail
-          if grep -n '^\[FAIL\]' mirror.log; then
-            {
-              echo "### 🔴 有外掛同步失敗"
-              echo ""
-              echo '```'
-              grep -n '^\[FAIL\]' mirror.log
-              echo '```'
-            } >> "$GITHUB_STEP_SUMMARY"
-            echo "::error title=mirror 有外掛失敗::mirror_releases.py 逐外掛 catch 例外且不改離開碼，只能從輸出判斷"
+          grep -n '^\[summary\]' mirror.log || true
+
+          # rc 沒被設到（上一步整個沒跑完）也會落進這裡 —— 空字串 != 0，往安全的
+          # 方向倒：當成硬失敗。
+          rc="${{ steps.mirror.outputs.rc }}"
+          if [ "$rc" != "0" ]; then
+            echo "::error title=mirror 硬失敗::mirror_releases.py 離開碼 '$rc' —— 這一輪不寫 feed（分級與原因見 run summary）"
             exit 1
           fi
-          if grep -n '^\[warn\]' mirror.log; then
-            {
-              echo "### ⚠️ 警告（不致命，但要看）"
-              echo ""
-              echo '```'
-              grep -n '^\[warn\]' mirror.log
-              echo '```'
-            } >> "$GITHUB_STEP_SUMMARY"
+
+          # 反向保險：腳本說 0 卻印了行首 [FAIL]，代表分級邏輯自己有洞，一樣停。
+          # ⚠️ 只抓**行首**標記。log 尾巴的重印前綴是 [summary]，刻意不會被匹配到；
+          #    例外訊息也已經在腳本裡壓成單行，不會有續行冒充標記。
+          if grep -n '^\[FAIL\]' mirror.log; then
+            echo "::error title=分級不一致::離開碼 0 但輸出有行首 [FAIL] 行（見上）"
+            exit 1
           fi
-          echo "沒有 [FAIL] 行。"
+
+          if grep -q '^\[warn\]' mirror.log; then
+            echo "::notice title=mirror 有警告::這一輪不是全綠；那些外掛沿用 feed 既有條目，明細見 run summary"
+            grep -n '^\[warn\]' mirror.log
+          fi
+          echo "分級通過（離開碼 0、無行首 [FAIL]）。"
 
       - name: 🔴 repo.json 保險（RepoUrl 不可變）
         shell: bash
