@@ -78,6 +78,29 @@ PUSH_AS_APP = FLEET_ROOT / "_rewrite" / "push_as_app.py"
 COMMIT_NAME = "Claude Sonnet 5"
 COMMIT_EMAIL = "noreply@anthropic.com"
 
+# --watch 用的監看管線(段 1 資產齊全 -> 段 2 觸發 mirror -> 段 3 feed 落地)。
+# 🔴 不寫死使用者名稱:工具箱在 ~/.claude/tools/(索引見該目錄的 README.md)。
+# 真的搬家了就用環境變數 FLEET_WATCH_PIPELINE 指過去 —— 讓它大聲失敗,而不是靜默
+# 指到一個不存在的檔然後看起來像「監看跑完了」。
+WATCH_PIPELINE = Path(os.environ.get("FLEET_WATCH_PIPELINE") or
+                      Path.home() / ".claude" / "tools" / "fleet" / "release_watch_pipeline.py")
+
+# 這一輪各外掛的 tag 去向。release_one() 跑在 ThreadPoolExecutor 裡,兩張表都要上鎖。
+#   DISPATCHED_TAGS: 這一輪真的觸發了一次 release 建置 —— 推了新 tag,或對「已在 HEAD
+#                    但沒有資產」的既有 tag 重新 dispatch。**--watch 只監看這一批**,
+#                    而且 tag 就是腳本自己剛算/剛推的那一個,不是事後 `git describe`
+#                    猜回來的(猜回來的版本會讓整條監看一路綠燈卻什麼都沒驗到)。
+#   UNCHANGED_TAGS:  HEAD 早就發過而且資產齊全,這一輪什麼都沒做。不納入監看,但連
+#                    tag 一起印出來 —— 「沒監看到什麼」必須看得見,不能靜默消失。
+DISPATCHED_TAGS = {}
+UNCHANGED_TAGS = {}
+_tags_lock = threading.Lock()
+
+
+def _record_tag(table, internal_name, tag):
+    with _tags_lock:
+        table[internal_name] = tag
+
 # InternalNames that do NOT have a checkout of their own because they ship from
 # another plugin's repo and tag. Releasing these directly is meaningless - they
 # come along for free when their host repo is released.
@@ -403,6 +426,7 @@ def release_one(internal_name, source_repo, dry_run=False, wait=False):
     if latest_tag is not None and tag_points_at_head(repo_path, latest_tag):
         if release_has_assets(source_repo, latest_tag):
             say(f"[skip] {internal_name}: HEAD already released as {latest_tag}, nothing new to tag")
+            _record_tag(UNCHANGED_TAGS, internal_name, latest_tag)
             return True
         # Tag exists at HEAD but its release build never succeeded (failed or
         # timed-out CI after the tag push). Re-dispatch the SAME tag instead of
@@ -410,6 +434,9 @@ def release_one(internal_name, source_repo, dry_run=False, wait=False):
         # by tag existence alone and skipped here forever.
         say(f"[{internal_name}] {latest_tag} exists at HEAD but has no release assets - re-dispatching CI")
         if dry_run:
+            # dry-run 不會真的 dispatch,但把「將會用的 tag」記下來,--watch-dry-run
+            # 才印得出對組表(真正要不要執行監看由 main() 單點把關,見 run_watch)。
+            _record_tag(DISPATCHED_TAGS, internal_name, latest_tag)
             return True
         tag = latest_tag
         dispatch_release_run(source_repo, tag)
@@ -418,12 +445,17 @@ def release_one(internal_name, source_repo, dry_run=False, wait=False):
         tag = next_tag(internal_name, latest_tag)
         say(f"[{internal_name}] next tag: {tag}")
         if dry_run:
+            _record_tag(DISPATCHED_TAGS, internal_name, tag)
             return True
 
         git(repo_path, "tag", tag)
         git_push_as_app(repo_path, "push", "origin", tag)
         dispatch_release_run(source_repo, tag)
         say(f"[{internal_name}] pushed {tag}, dispatched release.yml")
+
+    # 記在 dispatch **之後**:dispatch_release_run() 失敗會拋例外,那時這個外掛不該
+    # 進監看名單(它的 release 根本沒被觸發,監看只會等到逾時)。
+    _record_tag(DISPATCHED_TAGS, internal_name, tag)
 
     if not wait:
         # 🔑 本機的工作到此為止。CI 建置要 5~7 分鐘，等它是純粹的空轉；
@@ -629,6 +661,73 @@ def _rebase_if_behind():
         git(REPO_ROOT, "-c", "rebase.autoStash=true", "rebase", "origin/main")
 
 
+def watch_command(pairs):
+    """組出監看管線的指令列。pairs = [(InternalName, tag), ...]。
+
+    🔑 這裡**不需要**任何 InternalName 對映表,兩支腳本本來就在同一個鍵空間:
+    release_plugin 的目標名在 main() 已被 mirror.SOURCE_REPOS 驗過,而
+    release_watch_pipeline.py 的 Target 也是拿同一支 mirror_releases 的
+    SOURCE_REPOS 去查 org/repo。逐字傳過去就對 —— 自己抄一份對照表只會漂移。
+
+    🔴 名字**逐字**傳,絕對不要順手「修正」大小寫。feed 的 InternalName 是使用者端
+    認外掛的鍵:`GatherbuddyReborn`(小寫 b,而 repo 是 GatherBuddyReborn)改一個字母
+    就等於換成另一個外掛,既有使用者從此永遠收不到更新,而且全程沒有任何錯誤訊息。
+    """
+    return [sys.executable, str(WATCH_PIPELINE),
+            *(f"{name}={tag}" for name, tag in pairs)]
+
+
+def _cmdline(cmd):
+    """印成可以直接貼回終端機重跑的一行。"""
+    return " ".join(f'"{a}"' if " " in a else a for a in cmd)
+
+
+def run_watch(results, execute):
+    """--watch:全部觸發成功時,拿這一輪真的推出去的 tag 啟動監看管線。回傳 exit code。
+
+    🔴 「任一外掛沒觸發成功就不啟動監看」是刻意的:監看管線的 exit 0 意思是「這批
+    外掛的 feed 逐一相符」,名單一開始就少了幾個的話,那個 0 會變成一句半真的話 ——
+    而半真的成功訊息正是這條管線存在的理由。這種時候改成把成功清單和可以直接貼的
+    指令列印出來,由人決定要不要只監看那一批。
+    """
+    failed = sorted(n for n, v in results.items() if not v)
+    with _tags_lock:
+        pairs = sorted(DISPATCHED_TAGS.items())
+        unchanged = sorted(UNCHANGED_TAGS.items())
+
+    if unchanged:
+        say("[watch] 這一輪沒有新版可發(HEAD 早已發佈且資產齊全),不納入監看:"
+            + " ".join(f"{n}={t}" for n, t in unchanged))
+
+    if failed:
+        say(f"[watch] 有 {len(failed)} 個外掛沒有觸發成功 {failed} —— 不啟動監看。")
+        if pairs:
+            say("[watch] 這一輪觸發成功的是:" + " ".join(f"{n}={t}" for n, t in pairs))
+            say("[watch] 確認過後要只監看這一批就跑:" + _cmdline(watch_command(pairs)))
+        return 1
+
+    if not pairs:
+        say("[watch] 這一輪沒有觸發任何 release 建置,沒有東西可以監看。")
+        return 0
+
+    cmd = watch_command(pairs)
+    say(f"[watch] {len(pairs)} 個外掛:" + _cmdline(cmd))
+    if not execute:
+        say("[watch] 只印指令、不執行"
+            "(--watch-dry-run,或 --dry-run 時這些 tag 只是「將會推的」)。")
+        return 0
+    if not WATCH_PIPELINE.exists():
+        say(f"[watch] 找不到監看管線 {WATCH_PIPELINE},不執行"
+            f"(可用環境變數 FLEET_WATCH_PIPELINE 指定位置)。")
+        return 1
+
+    say("[watch] 啟動監看管線(前景執行,輸出直通)")
+    proc = subprocess.run(cmd, env=child_env())
+    say(f"[watch] 監看管線結束,exit={proc.returncode}"
+        + ("(feed 全部落地)" if proc.returncode == 0 else "(見上方結果總表)"))
+    return proc.returncode
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("plugins", nargs="*", help="InternalNames to release (default: none unless --all)")
@@ -647,7 +746,21 @@ def main():
     parser.add_argument("--allow-personal-identity", action="store_true",
                          help="允許在拿不到 TCToolBox App token 時以個人身分觸發 workflow "
                               "(run 的 actor 是不可變欄位,改 git 歷史蓋不掉,平常不要用)")
+    parser.add_argument("--watch", action="store_true",
+                         help="全部觸發成功後,接著用這一輪推出去的 tag 前景執行監看管線"
+                              "(資產齊全 -> 觸發 mirror -> 等 feed 落地)。"
+                              "任一個外掛沒觸發成功就不啟動,改列出成功清單讓你自己決定。")
+    parser.add_argument("--watch-dry-run", action="store_true",
+                         help="只印出將要執行的監看指令列(InternalName=tag 對組)就結束,"
+                              "不執行監看、不碰 token、不觸發 mirror。")
     args = parser.parse_args()
+
+    if (args.watch or args.watch_dry_run) and args.wait:
+        # --wait 自己就會在本機 mirror + commit + push feed,監看管線那三件事
+        # (等資產、觸發 mirror、等 feed 落地)在它跑完時已經做完了。與其定義一套
+        # 交錯順序,不如讓這個組合明確報錯。
+        parser.error("--watch / --watch-dry-run 不能跟 --wait 併用:"
+                     "--wait 已經在本機做完 mirror + commit + push feed 了。")
 
     global ALLOW_PERSONAL_IDENTITY
     ALLOW_PERSONAL_IDENTITY = args.allow_personal_identity
@@ -700,6 +813,12 @@ def main():
         say("本機工作結束。repo.json 由本 repo 的排程 workflow 回寫（每 15 分鐘）：")
         say("  https://github.com/ffxiv-tc-port/DalamudPluginsTC/actions/workflows/mirror-releases.yml")
         say("  收完之後記得 `git pull` 才會看到更新後的 repo.json / release-state.json。")
+        if args.watch or args.watch_dry_run:
+            # 🔴 真正執行監看的唯一閘門:--watch 且不是任何一種 dry-run。
+            rc = run_watch(results,
+                           execute=args.watch and not args.watch_dry_run and not args.dry_run)
+            if rc:
+                sys.exit(rc)
         return
 
     if args.dry_run or args.skip_mirror or not ok:
