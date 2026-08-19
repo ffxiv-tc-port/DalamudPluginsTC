@@ -447,7 +447,7 @@
     "Author": "Critical_Impact",
     "Name": "Allagan Tools",
     "InternalName": "InventoryTools",
-    "AssemblyVersion": "7.20.0.27",
+    "AssemblyVersion": "7.20.0.28",
     "Description": "Allagan Tools 的主要目的是追蹤你所有角色/僱員/公會倉庫中的道具。透過它的篩選系統，你將不再遺失任何道具的蹤跡，也不再不知道道具該收納在哪裡。\n\n雖然這是它的主要功能，但它還擁有相當豐富的其他功能，包括：\n\t- 製作規劃\n\t- 市場公告板整合\n\t- 在搜尋/整理及挑選製作材料時於背包中高亮顯示道具\n\t- 包含商人與取得來源等資訊的道具視窗\n\t- 可完整搜尋的任務/怪物/飛空艇/潛水艇視窗\n\t- 讓你能為特定道具設定複雜搜尋條件的篩選系統\n\t- 提示視窗整合，滑鼠懸停即可查看道具所在位置",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/InventoryTools",
@@ -467,10 +467,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/InventoryTools.png",
     "Punchline": "讓你的 FFXIV 井井有條，輕鬆定位/顯示道具應收納何處、規劃製作，並搜尋怪物、任務、飛空艇與潛水艇！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.27/InventoryTools.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.27/InventoryTools.zip",
-    "Changelog": "- 四處版面資料裸讀補判空與邊界:寫死的 AtkValue 索引出界不再靜默讀到陣列外的記憶體",
-    "LastUpdate": 1787153916
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.28/InventoryTools.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.28/InventoryTools.zip",
+    "Changelog": "- 補齊 7 條真缺鍵並接上兩處遺漏的 .Loc()",
+    "LastUpdate": 1787159332
   },
   {
     "Author": "electr0sheep, Nuko",
@@ -913,7 +913,7 @@
     "Author": "NightmareXIV",
     "Name": "Splatoon",
     "InternalName": "Splatoon",
-    "AssemblyVersion": "7.20.0.35",
+    "AssemblyVersion": "7.20.0.36",
     "Description": "Splatoon 是一款強大的輔助工具。它以自訂路標系統徹底革新遊戲體驗，可建立無數量限制的成組路標、文字標籤與角色指示器，並具備精確到像素的定位能力。此功能讓玩家能更清楚辨識關鍵物件與事件，進而做出更快速的反應。請注意，此插件本身不附帶任何預設檔，玩家可自行製作或匯入現成的預設檔，打造專屬於自己的遊戲體驗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Splatoon",
@@ -932,10 +932,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Splatoon.png",
     "Punchline": "以無限、精準的路標重新定義 FFXIV 導航方式。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.35/Splatoon.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.35/Splatoon.zip",
-    "Changelog": "- ECommons repin 至 da209f0:在地化接線批(清單新增/區域選擇器/載入器按鈕)+UniversalParty.Members 判空;Pictomancy repin 至 76c211e1:AddonClipper 逐跳判空\n- FRU 三支腳本的設定介面改走 .Loc() 在地化系統(原本是寫死的繁體中文)\n- SplatoonScripts 補 27 處字串接線:ini 已有繁中譯文,呼叫點沒接 .Loc()\n- 本體 Gui/ 補 3 處字串接線,並修 EnemyAggro.cs 的 1 條真缺鍵\n- GenericTest4 的 AtkValues 裸讀改走 AtkReader.ReadString,bump Metadata 重生 update.csv",
-    "LastUpdate": 1787156743
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.36/Splatoon.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.36/Splatoon.zip",
+    "Changelog": "- 補完 Splatoon 本體 Gui/ 高可見度裸英文字串的繁中在地化(64 條)",
+    "LastUpdate": 1787159401
   },
   {
     "Author": "Infi",
@@ -970,7 +970,7 @@
     "Author": "MgAl2O4",
     "Name": "TriadBuddy",
     "InternalName": "TriadBuddy",
-    "AssemblyVersion": "7.20.0.5",
+    "AssemblyVersion": "7.20.0.6",
     "Description": "三張牌遊戲解牌工具，僅支援 NPC 對戰。\n- 小遊戲進行時提示下一步最佳出牌\n- 對戰前評估所有牌組預設\n- NPC 牌組優化器\n- 為卡牌收藏視窗新增更多細節",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/FFTriadBuddyDalamud",
@@ -986,11 +986,11 @@
     "LoadPriority": 0,
     "Punchline": "三張牌遊戲解牌助手",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.5/TriadBuddy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.5/TriadBuddy.zip",
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.6/TriadBuddy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.6/TriadBuddy.zip",
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TriadBuddy.png",
-    "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)\n- CI：修正 build-check 從未真正建置的問題",
-    "LastUpdate": 1786827457,
+    "Changelog": "- FFTriadBuddy:RefreshUI 特徵碼由 7 命中收斂到唯一命中 0x140FF6AE0",
+    "LastUpdate": 1787159003,
     "CategoryTags": [
       "Minigames"
     ]
@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.20.0.87",
+    "AssemblyVersion": "7.20.0.88",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.87/ICE.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.87/ICE.zip",
-    "Changelog": "- ECommons repin 至 913c7d4:在地化接線+UniversalParty.Members 判空",
-    "LastUpdate": 1787153926
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.88/ICE.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.88/ICE.zip",
+    "Changelog": "- 在地化：機甲事件旗標 tooltip 補繁中，重新盤點裸英文字串真實範圍\n- touch build-check workflow:org 重建後 Actions 未註冊,以本次 commit 觸發重掃描",
+    "LastUpdate": 1787159334
   },
   {
     "Author": "Liza Carvelli",
