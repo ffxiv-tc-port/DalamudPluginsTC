@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.20.0.77",
+    "AssemblyVersion": "7.20.0.78",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.77/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.77/Artisan.zip",
-    "Changelog": "- ECommons repin 至 09f2420:AddonMaster 全目錄判空加固+IsAlliance 假守衛修正",
-    "LastUpdate": 1787142912
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.78/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.78/Artisan.zip",
+    "Changelog": "- 潛水艇工房疊加層補判空:文字節點取不到時不再裸解參考 NodeText",
+    "LastUpdate": 1787147263
   },
   {
     "Author": "Herculezz",
@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.73",
+    "AssemblyVersion": "7.20.0.74",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.73/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.73/AutoRetainer.zip",
-    "Changelog": "- NodeList 裸解參考第二族清零:11 處非文字節點存取補上上界＋元素判空",
-    "LastUpdate": 1787145800,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.74/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.74/AutoRetainer.zip",
+    "Changelog": "- 角色清單補元素判空:CharaSelectEntries 元素為 null 時填佔位項而非裸解參考",
+    "LastUpdate": 1787147268,
     "CategoryTags": [
       "Inventory"
     ]
@@ -476,7 +476,7 @@
     "Author": "electr0sheep, Nuko",
     "Name": "Item Vendor Location",
     "InternalName": "ItemVendorLocation",
-    "AssemblyVersion": "7.20.0.13",
+    "AssemblyVersion": "7.20.0.14",
     "Description": "為道具新增右鍵選單選項，可查看該道具可在哪些商人處購買",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ItemVendorLocation",
@@ -496,10 +496,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ItemVendorLocation.png",
     "Punchline": "顯示可購買該道具的商人所在位置",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.20.0.13/ItemVendorLocation.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.20.0.13/ItemVendorLocation.zip",
-    "Changelog": "- 幻化道具詳情每影格路徑補判空:UIModule 與文字節點取不到時跳過該影格而非崩潰",
-    "LastUpdate": 1787139112
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.20.0.14/ItemVendorLocation.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.20.0.14/ItemVendorLocation.zip",
+    "Changelog": "- 商店清單最佳近似比對補判空:重新取節點的分支照抄迴圈裡的判空樣板",
+    "LastUpdate": 1787147229
   },
   {
     "Author": "Latihas",
@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.49",
+    "AssemblyVersion": "7.20.0.50",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速以太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.49/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.49/Lifestream.zip",
-    "Changelog": "- NodeList 裸解參考第二族:合成事件與世界清單除錯路徑補上上界＋元素判空",
-    "LastUpdate": 1787145801
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.50/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.50/Lifestream.zip",
+    "Changelog": "- 角色清單與 SelectYesno 除錯路徑補判空:元素為 null 時不再裸解參考",
+    "LastUpdate": 1787147276
   },
   {
     "Author": "apetih",
@@ -913,7 +913,7 @@
     "Author": "NightmareXIV",
     "Name": "Splatoon",
     "InternalName": "Splatoon",
-    "AssemblyVersion": "7.20.0.32",
+    "AssemblyVersion": "7.20.0.33",
     "Description": "Splatoon 是一款強大的輔助工具。它以自訂路標系統徹底革新遊戲體驗，可建立無數量限制的成組路標、文字標籤與角色指示器，並具備精確到像素的定位能力。此功能讓玩家能更清楚辨識關鍵物件與事件，進而做出更快速的反應。請注意，此插件本身不附帶任何預設檔，玩家可自行製作或匯入現成的預設檔，打造專屬於自己的遊戲體驗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Splatoon",
@@ -932,10 +932,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Splatoon.png",
     "Punchline": "以無限、精準的路標重新定義 FFXIV 導航方式。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.32/Splatoon.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.32/Splatoon.zip",
-    "Changelog": "- ECommons repin 至 09f2420:UniversalParty.IsAlliance 假守衛修正與 AddonMaster 42 處判空",
-    "LastUpdate": 1787142932
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.33/Splatoon.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.33/Splatoon.zip",
+    "Changelog": "- ObjectEffect detour 補判空:hook 參數為 null 時整段跳過而非崩潰",
+    "LastUpdate": 1787147290
   },
   {
     "Author": "Infi",
@@ -1213,7 +1213,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.20.0.33",
+    "AssemblyVersion": "7.20.0.34",
     "Description": "A tiny little quest helper plugin, which does quests for you automatically where possible. Uses navmesh to automatically walk to all quest waypoints, and tries to automatically complete all steps along the way (excluding dungeons, single player duties and combat).\n\nNot all quests are supported, check the discord or git repository for an up-to-date list.\n\nRequired Plugins: vnavmesh, TextAdvance, Lifestream",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,10 +1232,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "A tiny quest helper plugin.",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.33/Questionable.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.33/Questionable.zip",
-    "Changelog": "- ECommons repin 至 09f2420:UniversalParty.IsAlliance 假守衛修正與 AddonMaster 42 處判空",
-    "LastUpdate": 1787142920
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.34/Questionable.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.34/Questionable.zip",
+    "Changelog": "- 採集面板讀取補判空:節點鏈任一跳取不到時退回預設值而非崩潰",
+    "LastUpdate": 1787147327
   },
   {
     "Author": "NightmareXIV",
@@ -1301,7 +1301,7 @@
     "Author": "Usagi, PlusoneChiang",
     "Name": "IINACT",
     "InternalName": "IINACT",
-    "AssemblyVersion": "7.20.0.14",
+    "AssemblyVersion": "7.20.0.15",
     "Description": "在類 ACT 環境中直接執行 FFXIV_ACT_Plugin 的戰鬥數據解析外掛,內建深度改造的 Overlay Plugin 移植版,無需另外安裝 ACT。\n可搭配 Crossingway 在遊戲內顯示戰鬥數據覆蓋層。\nFork 自 marzent/IINACT(繁體中文版客戶端,API 13 / .NET 9,TC opcodes 由 PlusoneChiang 維護)。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/IINACT",
@@ -1321,10 +1321,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/IINACT.png",
     "Punchline": "免 ACT 的戰鬥數據解析外掛。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.14/IINACT.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.14/IINACT.zip",
-    "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)",
-    "LastUpdate": 1786827529
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.15/IINACT.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.15/IINACT.zip",
+    "Changelog": "- 隊伍列查詢補判空:PartyTypeTextNode 取不到時回空字串而非崩潰\n- CI 加入 resx 空值閘門:建置前擋下崩潰級的「鍵存在但值為空」",
+    "LastUpdate": 1787147252
   },
   {
     "Author": "Ice",
@@ -1464,7 +1464,7 @@
     "Author": "Faye",
     "Name": "Better Occult Crescent & Chest Helper Interface",
     "InternalName": "BOCCHI",
-    "AssemblyVersion": "7.20.0.20",
+    "AssemblyVersion": "7.20.0.21",
     "Description": "⚠️ 台服 7.20 目前還沒有「蜃景新月島」這個內容，本外掛現在裝了不會有任何反應。已先行移植好放著，等台服更新到該版本即可直接使用。\n\n讓你在「蜃景新月島」玩得更順手。\n- 不用再自己走路、自己找寶箱。\n- 小巧的 FATE 與關鍵遭遇面板，會顯示該場獎勵，還能自動幫你導航過去。\n- 附贈一個非常違規的「非法模式」，給那些寧可出去曬太陽的人。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BOCCHI",
@@ -1491,10 +1491,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/BOCCHI.png",
     "Punchline": "讓你在「蜃景新月島」玩得更順手。（台服尚未開放該內容）",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.20/BOCCHI.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.20/BOCCHI.zip",
-    "Changelog": "- Ocelot 重新釘至 62bc5d0:吃進 ECommons 09f2420 的 IsAlliance 假守衛修正與 AddonMaster 42 處判空",
-    "LastUpdate": 1787142869
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.21/BOCCHI.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.21/BOCCHI.zip",
+    "Changelog": "- 隱藏樂園寶箱計數補判空:_WideText 文字節點取不到時跳過本次解析",
+    "LastUpdate": 1787147278
   },
   {
     "Author": "ffxiv-tc-port",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.20.0.33",
+    "AssemblyVersion": "7.20.0.34",
     "Description": "[Questionable dev plugin]: Renders gathering location using Pictomancy.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,9 +1570,9 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable dev plugin]: Renders gathering location.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.33/GatheringPathRenderer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.33/GatheringPathRenderer.zip",
-    "LastUpdate": 1787142920,
-    "Changelog": "- ECommons repin 至 09f2420:UniversalParty.IsAlliance 假守衛修正與 AddonMaster 42 處判空"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.34/GatheringPathRenderer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.34/GatheringPathRenderer.zip",
+    "LastUpdate": 1787147327,
+    "Changelog": "- 採集面板讀取補判空:節點鏈任一跳取不到時退回預設值而非崩潰"
   }
 ]
