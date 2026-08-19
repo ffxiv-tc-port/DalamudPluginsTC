@@ -96,7 +96,7 @@
     "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
-    "AssemblyVersion": "7.20.0.22",
+    "AssemblyVersion": "7.20.0.23",
     "Description": "自動幫你提鉤釣魚,你能相信嗎?\n支援自訂預設集、自動以小釣大、自動刺魚等功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoHook",
@@ -116,16 +116,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoHook.png",
     "Punchline": "讓釣魚不再無聊(或更無聊)。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.22/AutoHook.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.22/AutoHook.zip",
-    "Changelog": "- 重新釘 ECommons 到 b686f5b:補上 log 寫入端閘門與原生取得器判空\n- 海釣潮流判定補上事件框架判空:框架還沒建好時不再解參考空指標\n- AutoHook：LocalPlayer 改走 IObjectTable、DataId 改為 BaseId，清掉 15 處 API13 過時警告",
-    "LastUpdate": 1787088960
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.23/AutoHook.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.23/AutoHook.zip",
+    "Changelog": "- 自動施放時段判定補上 Framework 判空，避免裸解參考崩潰",
+    "LastUpdate": 1787125133
   },
   {
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.67",
+    "AssemblyVersion": "7.20.0.68",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.67/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.67/AutoRetainer.zip",
-    "Changelog": "- 重新釘 ECommons 到 b686f5b:補上 log 寫入端閘門與原生取得器判空\n- 找房屋入口的兩處 AgentHUD.Instance() 補判空,取不到就當「找不到」而不是崩遊戲\n- AutoRetainer:住宅與工房的原生指標補齊判空,並把 15 組跨檔重複的 Loc.T 字串收斂成 SharedText 常數\n- 部隊點數讀取補上兩層判空,並讓除錯頁在讀不到時顯示 ? 而不是 0\n- AutoRetainer：遷移到 IPlayerState 並把 DataId 改為 BaseId，清掉 78 處 API13 過時警告",
-    "LastUpdate": 1787088967,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.68/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.68/AutoRetainer.zip",
+    "Changelog": "- 雇員代理人與冒險者小隊清單四處補上判空，避免裸解參考崩潰",
+    "LastUpdate": 1787125113,
     "CategoryTags": [
       "Inventory"
     ]
@@ -149,7 +149,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "Avarice",
     "InternalName": "Avarice",
-    "AssemblyVersion": "7.20.0.15",
+    "AssemblyVersion": "7.20.0.16",
     "Description": "Positional feedback with pixel perfect rear/flank tracking, range indicators, and more.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Avarice",
@@ -167,16 +167,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Avarice.png",
     "Punchline": "Positional feedback with pixel perfect rear/flank tracking, range indicators, and more.",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.15/Avarice.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.15/Avarice.zip",
-    "Changelog": "- 重新釘 ECommons 到 b686f5b:補上 log 寫入端閘門與原生取得器判空\n- Avarice：LocalPlayer 改走 IObjectTable、DataId 改為 BaseId，清掉 43 處 API13 過時警告",
-    "LastUpdate": 1787088961
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.16/Avarice.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.16/Avarice.zip",
+    "Changelog": "- 方位提示的幀計數補上 Framework 判空，避免裸解參考崩潰",
+    "LastUpdate": 1787125106
   },
   {
     "Author": "NeNeppie",
     "Name": "Avant-Garde",
     "InternalName": "AvantGarde",
-    "AssemblyVersion": "7.20.0.4",
+    "AssemblyVersion": "7.20.0.5",
     "Description": "本插件為社群共同維護的專案，目標是為所有提示分類提供完整的裝備清單。\n如需了解如何參與貢獻，請參閱 GitHub 頁面。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AvantGarde",
@@ -196,10 +196,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AvantGarde.png",
     "Punchline": "在潮流王小遊戲的提示旁顯示符合條件的裝備清單。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AvantGarde-v7.20.0.4/AvantGarde.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AvantGarde-v7.20.0.4/AvantGarde.zip",
-    "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)\n- CI：修正 build-check 從未真正建置的問題",
-    "LastUpdate": 1786827445
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AvantGarde-v7.20.0.5/AvantGarde.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AvantGarde-v7.20.0.5/AvantGarde.zip",
+    "Changelog": "- 道具彈出視窗補上 ItemFinderModule 判空，避免裸解參考崩潰",
+    "LastUpdate": 1787125170
   },
   {
     "Author": "The Combat Reborn Team",
@@ -234,7 +234,7 @@
     "Author": "Kouzukii",
     "Name": "Character Panel Refined",
     "InternalName": "CharacterPanelRefined",
-    "AssemblyVersion": "7.20.0.9",
+    "AssemblyVersion": "7.20.0.10",
     "Description": "Character Panel Refined 精簡了角色狀態面板中的無用資訊，並加入了會心與直擊機率等實用數值，以及預估輸出傷害，方便比較裝備優劣。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/CharacterPanelRefined",
@@ -254,10 +254,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/CharacterPanelRefined.png",
     "Punchline": "Refine the character panel to display only useful information like crit and direct hit chance",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.9/CharacterPanelRefined.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.9/CharacterPanelRefined.zip",
-    "Changelog": "- CharacterPanelRefined：LocalPlayer 改走 Service.ObjectTable，清掉 1 處 API13 過時警告",
-    "LastUpdate": 1787088955
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.10/CharacterPanelRefined.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.10/CharacterPanelRefined.zip",
+    "Changelog": "- 角色屬性面板三處補上 AtkStage 判空，避免裸解參考崩潰",
+    "LastUpdate": 1787125119
   },
   {
     "Author": "Infi, Anna",
@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.20.0.25",
+    "AssemblyVersion": "7.20.0.26",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.25/GatherbuddyReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.25/GatherbuddyReborn.zip",
-    "Changelog": "- 重新釘 ECommons 到 b686f5b:補上 log 寫入端閘門與原生取得器判空\n- GatherBuddyReborn：離開雲冠群島補上 AgentModule 判空，取不到就不開選單直接返回\n- 市場搜尋右鍵選單補上代理人判空:AgentContext 取不到時不再解參考空指標\n- GatherBuddyReborn：LocalPlayer 改走 IObjectTable、DataId 改為 BaseId，清掉 41 處 API13 過時警告",
-    "LastUpdate": 1787088970
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.26/GatherbuddyReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.26/GatherbuddyReborn.zip",
+    "Changelog": "- 巨集管理器補上 Framework/UIModule 判空，避免裸解參考崩潰\n- 補上 GatherBuddy.sln 缺漏的 Debug|Any CPU 組態對應,修好 dotnet build 少建 GatherBuddy.DataImport",
+    "LastUpdate": 1787125111
   },
   {
     "Author": "img02",
@@ -476,7 +476,7 @@
     "Author": "electr0sheep, Nuko",
     "Name": "Item Vendor Location",
     "InternalName": "ItemVendorLocation",
-    "AssemblyVersion": "7.20.0.11",
+    "AssemblyVersion": "7.20.0.12",
     "Description": "為道具新增右鍵選單選項，可查看該道具可在哪些商人處購買",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ItemVendorLocation",
@@ -496,10 +496,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ItemVendorLocation.png",
     "Punchline": "顯示可購買該道具的商人所在位置",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.20.0.11/ItemVendorLocation.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.20.0.11/ItemVendorLocation.zip",
-    "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)",
-    "LastUpdate": 1786827578
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.20.0.12/ItemVendorLocation.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.20.0.12/ItemVendorLocation.zip",
+    "Changelog": "- 部隊軍階商人過濾補上 Framework 三層判空，避免裸解參考崩潰",
+    "LastUpdate": 1787125102
   },
   {
     "Author": "Latihas",
@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.43",
+    "AssemblyVersion": "7.20.0.44",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,16 +584,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速以太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.43/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.43/Lifestream.zip",
-    "Changelog": "- 重新釘 ECommons 到 b686f5b:補上 log 寫入端閘門與原生取得器判空\n- OverrideAFK 補判空:UIModule 還沒建立時安靜跳過,不再裸解參考 null 指標\n- 14 組跨檔重複的 .Loc() 字串收斂成 LocText 常數:改其中一份不會再讓翻譯靜默失效\n- 除錯視窗的地皮編號補上 HousingManager 判空:不在住宅區開除錯頁不會再解參考空指標\n- Lifestream：LocalPlayer 改走 IObjectTable、DataId 改為 BaseId，清掉 25 處 API13 過時警告",
-    "LastUpdate": 1787089071
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.44/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.44/Lifestream.zip",
+    "Changelog": "- 偵錯與設定視窗補上 RaptureAtkUnitManager / AgentHUD 判空，避免裸解參考崩潰",
+    "LastUpdate": 1787125100
   },
   {
     "Author": "apetih",
     "Name": "Logogram Helper",
     "InternalName": "LogogramHelper",
-    "AssemblyVersion": "7.20.0.6",
+    "AssemblyVersion": "7.20.0.7",
     "Description": "進入聖言操縱者後，顯示優雷卡聖言技能所有可能組合的數量。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/LogogramHelper",
@@ -612,10 +612,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/LogogramHelper.png",
     "Punchline": "優雷卡聖言技能輔助工具。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LogogramHelper-v7.20.0.6/LogogramHelper.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LogogramHelper-v7.20.0.6/LogogramHelper.zip",
-    "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)",
-    "LastUpdate": 1786827368
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LogogramHelper-v7.20.0.7/LogogramHelper.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LogogramHelper-v7.20.0.7/LogogramHelper.zip",
+    "Changelog": "- 道具提示補上 Framework 三層判空，避免裸解參考崩潰",
+    "LastUpdate": 1787125130
   },
   {
     "Author": "JayceOfSpades",
@@ -795,7 +795,7 @@
     "Author": "UnknownX",
     "Name": "QoL Bar",
     "InternalName": "QoLBar",
-    "AssemblyVersion": "7.20.0.9",
+    "AssemblyVersion": "7.20.0.10",
     "Description": "此插件旨在為聊天指令或其他插件提供簡單、可自訂且隨時可用的介面，\n減少為達成類似效果而需要使用巨集或佔用快捷列空間的需求。\n\n此插件初次啟動時應會顯示在遊戲視窗底部中央的一個小方框。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/QoLBar",
@@ -815,10 +815,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/QoLBar.png",
     "Punchline": "可自訂的 ImGui 快捷列",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/QoLBar-v7.20.0.9/QoLBar.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/QoLBar-v7.20.0.9/QoLBar.zip",
-    "Changelog": "- GetFocusedAddon 補上 AtkStage 與 RaptureAtkUnitManager 判空",
-    "LastUpdate": 1787096347
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/QoLBar-v7.20.0.10/QoLBar.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/QoLBar-v7.20.0.10/QoLBar.zip",
+    "Changelog": "- 艾歐澤亞時間條件與初始化補上 Framework 判空，避免裸解參考崩潰",
+    "LastUpdate": 1787125054
   },
   {
     "Author": "Taurenkey, Kagekazu",
@@ -1029,7 +1029,7 @@
     "Author": "veyn",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
-    "AssemblyVersion": "7.20.0.24",
+    "AssemblyVersion": "7.20.0.25",
     "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vnavmesh",
@@ -1049,10 +1049,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/vnavmesh.png",
     "Punchline": "自動移動吧！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.24/vnavmesh.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.24/vnavmesh.zip",
-    "Changelog": "- 修正 LayoutWorld/Device 單例裸鏈解參考,取不到布局時改為當作場景未載入",
-    "LastUpdate": 1787096343
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.25/vnavmesh.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.25/vnavmesh.zip",
+    "Changelog": "- 渲染內容建構子補上 Device 判空，改擲明確例外取代 AVE",
+    "LastUpdate": 1787125059
   },
   {
     "Author": "Team Wrath",
@@ -1181,7 +1181,7 @@
     "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.20.0.36",
+    "AssemblyVersion": "7.20.0.37",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/DailyDuty",
@@ -1204,10 +1204,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.36/DailyDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.36/DailyDuty.zip",
-    "Changelog": "- KamiLib 更新到 a8790fb：島嶼狀態判定補判空,MJIManager.Instance() 會靜默回 null\n- KamiToolKit 更新到 9dba2fb：元件節點存取子補判空,IsEnabled 另判 OwnerNode\n- KamiToolKit 更新到 ab8717e：AtkStage 殘餘四處補判空\n- 子模組 KamiToolKit repin 至 93b21c4：AtkUIColorHolder 兩處與 NativeAddon.Open 補判空",
-    "LastUpdate": 1787096360
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.37/DailyDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.37/DailyDuty.zip",
+    "Changelog": "- 多瑪飛地模組補上 DomanEnclaveManager 判空，避免登入前裸解參考崩潰\n- 更新 KamiToolKit 子模組 pin:元件釋放前補判空,不再把 null 丟進原生配置器\n- KamiToolKit 更新到 9695b53：檢視區事件管理器改回傳指標,元件節點殘餘三處補判空",
+    "LastUpdate": 1787125088
   },
   {
     "Author": "liza, qstxiv, & various contributors",
@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.20.0.81",
+    "AssemblyVersion": "7.20.0.82",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.81/ICE.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.81/ICE.zip",
-    "Changelog": "- 重新釘 Pictomancy 到 92cb4f8:繪製裝置判空 fail-closed",
-    "LastUpdate": 1787096369
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.82/ICE.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.82/ICE.zip",
+    "Changelog": "- 艾歐澤亞時間與釣魚射線偵錯補上 Framework 判空，避免裸解參考崩潰",
+    "LastUpdate": 1787125123
   },
   {
     "Author": "Liza Carvelli",
@@ -1439,7 +1439,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.20.0.29",
+    "AssemblyVersion": "7.20.0.30",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 金幣並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1455,10 +1455,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點金幣！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.29/Marketbuddy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.29/Marketbuddy.zip",
-    "Changelog": "- 初始化失敗時釋放已建立的 hook,不再讓 detour 活過外掛卸載",
-    "LastUpdate": 1787066527
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.30/Marketbuddy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.30/Marketbuddy.zip",
+    "Changelog": "- 點擊對話框補上 AtkStage 判空，避免裸解參考崩潰",
+    "LastUpdate": 1787125107
   },
   {
     "Author": "Faye",
@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.20.0.47",
+    "AssemblyVersion": "7.20.0.48",
     "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：部隊合建素材一鍵全交、野外陸行鳥自動餵食基薩爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.47/TCToolbox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.47/TCToolbox.zip",
-    "Changelog": "- AutoMaterialize：修正「送出後立刻等待」的無效等待——先延遲讓 Occupied39 立起再檢查\n- 合併 c11-c3:登入指令/副本播報/手把連發/信箱一鍵收取\n- 合併 c11-c2:一鍵全修/成就追蹤/座標開地圖/FATE等級同步 四模組\n- 合併 c11-c1:收藏品全交/鞍囊寄放/投影台阻擋/招募直接加入 四模組\n- TCToolbox：新增「信箱一鍵收取」模組，只收附件與 Gil、永遠不刪信\n- 鞍囊寄放：右鍵選單沒開成、或那一格已經不是原道具時，跳過該格而不繼續點下去\n- TCToolbox：一鍵全修的「等上一次修完」修正——先延遲再檢查，否則那道等待完全沒作用\n- TCToolbox：新增「招募詳細視窗自動加入」模組，用具名欄位判斷而非節點索引（預設關閉）\n- TCToolbox：新增「F.A.T.E. 自動等級同步」模組，送 on 不送空參數並先確認未同步\n- TCToolbox：新增「投影台：攔截重複收納」模組，在幻影化確認框上擋掉已擁有的外觀（預設關閉）\n- TCToolbox：新增「陸行鳥鞍囊：寄放重複道具」模組，走遊戲自己的右鍵選單項目（預設關閉）\n- TCToolbox：新增「收藏品一鍵全交」模組，按遊戲自己的交易鈕連續交完（預設關閉）\n- TCToolbox：新增「聊天座標自動開地圖」模組，只開地圖不做自動傳送\n- TCToolbox：自動重複點擊補上手把十字熱鍵，並修正快捷欄參數被截成 byte 的問題\n- TCToolbox：四個模組的 AtkValues 讀取補上判空，拆解中的視窗不再有 AVE 風險\n- TCToolbox：新增「成就進度追蹤」模組，手動查詢、一次一筆、不掛 hook\n- TCToolbox：新增「一鍵全修（跨容器）」模組，修理視窗旁一顆按鈕修完全部容器\n- TCToolbox：新增「副本開始／結束播報」模組，只送訊息不自動退本\n- TCToolbox：新增「登入後執行指令」模組，登入完成後依序跑使用者自訂的斜線指令",
-    "LastUpdate": 1787096329
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.48/TCToolbox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.48/TCToolbox.zip",
+    "Changelog": "- AtkStage 六處補上判空，並把依 id 取 addon 收斂成單一守衛 helper",
+    "LastUpdate": 1787125114
   },
   {
     "Author": "daemitus, MidoriKami",
