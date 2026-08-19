@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.52",
+    "AssemblyVersion": "7.20.0.53",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速以太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.52/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.52/Lifestream.zip",
-    "Changelog": "- ECommons repin 至 a845069:AtkValues 三重守衛全目錄推廣+hook 回呼判空",
-    "LastUpdate": 1787150889
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.53/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.53/Lifestream.zip",
+    "Changelog": "- ECommons repin 至 da209f0:在地化接線批(清單新增/區域選擇器/載入器按鈕)+UniversalParty.Members 判空\n- 在地化:Debug 分頁 3 個按鈕接上既有繁中鍵值(Add/Copy/Go)",
+    "LastUpdate": 1787156728
   },
   {
     "Author": "apetih",
@@ -679,7 +679,7 @@
     "Author": "NightmareXIV",
     "Name": "NotificationMaster",
     "InternalName": "NotificationMaster",
-    "AssemblyVersion": "7.20.0.13",
+    "AssemblyVersion": "7.20.0.14",
     "Description": "在遊戲視窗縮到最小時，通知你各種遊戲內事件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/NotificationMaster",
@@ -698,10 +698,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/NotificationMaster.png",
     "Punchline": "目前支援的通知：聊天訊息、接近地圖標記、已找到任務、過場動畫結束、GP 恢復、登入時發生錯誤、怪物已被拉起、任務開始、準備確認、隊友看完過場動畫。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.13/NotificationMaster.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.13/NotificationMaster.zip",
-    "Changelog": "- ECommons repin 至 a845069:AddonMaster AtkValue 三重守衛推廣 112 處,FireCallback log 補判空",
-    "LastUpdate": 1787150928
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.14/NotificationMaster.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.14/NotificationMaster.zip",
+    "Changelog": "- ECommons repin 至 da209f0:在地化接線批(清單新增/區域選擇器/載入器按鈕)+UniversalParty.Members 判空\n- 在地化收尾：補上 1 條 ini 譯文（供目前已停用的實驗性警告文字使用）",
+    "LastUpdate": 1787156706
   },
   {
     "Author": "Liza Carvelli (Puni.sh)",
@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.20.0.28",
+    "AssemblyVersion": "7.20.0.29",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.28/Saucy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.28/Saucy.zip",
-    "Changelog": "- ECommons repin 至 a845069:AddonMaster AtkValue 三重守衛推廣 112 處,FireCallback log 補判空",
-    "LastUpdate": 1787150865,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.29/Saucy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.29/Saucy.zip",
+    "Changelog": "- ECommons repin 至 da209f0:在地化接線批(清單新增/區域選擇器/載入器按鈕)+UniversalParty.Members 判空\n- 在地化收尾：修復 5 處中文字面值接線 bug\n- 幻卡回合判定補上 AtkValues 判空:只驗長度是半套守衛",
+    "LastUpdate": 1787156761,
     "CategoryTags": [
       "Minigames"
     ]
@@ -853,7 +853,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.20.0.35",
+    "AssemblyVersion": "7.20.0.36",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -872,10 +872,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.35/SomethingNeedDoing.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.35/SomethingNeedDoing.zip",
-    "Changelog": "- ECommons repin 至 a845069:AddonMaster AtkValue 三重守衛推廣 112 處,FireCallback log 補判空",
-    "LastUpdate": 1787150824,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.36/SomethingNeedDoing.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.36/SomethingNeedDoing.zip",
+    "Changelog": "- ECommons repin 至 da209f0:在地化接線批(清單新增/區域選擇器/載入器按鈕)+UniversalParty.Members 判空",
+    "LastUpdate": 1787156669,
     "CategoryTags": [
       "Utility"
     ]
@@ -913,7 +913,7 @@
     "Author": "NightmareXIV",
     "Name": "Splatoon",
     "InternalName": "Splatoon",
-    "AssemblyVersion": "7.20.0.34",
+    "AssemblyVersion": "7.20.0.35",
     "Description": "Splatoon 是一款強大的輔助工具。它以自訂路標系統徹底革新遊戲體驗，可建立無數量限制的成組路標、文字標籤與角色指示器，並具備精確到像素的定位能力。此功能讓玩家能更清楚辨識關鍵物件與事件，進而做出更快速的反應。請注意，此插件本身不附帶任何預設檔，玩家可自行製作或匯入現成的預設檔，打造專屬於自己的遊戲體驗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Splatoon",
@@ -932,10 +932,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Splatoon.png",
     "Punchline": "以無限、精準的路標重新定義 FFXIV 導航方式。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.34/Splatoon.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.34/Splatoon.zip",
-    "Changelog": "- ECommons repin 至 a845069:AddonMaster AtkValue 三重守衛推廣 112 處,FireCallback log 補判空",
-    "LastUpdate": 1787150910
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.35/Splatoon.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.35/Splatoon.zip",
+    "Changelog": "- ECommons repin 至 da209f0:在地化接線批(清單新增/區域選擇器/載入器按鈕)+UniversalParty.Members 判空;Pictomancy repin 至 76c211e1:AddonClipper 逐跳判空\n- FRU 三支腳本的設定介面改走 .Loc() 在地化系統(原本是寫死的繁體中文)\n- SplatoonScripts 補 27 處字串接線:ini 已有繁中譯文,呼叫點沒接 .Loc()\n- 本體 Gui/ 補 3 處字串接線,並修 EnemyAggro.cs 的 1 條真缺鍵\n- GenericTest4 的 AtkValues 裸讀改走 AtkReader.ReadString,bump Metadata 重生 update.csv",
+    "LastUpdate": 1787156743
   },
   {
     "Author": "Infi",
@@ -999,7 +999,7 @@
     "Author": "veyn, croizat",
     "Name": "Visland",
     "InternalName": "visland",
-    "AssemblyVersion": "7.20.0.30",
+    "AssemblyVersion": "7.20.0.31",
     "Description": "自動化採集、開拓工坊排班等無人島相關作業。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/visland",
@@ -1020,10 +1020,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/visland.png",
     "Punchline": "自動化無人島各項活動",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.30/visland.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.30/visland.zip",
-    "Changelog": "- ECommons repin 至 a845069:AddonMaster AtkValue 三重守衛推廣 112 處,FireCallback log 補判空",
-    "LastUpdate": 1787150947
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.31/visland.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.31/visland.zip",
+    "Changelog": "- ECommons repin 至 da209f0:在地化接線批(清單新增/區域選擇器/載入器按鈕)+UniversalParty.Members 判空\n- 在地化:6 個視窗的「Debug」分頁標籤譯為繁中",
+    "LastUpdate": 1787156700
   },
   {
     "Author": "veyn",
@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.20.0.35",
+    "AssemblyVersion": "7.20.0.36",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- ECommons repin 至 a845069:AddonMaster AtkValue 三重守衛推廣 112 處,FireCallback log 補判空",
+    "Changelog": "- ECommons repin 至 da209f0:在地化接線批(清單新增/區域選擇器/載入器按鈕)+UniversalParty.Members 判空\n- 在地化:補上 AutoRotationTab 忽略清單「Unknown NPC」的缺漏繁中鍵值",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.35/WrathCombo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.35/WrathCombo.zip",
-    "LastUpdate": 1787150890,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.36/WrathCombo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.36/WrathCombo.zip",
+    "LastUpdate": 1787156719,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1123,7 +1123,7 @@
     "Author": "daemitus, croizat",
     "Name": "YesAlready",
     "InternalName": "YesAlready",
-    "AssemblyVersion": "7.20.0.22",
+    "AssemblyVersion": "7.20.0.23",
     "Description": "厭倦了在天守閣/伊迪爾夏爾禁地一直點確認嗎？受不了在副本裡一直按鍵嗎？YesAlready 可以自動點擊你設定的所有惱人對話框。只要輸入對話文字，就再也不用手動點了！支援 /regex/ 比對，也內建了幾個針對「看起來不是 yes/no，但行為類似」的對話框（例如分解）的模組。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/YesAlready",
@@ -1143,10 +1143,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/YesAlready.png",
     "Punchline": "自動點擊你指定的各種確認對話框。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.22/YesAlready.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.22/YesAlready.zip",
-    "Changelog": "- ECommons repin 至 a845069:AddonMaster AtkValue 三重守衛推廣 112 處,FireCallback log 補判空",
-    "LastUpdate": 1787150860
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.23/YesAlready.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.23/YesAlready.zip",
+    "Changelog": "- ECommons repin 至 da209f0:在地化接線批(清單新增/區域選擇器/載入器按鈕)+UniversalParty.Members 判空\n- 在地化收尾：補上 DTR 提示文字的 2 條真缺鍵",
+    "LastUpdate": 1787156695
   },
   {
     "Author": "KangasZ",
@@ -1213,7 +1213,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.20.0.35",
+    "AssemblyVersion": "7.20.0.36",
     "Description": "A tiny little quest helper plugin, which does quests for you automatically where possible. Uses navmesh to automatically walk to all quest waypoints, and tries to automatically complete all steps along the way (excluding dungeons, single player duties and combat).\n\nNot all quests are supported, check the discord or git repository for an up-to-date list.\n\nRequired Plugins: vnavmesh, TextAdvance, Lifestream",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,16 +1232,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "A tiny quest helper plugin.",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.35/Questionable.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.35/Questionable.zip",
-    "Changelog": "- ECommons repin 至 a845069:AddonMaster AtkValue 三重守衛推廣 112 處,FireCallback log 補判空",
-    "LastUpdate": 1787150951
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.36/Questionable.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.36/Questionable.zip",
+    "Changelog": "- ECommons repin 至 da209f0:在地化接線批(清單新增/區域選擇器/載入器按鈕)+UniversalParty.Members 判空;Pictomancy repin 至 76c211e1:AddonClipper 逐跳判空\n- 在地化:接上採集路徑編輯器標題列齒輪工具提示的 .Loc()\n- AtkValues 裸索引全面補守衛:商店/大國供給/選單提示/採集面板讀不到時不再解參考空指標\n- 優先任務視窗:仍在進行中的每日聯盟任務不再被「移除已完成」掃掉",
+    "LastUpdate": 1787156796
   },
   {
     "Author": "NightmareXIV",
     "Name": "TextAdvance",
     "InternalName": "TextAdvance",
-    "AssemblyVersion": "7.20.0.27",
+    "AssemblyVersion": "7.20.0.28",
     "Description": "Quest speedrunning assistance tool. Automatically confirms quest acceptance and completion, skips subtitles, cutscenes, and most prompts. Includes optional Splatoon-based quest target indicators and vnavmesh-based auto-navigation to quest objectives.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TextAdvance",
@@ -1260,10 +1260,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TextAdvance.png",
     "Punchline": "Quest speedrunning assistance tool. Automatically skips subtitle boxes and confirms cutscene skipping",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.27/TextAdvance.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.27/TextAdvance.zip",
-    "Changelog": "- ECommons repin 至 a845069:AddonMaster AtkValue 三重守衛推廣 112 處,FireCallback log 補判空",
-    "LastUpdate": 1787150941
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.28/TextAdvance.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.28/TextAdvance.zip",
+    "Changelog": "- ECommons repin 至 da209f0:在地化接線批(清單新增/區域選擇器/載入器按鈕)+UniversalParty.Members 判空\n- 在地化收尾：設定視窗 5 個分頁標籤補上 .Loc()，補上 1 條真缺鍵",
+    "LastUpdate": 1787156717
   },
   {
     "Author": "Styr1x, PlusoneChiang",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.20.0.35",
+    "AssemblyVersion": "7.20.0.36",
     "Description": "[Questionable dev plugin]: Renders gathering location using Pictomancy.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,9 +1570,9 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable dev plugin]: Renders gathering location.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.35/GatheringPathRenderer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.35/GatheringPathRenderer.zip",
-    "LastUpdate": 1787150951,
-    "Changelog": "- ECommons repin 至 a845069:AddonMaster AtkValue 三重守衛推廣 112 處,FireCallback log 補判空"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.36/GatheringPathRenderer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.36/GatheringPathRenderer.zip",
+    "LastUpdate": 1787156796,
+    "Changelog": "- ECommons repin 至 da209f0:在地化接線批(清單新增/區域選擇器/載入器按鈕)+UniversalParty.Members 判空;Pictomancy repin 至 76c211e1:AddonClipper 逐跳判空\n- 在地化:接上採集路徑編輯器標題列齒輪工具提示的 .Loc()\n- AtkValues 裸索引全面補守衛:商店/大國供給/選單提示/採集面板讀不到時不再解參考空指標\n- 優先任務視窗:仍在進行中的每日聯盟任務不再被「移除已完成」掃掉"
   }
 ]
