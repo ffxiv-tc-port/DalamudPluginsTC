@@ -119,8 +119,10 @@ def get_installation_token(org: str = ORG) -> str | None:
         inst_id = installation["id"]
         created = _api(f"/app/installations/{inst_id}/access_tokens", jwt_token, method="POST")
         token = created["token"]
-        # expires_at 例：2026-08-01T01:23:45Z
-        expires = time.mktime(time.strptime(created["expires_at"], "%Y-%m-%dT%H:%M:%SZ"))
+        # expires_at 例：2026-08-01T01:23:45Z（UTC）
+        # 🔴 不能用 time.mktime：它把字串當本地時間解，UTC+8 下早 8 小時⇒快取永遠判過期從未命中（2026-08-20 實測）。
+        import calendar
+        expires = calendar.timegm(time.strptime(created["expires_at"], "%Y-%m-%dT%H:%M:%SZ"))
         _cache[org] = (token, expires)
         return token
     except urllib.error.HTTPError as ex:
