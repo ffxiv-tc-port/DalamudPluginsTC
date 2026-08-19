@@ -3,7 +3,7 @@
     "Author": "Ottermandias",
     "Name": "Accountant",
     "InternalName": "Accountant",
-    "AssemblyVersion": "7.20.0.12",
+    "AssemblyVersion": "7.20.0.13",
     "Description": "記錄多名角色的僱員、飛艇、潛水艇、以太之輪與作物計時器，\n以及其他各種雜項任務進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Accountant",
@@ -28,10 +28,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Accountant.png",
     "Punchline": "角色任務計時器。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.12/Accountant.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.12/Accountant.zip",
-    "Changelog": "- Accountant：SelectString 選項文字改在消費端自判 AtkValues，不再靠 CS 的 AtkValuesSpan 擋 null\n- Accountant：遷移到 IPlayerState 並把 LocalPlayer 改走 IObjectTable，清掉 37 處 API13 過時警告",
-    "LastUpdate": 1787088938,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.13/Accountant.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.13/Accountant.zip",
+    "Changelog": "- 自由部隊資料取得補判空:UIModule 或部隊模組取不到時記錄錯誤而非解參考位址 0",
+    "LastUpdate": 1787139129,
     "CategoryTags": [
       "Inventory"
     ]
@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.20.0.74",
+    "AssemblyVersion": "7.20.0.75",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.74/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.74/Artisan.zip",
-    "Changelog": "- ECommons repin 至 ae465963a：吃進三波判空加固（五處原生取得器＋FrameDelayTask＋ExtendedPronoun）",
-    "LastUpdate": 1787130406
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.75/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.75/Artisan.zip",
+    "Changelog": "- UIModule 與 RaptureAtkModule 取得處補判空:登入前開啟製作清單選單或輪詢配方筆記不再崩潰",
+    "LastUpdate": 1787139168
   },
   {
     "Author": "Herculezz",
@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.20.0.28",
+    "AssemblyVersion": "7.20.0.29",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.28/GatherbuddyReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.28/GatherbuddyReborn.zip",
-    "Changelog": "- ECommons repin 至 ae465963a：吃進三波判空加固（五處原生取得器＋FrameDelayTask＋ExtendedPronoun）",
-    "LastUpdate": 1787130377
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.29/GatherbuddyReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.29/GatherbuddyReborn.zip",
+    "Changelog": "- UIModule 取得處補判空:登入前開啟右鍵選單不再解參考位址 0",
+    "LastUpdate": 1787139227
   },
   {
     "Author": "img02",
@@ -447,7 +447,7 @@
     "Author": "Critical_Impact",
     "Name": "Allagan Tools",
     "InternalName": "InventoryTools",
-    "AssemblyVersion": "7.20.0.24",
+    "AssemblyVersion": "7.20.0.25",
     "Description": "Allagan Tools 的主要目的是追蹤你所有角色/僱員/公會倉庫中的道具。透過它的篩選系統，你將不再遺失任何道具的蹤跡，也不再不知道道具該收納在哪裡。\n\n雖然這是它的主要功能，但它還擁有相當豐富的其他功能，包括：\n\t- 製作規劃\n\t- 市場公告板整合\n\t- 在搜尋/整理及挑選製作材料時於背包中高亮顯示道具\n\t- 包含商人與取得來源等資訊的道具視窗\n\t- 可完整搜尋的任務/怪物/飛空艇/潛水艇視窗\n\t- 讓你能為特定道具設定複雜搜尋條件的篩選系統\n\t- 提示視窗整合，滑鼠懸停即可查看道具所在位置",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/InventoryTools",
@@ -467,16 +467,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/InventoryTools.png",
     "Punchline": "讓你的 FFXIV 井井有條，輕鬆定位/顯示道具應收納何處、規劃製作，並搜尋怪物、任務、飛空艇與潛水艇！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.24/InventoryTools.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.24/InventoryTools.zip",
-    "Changelog": "- 子模組 CriticalCommonLib 跟到 57eca9b:補上代理人與雇員容器兩族裸鏈的判空",
-    "LastUpdate": 1787125986
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.25/InventoryTools.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.25/InventoryTools.zip",
+    "Changelog": "- UIModule 取得處補判空:登入前開啟右鍵選單不再解參考位址 0",
+    "LastUpdate": 1787139162
   },
   {
     "Author": "electr0sheep, Nuko",
     "Name": "Item Vendor Location",
     "InternalName": "ItemVendorLocation",
-    "AssemblyVersion": "7.20.0.12",
+    "AssemblyVersion": "7.20.0.13",
     "Description": "為道具新增右鍵選單選項，可查看該道具可在哪些商人處購買",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ItemVendorLocation",
@@ -496,10 +496,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ItemVendorLocation.png",
     "Punchline": "顯示可購買該道具的商人所在位置",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.20.0.12/ItemVendorLocation.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.20.0.12/ItemVendorLocation.zip",
-    "Changelog": "- 部隊軍階商人過濾補上 Framework 三層判空，避免裸解參考崩潰",
-    "LastUpdate": 1787125102
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.20.0.13/ItemVendorLocation.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ItemVendorLocation-v7.20.0.13/ItemVendorLocation.zip",
+    "Changelog": "- 幻化道具詳情每影格路徑補判空:UIModule 與文字節點取不到時跳過該影格而非崩潰",
+    "LastUpdate": 1787139112
   },
   {
     "Author": "Latihas",
@@ -1181,7 +1181,7 @@
     "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.20.0.40",
+    "AssemblyVersion": "7.20.0.41",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/DailyDuty",
@@ -1204,10 +1204,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.40/DailyDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.40/DailyDuty.zip",
-    "Changelog": "- 更新 KamiToolKit 子模組 pin:元件指標 setter 補判空,收掉最後一處裸解參考",
-    "LastUpdate": 1787131742
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.41/DailyDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.41/DailyDuty.zip",
+    "Changelog": "- KamiToolKit 前進至 03c405a:名牌陣列取回值補判空",
+    "LastUpdate": 1787139140
   },
   {
     "Author": "liza, qstxiv, & various contributors",
@@ -1525,7 +1525,7 @@
     "Author": "daemitus, MidoriKami",
     "Name": "ezWondrousTails",
     "InternalName": "WondrousTailsSolver",
-    "AssemblyVersion": "7.20.0.6",
+    "AssemblyVersion": "7.20.0.7",
     "Description": "直接在遊戲原生的天書奇談面板上顯示連線機率：依目前已貼上的印花，算出最終貼出 1／2／3 條故事線的機率，並同時列出「重新貼」（消耗 2 奇想點把印花隨機重貼）之後的平均機率。數值會依優於或劣於重貼期望值以不同顏色標示，一眼就能判斷該不該花奇想點重抽。純唯讀計算，不會替你操作。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/EzWondrousTails",
@@ -1546,10 +1546,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WondrousTailsSolver.png",
     "Punchline": "在天書奇談面板顯示故事線機率",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WondrousTailsSolver-v7.20.0.6/WondrousTailsSolver.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WondrousTailsSolver-v7.20.0.6/WondrousTailsSolver.zip",
-    "LastUpdate": 1787131730,
-    "Changelog": "- 更新 KamiToolKit 子模組 pin:元件指標 setter 補判空,收掉最後一處裸解參考"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WondrousTailsSolver-v7.20.0.7/WondrousTailsSolver.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WondrousTailsSolver-v7.20.0.7/WondrousTailsSolver.zip",
+    "LastUpdate": 1787139136,
+    "Changelog": "- KamiToolKit 前進至 03c405a:名牌陣列取回值補判空"
   },
   {
     "Author": "alydev",
