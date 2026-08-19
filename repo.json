@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.31",
+    "AssemblyVersion": "7.20.0.32",
     "Description": "自動幫你跑副本，支援信賴的同伴、達人指引、士官兵團、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.31/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.31/AutoDuty.zip",
-    "Changelog": "- 重新釘 Pictomancy 到 92cb4f8:繪製裝置判空 fail-closed\n- AutoDuty：清掉 DesynthHelper 三處 [StaticAddress] Instance() 後的死碼判空",
-    "LastUpdate": 1787096359
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.32/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.32/AutoDuty.zip",
+    "Changelog": "- AutoDuty：每幀路徑的裝備組/代理人模組取得器判空 fail-closed",
+    "LastUpdate": 1787124183
   },
   {
     "Author": "Det",
@@ -853,7 +853,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.20.0.28",
+    "AssemblyVersion": "7.20.0.29",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -872,10 +872,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.28/SomethingNeedDoing.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.28/SomethingNeedDoing.zip",
-    "Changelog": "- 實體與節點包裝層改存身分不存指標:巨集跨 Sleep 再讀不會再解參考已回收的記憶體",
-    "LastUpdate": 1787096310,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.29/SomethingNeedDoing.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.29/SomethingNeedDoing.zip",
+    "Changelog": "- 套裝 Lua API 補判空:未登入或索引越界時回保守值,不再解參考 null",
+    "LastUpdate": 1787124212,
     "CategoryTags": [
       "Utility"
     ]
@@ -913,7 +913,7 @@
     "Author": "NightmareXIV",
     "Name": "Splatoon",
     "InternalName": "Splatoon",
-    "AssemblyVersion": "7.20.0.24",
+    "AssemblyVersion": "7.20.0.25",
     "Description": "Splatoon 是一款強大的輔助工具。它以自訂路標系統徹底革新遊戲體驗，可建立無數量限制的成組路標、文字標籤與角色指示器，並具備精確到像素的定位能力。此功能讓玩家能更清楚辨識關鍵物件與事件，進而做出更快速的反應。請注意，此插件本身不附帶任何預設檔，玩家可自行製作或匯入現成的預設檔，打造專屬於自己的遊戲體驗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Splatoon",
@@ -932,10 +932,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Splatoon.png",
     "Punchline": "以無限、精準的路標重新定義 FFXIV 導航方式。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.24/Splatoon.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.24/Splatoon.zip",
-    "Changelog": "- 重新釘 Pictomancy 到 92cb4f8,並補 Device/LayoutWorld 判空\n- 合併 castinfo-shim:PacketActorCast 輪詢式 shim(讀 CastInfo 已解析結構,零 hook 零特徵碼)\n- 新增帶完整施法資訊的 OnStartingCast 多載:不 hook 封包,改由 CastInfo 每幀組出\n- RedmoonTest3：EnemyList NumberArray 逐層判空＋驗長度，版本 bump 到 2",
-    "LastUpdate": 1787096403
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.25/Splatoon.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.25/Splatoon.zip",
+    "Changelog": "- 補上 Controller.BasePlayer(批次編譯量出來的第一大阻擋點)\n- 補上上游 uint 版的 OnObjectEffect 三參多載\n- 補上上游 9 參數的 OnDirectorUpdate 多載(a8/a9 在台服恆為 0)\n- 補上上游 12 參數的 OnActorControl 多載(p7/p8 在台服恆為 0)\n- 補上腳本 API 的 BasePlayer 與每腳本節流器兩個缺失面",
+    "LastUpdate": 1787124209
   },
   {
     "Author": "Infi",
