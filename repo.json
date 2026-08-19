@@ -853,7 +853,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.20.0.29",
+    "AssemblyVersion": "7.20.0.30",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -872,10 +872,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.29/SomethingNeedDoing.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.29/SomethingNeedDoing.zip",
-    "Changelog": "- 套裝 Lua API 補判空:未登入或索引越界時回保守值,不再解參考 null",
-    "LastUpdate": 1787124212,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.30/SomethingNeedDoing.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.30/SomethingNeedDoing.zip",
+    "Changelog": "- 九處原生取得器裸解參考補判空:分解、右鍵選單、拖放事件、/equip、部隊資訊",
+    "LastUpdate": 1787127984,
     "CategoryTags": [
       "Utility"
     ]
@@ -1181,7 +1181,7 @@
     "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.20.0.38",
+    "AssemblyVersion": "7.20.0.39",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/DailyDuty",
@@ -1204,10 +1204,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.38/DailyDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.38/DailyDuty.zip",
-    "Changelog": "- 部隊小隊模組掛 hook 前補上代理人判空，避免登入前從位址 0 讀 vtable\n- CI 加入 resx 空值閘門:建置前擋下崩潰級的「鍵存在但值為空」",
-    "LastUpdate": 1787126472
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.39/DailyDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.39/DailyDuty.zip",
+    "Changelog": "- 八處原生取得器裸解參考補判空：聊天連結處理常式與仙人仙彩重設時間",
+    "LastUpdate": 1787128022
   },
   {
     "Author": "liza, qstxiv, & various contributors",
@@ -1241,7 +1241,7 @@
     "Author": "NightmareXIV",
     "Name": "TextAdvance",
     "InternalName": "TextAdvance",
-    "AssemblyVersion": "7.20.0.23",
+    "AssemblyVersion": "7.20.0.24",
     "Description": "Quest speedrunning assistance tool. Automatically confirms quest acceptance and completion, skips subtitles, cutscenes, and most prompts. Includes optional Splatoon-based quest target indicators and vnavmesh-based auto-navigation to quest objectives.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TextAdvance",
@@ -1260,10 +1260,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TextAdvance.png",
     "Punchline": "Quest speedrunning assistance tool. Automatically skips subtitle boxes and confirms cutscene skipping",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.23/TextAdvance.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.23/TextAdvance.zip",
-    "Changelog": "- 重新釘 ECommons 到 b686f5b:補上 log 寫入端閘門與原生取得器判空\n- TextAdvance：LocalPlayer 改走 IObjectTable、DataId 改為 BaseId，清掉 26 處 API13 過時警告\n- 修正方案組態對應:ECommons 不再被建成上游 2024 年就刪掉的 ReleaseForms 組態",
-    "LastUpdate": 1787089201
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.24/TextAdvance.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.24/TextAdvance.zip",
+    "Changelog": "- 六處代理人裸解參考補判空:旗標導航、任務道具、地圖標記掃描不再從位址 0 讀取",
+    "LastUpdate": 1787128012
   },
   {
     "Author": "Styr1x, PlusoneChiang",
