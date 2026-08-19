@@ -534,7 +534,7 @@
     "Author": "53m1k0l0n/Gidedin (Puni.sh)",
     "Name": "LazyLoot",
     "InternalName": "LazyLoot",
-    "AssemblyVersion": "7.20.0.11",
+    "AssemblyVersion": "7.20.0.12",
     "Description": "以指令執行擲骰，支援 need | needonly | greed | pass | passall 等各種參數。\n可設定聊天與跳出訊息輸出，以及擲骰延遲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/LazyLoot",
@@ -554,10 +554,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/LazyLoot.png",
     "Punchline": "打怪但懶得選骰的擲骰插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LazyLoot-v7.20.0.11/LazyLoot.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LazyLoot-v7.20.0.11/LazyLoot.zip",
-    "Changelog": "- ECommons 從公開 NuGet 3.0.1.10 換成本 org 的加固 fork 子模組",
-    "LastUpdate": 1787096360
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LazyLoot-v7.20.0.12/LazyLoot.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LazyLoot-v7.20.0.12/LazyLoot.zip",
+    "Changelog": "- 更新 PunishLib 子模組 pin:ECommons 改為條件式參考,不再靠版本序覆蓋 NuGet",
+    "LastUpdate": 1787123647
   },
   {
     "Author": "NightmareXIV",
@@ -1525,7 +1525,7 @@
     "Author": "daemitus, MidoriKami",
     "Name": "ezWondrousTails",
     "InternalName": "WondrousTailsSolver",
-    "AssemblyVersion": "7.20.0.4",
+    "AssemblyVersion": "7.20.0.5",
     "Description": "直接在遊戲原生的天書奇談面板上顯示連線機率：依目前已貼上的印花，算出最終貼出 1／2／3 條故事線的機率，並同時列出「重新貼」（消耗 2 奇想點把印花隨機重貼）之後的平均機率。數值會依優於或劣於重貼期望值以不同顏色標示，一眼就能判斷該不該花奇想點重抽。純唯讀計算，不會替你操作。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/EzWondrousTails",
@@ -1546,10 +1546,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WondrousTailsSolver.png",
     "Punchline": "在天書奇談面板顯示故事線機率",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WondrousTailsSolver-v7.20.0.4/WondrousTailsSolver.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WondrousTailsSolver-v7.20.0.4/WondrousTailsSolver.zip",
-    "LastUpdate": 1787096376,
-    "Changelog": "- KamiToolKit 更新到 9dba2fb：元件節點存取子補判空,IsEnabled 另判 OwnerNode\n- KamiToolKit 更新到 ab8717e：AtkStage 殘餘四處補判空\n- 子模組 KamiToolKit repin 至 93b21c4：AtkUIColorHolder 兩處與 NativeAddon.Open 補判空"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WondrousTailsSolver-v7.20.0.5/WondrousTailsSolver.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WondrousTailsSolver-v7.20.0.5/WondrousTailsSolver.zip",
+    "LastUpdate": 1787123652,
+    "Changelog": "- 更新 KamiToolKit 子模組 pin:元件釋放前補判空,不再把 null 丟進原生配置器\n- KamiToolKit 更新到 9695b53：檢視區事件管理器改回傳指標,元件節點殘餘三處補判空"
   },
   {
     "Author": "alydev",

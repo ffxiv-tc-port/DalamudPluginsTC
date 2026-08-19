@@ -20,7 +20,7 @@
   "GatherbuddyReborn": "v7.20.0.25",
   "ItemVendorLocation": "v7.20.0.11",
   "HuntHelper": "v7.20.0.9",
-  "LazyLoot": "v7.20.0.11",
+  "LazyLoot": "v7.20.0.12",
   "MiniMappingway": "v7.20.0.11",
   "NecroLens": "v7.20.0.15",
   "NotificationMaster": "v7.20.0.9",
@@ -51,6 +51,6 @@
   "BOCCHI": "v7.20.0.17",
   "ICE": "v7.20.0.81",
   "TCToolbox": "v7.20.0.47",
-  "WondrousTailsSolver": "v7.20.0.4",
+  "WondrousTailsSolver": "v7.20.0.5",
   "GatheringPathRenderer": "v7.20.0.27"
 }
