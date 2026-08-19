@@ -3,7 +3,7 @@
     "Author": "Ottermandias",
     "Name": "Accountant",
     "InternalName": "Accountant",
-    "AssemblyVersion": "7.20.0.15",
+    "AssemblyVersion": "7.20.0.16",
     "Description": "記錄多名角色的僱員、飛艇、潛水艇、以太之輪與作物計時器，\n以及其他各種雜項任務進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Accountant",
@@ -28,10 +28,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Accountant.png",
     "Punchline": "角色任務計時器。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.15/Accountant.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.15/Accountant.zip",
-    "Changelog": "- NodeList 守衛補上第三關:5 處只做了上界＋元素判空,少了 NodeList 指標欄位本身",
-    "LastUpdate": 1787145767,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.16/Accountant.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.16/Accountant.zip",
+    "Changelog": "- 修正飛空艇/潛水艇計時器特徵碼多重命中綁錯函式:精確化至唯一命中",
+    "LastUpdate": 1787154261,
     "CategoryTags": [
       "Inventory"
     ]
