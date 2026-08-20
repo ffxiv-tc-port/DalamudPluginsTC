@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.20.0.87",
+    "AssemblyVersion": "7.20.0.88",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.87/BossModReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.87/BossModReborn.zip",
-    "Changelog": "- 載入時自動改名既有空名 preset,並存回\n- IPC Presets.Create 加空名驗證:空白名 preset 拒絕寫入\n- 統一 preset 名稱同一性:三處查找/查重改用同一個 OrdinalIgnoreCase 比較器\n- 循環預設編輯器：擋下空白名稱的預設，不再讓它存進資料庫",
-    "LastUpdate": 1787181492,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.88/BossModReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.88/BossModReborn.zip",
+    "Changelog": "- 統一 3 個純 ordinal preset 名比較點到 PresetDatabase.NameComparison",
+    "LastUpdate": 1787251235,
     "CategoryTags": [
       "Jobs"
     ]
@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.54",
+    "AssemblyVersion": "7.20.0.55",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速以太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.54/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.54/Lifestream.zip",
-    "Changelog": "- ECommons repin 至 f19658a:計數欄位夾到固定容量(FocusedUnitsList/跨界隊伍)+在地化接線批\n- 除錯分頁標籤接上既有譯文",
-    "LastUpdate": 1787162680
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.55/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.55/Lifestream.zip",
+    "Changelog": "- MaxInstances sig 掃不到時的裸解參考加判空守衛(InstanceHandler/UIDebug)",
+    "LastUpdate": 1787251211
   },
   {
     "Author": "apetih",
