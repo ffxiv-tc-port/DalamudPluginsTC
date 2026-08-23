@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.20.0.50",
+    "AssemblyVersion": "7.20.0.51",
     "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：部隊合建素材一鍵全交、野外陸行鳥自動餵食基薩爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.50/TCToolbox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.50/TCToolbox.zip",
-    "Changelog": "- 批次僱員改名：移除內建候選名單（不進版控、不嵌進 DLL），名單只從檔案或剪貼簿載入",
-    "LastUpdate": 1787488007
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.51/TCToolbox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.51/TCToolbox.zip",
+    "Changelog": "- 批次僱員改名：新增「收回所有已完成探險（不重派）」，改名前可自動先收回",
+    "LastUpdate": 1787490457
   },
   {
     "Author": "daemitus, MidoriKami",
@@ -1775,7 +1775,7 @@
     "Author": "Anna, Maintained by Caraxi",
     "Name": "Peeping Tom",
     "InternalName": "PeepingTom",
-    "AssemblyVersion": "7.20.0.2",
+    "AssemblyVersion": "7.20.0.3",
     "Description": "顯示目前正在鎖定你、以及先前曾鎖定你的玩家。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PeepingTom",
@@ -1789,10 +1789,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/PeepingTom.png",
     "Punchline": "顯示誰正在鎖定你。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PeepingTom-v7.20.0.2/PeepingTom.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PeepingTom-v7.20.0.2/PeepingTom.zip",
-    "LastUpdate": 1787481487,
-    "Changelog": "- 新增繁體中文在地化，並修正台服 \"tw\" 文化代碼無法解析的問題"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PeepingTom-v7.20.0.3/PeepingTom.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PeepingTom-v7.20.0.3/PeepingTom.zip",
+    "LastUpdate": 1787490475,
+    "Changelog": "- 新增「有人以你為目標時記錄到聊天視窗」選項（預設關閉）"
   },
   {
     "Author": "Felys, aers",
