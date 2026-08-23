@@ -1798,7 +1798,7 @@
     "Author": "Felys, aers",
     "Name": "EnemyListDebuffs",
     "InternalName": "EnemyListDebuffs",
-    "AssemblyVersion": "7.20.0.0",
+    "AssemblyVersion": "7.20.0.1",
     "Description": "在敵對列表上以圖示與倒數計時顯示你對每個敵人施加的減益（DoT），多目標時更容易追蹤自己的持續傷害。原始實作由 aers 完成。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/EnemyListDebuffs",
@@ -1817,9 +1817,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/EnemyListDebuffs.png",
     "Punchline": "追蹤你的 DoT 不該那麼麻煩。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EnemyListDebuffs-v7.20.0.0/EnemyListDebuffs.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EnemyListDebuffs-v7.20.0.0/EnemyListDebuffs.zip",
-    "LastUpdate": 0,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EnemyListDebuffs-v7.20.0.1/EnemyListDebuffs.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EnemyListDebuffs-v7.20.0.1/EnemyListDebuffs.zip",
+    "LastUpdate": 1787473165,
     "Changelog": ""
   }
 ]
