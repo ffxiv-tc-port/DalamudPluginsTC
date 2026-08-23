@@ -98,6 +98,8 @@ SOURCE_REPOS = {
     # 自己就寫 INTERNAL_NAME: DeepDungeonDex / PUBLIC_NAME: MonsterDex,與
     # EzWondrousTails/WondrousTailsSolver 完全同形。
     "DeepDungeonDex": "ffxiv-tc-port/MonsterDex",
+    "Mappy": "ffxiv-tc-port/Mappy",
+    "SortaKinda": "ffxiv-tc-port/SortaKinda",
     "EnemyListDebuffs": "ffxiv-tc-port/EnemyListDebuffs",
     "ZodiacBuddy": "ffxiv-tc-port/ZodiacBuddy",
     "HighFpsPhysicsPlugin": "ffxiv-tc-port/xivlauncher_physics_plugin",
