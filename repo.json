@@ -1637,7 +1637,7 @@
     "Author": "Infi, PunishedPineapple",
     "Name": "Waymark Preset Plugin",
     "InternalName": "WaymarkPresetPlugin",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "可儲存、編輯、放置、匯入、匯出並預覽數量不限的場地標記預設。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WaymarkPresetPlugin",
@@ -1656,10 +1656,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WaymarkPresetPlugin.png",
     "Punchline": "更好用的場地標記管理",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WaymarkPresetPlugin-v7.20.0.1/WaymarkPresetPlugin.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WaymarkPresetPlugin-v7.20.0.1/WaymarkPresetPlugin.zip",
-    "LastUpdate": 1787470552,
-    "Changelog": ""
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WaymarkPresetPlugin-v7.20.0.2/WaymarkPresetPlugin.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WaymarkPresetPlugin-v7.20.0.2/WaymarkPresetPlugin.zip",
+    "LastUpdate": 1787481493,
+    "Changelog": "- 新增繁體中文在地化，並修正台服 \"tw\" 文化代碼無法解析的問題"
   },
   {
     "Author": "Kouzukii",
@@ -1775,7 +1775,7 @@
     "Author": "Anna, Maintained by Caraxi",
     "Name": "Peeping Tom",
     "InternalName": "PeepingTom",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "顯示目前正在鎖定你、以及先前曾鎖定你的玩家。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PeepingTom",
@@ -1789,10 +1789,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/PeepingTom.png",
     "Punchline": "顯示誰正在鎖定你。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PeepingTom-v7.20.0.1/PeepingTom.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PeepingTom-v7.20.0.1/PeepingTom.zip",
-    "LastUpdate": 1787472689,
-    "Changelog": ""
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PeepingTom-v7.20.0.2/PeepingTom.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PeepingTom-v7.20.0.2/PeepingTom.zip",
+    "LastUpdate": 1787481487,
+    "Changelog": "- 新增繁體中文在地化，並修正台服 \"tw\" 文化代碼無法解析的問題"
   },
   {
     "Author": "Felys, aers",
