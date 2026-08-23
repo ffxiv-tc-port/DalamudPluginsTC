@@ -98,6 +98,10 @@ SOURCE_REPOS = {
     # 自己就寫 INTERNAL_NAME: DeepDungeonDex / PUBLIC_NAME: MonsterDex,與
     # EzWondrousTails/WondrousTailsSolver 完全同形。
     "DeepDungeonDex": "ffxiv-tc-port/MonsterDex",
+    "BigPlayerDebuffs": "ffxiv-tc-port/BigPlayerDebuffs",
+    "WaymarkPresetPlugin": "ffxiv-tc-port/WaymarkPresetPlugin",
+    "DeathRecap": "ffxiv-tc-port/ffxiv-deathrecap",
+    "BetterMountRoulette": "ffxiv-tc-port/BetterMountRoulette",
 }
 
 # InternalName -> icon path within the source repo (on its default branch).
@@ -166,6 +170,9 @@ ICON_PATHS = {
     # (converted RGB->RGBA to avoid the broken-icon-question-mark bug).
     "WondrousTailsSolver": "res/icon.png",
     "DeepDungeonDex": "DeepDungeonDex/icon.png",
+    "BigPlayerDebuffs": "images/icon.png",
+    "WaymarkPresetPlugin": "docs/Images/icon.png",
+    "DeathRecap": "images/icon.png",
     # GatheringPathRenderer: 刻意不在這裡列——upstream 自己的 repo 裡從沒放過圖示檔
     # (upstream 自己的 release.yml 甚至從沒建置過這個子專案,純粹是掛在 repo 裡的
     # maintainer 用工具，manifest 的 Punchline 也自己承認是 "[Questionable dev
