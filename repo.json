@@ -1719,7 +1719,7 @@
     "Author": "daemitus, hiroa, MidoriKami, foophoof",
     "Name": "ZodiacBuddy",
     "InternalName": "ZodiacBuddy",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "以多種方式協助你完成黃道武器（ARR 傳說武器）。點擊武器筆記本內的目標可開啟副本或開地圖並顯示位置、顯示強化進度與「光之加成」提示。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ZodiacBuddy",
@@ -1739,10 +1739,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ZodiacBuddy.png",
     "Punchline": "帥氣地完成你的黃道武器。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ZodiacBuddy-v7.20.0.1/ZodiacBuddy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ZodiacBuddy-v7.20.0.1/ZodiacBuddy.zip",
-    "LastUpdate": 1787472695,
-    "Changelog": ""
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ZodiacBuddy-v7.20.0.2/ZodiacBuddy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ZodiacBuddy-v7.20.0.2/ZodiacBuddy.zip",
+    "LastUpdate": 1787480800,
+    "Changelog": "- zh-TW 在地化：設定視窗、資訊視窗與聊天提示全面翻譯為繁體中文"
   },
   {
     "Author": "ItsLunaYup",
@@ -1798,7 +1798,7 @@
     "Author": "Felys, aers",
     "Name": "EnemyListDebuffs",
     "InternalName": "EnemyListDebuffs",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "在敵對列表上以圖示與倒數計時顯示你對每個敵人施加的減益（DoT），多目標時更容易追蹤自己的持續傷害。原始實作由 aers 完成。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/EnemyListDebuffs",
@@ -1817,10 +1817,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/EnemyListDebuffs.png",
     "Punchline": "追蹤你的 DoT 不該那麼麻煩。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EnemyListDebuffs-v7.20.0.1/EnemyListDebuffs.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EnemyListDebuffs-v7.20.0.1/EnemyListDebuffs.zip",
-    "LastUpdate": 1787473165,
-    "Changelog": ""
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EnemyListDebuffs-v7.20.0.2/EnemyListDebuffs.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EnemyListDebuffs-v7.20.0.2/EnemyListDebuffs.zip",
+    "LastUpdate": 1787480786,
+    "Changelog": "- zh-TW 在地化：設定視窗全面翻譯為繁體中文"
   },
   {
     "Author": "MidoriKami",
