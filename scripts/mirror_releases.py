@@ -98,6 +98,9 @@ SOURCE_REPOS = {
     # 自己就寫 INTERNAL_NAME: DeepDungeonDex / PUBLIC_NAME: MonsterDex,與
     # EzWondrousTails/WondrousTailsSolver 完全同形。
     "DeepDungeonDex": "ffxiv-tc-port/MonsterDex",
+    "ZodiacBuddy": "ffxiv-tc-port/ZodiacBuddy",
+    "HighFpsPhysicsPlugin": "ffxiv-tc-port/xivlauncher_physics_plugin",
+    "PeepingTom": "ffxiv-tc-port/PeepingTom",
     "BigPlayerDebuffs": "ffxiv-tc-port/BigPlayerDebuffs",
     "WaymarkPresetPlugin": "ffxiv-tc-port/WaymarkPresetPlugin",
     "DeathRecap": "ffxiv-tc-port/ffxiv-deathrecap",
@@ -170,6 +173,8 @@ ICON_PATHS = {
     # (converted RGB->RGBA to avoid the broken-icon-question-mark bug).
     "WondrousTailsSolver": "res/icon.png",
     "DeepDungeonDex": "DeepDungeonDex/icon.png",
+    "ZodiacBuddy": "images/icon.png",
+    "PeepingTom": "icon.png",
     "BigPlayerDebuffs": "images/icon.png",
     "WaymarkPresetPlugin": "docs/Images/icon.png",
     "DeathRecap": "images/icon.png",
