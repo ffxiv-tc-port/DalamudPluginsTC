@@ -94,6 +94,10 @@ SOURCE_REPOS = {
     "IINACT": "ffxiv-tc-port/IINACT",
     "TCToolbox": "ffxiv-tc-port/TCToolbox",
     "WondrousTailsSolver": "ffxiv-tc-port/EzWondrousTails",
+    # MonsterDex(repo 名)出貨的 InternalName 是 DeepDungeonDex —— 上游 PRD17.yaml
+    # 自己就寫 INTERNAL_NAME: DeepDungeonDex / PUBLIC_NAME: MonsterDex,與
+    # EzWondrousTails/WondrousTailsSolver 完全同形。
+    "DeepDungeonDex": "ffxiv-tc-port/MonsterDex",
 }
 
 # InternalName -> icon path within the source repo (on its default branch).
@@ -161,6 +165,7 @@ ICON_PATHS = {
     # the actual upstream icon at github.com/qstxiv/icons/raw/main/Questionable.png
     # (converted RGB->RGBA to avoid the broken-icon-question-mark bug).
     "WondrousTailsSolver": "res/icon.png",
+    "DeepDungeonDex": "DeepDungeonDex/icon.png",
     # GatheringPathRenderer: 刻意不在這裡列——upstream 自己的 repo 裡從沒放過圖示檔
     # (upstream 自己的 release.yml 甚至從沒建置過這個子專案,純粹是掛在 repo 裡的
     # maintainer 用工具，manifest 的 Punchline 也自己承認是 "[Questionable dev

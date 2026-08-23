@@ -1574,5 +1574,35 @@
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.38/GatheringPathRenderer.zip",
     "LastUpdate": 1787162738,
     "Changelog": "- ECommons repin 至 f19658a:計數欄位夾到固定容量(FocusedUnitsList/跨界隊伍)+在地化接線批"
+  },
+  {
+    "Author": "WildWolf",
+    "Name": "MonsterDex",
+    "InternalName": "DeepDungeonDex",
+    "AssemblyVersion": "7.20.0.0",
+    "Description": "即時顯示深層迷宮魔物的仇恨類型、威脅程度、狀態弱點及重要機制概覽。\n威脅程度主要供單人攻略參考，資料來自社群蒐集；原名 DeepDungeonDex。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/ffxiv-tc-port/MonsterDex",
+    "Tags": [
+      "deep dungeon",
+      "achievements",
+      "battle",
+      "combat",
+      "monsters",
+      "enemies"
+    ],
+    "CategoryTags": [],
+    "DalamudApiLevel": 13,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "",
+    "Punchline": "即時顯示深層迷宮魔物資料。",
+    "AcceptsFeedback": false,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DeepDungeonDex-v7.20.0.0/DeepDungeonDex.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DeepDungeonDex-v7.20.0.0/DeepDungeonDex.zip",
+    "LastUpdate": 0,
+    "Changelog": ""
   }
 ]
