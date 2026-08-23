@@ -98,6 +98,7 @@ SOURCE_REPOS = {
     # 自己就寫 INTERNAL_NAME: DeepDungeonDex / PUBLIC_NAME: MonsterDex,與
     # EzWondrousTails/WondrousTailsSolver 完全同形。
     "DeepDungeonDex": "ffxiv-tc-port/MonsterDex",
+    "ExplorersIcebox": "ffxiv-tc-port/Explorers-Icebox",
     "Mappy": "ffxiv-tc-port/Mappy",
     "SortaKinda": "ffxiv-tc-port/SortaKinda",
     "EnemyListDebuffs": "ffxiv-tc-port/EnemyListDebuffs",
@@ -176,6 +177,7 @@ ICON_PATHS = {
     # (converted RGB->RGBA to avoid the broken-icon-question-mark bug).
     "WondrousTailsSolver": "res/icon.png",
     "DeepDungeonDex": "DeepDungeonDex/icon.png",
+    "ExplorersIcebox": "Data/icon.png",
     "EnemyListDebuffs": "images/icon.png",
     "ZodiacBuddy": "images/icon.png",
     "PeepingTom": "icon.png",
