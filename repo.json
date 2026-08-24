@@ -3,7 +3,7 @@
     "Author": "Ottermandias",
     "Name": "Accountant",
     "InternalName": "Accountant",
-    "AssemblyVersion": "7.20.0.16",
+    "AssemblyVersion": "7.20.0.17",
     "Description": "記錄多名角色的僱員、飛艇、潛水艇、以太之輪與作物計時器，\n以及其他各種雜項任務進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Accountant",
@@ -28,10 +28,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Accountant.png",
     "Punchline": "角色任務計時器。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.16/Accountant.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.16/Accountant.zip",
-    "Changelog": "- 修正飛空艇/潛水艇計時器特徵碼多重命中綁錯函式:精確化至唯一命中",
-    "LastUpdate": 1787154261,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.17/Accountant.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.17/Accountant.zip",
+    "Changelog": "- Accountant：LocalPlayer 取值改走 IObjectTable，清掉最後 7 處 API13 過時警告",
+    "LastUpdate": 1787577102,
     "CategoryTags": [
       "Inventory"
     ]
@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.20.0.83",
+    "AssemblyVersion": "7.20.0.84",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.83/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.83/Artisan.zip",
-    "Changelog": "- ECommons repin 至 f19658a:計數欄位夾到固定容量(FocusedUnitsList/跨界隊伍)+在地化接線批",
-    "LastUpdate": 1787162744
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.84/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.84/Artisan.zip",
+    "Changelog": "- 修復除錯分頁「Item」「Disable」未接上既有繁中翻譯",
+    "LastUpdate": 1787577028
   },
   {
     "Author": "Herculezz",
@@ -418,7 +418,7 @@
     "Author": "img02",
     "Name": "Hunt Helper",
     "InternalName": "HuntHelper",
-    "AssemblyVersion": "7.20.0.10",
+    "AssemblyVersion": "7.20.0.11",
     "Description": "顯示標記重生點的狩獵地圖、A級討伐車隊記錄器（可匯出/匯入分享）、語音播報、聊天通知，以及S級討伐重生計數器",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/HuntHelper",
@@ -438,16 +438,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/HuntHelper.png",
     "Punchline": "打寶雷達＋車隊記錄器＋通知＋S級討伐輔助工具等一應俱全。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.10/HuntHelper.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.10/HuntHelper.zip",
-    "Changelog": "- 點 FATE 開地圖:AgentMap 裸鏈補判空(既有的 try 對 AVE 無效)",
-    "LastUpdate": 1787128901
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.11/HuntHelper.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.11/HuntHelper.zip",
+    "Changelog": "- HuntHelper：LocalPlayer 改走 IObjectTable、LocalContentId 改走 IPlayerState，清掉 15 處 API13 過時警告",
+    "LastUpdate": 1787577076
   },
   {
     "Author": "Critical_Impact",
     "Name": "Allagan Tools",
     "InternalName": "InventoryTools",
-    "AssemblyVersion": "7.20.0.29",
+    "AssemblyVersion": "7.20.0.30",
     "Description": "Allagan Tools 的主要目的是追蹤你所有角色/僱員/公會倉庫中的道具。透過它的篩選系統，你將不再遺失任何道具的蹤跡，也不再不知道道具該收納在哪裡。\n\n雖然這是它的主要功能，但它還擁有相當豐富的其他功能，包括：\n\t- 製作規劃\n\t- 市場公告板整合\n\t- 在搜尋/整理及挑選製作材料時於背包中高亮顯示道具\n\t- 包含商人與取得來源等資訊的道具視窗\n\t- 可完整搜尋的任務/怪物/飛空艇/潛水艇視窗\n\t- 讓你能為特定道具設定複雜搜尋條件的篩選系統\n\t- 提示視窗整合，滑鼠懸停即可查看道具所在位置",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/InventoryTools",
@@ -467,10 +467,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/InventoryTools.png",
     "Punchline": "讓你的 FFXIV 井井有條，輕鬆定位/顯示道具應收納何處、規劃製作，並搜尋怪物、任務、飛空艇與潛水艇！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.29/InventoryTools.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.29/InventoryTools.zip",
-    "Changelog": "- 台服停用 universalis 線上查價，市場欄位改顯示 N/A，不再反覆跳「backing off 30 秒」紅字\n- 重建後 touch release workflow 檔，讓 dispatch-only workflow 重新註冊",
-    "LastUpdate": 1787570855
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.30/InventoryTools.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.30/InventoryTools.zip",
+    "Changelog": "- 修復除錯欄位「Available: 」未接上既有繁中翻譯\n- 修好 InventoryToolsTesting 測試專案建置：補上 API13 新增的 ITextureProvider.CreateTextureFromSeString stub",
+    "LastUpdate": 1787577043
   },
   {
     "Author": "electr0sheep, Nuko",
@@ -707,7 +707,7 @@
     "Author": "Liza Carvelli (Puni.sh)",
     "Name": "Palace Pal",
     "InternalName": "PalacePal",
-    "AssemblyVersion": "7.20.0.19",
+    "AssemblyVersion": "7.20.0.20",
     "Description": "顯示死者宮殿、天之御柱、正統優雷卡中可能的陷阱與寶藏位置。\n\n此插件需要 Splatoon 才能在畫面上繪製各種標示。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PalacePal",
@@ -728,16 +728,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/PalacePal.png",
     "Punchline": "顯示死者宮殿、天之御柱、正統優雷卡中可能的陷阱與寶藏位置。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.19/PalacePal.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.19/PalacePal.zip",
-    "Changelog": "- ECommons repin 至 f19658a:計數欄位夾到固定容量(FocusedUnitsList/跨界隊伍)+在地化接線批",
-    "LastUpdate": 1787162727
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.20/PalacePal.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.20/PalacePal.zip",
+    "Changelog": "- PalacePal：IClientState.LocalPlayer 遷移到 IObjectTable.LocalPlayer，清掉 2 處 API13 過時警告",
+    "LastUpdate": 1787577011
   },
   {
     "Author": "Haplo064",
     "Name": "Pixel Perfect",
     "InternalName": "PixelPerfect",
-    "AssemblyVersion": "7.20.0.4",
+    "AssemblyVersion": "7.20.0.5",
     "Description": "自 2020 年起精準顯示站位。深受高難度團隊玩家推薦！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PixelPerfect",
@@ -757,10 +757,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/PixelPerfect.png",
     "Punchline": "顯示你的碰撞判定範圍，並提供可自訂功能。深受世界首殺團隊玩家推薦！",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PixelPerfect-v7.20.0.4/PixelPerfect.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PixelPerfect-v7.20.0.4/PixelPerfect.zip",
-    "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)\n- 測試：驗證 TCToolBox App 身分推送機制\n- CI：修正 build-check 從未真正建置的問題",
-    "LastUpdate": 1786827492
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PixelPerfect-v7.20.0.5/PixelPerfect.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PixelPerfect-v7.20.0.5/PixelPerfect.zip",
+    "Changelog": "- PixelPerfect：LocalPlayer 取值改走 IObjectTable，清掉 30 處 API13 過時警告",
+    "LastUpdate": 1787577081
   },
   {
     "Author": "Kouzukii",
@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.20.0.32",
+    "AssemblyVersion": "7.20.0.33",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.32/Saucy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.32/Saucy.zip",
-    "Changelog": "- 卡片收藏的金碟 agent 指標不再跨幀快取,改成每次使用時重新取得",
-    "LastUpdate": 1787575223,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.33/Saucy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.33/Saucy.zip",
+    "Changelog": "- 孤樹無援的「力量表目標」下拉選單改用中文名稱,不再顯示裸列舉成員名",
+    "LastUpdate": 1787577122,
     "CategoryTags": [
       "Minigames"
     ]
@@ -853,7 +853,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.20.0.38",
+    "AssemblyVersion": "7.20.0.39",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -872,10 +872,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.38/SomethingNeedDoing.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.38/SomethingNeedDoing.zip",
-    "Changelog": "- ECommons repin 至 f19658a:計數欄位夾到固定容量(FocusedUnitsList/跨界隊伍)+在地化接線批",
-    "LastUpdate": 1787162571,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.39/SomethingNeedDoing.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.39/SomethingNeedDoing.zip",
+    "Changelog": "- 設定分頁的聊天頻道下拉選單改用中文名稱,不再顯示裸列舉成員名",
+    "LastUpdate": 1787576985,
     "CategoryTags": [
       "Utility"
     ]
@@ -884,7 +884,7 @@
     "Author": "Sonar Team",
     "Name": "Sonar",
     "InternalName": "SonarPlugin",
-    "AssemblyVersion": "7.20.0.7",
+    "AssemblyVersion": "7.20.0.8",
     "Description": "自動傳送與接收打寶及 FATE 情報。輸入 /sonar 開啟主視窗，/sonarconfig 進行設定。技術支援僅提供於 Sonar Support Discord。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SonarPlugin",
@@ -904,10 +904,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SonarPlugin.png",
     "Punchline": "自動傳送與接收打寶及 FATE 情報。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SonarPlugin-v7.20.0.7/SonarPlugin.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SonarPlugin-v7.20.0.7/SonarPlugin.zip",
-    "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)\n- CI：修正 build-check 從未真正建置的問題",
-    "LastUpdate": 1786827577
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SonarPlugin-v7.20.0.8/SonarPlugin.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SonarPlugin-v7.20.0.8/SonarPlugin.zip",
+    "Changelog": "- SonarPlugin：IClientState.LocalPlayer 遷移到 IObjectTable.LocalPlayer，清掉 2 處 API13 過時警告",
+    "LastUpdate": 1787577020
   },
   {
     "Author": "NightmareXIV",
@@ -1092,7 +1092,7 @@
     "Author": "cycleapple",
     "Name": "XIV 藏寶圖工具小幫手",
     "InternalName": "XivTreasureParty",
-    "AssemblyVersion": "7.20.0.6",
+    "AssemblyVersion": "7.20.0.7",
     "Description": "Dalamud 插件版本的 FFXIV 繁中藏寶圖工具小幫手。可與網頁版（https://cycleapple.github.io/xiv-tc-treasure-finder/）使用者混合組隊，即時同步同一份清單。支援建立/加入房間、手動新增藏寶圖、打開藏寶圖時自動選取、遊戲內開地圖打旗標、以自訂頻道指令（例如 /p 或 /cwl1）發送可點擊地圖連結、順序調整、完成勾選等。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/XivTreasureParty",
@@ -1114,10 +1114,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/XivTreasureParty.png",
     "Punchline": "繁中藏寶圖組隊協作，與網頁版即時共享同一個房間。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.20.0.6/XivTreasureParty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.20.0.6/XivTreasureParty.zip",
-    "Changelog": "- ci: 重新註冊 release workflow(repo 重建後 Actions 索引遺失)",
-    "LastUpdate": 1786827555
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.20.0.7/XivTreasureParty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.20.0.7/XivTreasureParty.zip",
+    "Changelog": "- XivTreasureParty：IClientState.LocalPlayer 遷移到 IObjectTable.LocalPlayer，清掉 1 處 API13 過時警告",
+    "LastUpdate": 1787576994
   },
   {
     "Author": "daemitus, croizat",
@@ -1213,7 +1213,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.20.0.38",
+    "AssemblyVersion": "7.20.0.39",
     "Description": "A tiny little quest helper plugin, which does quests for you automatically where possible. Uses navmesh to automatically walk to all quest waypoints, and tries to automatically complete all steps along the way (excluding dungeons, single player duties and combat).\n\nNot all quests are supported, check the discord or git repository for an up-to-date list.\n\nRequired Plugins: vnavmesh, TextAdvance, Lifestream",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,10 +1232,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "A tiny quest helper plugin.",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.38/Questionable.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.38/Questionable.zip",
-    "Changelog": "- ECommons repin 至 f19658a:計數欄位夾到固定容量(FocusedUnitsList/跨界隊伍)+在地化接線批",
-    "LastUpdate": 1787162738
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.39/Questionable.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.39/Questionable.zip",
+    "Changelog": "- 一般設定分頁的戰鬥模組／裝備更新來源下拉選單改用中文名稱,不再顯示裸列舉成員名",
+    "LastUpdate": 1787577084
   },
   {
     "Author": "NightmareXIV",
@@ -1386,7 +1386,7 @@
     "Author": "Liza Carvelli",
     "Name": "Gearsetter",
     "InternalName": "Gearsetter",
-    "AssemblyVersion": "7.20.0.7",
+    "AssemblyVersion": "7.20.0.8",
     "Description": "瀏覽各職業可以裝備的所有裝備，並列出你目前套裝還能升級的部位。\n裝備瀏覽器可依職業與部位分類檢視，並提供「只顯示等級符合的裝備」、「只顯示已擁有的裝備」、「隱藏 NQ 裝備」等篩選，同時標示每件裝備的取得來源。\n指令：/gup 顯示所有套裝的可升級部位、/gbrowser 開關裝備瀏覽器。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Gearsetter",
@@ -1405,10 +1405,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Gearsetter.png",
     "Punchline": "查詢各職業可換裝的裝備升級",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Gearsetter-v7.20.0.7/Gearsetter.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Gearsetter-v7.20.0.7/Gearsetter.zip",
-    "Changelog": "- 子模組 LLib repin 至 202f704：LAddon.GetAddonById 補上兩層判空",
-    "LastUpdate": 1787096397
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Gearsetter-v7.20.0.8/Gearsetter.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Gearsetter-v7.20.0.8/Gearsetter.zip",
+    "Changelog": "- Gearsetter：IClientState.LocalPlayer 遷移到 IObjectTable.LocalPlayer，清掉 3 處 API13 過時警告",
+    "LastUpdate": 1787576996
   },
   {
     "Author": "veyn",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.20.0.38",
+    "AssemblyVersion": "7.20.0.39",
     "Description": "[Questionable dev plugin]: Renders gathering location using Pictomancy.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable dev plugin]: Renders gathering location.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.38/GatheringPathRenderer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.38/GatheringPathRenderer.zip",
-    "LastUpdate": 1787162738,
-    "Changelog": "- ECommons repin 至 f19658a:計數欄位夾到固定容量(FocusedUnitsList/跨界隊伍)+在地化接線批"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.39/GatheringPathRenderer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.39/GatheringPathRenderer.zip",
+    "LastUpdate": 1787577084,
+    "Changelog": "- 一般設定分頁的戰鬥模組／裝備更新來源下拉選單改用中文名稱,不再顯示裸列舉成員名"
   },
   {
     "Author": "WildWolf",
@@ -1609,7 +1609,7 @@
     "Author": "d87",
     "Name": "BigPlayerDebuffs",
     "InternalName": "BigPlayerDebuffs",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "放大目標狀態欄中由你施加的增益與減益圖示。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BigPlayerDebuffs",
@@ -1628,16 +1628,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/BigPlayerDebuffs.png",
     "Punchline": "放大自己施加的減益效果",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BigPlayerDebuffs-v7.20.0.1/BigPlayerDebuffs.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BigPlayerDebuffs-v7.20.0.1/BigPlayerDebuffs.zip",
-    "LastUpdate": 1787470545,
-    "Changelog": "* v1.1.0.14\n * 新增台灣繁體中文介面\n"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BigPlayerDebuffs-v7.20.0.2/BigPlayerDebuffs.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BigPlayerDebuffs-v7.20.0.2/BigPlayerDebuffs.zip",
+    "LastUpdate": 1787577026,
+    "Changelog": "- BigPlayerDebuffs：IClientState.LocalPlayer 遷移到 IObjectTable.LocalPlayer，清掉 1 處 API13 過時警告"
   },
   {
     "Author": "Infi, PunishedPineapple",
     "Name": "Waymark Preset Plugin",
     "InternalName": "WaymarkPresetPlugin",
-    "AssemblyVersion": "7.20.0.2",
+    "AssemblyVersion": "7.20.0.3",
     "Description": "可儲存、編輯、放置、匯入、匯出並預覽數量不限的場地標記預設。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WaymarkPresetPlugin",
@@ -1656,10 +1656,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WaymarkPresetPlugin.png",
     "Punchline": "更好用的場地標記管理",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WaymarkPresetPlugin-v7.20.0.2/WaymarkPresetPlugin.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WaymarkPresetPlugin-v7.20.0.2/WaymarkPresetPlugin.zip",
-    "LastUpdate": 1787481493,
-    "Changelog": "- 新增繁體中文在地化，並修正台服 \"tw\" 文化代碼無法解析的問題"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WaymarkPresetPlugin-v7.20.0.3/WaymarkPresetPlugin.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WaymarkPresetPlugin-v7.20.0.3/WaymarkPresetPlugin.zip",
+    "LastUpdate": 1787576988,
+    "Changelog": "- WaymarkPresetPlugin：IClientState.LocalPlayer 遷移到 IObjectTable.LocalPlayer，清掉 1 處 API13 過時警告"
   },
   {
     "Author": "Kouzukii",
@@ -1694,7 +1694,7 @@
     "Author": "Nuffin",
     "Name": "Better Mount Roulette",
     "InternalName": "BetterMountRoulette",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "可自由選擇任意數量的坐騎加入隨機召喚，不再受遊戲「最多 30 隻」或「全部」模式限制。\n",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BetterMountRoulette",
@@ -1710,10 +1710,10 @@
     "IconUrl": "",
     "Punchline": "自訂坐騎隨機召喚會選到哪些坐騎。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BetterMountRoulette-v7.20.0.1/BetterMountRoulette.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BetterMountRoulette-v7.20.0.1/BetterMountRoulette.zip",
-    "LastUpdate": 1787470559,
-    "Changelog": ""
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BetterMountRoulette-v7.20.0.2/BetterMountRoulette.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BetterMountRoulette-v7.20.0.2/BetterMountRoulette.zip",
+    "LastUpdate": 1787577086,
+    "Changelog": "- BetterMountRoulette：LocalPlayer/LocalContentId 遷移到 IObjectTable/IPlayerState，並拿掉 csproj 裡的 CS0618 靜音"
   },
   {
     "Author": "daemitus, hiroa, MidoriKami, foophoof",
@@ -1775,7 +1775,7 @@
     "Author": "Anna, Maintained by Caraxi",
     "Name": "Peeping Tom",
     "InternalName": "PeepingTom",
-    "AssemblyVersion": "7.20.0.3",
+    "AssemblyVersion": "7.20.0.4",
     "Description": "顯示目前正在鎖定你、以及先前曾鎖定你的玩家。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PeepingTom",
@@ -1789,16 +1789,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/PeepingTom.png",
     "Punchline": "顯示誰正在鎖定你。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PeepingTom-v7.20.0.3/PeepingTom.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PeepingTom-v7.20.0.3/PeepingTom.zip",
-    "LastUpdate": 1787490475,
-    "Changelog": "- 新增「有人以你為目標時記錄到聊天視窗」選項（預設關閉）"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PeepingTom-v7.20.0.4/PeepingTom.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PeepingTom-v7.20.0.4/PeepingTom.zip",
+    "LastUpdate": 1787576990,
+    "Changelog": "- Peeping Tom：IClientState.LocalPlayer 遷移到 IObjectTable.LocalPlayer，清掉 3 處 API13 過時警告"
   },
   {
     "Author": "Felys, aers",
     "Name": "EnemyListDebuffs",
     "InternalName": "EnemyListDebuffs",
-    "AssemblyVersion": "7.20.0.2",
+    "AssemblyVersion": "7.20.0.3",
     "Description": "在敵對列表上以圖示與倒數計時顯示你對每個敵人施加的減益（DoT），多目標時更容易追蹤自己的持續傷害。原始實作由 aers 完成。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/EnemyListDebuffs",
@@ -1817,16 +1817,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/EnemyListDebuffs.png",
     "Punchline": "追蹤你的 DoT 不該那麼麻煩。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EnemyListDebuffs-v7.20.0.2/EnemyListDebuffs.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EnemyListDebuffs-v7.20.0.2/EnemyListDebuffs.zip",
-    "LastUpdate": 1787480786,
-    "Changelog": "- zh-TW 在地化：設定視窗全面翻譯為繁體中文"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EnemyListDebuffs-v7.20.0.3/EnemyListDebuffs.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EnemyListDebuffs-v7.20.0.3/EnemyListDebuffs.zip",
+    "LastUpdate": 1787576997,
+    "Changelog": "- EnemyListDebuffs：IClientState.LocalPlayer 遷移到 IObjectTable.LocalPlayer，清掉 1 處 API13 過時警告"
   },
   {
     "Author": "MidoriKami",
     "Name": "Mappy",
     "InternalName": "Mappy",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "以 ImGui 地圖取代遊戲內建地圖，並提供多項額外功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Mappy",
@@ -1845,16 +1845,16 @@
     "IconUrl": "",
     "Punchline": "功能更完整的遊戲地圖。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Mappy-v7.20.0.1/Mappy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Mappy-v7.20.0.1/Mappy.zip",
-    "LastUpdate": 1787474274,
-    "Changelog": ""
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Mappy-v7.20.0.2/Mappy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Mappy-v7.20.0.2/Mappy.zip",
+    "LastUpdate": 1787577100,
+    "Changelog": "- Mappy：LocalPlayer 取值改走 Service.ObjectTable，清掉 11 處 API13 過時警告"
   },
   {
     "Author": "MidoriKami",
     "Name": "SortaKinda",
     "InternalName": "SortaKinda",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "依照你的需求整理物品欄，並維持指定的排序方式。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SortaKinda",
@@ -1873,16 +1873,16 @@
     "IconUrl": "",
     "Punchline": "全面自訂物品欄排序方式。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SortaKinda-v7.20.0.1/SortaKinda.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SortaKinda-v7.20.0.1/SortaKinda.zip",
-    "LastUpdate": 1787474286,
-    "Changelog": ""
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SortaKinda-v7.20.0.2/SortaKinda.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SortaKinda-v7.20.0.2/SortaKinda.zip",
+    "LastUpdate": 1787577082,
+    "Changelog": "- SortaKinda：LocalContentId 改走 IPlayerState、LocalPlayer 改走 IObjectTable，清掉 7 處 API13 過時警告"
   },
   {
     "Author": "Ice",
     "Name": "Explorer's Icebox",
     "InternalName": "ExplorersIcebox",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "協助提升無人島等級或採集各種無人島素材。需要 vnavmesh 與 Visland。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Explorers-Icebox",
@@ -1900,9 +1900,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ExplorersIcebox.png",
     "Punchline": "協助無人島開拓與素材採集。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ExplorersIcebox-v7.20.0.1/ExplorersIcebox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ExplorersIcebox-v7.20.0.1/ExplorersIcebox.zip",
-    "LastUpdate": 1787475452,
-    "Changelog": ""
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ExplorersIcebox-v7.20.0.2/ExplorersIcebox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ExplorersIcebox-v7.20.0.2/ExplorersIcebox.zip",
+    "LastUpdate": 1787577121,
+    "Changelog": "- Explorers-Icebox：LocalPlayer 取值改走 Svc.Objects，清掉 9 處 API13 過時警告"
   }
 ]
