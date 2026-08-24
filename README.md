@@ -1,6 +1,6 @@
 # DalamudPluginsTC
 
-台服（TC，Traditional Chinese client）專用的第三方 Dalamud 插件庫，收錄並持續維護 **53 個**對應台服客戶端的插件 fork。
+台服（TC，Traditional Chinese client）專用的第三方 Dalamud 插件庫，收錄並持續維護 **66 個**對應台服客戶端的插件 fork。
 
 台服目前使用的 Dalamud 為 **API Level 13**，而多數插件的官方版本已隨國際服前進到更新的 API 等級，無法直接在台服安裝。本倉庫維護這些插件對應 **TC 7.20（API13）** 的相容分支，並**已完成全面繁體中文化**（介面採台服官方譯名、對照官方遊戲資料表校訂）。
 
@@ -32,6 +32,10 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 | [**LazyLoot**](https://github.com/ffxiv-tc-port/LazyLoot) | [PunishXIV](https://github.com/PunishXIV/LazyLoot) | 打怪但懶得選骰的自動擲骰插件 |
 | [**IINACT**](https://github.com/ffxiv-tc-port/IINACT) | [marzent](https://github.com/marzent/IINACT) | 免 ACT 的戰鬥數據解析（內建 Overlay Plugin 移植版，TC opcodes 由 PlusoneChiang 維護） |
 | [**Crossingway**](https://github.com/ffxiv-tc-port/Crossingway) | [Styr1x/Browsingway](https://github.com/Styr1x/Browsingway) | 遊戲內 Chromium 瀏覽器覆蓋層（可搭配 IINACT 顯示戰鬥數據、Cactbot 時間軸等） |
+| [**Big Player Debuffs**](https://github.com/ffxiv-tc-port/BigPlayerDebuffs) | [rgd87](https://github.com/rgd87/BigPlayerDebuffs) | 放大自己施加在目標上的增益／減益圖示 |
+| [**EnemyListDebuffs**](https://github.com/ffxiv-tc-port/EnemyListDebuffs) | [aers](https://github.com/aers/EnemyListDebuffs) | 在敵對列表顯示你施加的減益／持續傷害圖示 |
+| [**WaymarkPresetPlugin**](https://github.com/ffxiv-tc-port/WaymarkPresetPlugin) | [PunishedPineapple](https://github.com/PunishedPineapple/WaymarkPresetPlugin) | 儲存、編輯、放置場地標點預設 |
+| [**Death Recap**](https://github.com/ffxiv-tc-port/ffxiv-deathrecap) | [Kouzukii](https://github.com/Kouzukii/ffxiv-deathrecap) | 死亡回顧：是什麼殺了你 |
 
 ### 狩獵與特殊場域
 
@@ -42,6 +46,7 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 | [**Eureka Helper**](https://github.com/ffxiv-tc-port/EurekaHelper) | [KangasZ](https://github.com/KangasZ/EurekaHelper) | 優雷卡追蹤器與多項實用功能整合 |
 | [**Logogram Helper**](https://github.com/ffxiv-tc-port/LogogramHelper) | [apetih](https://github.com/apetih/LogogramHelper) | 優雷卡聖言技能輔助 |
 | [**NecroLens**](https://github.com/ffxiv-tc-port/NecroLens) | [Jukkales](https://github.com/Jukkales/NecroLens) | 深層迷宮輔助（怪物雷達等） |
+| [**MonsterDex**](https://github.com/ffxiv-tc-port/MonsterDex) | [wolfcomp](https://github.com/wolfcomp/MonsterDex) | 深層迷宮怪物圖鑑（可暈眩／弱點等即時資訊） |
 | [**Palace Pal**](https://github.com/ffxiv-tc-port/PalacePal) | [PunishXIV](https://github.com/PunishXIV/PalacePal) | 深層迷宮陷阱與寶藏標示（需搭配 Splatoon） |
 | [**BOCCHI**](https://github.com/ffxiv-tc-port/BOCCHI) | [OhKannaDuh](https://github.com/OhKannaDuh/BOCCHI) | 蜃景新月島輔助介面（台服尚未開放該內容） |
 
@@ -55,6 +60,7 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 | [**Chilled Leves**](https://github.com/ffxiv-tc-port/ChilledLeves) | [LeontopodiumNivale14](https://github.com/LeontopodiumNivale14/ChilledLeves) | 理符任務，冰鎮上桌 |
 | [**Ice's Cosmic Exploration**](https://github.com/ffxiv-tc-port/ICE) | [LeontopodiumNivale14](https://github.com/LeontopodiumNivale14/Ices-Cosmic-Exploration) | 宇宙探索的自動化好夥伴 |
 | [**visland**](https://github.com/ffxiv-tc-port/visland) | [awgil](https://github.com/awgil/ffxiv_visland) | 無人島自動化（牧場／耕地／開拓工坊／採集） |
+| [**Explorer's Icebox**](https://github.com/ffxiv-tc-port/Explorers-Icebox) | [LeontopodiumNivale14](https://github.com/LeontopodiumNivale14/Explorers-Icebox) | 配合 vnavmesh／visland 的無人島採集自動化 |
 
 ### 任務與移動
 
@@ -68,6 +74,7 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 | [**Lifestream**](https://github.com/ffxiv-tc-port/Lifestream) | [NightmareXIV](https://github.com/NightmareXIV/Lifestream) | 乙太之光傳送與跨世界旅行加速 |
 | [**vnavmesh**](https://github.com/ffxiv-tc-port/vnavmesh) | [awgil](https://github.com/awgil/ffxiv_navmesh) | 自動尋路／移動 |
 | [**Skip Cutscene**](https://github.com/ffxiv-tc-port/SkipCutscene) | [KangasZ](https://github.com/KangasZ/SkipCutscene) | 跳過任務輪盤中強制播放的過場動畫 |
+| [**Zodiac Buddy**](https://github.com/ffxiv-tc-port/ZodiacBuddy) | [foophoof](https://github.com/foophoof/ZodiacBuddy) | 舊版古武（神兵）任務助手：傳送捷徑與魔典目標定位 |
 
 ### 金碟與小遊戲
 
@@ -104,7 +111,12 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 | [**Mini-Mappingway**](https://github.com/ffxiv-tc-port/MiniMappingway) | [jaycewhite](https://github.com/jaycewhite/MiniMappingway) | 在小地圖上顯示好友與公會成員 |
 | [**Character Panel Refined**](https://github.com/ffxiv-tc-port/CharacterPanelRefined) | [Kouzukii](https://github.com/Kouzukii/ffxiv-characterstatus-refined) | 精簡角色面板，顯示暴擊率等實用數值 |
 | [**XIV 藏寶圖工具小幫手**](https://github.com/ffxiv-tc-port/XivTreasureParty) | [cycleapple](https://github.com/cycleapple/xiv-party-treasure-helper) | 藏寶圖組隊協作，與網頁版即時共享房間 |
-| [**TC Toolbox**](https://github.com/ffxiv-tc-port/TCToolbox) | 自製 | 台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化 |
+| [**TC Toolbox**](https://github.com/ffxiv-tc-port/TCToolbox) | 自製 | 台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化、批次僱員改名 |
+| [**Mappy**](https://github.com/ffxiv-tc-port/Mappy) | [harbingerftw](https://github.com/harbingerftw/Mappy) | ImGui 重繪並取代原生地圖視窗的全功能地圖 |
+| [**SortaKinda**](https://github.com/ffxiv-tc-port/SortaKinda) | [MidoriKami](https://github.com/MidoriKami/SortaKinda) | 依規則把背包道具排進指定槽位，取代原生 /isort |
+| [**Peeping Tom**](https://github.com/ffxiv-tc-port/PeepingTom) | [Caraxi](https://github.com/Caraxi/PeepingTom) | 顯示誰正在指向你（可選聊天記錄與音效提示） |
+| [**Better Mount Roulette**](https://github.com/ffxiv-tc-port/BetterMountRoulette) | [CMDRNuffin](https://github.com/CMDRNuffin/BetterMountRoulette) | 從自訂坐騎分組隨機召喚 |
+| [**High FPS Physics**](https://github.com/ffxiv-tc-port/xivlauncher_physics_plugin) | [ItsLunaYup](https://github.com/ItsLunaYup/xivlauncher_physics_plugin) | 修正高幀率下的布料／頭髮物理模擬 |
 
 ### 開發工具
 
