@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.20.0.84",
+    "AssemblyVersion": "7.20.0.85",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.84/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.84/Artisan.zip",
-    "Changelog": "- 修復除錯分頁「Item」「Disable」未接上既有繁中翻譯",
-    "LastUpdate": 1787577028
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.85/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.85/Artisan.zip",
+    "Changelog": "- 同步上游:新增每配方「臨時」工藝設定 IPC,外掛可指定解算器與食物藥水而不寫進設定檔\n- 同步上游:IPC 製作在配方沒選中時拒絕啟動,不再默默做成當下選著的配方",
+    "LastUpdate": 1787583137
   },
   {
     "Author": "Herculezz",
@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.20.0.92",
+    "AssemblyVersion": "7.20.0.93",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.92/BossModReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.92/BossModReborn.zip",
-    "Changelog": "- 補完「新增模組」選單分類 3 條：MODCAT_AI/MODCAT_DPS/MODCAT_PvP",
-    "LastUpdate": 1787576608,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.93/BossModReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.93/BossModReborn.zip",
+    "Changelog": "- 修正 AI 強制取消詠唱旗標在「迷惑」分支殘留：凝視過後仍卡在 true 導致詠唱被一直打斷",
+    "LastUpdate": 1787583155,
     "CategoryTags": [
       "Jobs"
     ]
@@ -294,7 +294,7 @@
     "Author": "Nylfae",
     "Name": "Dynamis",
     "InternalName": "Dynamis",
-    "AssemblyVersion": "7.20.0.6",
+    "AssemblyVersion": "7.20.0.7",
     "Description": "本插件包含多種透過動態分析輔助遊戲逆向工程與原型製作的工具。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Dynamis",
@@ -313,16 +313,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Dynamis.png",
     "Punchline": "開發/除錯/逆向工程工具與實驗工作台。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Dynamis-v7.20.0.6/Dynamis.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Dynamis-v7.20.0.6/Dynamis.zip",
-    "Changelog": "- CI：修正 build-check 從未真正建置的問題",
-    "LastUpdate": 1786826438
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Dynamis-v7.20.0.7/Dynamis.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Dynamis-v7.20.0.7/Dynamis.zip",
+    "Changelog": "- 開發者工具面板補齊繁中在地化:物件檢視器/中斷點/特徵碼掃描器等 UI 接上 .Loc()",
+    "LastUpdate": 1787583152
   },
   {
     "Author": "Nylfae",
     "Name": "Dynamis (with Hosted PowerShell)",
     "InternalName": "DynamisWithSMA",
-    "AssemblyVersion": "7.20.0.6",
+    "AssemblyVersion": "7.20.0.7",
     "Description": "本插件包含多種透過動態分析輔助遊戲逆向工程與原型製作的工具，此版本額外內建 PowerShell 主機。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Dynamis",
@@ -342,10 +342,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DynamisWithSMA.png",
     "Punchline": "開發/除錯/逆向工程工具與實驗工作台（含內建 PowerShell）。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.20.0.6/DynamisWithSMA.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.20.0.6/DynamisWithSMA.zip",
-    "Changelog": "- CI：修正 build-check 從未真正建置的問題",
-    "LastUpdate": 1786826438
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.20.0.7/DynamisWithSMA.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DynamisWithSMA-v7.20.0.7/DynamisWithSMA.zip",
+    "Changelog": "- 開發者工具面板補齊繁中在地化:物件檢視器/中斷點/特徵碼掃描器等 UI 接上 .Loc()",
+    "LastUpdate": 1787583152
   },
   {
     "Author": "Snowy, KangasZ",
@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.20.0.33",
+    "AssemblyVersion": "7.20.0.34",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,16 +409,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.33/GatherbuddyReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.33/GatherbuddyReborn.zip",
-    "Changelog": "- ECommons repin 至 f19658a:計數欄位夾到固定容量(FocusedUnitsList/跨界隊伍)+在地化接線批",
-    "LastUpdate": 1787162641
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.34/GatherbuddyReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.34/GatherbuddyReborn.zip",
+    "Changelog": "- 移植 cycleapple 的 AutoGather 卡死自救升級層:近端復原連續失敗且角色沒離開區域才升級,自救動作限縮在既有能力內",
+    "LastUpdate": 1787583111
   },
   {
     "Author": "img02",
     "Name": "Hunt Helper",
     "InternalName": "HuntHelper",
-    "AssemblyVersion": "7.20.0.11",
+    "AssemblyVersion": "7.20.0.12",
     "Description": "顯示標記重生點的狩獵地圖、A級討伐車隊記錄器（可匯出/匯入分享）、語音播報、聊天通知，以及S級討伐重生計數器",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/HuntHelper",
@@ -438,10 +438,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/HuntHelper.png",
     "Punchline": "打寶雷達＋車隊記錄器＋通知＋S級討伐輔助工具等一應俱全。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.11/HuntHelper.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.11/HuntHelper.zip",
-    "Changelog": "- HuntHelper：LocalPlayer 改走 IObjectTable、LocalContentId 改走 IPlayerState，清掉 15 處 API13 過時警告",
-    "LastUpdate": 1787577076
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.12/HuntHelper.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.12/HuntHelper.zip",
+    "Changelog": "- 在地化：除錯視窗補上繁中翻譯",
+    "LastUpdate": 1787583077
   },
   {
     "Author": "Critical_Impact",
@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.56",
+    "AssemblyVersion": "7.20.0.57",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速以太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.56/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.56/Lifestream.zip",
-    "Changelog": "- MaxInstances 填入台服候選特徵碼並加執行期語意自證診斷",
-    "LastUpdate": 1787468390
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.57/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.57/Lifestream.zip",
+    "Changelog": "- 除錯視窗補齊繁中在地化:UIDebug.cs 分頁標籤/按鈕/欄位標籤接上 .Loc()",
+    "LastUpdate": 1787583119
   },
   {
     "Author": "apetih",
@@ -884,7 +884,7 @@
     "Author": "Sonar Team",
     "Name": "Sonar",
     "InternalName": "SonarPlugin",
-    "AssemblyVersion": "7.20.0.8",
+    "AssemblyVersion": "7.20.0.9",
     "Description": "自動傳送與接收打寶及 FATE 情報。輸入 /sonar 開啟主視窗，/sonarconfig 進行設定。技術支援僅提供於 Sonar Support Discord。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SonarPlugin",
@@ -904,10 +904,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SonarPlugin.png",
     "Punchline": "自動傳送與接收打寶及 FATE 情報。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SonarPlugin-v7.20.0.8/SonarPlugin.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SonarPlugin-v7.20.0.8/SonarPlugin.zip",
-    "Changelog": "- SonarPlugin：IClientState.LocalPlayer 遷移到 IObjectTable.LocalPlayer，清掉 2 處 API13 過時警告",
-    "LastUpdate": 1787577020
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SonarPlugin-v7.20.0.9/SonarPlugin.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SonarPlugin-v7.20.0.9/SonarPlugin.zip",
+    "Changelog": "- SonarPlugin 在地化：啟用既有的 EnumLoc 語言檔機制補上 250 條中文、偵錯分頁 18 條英文殘留外部化、26 條術語照 TC 7.20 資料表更正\n- 同步 Sonar 上游兩個純 C# 修：UnixNow 改執行緒安全、重連 Task 加 unobserved exception 觀測",
+    "LastUpdate": 1787583152
   },
   {
     "Author": "NightmareXIV",
@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.20.0.40",
+    "AssemblyVersion": "7.20.0.41",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- ReusableIPC.IsEnabled 先問「外掛載入了沒」:未安裝時不再靠哨兵版本號矇混成 true",
+    "Changelog": "- 補完在地化兩處殘留：ECommons ini 29 條缺鍵 + ReplaceWithChinese 字典 3 條真缺口",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.40/WrathCombo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.40/WrathCombo.zip",
-    "LastUpdate": 1787575226,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.41/WrathCombo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.41/WrathCombo.zip",
+    "LastUpdate": 1787583098,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1330,7 +1330,7 @@
     "Author": "Ice",
     "Name": "Chilled Leves",
     "InternalName": "ChilledLeves",
-    "AssemblyVersion": "7.20.0.25",
+    "AssemblyVersion": "7.20.0.26",
     "Description": "理符任務輔助工具：讓你挑選想接的理符任務，並自動前往接取、執行與繳交。注意：必須先安裝 vnavmesh 才能使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ChilledLeves",
@@ -1350,16 +1350,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ChilledLeves.png",
     "Punchline": "理符任務，冰鎮上桌。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.25/ChilledLeves.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.25/ChilledLeves.zip",
-    "Changelog": "- ECommons repin 至 f19658a:計數欄位夾到固定容量(FocusedUnitsList/跨界隊伍)+在地化接線批",
-    "LastUpdate": 1787162620
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.26/ChilledLeves.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.26/ChilledLeves.zip",
+    "Changelog": "- 除錯視窗補齊繁中在地化:DebugWindow.cs 全數按鈕/標籤/欄位標題接上 .Loc()",
+    "LastUpdate": 1787583086
   },
   {
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.20.0.91",
+    "AssemblyVersion": "7.20.0.92",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.91/ICE.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.91/ICE.zip",
-    "Changelog": "- 刷職業成果支援：放棄耗時計入效率、實測成果效率排序、金星穩定度指標",
-    "LastUpdate": 1787451057
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.92/ICE.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.92/ICE.zip",
+    "Changelog": "- 同步 ICE(cycleapple 65a5806 子集):緊急任務繳交點加 IsTargetable 過濾與預期座標半徑——不再挑到別區或點不動的那一個\n- 同步 ICE(cycleapple 65a5806 子集):工程管理解鎖判定加第二套(UnlockLink)並跑,不一致時印 Information——還沒切換權威\n- 同步 ICE(cycleapple 65a5806 子集):據點範圍檢查改逐區域查表——原本 Sinus Ardorum 那邊只是碰巧會動,離開月面則會無限重試\n- 註記 ICE(cycleapple 8a7c91a):側欄圖示 65127 的台服可用版本是 65126——我方側欄已無圖示呼叫點,只留紀錄\n- 同步 ICE(cycleapple 65a5806 子集):任務設定存檔加互斥閘門——序列化與寫檔一起圈住,避免「存了但存到舊的快照」\n- 同步 ICE(cycleapple 5c1d86c):採集設定檔初始化順序——雙職(採集+製作)任務永遠拿不到 Dual Class 設定檔\n- 同步 ICE(cycleapple e0723f5):騎乘判定 inMission 反了——「任務中/任務外」兩個騎乘設定行為互相對調\n- 在地化：Debug 分頁英文殘留補翻（DebugWindow 與 20 個 DebugWindowTabs 子頁）",
+    "LastUpdate": 1787583131
   },
   {
     "Author": "Liza Carvelli",
@@ -1579,7 +1579,7 @@
     "Author": "WildWolf",
     "Name": "MonsterDex",
     "InternalName": "DeepDungeonDex",
-    "AssemblyVersion": "7.20.0.4",
+    "AssemblyVersion": "7.20.0.5",
     "Description": "即時顯示深層迷宮魔物的仇恨類型、威脅程度、狀態弱點及重要機制概覽。\n威脅程度主要供單人攻略參考，資料來自社群蒐集；原名 DeepDungeonDex。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/MonsterDex",
@@ -1600,10 +1600,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DeepDungeonDex.png",
     "Punchline": "即時顯示深層迷宮魔物資料。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DeepDungeonDex-v7.20.0.4/DeepDungeonDex.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DeepDungeonDex-v7.20.0.4/DeepDungeonDex.zip",
-    "LastUpdate": 1787468183,
-    "Changelog": "- 修切換語言崩潰:語言資料背景載入未完成時設定視窗對 null locale 每幀 NRE"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DeepDungeonDex-v7.20.0.5/DeepDungeonDex.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DeepDungeonDex-v7.20.0.5/DeepDungeonDex.zip",
+    "LastUpdate": 1787583109,
+    "Changelog": "- 在地化：Debug 除錯視窗補上繁中翻譯\n- 刪除上游殘留的自家發版 workflow(觸發條件在本 org 永不成立,且依賴不存在的 secret)"
   },
   {
     "Author": "d87",
@@ -1882,7 +1882,7 @@
     "Author": "Ice",
     "Name": "Explorer's Icebox",
     "InternalName": "ExplorersIcebox",
-    "AssemblyVersion": "7.20.0.2",
+    "AssemblyVersion": "7.20.0.3",
     "Description": "協助提升無人島等級或採集各種無人島素材。需要 vnavmesh 與 Visland。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Explorers-Icebox",
@@ -1900,9 +1900,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ExplorersIcebox.png",
     "Punchline": "協助無人島開拓與素材採集。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ExplorersIcebox-v7.20.0.2/ExplorersIcebox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ExplorersIcebox-v7.20.0.2/ExplorersIcebox.zip",
-    "LastUpdate": 1787577121,
-    "Changelog": "- Explorers-Icebox：LocalPlayer 取值改走 Svc.Objects，清掉 9 處 API13 過時警告"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ExplorersIcebox-v7.20.0.3/ExplorersIcebox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ExplorersIcebox-v7.20.0.3/ExplorersIcebox.zip",
+    "LastUpdate": 1787583163,
+    "Changelog": "- 在地化：Debug 面板九個分頁補上繁中翻譯"
   }
 ]
