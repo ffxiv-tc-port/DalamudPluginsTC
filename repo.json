@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.20.0.91",
+    "AssemblyVersion": "7.20.0.92",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.91/BossModReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.91/BossModReborn.zip",
-    "Changelog": "- 統一剩餘 3 個帶 .Trim() 的 preset 名查找點到 PresetDatabase.NameComparison",
-    "LastUpdate": 1787468442,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.92/BossModReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.92/BossModReborn.zip",
+    "Changelog": "- 補完「新增模組」選單分類 3 條：MODCAT_AI/MODCAT_DPS/MODCAT_PvP",
+    "LastUpdate": 1787576608,
     "CategoryTags": [
       "Jobs"
     ]
@@ -263,7 +263,7 @@
     "Author": "Infi, Anna",
     "Name": "Chat 2",
     "InternalName": "ChatTwo",
-    "AssemblyVersion": "7.20.0.24",
+    "AssemblyVersion": "7.20.0.25",
     "Description": "Chat 2 是遊戲內建聊天視窗的完整重寫版外掛。\n支援功能：\n\n- 無限分頁\n- 固定發送到特定頻道的分頁\n- 更靈活的過濾功能\n- RGB 頻道顏色\n- 完全可變字體大小\n- 側邊欄分頁\n- 未讀訊息計數\n- 表情符號\n- 截圖模式（隱藏名稱）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ChatTwo",
@@ -285,10 +285,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ChatTwo.png",
     "Punchline": "電光石火 - ♪ 全新的聊天視窗，一個嶄新美妙的聊天窗口 ♪",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.24/ChatTwo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.24/ChatTwo.zip",
-    "Changelog": "- 更新 vtable 槽 27 註解:已對台服執行檔離線驗證為 FocusAddon,排除差一風險",
-    "LastUpdate": 1787096356
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.25/ChatTwo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.25/ChatTwo.zip",
+    "Changelog": "- 同步上游:字型只載入日文漢字範圍,補上繁中字集避免部分中文字顯示不出來\n- CI 加入 resx 空值閘門:建置前擋下崩潰級的「鍵存在但值為空」",
+    "LastUpdate": 1787576548
   },
   {
     "Author": "Nylfae",
@@ -766,7 +766,7 @@
     "Author": "Kouzukii",
     "Name": "Price Insight",
     "InternalName": "PriceInsight",
-    "AssemblyVersion": "7.20.0.12",
+    "AssemblyVersion": "7.20.0.13",
     "Description": "當你將滑鼠移到道具上時，會在下方顯示該道具的普通品/高品質市場公告板價格，以及最近一次的成交紀錄。\n價格資料來自 Universalis.app，並會快取 90 分鐘。\n若要重新整理價格，可在滑鼠懸停於道具上時按住 Alt 鍵。\n",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PriceInsight",
@@ -786,10 +786,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/PriceInsight.png",
     "Punchline": "滑鼠懸停即可查看道具的市場公告板價格！",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PriceInsight-v7.20.0.12/PriceInsight.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PriceInsight-v7.20.0.12/PriceInsight.zip",
-    "Changelog": "- Cleanup 的節點迴圈補判 NodeList 指標(同檔另外兩處都判了,只有這裡漏掉)",
-    "LastUpdate": 1787159836
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PriceInsight-v7.20.0.13/PriceInsight.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PriceInsight-v7.20.0.13/PriceInsight.zip",
+    "Changelog": "- 同步上游:聚合端點回 400 的染色劑改用 v3 overview 端點逐項補查",
+    "LastUpdate": 1787576525
   },
   {
     "Author": "UnknownX",
