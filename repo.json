@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.20.0.67",
+    "AssemblyVersion": "7.20.0.68",
     "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：部隊合建素材一鍵全交、野外陸行鳥自動餵食基薩爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.67/TCToolbox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.67/TCToolbox.zip",
-    "Changelog": "- TCToolbox：新增「任務搜尋器快速登記」模組，讀 Agent 結構取代掃節點，一鍵開啟常用/選取副本\n- TCToolbox：新增「指令開啟任務搜尋器」模組（/tcduty），只開啟並選取不自動排隊",
-    "LastUpdate": 1787641255
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.68/TCToolbox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.68/TCToolbox.zip",
+    "Changelog": "- TCToolbox：新增「商店快速購買（預設）」模組，現地擷取商店清單點擊記成預設一鍵重播叫出購買框；不自動點確認、不連續自動買（花錢由使用者按）\n- TCToolbox：新增「軍票商店快速交換」模組，手動填道具名/數量一鍵換取，花軍票的確認框一律由使用者自己按（不自動點）\n- TCToolbox：新增「雇員存取加速」模組，右鍵選單一次全部寄放/取回同款道具，走實機驗證過的雇員道具命令（非 MoveItemSlot）\n- TCToolbox：新增「商店列表顯示真實道具圖示」模組，把商店/兌換/軍票/收藏品清單縮圖換成道具真圖",
+    "LastUpdate": 1787643139
   },
   {
     "Author": "daemitus, MidoriKami",
