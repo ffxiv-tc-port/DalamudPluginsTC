@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.20.0.70",
+    "AssemblyVersion": "7.20.0.71",
     "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：部隊合建素材一鍵全交、野外陸行鳥自動餵食基薩爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.70/TCToolbox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.70/TCToolbox.zip",
-    "Changelog": "- TCToolbox：新增「自動維持食物 buff」模組，指定時機（進副本／倒數／條件變更）自動補食物維持元氣\n- TCToolbox：新增「數字輸入框放大上限」模組，把上限卡在 99 的數字輸入框放寬到設定值，可直接輸入更大數字\n- TCToolbox：新增「自動切換輸入法配置」模組，輸入框取得焦點切到指定配置、離開切回操作配置，斜線指令保持英數\n- TCToolbox：新增「顯示主線任務進度」模組，在冒險筆記劇情任務清單標題列補上目前資料片主線的剩餘數與完成百分比",
-    "LastUpdate": 1787646337
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.71/TCToolbox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.71/TCToolbox.zip",
+    "Changelog": "- 新增 BetterFateProgressUI 模組：共鬥 F.A.T.E. 完成數與雙色寶石進度總覽（成就查詢排隊每秒一筆、手動地圖／傳送）\n- 新增 QueueCombatTeleport 模組：戰鬥中排隊傳送、脫戰後經 Lifestream IPC 執行（零 patch 零封包）",
+    "LastUpdate": 1787647659
   },
   {
     "Author": "daemitus, MidoriKami",
