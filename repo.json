@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.20.0.86",
+    "AssemblyVersion": "7.20.0.87",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.86/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.86/Artisan.zip",
-    "Changelog": "- ECommons repin 58db205:Svc 補 IPlayerState、LocalPlayer/LocalContentId 過時呼叫遷移",
-    "LastUpdate": 1787583666
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.87/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.87/Artisan.zip",
+    "Changelog": "- 同步上游:宇宙探索收藏品品質門檻修正——低/中/高改用 WKSMissionToDoEvalutionRefin 換算",
+    "LastUpdate": 1787678434
   },
   {
     "Author": "Herculezz",
@@ -766,7 +766,7 @@
     "Author": "Kouzukii",
     "Name": "Price Insight",
     "InternalName": "PriceInsight",
-    "AssemblyVersion": "7.20.0.13",
+    "AssemblyVersion": "7.20.0.14",
     "Description": "當你將滑鼠移到道具上時，會在下方顯示該道具的普通品/高品質市場公告板價格，以及最近一次的成交紀錄。\n價格資料來自 Universalis.app，並會快取 90 分鐘。\n若要重新整理價格，可在滑鼠懸停於道具上時按住 Alt 鍵。\n",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PriceInsight",
@@ -786,10 +786,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/PriceInsight.png",
     "Punchline": "滑鼠懸停即可查看道具的市場公告板價格！",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PriceInsight-v7.20.0.13/PriceInsight.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PriceInsight-v7.20.0.13/PriceInsight.zip",
-    "Changelog": "- 同步上游:聚合端點回 400 的染色劑改用 v3 overview 端點逐項補查",
-    "LastUpdate": 1787576525
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PriceInsight-v7.20.0.14/PriceInsight.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PriceInsight-v7.20.0.14/PriceInsight.zip",
+    "Changelog": "- 同步上游:強化台服染色劑 v3 overview fallback(併發批次、404 逐世界重試、局部資料標無資料、截斷防護)",
+    "LastUpdate": 1787678266
   },
   {
     "Author": "UnknownX",
@@ -1213,7 +1213,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.20.0.40",
+    "AssemblyVersion": "7.20.0.41",
     "Description": "A tiny little quest helper plugin, which does quests for you automatically where possible. Uses navmesh to automatically walk to all quest waypoints, and tries to automatically complete all steps along the way (excluding dungeons, single player duties and combat).\n\nNot all quests are supported, check the discord or git repository for an up-to-date list.\n\nRequired Plugins: vnavmesh, TextAdvance, Lifestream",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,10 +1232,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "A tiny quest helper plugin.",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.40/Questionable.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.40/Questionable.zip",
-    "Changelog": "- ECommons repin 58db205:Svc 補 IPlayerState、LocalPlayer/LocalContentId 過時呼叫遷移",
-    "LastUpdate": 1787583772
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.41/Questionable.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.41/Questionable.zip",
+    "Changelog": "- 同步上游：任務日誌新增「隱藏已完成任務」勾選框",
+    "LastUpdate": 1787678380
   },
   {
     "Author": "NightmareXIV",
@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.20.0.96",
+    "AssemblyVersion": "7.20.0.97",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.96/ICE.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.96/ICE.zip",
-    "Changelog": "- 修正 ICE UsingSupportedJob 職業過濾失效（|| 恆為 true）",
-    "LastUpdate": 1787677005
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.97/ICE.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.97/ICE.zip",
+    "Changelog": "- 同步上游:離開宇宙探索區自動關閉浮動視窗、精選萃取前先驗解鎖任務638",
+    "LastUpdate": 1787678356
   },
   {
     "Author": "Liza Carvelli",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.20.0.40",
+    "AssemblyVersion": "7.20.0.41",
     "Description": "[Questionable dev plugin]: Renders gathering location using Pictomancy.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable dev plugin]: Renders gathering location.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.40/GatheringPathRenderer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.40/GatheringPathRenderer.zip",
-    "LastUpdate": 1787583772,
-    "Changelog": "- ECommons repin 58db205:Svc 補 IPlayerState、LocalPlayer/LocalContentId 過時呼叫遷移"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.41/GatheringPathRenderer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.41/GatheringPathRenderer.zip",
+    "LastUpdate": 1787678380,
+    "Changelog": "- 同步上游：任務日誌新增「隱藏已完成任務」勾選框"
   },
   {
     "Author": "WildWolf",
