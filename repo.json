@@ -679,7 +679,7 @@
     "Author": "NightmareXIV",
     "Name": "NotificationMaster",
     "InternalName": "NotificationMaster",
-    "AssemblyVersion": "7.20.0.15",
+    "AssemblyVersion": "7.20.0.16",
     "Description": "在遊戲視窗縮到最小時，通知你各種遊戲內事件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/NotificationMaster",
@@ -698,10 +698,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/NotificationMaster.png",
     "Punchline": "目前支援的通知：聊天訊息、接近地圖標記、已找到任務、過場動畫結束、GP 恢復、登入時發生錯誤、怪物已被拉起、任務開始、準備確認、隊友看完過場動畫。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.15/NotificationMaster.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.15/NotificationMaster.zip",
-    "Changelog": "- ECommons repin 至 f19658a:計數欄位夾到固定容量(FocusedUnitsList/跨界隊伍)+在地化接線批",
-    "LastUpdate": 1787162673
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.16/NotificationMaster.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.16/NotificationMaster.zip",
+    "Changelog": "- 新增「戰鬥開始倒數」通知：隊伍發起倒數時閃工作列／系統匣通知／音效／HTTP，預設關",
+    "LastUpdate": 1787638012
   },
   {
     "Author": "Liza Carvelli (Puni.sh)",
@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.20.0.34",
+    "AssemblyVersion": "7.20.0.35",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.34/Saucy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.34/Saucy.zip",
-    "Changelog": "- ECommons repin 58db205:Svc 補 IPlayerState、LocalPlayer/LocalContentId 過時呼叫遷移",
-    "LastUpdate": 1787583647,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.35/Saucy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.35/Saucy.zip",
+    "Changelog": "- 新增仙人仙彩購票輔助:自動填號碼並叫出確認框,扣款那一按永遠留給玩家",
+    "LastUpdate": 1787638032,
     "CategoryTags": [
       "Minigames"
     ]
@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.20.0.93",
+    "AssemblyVersion": "7.20.0.94",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.93/ICE.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.93/ICE.zip",
-    "Changelog": "- ECommons repin 58db205:Svc 補 IPlayerState、LocalPlayer/LocalContentId 過時呼叫遷移",
-    "LastUpdate": 1787583718
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.94/ICE.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.94/ICE.zip",
+    "Changelog": "- 同步 ICE:自動衝刺改成真的放「宇宙衝刺」(Action 43357)——原本等的是狀態 4398、送出去的卻是一般衝刺",
+    "LastUpdate": 1787638052
   },
   {
     "Author": "Liza Carvelli",
@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.20.0.64",
+    "AssemblyVersion": "7.20.0.65",
     "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：部隊合建素材一鍵全交、野外陸行鳥自動餵食基薩爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.64/TCToolbox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.64/TCToolbox.zip",
-    "Changelog": "- 批次僱員改名：每隻收尾自動離開傳喚鈴、喝藥前發現鈴佔用先自行收掉——鈴佔用中 UseAction 靜默無效，下一隻會卡在喝藥",
-    "LastUpdate": 1787502006
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.65/TCToolbox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.65/TCToolbox.zip",
+    "Changelog": "- 新增模組「風脈泉一覽」：本區風脈泉清單＋世界疊加層，移動只走傳送水晶＋vnavmesh\n- 道具快速拆分：滑鼠座標改在繪製那一幀取，不在右鍵選單的 callback 裡呼叫 ImGui\n- 修正：用 Throttle.Pass 設「連續失敗退避」會靜默失效，改用新加的 Throttle.Block\n- 新增模組「收藏櫃：可收納裝備一鍵存入」：命令碼 425 離線驗過，且一律跳過存進去會壞掉的裝備\n- 新增模組「道具快速拆分」：右鍵填數字直接拆，走遊戲原生拆分選單不直接改容器\n- 新增模組「自動使用生產／採集指南」：未滿等且無加成狀態時自動吃工程學／生存學指南",
+    "LastUpdate": 1787638005
   },
   {
     "Author": "daemitus, MidoriKami",
