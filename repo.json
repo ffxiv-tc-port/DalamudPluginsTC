@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.20.0.35",
+    "AssemblyVersion": "7.20.0.36",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.35/Saucy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.35/Saucy.zip",
-    "Changelog": "- 新增仙人仙彩購票輔助:自動填號碼並叫出確認框,扣款那一按永遠留給玩家",
-    "LastUpdate": 1787638032,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.36/Saucy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.36/Saucy.zip",
+    "Changelog": "- 新增九宮幻卡「快速賣重複卡」輔助:交換視窗開著時列出可換 MGP 的重複卡,賣與確認全留給玩家",
+    "LastUpdate": 1787664790,
     "CategoryTags": [
       "Minigames"
     ]
