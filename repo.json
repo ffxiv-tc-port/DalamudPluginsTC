@@ -447,7 +447,7 @@
     "Author": "Critical_Impact",
     "Name": "Allagan Tools",
     "InternalName": "InventoryTools",
-    "AssemblyVersion": "7.20.0.32",
+    "AssemblyVersion": "7.20.0.33",
     "Description": "Allagan Tools 的主要目的是追蹤你所有角色/僱員/公會倉庫中的道具。透過它的篩選系統，你將不再遺失任何道具的蹤跡，也不再不知道道具該收納在哪裡。\n\n雖然這是它的主要功能，但它還擁有相當豐富的其他功能，包括：\n\t- 製作規劃\n\t- 市場公告板整合\n\t- 在搜尋/整理及挑選製作材料時於背包中高亮顯示道具\n\t- 包含商人與取得來源等資訊的道具視窗\n\t- 可完整搜尋的任務/怪物/飛空艇/潛水艇視窗\n\t- 讓你能為特定道具設定複雜搜尋條件的篩選系統\n\t- 提示視窗整合，滑鼠懸停即可查看道具所在位置",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/InventoryTools",
@@ -467,10 +467,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/InventoryTools.png",
     "Punchline": "讓你的 FFXIV 井井有條，輕鬆定位/顯示道具應收納何處、規劃製作，並搜尋怪物、任務、飛空艇與潛水艇！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.32/InventoryTools.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.32/InventoryTools.zip",
-    "Changelog": "- InventoryTools：跟進 CriticalCommonLib 的 IPlayerState 遷移，於 DI 容器補註冊 IPlayerState",
-    "LastUpdate": 1787665350
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.33/InventoryTools.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.33/InventoryTools.zip",
+    "Changelog": "- InventoryTools 市場欄位與設定的台服在地化提示",
+    "LastUpdate": 1787677003
   },
   {
     "Author": "electr0sheep, Nuko",
@@ -679,7 +679,7 @@
     "Author": "NightmareXIV",
     "Name": "NotificationMaster",
     "InternalName": "NotificationMaster",
-    "AssemblyVersion": "7.20.0.16",
+    "AssemblyVersion": "7.20.0.17",
     "Description": "在遊戲視窗縮到最小時，通知你各種遊戲內事件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/NotificationMaster",
@@ -698,10 +698,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/NotificationMaster.png",
     "Punchline": "目前支援的通知：聊天訊息、接近地圖標記、已找到任務、過場動畫結束、GP 恢復、登入時發生錯誤、怪物已被拉起、任務開始、準備確認、隊友看完過場動畫。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.16/NotificationMaster.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.16/NotificationMaster.zip",
-    "Changelog": "- 新增「戰鬥開始倒數」通知：隊伍發起倒數時閃工作列／系統匣通知／音效／HTTP，預設關",
-    "LastUpdate": 1787638012
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.17/NotificationMaster.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.17/NotificationMaster.zip",
+    "Changelog": "- 修正 NotificationMaster 的 Dispose() 漏收 PartyFinder 模組",
+    "LastUpdate": 1787676925
   },
   {
     "Author": "Liza Carvelli (Puni.sh)",
@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.20.0.36",
+    "AssemblyVersion": "7.20.0.37",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.36/Saucy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.36/Saucy.zip",
-    "Changelog": "- 新增九宮幻卡「快速賣重複卡」輔助:交換視窗開著時列出可換 MGP 的重複卡,賣與確認全留給玩家",
-    "LastUpdate": 1787664790,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.37/Saucy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.37/Saucy.zip",
+    "Changelog": "- 修正 Saucy ImGuiScopes.Window 未無條件配對 ImGui.End",
+    "LastUpdate": 1787676928,
     "CategoryTags": [
       "Minigames"
     ]
@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.20.0.95",
+    "AssemblyVersion": "7.20.0.96",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.95/ICE.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.95/ICE.zip",
-    "Changelog": "- 同步 ICE(cycleapple 5ecca374):任務預設組(playlist)——存/載目前啟用的任務組合,只切 Enabled 不動優先序\n- 同步 ICE(cycleapple 92a01bd5 資料+57b5018 純函式):採集接近角——依角度資料從允許方向靠近採集點(A8+B4 綁一批)\n- 同步 ICE(cycleapple 65a5806b 機制):限量採集點耗盡追蹤取代死碼 nodeTotal>=7——採光即收手驗分,不再乾等逾時\n- 同步 ICE(cycleapple 65a5806b/5e480bd2 決策邏輯):任務逾時先驗分再決定交件或放棄——製作/採集/雙職三個逾時出口不再無條件放棄\n- 同步 ICE(cycleapple 2e270b6d 子集):本區本職普通任務全金評就停——新增停手條件,金評旗標走我方 CustomCs 原生讀取",
-    "LastUpdate": 1787666211
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.96/ICE.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.96/ICE.zip",
+    "Changelog": "- 修正 ICE UsingSupportedJob 職業過濾失效（|| 恆為 true）",
+    "LastUpdate": 1787677005
   },
   {
     "Author": "Liza Carvelli",
