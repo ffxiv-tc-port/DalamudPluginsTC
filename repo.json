@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.20.0.94",
+    "AssemblyVersion": "7.20.0.95",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.94/BossModReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.94/BossModReborn.zip",
-    "Changelog": "- BossmodReborn:新增「按住指定鍵暫停自動移動」,預設綁定 Alt\n- 歷史整理:壓縮 194 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 13 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge tc-7.15-async-fix: fix main-thread freeze bugs\n- 歷史整理:壓縮 23 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1787742828,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.95/BossModReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.95/BossModReborn.zip",
+    "Changelog": "- BossmodReborn:按住暫停的失敗分支改成每串只記一次 log,避免每秒灌 10 行 Information\n- BossmodReborn:深牢「走到房間」也吃按住暫停鍵,按住停在原地、放開沿原路徑續走",
+    "LastUpdate": 1787744266,
     "CategoryTags": [
       "Jobs"
     ]
@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.58",
+    "AssemblyVersion": "7.20.0.59",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速以太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.58/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.58/Lifestream.zip",
-    "Changelog": "- ECommons repin 58db205:Svc 補 IPlayerState、LocalPlayer/LocalContentId 過時呼叫遷移",
-    "LastUpdate": 1787583668
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.59/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.59/Lifestream.zip",
+    "Changelog": "- 修復 Lifestream 進度條消失:登出時 Splatoon 繪路徑擲 NRE 把視窗鎖進錯誤狀態,並補上手動重置按鈕\n- 子模組 gitlink 對齊歷史整理後的 ECommons、OtterGui(樹一致,內容零變更)\n- 歷史整理:壓縮 91 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 19 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1787744223
   },
   {
     "Author": "apetih",
@@ -1826,7 +1826,7 @@
     "Author": "MidoriKami",
     "Name": "Mappy",
     "InternalName": "Mappy",
-    "AssemblyVersion": "7.20.0.3",
+    "AssemblyVersion": "7.20.0.4",
     "Description": "以 ImGui 地圖取代遊戲內建地圖，並提供多項額外功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Mappy",
@@ -1845,10 +1845,10 @@
     "IconUrl": "",
     "Punchline": "功能更完整的遊戲地圖。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Mappy-v7.20.0.3/Mappy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Mappy-v7.20.0.3/Mappy.zip",
-    "LastUpdate": 1787742763,
-    "Changelog": "- Mappy:工具列樓層選單改用 GetRowOrDefault,缺列不再擲例外\n- Mappy:新增「PvP 中允許開啟地圖」選項(預設開),並補強地圖資料缺漏時的防呆\n- 歷史整理:壓縮 3 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Mappy-v7.20.0.4/Mappy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Mappy-v7.20.0.4/Mappy.zip",
+    "LastUpdate": 1787744196,
+    "Changelog": "- Mappy:開放通用標記 IPC,讓其他外掛把標記畫到地圖上\n- Mappy:補畫遊戲的小地圖標記陣列,附結構健全性閘門\n- Mappy:地圖上分色標示好友與同部隊成員\n- Mappy:點擊乙太網標記改優先走 Lifestream,認得分店與住宅區"
   },
   {
     "Author": "MidoriKami",
