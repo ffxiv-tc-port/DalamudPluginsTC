@@ -204,10 +204,15 @@ def latest_git_tag(repo_path):
     sort. Derived from git tags rather than GitHub Releases so it stays
     correct for a freshly-migrated repo that has every tag but no Release
     objects yet (the ffxiv-tc-port org migration left the private repos in
-    exactly that state). `--merged HEAD` excludes upstream tags sitting on
-    commits that aren't ancestors of our branch (e.g. AutoHook's upstream
-    v6.x), so those can't be mistaken for our latest release."""
-    out = git(repo_path, "tag", "--merged", "HEAD")
+    exactly that state).
+
+    🔴 2026-08-26 起**不能**用 `--merged HEAD` 濾上游 tag:全艦隊 squash 整理後,
+    我方既有 release tag 全都不是新 HEAD 的祖先,--merged 會把它們整批濾光,
+    next_tag 退化成 v7.20.0.1(當天實踩:AR 算出 .34、Mappy 算出 .1)。
+    改用「紀元 scheme」判我方 tag:v 前綴 + 4 段 + (major,minor) >= (7,15)——
+    我方 tag 一律是 TC 遊戲版本開頭(7.15/7.20/...),上游外掛自己的版號
+    (AutoHook v6.x、Questionable v15.277.7.0)都不落在這個窗裡。"""
+    out = git(repo_path, "tag")
     versions = []
     for line in out.splitlines():
         line = line.strip()
@@ -221,13 +226,13 @@ def latest_git_tag(repo_path):
         if not m:
             continue
         ver = tuple(int(x) for x in m.groups())
-        # Only tags from our own era scheme count (major == ERA_FLOOR major,
-        # i.e. the TC game-patch number). Upstream repos ship 4-part v-tags
-        # with unrelated majors that version-sort above ours and ARE ancestors
-        # of HEAD once upstream history is merged in - e.g. Questionable's
-        # upstream v15.277.7.0, which --merged doesn't exclude and which once
-        # produced a bogus v15.277.7.1 release (2026-07-28).
-        if ver[0] != ERA_FLOOR[0]:
+        # Only tags from our own era scheme count: (major, minor) >= (7, 15),
+        # i.e. TC game-patch numbers. Upstream repos ship 4-part v-tags with
+        # unrelated versions that would version-sort above ours - e.g.
+        # Questionable's upstream v15.277.7.0 (once produced a bogus
+        # v15.277.7.1 release, 2026-07-28) or hypothetical upstream v7.x with
+        # x < 15. Without --merged (see docstring) this window IS the filter.
+        if ver[0] != ERA_FLOOR[0] or (ver[0], ver[1]) < (7, 15):
             continue
         versions.append((ver, line))
     if not versions:
