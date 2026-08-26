@@ -67,6 +67,7 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 | 插件 | 上游 | 說明 |
 |------|------|------|
 | [**Questionable**](https://github.com/ffxiv-tc-port/Questionable) | [PunishXIV](https://github.com/PunishXIV/Questionable) | 自動做任務（主線／支線） |
+| [**GatheringPathRenderer**](https://github.com/ffxiv-tc-port/Questionable) | [PunishXIV](https://github.com/PunishXIV/Questionable) | Questionable 附屬開發插件，繪製採集點位視覺化 |
 | [**TextAdvance**](https://github.com/ffxiv-tc-port/TextAdvance) | [NightmareXIV](https://github.com/NightmareXIV/TextAdvance) | 自動跳過對話、確認過場跳過、快速接交任務 |
 | [**AutoDuty**](https://github.com/ffxiv-tc-port/AutoDuty) | [ffxivcode](https://github.com/ffxivcode/AutoDuty) | 自動跑本，解放雙手 |
 | [**YesAlready**](https://github.com/ffxiv-tc-port/YesAlready) | [PunishXIV](https://github.com/PunishXIV/YesAlready) | 自動點擊你指定的各種確認對話框 |
