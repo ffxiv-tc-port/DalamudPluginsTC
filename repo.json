@@ -1904,5 +1904,57 @@
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ExplorersIcebox-v7.20.0.5/ExplorersIcebox.zip",
     "LastUpdate": 1787662672,
     "Changelog": "- 在地化：主 UI 路線名與物品名改顯示台服中文"
+  },
+  {
+    "Author": "Haselnussbomber",
+    "Name": "滾輪切換分頁",
+    "InternalName": "ScrollableTabs",
+    "AssemblyVersion": "7.20.0.1",
+    "Description": "用滑鼠滾輪切換視窗分頁（就像手把的 LB／RB）。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/ffxiv-tc-port/ScrollableTabs",
+    "Tags": [
+      "UI",
+      "QoL"
+    ],
+    "CategoryTags": [],
+    "DalamudApiLevel": 13,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "",
+    "Punchline": "用滑鼠滾輪切換視窗分頁（就像手把的 LB／RB）。",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ScrollableTabs-v7.20.0.1/ScrollableTabs.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ScrollableTabs-v7.20.0.1/ScrollableTabs.zip",
+    "LastUpdate": 0,
+    "Changelog": ""
+  },
+  {
+    "Author": "Ramen",
+    "Name": "Meddle 模型匯出",
+    "InternalName": "Meddle.Plugin",
+    "AssemblyVersion": "7.20.0.1",
+    "Description": "把角色、場景與動作匯出成 glTF 格式（開發用工具）。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/ffxiv-tc-port/Meddle",
+    "Tags": [
+      "model",
+      "glTF"
+    ],
+    "CategoryTags": [],
+    "DalamudApiLevel": 13,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "",
+    "Punchline": "把角色、場景與動作匯出成 glTF 格式。",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Meddle.Plugin-v7.20.0.1/Meddle.Plugin.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Meddle.Plugin-v7.20.0.1/Meddle.Plugin.zip",
+    "LastUpdate": 0,
+    "Changelog": ""
   }
 ]
