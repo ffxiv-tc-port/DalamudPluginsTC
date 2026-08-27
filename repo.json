@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.20.0.87",
+    "AssemblyVersion": "7.20.0.88",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.87/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.87/Artisan.zip",
-    "Changelog": "- 同步上游:宇宙探索收藏品品質門檻修正——低/中/高改用 WKSMissionToDoEvalutionRefin 換算",
-    "LastUpdate": 1787678434
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.88/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.88/Artisan.zip",
+    "Changelog": "- 修正 4 個視窗 PreDraw/PostDraw 未呼叫 base,恢復 Dalamud 每視窗不透明度功能\n- 在地化:修正三處對照台服 EXD 查出的錯譯/簡繁混用\n- 子模組 gitlink 對齊歷史整理後的 ECommons、OtterGui、PunishLib(樹一致,內容零變更)\n- 歷史整理:壓縮 111 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1787792768
   },
   {
     "Author": "Herculezz",
@@ -96,7 +96,7 @@
     "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
-    "AssemblyVersion": "7.20.0.32",
+    "AssemblyVersion": "7.20.0.33",
     "Description": "自動幫你提鉤釣魚,你能相信嗎?\n支援自訂預設集、自動以小釣大、自動刺魚等功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoHook",
@@ -116,16 +116,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoHook.png",
     "Punchline": "讓釣魚不再無聊(或更無聊)。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.32/AutoHook.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.32/AutoHook.zip",
-    "Changelog": "- ECommons repin 58db205:Svc 補 IPlayerState、LocalPlayer/LocalContentId 過時呼叫遷移\n- Update bitetimers.json",
-    "LastUpdate": 1787583649
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.33/AutoHook.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.33/AutoHook.zip",
+    "Changelog": "- 在地化：釣魚術語逐條對台服 EXD 修正 zh-Hant.resx\n- 子模組 gitlink 對齊歷史整理後的 ECommons(樹一致,內容零變更)",
+    "LastUpdate": 1787792723
   },
   {
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.84",
+    "AssemblyVersion": "7.20.0.85",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.84/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.84/AutoRetainer.zip",
-    "Changelog": "- AutoRetainer:主視窗不透明度改成整窗一起淡(原本只淡背景,內部元件不跟)",
-    "LastUpdate": 1787747048,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.85/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.85/AutoRetainer.zip",
+    "Changelog": "- 同步上游 tw13 三顆小修:潛艇遠航點 128 解鎖來源佔位錯值、庫存右鍵移除 tooltip 誤寫成新增、Lang.RegisterSub 補台服繁中",
+    "LastUpdate": 1787792730,
     "CategoryTags": [
       "Inventory"
     ]
@@ -234,7 +234,7 @@
     "Author": "Kouzukii",
     "Name": "Character Panel Refined",
     "InternalName": "CharacterPanelRefined",
-    "AssemblyVersion": "7.20.0.10",
+    "AssemblyVersion": "7.20.0.11",
     "Description": "Character Panel Refined 精簡了角色狀態面板中的無用資訊，並加入了會心與直擊機率等實用數值，以及預估輸出傷害，方便比較裝備優劣。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/CharacterPanelRefined",
@@ -254,16 +254,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/CharacterPanelRefined.png",
     "Punchline": "Refine the character panel to display only useful information like crit and direct hit chance",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.10/CharacterPanelRefined.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.10/CharacterPanelRefined.zip",
-    "Changelog": "- 角色屬性面板三處補上 AtkStage 判空，避免裸解參考崩潰",
-    "LastUpdate": 1787125119
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.11/CharacterPanelRefined.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.11/CharacterPanelRefined.zip",
+    "Changelog": "- 修正條件式節點指標殘留:OnSetup 進場無條件清空,並補上 DoH/DoL 八個使用點的判空\n- 歷史整理:壓縮 13 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 10 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1787792746
   },
   {
     "Author": "Infi, Anna",
     "Name": "Chat 2",
     "InternalName": "ChatTwo",
-    "AssemblyVersion": "7.20.0.25",
+    "AssemblyVersion": "7.20.0.26",
     "Description": "Chat 2 是遊戲內建聊天視窗的完整重寫版外掛。\n支援功能：\n\n- 無限分頁\n- 固定發送到特定頻道的分頁\n- 更靈活的過濾功能\n- RGB 頻道顏色\n- 完全可變字體大小\n- 側邊欄分頁\n- 未讀訊息計數\n- 表情符號\n- 截圖模式（隱藏名稱）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ChatTwo",
@@ -285,10 +285,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ChatTwo.png",
     "Punchline": "電光石火 - ♪ 全新的聊天視窗，一個嶄新美妙的聊天窗口 ♪",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.25/ChatTwo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.25/ChatTwo.zip",
-    "Changelog": "- 同步上游:字型只載入日文漢字範圍,補上繁中字集避免部分中文字顯示不出來\n- CI 加入 resx 空值閘門:建置前擋下崩潰級的「鍵存在但值為空」",
-    "LastUpdate": 1787576548
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.26/ChatTwo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.26/ChatTwo.zip",
+    "Changelog": "- ChatTwo:補回 ChatLog 與 Popout 兩個視窗漏掉的 base.PreDraw()/base.PostDraw(),Dalamud 內建的視窗不透明度滑桿不再靜默無效\n- 同步上游 ChatTwo(Infiziert90 1a5c9288):BetterTTV 表情清單改用隨外掛出貨的靜態 JSON,啟動不再打 15 次分頁 API\n- 歷史整理:壓縮 33 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 5 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge tc-7.15-async-fix: fix main-thread freeze bugs\n- 歷史整理:壓縮 15 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1787792707
   },
   {
     "Author": "Nylfae",
@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.20.0.35",
+    "AssemblyVersion": "7.20.0.36",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,16 +409,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.35/GatherbuddyReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.35/GatherbuddyReborn.zip",
-    "Changelog": "- ECommons repin 58db205:Svc 補 IPlayerState、LocalPlayer/LocalContentId 過時呼叫遷移",
-    "LastUpdate": 1787583652
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.36/GatherbuddyReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.36/GatherbuddyReborn.zip",
+    "Changelog": "- 修正主視窗不透明度設定靜默失效:PreDraw 補呼叫 base(GatherBuddyReborn)\n- zh-TW: 修正釣魚筆記發現訊息比對用錯引號字元(GatherBuddyReborn)\n- 子模組 gitlink 對齊歷史整理後的 ECommons、OtterGui(樹一致,內容零變更)\n- 歷史整理:壓縮 53 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 48 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1787792729
   },
   {
     "Author": "img02",
     "Name": "Hunt Helper",
     "InternalName": "HuntHelper",
-    "AssemblyVersion": "7.20.0.12",
+    "AssemblyVersion": "7.20.0.13",
     "Description": "顯示標記重生點的狩獵地圖、A級討伐車隊記錄器（可匯出/匯入分享）、語音播報、聊天通知，以及S級討伐重生計數器",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/HuntHelper",
@@ -438,10 +438,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/HuntHelper.png",
     "Punchline": "打寶雷達＋車隊記錄器＋通知＋S級討伐輔助工具等一應俱全。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.12/HuntHelper.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.12/HuntHelper.zip",
-    "Changelog": "- 在地化：除錯視窗補上繁中翻譯",
-    "LastUpdate": 1787583077
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.13/HuntHelper.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.13/HuntHelper.zip",
+    "Changelog": "- 修正台服 S 級湧現計數器:語言分派誤落簡體字串表,補繁中對照\n- 同步上游修正:法語採集規則漏複數形、法語傳送指令說明文字、地圖下載改每批 4 張循序修圖床限流\n- 歷史整理:壓縮 15 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 5 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge tc-7.15-async-fix: fix main-thread freeze bugs\n- 歷史整理:壓縮 8 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1787792698
   },
   {
     "Author": "Critical_Impact",
@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.59",
+    "AssemblyVersion": "7.20.0.60",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速以太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.59/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.59/Lifestream.zip",
-    "Changelog": "- 修復 Lifestream 進度條消失:登出時 Splatoon 繪路徑擲 NRE 把視窗鎖進錯誤狀態,並補上手動重置按鈕\n- 子模組 gitlink 對齊歷史整理後的 ECommons、OtterGui(樹一致,內容零變更)\n- 歷史整理:壓縮 91 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 19 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1787744223
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.60/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.60/Lifestream.zip",
+    "Changelog": "- 修正視窗 PreDraw/PostDraw 未呼叫 base,恢復 Dalamud 每視窗不透明度功能",
+    "LastUpdate": 1787792762
   },
   {
     "Author": "apetih",
@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.20.0.37",
+    "AssemblyVersion": "7.20.0.38",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.37/Saucy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.37/Saucy.zip",
-    "Changelog": "- 修正 Saucy ImGuiScopes.Window 未無條件配對 ImGui.End",
-    "LastUpdate": 1787676928,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.38/Saucy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.38/Saucy.zip",
+    "Changelog": "- 修正視窗 PreDraw/PostDraw 未呼叫 base,恢復 Dalamud 每視窗不透明度功能\n- 子模組 gitlink 對齊歷史整理後的 ECommons(樹一致,內容零變更)\n- 歷史整理:壓縮 59 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge remote-tracking branch 'origin/tc-7.15' into tc-api13-draft\n- 歷史整理:壓縮 4 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge branch 'tc-7.15-async-fix' into tc-api13-draft\n- 歷史整理:壓縮 51 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Rebuild against TW 7.15 client's Dalamud (API 12)",
+    "LastUpdate": 1787792768,
     "CategoryTags": [
       "Minigames"
     ]
@@ -853,7 +853,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.20.0.40",
+    "AssemblyVersion": "7.20.0.41",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -872,10 +872,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.40/SomethingNeedDoing.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.40/SomethingNeedDoing.zip",
-    "Changelog": "- ECommons repin 58db205:Svc 補 IPlayerState、LocalPlayer/LocalContentId 過時呼叫遷移",
-    "LastUpdate": 1787583669,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.41/SomethingNeedDoing.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.41/SomethingNeedDoing.zip",
+    "Changelog": "- 修正視窗 PreDraw/PostDraw 未呼叫 base，恢復 Dalamud 每視窗不透明度功能\n- 子模組 gitlink 對齊歷史整理後的 ECommons(樹一致,內容零變更)\n- 歷史整理:壓縮 74 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 34 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1787792733,
     "CategoryTags": [
       "Utility"
     ]
@@ -884,7 +884,7 @@
     "Author": "Sonar Team",
     "Name": "Sonar",
     "InternalName": "SonarPlugin",
-    "AssemblyVersion": "7.20.0.10",
+    "AssemblyVersion": "7.20.0.11",
     "Description": "自動傳送與接收打寶及 FATE 情報。輸入 /sonar 開啟主視窗，/sonarconfig 進行設定。技術支援僅提供於 Sonar Support Discord。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SonarPlugin",
@@ -904,10 +904,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SonarPlugin.png",
     "Punchline": "自動傳送與接收打寶及 FATE 情報。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SonarPlugin-v7.20.0.10/SonarPlugin.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SonarPlugin-v7.20.0.10/SonarPlugin.zip",
-    "Changelog": "- SonarPlugin：一次性遷移旗標讓既有繁中使用者自動吃到新的 EnumLoc 中文譯文",
-    "LastUpdate": 1787664262
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SonarPlugin-v7.20.0.11/SonarPlugin.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SonarPlugin-v7.20.0.11/SonarPlugin.zip",
+    "Changelog": "- 修正視窗 PreDraw/PostDraw 未呼叫 base，恢復 Dalamud 每視窗不透明度功能\n- 歷史整理:壓縮 12 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 7 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge tc-7.15-async-fix: fix main-thread freeze bugs\n- 歷史整理:壓縮 8 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1787792764
   },
   {
     "Author": "NightmareXIV",
@@ -941,7 +941,7 @@
     "Author": "Infi",
     "Name": "Submarine Tracker",
     "InternalName": "SubmarineTracker",
-    "AssemblyVersion": "7.20.0.14",
+    "AssemblyVersion": "7.20.0.15",
     "Description": "+ 追蹤目前的潛水艇配置、航線與所需時間\n+ 潛水艇配置建構器，協助改良配置並最佳化經驗值\n+ 可自訂的返航與維修通知\n+ 內建豐富資訊的 Helpy 助手\n+ 自訂戰利品總覽，含歷史紀錄與匯出功能\n+ 多種疊加層輔助你完成每日任務\n+ 支援多個公會",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SubmarineTracker",
@@ -961,16 +961,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SubmarineTracker.png",
     "Punchline": "潛水艇的事，不能說。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SubmarineTracker-v7.20.0.14/SubmarineTracker.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SubmarineTracker-v7.20.0.14/SubmarineTracker.zip",
-    "Changelog": "- GetFCId 補判空,未登入時 14 個呼叫點不再解參考 null 的 InfoProxyFreeCompany\n- CI 加入 resx 空值閘門:建置前擋下崩潰級的「鍵存在但值為空」",
-    "LastUpdate": 1787139331
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SubmarineTracker-v7.20.0.15/SubmarineTracker.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SubmarineTracker-v7.20.0.15/SubmarineTracker.zip",
+    "Changelog": "- 修正視窗 PreDraw/PostDraw 未呼叫 base，恢復 Dalamud 每視窗不透明度功能\n- 歷史整理:壓縮 13 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併上游 SubmarineTracker（2 個 commit）\n- 歷史整理:壓縮 6 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge remote-tracking branch 'origin/tc-7.15' into tc-api13-draft\n- 歷史整理:壓縮 14 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1787792747
   },
   {
     "Author": "MgAl2O4",
     "Name": "TriadBuddy",
     "InternalName": "TriadBuddy",
-    "AssemblyVersion": "7.20.0.7",
+    "AssemblyVersion": "7.20.0.8",
     "Description": "三張牌遊戲解牌工具，僅支援 NPC 對戰。\n- 小遊戲進行時提示下一步最佳出牌\n- 對戰前評估所有牌組預設\n- NPC 牌組優化器\n- 為卡牌收藏視窗新增更多細節",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/FFTriadBuddyDalamud",
@@ -986,11 +986,11 @@
     "LoadPriority": 0,
     "Punchline": "三張牌遊戲解牌助手",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.7/TriadBuddy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.7/TriadBuddy.zip",
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.8/TriadBuddy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.8/TriadBuddy.zip",
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TriadBuddy.png",
-    "Changelog": "- 節點掃描補判 NodeList 與 Component 指標(牌組準備讀取器與遞迴子節點展開)",
-    "LastUpdate": 1787159826,
+    "Changelog": "- 在地化:zh.json 簡體轉正體(移植 cycleapple),並修正實際載入的 tw.json 術語誤譯\n- 歷史整理:壓縮 11 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 18 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1787792723,
     "CategoryTags": [
       "Minigames"
     ]
@@ -1029,7 +1029,7 @@
     "Author": "veyn",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
-    "AssemblyVersion": "7.20.0.27",
+    "AssemblyVersion": "7.20.0.28",
     "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vnavmesh",
@@ -1049,10 +1049,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/vnavmesh.png",
     "Punchline": "自動移動吧！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.27/vnavmesh.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.27/vnavmesh.zip",
-    "Changelog": "- 在地化補完:攀降/跳降捷徑產生開關補翻",
-    "LastUpdate": 1787576797
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.28/vnavmesh.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.28/vnavmesh.zip",
+    "Changelog": "- 同步上游修正:vnavmesh 新增 Query.Mesh.FlagToPoint 端點,把地圖旗標換成可尋路的地面座標供其他外掛取用\n- 歷史整理:壓縮 33 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 12 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge tc-7.15-async-fix: fix main-thread freeze bugs\n- 歷史整理:壓縮 25 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1787792713
   },
   {
     "Author": "Team Wrath",
@@ -1123,7 +1123,7 @@
     "Author": "daemitus, croizat",
     "Name": "YesAlready",
     "InternalName": "YesAlready",
-    "AssemblyVersion": "7.20.0.25",
+    "AssemblyVersion": "7.20.0.26",
     "Description": "厭倦了在天守閣/伊迪爾夏爾禁地一直點確認嗎？受不了在副本裡一直按鍵嗎？YesAlready 可以自動點擊你設定的所有惱人對話框。只要輸入對話文字，就再也不用手動點了！支援 /regex/ 比對，也內建了幾個針對「看起來不是 yes/no，但行為類似」的對話框（例如分解）的模組。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/YesAlready",
@@ -1143,10 +1143,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/YesAlready.png",
     "Punchline": "自動點擊你指定的各種確認對話框。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.25/YesAlready.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.25/YesAlready.zip",
-    "Changelog": "- ECommons repin 58db205:Svc 補 IPlayerState、LocalPlayer/LocalContentId 過時呼叫遷移",
-    "LastUpdate": 1787583695
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.26/YesAlready.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.26/YesAlready.zip",
+    "Changelog": "- 主視窗：PreDraw/PostDraw 補呼叫 base，修 Dalamud 的每視窗不透明度設定失效\n- SelectYesNo：小隊邀請比對改成全片段依序命中，修掉 ContainsPartOf 誤中新人頻道與同好會邀請\n- 子模組 gitlink 對齊歷史整理後的 ECommons(樹一致,內容零變更)\n- 歷史整理:壓縮 42 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge remote-tracking branch 'origin/tc-7.15' into tc-api13-draft\n- 歷史整理:壓縮 4 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge commit 'ca2288d' into tc-api13-draft\n- 歷史整理:壓縮 8 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1787792765
   },
   {
     "Author": "KangasZ",
@@ -1181,7 +1181,7 @@
     "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.20.0.42",
+    "AssemblyVersion": "7.20.0.43",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/DailyDuty",
@@ -1204,10 +1204,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.42/DailyDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.42/DailyDuty.zip",
-    "Changelog": "- 任務輪盤：清單 hook 前補三層判空，任一層取不到就跳過不掛載",
-    "LastUpdate": 1787153041
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.43/DailyDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.43/DailyDuty.zip",
+    "Changelog": "- 同步上游 ad64438:殘留的 SeString.ExtractText() 改用 ToString() 統一文字取用方式\n- 子模組 gitlink 對齊歷史整理後的 KamiToolKit(樹一致,內容零變更)\n- 歷史整理:壓縮 65 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 9 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1787792748
   },
   {
     "Author": "liza, qstxiv, & various contributors",
@@ -1241,7 +1241,7 @@
     "Author": "NightmareXIV",
     "Name": "TextAdvance",
     "InternalName": "TextAdvance",
-    "AssemblyVersion": "7.20.0.31",
+    "AssemblyVersion": "7.20.0.32",
     "Description": "Quest speedrunning assistance tool. Automatically confirms quest acceptance and completion, skips subtitles, cutscenes, and most prompts. Includes optional Splatoon-based quest target indicators and vnavmesh-based auto-navigation to quest objectives.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TextAdvance",
@@ -1260,10 +1260,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TextAdvance.png",
     "Punchline": "Quest speedrunning assistance tool. Automatically skips subtitle boxes and confirms cutscene skipping",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.31/TextAdvance.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.31/TextAdvance.zip",
-    "Changelog": "- ECommons repin 58db205:Svc 補 IPlayerState、LocalPlayer/LocalContentId 過時呼叫遷移",
-    "LastUpdate": 1787583709
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.32/TextAdvance.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.32/TextAdvance.zip",
+    "Changelog": "- 同步上游修正:跳過場確認框改用 AddonMaster 掃描選項取代寫死節點索引、手動飛行補送起飛的第二次跳躍\n- 子模組 gitlink 對齊歷史整理後的 ECommons(樹一致,內容零變更)\n- 歷史整理:壓縮 51 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1787792750
   },
   {
     "Author": "Styr1x, PlusoneChiang",
@@ -1330,7 +1330,7 @@
     "Author": "Ice",
     "Name": "Chilled Leves",
     "InternalName": "ChilledLeves",
-    "AssemblyVersion": "7.20.0.27",
+    "AssemblyVersion": "7.20.0.28",
     "Description": "理符任務輔助工具：讓你挑選想接的理符任務，並自動前往接取、執行與繳交。注意：必須先安裝 vnavmesh 才能使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ChilledLeves",
@@ -1350,16 +1350,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ChilledLeves.png",
     "Punchline": "理符任務，冰鎮上桌。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.27/ChilledLeves.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.27/ChilledLeves.zip",
-    "Changelog": "- ECommons repin 58db205:Svc 補 IPlayerState、LocalPlayer/LocalContentId 過時呼叫遷移",
-    "LastUpdate": 1787583688
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.28/ChilledLeves.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.28/ChilledLeves.zip",
+    "Changelog": "- 同步上游修正:Scheduler 主迴圈補 Verbose 追蹤、Enqueue 任務命名、Debug 視窗加 Taskmanager 分頁\n- 同步上游修正:/chilledleves start 補上 WorkListMode,修正文字指令啟動後不做事\n- 同步上游修正:ImGui.EndChild() 移出 if 區塊,避免 BeginChild 回 false 時 ImGui 堆疊錯位\n- 子模組 gitlink 對齊歷史整理後的 ECommons(樹一致,內容零變更)\n- 歷史整理:壓縮 38 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1787792687
   },
   {
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.20.0.97",
+    "AssemblyVersion": "7.20.0.98",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.97/ICE.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.97/ICE.zip",
-    "Changelog": "- 同步上游:離開宇宙探索區自動關閉浮動視窗、精選萃取前先驗解鎖任務638",
-    "LastUpdate": 1787678356
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.98/ICE.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.98/ICE.zip",
+    "Changelog": "- 修正 ICE 繁中翻譯 4 處與台服官方譯名不符的問題\n- 子模組 gitlink 對齊歷史整理後的 ECommons(樹一致,內容零變更)\n- 歷史整理:壓縮 111 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge branch 'feat/mecha-markers' into tc-7.20\n- 歷史整理:壓縮 11 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併機甲行動 P3 校準:倒數改用伺服器時鐘、傳送視窗改為可判定\n- 歷史整理:壓縮 33 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1787792732
   },
   {
     "Author": "Liza Carvelli",
@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.20.0.72",
+    "AssemblyVersion": "7.20.0.73",
     "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：部隊合建素材一鍵全交、野外陸行鳥自動餵食基薩爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.72/TCToolbox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.72/TCToolbox.zip",
-    "Changelog": "- {\"message\":\"No common ancestor between v7.20.0.71 and v7.20.0.72.\",\"documentation_url\":\"https://docs.github.com/rest/commits/commits#compare-two-commits\",\"status\":\"404\"}",
-    "LastUpdate": 1787746991
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.73/TCToolbox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.73/TCToolbox.zip",
+    "Changelog": "- TCToolbox OptimizedFreeShop 的 SelectYesno 補掛 PostDraw 重試與節流：只掛 PostSetup 時，確認框在那一刻還沒可互動就永遠不會被處理\n- TCToolbox 三個「設定哨兵形同虛設」的修復：輸入法配置不再把啟用當刻的配置烙死、四個圖示編號改回真哨兵、敵對列表補上 v1→v2 一次性遷移\n- TCToolbox 主視窗把每個模組的 DrawConfig 包進 try：一個模組的設定畫面擲例外就不會再把整扇視窗（含所有模組的啟用勾選框）鎖死到重載為止\n- TCToolbox 補七處失控保險絲與節流：合建交納補零進展偵測、SimpleTweaks 偵測的哨兵溢位讓它從未執行過、兩個間隔值在使用點壓下限\n- TCToolbox 三處自動代按確認框補上判準：招募加入與報酬領取改比對 Addon 表的提示文字，YesAlready 暫停改用官方阻擋清單不再猜「它本來開著沒」\n- TCToolbox 修好「按了停止、幾秒後角色自己走起來」的三個殘存缺口：補送窗口活過最後一次 Release、到期時 vnavmesh 還在算路徑就延展、FlagCommands 停用時收掉自己發起的移動\n- TCToolbox 補三處會崩潰的原生指標自判：AtkValues 與 InventoryContainer.Items 為 null 而長度／IsLoaded 留殘值時，索引下去就是攔不到的 AVE\n- TCToolbox 新增「幻卡回收清單」：列出背包裡已收錄的多餘九宮幻卡與可得金碟幣，回收確認框一律由人按",
+    "LastUpdate": 1787792684
   },
   {
     "Author": "daemitus, MidoriKami",
@@ -1637,7 +1637,7 @@
     "Author": "Infi, PunishedPineapple",
     "Name": "Waymark Preset Plugin",
     "InternalName": "WaymarkPresetPlugin",
-    "AssemblyVersion": "7.20.0.3",
+    "AssemblyVersion": "7.20.0.4",
     "Description": "可儲存、編輯、放置、匯入、匯出並預覽數量不限的場地標記預設。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WaymarkPresetPlugin",
@@ -1656,16 +1656,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WaymarkPresetPlugin.png",
     "Punchline": "更好用的場地標記管理",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WaymarkPresetPlugin-v7.20.0.3/WaymarkPresetPlugin.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WaymarkPresetPlugin-v7.20.0.3/WaymarkPresetPlugin.zip",
-    "LastUpdate": 1787576988,
-    "Changelog": "- WaymarkPresetPlugin：IClientState.LocalPlayer 遷移到 IObjectTable.LocalPlayer，清掉 1 處 API13 過時警告"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WaymarkPresetPlugin-v7.20.0.4/WaymarkPresetPlugin.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WaymarkPresetPlugin-v7.20.0.4/WaymarkPresetPlugin.zip",
+    "LastUpdate": 1787792713,
+    "Changelog": "- 修正資訊面板視窗 PreDraw 未呼叫 base,恢復 Dalamud 每視窗不透明度功能\n- 歷史整理:壓縮 4 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)"
   },
   {
     "Author": "Kouzukii",
     "Name": "Death Recap",
     "InternalName": "DeathRecap",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "快速找出你或隊員的死亡原因！\n\n顯示：\n- 治療\n- 承受傷害\n- 減益效果\n- 增益效果\n- 防護罩\n- 傷害來源身上的昏亂、牽制與雪仇",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ffxiv-deathrecap",
@@ -1685,16 +1685,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DeathRecap.png",
     "Punchline": "快速找出你或隊員的死亡原因！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DeathRecap-v7.20.0.1/DeathRecap.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DeathRecap-v7.20.0.1/DeathRecap.zip",
-    "LastUpdate": 1787470572,
-    "Changelog": ""
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DeathRecap-v7.20.0.2/DeathRecap.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DeathRecap-v7.20.0.2/DeathRecap.zip",
+    "LastUpdate": 1787792700,
+    "Changelog": "- 同步上游修正:ActionEffectType.Knockback 列舉值 33→32(Dawntrail 世代效果類型更正)\n- 歷史整理:壓縮 2 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)"
   },
   {
     "Author": "Nuffin",
     "Name": "Better Mount Roulette",
     "InternalName": "BetterMountRoulette",
-    "AssemblyVersion": "7.20.0.2",
+    "AssemblyVersion": "7.20.0.3",
     "Description": "可自由選擇任意數量的坐騎加入隨機召喚，不再受遊戲「最多 30 隻」或「全部」模式限制。\n",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BetterMountRoulette",
@@ -1710,16 +1710,16 @@
     "IconUrl": "",
     "Punchline": "自訂坐騎隨機召喚會選到哪些坐騎。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BetterMountRoulette-v7.20.0.2/BetterMountRoulette.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BetterMountRoulette-v7.20.0.2/BetterMountRoulette.zip",
-    "LastUpdate": 1787577086,
-    "Changelog": "- BetterMountRoulette：LocalPlayer/LocalContentId 遷移到 IObjectTable/IPlayerState，並拿掉 csproj 裡的 CS0618 靜音"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BetterMountRoulette-v7.20.0.3/BetterMountRoulette.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BetterMountRoulette-v7.20.0.3/BetterMountRoulette.zip",
+    "LastUpdate": 1787792735,
+    "Changelog": "- BetterMountRoulette:登入判定改用 IPlayerState.IsLoaded,角色名與母伺服器改由 IPlayerState 單一來源取得(同步上游 2e3536d3)\n- 歷史整理:壓縮 4 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)"
   },
   {
     "Author": "daemitus, hiroa, MidoriKami, foophoof",
     "Name": "ZodiacBuddy",
     "InternalName": "ZodiacBuddy",
-    "AssemblyVersion": "7.20.0.4",
+    "AssemblyVersion": "7.20.0.5",
     "Description": "以多種方式協助你完成黃道武器（ARR 傳說武器）。點擊武器筆記本內的目標可開啟副本或開地圖並顯示位置、顯示強化進度與「光之加成」提示。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ZodiacBuddy",
@@ -1739,16 +1739,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ZodiacBuddy.png",
     "Punchline": "帥氣地完成你的黃道武器。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ZodiacBuddy-v7.20.0.4/ZodiacBuddy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ZodiacBuddy-v7.20.0.4/ZodiacBuddy.zip",
-    "LastUpdate": 1787577748,
-    "Changelog": "- 遷移到 IPlayerState/IObjectTable，清掉 8 處 API13 過時警告"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ZodiacBuddy-v7.20.0.5/ZodiacBuddy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ZodiacBuddy-v7.20.0.5/ZodiacBuddy.zip",
+    "LastUpdate": 1787792695,
+    "Changelog": "- 同步上游修正:光之加成回報改送 ContentId 的 SHA-256 雜湊,不再送明文角色識別碼\n- 同步上游修正:校正 Return to Cinder 與 Everything's Better 兩個 FATE 的地圖座標\n- 歷史整理:壓縮 5 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)"
   },
   {
     "Author": "ItsLunaYup",
     "Name": "High FPS Physics Fix",
     "InternalName": "HighFpsPhysicsPlugin",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "讓遊戲每隔數幀才更新一次物理效果，以改善高 FPS 下的物理表現。\n可使用「/physics t」切換，或以 on/off 取代 t。\n較低 FPS 時可能會造成物理效果晃動過度。\n若使用 /physics 開啟或關閉後停用整個插件，需要重新啟動遊戲才能再次啟用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/xivlauncher_physics_plugin",
@@ -1766,10 +1766,10 @@
     "IconUrl": "",
     "Punchline": "降低動作物理效果的更新頻率，改善高 FPS 下的物理表現。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HighFpsPhysicsPlugin-v7.20.0.1/HighFpsPhysicsPlugin.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HighFpsPhysicsPlugin-v7.20.0.1/HighFpsPhysicsPlugin.zip",
-    "LastUpdate": 1787472711,
-    "Changelog": ""
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HighFpsPhysicsPlugin-v7.20.0.2/HighFpsPhysicsPlugin.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HighFpsPhysicsPlugin-v7.20.0.2/HighFpsPhysicsPlugin.zip",
+    "LastUpdate": 1787792694,
+    "Changelog": "- 同步上游修正:物理效果 FPS 存檔前夾限 1~240,避免存進 0 或負值讓物理更新間隔算成無限大\n- 歷史整理:壓縮 2 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)"
   },
   {
     "Author": "Anna, Maintained by Caraxi",
@@ -1854,7 +1854,7 @@
     "Author": "MidoriKami",
     "Name": "SortaKinda",
     "InternalName": "SortaKinda",
-    "AssemblyVersion": "7.20.0.2",
+    "AssemblyVersion": "7.20.0.3",
     "Description": "依照你的需求整理物品欄，並維持指定的排序方式。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SortaKinda",
@@ -1873,10 +1873,10 @@
     "IconUrl": "",
     "Punchline": "全面自訂物品欄排序方式。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SortaKinda-v7.20.0.2/SortaKinda.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SortaKinda-v7.20.0.2/SortaKinda.zip",
-    "LastUpdate": 1787577082,
-    "Changelog": "- SortaKinda：LocalContentId 改走 IPlayerState、LocalPlayer 改走 IObjectTable，清掉 7 處 API13 過時警告"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SortaKinda-v7.20.0.3/SortaKinda.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SortaKinda-v7.20.0.3/SortaKinda.zip",
+    "LastUpdate": 1787792738,
+    "Changelog": "- 修正視窗 PreDraw/PostDraw 未呼叫 base，恢復 Dalamud 每視窗不透明度功能\n- 子模組 gitlink 對齊歷史整理後的 KamiToolKit(樹一致,內容零變更)\n- 歷史整理:壓縮 3 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)"
   },
   {
     "Author": "Ice",
