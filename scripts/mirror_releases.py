@@ -33,6 +33,8 @@ PUBLIC_REPO = "ffxiv-tc-port/DalamudPluginsTC"
 
 # InternalName -> source repo (owner/name)
 SOURCE_REPOS = {
+    "Meddle.Plugin": "ffxiv-tc-port/Meddle",
+    "ScrollableTabs": "ffxiv-tc-port/ScrollableTabs",
     "BOCCHI": "ffxiv-tc-port/BOCCHI",
     "Marketbuddy": "ffxiv-tc-port/Marketbuddy",
     "vfaux": "ffxiv-tc-port/vfaux",
@@ -116,6 +118,8 @@ SOURCE_REPOS = {
 # so we mirror the icon into this public repo instead.
 ICON_PATHS = {
     "TCToolbox": "images/icon.png",
+    "Meddle.Plugin": "icon.png",
+    "ScrollableTabs": "ScrollableTabs/Assets/Icon.png",
     "BOCCHI": "assets/icon.png",
     "Marketbuddy": "Marketbuddy/Marketbuddy.png",
     "vfaux": "icon.png",
