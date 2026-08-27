@@ -34,6 +34,7 @@ PUBLIC_REPO = "ffxiv-tc-port/DalamudPluginsTC"
 # InternalName -> source repo (owner/name)
 SOURCE_REPOS = {
     "Meddle.Plugin": "ffxiv-tc-port/Meddle",
+    "Brio": "ffxiv-tc-port/Brio",
     "ScrollableTabs": "ffxiv-tc-port/ScrollableTabs",
     "BOCCHI": "ffxiv-tc-port/BOCCHI",
     "Marketbuddy": "ffxiv-tc-port/Marketbuddy",
@@ -119,6 +120,7 @@ SOURCE_REPOS = {
 ICON_PATHS = {
     "TCToolbox": "images/icon.png",
     "Meddle.Plugin": "icon.png",
+    "Brio": "Resources/Images/BrioIcon.png",
     "ScrollableTabs": "ScrollableTabs/Assets/Icon.png",
     "BOCCHI": "assets/icon.png",
     "Marketbuddy": "Marketbuddy/Marketbuddy.png",
