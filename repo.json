@@ -3,7 +3,7 @@
     "Author": "Ottermandias",
     "Name": "Accountant",
     "InternalName": "Accountant",
-    "AssemblyVersion": "7.20.0.18",
+    "AssemblyVersion": "7.20.0.19",
     "Description": "記錄多名角色的僱員、飛艇、潛水艇、以太之輪與作物計時器，\n以及其他各種雜項任務進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Accountant",
@@ -28,10 +28,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Accountant.png",
     "Punchline": "角色任務計時器。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.18/Accountant.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.18/Accountant.zip",
-    "Changelog": "- 移植上游 IPlayerState 遷移：世界 ID 與角色名改讀 IPlayerState，不再解參考 LocalPlayer 物件\n- 歷史整理:壓縮 22 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 6 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge tc-7.15-async-fix: fix main-thread freeze bugs\n- 歷史整理:壓縮 19 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1787797291,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.19/Accountant.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.19/Accountant.zip",
+    "Changelog": "- 補齊計時器 UI 名稱的繁中值(RegisterName 缺 zh 參數)",
+    "LastUpdate": 1787828658,
     "CategoryTags": [
       "Inventory"
     ]
@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.20.0.88",
+    "AssemblyVersion": "7.20.0.89",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.88/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.88/Artisan.zip",
-    "Changelog": "- 修正 4 個視窗 PreDraw/PostDraw 未呼叫 base,恢復 Dalamud 每視窗不透明度功能\n- 在地化:修正三處對照台服 EXD 查出的錯譯/簡繁混用\n- 子模組 gitlink 對齊歷史整理後的 ECommons、OtterGui、PunishLib(樹一致,內容零變更)\n- 歷史整理:壓縮 111 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1787792768
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.89/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.89/Artisan.zip",
+    "Changelog": "- Artisan 補上任務 3104「鯰魚精的聖地巡禮」的台服暗號",
+    "LastUpdate": 1787828694
   },
   {
     "Author": "Herculezz",
@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.20.0.36",
+    "AssemblyVersion": "7.20.0.37",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.36/GatherbuddyReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.36/GatherbuddyReborn.zip",
-    "Changelog": "- 修正主視窗不透明度設定靜默失效:PreDraw 補呼叫 base(GatherBuddyReborn)\n- zh-TW: 修正釣魚筆記發現訊息比對用錯引號字元(GatherBuddyReborn)\n- 子模組 gitlink 對齊歷史整理後的 ECommons、OtterGui(樹一致,內容零變更)\n- 歷史整理:壓縮 53 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 48 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1787792729
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.37/GatherbuddyReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.37/GatherbuddyReborn.zip",
+    "Changelog": "- MultiString 明寫台服語言分支,並記錄「Lumina 語言參數被忽略」的驗證結論",
+    "LastUpdate": 1787828701
   },
   {
     "Author": "img02",
@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.60",
+    "AssemblyVersion": "7.20.0.61",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速以太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.60/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.60/Lifestream.zip",
-    "Changelog": "- 修正視窗 PreDraw/PostDraw 未呼叫 base,恢復 Dalamud 每視窗不透明度功能",
-    "LastUpdate": 1787792762
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.61/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.61/Lifestream.zip",
+    "Changelog": "- 傳送面板自訂落點加入城內乙太之光中繼,不再從主水晶橫跨整座城用走的",
+    "LastUpdate": 1787828693
   },
   {
     "Author": "apetih",
@@ -1464,7 +1464,7 @@
     "Author": "Faye",
     "Name": "Better Occult Crescent & Chest Helper Interface",
     "InternalName": "BOCCHI",
-    "AssemblyVersion": "7.20.0.26",
+    "AssemblyVersion": "7.20.0.27",
     "Description": "⚠️ 台服 7.20 目前還沒有「蜃景新月島」這個內容，本外掛現在裝了不會有任何反應。已先行移植好放著，等台服更新到該版本即可直接使用。\n\n讓你在「蜃景新月島」玩得更順手。\n- 不用再自己走路、自己找寶箱。\n- 小巧的 FATE 與關鍵遭遇面板，會顯示該場獎勵，還能自動幫你導航過去。\n- 附贈一個非常違規的「非法模式」，給那些寧可出去曬太陽的人。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BOCCHI",
@@ -1491,10 +1491,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/BOCCHI.png",
     "Punchline": "讓你在「蜃景新月島」玩得更順手。（台服尚未開放該內容）",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.26/BOCCHI.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.26/BOCCHI.zip",
-    "Changelog": "- 在地化補完:非法模式標題列按鈕提示、Forked Tower玩家數提示補翻",
-    "LastUpdate": 1787576863
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.27/BOCCHI.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.27/BOCCHI.zip",
+    "Changelog": "- BOCCHI 幻靈經驗追蹤：台服不再靜默套用英文正規式，改標成無模板並留取樣診斷\n- 歷史整理:壓縮 36 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1787828697
   },
   {
     "Author": "ffxiv-tc-port",
