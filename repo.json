@@ -3,7 +3,7 @@
     "Author": "Ottermandias",
     "Name": "Accountant",
     "InternalName": "Accountant",
-    "AssemblyVersion": "7.20.0.17",
+    "AssemblyVersion": "7.20.0.18",
     "Description": "記錄多名角色的僱員、飛艇、潛水艇、以太之輪與作物計時器，\n以及其他各種雜項任務進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Accountant",
@@ -28,10 +28,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Accountant.png",
     "Punchline": "角色任務計時器。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.17/Accountant.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.17/Accountant.zip",
-    "Changelog": "- Accountant：LocalPlayer 取值改走 IObjectTable，清掉最後 7 處 API13 過時警告",
-    "LastUpdate": 1787577102,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.18/Accountant.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Accountant-v7.20.0.18/Accountant.zip",
+    "Changelog": "- 移植上游 IPlayerState 遷移：世界 ID 與角色名改讀 IPlayerState，不再解參考 LocalPlayer 物件\n- 歷史整理:壓縮 22 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 6 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge tc-7.15-async-fix: fix main-thread freeze bugs\n- 歷史整理:壓縮 19 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1787797291,
     "CategoryTags": [
       "Inventory"
     ]
@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.85",
+    "AssemblyVersion": "7.20.0.86",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.85/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.85/AutoRetainer.zip",
-    "Changelog": "- 同步上游 tw13 三顆小修:潛艇遠航點 128 解鎖來源佔位錯值、庫存右鍵移除 tooltip 誤寫成新增、Lang.RegisterSub 補台服繁中",
-    "LastUpdate": 1787792730,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.86/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.86/AutoRetainer.zip",
+    "Changelog": "- 補上 tw13 移植時漏掉的 hunk:工房登錄潛水艇的確認框補台服繁中比對字串",
+    "LastUpdate": 1787797343,
     "CategoryTags": [
       "Inventory"
     ]
@@ -1029,7 +1029,7 @@
     "Author": "veyn",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
-    "AssemblyVersion": "7.20.0.28",
+    "AssemblyVersion": "7.20.0.29",
     "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vnavmesh",
@@ -1049,10 +1049,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/vnavmesh.png",
     "Punchline": "自動移動吧！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.28/vnavmesh.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.28/vnavmesh.zip",
-    "Changelog": "- 同步上游修正:vnavmesh 新增 Query.Mesh.FlagToPoint 端點,把地圖旗標換成可尋路的地面座標供其他外掛取用\n- 歷史整理:壓縮 33 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 12 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge tc-7.15-async-fix: fix main-thread freeze bugs\n- 歷史整理:壓縮 25 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1787792713
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.29/vnavmesh.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.29/vnavmesh.zip",
+    "Changelog": "- 宇宙快線捷徑改用「場景裡有沒有纜車模型」判斷開通,建設階段門檻降為 fallback\n- 明確不採用上游的 FloodFill/Prune,並在碼裡標出它與 PointOnFloor 第 2 參數的地雷耦合\n- 同步上游架構區塊:自訂連結改用 AreaId 分類,跟隨路徑會等客戶端把纜車路徑播完\n- 同步上游無交集小修:競技場破洞材質、DotRecast 輪廓細分修正、座標轉原始碼小工具",
+    "LastUpdate": 1787797277
   },
   {
     "Author": "Team Wrath",
@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.20.0.73",
+    "AssemblyVersion": "7.20.0.74",
     "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：部隊合建素材一鍵全交、野外陸行鳥自動餵食基薩爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.73/TCToolbox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.73/TCToolbox.zip",
-    "Changelog": "- TCToolbox OptimizedFreeShop 的 SelectYesno 補掛 PostDraw 重試與節流：只掛 PostSetup 時，確認框在那一刻還沒可互動就永遠不會被處理\n- TCToolbox 三個「設定哨兵形同虛設」的修復：輸入法配置不再把啟用當刻的配置烙死、四個圖示編號改回真哨兵、敵對列表補上 v1→v2 一次性遷移\n- TCToolbox 主視窗把每個模組的 DrawConfig 包進 try：一個模組的設定畫面擲例外就不會再把整扇視窗（含所有模組的啟用勾選框）鎖死到重載為止\n- TCToolbox 補七處失控保險絲與節流：合建交納補零進展偵測、SimpleTweaks 偵測的哨兵溢位讓它從未執行過、兩個間隔值在使用點壓下限\n- TCToolbox 三處自動代按確認框補上判準：招募加入與報酬領取改比對 Addon 表的提示文字，YesAlready 暫停改用官方阻擋清單不再猜「它本來開著沒」\n- TCToolbox 修好「按了停止、幾秒後角色自己走起來」的三個殘存缺口：補送窗口活過最後一次 Release、到期時 vnavmesh 還在算路徑就延展、FlagCommands 停用時收掉自己發起的移動\n- TCToolbox 補三處會崩潰的原生指標自判：AtkValues 與 InventoryContainer.Items 為 null 而長度／IsLoaded 留殘值時，索引下去就是攔不到的 AVE\n- TCToolbox 新增「幻卡回收清單」：列出背包裡已收錄的多餘九宮幻卡與可得金碟幣，回收確認框一律由人按",
-    "LastUpdate": 1787792684
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.74/TCToolbox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.74/TCToolbox.zip",
+    "Changelog": "- TCToolbox 整批補上 InventoryContainer.Items 判空：13 個模組共 26 處掃背包只判 IsLoaded，Items 為 null 時索引下去就是攔不到的 AVE",
+    "LastUpdate": 1787797294
   },
   {
     "Author": "daemitus, MidoriKami",
@@ -1694,7 +1694,7 @@
     "Author": "Nuffin",
     "Name": "Better Mount Roulette",
     "InternalName": "BetterMountRoulette",
-    "AssemblyVersion": "7.20.0.3",
+    "AssemblyVersion": "7.20.0.4",
     "Description": "可自由選擇任意數量的坐騎加入隨機召喚，不再受遊戲「最多 30 隻」或「全部」模式限制。\n",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BetterMountRoulette",
@@ -1710,16 +1710,16 @@
     "IconUrl": "",
     "Punchline": "自訂坐騎隨機召喚會選到哪些坐騎。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BetterMountRoulette-v7.20.0.3/BetterMountRoulette.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BetterMountRoulette-v7.20.0.3/BetterMountRoulette.zip",
-    "LastUpdate": 1787792735,
-    "Changelog": "- BetterMountRoulette:登入判定改用 IPlayerState.IsLoaded,角色名與母伺服器改由 IPlayerState 單一來源取得(同步上游 2e3536d3)\n- 歷史整理:壓縮 4 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BetterMountRoulette-v7.20.0.4/BetterMountRoulette.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BetterMountRoulette-v7.20.0.4/BetterMountRoulette.zip",
+    "LastUpdate": 1787797292,
+    "Changelog": "- BetterMountRoulette:坐騎群組頁新增名稱搜尋框,清單與整批選取都只作用於篩選結果(移植上游 PR#20)"
   },
   {
     "Author": "daemitus, hiroa, MidoriKami, foophoof",
     "Name": "ZodiacBuddy",
     "InternalName": "ZodiacBuddy",
-    "AssemblyVersion": "7.20.0.5",
+    "AssemblyVersion": "7.20.0.6",
     "Description": "以多種方式協助你完成黃道武器（ARR 傳說武器）。點擊武器筆記本內的目標可開啟副本或開地圖並顯示位置、顯示強化進度與「光之加成」提示。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ZodiacBuddy",
@@ -1739,10 +1739,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ZodiacBuddy.png",
     "Punchline": "帥氣地完成你的黃道武器。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ZodiacBuddy-v7.20.0.5/ZodiacBuddy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ZodiacBuddy-v7.20.0.5/ZodiacBuddy.zip",
-    "LastUpdate": 1787792695,
-    "Changelog": "- 同步上游修正:光之加成回報改送 ContentId 的 SHA-256 雜湊,不再送明文角色識別碼\n- 同步上游修正:校正 Return to Cinder 與 Everything's Better 兩個 FATE 的地圖座標\n- 歷史整理:壓縮 5 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ZodiacBuddy-v7.20.0.6/ZodiacBuddy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ZodiacBuddy-v7.20.0.6/ZodiacBuddy.zip",
+    "LastUpdate": 1787797303,
+    "Changelog": "- 同步上游修正:委託發布人與大國防聯軍名稱改用遊戲內建繁中名,不再寫死英文"
   },
   {
     "Author": "ItsLunaYup",
