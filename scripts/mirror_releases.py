@@ -33,6 +33,7 @@ PUBLIC_REPO = "ffxiv-tc-port/DalamudPluginsTC"
 
 # InternalName -> source repo (owner/name)
 SOURCE_REPOS = {
+    "TataruPraise": "ffxiv-tc-port/TataruPraise",
     "Meddle.Plugin": "ffxiv-tc-port/Meddle",
     "Brio": "ffxiv-tc-port/Brio",
     "ScrollableTabs": "ffxiv-tc-port/ScrollableTabs",
@@ -118,6 +119,7 @@ SOURCE_REPOS = {
 # raw.githubusercontent.com can't serve files from private repos anonymously,
 # so we mirror the icon into this public repo instead.
 ICON_PATHS = {
+    "TataruPraise": "TataruPraise/Assets/Icon.png",
     "TCToolbox": "images/icon.png",
     "Meddle.Plugin": "icon.png",
     "Brio": "Resources/Images/BrioIcon.png",

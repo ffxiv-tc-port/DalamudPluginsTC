@@ -1984,5 +1984,34 @@
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.3/Brio.zip",
     "LastUpdate": 1787913939,
     "Changelog": "- 修正三處跨幀持有 ObjectTable 包裝物件的隱患"
+  },
+  {
+    "Author": "ffxiv-tc-port",
+    "Name": "塔塔露誇獎",
+    "InternalName": "TataruPraise",
+    "AssemblyVersion": "7.20.0.1",
+    "Description": "偶爾依遊戲狀態(副本完成、升等、登入、Gil 里程碑),以塔塔露的口吻播一句繁中誇獎語音。\n語音由本機 GPT-SoVITS 橋接(port 9882)預先合成並快取,遊戲內執行期不連網;連不上只是不出聲。\n提供 IPC(TataruPraise.Speak / Praise / IsAvailable)供其他外掛呼叫。全部觸發預設關閉。",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/ffxiv-tc-port/TataruPraise",
+    "Tags": [
+      "voice",
+      "tts",
+      "tataru",
+      "語音",
+      "塔塔露"
+    ],
+    "CategoryTags": [],
+    "DalamudApiLevel": 13,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TataruPraise.png",
+    "Punchline": "塔塔露會偶爾用她的聲音誇獎前輩。",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TataruPraise-v7.20.0.1/TataruPraise.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TataruPraise-v7.20.0.1/TataruPraise.zip",
+    "LastUpdate": 0,
+    "Changelog": ""
   }
 ]
