@@ -1990,7 +1990,7 @@
     "Name": "塔塔露誇獎",
     "InternalName": "TataruPraise",
     "AssemblyVersion": "7.20.0.1",
-    "Description": "偶爾依遊戲狀態(副本完成、升等、登入、Gil 里程碑),以塔塔露的口吻播一句繁中誇獎語音。\n語音由本機 GPT-SoVITS 橋接(port 9882)預先合成並快取,遊戲內執行期不連網;連不上只是不出聲。\n提供 IPC(TataruPraise.Speak / Praise / IsAvailable)供其他外掛呼叫。全部觸發預設關閉。",
+    "Description": "偶爾用塔塔露的聲音誇獎你。副本完成、升等、登入、Gil 里程碑這幾種情境各自獨立開關（預設全部關閉），命中後從本機的誇獎池挑一句、播放事先合成好的語音檔，執行期完全不連網。語音來自本機的 GPT-SoVITS 橋接（預設 http://127.0.0.1:9882），沒有橋接就只是不出聲，不會卡遊戲。設定視窗裡可以用 Gemini 批量擴充誇獎池，以及把整池預先合成成語音快取。指令 /tataru 開啟設定視窗，/tataru test 試播一句。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TataruPraise",
     "Tags": [
@@ -2007,11 +2007,11 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TataruPraise.png",
-    "Punchline": "塔塔露會偶爾用她的聲音誇獎前輩。",
+    "Punchline": "偶爾用塔塔露的聲音誇你一句，純本機、預設全關。",
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TataruPraise-v7.20.0.1/TataruPraise.zip",
     "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TataruPraise-v7.20.0.1/TataruPraise.zip",
-    "LastUpdate": 0,
+    "LastUpdate": 1787916159,
     "Changelog": ""
   }
 ]
