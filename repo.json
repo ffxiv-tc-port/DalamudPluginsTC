@@ -418,7 +418,7 @@
     "Author": "img02",
     "Name": "Hunt Helper",
     "InternalName": "HuntHelper",
-    "AssemblyVersion": "7.20.0.13",
+    "AssemblyVersion": "7.20.0.14",
     "Description": "顯示標記重生點的狩獵地圖、A級討伐車隊記錄器（可匯出/匯入分享）、語音播報、聊天通知，以及S級討伐重生計數器",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/HuntHelper",
@@ -438,10 +438,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/HuntHelper.png",
     "Punchline": "打寶雷達＋車隊記錄器＋通知＋S級討伐輔助工具等一應俱全。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.13/HuntHelper.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.13/HuntHelper.zip",
-    "Changelog": "- 修正台服 S 級湧現計數器:語言分派誤落簡體字串表,補繁中對照\n- 同步上游修正:法語採集規則漏複數形、法語傳送指令說明文字、地圖下載改每批 4 張循序修圖床限流\n- 歷史整理:壓縮 15 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 5 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge tc-7.15-async-fix: fix main-thread freeze bugs\n- 歷史整理:壓縮 8 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1787792698
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.14/HuntHelper.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.14/HuntHelper.zip",
+    "Changelog": "- HuntHelper 不再跨偵持有 IBattleNpc,改存 GameObjectId 每次重查",
+    "LastUpdate": 1787912673
   },
   {
     "Author": "Critical_Impact",
@@ -1464,7 +1464,7 @@
     "Author": "Faye",
     "Name": "Better Occult Crescent & Chest Helper Interface",
     "InternalName": "BOCCHI",
-    "AssemblyVersion": "7.20.0.27",
+    "AssemblyVersion": "7.20.0.28",
     "Description": "⚠️ 台服 7.20 目前還沒有「蜃景新月島」這個內容，本外掛現在裝了不會有任何反應。已先行移植好放著，等台服更新到該版本即可直接使用。\n\n讓你在「蜃景新月島」玩得更順手。\n- 不用再自己走路、自己找寶箱。\n- 小巧的 FATE 與關鍵遭遇面板，會顯示該場獎勵，還能自動幫你導航過去。\n- 附贈一個非常違規的「非法模式」，給那些寧可出去曬太陽的人。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BOCCHI",
@@ -1491,10 +1491,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/BOCCHI.png",
     "Punchline": "讓你在「蜃景新月島」玩得更順手。（台服尚未開放該內容）",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.27/BOCCHI.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.27/BOCCHI.zip",
-    "Changelog": "- BOCCHI 幻靈經驗追蹤：台服不再靜默套用英文正規式，改標成無模板並留取樣診斷\n- 歷史整理:壓縮 36 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1787828697
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.28/BOCCHI.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.28/BOCCHI.zip",
+    "Changelog": "- 修正除錯面板跨幀持有 IGameObject 包裝",
+    "LastUpdate": 1787912774
   },
   {
     "Author": "ffxiv-tc-port",
@@ -1935,7 +1935,7 @@
     "Author": "Ramen",
     "Name": "Meddle 模型匯出",
     "InternalName": "Meddle.Plugin",
-    "AssemblyVersion": "7.20.0.2",
+    "AssemblyVersion": "7.20.0.3",
     "Description": "把遊戲中的角色、場景、地形與動作匯出成 glTF 格式，可直接在 Blender 等 3D 軟體中開啟。\r\n\r\n主要用途：在「角色」分頁選一個角色或 NPC，按「匯出」即可產生 glTF 檔（含模型、骨架、材質與貼圖）。\r\n另有「場景」分頁可匯出周遭建物與燈光，「動作」分頁可錄製並匯出動作。\r\n\r\n搭配作者提供的 Blender 外掛 MeddleTools 可自動接好材質節點。\r\n\r\n台服移植版與上游的差異：\r\n- 基底為上游 v0.1.46（最後一版使用 API13／net9 的標籤），之後的版本已改用 API15／net10，台服跑不動。\r\n- 角色選單改為只保存 GameObjectId、每幀重新查表，避免跨幀持有已失效的原生指標而導致遊戲崩潰。\r\n- 「偵錯」分頁的骨骼列表加上邊界夾制（骨骼數的位元欄位在台服未經驗證）。\r\n- 材質編輯視窗會在換區域或登出時自動關閉。\r\n- 介面僅翻譯分頁名稱與主要按鈕，其餘維持英文（本外掛屬開發用工具）。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Meddle",
@@ -1952,10 +1952,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Meddle.Plugin.png",
     "Punchline": "把角色、場景與動作匯出成 glTF 格式。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Meddle.Plugin-v7.20.0.2/Meddle.Plugin.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Meddle.Plugin-v7.20.0.2/Meddle.Plugin.zip",
-    "LastUpdate": 1787911603,
-    "Changelog": "- Meddle 台服加固：材質視窗改每幀重查、記憶體寫入分頁預設隱藏、場景/地形分頁預設收起"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Meddle.Plugin-v7.20.0.3/Meddle.Plugin.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Meddle.Plugin-v7.20.0.3/Meddle.Plugin.zip",
+    "LastUpdate": 1787912711,
+    "Changelog": "- Meddle 台服加固：偵錯分頁的 EnvLighting 與 Terrain Pointers 兩個區塊預設收起"
   },
   {
     "Author": "Asgard, Minmoose and Contributors",
