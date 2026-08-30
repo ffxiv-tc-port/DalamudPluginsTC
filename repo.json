@@ -534,7 +534,7 @@
     "Author": "53m1k0l0n/Gidedin (Puni.sh)",
     "Name": "LazyLoot",
     "InternalName": "LazyLoot",
-    "AssemblyVersion": "7.20.0.19",
+    "AssemblyVersion": "7.20.0.20",
     "Description": "以指令執行擲骰，支援 need | needonly | greed | pass | passall 等各種參數。\n可設定聊天與跳出訊息輸出，以及擲骰延遲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/LazyLoot",
@@ -554,10 +554,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/LazyLoot.png",
     "Punchline": "打怪但懶得選骰的擲骰插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LazyLoot-v7.20.0.19/LazyLoot.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LazyLoot-v7.20.0.19/LazyLoot.zip",
-    "Changelog": "- ECommons repin 58db205:Svc 補 IPlayerState、LocalPlayer/LocalContentId 過時呼叫遷移",
-    "LastUpdate": 1787583644
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LazyLoot-v7.20.0.20/LazyLoot.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LazyLoot-v7.20.0.20/LazyLoot.zip",
+    "Changelog": "- 擲骰診斷記錄改為預設關閉\n- 子模組 gitlink 對齊歷史整理後的 ECommons、PunishLib(樹一致,內容零變更)\n- 歷史整理:壓縮 22 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 17 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1788098861
   },
   {
     "Author": "NightmareXIV",
@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.20.0.48",
+    "AssemblyVersion": "7.20.0.49",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 學者 DoT 目標血量門檻從來沒生效,快死的小怪不再被上蠱毒",
+    "Changelog": "- 暫停租約的警告只印一次",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.48/WrathCombo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.48/WrathCombo.zip",
-    "LastUpdate": 1788095309,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.49/WrathCombo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.49/WrathCombo.zip",
+    "LastUpdate": 1788098890,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1439,7 +1439,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.20.0.33",
+    "AssemblyVersion": "7.20.0.34",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 金幣並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1455,10 +1455,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點金幣！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.33/Marketbuddy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.33/Marketbuddy.zip",
-    "Changelog": "- 市場重掛跑完時請「塔塔露誇獎」念一句（TataruPraise IPC）\n- 歷史整理:壓縮 50 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1788020207
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.34/Marketbuddy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.34/Marketbuddy.zip",
+    "Changelog": "- 市場查價記錄收成一行摘要",
+    "LastUpdate": 1788098850
   },
   {
     "Author": "Faye",
