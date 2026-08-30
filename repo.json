@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.43",
+    "AssemblyVersion": "7.20.0.44",
     "Description": "自動幫你跑副本，支援信賴的同伴、達人指引、士官兵團、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.43/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.43/AutoDuty.zip",
-    "Changelog": "- 修正檔名不合慣例的路徑檔會擲例外弄丟整份路徑清單,並解除領土 ID 的位數上限",
-    "LastUpdate": 1788036894
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.44/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.44/AutoDuty.zip",
+    "Changelog": "- 收工還原 BossMod 自動攻擊管理的呼叫改成 null 安全,避免蓋掉真正的載入失敗原因\n- 新增「解限模式:交戰中繼續走到定點」選項,交戰不停在原地等打完(預設關)\n- 修正 ForceAttack 只等時間不攻擊:BossMod 的自動攻擊管理會否決非戰鬥中啟動自動攻擊",
+    "LastUpdate": 1788096818
   },
   {
     "Author": "Det",
@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.20.0.97",
+    "AssemblyVersion": "7.20.0.98",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.97/BossModReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.97/BossModReborn.zip",
-    "Changelog": "- BossModuleMainWindow 只覆寫 PostDraw 卻不呼叫 base，調不透明度會讓樣式堆疊失衡",
-    "LastUpdate": 1788035333,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.98/BossModReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.98/BossModReborn.zip",
+    "Changelog": "- 修正台服玩家移動速度讀取欄位，自動走位速度判斷不再每幀跳 0\n- 戰鬥外自動速行新增「只在副本內」選項",
+    "LastUpdate": 1788096805,
     "CategoryTags": [
       "Jobs"
     ]
