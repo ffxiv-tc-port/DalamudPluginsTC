@@ -1,6 +1,6 @@
 # DalamudPluginsTC
 
-台服（TC，Traditional Chinese client）專用的第三方 Dalamud 插件庫，收錄並持續維護 **66 個**對應台服客戶端的插件 fork。
+台服（TC，Traditional Chinese client）專用的第三方 Dalamud 插件庫，收錄並持續維護 **68 個**對應台服客戶端的插件 fork。
 
 台服目前使用的 Dalamud 為 **API Level 13**，而多數插件的官方版本已隨國際服前進到更新的 API 等級，無法直接在台服安裝。本倉庫維護這些插件對應 **TC 7.20（API13）** 的相容分支，並**已完成全面繁體中文化**（介面採台服官方譯名、對照官方遊戲資料表校訂）。
 
@@ -118,6 +118,9 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 | [**Peeping Tom**](https://github.com/ffxiv-tc-port/PeepingTom) | [Caraxi](https://github.com/Caraxi/PeepingTom) | 顯示誰正在指向你（可選聊天記錄與音效提示） |
 | [**Better Mount Roulette**](https://github.com/ffxiv-tc-port/BetterMountRoulette) | [CMDRNuffin](https://github.com/CMDRNuffin/BetterMountRoulette) | 從自訂坐騎分組隨機召喚 |
 | [**High FPS Physics**](https://github.com/ffxiv-tc-port/xivlauncher_physics_plugin) | [ItsLunaYup](https://github.com/ItsLunaYup/xivlauncher_physics_plugin) | 修正高幀率下的布料／頭髮物理模擬 |
+| [**ScrollableTabs**](https://github.com/ffxiv-tc-port/ScrollableTabs) | [Haselnussbomber](https://github.com/Haselnussbomber/ScrollableTabs) | 用滑鼠滾輪切換背包、軍儲等視窗的分頁 |
+| [**Brio**](https://github.com/ffxiv-tc-port/Brio) | [Etheirys](https://github.com/Etheirys/Brio) | 集體動作（GPose）角色姿勢、表情與場景編輯 |
+| [**TataruPraise**](https://github.com/ffxiv-tc-port/TataruPraise) | 自製 | 塔塔露誇獎語音：各外掛完成事件時播放合成短句 |
 
 ### 開發工具
 
@@ -125,6 +128,7 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 |------|------|------|
 | [**Dynamis**](https://github.com/ffxiv-tc-port/Dynamis) | [Exter-N](https://github.com/Exter-N/Dynamis) | 開發／除錯／逆向工程工具與實驗工作台 |
 | [**Dynamis (with Hosted PowerShell)**](https://github.com/ffxiv-tc-port/Dynamis) | [Exter-N](https://github.com/Exter-N/Dynamis) | Dynamis 含內建 PowerShell 版本 |
+| [**Meddle**](https://github.com/ffxiv-tc-port/Meddle) | [PassiveModding](https://github.com/PassiveModding/Meddle) | 匯出角色／NPC 模型為 glTF（開發用途） |
 
 ## 為什麼需要這個倉庫？
 
