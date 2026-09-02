@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.100",
+    "AssemblyVersion": "7.20.0.101",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.100/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.100/AutoRetainer.zip",
-    "Changelog": "- 快捷賣出的選單 callback 送出後不再連碰同一扇窗,改由原生回傳值決定要不要補關",
-    "LastUpdate": 1788375317,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.101/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.101/AutoRetainer.zip",
+    "Changelog": "- DialogGuards 索引掃描天花板 99 改成遊戲驗證過的 256，避免按下記號被誤解除",
+    "LastUpdate": 1788381326,
     "CategoryTags": [
       "Inventory"
     ]
@@ -505,7 +505,7 @@
     "Author": "Latihas",
     "Name": "LatihasChocobo",
     "InternalName": "LatihasChocobo",
-    "AssemblyVersion": "7.20.0.10",
+    "AssemblyVersion": "7.20.0.11",
     "Description": "自動陸行鳥競賽",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/LatihasChocobo",
@@ -521,11 +521,11 @@
     "LoadPriority": 0,
     "Punchline": "自動陸行鳥競賽",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.10/LatihasChocobo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.10/LatihasChocobo.zip",
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.11/LatihasChocobo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.11/LatihasChocobo.zip",
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/LatihasChocobo.png",
-    "Changelog": "- 按鈕點擊改為只送一次事件，移除守衛切不開的同呼叫內二次送出與對遊戲事件旗標的寫入",
-    "LastUpdate": 1788370048,
+    "Changelog": "- AddonPressGuard 索引掃描天花板 99 改成遊戲驗證過的 256，避免按下記號被誤解除",
+    "LastUpdate": 1788381282,
     "CategoryTags": [
       "Minigames"
     ]
@@ -853,7 +853,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.20.0.44",
+    "AssemblyVersion": "7.20.0.45",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -872,10 +872,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.44/SomethingNeedDoing.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.44/SomethingNeedDoing.zip",
-    "Changelog": "- /click 補上與 /callback 相同的視窗就緒閘門,視窗已被關閉或隱藏時不再送出點擊",
-    "LastUpdate": 1788379785,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.45/SomethingNeedDoing.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.45/SomethingNeedDoing.zip",
+    "Changelog": "- 修正 /click 在 /loop 第二圈起必定失敗:不再改寫主建構子捕獲的 methodName 欄位",
+    "LastUpdate": 1788381278,
     "CategoryTags": [
       "Utility"
     ]
@@ -1909,7 +1909,7 @@
     "Author": "Haselnussbomber",
     "Name": "滾輪切換分頁",
     "InternalName": "ScrollableTabs",
-    "AssemblyVersion": "7.20.0.1",
+    "AssemblyVersion": "7.20.0.2",
     "Description": "用滑鼠滾輪切換視窗分頁（就像手把的 LB／RB）。\n\n支援下列視窗，可各自單獨開關：\n\n- 風脈泉\n- 兵裝庫\n- 青魔法書\n- 人物\n- 人物 → 職業＆特職\n- 人物 → 評價\n- 陸行鳥鞍囊\n- 搭檔\n- 貨幣一覽\n- 時尚配件\n- 戰果記錄\n- 魚類圖鑑\n- 投影台（捲動的是頁面，不是分頁）\n- 金碟遊樂園 → 幻卡列表\n- 金碟遊樂園 → 卡組一覽 → 編輯卡組\n- 金碟遊樂園 → 萌寵之王 → 寵物快速鍵\n- 物品欄\n- 無人島寵物一覽\n- 寵物一覽\n- 坐騎一覽\n- 僱員物品欄\n- F.A.T.E.完成度\n- 探索筆記\n\n台服移植版與上游的差異：\n- 已整段移除上游用來抑制指令面板音效的記憶體修補功能（台服特徵碼本來就掃不到）。\n- 「臉部配件」視窗不支援：我方釘住的 FFXIVClientStructs 沒有對應結構，刻意不從新版客戶端抄偏移。\n- 捲到物品欄最後一個分頁不會跳到「關鍵物品」視窗（依賴未在台服驗證的命令碼）。\n- 無人島寵物一覽的「我的最愛」互切預設關閉，可在設定中自行開啟。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ScrollableTabs",
@@ -1926,10 +1926,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ScrollableTabs.png",
     "Punchline": "用滑鼠滾輪切換視窗分頁（就像手把的 LB／RB）。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ScrollableTabs-v7.20.0.1/ScrollableTabs.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ScrollableTabs-v7.20.0.1/ScrollableTabs.zip",
-    "LastUpdate": 1787847122,
-    "Changelog": ""
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ScrollableTabs-v7.20.0.2/ScrollableTabs.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ScrollableTabs-v7.20.0.2/ScrollableTabs.zip",
+    "LastUpdate": 1788381290,
+    "Changelog": "- 修正 ScrollableTabs 三處讀取 AtkComponentButton.IsEnabled 卻漏判 OwnerNode 的存取違規"
   },
   {
     "Author": "Ramen",
@@ -1961,7 +1961,7 @@
     "Author": "Asgard, Minmoose and Contributors",
     "Name": "Brio 集體動作姿勢編輯",
     "InternalName": "Brio",
-    "AssemblyVersion": "7.20.0.9",
+    "AssemblyVersion": "7.20.0.10",
     "Description": "在集體動作(GPose)中對角色與 NPC 做進階的姿勢、表情與動畫編輯。\r\n\r\n主要用途:進入集體動作後在 Brio 的角色清單選一個對象,用「姿勢」視窗的臉部頁調整表情骨骼,\r\n或用「動畫時間軸」視窗換嘴型與動畫。也可以生成額外的可擺姿角色、自訂光源、\r\n控制時間與天氣、播放 XAT 攝影機檔。\r\n\r\n台服移植版與上游的差異:\r\n- 基底為上游 v0.6.1.1(最後一版使用 API13/net9 的標籤),之後的版本已改用 API14/15 與 net10,台服跑不動。\r\n- 所有原生特徵碼改走閘門:比對不到時只停用該項功能並在日誌留一筆訊息,不會再讓整個外掛載入失敗。\r\n- 動畫時間軸資料表(ActionTimeline)的欄位布局依台服客戶端修正(台服的旗標欄位位置與國際服差一個位元組)。\r\n- 遊戲資料表讀取全面加上防護:台服缺少的表會退成空清單,不再讓外掛整個掛掉。\r\n- 角色清單改用獨立的物件參照,避免跨幀共用同一個包裝物件而把姿勢寫到別的角色身上。\r\n- 光源與物件表的索引加上邊界檢查。\r\n- 未安裝 Penumbra、Glamourer、Customize+、Mare 時一律靜默略過相關整合(表情與姿勢功能不需要它們)。\r\n- 介面只翻譯主視窗與設定分頁;姿勢/骨骼/動畫的內部用語維持英文,那些與社群教學一一對應,翻了反而對不上。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Brio",
@@ -1980,10 +1980,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Brio.png",
     "Punchline": "在集體動作(GPose)中編輯角色與 NPC 的姿勢、表情與動畫。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.9/Brio.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.9/Brio.zip",
-    "LastUpdate": 1788379811,
-    "Changelog": "- 記錄 MCDF 套用側 SearchById 重繫結為何在台服 7.20 上是唯一命中(純註解)\n- 修正 Brio 銷毀自訂光源時釋放到配置區塊中間造成的堆積損壞"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.10/Brio.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.10/Brio.zip",
+    "LastUpdate": 1788381305,
+    "Changelog": "- 修正 Brio 拆除光源時拿錯索引空間會拆掉別盞燈的 UI 實體\n- 修正 Brio 光源每幀更新的條件寫成 || 讓 GPose 判斷完全失效"
   },
   {
     "Author": "ffxiv-tc-port",
