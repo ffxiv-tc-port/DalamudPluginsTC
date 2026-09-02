@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.50",
+    "AssemblyVersion": "7.20.0.51",
     "Description": "自動幫你跑副本，支援信賴的同伴、達人指引、士官兵團、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.50/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.50/AutoDuty.zip",
-    "Changelog": "- 賣卡守衛改用「子視窗收掉了」當解除證據,逃生口退回 90 幀不再押注未證實的假設\n- 修正重按守衛的生命週期解除點按名稱整包清:改成只清事件帶來的那一個位址\n- 修正重按守衛的時鐘在過場動畫期間凍結:改用 framework tick,逃生口不再永不到期\n- 守衛微調:退本關窗那一發不再押注「確認框同幀就建好」,賣卡迴圈也不再被守衛誤判成重按\n- 守衛收尾:排隊時副本搜尋器「選取中的副本名」讀到亂碼的那一幀,不再對它送清除選取的 callback\n- 修正:停止輔助器時每幀對確認框/對話框補送的 Close(true) 可能落在它關閉中的那幾幀,所有關窗與剩餘按法全部接上守衛,讀到亂碼的那一幀不碰視窗\n- 守衛擴充:關窗 Close(true) 也納入「關閉中重按」防護,新增只看不登記的檢查與亂碼偵測;對話框逃生口依艦隊政策改為 15 幀",
-    "LastUpdate": 1788363719
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.51/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.51/AutoDuty.zip",
+    "Changelog": "- FireCallBack 的註解補上現況:它警告的那些 Enqueue 呼叫點已經一個都不剩\n- 修正 Squadron 排隊被守衛擋下會永久卡死:7 發 callback 改回傳 AddonPressGuard 的結果",
+    "LastUpdate": 1788370080
   },
   {
     "Author": "Det",
@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.97",
+    "AssemblyVersion": "7.20.0.98",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.97/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.97/AutoRetainer.zip",
-    "Changelog": "- TaskManager 的除錯輸出改成跟隨 /autoretainer debug,不再每個任務都往記錄檔寫一行\n- 修正:確認框守衛的時鐘改用遊戲幀,過場動畫與隱藏 UI 期間對話不再卡在第一頁\n- 修正:確認框守衛的解除點提前到每幀最前面,道具逐件處理不再每件卡一秒\n- 修正:全外掛 40 多個按窗點接上「同一扇窗只按一次」守衛,確認框關閉中的那幾幀不再被重按(原生崩潰)\n- Talk 這類翻頁式對話窗的重按逃生口縮到 15 幀,對話節奏不再被守衛壓慢\n- 修正:確認框按下後「正在關閉中」的那幾幀不要再按第二次(原生崩潰)",
-    "LastUpdate": 1788363731,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.98/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.98/AutoRetainer.zip",
+    "Changelog": "- FC 點數更新的「先關窗」任務補上回傳值:被守衛擋下不再被 Action 多載吞成成功",
+    "LastUpdate": 1788370073,
     "CategoryTags": [
       "Inventory"
     ]
@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.20.0.40",
+    "AssemblyVersion": "7.20.0.41",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.40/GatherbuddyReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.40/GatherbuddyReborn.zip",
-    "Changelog": "- 自動修理的三顆按窗任務改用 Func<bool?>:被守衛擋下改成下一 tick 重試,不再永久跳過\n- 把「精選:開始自動精選」的逾時從 1000ms 拉到 3000ms,讓守衛的逃生口有機會先放行\n- 修正確認框守衛的生命週期解除「按名稱整包清」,會把還在關閉中的另一扇窗一起放行\n- 修正確認框守衛的時鐘在過場動畫與隱藏 UI 期間凍結,導致逃生口永不到期\n- AutoGather 所有按視窗的地方都接上 AddonPressGuard:Diadem 排隊改為執行時重查位址,關採集窗的重試迴圈同窗只送一次\n- 新增 AddonPressGuard:同一扇視窗按過就不再按,直到它真的收掉(防對關閉中視窗重按的存取違規)",
-    "LastUpdate": 1788363713
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.41/GatherbuddyReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.41/GatherbuddyReborn.zip",
+    "Changelog": "- 雲冠群島的七顆按窗任務改用 Func<bool?>:被守衛擋下改成下一 tick 重試,不再被 Action 多載吞掉",
+    "LastUpdate": 1788370086
   },
   {
     "Author": "img02",
@@ -505,7 +505,7 @@
     "Author": "Latihas",
     "Name": "LatihasChocobo",
     "InternalName": "LatihasChocobo",
-    "AssemblyVersion": "7.20.0.9",
+    "AssemblyVersion": "7.20.0.10",
     "Description": "自動陸行鳥競賽",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/LatihasChocobo",
@@ -521,11 +521,11 @@
     "LoadPriority": 0,
     "Punchline": "自動陸行鳥競賽",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.9/LatihasChocobo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.9/LatihasChocobo.zip",
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.10/LatihasChocobo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.10/LatihasChocobo.zip",
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/LatihasChocobo.png",
-    "Changelog": "- 修正對正在關閉中的視窗重複送出點擊事件可能造成的遊戲崩潰\n- 歷史整理:壓縮 17 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge remote-tracking branch 'origin/tc-7.15' into tc-api13-draft\n- 歷史整理:壓縮 15 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1788363674,
+    "Changelog": "- 按鈕點擊改為只送一次事件，移除守衛切不開的同呼叫內二次送出與對遊戲事件旗標的寫入",
+    "LastUpdate": 1788370048,
     "CategoryTags": [
       "Minigames"
     ]
@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.69",
+    "AssemblyVersion": "7.20.0.70",
     "Description": "- 一鍵傳送至任何世界或以太之光目的地\n- 點擊區域地圖上的以太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速以太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.69/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.69/Lifestream.zip",
-    "Changelog": "- 視窗按壓守衛的計時改用遊戲更新幀:過場動畫與隱藏 UI 期間不再卡住對話翻頁\n- 旅館與服務帳號的選單:視窗還沒就緒或文字讀到亂碼時不再送出選擇\n- 全部視窗按壓站點接上 AddonPressGuard:確認框/選單/標題畫面/資料中心轉移/以太之光網路傳送同一扇窗只按一次;Talk 走 15 幀;讀到亂碼的那一幀不碰\n- 新增 AddonPressGuard:同一扇視窗按過就不再重按,直到它真的收掉(防「關閉中重按」的存取違規)",
-    "LastUpdate": 1788363706
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.70/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.70/Lifestream.zip",
+    "Changelog": "- 偵錯頁產生住宅路徑時不再於背景執行緒列舉物件表,候選點在主執行緒抄成純資料後才交出去",
+    "LastUpdate": 1788370066
   },
   {
     "Author": "apetih",
@@ -913,7 +913,7 @@
     "Author": "NightmareXIV",
     "Name": "Splatoon",
     "InternalName": "Splatoon",
-    "AssemblyVersion": "7.20.0.40",
+    "AssemblyVersion": "7.20.0.41",
     "Description": "Splatoon 是一款強大的輔助工具。它以自訂路標系統徹底革新遊戲體驗，可建立無數量限制的成組路標、文字標籤與角色指示器，並具備精確到像素的定位能力。此功能讓玩家能更清楚辨識關鍵物件與事件，進而做出更快速的反應。請注意，此插件本身不附帶任何預設檔，玩家可自行製作或匯入現成的預設檔，打造專屬於自己的遊戲體驗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Splatoon",
@@ -932,10 +932,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Splatoon.png",
     "Punchline": "以無限、精準的路標重新定義 FFXIV 導航方式。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.40/Splatoon.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.40/Splatoon.zip",
-    "Changelog": "- 補上三個視窗漏掉的 base.PreDraw()/base.PostDraw()，讓 Dalamud 內建的每視窗不透明度不再半失效\n- 子模組 gitlink 對齊歷史整理後的 ECommons(樹一致,內容零變更)\n- 歷史整理:壓縮 30 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 castinfo-shim:PacketActorCast 輪詢式 shim(讀 CastInfo 已解析結構,零 hook 零特徵碼)\n- 歷史整理:壓縮 63 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 19 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1788035253
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.41/Splatoon.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Splatoon-v7.20.0.41/Splatoon.zip",
+    "Changelog": "- 修正 Tests 兩支腳本對正在關閉中的視窗重複送出點擊會讓遊戲當場關閉\n- 自動產生:更新 SplatoonScripts/update.csv\n- 修正 AutoRetainerCreation 腳本對正在關閉中的視窗重複按下確認鈕會讓遊戲當場關閉\n- 自動產生:更新 SplatoonScripts/update.csv\n- 修正兩支腳本對「正在關閉中」的視窗重送 callback 造成的原生崩潰",
+    "LastUpdate": 1788370099
   },
   {
     "Author": "Infi",
@@ -1123,7 +1123,7 @@
     "Author": "daemitus, croizat",
     "Name": "YesAlready",
     "InternalName": "YesAlready",
-    "AssemblyVersion": "7.20.0.28",
+    "AssemblyVersion": "7.20.0.29",
     "Description": "厭倦了在天守閣/伊迪爾夏爾禁地一直點確認嗎？受不了在副本裡一直按鍵嗎？YesAlready 可以自動點擊你設定的所有惱人對話框。只要輸入對話文字，就再也不用手動點了！支援 /regex/ 比對，也內建了幾個針對「看起來不是 yes/no，但行為類似」的對話框（例如分解）的模組。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/YesAlready",
@@ -1143,10 +1143,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/YesAlready.png",
     "Punchline": "自動點擊你指定的各種確認對話框。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.28/YesAlready.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.28/YesAlready.zip",
-    "Changelog": "- 補上「視窗關閉中不重按」守衛，避免對正在關閉的視窗送第二次點擊而崩潰",
-    "LastUpdate": 1788363683
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.29/YesAlready.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.29/YesAlready.zip",
+    "Changelog": "- bother 開關的 IPC 改成操作真正註冊的那份實例，修掉查詢恆為否、停用無效、啟用會掛出重複監聽器\n- 排入佇列的四處改成執行當下重新解析視窗，不再跨幀保存原生指標",
+    "LastUpdate": 1788370054
   },
   {
     "Author": "KangasZ",
@@ -1213,7 +1213,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.20.0.45",
+    "AssemblyVersion": "7.20.0.46",
     "Description": "A tiny little quest helper plugin, which does quests for you automatically where possible. Uses navmesh to automatically walk to all quest waypoints, and tries to automatically complete all steps along the way (excluding dungeons, single player duties and combat).\n\nNot all quests are supported, check the discord or git repository for an up-to-date list.\n\nRequired Plugins: vnavmesh, TextAdvance, Lifestream",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,16 +1232,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "A tiny quest helper plugin.",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.45/Questionable.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.45/Questionable.zip",
-    "Changelog": "- 修正偶發崩潰:對「按下之後正在關閉中」的確認框重按會造成攔不到的存取違規",
-    "LastUpdate": 1788363755
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.46/Questionable.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.46/Questionable.zip",
+    "Changelog": "- 修正守衛在判定安全之前先對視窗做無界字串讀取（視窗名改用有界讀法）\n- 修正偶發崩潰:自動關閉多重說明視窗時,第二發 callback 改成隔幀補送",
+    "LastUpdate": 1788370132
   },
   {
     "Author": "NightmareXIV",
     "Name": "TextAdvance",
     "InternalName": "TextAdvance",
-    "AssemblyVersion": "7.20.0.34",
+    "AssemblyVersion": "7.20.0.35",
     "Description": "Quest speedrunning assistance tool. Automatically confirms quest acceptance and completion, skips subtitles, cutscenes, and most prompts. Includes optional Splatoon-based quest target indicators and vnavmesh-based auto-navigation to quest objectives.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TextAdvance",
@@ -1260,10 +1260,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TextAdvance.png",
     "Punchline": "Quest speedrunning assistance tool. Automatically skips subtitle boxes and confirms cutscene skipping",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.34/TextAdvance.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.34/TextAdvance.zip",
-    "Changelog": "- 修正按壓守衛的幀時鐘在過場動畫中凍結:改數 Framework tick,過場中的對話不再只被推進第一頁\n- 六個按下點接上關閉中不重按守衛:Talk 翻頁每 15 幀一按、跳過場確認/接受任務/完成任務/交納交出/逐格填入與選件對同一扇窗各只送一次,讀到亂碼那幀不碰\n- 新增 AddonPressGuard 按壓守衛:同一扇窗按過就不再按到它真的收掉,防止對關閉中的視窗重送造成攔不到的存取違規",
-    "LastUpdate": 1788363682
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.35/TextAdvance.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.35/TextAdvance.zip",
+    "Changelog": "- 偵錯頁的獎勵挑選壓力測試不再跨幀持有原生節點指標,改成每個任務執行當下重查視窗",
+    "LastUpdate": 1788370044
   },
   {
     "Author": "Styr1x, PlusoneChiang",
@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.20.0.86",
+    "AssemblyVersion": "7.20.0.87",
     "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：部隊合建素材一鍵全交、野外陸行鳥自動餵食基薩爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.86/TCToolbox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.86/TCToolbox.zip",
-    "Changelog": "- 修正合建交納卡在確認框：確認框改掃全部實例，防重按改認實例位址而不是視窗名稱\n- 交出鈕按下後整扇交納視窗都不再碰，幻卡回收手動連按不再空等到逾時\n- 修正按壓守衛對「在視窗開啟事件裡就按下」的模組完全失效\n- 十七個模組的直發按壓路徑接上「關閉中不重按」守衛，讀到亂碼的那一幀一律不碰\n- 共用按壓守衛改成（視窗、位址、參數組）粒度並下沉到 UiHelper 全部送出路徑，Talk 類多次互動窗改用 15 幀逃生口",
-    "LastUpdate": 1788363669
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.87/TCToolbox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.87/TCToolbox.zip",
+    "Changelog": "- 修正守衛在判定安全之前先對視窗做無界字串讀取（視窗名改用有界讀法）",
+    "LastUpdate": 1788370042
   },
   {
     "Author": "daemitus, MidoriKami",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.20.0.45",
+    "AssemblyVersion": "7.20.0.46",
     "Description": "[Questionable dev plugin]: Renders gathering location using Pictomancy.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable dev plugin]: Renders gathering location.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.45/GatheringPathRenderer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.45/GatheringPathRenderer.zip",
-    "LastUpdate": 1788363755,
-    "Changelog": "- 修正偶發崩潰:對「按下之後正在關閉中」的確認框重按會造成攔不到的存取違規"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.46/GatheringPathRenderer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.46/GatheringPathRenderer.zip",
+    "LastUpdate": 1788370132,
+    "Changelog": "- 修正守衛在判定安全之前先對視窗做無界字串讀取（視窗名改用有界讀法）\n- 修正偶發崩潰:自動關閉多重說明視窗時,第二發 callback 改成隔幀補送"
   },
   {
     "Author": "WildWolf",
@@ -1882,7 +1882,7 @@
     "Author": "Ice",
     "Name": "Explorer's Icebox",
     "InternalName": "ExplorersIcebox",
-    "AssemblyVersion": "7.20.0.6",
+    "AssemblyVersion": "7.20.0.7",
     "Description": "協助提升無人島等級或採集各種無人島素材。需要 vnavmesh 與 Visland。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Explorers-Icebox",
@@ -1900,10 +1900,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ExplorersIcebox.png",
     "Punchline": "協助無人島開拓與素材採集。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ExplorersIcebox-v7.20.0.6/ExplorersIcebox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ExplorersIcebox-v7.20.0.6/ExplorersIcebox.zip",
-    "LastUpdate": 1788363708,
-    "Changelog": "- 加入視窗按壓守衛,擋掉對「正在關閉中」的無人島視窗重按造成的存取違規\n- 子模組 gitlink 對齊歷史整理後的 ECommons(樹一致,內容零變更)\n- 歷史整理:壓縮 6 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ExplorersIcebox-v7.20.0.7/ExplorersIcebox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ExplorersIcebox-v7.20.0.7/ExplorersIcebox.zip",
+    "LastUpdate": 1788370066,
+    "Changelog": "- ECommons 前進兩顆:修好誤按隱居小屋管理鈕,以及地圖標記換算漏減偏移\n- 採集模式選單的第二發改成重新解位址再送,不再沿用第一發之前抓到的指標\n- 出售流程補上視窗就緒閘門,擋掉對「剛建立、還沒載完」的出售視窗送 callback"
   },
   {
     "Author": "Haselnussbomber",
@@ -1961,7 +1961,7 @@
     "Author": "Asgard, Minmoose and Contributors",
     "Name": "Brio 集體動作姿勢編輯",
     "InternalName": "Brio",
-    "AssemblyVersion": "7.20.0.4",
+    "AssemblyVersion": "7.20.0.5",
     "Description": "在集體動作(GPose)中對角色與 NPC 做進階的姿勢、表情與動畫編輯。\r\n\r\n主要用途:進入集體動作後在 Brio 的角色清單選一個對象,用「姿勢」視窗的臉部頁調整表情骨骼,\r\n或用「動畫時間軸」視窗換嘴型與動畫。也可以生成額外的可擺姿角色、自訂光源、\r\n控制時間與天氣、播放 XAT 攝影機檔。\r\n\r\n台服移植版與上游的差異:\r\n- 基底為上游 v0.6.1.1(最後一版使用 API13/net9 的標籤),之後的版本已改用 API14/15 與 net10,台服跑不動。\r\n- 所有原生特徵碼改走閘門:比對不到時只停用該項功能並在日誌留一筆訊息,不會再讓整個外掛載入失敗。\r\n- 動畫時間軸資料表(ActionTimeline)的欄位布局依台服客戶端修正(台服的旗標欄位位置與國際服差一個位元組)。\r\n- 遊戲資料表讀取全面加上防護:台服缺少的表會退成空清單,不再讓外掛整個掛掉。\r\n- 角色清單改用獨立的物件參照,避免跨幀共用同一個包裝物件而把姿勢寫到別的角色身上。\r\n- 光源與物件表的索引加上邊界檢查。\r\n- 未安裝 Penumbra、Glamourer、Customize+、Mare 時一律靜默略過相關整合(表情與姿勢功能不需要它們)。\r\n- 介面只翻譯主視窗與設定分頁;姿勢/骨骼/動畫的內部用語維持英文,那些與社群教學一一對應,翻了反而對不上。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Brio",
@@ -1980,10 +1980,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Brio.png",
     "Punchline": "在集體動作(GPose)中編輯角色與 NPC 的姿勢、表情與動畫。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.4/Brio.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.4/Brio.zip",
-    "LastUpdate": 1787926755,
-    "Changelog": "- MCDF 套用流程改為每次 await 後以 id 重查角色"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.5/Brio.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.5/Brio.zip",
+    "LastUpdate": 1788370038,
+    "Changelog": "- 修正 Brio 角色初始化把原生指標帶過幀導致的存取違規風險"
   },
   {
     "Author": "ffxiv-tc-port",
