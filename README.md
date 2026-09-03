@@ -1,6 +1,6 @@
 # DalamudPluginsTC
 
-台服（TC，Traditional Chinese client）專用的第三方 Dalamud 插件庫，收錄並持續維護 **68 個**對應台服客戶端的插件 fork。
+台服（TC，Traditional Chinese client）專用的第三方 Dalamud 插件庫，收錄並持續維護 **70 個**對應台服客戶端的插件 fork。
 
 台服目前使用的 Dalamud 為 **API Level 13**，而多數插件的官方版本已隨國際服前進到更新的 API 等級，無法直接在台服安裝。本倉庫維護這些插件對應 **TC 7.20（API13）** 的相容分支，並**已完成全面繁體中文化**（介面採台服官方譯名、對照官方遊戲資料表校訂）。
 
