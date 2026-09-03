@@ -1,7 +1,7 @@
 {
   "EurekaHelper": "v7.20.0.19",
   "Accountant": "v7.20.0.20",
-  "AutoRetainer": "v7.20.0.104",
+  "AutoRetainer": "v7.20.0.105",
   "Saucy": "v7.20.0.44",
   "LogogramHelper": "v7.20.0.9",
   "TriadBuddy": "v7.20.0.9",
@@ -17,13 +17,13 @@
   "Lifestream": "v7.20.0.71",
   "SubmarineTracker": "v7.20.0.16",
   "YesAlready": "v7.20.0.31",
-  "GatherbuddyReborn": "v7.20.0.44",
+  "GatherbuddyReborn": "v7.20.0.45",
   "ItemVendorLocation": "v7.20.0.16",
   "HuntHelper": "v7.20.0.16",
   "LazyLoot": "v7.20.0.20",
   "MiniMappingway": "v7.20.0.13",
   "NecroLens": "v7.20.0.21",
-  "NotificationMaster": "v7.20.0.20",
+  "NotificationMaster": "v7.20.0.21",
   "PalacePal": "v7.20.0.21",
   "PixelPerfect": "v7.20.0.5",
   "PriceInsight": "v7.20.0.15",
@@ -38,7 +38,7 @@
   "AutoHook": "v7.20.0.33",
   "SkipCutscene": "v7.20.0.4",
   "DailyDuty": "v7.20.0.46",
-  "AutoDuty": "v7.20.0.54",
+  "AutoDuty": "v7.20.0.55",
   "Avarice": "v7.20.0.24",
   "Questionable": "v7.20.0.50",
   "TextAdvance": "v7.20.0.36",
@@ -68,5 +68,5 @@
   "ScrollableTabs": "v7.20.0.4",
   "Meddle.Plugin": "v7.20.0.3",
   "Brio": "v7.20.0.12",
-  "TataruPraise": "v7.20.0.12"
+  "TataruPraise": "v7.20.0.13"
 }
