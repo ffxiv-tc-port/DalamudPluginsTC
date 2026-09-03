@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.53",
+    "AssemblyVersion": "7.20.0.54",
     "Description": "自動幫你跑副本，支援信賴的同伴、達人指引、士官兵團、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.53/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.53/AutoDuty.zip",
-    "Changelog": "- YesAlready 壓制改用具名租約:跑本期間不再與其他外掛互相覆蓋同一格開關\n- 繁中翻譯把軍票乙太之光票券的「乙」修正回官方用字\n- AddonPressGuard 在放行按壓時寫一行按窗診斷,供跨外掛重按比對\n- 撤除 BossMod 側車:AddTransientStrategy 收斂回 ECommons.IPC 套件實例",
-    "LastUpdate": 1788437334
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.54/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.54/AutoDuty.zip",
+    "Changelog": "- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose\n- 撤除 vnavmesh 側車最後三支:導航核心收斂回套件實例,並讓綁不上變成看得見的\n- 修正註解裡寫錯的診斷等級前提:使用者跑的是 LogLevel 1 不是 2",
+    "LastUpdate": 1788445813
   },
   {
     "Author": "Det",
@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.103",
+    "AssemblyVersion": "7.20.0.104",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.103/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.103/AutoRetainer.zip",
-    "Changelog": "- 刪除已標為過期且零引用的 YesAlready 反射抑制輔助類別\n- 新增具名壓制租約 IPC:AcquireSuppression/ReleaseSuppression,多個外掛同時壓制不再互相解除\n- 更正 Lifestream 側車的技術債註解:等待的 AnalyzeDelegateField 永遠不會來,實際解除限制的是 TryGetDelegateSignature\n- 移除零呼叫的 Utils.IsCN 死碼,語言判斷只留 Loc.Load 一處",
-    "LastUpdate": 1788437338,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.104/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.104/AutoRetainer.zip",
+    "Changelog": "- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose\n- 壓制租約 IPC 改成與 YesAlready 相同的 Guid 憑證形狀，消滅形狀不一致造成的靜默空操作",
+    "LastUpdate": 1788445797,
     "CategoryTags": [
       "Inventory"
     ]
@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.20.0.43",
+    "AssemblyVersion": "7.20.0.44",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.43/GatherbuddyReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.43/GatherbuddyReborn.zip",
-    "Changelog": "- 修正關掉自動採集反而把 AutoRetainer 永久壓死:移除 Waiting setter 裡的無主壓制布林\n- AddonPressGuard 在真的送出按壓時寫一行統一格式的按窗診斷\n- 自動採集期間向 AutoRetainer 取得具名壓制租約,避免節點之間被它拿去跑僱員\n- TeamCraft 連結在台服改用繁中語言代碼 tw,不再退回 en",
-    "LastUpdate": 1788437343
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.44/GatherbuddyReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.44/GatherbuddyReborn.zip",
+    "Changelog": "- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose\n- AutoRetainer 壓制租約改用 Guid 憑證端點，並把續約失敗當成必須重新取得",
+    "LastUpdate": 1788445792
   },
   {
     "Author": "img02",
@@ -1123,7 +1123,7 @@
     "Author": "daemitus, croizat",
     "Name": "YesAlready",
     "InternalName": "YesAlready",
-    "AssemblyVersion": "7.20.0.30",
+    "AssemblyVersion": "7.20.0.31",
     "Description": "厭倦了在天守閣/伊迪爾夏爾禁地一直點確認嗎？受不了在副本裡一直按鍵嗎？YesAlready 可以自動點擊你設定的所有惱人對話框。只要輸入對話文字，就再也不用手動點了！支援 /regex/ 比對，也內建了幾個針對「看起來不是 yes/no，但行為類似」的對話框（例如分解）的模組。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/YesAlready",
@@ -1143,10 +1143,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/YesAlready.png",
     "Punchline": "自動點擊你指定的各種確認對話框。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.30/YesAlready.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.30/YesAlready.zip",
-    "Changelog": "- 阻擋清單加上持有者存活檢查與逾時，並停止在重載時洗掉別的外掛掛上的鎖\n- 開關改成記名的壓制租約，修掉多個外掛互相覆蓋、以及暫停時間被佇列砍短\n- 按窗守衛在真的送出按壓時寫一行全艦隊統一格式的診斷，供跨外掛重按比對",
-    "LastUpdate": 1788437354
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.31/YesAlready.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.31/YesAlready.zip",
+    "Changelog": "- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose\n- 壓制租約端點補上跨外掛的形狀契約註解，AutoRetainer 已比照同一形狀",
+    "LastUpdate": 1788445762
   },
   {
     "Author": "KangasZ",
@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.20.0.106",
+    "AssemblyVersion": "7.20.0.107",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.106/ICE.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.106/ICE.zip",
-    "Changelog": "- 修正必要外掛頁的安裝按鈕指向國際服外掛庫,按下去會把 API15 版裝進台服\n- 術語修正:繁中翻譯把「以太之光」改成台服官方用字「乙太之光」\n- AddonPressGuard 在真的送出按壓時寫一行統一格式的按窗診斷\n- 自動化執行期間向 AutoRetainer 取得具名壓制租約,避免任務之間被它拿去跑僱員",
-    "LastUpdate": 1788437396
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.107/ICE.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.107/ICE.zip",
+    "Changelog": "- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose\n- AutoRetainer 壓制租約改用 Guid 憑證端點，並把續約失敗當成必須重新取得\n- 機甲行動報名視窗開放時在聊天視窗通知一次(純通知,不替你報名)",
+    "LastUpdate": 1788445792
   },
   {
     "Author": "Liza Carvelli",
@@ -1961,7 +1961,7 @@
     "Author": "Asgard, Minmoose and Contributors",
     "Name": "Brio 集體動作姿勢編輯",
     "InternalName": "Brio",
-    "AssemblyVersion": "7.20.0.11",
+    "AssemblyVersion": "7.20.0.12",
     "Description": "在集體動作(GPose)中對角色與 NPC 做進階的姿勢、表情與動畫編輯。\r\n\r\n主要用途:進入集體動作後在 Brio 的角色清單選一個對象,用「姿勢」視窗的臉部頁調整表情骨骼,\r\n或用「動畫時間軸」視窗換嘴型與動畫。也可以生成額外的可擺姿角色、自訂光源、\r\n控制時間與天氣、播放 XAT 攝影機檔。\r\n\r\n台服移植版與上游的差異:\r\n- 基底為上游 v0.6.1.1(最後一版使用 API13/net9 的標籤),之後的版本已改用 API14/15 與 net10,台服跑不動。\r\n- 所有原生特徵碼改走閘門:比對不到時只停用該項功能並在日誌留一筆訊息,不會再讓整個外掛載入失敗。\r\n- 動畫時間軸資料表(ActionTimeline)的欄位布局依台服客戶端修正(台服的旗標欄位位置與國際服差一個位元組)。\r\n- 遊戲資料表讀取全面加上防護:台服缺少的表會退成空清單,不再讓外掛整個掛掉。\r\n- 角色清單改用獨立的物件參照,避免跨幀共用同一個包裝物件而把姿勢寫到別的角色身上。\r\n- 光源與物件表的索引加上邊界檢查。\r\n- 未安裝 Penumbra、Glamourer、Customize+、Mare 時一律靜默略過相關整合(表情與姿勢功能不需要它們)。\r\n- 介面只翻譯主視窗與設定分頁;姿勢/骨骼/動畫的內部用語維持英文,那些與社群教學一一對應,翻了反而對不上。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Brio",
@@ -1980,10 +1980,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Brio.png",
     "Punchline": "在集體動作(GPose)中編輯角色與 NPC 的姿勢、表情與動畫。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.11/Brio.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.11/Brio.zip",
-    "LastUpdate": 1788384030,
-    "Changelog": "- 修正 Brio ComponentSet 界外檢查只印 Log.Fatal 卻沒有 return 而毒化空號佇列"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.12/Brio.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.12/Brio.zip",
+    "LastUpdate": 1788445758,
+    "Changelog": "- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose\n- 修正 Brio 生成角色的 Penumbra 集合與 Glamourer 設計落不到自己身上"
   },
   {
     "Author": "ffxiv-tc-port",
