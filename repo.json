@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.20.0.96",
+    "AssemblyVersion": "7.20.0.97",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,16 +58,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.96/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.96/Artisan.zip",
-    "Changelog": "- 移除 YesAlready 舊版反射抑制路徑,只留共享資料 StopRequests\n- 修正材料表的採集／商店查詢閘門對不上台服外掛內部名,右鍵選項永遠不出現\n- 修正偵錯分頁的停止導航按鈕呼叫不存在的 IPC 端點,改用 vnavmesh.Path.Stop\n- AddonPressGuard 在放行按壓時寫一行按窗診斷,供跨外掛重按比對\n- 新增 IPC Artisan.ReturnMacroInfo,讓其他外掛取得巨集的名稱與 ID 對照\n- 製作清單等級不足的錯誤訊息帶上道具名,不再只說「這個道具」",
-    "LastUpdate": 1788437349
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.97/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.97/Artisan.zip",
+    "Changelog": "- 按窗守衛：ContextMenu 是常駐窗，按下記號改由「連續隱藏 20 幀」解除\n- 塔塔露誇獎：前置閘門改用 IsAvailableFor(情境)，逐情境判斷能不能出聲\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose",
+    "LastUpdate": 1788531781
   },
   {
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.57",
+    "AssemblyVersion": "7.20.0.58",
     "Description": "自動幫你跑副本，支援信賴的同伴、達人指引、士官兵團、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,16 +87,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.57/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.57/AutoDuty.zip",
-    "Changelog": "- AutoDuty 自己停下來時請 TataruPraise 用語音喊一句",
-    "LastUpdate": 1788526031
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.58/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.58/AutoDuty.zip",
+    "Changelog": "- YesAlready 壓制租約改成租 5 分鐘、每 30 秒續約\n- 塔塔露誇獎：前置閘門改用 IsAvailableFor(情境)，逐情境判斷能不能出聲",
+    "LastUpdate": 1788531808
   },
   {
     "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
-    "AssemblyVersion": "7.20.0.34",
+    "AssemblyVersion": "7.20.0.35",
     "Description": "自動幫你提鉤釣魚,你能相信嗎?\n支援自訂預設集、自動以小釣大、自動刺魚等功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoHook",
@@ -116,16 +116,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoHook.png",
     "Punchline": "讓釣魚不再無聊(或更無聊)。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.34/AutoHook.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.34/AutoHook.zip",
-    "Changelog": "- 釣到稀有魚時請 TataruPraise 出聲（預設只認大魚，四個判準可各自開關）\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose\n- Update bitetimers.json",
-    "LastUpdate": 1788525954
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.35/AutoHook.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.35/AutoHook.zip",
+    "Changelog": "- 塔塔露誇獎：前置閘門改用 IsAvailableFor(情境)，逐情境判斷能不能出聲",
+    "LastUpdate": 1788531755
   },
   {
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.107",
+    "AssemblyVersion": "7.20.0.108",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.107/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.107/AutoRetainer.zip",
-    "Changelog": "- 快捷賣出送出選單 callback 前補上就地就緒檢查，拆掉「20 幀夠不夠」這個崩潰面\n- 修正快捷賣出每隔一次右鍵就沒反應：按窗守衛對常駐 addon 永遠不解除",
-    "LastUpdate": 1788507026,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.108/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.108/AutoRetainer.zip",
+    "Changelog": "- 塔塔露誇獎：前置閘門改用 IsAvailableFor(情境)，逐情境判斷能不能出聲",
+    "LastUpdate": 1788531785,
     "CategoryTags": [
       "Inventory"
     ]
@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.20.0.47",
+    "AssemblyVersion": "7.20.0.48",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,16 +409,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.47/GatherbuddyReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.47/GatherbuddyReborn.zip",
-    "Changelog": "- 自動採集自己停下來時請 TataruPraise 用語音喊一句",
-    "LastUpdate": 1788525963
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.48/GatherbuddyReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.48/GatherbuddyReborn.zip",
+    "Changelog": "- 塔塔露誇獎：前置閘門改用 IsAvailableFor(情境)，逐情境判斷能不能出聲",
+    "LastUpdate": 1788531764
   },
   {
     "Author": "img02",
     "Name": "Hunt Helper",
     "InternalName": "HuntHelper",
-    "AssemblyVersion": "7.20.0.17",
+    "AssemblyVersion": "7.20.0.18",
     "Description": "顯示標記重生點的狩獵地圖、A級討伐車隊記錄器（可匯出/匯入分享）、語音播報、聊天通知，以及S級討伐重生計數器",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/HuntHelper",
@@ -438,16 +438,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/HuntHelper.png",
     "Punchline": "打寶雷達＋車隊記錄器＋通知＋S級討伐輔助工具等一應俱全。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.17/HuntHelper.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.17/HuntHelper.zip",
-    "Changelog": "- 發現魔物時請 TataruPraise 出聲（沿用 A/B/S 分級，同一隻怪十分鐘只念一次）\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose",
-    "LastUpdate": 1788525939
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.18/HuntHelper.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.18/HuntHelper.zip",
+    "Changelog": "- 塔塔露誇獎：前置閘門改用 IsAvailableFor(情境)，逐情境判斷能不能出聲",
+    "LastUpdate": 1788531747
   },
   {
     "Author": "Critical_Impact",
     "Name": "Allagan Tools",
     "InternalName": "InventoryTools",
-    "AssemblyVersion": "7.20.0.38",
+    "AssemblyVersion": "7.20.0.39",
     "Description": "Allagan Tools 的主要目的是追蹤你所有角色/僱員/公會倉庫中的道具。透過它的篩選系統，你將不再遺失任何道具的蹤跡，也不再不知道道具該收納在哪裡。\n\n雖然這是它的主要功能，但它還擁有相當豐富的其他功能，包括：\n\t- 製作規劃\n\t- 市場公告板整合\n\t- 在搜尋/整理及挑選製作材料時於背包中高亮顯示道具\n\t- 包含商人與取得來源等資訊的道具視窗\n\t- 可完整搜尋的任務/怪物/飛空艇/潛水艇視窗\n\t- 讓你能為特定道具設定複雜搜尋條件的篩選系統\n\t- 提示視窗整合，滑鼠懸停即可查看道具所在位置",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/InventoryTools",
@@ -467,10 +467,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/InventoryTools.png",
     "Punchline": "讓你的 FFXIV 井井有條，輕鬆定位/顯示道具應收納何處、規劃製作，並搜尋怪物、任務、飛空艇與潛水艇！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.38/InventoryTools.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.38/InventoryTools.zip",
-    "Changelog": "- 背包快滿時請 TataruPraise 出聲提醒，門檻可設定且只在跨過門檻時響一次",
-    "LastUpdate": 1788525987
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.39/InventoryTools.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.39/InventoryTools.zip",
+    "Changelog": "- 塔塔露誇獎：閘門改用 IsAvailableFor(情境)，分得出「不能出聲」與「這次沒出聲」",
+    "LastUpdate": 1788531797
   },
   {
     "Author": "electr0sheep, Nuko",
@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.72",
+    "AssemblyVersion": "7.20.0.73",
     "Description": "- 一鍵傳送至任何世界或乙太之光目的地\n- 點擊區域地圖上的乙太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速乙太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.72/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.72/Lifestream.zip",
-    "Changelog": "- 只在 legacy mode 真的翻轉時才寫 log,消掉實機最大的雜訊來源\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose",
-    "LastUpdate": 1788459408
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.73/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.73/Lifestream.zip",
+    "Changelog": "- 按窗守衛：ContextMenu 是常駐窗，按下記號改由「連續隱藏 20 幀」解除\n- 塔塔露誇獎：閘門改用 IsAvailableFor(情境)，分得出「不能出聲」與「這次沒出聲」",
+    "LastUpdate": 1788531782
   },
   {
     "Author": "apetih",
@@ -679,7 +679,7 @@
     "Author": "NightmareXIV",
     "Name": "NotificationMaster",
     "InternalName": "NotificationMaster",
-    "AssemblyVersion": "7.20.0.22",
+    "AssemblyVersion": "7.20.0.23",
     "Description": "在遊戲視窗縮到最小時，通知你各種遊戲內事件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/NotificationMaster",
@@ -698,10 +698,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/NotificationMaster.png",
     "Punchline": "目前支援的通知：聊天訊息、接近地圖標記、已找到任務、過場動畫結束、GP 恢復、登入時發生錯誤、怪物已被拉起、任務開始、準備確認、隊友看完過場動畫。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.22/NotificationMaster.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.22/NotificationMaster.zip",
-    "Changelog": "- 樞紐分類鏡像補上 TataruPraise 的 6 個新通知情境\n- 更正過期的使用說明:稽核工具已不需要 --extra",
-    "LastUpdate": 1788525694
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.23/NotificationMaster.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.23/NotificationMaster.zip",
+    "Changelog": "- 塔塔露誇獎：閘門改用 IsAvailableFor(情境)，分得出「不能出聲」與「這次沒出聲」",
+    "LastUpdate": 1788531798
   },
   {
     "Author": "Liza Carvelli (Puni.sh)",
@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.20.0.45",
+    "AssemblyVersion": "7.20.0.46",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.45/Saucy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.45/Saucy.zip",
-    "Changelog": "- 任務逾時的 Warning 補上任務名:改由 Saucy 這一側在 OnTaskTimeout 事件裡印\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose",
-    "LastUpdate": 1788459376,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.46/Saucy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.46/Saucy.zip",
+    "Changelog": "- 塔塔露誇獎：閘門改用 IsAvailableFor(情境)，分得出「不能出聲」與「這次沒出聲」",
+    "LastUpdate": 1788531772,
     "CategoryTags": [
       "Minigames"
     ]
@@ -853,7 +853,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.20.0.46",
+    "AssemblyVersion": "7.20.0.47",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -872,10 +872,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.46/SomethingNeedDoing.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.46/SomethingNeedDoing.zip",
-    "Changelog": "- YesAlready 壓制改用具名租約:巨集跑完不再掀掉別的外掛的壓制,Lua 語意逐字不變",
-    "LastUpdate": 1788437319,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.47/SomethingNeedDoing.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.47/SomethingNeedDoing.zip",
+    "Changelog": "- YesAlready 壓制租約改成租 5 分鐘、每 30 秒心跳",
+    "LastUpdate": 1788531770,
     "CategoryTags": [
       "Utility"
     ]
@@ -1181,7 +1181,7 @@
     "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.20.0.47",
+    "AssemblyVersion": "7.20.0.48",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/DailyDuty",
@@ -1204,16 +1204,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.47/DailyDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.47/DailyDuty.zip",
-    "Changelog": "- 重置後仍有未完成項目時請 TataruPraise 出聲，預設開啟\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose",
-    "LastUpdate": 1788525944
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.48/DailyDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.48/DailyDuty.zip",
+    "Changelog": "- 塔塔露誇獎：前置閘門改用 IsAvailableFor(情境)，逐情境判斷能不能出聲",
+    "LastUpdate": 1788531750
   },
   {
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.20.0.50",
+    "AssemblyVersion": "7.20.0.51",
     "Description": "A tiny little quest helper plugin, which does quests for you automatically where possible. Uses navmesh to automatically walk to all quest waypoints, and tries to automatically complete all steps along the way (excluding dungeons, single player duties and combat).\n\nNot all quests are supported, check the discord or git repository for an up-to-date list.\n\nRequired Plugins: vnavmesh, TextAdvance, Lifestream",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,10 +1232,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "A tiny quest helper plugin.",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.50/Questionable.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.50/Questionable.zip",
-    "Changelog": "- 更正註解:LogLevel 1 是 Serilog 的 Debug 門檻,不是 Information\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose",
-    "LastUpdate": 1788445858
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.51/Questionable.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.51/Questionable.zip",
+    "Changelog": "- YesAlready 壓制租約改成租 5 分鐘、每 30 秒續約\n- 塔塔露誇獎：閘門改用 IsAvailableFor(情境)，分得出「不能出聲」與「這次沒出聲」",
+    "LastUpdate": 1788531891
   },
   {
     "Author": "NightmareXIV",
@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.20.0.107",
+    "AssemblyVersion": "7.20.0.108",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.107/ICE.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.107/ICE.zip",
-    "Changelog": "- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose\n- AutoRetainer 壓制租約改用 Guid 憑證端點，並把續約失敗當成必須重新取得\n- 機甲行動報名視窗開放時在聊天視窗通知一次(純通知,不替你報名)",
-    "LastUpdate": 1788445792
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.108/ICE.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ICE-v7.20.0.108/ICE.zip",
+    "Changelog": "- 塔塔露誇獎：前置閘門改用 IsAvailableFor(情境)，逐情境判斷能不能出聲",
+    "LastUpdate": 1788531803
   },
   {
     "Author": "Liza Carvelli",
@@ -1439,7 +1439,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.20.0.41",
+    "AssemblyVersion": "7.20.0.42",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 金幣並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1455,10 +1455,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點金幣！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.41/Marketbuddy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.41/Marketbuddy.zip",
-    "Changelog": "- 快速上架：送出右鍵選單選取前補一道就地就緒檢查",
-    "LastUpdate": 1788520467
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.42/Marketbuddy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.42/Marketbuddy.zip",
+    "Changelog": "- 塔塔露誇獎：閘門改用 IsAvailableFor(情境)，分得出「不能出聲」與「這次沒出聲」",
+    "LastUpdate": 1788531761
   },
   {
     "Author": "Faye",
@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.20.0.90",
+    "AssemblyVersion": "7.20.0.91",
     "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：部隊合建素材一鍵全交、野外陸行鳥自動餵食基薩爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.90/TCToolbox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.90/TCToolbox.zip",
-    "Changelog": "- 按窗守衛：ContextMenu 改當常駐視窗處理，連續隱藏 20 幀就解除封鎖",
-    "LastUpdate": 1788520480
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.91/TCToolbox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.91/TCToolbox.zip",
+    "Changelog": "- 塔塔露誇獎：閘門改用 IsAvailableFor(情境)，分得出「不能出聲」與「這次沒出聲」",
+    "LastUpdate": 1788531771
   },
   {
     "Author": "daemitus, MidoriKami",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.20.0.50",
+    "AssemblyVersion": "7.20.0.51",
     "Description": "[Questionable dev plugin]: Renders gathering location using Pictomancy.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable dev plugin]: Renders gathering location.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.50/GatheringPathRenderer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.50/GatheringPathRenderer.zip",
-    "LastUpdate": 1788445858,
-    "Changelog": "- 更正註解:LogLevel 1 是 Serilog 的 Debug 門檻,不是 Information\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.51/GatheringPathRenderer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.51/GatheringPathRenderer.zip",
+    "LastUpdate": 1788531891,
+    "Changelog": "- YesAlready 壓制租約改成租 5 分鐘、每 30 秒續約\n- 塔塔露誇獎：閘門改用 IsAvailableFor(情境)，分得出「不能出聲」與「這次沒出聲」"
   },
   {
     "Author": "WildWolf",
@@ -1775,7 +1775,7 @@
     "Author": "Anna, Maintained by Caraxi",
     "Name": "Peeping Tom",
     "InternalName": "PeepingTom",
-    "AssemblyVersion": "7.20.0.5",
+    "AssemblyVersion": "7.20.0.6",
     "Description": "顯示目前正在鎖定你、以及先前曾鎖定你的玩家。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PeepingTom",
@@ -1789,10 +1789,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/PeepingTom.png",
     "Punchline": "顯示誰正在鎖定你。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PeepingTom-v7.20.0.5/PeepingTom.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PeepingTom-v7.20.0.5/PeepingTom.zip",
-    "LastUpdate": 1787927113,
-    "Changelog": "- 有新的人開始盯著你時請塔塔露出聲提醒（TataruPraise IPC）\n- 歷史整理:壓縮 5 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PeepingTom-v7.20.0.6/PeepingTom.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PeepingTom-v7.20.0.6/PeepingTom.zip",
+    "LastUpdate": 1788531800,
+    "Changelog": "- 塔塔露誇獎：閘門改用 IsAvailableFor(情境)，分得出「不能出聲」與「這次沒出聲」\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose"
   },
   {
     "Author": "Felys, aers",
@@ -1989,7 +1989,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "塔塔露誇獎",
     "InternalName": "TataruPraise",
-    "AssemblyVersion": "7.20.0.15",
+    "AssemblyVersion": "7.20.0.16",
     "Description": "遊戲裡發生事情的時候，用塔塔露的聲音喊一句極短的提示——「完美收工！」「後面！」「排到了！」。不是要太多對話，只是要有聲音。每個情境一句、全部 8 個字以內，情境有副本完成／升等／登入／Gil 里程碑／血量低／背後有人／收到密語／副本排到／組隊邀請／交易請求等，各自獨立開關（預設全部關閉）。播的是事先合成好的語音檔，執行期完全不連網。語音來自本機的 GPT-SoVITS 橋接（預設 http://127.0.0.1:9882），沒有橋接就只是不出聲，不會卡遊戲。設定視窗可以直接編輯每個情境的短句；資訊列上有一格，點一下切換總開關。指令 /tataru 開啟設定視窗，/tataru test 試播一句。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TataruPraise",
@@ -2009,9 +2009,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TataruPraise.png",
     "Punchline": "遊戲裡有事發生就喊一句極短提示，純本機、預設全關。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TataruPraise-v7.20.0.15/TataruPraise.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TataruPraise-v7.20.0.15/TataruPraise.zip",
-    "LastUpdate": 1788525693,
-    "Changelog": "- 新增 6 個通知情境：跑本停止、採集停止、稀有魚、發現魔物、背包快滿、每日重置\n- 重建後把 Release workflow 重新註冊回來(dispatch-only 不會自動出現)"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TataruPraise-v7.20.0.16/TataruPraise.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TataruPraise-v7.20.0.16/TataruPraise.zip",
+    "LastUpdate": 1788531746,
+    "Changelog": "- IsAvailableFor 端點補回未知情境診斷：鍵名打錯不再靜默"
   }
 ]
