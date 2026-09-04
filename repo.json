@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.106",
+    "AssemblyVersion": "7.20.0.107",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.106/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.106/AutoRetainer.zip",
-    "Changelog": "- PressRecord 改成 class，把「漏寫回就會生出崩潰面」這個地雷從根本拆掉\n- 多次互動窗改用純節流語意，不再把正常翻頁記成「補按一次」（兩天 10,423 行）",
-    "LastUpdate": 1788459464,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.107/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.107/AutoRetainer.zip",
+    "Changelog": "- 快捷賣出送出選單 callback 前補上就地就緒檢查，拆掉「20 幀夠不夠」這個崩潰面\n- 修正快捷賣出每隔一次右鍵就沒反應：按窗守衛對常駐 addon 永遠不解除",
+    "LastUpdate": 1788507026,
     "CategoryTags": [
       "Inventory"
     ]
