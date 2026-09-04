@@ -67,8 +67,8 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.60",
-    "Description": "自動幫你跑副本，支援信賴的同伴、達人指引、士官兵團、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
+    "AssemblyVersion": "7.20.0.61",
+    "Description": "自動幫你跑副本，支援親信戰友、劇情輔助器、冒險者分隊、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
     "Tags": [
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.60/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.60/AutoDuty.zip",
-    "Changelog": "- 路徑索引失效時不再崩潰:LoadPath 改成重選而不是硬索引\n- 路徑分頁不再因為容器空掉而整個消失:IsFirstPath 補上空集合判斷\n- 路徑檔全部壞掉時不再崩潰:SelectPath 回 null、PathFile 退回空檔並修好呼叫端\n- 存檔路徑改成原子寫入:寫到一半崩潰不再留下截斷的路徑檔\n- repo 重建後重新註冊 workflow",
-    "LastUpdate": 1788547781
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.61/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.61/AutoDuty.zip",
+    "Changelog": "- manifest 描述用語更新：達人指引/信賴的同伴/士官兵團 改為台服官方用語\n- 重寫 README 為繁體中文",
+    "LastUpdate": 1788552210
   },
   {
     "Author": "Det",
@@ -149,8 +149,8 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "Avarice",
     "InternalName": "Avarice",
-    "AssemblyVersion": "7.20.0.25",
-    "Description": "Positional feedback with pixel perfect rear/flank tracking, range indicators, and more.",
+    "AssemblyVersion": "7.20.0.26",
+    "Description": "戰鬥定位輔助疊加層：\n- 標示背後／側面判定範圍與最大近戰距離\n- 顯示玩家攻擊判定像素，命中／未命中可觸發 VFX 或聊天訊息\n- 預測下一輪判定並依職業客製化提示\n- 支援 Splatoon 整合與多套設定檔",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Avarice",
     "Tags": [
@@ -165,18 +165,18 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Avarice.png",
-    "Punchline": "Positional feedback with pixel perfect rear/flank tracking, range indicators, and more.",
+    "Punchline": "顯示背後／側面判定範圍與命中回饋",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.25/Avarice.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.25/Avarice.zip",
-    "Changelog": "- 方位表:補上參之牙四式的 param2=40,蝰蛇第三段的方位命中終於判得出來\n- 方位表:補上台服 7.20 蝰蛇雙蛇連招的 param2=8,並在校準探針補上表內來源\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose\n- 子模組 gitlink 對齊歷史整理後的 ECommons(樹一致,內容零變更)\n- 歷史整理:壓縮 35 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 7 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1788459378
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.26/Avarice.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.26/Avarice.zip",
+    "Changelog": "- 在地化:manifest 描述改為繁體中文\n- 重寫 README 為繁體中文",
+    "LastUpdate": 1788552160
   },
   {
     "Author": "NeNeppie",
     "Name": "Avant-Garde",
     "InternalName": "AvantGarde",
-    "AssemblyVersion": "7.20.0.6",
+    "AssemblyVersion": "7.20.0.7",
     "Description": "本插件為社群共同維護的專案，目標是為所有提示分類提供完整的裝備清單。\n如需了解如何參與貢獻，請參閱 GitHub 頁面。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AvantGarde",
@@ -194,12 +194,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AvantGarde.png",
-    "Punchline": "在潮流王小遊戲的提示旁顯示符合條件的裝備清單。",
+    "Punchline": "在時尚品鑑小遊戲的提示旁顯示符合條件的裝備清單。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AvantGarde-v7.20.0.6/AvantGarde.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AvantGarde-v7.20.0.6/AvantGarde.zip",
-    "Changelog": "- 道具連結:AgentChatLog 裸鏈補判空",
-    "LastUpdate": 1787128875
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AvantGarde-v7.20.0.7/AvantGarde.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AvantGarde-v7.20.0.7/AvantGarde.zip",
+    "Changelog": "- manifest 描述用語更新：潮流王 改為台服官方用語「時尚品鑑」\n- 重寫 README 為繁體中文\n- 歷史整理:壓縮 7 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge remote-tracking branch 'origin/tc-7.15' into tc-api13-draft\n- 歷史整理:壓縮 8 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1788552150
   },
   {
     "Author": "The Combat Reborn Team",
@@ -234,8 +234,8 @@
     "Author": "Kouzukii",
     "Name": "Character Panel Refined",
     "InternalName": "CharacterPanelRefined",
-    "AssemblyVersion": "7.20.0.11",
-    "Description": "Character Panel Refined 精簡了角色狀態面板中的無用資訊，並加入了會心與直擊機率等實用數值，以及預估輸出傷害，方便比較裝備優劣。",
+    "AssemblyVersion": "7.20.0.12",
+    "Description": "Character Panel Refined 精簡了角色狀態面板中的無用資訊，並加入了暴擊與直擊機率等實用數值，以及預估輸出傷害，方便比較裝備優劣。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/CharacterPanelRefined",
     "Tags": [
@@ -252,19 +252,19 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/CharacterPanelRefined.png",
-    "Punchline": "Refine the character panel to display only useful information like crit and direct hit chance",
+    "Punchline": "精簡角色面板，只留暴擊、直擊等實用數值。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.11/CharacterPanelRefined.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.11/CharacterPanelRefined.zip",
-    "Changelog": "- 修正條件式節點指標殘留:OnSetup 進場無條件清空,並補上 DoH/DoL 八個使用點的判空\n- 歷史整理:壓縮 13 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 10 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1787792746
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.12/CharacterPanelRefined.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.12/CharacterPanelRefined.zip",
+    "Changelog": "- manifest 描述用語更新：會心 改為 暴擊，並補上中文 Punchline\n- README 改寫為繁體中文",
+    "LastUpdate": 1788552165
   },
   {
     "Author": "Infi, Anna",
     "Name": "Chat 2",
     "InternalName": "ChatTwo",
-    "AssemblyVersion": "7.20.0.27",
-    "Description": "Chat 2 是遊戲內建聊天視窗的完整重寫版外掛。\n支援功能：\n\n- 無限分頁\n- 固定發送到特定頻道的分頁\n- 更靈活的過濾功能\n- RGB 頻道顏色\n- 完全可變字體大小\n- 側邊欄分頁\n- 未讀訊息計數\n- 表情符號\n- 截圖模式（隱藏名稱）",
+    "AssemblyVersion": "7.20.0.28",
+    "Description": "Chat 2 是遊戲內建聊天視窗的完整重寫版插件。\n支援功能：\n\n- 無限分頁\n- 固定發送到特定頻道的分頁\n- 更靈活的過濾功能\n- RGB 頻道顏色\n- 完全可變字體大小\n- 側邊欄分頁\n- 未讀訊息計數\n- 表情符號\n- 截圖模式（隱藏名稱）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ChatTwo",
     "Tags": [
@@ -285,10 +285,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ChatTwo.png",
     "Punchline": "電光石火 - ♪ 全新的聊天視窗，一個嶄新美妙的聊天窗口 ♪",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.27/ChatTwo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.27/ChatTwo.zip",
-    "Changelog": "- 補上 InputPreview 視窗漏掉的 base.PreDraw():每視窗不透明度不再靜默失效",
-    "LastUpdate": 1788035228
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.28/ChatTwo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.28/ChatTwo.zip",
+    "Changelog": "- 在地化:manifest 描述修正用詞,外掛改為插件\n- README 改寫為繁體中文\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose",
+    "LastUpdate": 1788552162
   },
   {
     "Author": "Nylfae",
@@ -418,7 +418,7 @@
     "Author": "img02",
     "Name": "Hunt Helper",
     "InternalName": "HuntHelper",
-    "AssemblyVersion": "7.20.0.18",
+    "AssemblyVersion": "7.20.0.19",
     "Description": "顯示標記重生點的狩獵地圖、A級討伐車隊記錄器（可匯出/匯入分享）、語音播報、聊天通知，以及S級討伐重生計數器",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/HuntHelper",
@@ -436,12 +436,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/HuntHelper.png",
-    "Punchline": "打寶雷達＋車隊記錄器＋通知＋S級討伐輔助工具等一應俱全。",
+    "Punchline": "狩獵任務雷達＋車隊記錄器＋通知＋S級討伐輔助工具等一應俱全。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.18/HuntHelper.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.18/HuntHelper.zip",
-    "Changelog": "- 塔塔露誇獎：前置閘門改用 IsAvailableFor(情境)，逐情境判斷能不能出聲",
-    "LastUpdate": 1788531747
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.19/HuntHelper.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/HuntHelper-v7.20.0.19/HuntHelper.zip",
+    "Changelog": "- manifest 描述用語更新：打寶 改為台服官方用語「狩獵任務」\n- 文件:README 改寫為繁體中文",
+    "LastUpdate": 1788552158
   },
   {
     "Author": "Critical_Impact",
@@ -593,8 +593,8 @@
     "Author": "apetih",
     "Name": "Logogram Helper",
     "InternalName": "LogogramHelper",
-    "AssemblyVersion": "7.20.0.9",
-    "Description": "進入聖言操縱者後，顯示優雷卡聖言技能所有可能組合的數量。",
+    "AssemblyVersion": "7.20.0.10",
+    "Description": "進入文理融合器後，顯示優雷卡文理技能所有可能組合的數量。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/LogogramHelper",
     "Tags": [
@@ -610,12 +610,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/LogogramHelper.png",
-    "Punchline": "優雷卡聖言技能輔助工具。",
+    "Punchline": "優雷卡文理技能輔助工具。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LogogramHelper-v7.20.0.9/LogogramHelper.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LogogramHelper-v7.20.0.9/LogogramHelper.zip",
-    "Changelog": "- 修正台服官方術語錯字：zh_TW.json「以太恢復速度」應為「乙太恢復速度」\n- 歷史整理:壓縮 10 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 22 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1788437345
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LogogramHelper-v7.20.0.10/LogogramHelper.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LogogramHelper-v7.20.0.10/LogogramHelper.zip",
+    "Changelog": "- manifest 描述用語更新：聖言技能/聖言操縱者 改為台服官方用語\n- 文件:README 改寫為繁體中文\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose",
+    "LastUpdate": 1788552151
   },
   {
     "Author": "JayceOfSpades",
@@ -884,8 +884,8 @@
     "Author": "Sonar Team",
     "Name": "Sonar",
     "InternalName": "SonarPlugin",
-    "AssemblyVersion": "7.20.0.11",
-    "Description": "自動傳送與接收打寶及 FATE 情報。輸入 /sonar 開啟主視窗，/sonarconfig 進行設定。技術支援僅提供於 Sonar Support Discord。",
+    "AssemblyVersion": "7.20.0.12",
+    "Description": "自動傳送與接收狩獵任務及 FATE 情報。輸入 /sonar 開啟主視窗，/sonarconfig 進行設定。技術支援僅提供於 Sonar Support Discord。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SonarPlugin",
     "Tags": [
@@ -902,12 +902,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SonarPlugin.png",
-    "Punchline": "自動傳送與接收打寶及 FATE 情報。",
+    "Punchline": "自動傳送與接收狩獵任務及 FATE 情報。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SonarPlugin-v7.20.0.11/SonarPlugin.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SonarPlugin-v7.20.0.11/SonarPlugin.zip",
-    "Changelog": "- 修正視窗 PreDraw/PostDraw 未呼叫 base，恢復 Dalamud 每視窗不透明度功能\n- 歷史整理:壓縮 12 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 7 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge tc-7.15-async-fix: fix main-thread freeze bugs\n- 歷史整理:壓縮 8 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1787792764
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SonarPlugin-v7.20.0.12/SonarPlugin.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SonarPlugin-v7.20.0.12/SonarPlugin.zip",
+    "Changelog": "- manifest 描述用語更新：打寶 改為台服官方用語「狩獵任務」\n- 重寫 README 為繁體中文：改用狩獵標記等官方用語，移除 Patreon 贊助連結",
+    "LastUpdate": 1788552196
   },
   {
     "Author": "NightmareXIV",
@@ -970,8 +970,8 @@
     "Author": "MgAl2O4",
     "Name": "TriadBuddy",
     "InternalName": "TriadBuddy",
-    "AssemblyVersion": "7.20.0.9",
-    "Description": "三張牌遊戲解牌工具，僅支援 NPC 對戰。\n- 小遊戲進行時提示下一步最佳出牌\n- 對戰前評估所有牌組預設\n- NPC 牌組優化器\n- 為卡牌收藏視窗新增更多細節",
+    "AssemblyVersion": "7.20.0.10",
+    "Description": "九宮幻卡解牌工具，僅支援 NPC 對戰。\n- 小遊戲進行時提示下一步最佳出牌\n- 對戰前評估所有牌組預設\n- NPC 牌組優化器\n- 為卡牌收藏視窗新增更多細節",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/FFTriadBuddyDalamud",
     "Tags": [
@@ -984,13 +984,13 @@
     "LoadSync": false,
     "CanUnloadAsync": false,
     "LoadPriority": 0,
-    "Punchline": "三張牌遊戲解牌助手",
+    "Punchline": "九宮幻卡解牌助手",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.9/TriadBuddy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.9/TriadBuddy.zip",
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.10/TriadBuddy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TriadBuddy-v7.20.0.10/TriadBuddy.zip",
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TriadBuddy.png",
-    "Changelog": "- 補上四個牌組視窗漏掉的 base.PreDraw():每視窗不透明度不再靜默失效",
-    "LastUpdate": 1788035213,
+    "Changelog": "- manifest 描述用語更新：三張牌 改為台服官方用語「九宮幻卡」\n- README 修正用詞：外掛→插件、九宮格牌→九宮幻卡",
+    "LastUpdate": 1788552202,
     "CategoryTags": [
       "Minigames"
     ]
@@ -1092,8 +1092,8 @@
     "Author": "cycleapple",
     "Name": "XIV 藏寶圖工具小幫手",
     "InternalName": "XivTreasureParty",
-    "AssemblyVersion": "7.20.0.8",
-    "Description": "Dalamud 插件版本的 FFXIV 繁中藏寶圖工具小幫手。可與網頁版（https://cycleapple.github.io/xiv-tc-treasure-finder/）使用者混合組隊，即時同步同一份清單。支援建立/加入房間、手動新增藏寶圖、打開藏寶圖時自動選取、遊戲內開地圖打旗標、以自訂頻道指令（例如 /p 或 /cwl1）發送可點擊地圖連結、順序調整、完成勾選等。另外若有安裝 Mappy，可把隊伍清單裡尚未完成的藏寶點「全部」同時畫到 Mappy 的地圖上（不只一次一個旗標）。",
+    "AssemblyVersion": "7.20.0.9",
+    "Description": "Dalamud 插件版本的 FFXIV 繁中寶物地圖工具小幫手。可與網頁版（https://cycleapple.github.io/xiv-tc-treasure-finder/）使用者混合組隊，即時同步同一份清單。支援建立/加入房間、手動新增寶物地圖、打開寶物地圖時自動選取、遊戲內開地圖打旗標、以自訂頻道指令（例如 /p 或 /cwl1）發送可點擊地圖連結、順序調整、完成勾選等。另外若有安裝 Mappy，可把隊伍清單裡尚未完成的藏寶點「全部」同時畫到 Mappy 的地圖上（不只一次一個旗標）。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/XivTreasureParty",
     "Tags": [
@@ -1112,12 +1112,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/XivTreasureParty.png",
-    "Punchline": "繁中藏寶圖組隊協作，與網頁版即時共享同一個房間。",
+    "Punchline": "繁中寶物地圖組隊協作，與網頁版即時共享同一個房間。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.20.0.8/XivTreasureParty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.20.0.8/XivTreasureParty.zip",
-    "Changelog": "- XivTreasureParty:把隊伍全部藏寶點畫到 Mappy 地圖上,不再一次只能下一個旗標\n- 歷史整理:壓縮 16 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1787746989
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.20.0.9/XivTreasureParty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.20.0.9/XivTreasureParty.zip",
+    "Changelog": "- manifest 描述用語更新：藏寶圖 改為台服官方用語「寶物地圖」\n- README 修正遊戲術語（藏寶圖→寶物地圖）、補齊近期功能、清掉贊助連結",
+    "LastUpdate": 1788552170
   },
   {
     "Author": "daemitus, croizat",
@@ -1213,8 +1213,8 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.20.0.51",
-    "Description": "A tiny little quest helper plugin, which does quests for you automatically where possible. Uses navmesh to automatically walk to all quest waypoints, and tries to automatically complete all steps along the way (excluding dungeons, single player duties and combat).\n\nNot all quests are supported, check the discord or git repository for an up-to-date list.\n\nRequired Plugins: vnavmesh, TextAdvance, Lifestream",
+    "AssemblyVersion": "7.20.0.52",
+    "Description": "自動跑任務插件：\n- 自動導航至任務目標並完成對話、互動與戰鬥觸發\n- 支援主線／支線任務、部分部落任務與採集類任務\n- 提供任務執行優先順序與除錯視窗\n- 需搭配 vnavmesh、TextAdvance、Lifestream 使用",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
     "Tags": [
@@ -1230,19 +1230,19 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
-    "Punchline": "A tiny quest helper plugin.",
+    "Punchline": "自動跑任務助手，導航並完成任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.51/Questionable.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.51/Questionable.zip",
-    "Changelog": "- YesAlready 壓制租約改成租 5 分鐘、每 30 秒續約\n- 塔塔露誇獎：閘門改用 IsAvailableFor(情境)，分得出「不能出聲」與「這次沒出聲」",
-    "LastUpdate": 1788531891
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.52/Questionable.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.52/Questionable.zip",
+    "Changelog": "- 在地化:manifest 描述改為繁體中文\n- README 改寫為精簡繁體中文，清掉全部徽章與贊助徽章，修正安裝來源為台服插件庫\n- Questionable：AutoHook IPC 拿掉 SafeWrapper，AutoHook 不在時才會真的退回不釣魚\n- 引用下游釣魚互動執行器：EInteractionType.Fish 接上 AutoHook 自動產生釣組並釣魚\n- Questionable：尚未實作的略過條件改為回 false 並寫一次診斷，不再擲例外\n- 補回同步時漏掉的 477 個任務路徑資料檔（來源 PunishXIV/Questionable new-main）\n- 在乙太水晶卡住回復的註解裡標明「這是推測」與假設不成立的後果\n- 連續中斷回復收窄為只處理乙太水晶攻頂卡住，並改為小幅走位而非傳送\n- 移動「卡住」寬限期改為可調，預設由寫死的 5 秒下修為 2.5 秒\n- 新增連續中斷 3 次後傳送到最近大水晶的急救機制（中間狀態，後續會被收窄）\n- 修正連續中斷重試迴圈讓卡住計時器永遠歸零、自動重整永不觸發\n- 自動重新整理任務步驟的設定介面補上繁體中文翻譯\n- 開放「卡住時自動重新整理任務步驟」選項，並修正卡住計時器被 vnavmesh 一直重置的問題",
+    "LastUpdate": 1788552250
   },
   {
     "Author": "NightmareXIV",
     "Name": "TextAdvance",
     "InternalName": "TextAdvance",
-    "AssemblyVersion": "7.20.0.36",
-    "Description": "Quest speedrunning assistance tool. Automatically confirms quest acceptance and completion, skips subtitles, cutscenes, and most prompts. Includes optional Splatoon-based quest target indicators and vnavmesh-based auto-navigation to quest objectives.",
+    "AssemblyVersion": "7.20.0.37",
+    "Description": "跑任務加速插件：\n- 自動跳過任務對話字幕與過場動畫\n- 自動確認任務接取與完成\n- 自動處理委託視窗與相關互動\n- 可整合 Splatoon 標示任務物件、vnavmesh 自動導航至任務目標",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TextAdvance",
     "Tags": [
@@ -1258,12 +1258,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TextAdvance.png",
-    "Punchline": "Quest speedrunning assistance tool. Automatically skips subtitle boxes and confirms cutscene skipping",
+    "Punchline": "跑任務加速工具，自動跳過過場動畫",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.36/TextAdvance.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.36/TextAdvance.zip",
-    "Changelog": "- 加上跨外掛重按診斷：實際送出按壓的當下記一行 Information",
-    "LastUpdate": 1788437410
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.37/TextAdvance.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.37/TextAdvance.zip",
+    "Changelog": "- 在地化:manifest 描述改為繁體中文\n- README 改寫為精簡繁體中文：清掉贊助資訊，保留功能列表與整合說明\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose",
+    "LastUpdate": 1788552192
   },
   {
     "Author": "Styr1x, PlusoneChiang",
@@ -1301,8 +1301,8 @@
     "Author": "Usagi, PlusoneChiang",
     "Name": "IINACT",
     "InternalName": "IINACT",
-    "AssemblyVersion": "7.20.0.16",
-    "Description": "在類 ACT 環境中直接執行 FFXIV_ACT_Plugin 的戰鬥數據解析外掛,內建深度改造的 Overlay Plugin 移植版,無需另外安裝 ACT。\n可搭配 Crossingway 在遊戲內顯示戰鬥數據覆蓋層。\nFork 自 marzent/IINACT(繁體中文版客戶端,API 13 / .NET 9,TC opcodes 由 PlusoneChiang 維護)。",
+    "AssemblyVersion": "7.20.0.17",
+    "Description": "在類 ACT 環境中直接執行 FFXIV_ACT_Plugin 的戰鬥數據解析插件,內建深度改造的 Overlay Plugin 移植版,無需另外安裝 ACT。\n可搭配 Crossingway 在遊戲內顯示戰鬥數據覆蓋層。\nFork 自 marzent/IINACT(繁體中文版客戶端,API 13 / .NET 9,TC opcodes 由 PlusoneChiang 維護)。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/IINACT",
     "Tags": [
@@ -1319,12 +1319,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/IINACT.png",
-    "Punchline": "免 ACT 的戰鬥數據解析外掛。",
+    "Punchline": "免 ACT 的戰鬥數據解析插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.16/IINACT.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.16/IINACT.zip",
-    "Changelog": "- 在地化補完:解析設定分頁三筆(記錄檔內容/自動刪除/保留天數)、文字轉語音分頁全部(9筆)、玩家名稱補漏",
-    "LastUpdate": 1787576818
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.17/IINACT.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.17/IINACT.zip",
+    "Changelog": "- manifest 描述用語更新：外掛 改為 插件\n- 文件:README 改寫為繁體中文\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose\n- 歷史整理:壓縮 15 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 同步上游 PlusoneChiang tc/api13_net9：併入 marzent 62 個 commit 的 API13 版本\n- 歷史整理:壓縮 2 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1788552180
   },
   {
     "Author": "Ice",
@@ -1439,8 +1439,8 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.20.0.42",
-    "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 金幣並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
+    "AssemblyVersion": "7.20.0.43",
+    "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 Gil 並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
     "Tags": [],
@@ -1453,19 +1453,19 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
-    "Punchline": "少點幾下，多賺點金幣！",
+    "Punchline": "少點幾下，多賺點 Gil！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.42/Marketbuddy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.42/Marketbuddy.zip",
-    "Changelog": "- 塔塔露誇獎：閘門改用 IsAvailableFor(情境)，分得出「不能出聲」與「這次沒出聲」",
-    "LastUpdate": 1788531761
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.43/Marketbuddy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.43/Marketbuddy.zip",
+    "Changelog": "- manifest 描述用語更新：金幣 改為 Gil\n- README 改寫為繁體中文並補上完整功能清單",
+    "LastUpdate": 1788552150
   },
   {
     "Author": "Faye",
     "Name": "Better Occult Crescent & Chest Helper Interface",
     "InternalName": "BOCCHI",
-    "AssemblyVersion": "7.20.0.31",
-    "Description": "⚠️ 台服 7.20 目前還沒有「蜃景新月島」這個內容，本外掛現在裝了不會有任何反應。已先行移植好放著，等台服更新到該版本即可直接使用。\n\n讓你在「蜃景新月島」玩得更順手。\n- 不用再自己走路、自己找寶箱。\n- 小巧的 FATE 與關鍵遭遇面板，會顯示該場獎勵，還能自動幫你導航過去。\n- 附贈一個非常違規的「非法模式」，給那些寧可出去曬太陽的人。",
+    "AssemblyVersion": "7.20.0.32",
+    "Description": "⚠️ 台服 7.20 目前還沒有「蜃景新月島」這個內容，本插件現在裝了不會有任何反應。已先行移植好放著，等台服更新到該版本即可直接使用。\n\n讓你在「蜃景新月島」玩得更順手。\n- 不用再自己走路、自己找寶箱。\n- 小巧的 FATE 與關鍵遭遇面板，會顯示該場獎勵，還能自動幫你導航過去。\n- 附贈一個非常違規的「非法模式」，給那些寧可出去曬太陽的人。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BOCCHI",
     "Tags": [
@@ -1491,17 +1491,17 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/BOCCHI.png",
     "Punchline": "讓你在「蜃景新月島」玩得更順手。（台服尚未開放該內容）",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.31/BOCCHI.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.31/BOCCHI.zip",
-    "Changelog": "- 戰鬥 AI 預設改成 BossModReborn:原本的預設會送出艦隊裡不存在的 /vbmai 指令\n- Ocelot 子模組前進至 56ad1bf,帶入 ECommons 脫離廢棄歷史線的 repin\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose",
-    "LastUpdate": 1788454011
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.32/BOCCHI.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.32/BOCCHI.zip",
+    "Changelog": "- manifest 描述用語更新：外掛 改為 插件\n- 重寫 README 為繁體中文",
+    "LastUpdate": 1788552195
   },
   {
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.20.0.91",
-    "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：部隊合建素材一鍵全交、野外陸行鳥自動餵食基薩爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
+    "AssemblyVersion": "7.20.0.92",
+    "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：公會合建素材一鍵全交、野外陸行鳥自動餵食基沙爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
     "Tags": [],
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.91/TCToolbox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.91/TCToolbox.zip",
-    "Changelog": "- 塔塔露誇獎：閘門改用 IsAvailableFor(情境)，分得出「不能出聲」與「這次沒出聲」",
-    "LastUpdate": 1788531771
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.92/TCToolbox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.92/TCToolbox.zip",
+    "Changelog": "- manifest 描述用語更新：部隊/基薩爾野菜 改為台服官方用語\n- 新增 README：依 84 個模組原始碼逐一列出功能分類與指令",
+    "LastUpdate": 1788552169
   },
   {
     "Author": "daemitus, MidoriKami",
@@ -1555,8 +1555,8 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.20.0.51",
-    "Description": "[Questionable dev plugin]: Renders gathering location using Pictomancy.",
+    "AssemblyVersion": "7.20.0.52",
+    "Description": "[Questionable 開發用插件]：使用 Pictomancy 繪製採集點路徑，供路徑資料編輯者使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
     "Tags": [],
@@ -1568,12 +1568,12 @@
     "LoadSync": false,
     "CanUnloadAsync": false,
     "LoadPriority": 0,
-    "Punchline": "[Questionable dev plugin]: Renders gathering location.",
+    "Punchline": "[Questionable 開發用] 繪製採集路徑點",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.51/GatheringPathRenderer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.51/GatheringPathRenderer.zip",
-    "LastUpdate": 1788531891,
-    "Changelog": "- YesAlready 壓制租約改成租 5 分鐘、每 30 秒續約\n- 塔塔露誇獎：閘門改用 IsAvailableFor(情境)，分得出「不能出聲」與「這次沒出聲」"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.52/GatheringPathRenderer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.52/GatheringPathRenderer.zip",
+    "LastUpdate": 1788552250,
+    "Changelog": "- 在地化:manifest 描述改為繁體中文\n- README 改寫為精簡繁體中文，清掉全部徽章與贊助徽章，修正安裝來源為台服插件庫\n- Questionable：AutoHook IPC 拿掉 SafeWrapper，AutoHook 不在時才會真的退回不釣魚\n- 引用下游釣魚互動執行器：EInteractionType.Fish 接上 AutoHook 自動產生釣組並釣魚\n- Questionable：尚未實作的略過條件改為回 false 並寫一次診斷，不再擲例外\n- 補回同步時漏掉的 477 個任務路徑資料檔（來源 PunishXIV/Questionable new-main）\n- 在乙太水晶卡住回復的註解裡標明「這是推測」與假設不成立的後果\n- 連續中斷回復收窄為只處理乙太水晶攻頂卡住，並改為小幅走位而非傳送\n- 移動「卡住」寬限期改為可調，預設由寫死的 5 秒下修為 2.5 秒\n- 新增連續中斷 3 次後傳送到最近大水晶的急救機制（中間狀態，後續會被收窄）\n- 修正連續中斷重試迴圈讓卡住計時器永遠歸零、自動重整永不觸發\n- 自動重新整理任務步驟的設定介面補上繁體中文翻譯\n- 開放「卡住時自動重新整理任務步驟」選項，並修正卡住計時器被 vnavmesh 一直重置的問題"
   },
   {
     "Author": "WildWolf",
@@ -1609,8 +1609,8 @@
     "Author": "d87",
     "Name": "BigPlayerDebuffs",
     "InternalName": "BigPlayerDebuffs",
-    "AssemblyVersion": "7.20.0.2",
-    "Description": "放大目標狀態欄中由你施加的增益與減益圖示。",
+    "AssemblyVersion": "7.20.0.3",
+    "Description": "放大目標狀態欄中由你施加的強化狀態與弱化狀態圖示。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BigPlayerDebuffs",
     "Tags": [
@@ -1626,12 +1626,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/BigPlayerDebuffs.png",
-    "Punchline": "放大自己施加的減益效果",
+    "Punchline": "放大自己施加的弱化狀態效果",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BigPlayerDebuffs-v7.20.0.2/BigPlayerDebuffs.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BigPlayerDebuffs-v7.20.0.2/BigPlayerDebuffs.zip",
-    "LastUpdate": 1787577026,
-    "Changelog": "- BigPlayerDebuffs：IClientState.LocalPlayer 遷移到 IObjectTable.LocalPlayer，清掉 1 處 API13 過時警告"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BigPlayerDebuffs-v7.20.0.3/BigPlayerDebuffs.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BigPlayerDebuffs-v7.20.0.3/BigPlayerDebuffs.zip",
+    "LastUpdate": 1788552158,
+    "Changelog": "- manifest 描述用語更新：增益/減益 改為台服官方用語「強化狀態/弱化狀態」\n- 新增 README（繁體中文）\n- 歷史整理:壓縮 3 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)"
   },
   {
     "Author": "Infi, PunishedPineapple",
@@ -1798,8 +1798,8 @@
     "Author": "Felys, aers",
     "Name": "EnemyListDebuffs",
     "InternalName": "EnemyListDebuffs",
-    "AssemblyVersion": "7.20.0.3",
-    "Description": "在敵對列表上以圖示與倒數計時顯示你對每個敵人施加的減益（DoT），多目標時更容易追蹤自己的持續傷害。原始實作由 aers 完成。",
+    "AssemblyVersion": "7.20.0.4",
+    "Description": "在敵對列表上以圖示與倒數計時顯示你對每個敵人施加的弱化狀態（DoT），多目標時更容易追蹤自己的持續傷害。原始實作由 aers 完成。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/EnemyListDebuffs",
     "Tags": [
@@ -1817,10 +1817,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/EnemyListDebuffs.png",
     "Punchline": "追蹤你的 DoT 不該那麼麻煩。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EnemyListDebuffs-v7.20.0.3/EnemyListDebuffs.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EnemyListDebuffs-v7.20.0.3/EnemyListDebuffs.zip",
-    "LastUpdate": 1787576997,
-    "Changelog": "- EnemyListDebuffs：IClientState.LocalPlayer 遷移到 IObjectTable.LocalPlayer，清掉 1 處 API13 過時警告"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EnemyListDebuffs-v7.20.0.4/EnemyListDebuffs.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EnemyListDebuffs-v7.20.0.4/EnemyListDebuffs.zip",
+    "LastUpdate": 1788552157,
+    "Changelog": "- manifest 描述用語更新：減益 改為台服官方用語「弱化狀態」\n- README 改寫為繁體中文\n- 歷史整理:壓縮 5 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)"
   },
   {
     "Author": "MidoriKami",
@@ -1935,8 +1935,8 @@
     "Author": "Ramen",
     "Name": "Meddle 模型匯出",
     "InternalName": "Meddle.Plugin",
-    "AssemblyVersion": "7.20.0.3",
-    "Description": "把遊戲中的角色、場景、地形與動作匯出成 glTF 格式，可直接在 Blender 等 3D 軟體中開啟。\r\n\r\n主要用途：在「角色」分頁選一個角色或 NPC，按「匯出」即可產生 glTF 檔（含模型、骨架、材質與貼圖）。\r\n另有「場景」分頁可匯出周遭建物與燈光，「動作」分頁可錄製並匯出動作。\r\n\r\n搭配作者提供的 Blender 外掛 MeddleTools 可自動接好材質節點。\r\n\r\n台服移植版與上游的差異：\r\n- 基底為上游 v0.1.46（最後一版使用 API13／net9 的標籤），之後的版本已改用 API15／net10，台服跑不動。\r\n- 角色選單改為只保存 GameObjectId、每幀重新查表，避免跨幀持有已失效的原生指標而導致遊戲崩潰。\r\n- 「偵錯」分頁的骨骼列表加上邊界夾制（骨骼數的位元欄位在台服未經驗證）。\r\n- 材質編輯視窗會在換區域或登出時自動關閉。\r\n- 介面僅翻譯分頁名稱與主要按鈕，其餘維持英文（本外掛屬開發用工具）。",
+    "AssemblyVersion": "7.20.0.4",
+    "Description": "把遊戲中的角色、場景、地形與動作匯出成 glTF 格式，可直接在 Blender 等 3D 軟體中開啟。\r\n\r\n主要用途：在「角色」分頁選一個角色或 NPC，按「匯出」即可產生 glTF 檔（含模型、骨架、材質與貼圖）。\r\n另有「場景」分頁可匯出周遭建物與燈光，「動作」分頁可錄製並匯出動作。\r\n\r\n搭配作者提供的 Blender 插件 MeddleTools 可自動接好材質節點。\r\n\r\n台服移植版與上游的差異：\r\n- 基底為上游 v0.1.46（最後一版使用 API13／net9 的標籤），之後的版本已改用 API15／net10，台服跑不動。\r\n- 角色選單改為只保存 GameObjectId、每幀重新查表，避免跨幀持有已失效的原生指標而導致遊戲崩潰。\r\n- 「偵錯」分頁的骨骼列表加上邊界夾制（骨骼數的位元欄位在台服未經驗證）。\r\n- 材質編輯視窗會在換區域或登出時自動關閉。\r\n- 介面僅翻譯分頁名稱與主要按鈕，其餘維持英文（本插件屬開發用工具）。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Meddle",
     "Tags": [
@@ -1952,17 +1952,17 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Meddle.Plugin.png",
     "Punchline": "把角色、場景與動作匯出成 glTF 格式。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Meddle.Plugin-v7.20.0.3/Meddle.Plugin.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Meddle.Plugin-v7.20.0.3/Meddle.Plugin.zip",
-    "LastUpdate": 1787912711,
-    "Changelog": "- Meddle 台服加固：偵錯分頁的 EnvLighting 與 Terrain Pointers 兩個區塊預設收起"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Meddle.Plugin-v7.20.0.4/Meddle.Plugin.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Meddle.Plugin-v7.20.0.4/Meddle.Plugin.zip",
+    "LastUpdate": 1788552172,
+    "Changelog": "- manifest 描述用語更新：外掛 改為 插件\n- README 用詞收斂：不再出現「外掛」\n- README 改寫為繁體中文並補上完整功能清單\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose"
   },
   {
     "Author": "Asgard, Minmoose and Contributors",
     "Name": "Brio 集體動作姿勢編輯",
     "InternalName": "Brio",
-    "AssemblyVersion": "7.20.0.12",
-    "Description": "在集體動作(GPose)中對角色與 NPC 做進階的姿勢、表情與動畫編輯。\r\n\r\n主要用途:進入集體動作後在 Brio 的角色清單選一個對象,用「姿勢」視窗的臉部頁調整表情骨骼,\r\n或用「動畫時間軸」視窗換嘴型與動畫。也可以生成額外的可擺姿角色、自訂光源、\r\n控制時間與天氣、播放 XAT 攝影機檔。\r\n\r\n台服移植版與上游的差異:\r\n- 基底為上游 v0.6.1.1(最後一版使用 API13/net9 的標籤),之後的版本已改用 API14/15 與 net10,台服跑不動。\r\n- 所有原生特徵碼改走閘門:比對不到時只停用該項功能並在日誌留一筆訊息,不會再讓整個外掛載入失敗。\r\n- 動畫時間軸資料表(ActionTimeline)的欄位布局依台服客戶端修正(台服的旗標欄位位置與國際服差一個位元組)。\r\n- 遊戲資料表讀取全面加上防護:台服缺少的表會退成空清單,不再讓外掛整個掛掉。\r\n- 角色清單改用獨立的物件參照,避免跨幀共用同一個包裝物件而把姿勢寫到別的角色身上。\r\n- 光源與物件表的索引加上邊界檢查。\r\n- 未安裝 Penumbra、Glamourer、Customize+、Mare 時一律靜默略過相關整合(表情與姿勢功能不需要它們)。\r\n- 介面只翻譯主視窗與設定分頁;姿勢/骨骼/動畫的內部用語維持英文,那些與社群教學一一對應,翻了反而對不上。",
+    "AssemblyVersion": "7.20.0.13",
+    "Description": "在集體動作(GPose)中對角色與 NPC 做進階的姿勢、表情與動畫編輯。\r\n\r\n主要用途:進入集體動作後在 Brio 的角色清單選一個對象,用「姿勢」視窗的臉部頁調整表情骨骼,\r\n或用「動畫時間軸」視窗換嘴型與動畫。也可以生成額外的可擺姿角色、自訂光源、\r\n控制時間與天氣、播放 XAT 攝影機檔。\r\n\r\n台服移植版與上游的差異:\r\n- 基底為上游 v0.6.1.1(最後一版使用 API13/net9 的標籤),之後的版本已改用 API14/15 與 net10,台服跑不動。\r\n- 所有原生特徵碼改走閘門:比對不到時只停用該項功能並在日誌留一筆訊息,不會再讓整個插件載入失敗。\r\n- 動畫時間軸資料表(ActionTimeline)的欄位布局依台服客戶端修正(台服的旗標欄位位置與國際服差一個位元組)。\r\n- 遊戲資料表讀取全面加上防護:台服缺少的表會退成空清單,不再讓插件整個掛掉。\r\n- 角色清單改用獨立的物件參照,避免跨幀共用同一個包裝物件而把姿勢寫到別的角色身上。\r\n- 光源與物件表的索引加上邊界檢查。\r\n- 未安裝 Penumbra、Glamourer、Customize+、Mare 時一律靜默略過相關整合(表情與姿勢功能不需要它們)。\r\n- 介面只翻譯主視窗與設定分頁;姿勢/骨骼/動畫的內部用語維持英文,那些與社群教學一一對應,翻了反而對不上。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Brio",
     "Tags": [
@@ -1980,10 +1980,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Brio.png",
     "Punchline": "在集體動作(GPose)中編輯角色與 NPC 的姿勢、表情與動畫。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.12/Brio.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.12/Brio.zip",
-    "LastUpdate": 1788445758,
-    "Changelog": "- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose\n- 修正 Brio 生成角色的 Penumbra 集合與 Glamourer 設計落不到自己身上"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.13/Brio.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.13/Brio.zip",
+    "LastUpdate": 1788552169,
+    "Changelog": "- manifest 描述用語更新：外掛 改為 插件\n- 重寫 README 為繁體中文"
   },
   {
     "Author": "ffxiv-tc-port",
