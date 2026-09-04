@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.59",
+    "AssemblyVersion": "7.20.0.60",
     "Description": "自動幫你跑副本，支援信賴的同伴、達人指引、士官兵團、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.59/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.59/AutoDuty.zip",
-    "Changelog": "- 引用社群修正:退本流程補分支診斷與「可見但未就緒不重複 Show()」,並加逃生口",
-    "LastUpdate": 1788543474
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.60/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.60/AutoDuty.zip",
+    "Changelog": "- 路徑索引失效時不再崩潰:LoadPath 改成重選而不是硬索引\n- 路徑分頁不再因為容器空掉而整個消失:IsFirstPath 補上空集合判斷\n- 路徑檔全部壞掉時不再崩潰:SelectPath 回 null、PathFile 退回空檔並修好呼叫端\n- 存檔路徑改成原子寫入:寫到一半崩潰不再留下截斷的路徑檔\n- repo 重建後重新註冊 workflow",
+    "LastUpdate": 1788547781
   },
   {
     "Author": "Det",
@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.73",
+    "AssemblyVersion": "7.20.0.74",
     "Description": "- 一鍵傳送至任何世界或乙太之光目的地\n- 點擊區域地圖上的乙太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速乙太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.73/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.73/Lifestream.zip",
-    "Changelog": "- 按窗守衛：ContextMenu 是常駐窗，按下記號改由「連續隱藏 20 幀」解除\n- 塔塔露誇獎：閘門改用 IsAvailableFor(情境)，分得出「不能出聲」與「這次沒出聲」",
-    "LastUpdate": 1788531782
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.74/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.74/Lifestream.zip",
+    "Changelog": "- 乙太之光目的地查名改為優先讀取即時 Excel sheet，修正台服找不到目的地",
+    "LastUpdate": 1788547769
   },
   {
     "Author": "apetih",
@@ -679,7 +679,7 @@
     "Author": "NightmareXIV",
     "Name": "NotificationMaster",
     "InternalName": "NotificationMaster",
-    "AssemblyVersion": "7.20.0.23",
+    "AssemblyVersion": "7.20.0.24",
     "Description": "在遊戲視窗縮到最小時，通知你各種遊戲內事件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/NotificationMaster",
@@ -698,10 +698,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/NotificationMaster.png",
     "Punchline": "目前支援的通知：聊天訊息、接近地圖標記、已找到任務、過場動畫結束、GP 恢復、登入時發生錯誤、怪物已被拉起、任務開始、準備確認、隊友看完過場動畫。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.23/NotificationMaster.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.23/NotificationMaster.zip",
-    "Changelog": "- 塔塔露誇獎：閘門改用 IsAvailableFor(情境)，分得出「不能出聲」與「這次沒出聲」",
-    "LastUpdate": 1788531798
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.24/NotificationMaster.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.24/NotificationMaster.zip",
+    "Changelog": "- 新增「抵達（vnavmesh）」通知模組，接上一直沒人呼叫的「抵達」情境",
+    "LastUpdate": 1788547764
   },
   {
     "Author": "Liza Carvelli (Puni.sh)",
@@ -1029,7 +1029,7 @@
     "Author": "veyn",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
-    "AssemblyVersion": "7.20.0.33",
+    "AssemblyVersion": "7.20.0.34",
     "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vnavmesh",
@@ -1049,10 +1049,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/vnavmesh.png",
     "Punchline": "自動移動吧！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.33/vnavmesh.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.33/vnavmesh.zip",
-    "Changelog": "- 只在 legacy mode 真的翻轉時才寫 log,消掉實機最大的雜訊來源\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose",
-    "LastUpdate": 1788459353
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.34/vnavmesh.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.34/vnavmesh.zip",
+    "Changelog": "- 移除已失效的「永遠顯示遊戲碰撞範圍」開關與 /vnav collider 指令\n- 新的移動請求改成取代舊請求,不再被整個拒絕\n- 玩家昏迷時不再驅動移動:跟隨路徑與兩個輸入 hook 都提早 return\n- 移除偵錯視窗的「碰撞」分頁:那個入口底下是逐層裸指標走訪",
+    "LastUpdate": 1788547716
   },
   {
     "Author": "Team Wrath",
@@ -1386,7 +1386,7 @@
     "Author": "Liza Carvelli",
     "Name": "Gearsetter",
     "InternalName": "Gearsetter",
-    "AssemblyVersion": "7.20.0.8",
+    "AssemblyVersion": "7.20.0.9",
     "Description": "瀏覽各職業可以裝備的所有裝備，並列出你目前套裝還能升級的部位。\n裝備瀏覽器可依職業與部位分類檢視，並提供「只顯示等級符合的裝備」、「只顯示已擁有的裝備」、「隱藏 NQ 裝備」等篩選，同時標示每件裝備的取得來源。\n指令：/gup 顯示所有套裝的可升級部位、/gbrowser 開關裝備瀏覽器。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Gearsetter",
@@ -1405,10 +1405,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Gearsetter.png",
     "Punchline": "查詢各職業可換裝的裝備升級",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Gearsetter-v7.20.0.8/Gearsetter.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Gearsetter-v7.20.0.8/Gearsetter.zip",
-    "Changelog": "- Gearsetter：IClientState.LocalPlayer 遷移到 IObjectTable.LocalPlayer，清掉 3 處 API13 過時警告",
-    "LastUpdate": 1787576996
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Gearsetter-v7.20.0.9/Gearsetter.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Gearsetter-v7.20.0.9/Gearsetter.zip",
+    "Changelog": "- 子模組:LLib 推進到 10cb18b(職業名改用台服官方繁中)\n- 子模組 gitlink 對齊歷史整理後的 LLib(樹一致,內容零變更)\n- 歷史整理:壓縮 9 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1788547745
   },
   {
     "Author": "veyn",
@@ -1989,7 +1989,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "塔塔露誇獎",
     "InternalName": "TataruPraise",
-    "AssemblyVersion": "7.20.0.16",
+    "AssemblyVersion": "7.20.0.17",
     "Description": "遊戲裡發生事情的時候，用塔塔露的聲音喊一句極短的提示——「完美收工！」「後面！」「排到了！」。不是要太多對話，只是要有聲音。每個情境一句、全部 8 個字以內，情境有副本完成／升等／登入／Gil 里程碑／血量低／背後有人／收到密語／副本排到／組隊邀請／交易請求等，各自獨立開關（預設全部關閉）。播的是事先合成好的語音檔，執行期完全不連網。語音來自本機的 GPT-SoVITS 橋接（預設 http://127.0.0.1:9882），沒有橋接就只是不出聲，不會卡遊戲。設定視窗可以直接編輯每個情境的短句；資訊列上有一格，點一下切換總開關。指令 /tataru 開啟設定視窗，/tataru test 試播一句。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TataruPraise",
@@ -2009,9 +2009,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TataruPraise.png",
     "Punchline": "遊戲裡有事發生就喊一句極短提示，純本機、預設全關。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TataruPraise-v7.20.0.16/TataruPraise.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TataruPraise-v7.20.0.16/TataruPraise.zip",
-    "LastUpdate": 1788531746,
-    "Changelog": "- IsAvailableFor 端點補回未知情境診斷：鍵名打錯不再靜默"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TataruPraise-v7.20.0.17/TataruPraise.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TataruPraise-v7.20.0.17/TataruPraise.zip",
+    "LastUpdate": 1788547725,
+    "Changelog": "- 誇獎池新增匯出／匯入：把已合成好的語音打包成 zip 分享給朋友\n- TTS 橋接新增 API Key 欄位，以 Authorization: Bearer 送出"
   }
 ]
