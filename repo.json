@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.20.0.103",
+    "AssemblyVersion": "7.20.0.104",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.103/BossModReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.103/BossModReborn.zip",
-    "Changelog": "- 移植初學者之館五個教學模組\n- 移植暗影之逆焰四場殲滅戰模組（緹坦妮雅／無瑕靈君／黑迪斯／光之戰士）\n- 框架前置補完：StayMove.PlayerState 增加 Finish、BossModule 增加 GetActor\n- 補上上游的框架前置：Maturity/Category 列舉值與三個通用元件",
-    "LastUpdate": 1788572332,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.104/BossModReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.104/BossModReborn.zip",
+    "Changelog": "- 模組瀏覽器不再顯示這個服查不到名稱的群組（台服新月島 31 個模組）",
+    "LastUpdate": 1788576065,
     "CategoryTags": [
       "Jobs"
     ]
@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.20.0.48",
+    "AssemblyVersion": "7.20.0.49",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.48/GatherbuddyReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.48/GatherbuddyReborn.zip",
-    "Changelog": "- 塔塔露誇獎：前置閘門改用 IsAvailableFor(情境)，逐情境判斷能不能出聲",
-    "LastUpdate": 1788531764
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.49/GatherbuddyReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.49/GatherbuddyReborn.zip",
+    "Changelog": "- 自動採集不再永久關掉 AutoHook:改成借走時記下原狀態、停用時還原\n- 文件:README 改寫為繁體中文",
+    "LastUpdate": 1788576024
   },
   {
     "Author": "img02",
@@ -1123,7 +1123,7 @@
     "Author": "daemitus, croizat",
     "Name": "YesAlready",
     "InternalName": "YesAlready",
-    "AssemblyVersion": "7.20.0.32",
+    "AssemblyVersion": "7.20.0.33",
     "Description": "厭倦了在天守閣/伊迪爾夏爾禁地一直點確認嗎？受不了在副本裡一直按鍵嗎？YesAlready 可以自動點擊你設定的所有惱人對話框。只要輸入對話文字，就再也不用手動點了！支援 /regex/ 比對，也內建了幾個針對「看起來不是 yes/no，但行為類似」的對話框（例如分解）的模組。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/YesAlready",
@@ -1143,10 +1143,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/YesAlready.png",
     "Punchline": "自動點擊你指定的各種確認對話框。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.32/YesAlready.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.32/YesAlready.zip",
-    "Changelog": "- 壓制租約時間政策統一成 5 分鐘，並讓租期被夾值不再靜默",
-    "LastUpdate": 1788532113
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.33/YesAlready.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.33/YesAlready.zip",
+    "Changelog": "- 滿意度傳遞的等待閘門改用不會在過場動畫停住的幀時鐘\n- README 改寫為精簡繁體中文，清掉徽章",
+    "LastUpdate": 1788576012
   },
   {
     "Author": "KangasZ",
@@ -1330,7 +1330,7 @@
     "Author": "Ice",
     "Name": "Chilled Leves",
     "InternalName": "ChilledLeves",
-    "AssemblyVersion": "7.20.0.32",
+    "AssemblyVersion": "7.20.0.33",
     "Description": "理符任務輔助工具：讓你挑選想接的理符任務，並自動前往接取、執行與繳交。注意：必須先安裝 vnavmesh 才能使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ChilledLeves",
@@ -1350,10 +1350,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ChilledLeves.png",
     "Punchline": "理符任務，冰鎮上桌。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.32/ChilledLeves.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.32/ChilledLeves.zip",
-    "Changelog": "- 插件庫安裝來源改指台服 feed:Lifestream 與 vnavmesh 不再導向國際服\n- README 改寫為繁體中文\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose",
-    "LastUpdate": 1788574600
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.33/ChilledLeves.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChilledLeves-v7.20.0.33/ChilledLeves.zip",
+    "Changelog": "- 不再永久關掉 vnavmesh 的「移動時對齊鏡頭」:改成排程結束時還原",
+    "LastUpdate": 1788576007
   },
   {
     "Author": "Ice",
@@ -1882,7 +1882,7 @@
     "Author": "Ice",
     "Name": "Explorer's Icebox",
     "InternalName": "ExplorersIcebox",
-    "AssemblyVersion": "7.20.0.10",
+    "AssemblyVersion": "7.20.0.11",
     "Description": "協助提升無人島等級或採集各種無人島素材。需要 vnavmesh 與 Visland。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Explorers-Icebox",
@@ -1900,10 +1900,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ExplorersIcebox.png",
     "Punchline": "協助無人島開拓與素材採集。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ExplorersIcebox-v7.20.0.10/ExplorersIcebox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ExplorersIcebox-v7.20.0.10/ExplorersIcebox.zip",
-    "LastUpdate": 1788574672,
-    "Changelog": "- 插件庫安裝來源改指台服 feed:Lifestream 與 vnavmesh 不再導向國際服\n- README 改寫為繁體中文"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ExplorersIcebox-v7.20.0.11/ExplorersIcebox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ExplorersIcebox-v7.20.0.11/ExplorersIcebox.zip",
+    "LastUpdate": 1788576029,
+    "Changelog": "- 修正 vnavmesh Nav.Pathfind 的 IPC 簽章:回傳型別改為 Task<List<Vector3>>"
   },
   {
     "Author": "Haselnussbomber",
