@@ -130,6 +130,52 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 | [**Dynamis (with Hosted PowerShell)**](https://github.com/ffxiv-tc-port/Dynamis) | [Exter-N](https://github.com/Exter-N/Dynamis) | Dynamis 含內建 PowerShell 版本 |
 | [**Meddle**](https://github.com/ffxiv-tc-port/Meddle) | [PassiveModding](https://github.com/PassiveModding/Meddle) | 匯出角色／NPC 模型為 glTF（開發用途） |
 
+## 共用函式庫
+
+插件本身不是全部——底下這些函式庫也一起維護著台服 fork。它們不會出現在插件清單裡，但**每一個插件都踩在上面**：
+
+### 執行環境與遊戲資料
+
+| 函式庫 | 用途 | 誰在用 |
+|--------|------|--------|
+| [**Dalamud**](https://github.com/ffxiv-tc-port/Dalamud) | 台服專用插件執行環境（API13 / net9），本倉庫所有插件的宿主 | 全部 |
+| [**FFXIVClientStructs**](https://github.com/ffxiv-tc-port/FFXIVClientStructs) | 遊戲記憶體結構定義——插件靠它讀取遊戲已解析好的狀態 | 全部（隨 Dalamud 出貨） |
+| [**Lumina**](https://github.com/ffxiv-tc-port/Lumina) | 讀取遊戲資料檔（sqpack／EXD 資料表） | 全部（隨 Dalamud 出貨） |
+
+⚠️ `FFXIVClientStructs` 與 `Lumina` 的台服修正**編進 Dalamud 本體一起出貨**，插件端不需要各自引用。
+
+### 插件框架與介面
+
+| 函式庫 | 用途 | 誰在用 |
+|--------|------|--------|
+| [**ECommons**](https://github.com/ffxiv-tc-port/ECommons) | 插件開發框架：服務容器、設定存取、節流、任務佇列、UI 輔助——艦隊裡最廣泛的相依 | 26 個插件 |
+| [**ECommons.IPC**](https://github.com/ffxiv-tc-port/ECommons.IPC) | ECommons 的跨插件 IPC 模組（獨立套件） | `AutoDuty`、`AutoRetainer` |
+| [**OtterGui**](https://github.com/ffxiv-tc-port/OtterGui) | ImGui 輔助函式庫：表格、篩選清單、拖放樹狀結構 | `Artisan`、`AutoRetainer`、`GatherBuddyReborn`、`InventoryTools`、`Lifestream` |
+| [**PunishLib**](https://github.com/ffxiv-tc-port/PunishLib) | Puni.sh 系列插件的共用基底（關於視窗、錯誤回報） | 8 個插件 |
+| [**KamiToolKit**](https://github.com/ffxiv-tc-port/KamiToolKit) | 原生 UI 節點函式庫——直接繪製遊戲自己的 UI 元件而不是 ImGui | `DailyDuty`、`EzWondrousTails`、`SortaKinda` |
+| [**CriticalCommonLib**](https://github.com/ffxiv-tc-port/CriticalCommonLib) | 物品／容器／雇員資料的快取與查詢層 | `InventoryTools` |
+| [**LLib**](https://github.com/ffxiv-tc-port/LLib) | Dalamud 插件共用輔助（設定視窗、ImGui 小元件） | `Gearsetter` |
+
+### 跨插件 IPC 介面
+
+這幾個是「介面套件」——讓別的插件能安全呼叫某個插件的功能，而不必直接相依它的實作：
+
+| 函式庫 | 用途 | 誰在用 |
+|--------|------|--------|
+| [**AutoRetainerAPI**](https://github.com/ffxiv-tc-port/AutoRetainerAPI) | 呼叫 `AutoRetainer` 的雇員／潛水艇排程 | `AutoRetainer`、`GatherBuddyReborn`、`Lifestream`、`SomethingNeedDoing`、`visland` |
+| [**WrathCombo.API**](https://github.com/ffxiv-tc-port/WrathCombo.API) | 向 `WrathCombo` 借用戰鬥連段判斷 | `AutoDuty` |
+| [**NotificationMasterAPI**](https://github.com/ffxiv-tc-port/NotificationMasterAPI) | 送出桌面／手機通知 | `NotificationMaster`（其餘 5 個插件吃上游公開 NuGet 版） |
+
+### 資料與求解工具
+
+| 專案 | 用途 |
+|------|------|
+| [**raphael-rs**](https://github.com/ffxiv-tc-port/raphael-rs) | 製作流程求解器（Rust），`Artisan` 的宇宙探索專家配方解算用 |
+| [**xiv-data-oxidizer**](https://github.com/cycleapple/xiv-data-oxidizer) | 把台服遊戲資料匯出成 CSV，移植時比對台服與國際服差異的依據 |
+| [**ff14-submarine**](https://github.com/ffxiv-tc-port/ff14-submarine) | 潛水艇航線與配裝規劃網頁工具（台服 7.20 資料、繁體中文化） |
+
+> 🔑 **為什麼函式庫也要 fork**：台服的記憶體結構位移、資料表欄位、語言判斷都與國際服不同，而這些差異多半落在函式庫這一層。上游多數已經跟進 API15／net10，我們釘在 API13，因此走各自的分支。
+
 ## 為什麼需要這個倉庫？
 
 台服使用的 Dalamud 版本與官方插件倉庫所要求的 API 等級不一致，導致許多實用插件無法直接安裝。本倉庫維護這些插件對應 API13 的相容版本，並修正因客戶端差異導致的問題——包括記憶體結構位移、語言判斷、台服資料表差異（NPC／道具 ID 不同、未開放內容）等。
