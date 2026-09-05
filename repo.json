@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.20.0.99",
+    "AssemblyVersion": "7.20.0.100",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,16 +58,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.99/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.99/Artisan.zip",
-    "Changelog": "- 刪除自維護的 SvcEx，改用 ECommons 已提供的 Svc.PlayerState",
-    "LastUpdate": 1788599108
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.100/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.100/Artisan.zip",
+    "Changelog": "- repin ECommons:同步此前未套用的修正",
+    "LastUpdate": 1788600385
   },
   {
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.64",
+    "AssemblyVersion": "7.20.0.65",
     "Description": "自動幫你跑副本，支援親信戰友、劇情輔助器、冒險者分隊、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,16 +87,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.64/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.64/AutoDuty.zip",
-    "Changelog": "- 修正 vnavmesh Query.Mesh 兩支端點的型別不合：宣告成 Vector3 會在查不到落點時擲 NullReferenceException",
-    "LastUpdate": 1788600016
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.65/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.65/AutoDuty.zip",
+    "Changelog": "- repin ECommons:同步此前未套用的修正",
+    "LastUpdate": 1788600398
   },
   {
     "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
-    "AssemblyVersion": "7.20.0.37",
+    "AssemblyVersion": "7.20.0.38",
     "Description": "自動幫你提鉤釣魚,你能相信嗎?\n支援自訂預設集、自動以小釣大、自動刺魚等功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoHook",
@@ -116,10 +116,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoHook.png",
     "Punchline": "讓釣魚不再無聊(或更無聊)。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.37/AutoHook.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.37/AutoHook.zip",
-    "Changelog": "- 別的外掛借走啟用開關時不再寫進使用者的設定檔，改用執行期覆寫層",
-    "LastUpdate": 1788580771
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.38/AutoHook.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoHook-v7.20.0.38/AutoHook.zip",
+    "Changelog": "- repin ECommons:同步此前未套用的修正",
+    "LastUpdate": 1788600396
   },
   {
     "Author": "кайт машина (Puni.sh)",
@@ -149,7 +149,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "Avarice",
     "InternalName": "Avarice",
-    "AssemblyVersion": "7.20.0.27",
+    "AssemblyVersion": "7.20.0.28",
     "Description": "戰鬥定位輔助疊加層：\n- 標示背後／側面判定範圍與最大近戰距離\n- 顯示玩家攻擊判定像素，命中／未命中可觸發 VFX 或聊天訊息\n- 預測下一輪判定並依職業客製化提示\n- 支援 Splatoon 整合與多套設定檔",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Avarice",
@@ -167,10 +167,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Avarice.png",
     "Punchline": "顯示背後／側面判定範圍與命中回饋",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.27/Avarice.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.27/Avarice.zip",
-    "Changelog": "- 刪除死掉的 ActionEffect1Opcode 設定欄位與三行懸空的封包路徑註解\n- PunishLib repin:關於分頁的「Repository」按鈕改複製台服 feed 網址",
-    "LastUpdate": 1788575487
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.28/Avarice.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.28/Avarice.zip",
+    "Changelog": "- repin ECommons:同步此前未套用的修正",
+    "LastUpdate": 1788600382
   },
   {
     "Author": "NeNeppie",
@@ -351,7 +351,7 @@
     "Author": "Snowy, KangasZ",
     "Name": "Eureka Helper",
     "InternalName": "EurekaHelper",
-    "AssemblyVersion": "7.20.0.20",
+    "AssemblyVersion": "7.20.0.21",
     "Description": "協助你進行優雷卡冒險的工具，已更新至《漂泊眾島》版本！輸入 /eurekahelper 開始使用。\n\n功能包含：\n- 遊戲內追蹤器 GUI\n- 副本追蹤器\n- 聖靈追蹤器\n- 魂武助手\n- 鬧鐘\n- 賺錢 NM 天氣時間提醒\n- 更多功能陸續推出",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/EurekaHelper",
@@ -378,16 +378,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/EurekaHelper.png",
     "Punchline": "優雷卡追蹤器與多項實用功能整合插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EurekaHelper-v7.20.0.20/EurekaHelper.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EurekaHelper-v7.20.0.20/EurekaHelper.zip",
-    "Changelog": "- /etrackers 在不支援的資料中心不再白連一次外部 websocket\n- README 改寫為繁體中文\n- 子模組 gitlink 對齊歷史整理後的 ECommons(樹一致,內容零變更)\n- 歷史整理:壓縮 25 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 84 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1788575479
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EurekaHelper-v7.20.0.21/EurekaHelper.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/EurekaHelper-v7.20.0.21/EurekaHelper.zip",
+    "Changelog": "- repin ECommons:同步此前未套用的修正",
+    "LastUpdate": 1788600352
   },
   {
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.20.0.49",
+    "AssemblyVersion": "7.20.0.50",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.49/GatherbuddyReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.49/GatherbuddyReborn.zip",
-    "Changelog": "- 自動採集不再永久關掉 AutoHook:改成借走時記下原狀態、停用時還原\n- 文件:README 改寫為繁體中文",
-    "LastUpdate": 1788576024
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.50/GatherbuddyReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.50/GatherbuddyReborn.zip",
+    "Changelog": "- repin ECommons:同步此前未套用的修正",
+    "LastUpdate": 1788600385
   },
   {
     "Author": "img02",
@@ -534,7 +534,7 @@
     "Author": "53m1k0l0n/Gidedin (Puni.sh)",
     "Name": "LazyLoot",
     "InternalName": "LazyLoot",
-    "AssemblyVersion": "7.20.0.21",
+    "AssemblyVersion": "7.20.0.22",
     "Description": "以指令執行擲骰，支援 need | needonly | greed | pass | passall 等各種參數。\n可設定聊天與跳出訊息輸出，以及擲骰延遲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/LazyLoot",
@@ -554,10 +554,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/LazyLoot.png",
     "Punchline": "打怪但懶得選骰的擲骰插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LazyLoot-v7.20.0.21/LazyLoot.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LazyLoot-v7.20.0.21/LazyLoot.zip",
-    "Changelog": "- PunishLib repin:關於分頁的「Repository」按鈕改複製台服 feed 網址\n- 文件:README 改寫為繁體中文\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose",
-    "LastUpdate": 1788574617
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LazyLoot-v7.20.0.22/LazyLoot.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LazyLoot-v7.20.0.22/LazyLoot.zip",
+    "Changelog": "- repin ECommons:同步此前未套用的修正",
+    "LastUpdate": 1788600366
   },
   {
     "Author": "NightmareXIV",
@@ -650,7 +650,7 @@
     "Author": "Jukka",
     "Name": "NecroLens",
     "InternalName": "NecroLens",
-    "AssemblyVersion": "7.20.0.21",
+    "AssemblyVersion": "7.20.0.22",
     "Description": "深層迷宮輔助工具。提供怪物雷達、仇恨、視野範圍等各種資訊。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/NecroLens",
@@ -670,16 +670,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/NecroLens.png",
     "Punchline": "真正的死靈術士永遠瞭若指掌深層迷宮……其他人只是用了高科技而已！",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.21/NecroLens.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.21/NecroLens.zip",
-    "Changelog": "- ECommons repin 58db205:Svc 補 IPlayerState、LocalPlayer/LocalContentId 過時呼叫遷移",
-    "LastUpdate": 1787583723
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.22/NecroLens.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.22/NecroLens.zip",
+    "Changelog": "- repin ECommons:同步此前未套用的修正\n- README 用詞收斂：不再出現「外掛」\n- README 改寫為繁體中文並補上完整功能清單\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose\n- 子模組 gitlink 對齊歷史整理後的 ECommons(樹一致,內容零變更)\n- 歷史整理:壓縮 31 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge remote-tracking branch 'origin/tc-7.15' into tc-api13-draft\n- 移除外掛 Author 欄位的個人署名 (version number is our identifying marker, not the author field)\n- Merge branch 'tc-7.15-async-fix' into tc-api13-draft\n- 歷史整理:壓縮 10 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1788600409
   },
   {
     "Author": "NightmareXIV",
     "Name": "NotificationMaster",
     "InternalName": "NotificationMaster",
-    "AssemblyVersion": "7.20.0.24",
+    "AssemblyVersion": "7.20.0.25",
     "Description": "在遊戲視窗縮到最小時，通知你各種遊戲內事件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/NotificationMaster",
@@ -698,16 +698,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/NotificationMaster.png",
     "Punchline": "目前支援的通知：聊天訊息、接近地圖標記、已找到任務、過場動畫結束、GP 恢復、登入時發生錯誤、怪物已被拉起、任務開始、準備確認、隊友看完過場動畫。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.24/NotificationMaster.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.24/NotificationMaster.zip",
-    "Changelog": "- 新增「抵達（vnavmesh）」通知模組，接上一直沒人呼叫的「抵達」情境",
-    "LastUpdate": 1788547764
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.25/NotificationMaster.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NotificationMaster-v7.20.0.25/NotificationMaster.zip",
+    "Changelog": "- repin ECommons:同步此前未套用的修正\n- README 從單行簡介改寫為完整的繁體中文功能說明",
+    "LastUpdate": 1788600389
   },
   {
     "Author": "Liza Carvelli (Puni.sh)",
     "Name": "Palace Pal",
     "InternalName": "PalacePal",
-    "AssemblyVersion": "7.20.0.22",
+    "AssemblyVersion": "7.20.0.23",
     "Description": "顯示死者宮殿、天之御柱、正統優雷卡中可能的陷阱與寶藏位置。\n\n此插件需要 Splatoon 才能在畫面上繪製各種標示。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PalacePal",
@@ -728,10 +728,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/PalacePal.png",
     "Punchline": "顯示死者宮殿、天之御柱、正統優雷卡中可能的陷阱與寶藏位置。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.22/PalacePal.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.22/PalacePal.zip",
-    "Changelog": "- PunishLib repin:關於分頁的「Repository」按鈕改複製台服 feed 網址\n- Splatoon 安裝提示改指台服 feed,不再導向國際服的外掛庫\n- README 改寫為繁體中文並補上完整功能清單\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose\n- 子模組 gitlink 對齊歷史整理後的 ECommons(樹一致,內容零變更)\n- 歷史整理:壓縮 26 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 15 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1788574618
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.23/PalacePal.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.23/PalacePal.zip",
+    "Changelog": "- repin ECommons:同步此前未套用的修正",
+    "LastUpdate": 1788600386
   },
   {
     "Author": "Haplo064",
@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.20.0.47",
+    "AssemblyVersion": "7.20.0.48",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.47/Saucy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.47/Saucy.zip",
-    "Changelog": "- PunishLib repin:關於分頁的「Repository」按鈕改複製台服 feed 網址\n- 重寫 README 為繁體中文：依實際模組列出九宮幻卡、仙人彩、GATE 小遊戲自動化等功能",
-    "LastUpdate": 1788574626,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.48/Saucy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Saucy-v7.20.0.48/Saucy.zip",
+    "Changelog": "- repin ECommons:同步此前未套用的修正",
+    "LastUpdate": 1788600379,
     "CategoryTags": [
       "Minigames"
     ]
@@ -853,7 +853,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.20.0.49",
+    "AssemblyVersion": "7.20.0.50",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -872,10 +872,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.49/SomethingNeedDoing.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.49/SomethingNeedDoing.zip",
-    "Changelog": "- 刪除自維護的 SvcEx，改用 ECommons 已提供的 Svc.PlayerState",
-    "LastUpdate": 1788598953,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.50/SomethingNeedDoing.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.50/SomethingNeedDoing.zip",
+    "Changelog": "- repin ECommons:同步此前未套用的修正",
+    "LastUpdate": 1788600352,
     "CategoryTags": [
       "Utility"
     ]
@@ -999,7 +999,7 @@
     "Author": "veyn, croizat",
     "Name": "Visland",
     "InternalName": "visland",
-    "AssemblyVersion": "7.20.0.38",
+    "AssemblyVersion": "7.20.0.39",
     "Description": "自動化採集、開拓工坊排班等無人島相關作業。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/visland",
@@ -1020,10 +1020,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/visland.png",
     "Punchline": "自動化無人島各項活動",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.38/visland.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.38/visland.zip",
-    "Changelog": "- 外掛庫網址改指台服 feed:匯入路線缺 vnavmesh 時不再導向國際服\n- 新增繁體中文 README：無人島自動化功能總覽",
-    "LastUpdate": 1788574607
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.39/visland.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.39/visland.zip",
+    "Changelog": "- repin ECommons:同步此前未套用的修正",
+    "LastUpdate": 1788600395
   },
   {
     "Author": "veyn",
@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.20.0.54",
+    "AssemblyVersion": "7.20.0.55",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- PunishLib repin:關於分頁的「Repository」按鈕改複製台服 feed 網址\n- README 由簡體中文改寫為精簡繁體中文，清掉全部徽章\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose",
+    "Changelog": "- repin ECommons:同步此前未套用的修正",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.54/WrathCombo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.54/WrathCombo.zip",
-    "LastUpdate": 1788574636,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.55/WrathCombo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.55/WrathCombo.zip",
+    "LastUpdate": 1788600402,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1123,7 +1123,7 @@
     "Author": "daemitus, croizat",
     "Name": "YesAlready",
     "InternalName": "YesAlready",
-    "AssemblyVersion": "7.20.0.33",
+    "AssemblyVersion": "7.20.0.34",
     "Description": "厭倦了在天守閣/伊迪爾夏爾禁地一直點確認嗎？受不了在副本裡一直按鍵嗎？YesAlready 可以自動點擊你設定的所有惱人對話框。只要輸入對話文字，就再也不用手動點了！支援 /regex/ 比對，也內建了幾個針對「看起來不是 yes/no，但行為類似」的對話框（例如分解）的模組。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/YesAlready",
@@ -1143,10 +1143,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/YesAlready.png",
     "Punchline": "自動點擊你指定的各種確認對話框。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.33/YesAlready.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.33/YesAlready.zip",
-    "Changelog": "- 滿意度傳遞的等待閘門改用不會在過場動畫停住的幀時鐘\n- README 改寫為精簡繁體中文，清掉徽章",
-    "LastUpdate": 1788576012
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.34/YesAlready.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/YesAlready-v7.20.0.34/YesAlready.zip",
+    "Changelog": "- repin ECommons:同步此前未套用的修正",
+    "LastUpdate": 1788600367
   },
   {
     "Author": "KangasZ",
@@ -1213,7 +1213,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.20.0.54",
+    "AssemblyVersion": "7.20.0.55",
     "Description": "自動跑任務插件：\n- 自動導航至任務目標並完成對話、互動與戰鬥觸發\n- 支援主線／支線任務、部分部落任務與採集類任務\n- 提供任務執行優先順序與除錯視窗\n- 需搭配 vnavmesh、TextAdvance、Lifestream 使用",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,16 +1232,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "自動跑任務助手，導航並完成任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.54/Questionable.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.54/Questionable.zip",
-    "Changelog": "- 把「有幾條任務路線在台服用不到」寫成看得見的診斷",
-    "LastUpdate": 1788576517
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.55/Questionable.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.55/Questionable.zip",
+    "Changelog": "- repin ECommons:同步此前未套用的修正",
+    "LastUpdate": 1788600465
   },
   {
     "Author": "NightmareXIV",
     "Name": "TextAdvance",
     "InternalName": "TextAdvance",
-    "AssemblyVersion": "7.20.0.38",
+    "AssemblyVersion": "7.20.0.39",
     "Description": "跑任務加速插件：\n- 自動跳過任務對話字幕與過場動畫\n- 自動確認任務接取與完成\n- 自動處理委託視窗與相關互動\n- 可整合 Splatoon 標示任務物件、vnavmesh 自動導航至任務目標",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TextAdvance",
@@ -1260,10 +1260,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TextAdvance.png",
     "Punchline": "跑任務加速工具，自動跳過過場動畫",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.38/TextAdvance.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.38/TextAdvance.zip",
-    "Changelog": "- 「取得 Splatoon」改開台服 feed 的說明頁,不再導向國際服的安裝頁",
-    "LastUpdate": 1788574606
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.39/TextAdvance.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.39/TextAdvance.zip",
+    "Changelog": "- repin ECommons:同步此前未套用的修正",
+    "LastUpdate": 1788600397
   },
   {
     "Author": "Styr1x, PlusoneChiang",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.20.0.54",
+    "AssemblyVersion": "7.20.0.55",
     "Description": "[Questionable 開發用插件]：使用 Pictomancy 繪製採集點路徑，供路徑資料編輯者使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable 開發用] 繪製採集路徑點",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.54/GatheringPathRenderer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.54/GatheringPathRenderer.zip",
-    "LastUpdate": 1788576517,
-    "Changelog": "- 把「有幾條任務路線在台服用不到」寫成看得見的診斷"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.55/GatheringPathRenderer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.55/GatheringPathRenderer.zip",
+    "LastUpdate": 1788600465,
+    "Changelog": "- repin ECommons:同步此前未套用的修正"
   },
   {
     "Author": "WildWolf",
