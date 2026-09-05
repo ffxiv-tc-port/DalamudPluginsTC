@@ -171,7 +171,7 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 | 專案 | 用途 |
 |------|------|
 | [**raphael-rs**](https://github.com/ffxiv-tc-port/raphael-rs) | 製作流程求解器（Rust），`Artisan` 的宇宙探索專家配方解算用 |
-| [**xiv-data-oxidizer**](https://github.com/cycleapple/xiv-data-oxidizer) | 把台服遊戲資料匯出成 CSV，移植時比對台服與國際服差異的依據 |
+| [**xiv-data-oxidizer**](https://github.com/ffxiv-tc-port/xiv-data-oxidizer) | 把台服遊戲資料匯出成 CSV，移植時比對台服與國際服差異的依據 |
 | [**ff14-submarine**](https://github.com/ffxiv-tc-port/ff14-submarine) | 潛水艇航線與配裝規劃網頁工具（台服 7.20 資料、繁體中文化） |
 
 > 🔑 **為什麼函式庫也要 fork**：台服的記憶體結構位移、資料表欄位、語言判斷都與國際服不同，而這些差異多半落在函式庫這一層。上游多數已經跟進 API15／net10，我們釘在 API13，因此走各自的分支。
