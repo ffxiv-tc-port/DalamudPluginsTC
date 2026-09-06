@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.67",
+    "AssemblyVersion": "7.20.0.68",
     "Description": "自動幫你跑副本，支援親信戰友、劇情輔助器、冒險者分隊、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.67/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.67/AutoDuty.zip",
-    "Changelog": "- repin ECommons.IPC 帶進跨外掛 IPC 宣告修正,並收掉 Gearsetter 的 SourceInventorySlot 型別窄化",
-    "LastUpdate": 1788638583
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.68/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.68/AutoDuty.zip",
+    "Changelog": "- BossMod 預設集補上 StayCloseToPartyRole:少了它「跟著坦克走」整條路是死碼\n- 移植上游的 IPC 設定覆寫層,並從第一版就上鎖、改成存檔那一刻換回使用者的值\n- 路徑步驟補上 Flags 欄位:少了它取回上游路徑檔會靜默丟掉隊形標記",
+    "LastUpdate": 1788708789
   },
   {
     "Author": "Det",
@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.114",
+    "AssemblyVersion": "7.20.0.115",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.114/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.114/AutoRetainer.zip",
-    "Changelog": "- repin ECommons.IPC:同步 09-05 的跨外掛 IPC 宣告修正(舊 pin 停在 08-26 歷史壓縮之前)",
-    "LastUpdate": 1788638573,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.115/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.115/AutoRetainer.zip",
+    "Changelog": "- repin ECommons 與 AutoRetainerAPI:過場跳過防殘留、僱員建立時間欄位不再寫進設定檔",
+    "LastUpdate": 1788708768,
     "CategoryTags": [
       "Inventory"
     ]
@@ -1029,7 +1029,7 @@
     "Author": "veyn",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
-    "AssemblyVersion": "7.20.0.36",
+    "AssemblyVersion": "7.20.0.37",
     "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vnavmesh",
@@ -1049,10 +1049,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/vnavmesh.png",
     "Punchline": "自動移動吧！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.36/vnavmesh.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.36/vnavmesh.zip",
-    "Changelog": "- IPC 覆寫表補上鎖:它被三種執行緒同時碰",
-    "LastUpdate": 1788579403
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.37/vnavmesh.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.37/vnavmesh.zip",
+    "Changelog": "- 移動開關與路徑容許值改成租約疊加層:放約或逾時自動還原,不需要任何人記得還",
+    "LastUpdate": 1788708723
   },
   {
     "Author": "Team Wrath",
@@ -1092,7 +1092,7 @@
     "Author": "cycleapple",
     "Name": "XIV 寶物地圖工具小幫手",
     "InternalName": "XivTreasureParty",
-    "AssemblyVersion": "7.20.0.9",
+    "AssemblyVersion": "7.20.0.10",
     "Description": "Dalamud 插件版本的 FFXIV 繁中寶物地圖工具小幫手。可與網頁版（https://cycleapple.github.io/xiv-tc-treasure-finder/）使用者混合組隊，即時同步同一份清單。支援建立/加入房間、手動新增寶物地圖、打開寶物地圖時自動選取、遊戲內開地圖打旗標、以自訂頻道指令（例如 /p 或 /cwl1）發送可點擊地圖連結、順序調整、完成勾選等。另外若有安裝 Mappy，可把隊伍清單裡尚未完成的藏寶點「全部」同時畫到 Mappy 的地圖上（不只一次一個旗標）。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/XivTreasureParty",
@@ -1114,10 +1114,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/XivTreasureParty.png",
     "Punchline": "繁中寶物地圖組隊協作，與網頁版即時共享同一個房間。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.20.0.9/XivTreasureParty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.20.0.9/XivTreasureParty.zip",
-    "Changelog": "- manifest 描述用語更新：藏寶圖 改為台服官方用語「寶物地圖」\n- README 修正遊戲術語（藏寶圖→寶物地圖）、補齊近期功能、清掉贊助連結",
-    "LastUpdate": 1788552170
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.20.0.10/XivTreasureParty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.20.0.10/XivTreasureParty.zip",
+    "Changelog": "- manifest 顯示名改用台服官方用語「寶物地圖」\n- README 安裝說明的 XIVTCLauncher 連結改指本 org 的 fork\n- README 安裝說明的插件庫網址改指本 org 的 DalamudPluginsTC feed",
+    "LastUpdate": 1788708748
   },
   {
     "Author": "daemitus, croizat",
@@ -1213,7 +1213,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.20.0.55",
+    "AssemblyVersion": "7.20.0.56",
     "Description": "自動跑任務插件：\n- 自動導航至任務目標並完成對話、互動與戰鬥觸發\n- 支援主線／支線任務、部分部落任務與採集類任務\n- 提供任務執行優先順序與除錯視窗\n- 需搭配 vnavmesh、TextAdvance、Lifestream 使用",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,16 +1232,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "自動跑任務助手，導航並完成任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.55/Questionable.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.55/Questionable.zip",
-    "Changelog": "- repin ECommons:同步此前未套用的修正",
-    "LastUpdate": 1788600465
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.56/Questionable.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.56/Questionable.zip",
+    "Changelog": "- 修正飛行中無法互動導致卡住的問題\n- IpcTest 鏡像型別的 TerritoryId 改為 uint，與 Questionable 的提供端一致",
+    "LastUpdate": 1788708849
   },
   {
     "Author": "NightmareXIV",
     "Name": "TextAdvance",
     "InternalName": "TextAdvance",
-    "AssemblyVersion": "7.20.0.39",
+    "AssemblyVersion": "7.20.0.40",
     "Description": "跑任務加速插件：\n- 自動跳過任務對話字幕與過場動畫\n- 自動確認任務接取與完成\n- 自動處理委託視窗與相關互動\n- 可整合 Splatoon 標示任務物件、vnavmesh 自動導航至任務目標",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TextAdvance",
@@ -1260,10 +1260,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TextAdvance.png",
     "Punchline": "跑任務加速工具，自動跳過過場動畫",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.39/TextAdvance.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.39/TextAdvance.zip",
-    "Changelog": "- repin ECommons:同步此前未套用的修正",
-    "LastUpdate": 1788600397
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.40/TextAdvance.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.40/TextAdvance.zip",
+    "Changelog": "- repin ECommons:過場自動跳過改寫遊戲碼補三層結構性防護",
+    "LastUpdate": 1788708741
   },
   {
     "Author": "Styr1x, PlusoneChiang",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.20.0.55",
+    "AssemblyVersion": "7.20.0.56",
     "Description": "[Questionable 開發用插件]：使用 Pictomancy 繪製採集點路徑，供路徑資料編輯者使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable 開發用] 繪製採集路徑點",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.55/GatheringPathRenderer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.55/GatheringPathRenderer.zip",
-    "LastUpdate": 1788600465,
-    "Changelog": "- repin ECommons:同步此前未套用的修正"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.56/GatheringPathRenderer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.56/GatheringPathRenderer.zip",
+    "LastUpdate": 1788708849,
+    "Changelog": "- 修正飛行中無法互動導致卡住的問題\n- IpcTest 鏡像型別的 TerritoryId 改為 uint，與 Questionable 的提供端一致"
   },
   {
     "Author": "WildWolf",
@@ -1935,7 +1935,7 @@
     "Author": "Ramen",
     "Name": "Meddle 模型匯出",
     "InternalName": "Meddle.Plugin",
-    "AssemblyVersion": "7.20.0.4",
+    "AssemblyVersion": "7.20.0.5",
     "Description": "把遊戲中的角色、場景、地形與動作匯出成 glTF 格式，可直接在 Blender 等 3D 軟體中開啟。\r\n\r\n主要用途：在「角色」分頁選一個角色或 NPC，按「匯出」即可產生 glTF 檔（含模型、骨架、材質與貼圖）。\r\n另有「場景」分頁可匯出周遭建物與燈光，「動作」分頁可錄製並匯出動作。\r\n\r\n搭配作者提供的 Blender 插件 MeddleTools 可自動接好材質節點。\r\n\r\n台服移植版與上游的差異：\r\n- 基底為上游 v0.1.46（最後一版使用 API13／net9 的標籤），之後的版本已改用 API15／net10，台服跑不動。\r\n- 角色選單改為只保存 GameObjectId、每幀重新查表，避免跨幀持有已失效的原生指標而導致遊戲崩潰。\r\n- 「偵錯」分頁的骨骼列表加上邊界夾制（骨骼數的位元欄位在台服未經驗證）。\r\n- 材質編輯視窗會在換區域或登出時自動關閉。\r\n- 介面僅翻譯分頁名稱與主要按鈕，其餘維持英文（本插件屬開發用工具）。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Meddle",
@@ -1952,16 +1952,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Meddle.Plugin.png",
     "Punchline": "把角色、場景與動作匯出成 glTF 格式。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Meddle.Plugin-v7.20.0.4/Meddle.Plugin.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Meddle.Plugin-v7.20.0.4/Meddle.Plugin.zip",
-    "LastUpdate": 1788552172,
-    "Changelog": "- manifest 描述用語更新：外掛 改為 插件\n- README 用詞收斂：不再出現「外掛」\n- README 改寫為繁體中文並補上完整功能清單\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Meddle.Plugin-v7.20.0.5/Meddle.Plugin.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Meddle.Plugin-v7.20.0.5/Meddle.Plugin.zip",
+    "LastUpdate": 1788708763,
+    "Changelog": "- Meddle 台服加固：場景疊加層預設關閉、預設不解析 Light/EnvLighting、場景解析加節流與失敗停用"
   },
   {
     "Author": "Asgard, Minmoose and Contributors",
     "Name": "Brio 集體動作姿勢編輯",
     "InternalName": "Brio",
-    "AssemblyVersion": "7.20.0.13",
+    "AssemblyVersion": "7.20.0.14",
     "Description": "在集體動作(GPose)中對角色與 NPC 做進階的姿勢、表情與動畫編輯。\r\n\r\n主要用途:進入集體動作後在 Brio 的角色清單選一個對象,用「姿勢」視窗的臉部頁調整表情骨骼,\r\n或用「動畫時間軸」視窗換嘴型與動畫。也可以生成額外的可擺姿角色、自訂光源、\r\n控制時間與天氣、播放 XAT 攝影機檔。\r\n\r\n台服移植版與上游的差異:\r\n- 基底為上游 v0.6.1.1(最後一版使用 API13/net9 的標籤),之後的版本已改用 API14/15 與 net10,台服跑不動。\r\n- 所有原生特徵碼改走閘門:比對不到時只停用該項功能並在日誌留一筆訊息,不會再讓整個插件載入失敗。\r\n- 動畫時間軸資料表(ActionTimeline)的欄位布局依台服客戶端修正(台服的旗標欄位位置與國際服差一個位元組)。\r\n- 遊戲資料表讀取全面加上防護:台服缺少的表會退成空清單,不再讓插件整個掛掉。\r\n- 角色清單改用獨立的物件參照,避免跨幀共用同一個包裝物件而把姿勢寫到別的角色身上。\r\n- 光源與物件表的索引加上邊界檢查。\r\n- 未安裝 Penumbra、Glamourer、Customize+、Mare 時一律靜默略過相關整合(表情與姿勢功能不需要它們)。\r\n- 介面只翻譯主視窗與設定分頁;姿勢/骨骼/動畫的內部用語維持英文,那些與社群教學一一對應,翻了反而對不上。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Brio",
@@ -1980,10 +1980,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Brio.png",
     "Punchline": "在集體動作(GPose)中編輯角色與 NPC 的姿勢、表情與動畫。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.13/Brio.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.13/Brio.zip",
-    "LastUpdate": 1788552169,
-    "Changelog": "- manifest 描述用語更新：外掛 改為 插件\n- 重寫 README 為繁體中文"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.14/Brio.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Brio-v7.20.0.14/Brio.zip",
+    "LastUpdate": 1788708751,
+    "Changelog": "- 修正對齊記憶體配置少配一個位元組:每一次配置都短 1 byte,連帶修 IK 的洩漏、界外與判空"
   },
   {
     "Author": "ffxiv-tc-port",
