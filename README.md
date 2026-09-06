@@ -111,7 +111,7 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 | [**NotificationMaster**](https://github.com/ffxiv-tc-port/NotificationMaster) | [NightmareXIV](https://github.com/NightmareXIV/NotificationMaster) | 遊戲視窗縮小時的各類事件通知 |
 | [**Mini-Mappingway**](https://github.com/ffxiv-tc-port/MiniMappingway) | [jaycewhite](https://github.com/jaycewhite/MiniMappingway) | 在小地圖上顯示好友與公會成員 |
 | [**Character Panel Refined**](https://github.com/ffxiv-tc-port/CharacterPanelRefined) | [Kouzukii](https://github.com/Kouzukii/ffxiv-characterstatus-refined) | 精簡角色面板，顯示暴擊率等實用數值 |
-| [**XIV 藏寶圖工具小幫手**](https://github.com/ffxiv-tc-port/XivTreasureParty) | [cycleapple](https://github.com/cycleapple/xiv-party-treasure-helper) | 寶物地圖組隊協作，與網頁版即時共享房間 |
+| [**XIV 寶物地圖工具小幫手**](https://github.com/ffxiv-tc-port/XivTreasureParty) | [cycleapple](https://github.com/cycleapple/xiv-party-treasure-helper) | 寶物地圖組隊協作，與網頁版即時共享房間 |
 | [**TC Toolbox**](https://github.com/ffxiv-tc-port/TCToolbox) | 自製 | 台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化、批次僱員改名 |
 | [**Mappy**](https://github.com/ffxiv-tc-port/Mappy) | [harbingerftw](https://github.com/harbingerftw/Mappy) | ImGui 重繪並取代原生地圖視窗的全功能地圖 |
 | [**SortaKinda**](https://github.com/ffxiv-tc-port/SortaKinda) | [MidoriKami](https://github.com/MidoriKami/SortaKinda) | 依規則把背包道具排進指定槽位，取代原生 /isort |
