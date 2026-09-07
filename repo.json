@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.20.0.52",
+    "AssemblyVersion": "7.20.0.53",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.52/GatherbuddyReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.52/GatherbuddyReborn.zip",
-    "Changelog": "- 沒裝 Lifestream 又要從田園郡去德拉瓦尼亞河谷地時,自動採集會明講「請安裝 Lifestream，或手動傳送至…」而不是走到乙太網傳送點前面停住\n- 沒裝 vnavmesh 時按「導航」不再讓視窗變成錯誤面板:GBR 對 vnavmesh 的 17 個呼叫全部改走安全版\n- 遊戲中途卸載 AllaganTools／Lifestream／vnavmesh 時,採集視窗不再跳錯誤面板:IPC 打不通就立刻作廢存在性快取\n- 聊天訊息一律排到主執行緒才送出:載入時與匯入清單時印的字不再有機會弄壞遊戲的聊天佇列\n- 沒開「AutoRetainer 多重模式」的人,自動採集不再每 5 秒為它掃一次已安裝外掛清單",
-    "LastUpdate": 1788761590
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.53/GatherbuddyReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.53/GatherbuddyReborn.zip",
+    "Changelog": "- 偵錯分頁的 vnavmesh 三行狀態：沒裝 vnavmesh 時顯示灰字「未安裝」，不再一律顯示 False",
+    "LastUpdate": 1788789923
   },
   {
     "Author": "img02",
@@ -707,7 +707,7 @@
     "Author": "Liza Carvelli (Puni.sh)",
     "Name": "Palace Pal",
     "InternalName": "PalacePal",
-    "AssemblyVersion": "7.20.0.25",
+    "AssemblyVersion": "7.20.0.26",
     "Description": "顯示死者宮殿、天之御柱、正統優雷卡中可能的陷阱與寶藏位置。\n\n此插件需要 Splatoon 才能在畫面上繪製各種標示。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PalacePal",
@@ -728,10 +728,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/PalacePal.png",
     "Punchline": "顯示死者宮殿、天之御柱、正統優雷卡中可能的陷阱與寶藏位置。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.25/PalacePal.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.25/PalacePal.zip",
-    "Changelog": "- 聊天訊息改走自己的佇列，連著送好幾則時不會前後對調",
-    "LastUpdate": 1788761560
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.26/PalacePal.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.26/PalacePal.zip",
+    "Changelog": "- 關閉外掛時，最後那幾則還沒送出的聊天訊息不再靜默消失",
+    "LastUpdate": 1788789901
   },
   {
     "Author": "Haplo064",
@@ -1241,7 +1241,7 @@
     "Author": "NightmareXIV",
     "Name": "TextAdvance",
     "InternalName": "TextAdvance",
-    "AssemblyVersion": "7.20.0.41",
+    "AssemblyVersion": "7.20.0.42",
     "Description": "跑任務加速插件：\n- 自動跳過任務對話字幕與過場動畫\n- 自動確認任務接取與完成\n- 自動處理委託視窗與相關互動\n- 可整合 Splatoon 標示任務物件、vnavmesh 自動導航至任務目標",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TextAdvance",
@@ -1260,10 +1260,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TextAdvance.png",
     "Punchline": "跑任務加速工具，自動跳過過場動畫",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.41/TextAdvance.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.41/TextAdvance.zip",
-    "Changelog": "- 跨執行緒的移動指令改用自己的佇列排隊,不再可能被 Dalamud 的排程器打亂順序\n- IPC 端點不再從別人的執行緒讀原生資料:移動指令改在遊戲主執行緒執行,啟用狀態改讀每幀快照",
-    "LastUpdate": 1788766533
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.42/TextAdvance.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.42/TextAdvance.zip",
+    "Changelog": "- 外部控制狀態改成一次整份換掉，別的外掛開關控制權時讀設定不會再撞上中間態",
+    "LastUpdate": 1788789920
   },
   {
     "Author": "Styr1x, PlusoneChiang",
