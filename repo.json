@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.70",
+    "AssemblyVersion": "7.20.0.71",
     "Description": "自動幫你跑副本，支援親信戰友、劇情輔助器、冒險者分隊、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.70/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.70/AutoDuty.zip",
-    "Changelog": "- 卸載時把 11 個 *_IPCSubscriber 的拆除接進 Dispose，並修正 YesAlready 租約上限的註解（碼是 5 分鐘不是 60）",
-    "LastUpdate": 1788761580
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.71/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.71/AutoDuty.zip",
+    "Changelog": "- Run／Start／Stop 三個 IPC 指令改在遊戲主執行緒執行,不再從呼叫端的執行緒動原生資料",
+    "LastUpdate": 1788766551
   },
   {
     "Author": "Det",
@@ -1241,7 +1241,7 @@
     "Author": "NightmareXIV",
     "Name": "TextAdvance",
     "InternalName": "TextAdvance",
-    "AssemblyVersion": "7.20.0.40",
+    "AssemblyVersion": "7.20.0.41",
     "Description": "跑任務加速插件：\n- 自動跳過任務對話字幕與過場動畫\n- 自動確認任務接取與完成\n- 自動處理委託視窗與相關互動\n- 可整合 Splatoon 標示任務物件、vnavmesh 自動導航至任務目標",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TextAdvance",
@@ -1260,10 +1260,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TextAdvance.png",
     "Punchline": "跑任務加速工具，自動跳過過場動畫",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.40/TextAdvance.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.40/TextAdvance.zip",
-    "Changelog": "- repin ECommons:過場自動跳過改寫遊戲碼補三層結構性防護",
-    "LastUpdate": 1788708741
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.41/TextAdvance.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.41/TextAdvance.zip",
+    "Changelog": "- 跨執行緒的移動指令改用自己的佇列排隊,不再可能被 Dalamud 的排程器打亂順序\n- IPC 端點不再從別人的執行緒讀原生資料:移動指令改在遊戲主執行緒執行,啟用狀態改讀每幀快照",
+    "LastUpdate": 1788766533
   },
   {
     "Author": "Styr1x, PlusoneChiang",
