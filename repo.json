@@ -650,7 +650,7 @@
     "Author": "Jukka",
     "Name": "NecroLens",
     "InternalName": "NecroLens",
-    "AssemblyVersion": "7.20.0.22",
+    "AssemblyVersion": "7.20.0.23",
     "Description": "深層迷宮輔助工具。提供怪物雷達、仇恨、視野範圍等各種資訊。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/NecroLens",
@@ -670,10 +670,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/NecroLens.png",
     "Punchline": "真正的死靈術士永遠瞭若指掌深層迷宮……其他人只是用了高科技而已！",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.22/NecroLens.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.22/NecroLens.zip",
-    "Changelog": "- repin ECommons:同步此前未套用的修正\n- README 用詞收斂：不再出現「外掛」\n- README 改寫為繁體中文並補上完整功能清單\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose\n- 子模組 gitlink 對齊歷史整理後的 ECommons(樹一致,內容零變更)\n- 歷史整理:壓縮 31 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- Merge remote-tracking branch 'origin/tc-7.15' into tc-api13-draft\n- 移除外掛 Author 欄位的個人署名 (version number is our identifying marker, not the author field)\n- Merge branch 'tc-7.15-async-fix' into tc-api13-draft\n- 歷史整理:壓縮 10 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1788600409
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.23/NecroLens.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/NecroLens-v7.20.0.23/NecroLens.zip",
+    "Changelog": "- 深宮 ESP 標籤附上怪物弱點：資料取自 MonsterDex IPC，沒資料時顯示灰色的「?」",
+    "LastUpdate": 1788800237
   },
   {
     "Author": "NightmareXIV",
@@ -1029,7 +1029,7 @@
     "Author": "veyn",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
-    "AssemblyVersion": "7.20.0.38",
+    "AssemblyVersion": "7.20.0.39",
     "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vnavmesh",
@@ -1049,10 +1049,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/vnavmesh.png",
     "Punchline": "自動移動吧！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.38/vnavmesh.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.38/vnavmesh.zip",
-    "Changelog": "- 移動租約的逾時訊息改成鎖內收集、鎖外送出：持鎖時不再碰 Serilog",
-    "LastUpdate": 1788757870
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.39/vnavmesh.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.39/vnavmesh.zip",
+    "Changelog": "- 九號解決方案補上升降梯與傳送台捷徑，另預先備妥兩個台服未上線區域的自訂化",
+    "LastUpdate": 1788800088
   },
   {
     "Author": "Team Wrath",
@@ -1213,7 +1213,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.20.0.62",
+    "AssemblyVersion": "7.20.0.63",
     "Description": "自動跑任務插件：\n- 自動導航至任務目標並完成對話、互動與戰鬥觸發\n- 支援主線／支線任務、部分部落任務與採集類任務\n- 提供任務執行優先順序與除錯視窗\n- 需搭配 vnavmesh、TextAdvance、Lifestream 使用",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,10 +1232,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "自動跑任務助手，導航並完成任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.62/Questionable.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.62/Questionable.zip",
-    "Changelog": "- 白狼門提示改成每則六十秒最多印一次，不再每幀洗聊天視窗\n- 建立任務清單時的四則聊天訊息與五行記錄移出任務進度鎖",
-    "LastUpdate": 1788797471
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.63/Questionable.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.63/Questionable.zip",
+    "Changelog": "- 任務獎勵支援傳承錄類型（移植上游 04378f939）",
+    "LastUpdate": 1788800192
   },
   {
     "Author": "NightmareXIV",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.20.0.62",
+    "AssemblyVersion": "7.20.0.63",
     "Description": "[Questionable 開發用插件]：使用 Pictomancy 繪製採集點路徑，供路徑資料編輯者使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable 開發用] 繪製採集路徑點",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.62/GatheringPathRenderer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.62/GatheringPathRenderer.zip",
-    "LastUpdate": 1788797471,
-    "Changelog": "- 白狼門提示改成每則六十秒最多印一次，不再每幀洗聊天視窗\n- 建立任務清單時的四則聊天訊息與五行記錄移出任務進度鎖"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.63/GatheringPathRenderer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.63/GatheringPathRenderer.zip",
+    "LastUpdate": 1788800192,
+    "Changelog": "- 任務獎勵支援傳承錄類型（移植上游 04378f939）"
   },
   {
     "Author": "WildWolf",
