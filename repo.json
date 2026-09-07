@@ -1439,7 +1439,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.20.0.47",
+    "AssemblyVersion": "7.20.0.48",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 Gil 並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1455,10 +1455,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點 Gil！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.47/Marketbuddy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.47/Marketbuddy.zip",
-    "Changelog": "- 巡檢清單預設改成涵蓋所有角色的僱員，不再只掃眼前這一位或目前角色\n- 巡檢記錄檔路徑只算一次，畫面提示不再每幀去碰檔案系統\n- 巡檢畫面改讀主執行緒拍好的世界快照，不在繪製執行緒解遊戲原生指標\n- 巡檢視窗加上「去別的世界」：按一次換一個世界，到了之後仍要自己按掃描\n- 跨世界價格巡檢加上操作視窗：掃描頁按一下掃一個世界，比價頁看誰在壓你的價\n- 新增跨世界價格巡檢引擎：逐件查自己掛售中的道具行情並記進 CSV",
-    "LastUpdate": 1788780044
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.48/Marketbuddy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.48/Marketbuddy.zip",
+    "Changelog": "- 跨世界價格巡檢掃完一個世界時，請「塔塔露誇獎」念一句",
+    "LastUpdate": 1788790365
   },
   {
     "Author": "Faye",
