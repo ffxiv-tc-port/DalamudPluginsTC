@@ -113,6 +113,7 @@ SOURCE_REPOS = {
     "WaymarkPresetPlugin": "ffxiv-tc-port/WaymarkPresetPlugin",
     "DeathRecap": "ffxiv-tc-port/ffxiv-deathrecap",
     "BetterMountRoulette": "ffxiv-tc-port/BetterMountRoulette",
+    "GilDelta": "ffxiv-tc-port/GilDelta",
 }
 
 # InternalName -> icon path within the source repo (on its default branch).
@@ -192,6 +193,9 @@ ICON_PATHS = {
     "BigPlayerDebuffs": "images/icon.png",
     "WaymarkPresetPlugin": "docs/Images/icon.png",
     "DeathRecap": "images/icon.png",
+    # GilDelta: 上游自己就備妥了 512x512 RGBA(colortype 6) 且帶 sRGB/gAMA/pHYs 三個
+    # metadata chunk 的 icon.png（缺這三塊在外掛安裝器裡會變成空白圖示）。
+    "GilDelta": "images/icon.png",
     # GatheringPathRenderer: 刻意不在這裡列——upstream 自己的 repo 裡從沒放過圖示檔
     # (upstream 自己的 release.yml 甚至從沒建置過這個子專案,純粹是掛在 repo 裡的
     # maintainer 用工具，manifest 的 Punchline 也自己承認是 "[Questionable dev
