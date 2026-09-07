@@ -853,7 +853,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.20.0.51",
+    "AssemblyVersion": "7.20.0.52",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -872,10 +872,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.51/SomethingNeedDoing.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.51/SomethingNeedDoing.zip",
-    "Changelog": "- 聊天輸出一律排到 framework 執行緒送出：Dalamud 的 chatQueue 沒有同步，執行緒池直接寫會把它弄壞\n- YesAlready 壓制租約的 IPC 與診斷全部移到鎖外，改用版本序號守衛，避免跨外掛鎖序\n- AutoRetainerAPI 子模組 repin 5a51873 到 7f9d28e:收斂艦隊的三條 pin 線\n- 修好 AllaganTools 三個從未生效的事件端點:ItemAdded/ItemRemoved/RetainerChanged",
-    "LastUpdate": 1788757873,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.52/SomethingNeedDoing.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.52/SomethingNeedDoing.zip",
+    "Changelog": "- 修好 Lifestream 的 GetWorldChangeAetheryteByTerritoryType:巨集查換世界乙太之光不再必定失敗",
+    "LastUpdate": 1788768067,
     "CategoryTags": [
       "Utility"
     ]
