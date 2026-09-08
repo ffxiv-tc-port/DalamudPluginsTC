@@ -234,7 +234,7 @@
     "Author": "Kouzukii",
     "Name": "Character Panel Refined",
     "InternalName": "CharacterPanelRefined",
-    "AssemblyVersion": "7.20.0.12",
+    "AssemblyVersion": "7.20.0.13",
     "Description": "Character Panel Refined 精簡了角色狀態面板中的無用資訊，並加入了暴擊與直擊機率等實用數值，以及預估輸出傷害，方便比較裝備優劣。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/CharacterPanelRefined",
@@ -254,10 +254,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/CharacterPanelRefined.png",
     "Punchline": "精簡角色面板，只留暴擊、直擊等實用數值。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.12/CharacterPanelRefined.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.12/CharacterPanelRefined.zip",
-    "Changelog": "- manifest 描述用語更新：會心 改為 暴擊，並補上中文 Punchline\n- README 改寫為繁體中文",
-    "LastUpdate": 1788552165
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.13/CharacterPanelRefined.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.13/CharacterPanelRefined.zip",
+    "Changelog": "- 角色面板新增「裝備屬性合計」：一眼看出整套裝備給了多少屬性，滑鼠移上去看每一項的明細",
+    "LastUpdate": 1788891491
   },
   {
     "Author": "Infi, Anna",
