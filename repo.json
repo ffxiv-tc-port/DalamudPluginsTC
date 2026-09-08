@@ -707,7 +707,7 @@
     "Author": "Liza Carvelli (Puni.sh)",
     "Name": "Palace Pal",
     "InternalName": "PalacePal",
-    "AssemblyVersion": "7.20.0.26",
+    "AssemblyVersion": "7.20.0.27",
     "Description": "顯示死者宮殿、天之御柱、正統優雷卡中可能的陷阱與寶藏位置。\n\n此插件需要 Splatoon 才能在畫面上繪製各種標示。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PalacePal",
@@ -728,10 +728,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/PalacePal.png",
     "Punchline": "顯示死者宮殿、天之御柱、正統優雷卡中可能的陷阱與寶藏位置。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.26/PalacePal.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.26/PalacePal.zip",
-    "Changelog": "- 關閉外掛時，最後那幾則還沒送出的聊天訊息不再靜默消失",
-    "LastUpdate": 1788789901
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.27/PalacePal.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/PalacePal-v7.20.0.27/PalacePal.zip",
+    "Changelog": "- 新增可分辨「已確認／未確認」的 IPC 端點，讓別的外掛能把兩種點位畫成兩種樣子",
+    "LastUpdate": 1788865902
   },
   {
     "Author": "Haplo064",
@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.20.0.97",
+    "AssemblyVersion": "7.20.0.98",
     "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：公會合建素材一鍵全交、野外陸行鳥自動餵食基沙爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.97/TCToolbox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.97/TCToolbox.zip",
-    "Changelog": "- 全艦隊急停跑完之後請塔塔露出一聲：停妥報「急停」，有東西沒停下來報「急停失敗」\n- 兩個新模組：任務進度與深宮陷阱寶藏畫到 Mappy，任務進度另上資訊列\n- 狩獵列車清單長出「前往」：一鍵請 Lifestream 把你帶到那隻怪旁邊\n- 園圃「自動整理」長出無人值守重跑：站在園圃旁就自己跑，別人在動時讓開",
-    "LastUpdate": 1788824887
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.98/TCToolbox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.98/TCToolbox.zip",
+    "Changelog": "- 攔下 vnavmesh 端擲出的例外：導航網格還沒載入時，那條早就寫在文件裡的地圖標旗退路終於會生效\n- 導航訊息不再宣稱查不到的事：「vnavmesh 拒絕了這次導航」那句已經不可能發生，改成只說沒有開始\n- 園圃自動整理長出走位：自己走到下一格園圃旁，走不到就安靜放棄回到只處理站得到的",
+    "LastUpdate": 1788865867
   },
   {
     "Author": "daemitus, MidoriKami",
