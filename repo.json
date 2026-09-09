@@ -234,7 +234,7 @@
     "Author": "Kouzukii",
     "Name": "Character Panel Refined",
     "InternalName": "CharacterPanelRefined",
-    "AssemblyVersion": "7.20.0.13",
+    "AssemblyVersion": "7.20.0.14",
     "Description": "Character Panel Refined 精簡了角色狀態面板中的無用資訊，並加入了暴擊與直擊機率等實用數值，以及預估輸出傷害，方便比較裝備優劣。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/CharacterPanelRefined",
@@ -254,10 +254,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/CharacterPanelRefined.png",
     "Punchline": "精簡角色面板，只留暴擊、直擊等實用數值。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.13/CharacterPanelRefined.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.13/CharacterPanelRefined.zip",
-    "Changelog": "- 角色面板新增「裝備屬性合計」：一眼看出整套裝備給了多少屬性，滑鼠移上去看每一項的明細",
-    "LastUpdate": 1788891491
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.14/CharacterPanelRefined.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.14/CharacterPanelRefined.zip",
+    "Changelog": "- 修好從上游一路紅到現在的 TestExpectedOutput:測試灌武器威力的位置停在舊版面\n- 新增設定:製作職／採集職的角色面板也可以顯示「裝備」區塊與裝備屬性合計",
+    "LastUpdate": 1788937082
   },
   {
     "Author": "Infi, Anna",
@@ -621,7 +621,7 @@
     "Author": "JayceOfSpades",
     "Name": "Mini-Mappingway",
     "InternalName": "MiniMappingway",
-    "AssemblyVersion": "7.20.0.13",
+    "AssemblyVersion": "7.20.0.14",
     "Description": "在小地圖上顯示好友與公會成員的插件。可在設定中自訂標記樣式，並切換是否顯示好友、公會成員或兩者！圖示由 twitter 上的 @Miendoodle 繪製。感謝 nya 提供的點子！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/MiniMappingway",
@@ -641,10 +641,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/MiniMappingway.png",
     "Punchline": "在小地圖上顯示好友與公會成員的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/MiniMappingway-v7.20.0.13/MiniMappingway.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/MiniMappingway-v7.20.0.13/MiniMappingway.zip",
-    "Changelog": "- 補上小地圖與紛爭前線雷達視窗漏掉的 base.PreDraw():每視窗不透明度不再靜默失效\n- 歷史整理:壓縮 15 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)\n- 合併 tc-api13-draft:升級至 Dalamud API13 (13.0.0.6)\n- 歷史整理:壓縮 10 筆台服移植與開發 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
-    "LastUpdate": 1788035219
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/MiniMappingway-v7.20.0.14/MiniMappingway.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/MiniMappingway-v7.20.0.14/MiniMappingway.zip",
+    "Changelog": "- IPC 標記終於能標寶箱這類非玩家物件：以前對它們是完全靜默地不生效\n- README 從單行簡介改寫為完整的繁體中文功能說明\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose",
+    "LastUpdate": 1788937043
   },
   {
     "Author": "Jukka",
@@ -1213,7 +1213,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.20.0.66",
+    "AssemblyVersion": "7.20.0.67",
     "Description": "自動跑任務插件：\n- 自動導航至任務目標並完成對話、互動與戰鬥觸發\n- 支援主線／支線任務、部分部落任務與採集類任務\n- 提供任務執行優先順序與除錯視窗\n- 需搭配 vnavmesh、TextAdvance、Lifestream 使用",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,10 +1232,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "自動跑任務助手，導航並完成任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.66/Questionable.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.66/Questionable.zip",
-    "Changelog": "- 任務獎勵自動兌換改掃全背包，並加上「不自動使用」的道具清單",
-    "LastUpdate": 1788823207
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.67/Questionable.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.67/Questionable.zip",
+    "Changelog": "- 釣魚任務改看 AutoHook 的實際生效狀態：別的外掛壓著 AutoHook 時不再靜默卡住\n- 登出時清掉「已經試過的獎勵道具」記錄，換角色不再沿用前一個角色的結論",
+    "LastUpdate": 1788937112
   },
   {
     "Author": "NightmareXIV",
@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.20.0.102",
+    "AssemblyVersion": "7.20.0.103",
     "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：公會合建素材一鍵全交、野外陸行鳥自動餵食基沙爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.102/TCToolbox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.102/TCToolbox.zip",
-    "Changelog": "- 合建交納「等清單更新」等滿 3 秒時把指紋印出來：這條逾時在實機上每七項就中一次，而舊訊息一個欄位都沒印\n- 合建素材一鍵全交的「選擇道具」不再每一項空等：道具選單是常駐視窗，防重按守衛以前只能靠 2 秒逾時放行",
-    "LastUpdate": 1788885378
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.103/TCToolbox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.103/TCToolbox.zip",
+    "Changelog": "- 新增「附近的寶箱與風脈泉顯示到小地圖」：不用開大地圖也知道往哪走",
+    "LastUpdate": 1788937031
   },
   {
     "Author": "daemitus, MidoriKami",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.20.0.66",
+    "AssemblyVersion": "7.20.0.67",
     "Description": "[Questionable 開發用插件]：使用 Pictomancy 繪製採集點路徑，供路徑資料編輯者使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable 開發用] 繪製採集路徑點",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.66/GatheringPathRenderer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.66/GatheringPathRenderer.zip",
-    "LastUpdate": 1788823207,
-    "Changelog": "- 任務獎勵自動兌換改掃全背包，並加上「不自動使用」的道具清單"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.67/GatheringPathRenderer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.67/GatheringPathRenderer.zip",
+    "LastUpdate": 1788937112,
+    "Changelog": "- 釣魚任務改看 AutoHook 的實際生效狀態：別的外掛壓著 AutoHook 時不再靜默卡住\n- 登出時清掉「已經試過的獎勵道具」記錄，換角色不再沿用前一個角色的結論"
   },
   {
     "Author": "WildWolf",
@@ -2018,7 +2018,7 @@
     "Author": "yagi2",
     "Name": "GilDelta 金幣流水追蹤",
     "InternalName": "GilDelta",
-    "AssemblyVersion": "7.20.0.6",
+    "AssemblyVersion": "7.20.0.7",
     "Description": "常駐金幣流水追蹤外掛。監控自己的金幣、每位僱員與公會儲物櫃的變化，自動分類每一筆進出（潛水艇返回、僱員銷售、NPC購買、市場購買、修理、傳送等），透過可自訂的小工具（4 種顯示密度）與四頁儀表板（時間軸／圖表／明細／熱力圖）呈現。唯讀——絕不寫回遊戲狀態。七語言介面（英／日／德／法／簡中／韓／繁中）。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GilDelta",
@@ -2039,9 +2039,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GilDelta.png",
     "Punchline": "追蹤自己、僱員與公會儲物櫃的金幣流向。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GilDelta-v7.20.0.6/GilDelta.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GilDelta-v7.20.0.6/GilDelta.zip",
-    "LastUpdate": 1788890894,
-    "Changelog": "- 公會儲物櫃讀不到餘額時不再當成 0，也就不會再憑空多出一筆巨額存入"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GilDelta-v7.20.0.7/GilDelta.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GilDelta-v7.20.0.7/GilDelta.zip",
+    "LastUpdate": 1788937059,
+    "Changelog": "- 時間軸每一筆紀錄可以單獨「排除」，不列入任何統計，而且隨時按一下就復原\n- 剛登入時讀不完整的錢包不會再蓋掉完整的那份，總資產與每日期初不會再莫名其妙少一截\n- 熱力圖分得出「那天沒有紀錄」和「那天剛好沒賺沒賠」，滑鼠移到別的視窗上也不會再亂跳說明"
   }
 ]
