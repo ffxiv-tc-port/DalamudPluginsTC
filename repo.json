@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.74",
+    "AssemblyVersion": "7.20.0.75",
     "Description": "自動幫你跑副本，支援親信戰友、劇情輔助器、冒險者分隊、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.74/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.74/AutoDuty.zip",
-    "Changelog": "- 導航網格沒載入時副本不會再卡死：vnavmesh 自己擲的例外現在攔得住了\n- AutoDuty 重建後 touch 工作流程檔：讓 Actions 重新註冊發版觸發器",
-    "LastUpdate": 1788939067
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.75/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.75/AutoDuty.zip",
+    "Changelog": "- 修正副本結束卡住:骰寶箱視窗還開著就退本、重生查無路徑資料每幀報錯、同 DataId 多份物件挑到別人那份",
+    "LastUpdate": 1788969630
   },
   {
     "Author": "Det",
@@ -234,7 +234,7 @@
     "Author": "Kouzukii",
     "Name": "Character Panel Refined",
     "InternalName": "CharacterPanelRefined",
-    "AssemblyVersion": "7.20.0.14",
+    "AssemblyVersion": "7.20.0.15",
     "Description": "Character Panel Refined 精簡了角色狀態面板中的無用資訊，並加入了暴擊與直擊機率等實用數值，以及預估輸出傷害，方便比較裝備優劣。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/CharacterPanelRefined",
@@ -254,10 +254,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/CharacterPanelRefined.png",
     "Punchline": "精簡角色面板，只留暴擊、直擊等實用數值。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.14/CharacterPanelRefined.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.14/CharacterPanelRefined.zip",
-    "Changelog": "- 修好從上游一路紅到現在的 TestExpectedOutput:測試灌武器威力的位置停在舊版面\n- 新增設定:製作職／採集職的角色面板也可以顯示「裝備」區塊與裝備屬性合計",
-    "LastUpdate": 1788937082
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.15/CharacterPanelRefined.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/CharacterPanelRefined-v7.20.0.15/CharacterPanelRefined.zip",
+    "Changelog": "- 修好開啟角色面板可能整個把遊戲弄崩的隱患：改用不會插入垃圾項的查表方式取提示文字",
+    "LastUpdate": 1788969448
   },
   {
     "Author": "Infi, Anna",
@@ -1213,7 +1213,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.20.0.67",
+    "AssemblyVersion": "7.20.1.3",
     "Description": "自動跑任務插件：\n- 自動導航至任務目標並完成對話、互動與戰鬥觸發\n- 支援主線／支線任務、部分部落任務與採集類任務\n- 提供任務執行優先順序與除錯視窗\n- 需搭配 vnavmesh、TextAdvance、Lifestream 使用",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,10 +1232,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "自動跑任務助手，導航並完成任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.67/Questionable.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.67/Questionable.zip",
-    "Changelog": "- 釣魚任務改看 AutoHook 的實際生效狀態：別的外掛壓著 AutoHook 時不再靜默卡住\n- 登出時清掉「已經試過的獎勵道具」記錄，換角色不再沿用前一個角色的結論",
-    "LastUpdate": 1788937112
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.1.3/Questionable.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.1.3/Questionable.zip",
+    "Changelog": "- 修正互動進度條跳一下就被打斷:垂直對齊卡住時不再永無止境地重下移動指令",
+    "LastUpdate": 1788969684
   },
   {
     "Author": "NightmareXIV",
@@ -1439,7 +1439,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.20.0.52",
+    "AssemblyVersion": "7.20.0.53",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 Gil 並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1455,10 +1455,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點 Gil！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.52/Marketbuddy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.52/Marketbuddy.zip",
-    "Changelog": "- Marketbuddy：跨世界巡檢可以真的暫停再續跑，而且記得每個世界掃到哪一件",
-    "LastUpdate": 1788870707
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.53/Marketbuddy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Marketbuddy-v7.20.0.53/Marketbuddy.zip",
+    "Changelog": "- 修正歷史賣出價定價的三個問題：重複寫 log、看門狗餘裕不足、卸載時的例外\n- 重掛新增「以歷史最近賣出價、無條件捨去到百位」定價，即時掛單面板加上市場價與已掛售時間",
+    "LastUpdate": 1788969592
   },
   {
     "Author": "Faye",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.20.0.67",
+    "AssemblyVersion": "7.20.1.3",
     "Description": "[Questionable 開發用插件]：使用 Pictomancy 繪製採集點路徑，供路徑資料編輯者使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable 開發用] 繪製採集路徑點",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.67/GatheringPathRenderer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.67/GatheringPathRenderer.zip",
-    "LastUpdate": 1788937112,
-    "Changelog": "- 釣魚任務改看 AutoHook 的實際生效狀態：別的外掛壓著 AutoHook 時不再靜默卡住\n- 登出時清掉「已經試過的獎勵道具」記錄，換角色不再沿用前一個角色的結論"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.1.3/GatheringPathRenderer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.1.3/GatheringPathRenderer.zip",
+    "LastUpdate": 1788969684,
+    "Changelog": "- 修正互動進度條跳一下就被打斷:垂直對齊卡住時不再永無止境地重下移動指令"
   },
   {
     "Author": "WildWolf",
