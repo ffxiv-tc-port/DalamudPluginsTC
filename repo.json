@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.20.0.108",
+    "AssemblyVersion": "7.20.0.109",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.108/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.108/Artisan.zip",
-    "Changelog": "- 修正遊戲關閉瞬間 IPC 閘門會整個失效的問題：改成直接回「暫時不可用」，不再繞過主執行緒保護",
-    "LastUpdate": 1789116312
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.109/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.109/Artisan.zip",
+    "Changelog": "- 修正「從僱員取回」的執行緒安全:排任務改回遊戲主執行緒,IsBusy 端點改讀每幀快照不再卡住呼叫端",
+    "LastUpdate": 1789138361
   },
   {
     "Author": "Herculezz",
@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.126",
+    "AssemblyVersion": "7.20.0.127",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.126/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.126/AutoRetainer.zip",
-    "Changelog": "- 修正遊戲關閉瞬間 IPC 閘門會整個失效的問題：改成直接回「暫時不可用」，不再繞過主執行緒保護",
-    "LastUpdate": 1789116314,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.127/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.127/AutoRetainer.zip",
+    "Changelog": "- NightmareUI 子模組收斂到單一分支:拿掉兩個從來解析不到的引用,程式碼行為不變\n- 修正 AutoRetainer.IsBusy 會從別的外掛的執行緒直接讀任務佇列",
+    "LastUpdate": 1789138356,
     "CategoryTags": [
       "Inventory"
     ]
@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.20.0.82",
+    "AssemblyVersion": "7.20.0.83",
     "Description": "- 一鍵傳送至任何世界或乙太之光目的地\n- 點擊區域地圖上的乙太之光即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速乙太之光移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.82/Lifestream.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.82/Lifestream.zip",
-    "Changelog": "- 修正遊戲關閉瞬間 IPC 閘門會整個失效的問題：改成直接回「暫時不可用」，不再繞過主執行緒保護",
-    "LastUpdate": 1789116366
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.83/Lifestream.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Lifestream-v7.20.0.83/Lifestream.zip",
+    "Changelog": "- NightmareUI 子模組收斂到單一分支:拿掉兩個從來解析不到的引用,程式碼行為不變\n- 修正 Lifestream.IsBusy 會從別的外掛的執行緒直接讀任務佇列與航點清單",
+    "LastUpdate": 1789138409
   },
   {
     "Author": "apetih",
@@ -1241,7 +1241,7 @@
     "Author": "NightmareXIV",
     "Name": "TextAdvance",
     "InternalName": "TextAdvance",
-    "AssemblyVersion": "7.20.0.42",
+    "AssemblyVersion": "7.20.0.43",
     "Description": "跑任務加速插件：\n- 自動跳過任務對話字幕與過場動畫\n- 自動確認任務接取與完成\n- 自動處理委託視窗與相關互動\n- 可整合 Splatoon 標示任務物件、vnavmesh 自動導航至任務目標",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TextAdvance",
@@ -1260,10 +1260,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TextAdvance.png",
     "Punchline": "跑任務加速工具，自動跳過過場動畫",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.42/TextAdvance.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.42/TextAdvance.zip",
-    "Changelog": "- 外部控制狀態改成一次整份換掉，別的外掛開關控制權時讀設定不會再撞上中間態",
-    "LastUpdate": 1788789920
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.43/TextAdvance.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TextAdvance-v7.20.0.43/TextAdvance.zip",
+    "Changelog": "- NightmareUI 子模組收斂到單一分支:拿掉兩個從來解析不到的引用,程式碼行為不變\n- 修正 TextAdvance.IsBusy 會從別的外掛的執行緒直接讀任務佇列\n- NightmareUI 子模組跟進修正:可折疊區塊的折疊狀態沒寫回 ImGui",
+    "LastUpdate": 1789138337
   },
   {
     "Author": "Styr1x, PlusoneChiang",
@@ -1464,7 +1464,7 @@
     "Author": "Faye",
     "Name": "Better Occult Crescent & Chest Helper Interface",
     "InternalName": "BOCCHI",
-    "AssemblyVersion": "7.20.0.35",
+    "AssemblyVersion": "7.20.0.36",
     "Description": "⚠️ 台服 7.20 目前還沒有「蜃景新月島」這個內容，本插件現在裝了不會有任何反應。已先行移植好放著，等台服更新到該版本即可直接使用。\n\n讓你在「蜃景新月島」玩得更順手。\n- 不用再自己走路、自己找寶箱。\n- 小巧的 FATE 與關鍵遭遇面板，會顯示該場獎勵，還能自動幫你導航過去。\n- 附贈一個非常違規的「非法模式」，給那些寧可出去曬太陽的人。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BOCCHI",
@@ -1491,10 +1491,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/BOCCHI.png",
     "Punchline": "讓你在「蜃景新月島」玩得更順手。（台服尚未開放該內容）",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.35/BOCCHI.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.35/BOCCHI.zip",
-    "Changelog": "- Ocelot repin：動作鏈任何一步逾時時，日誌會說出是哪一步\n- Ocelot repin：等不到介面而中止動作鏈時，日誌會說明是哪一步逾時",
-    "LastUpdate": 1789041683
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.36/BOCCHI.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BOCCHI-v7.20.0.36/BOCCHI.zip",
+    "Changelog": "- Ocelot repin：動作鏈的步驟不再無上限重試，卡住超過十分鐘會中止並留下警告",
+    "LastUpdate": 1789138380
   },
   {
     "Author": "ffxiv-tc-port",
