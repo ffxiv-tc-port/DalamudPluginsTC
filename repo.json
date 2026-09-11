@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.20.0.57",
+    "AssemblyVersion": "7.20.0.58",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- UI 快取的時間戳從 DateTime? 改成 long ticks，消掉跨執行緒的撕裂讀\n- 插入技與動作可用性三個 IPC 端點改成只在 framework 執行緒作答，其他執行緒回 false 並記診斷\n- 其他外掛送進來的動作請求與封鎖清單補上執行緒安全，列舉改成拍快照不再邊走訪邊刪\n- IPC 的組合狀態快取不再被就地改寫，也不再把快取的內部字典交到承租外掛手上\n- IPC 端點不再從承租外掛的執行緒直接摸原生玩家狀態，改丟回 framework 執行緒讀\n- 查不到的組合選項名字改成回 false 並記一筆診斷，不再對承租外掛擲 NullReferenceException\n- 設定裡的已啟用組合與自動模式表改成寫時複製，IPC 端點不再和設定視窗搶同一份集合",
+    "Changelog": "- 關遊戲那一瞬間不再從別條執行緒讀遊戲狀態，避免整個遊戲被直接關掉",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.57/WrathCombo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.57/WrathCombo.zip",
-    "LastUpdate": 1788761562,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.58/WrathCombo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.58/WrathCombo.zip",
+    "LastUpdate": 1789138127,
     "CategoryTags": [
       "Jobs"
     ]
