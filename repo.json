@@ -1029,7 +1029,7 @@
     "Author": "veyn",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
-    "AssemblyVersion": "7.20.0.39",
+    "AssemblyVersion": "7.20.0.40",
     "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vnavmesh",
@@ -1049,10 +1049,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/vnavmesh.png",
     "Punchline": "自動移動吧！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.39/vnavmesh.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.39/vnavmesh.zip",
-    "Changelog": "- 九號解決方案補上升降梯與傳送台捷徑，另預先備妥兩個台服未上線區域的自訂化",
-    "LastUpdate": 1788800088
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.40/vnavmesh.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.40/vnavmesh.zip",
+    "Changelog": "- 別的外掛從背景執行緒呼叫 vnavmesh 的「算路並前往」時不再跨執行緒讀遊戲物件表,少掉一個會讓遊戲直接崩潰的機會",
+    "LastUpdate": 1789105327
   },
   {
     "Author": "Team Wrath",
