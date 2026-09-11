@@ -149,7 +149,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "Avarice",
     "InternalName": "Avarice",
-    "AssemblyVersion": "7.20.0.28",
+    "AssemblyVersion": "7.20.0.29",
     "Description": "戰鬥定位輔助疊加層：\n- 標示背後／側面判定範圍與最大近戰距離\n- 顯示玩家攻擊判定像素，命中／未命中可觸發 VFX 或聊天訊息\n- 預測下一輪判定並依職業客製化提示\n- 支援 Splatoon 整合與多套設定檔",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Avarice",
@@ -167,10 +167,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Avarice.png",
     "Punchline": "顯示背後／側面判定範圍與命中回饋",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.28/Avarice.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.28/Avarice.zip",
-    "Changelog": "- repin ECommons:同步此前未套用的修正",
-    "LastUpdate": 1788600382
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.29/Avarice.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Avarice-v7.20.0.29/Avarice.zip",
+    "Changelog": "- 別的外掛問方位時不再可能把遊戲弄崩:改成先在物件表裡確認那個目標還活著,而且整段算在遊戲主執行緒上",
+    "LastUpdate": 1789106731
   },
   {
     "Author": "NeNeppie",
@@ -621,7 +621,7 @@
     "Author": "JayceOfSpades",
     "Name": "Mini-Mappingway",
     "InternalName": "MiniMappingway",
-    "AssemblyVersion": "7.20.0.14",
+    "AssemblyVersion": "7.20.0.15",
     "Description": "在小地圖上顯示好友與公會成員的插件。可在設定中自訂標記樣式，並切換是否顯示好友、公會成員或兩者！圖示由 twitter 上的 @Miendoodle 繪製。感謝 nya 提供的點子！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/MiniMappingway",
@@ -641,10 +641,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/MiniMappingway.png",
     "Punchline": "在小地圖上顯示好友與公會成員的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/MiniMappingway-v7.20.0.14/MiniMappingway.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/MiniMappingway-v7.20.0.14/MiniMappingway.zip",
-    "Changelog": "- IPC 標記終於能標寶箱這類非玩家物件：以前對它們是完全靜默地不生效\n- README 從單行簡介改寫為完整的繁體中文功能說明\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose",
-    "LastUpdate": 1788937043
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/MiniMappingway-v7.20.0.15/MiniMappingway.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/MiniMappingway-v7.20.0.15/MiniMappingway.zip",
+    "Changelog": "- 別的外掛透過 IPC 加小地圖標記時不再可能把遊戲弄崩:查物件表與寫來源設定都改在遊戲主執行緒上做",
+    "LastUpdate": 1789106725
   },
   {
     "Author": "Jukka",
@@ -1637,7 +1637,7 @@
     "Author": "Infi, PunishedPineapple",
     "Name": "Waymark Preset Plugin",
     "InternalName": "WaymarkPresetPlugin",
-    "AssemblyVersion": "7.20.0.4",
+    "AssemblyVersion": "7.20.0.5",
     "Description": "可儲存、編輯、放置、匯入、匯出並預覽數量不限的場地標記預設。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WaymarkPresetPlugin",
@@ -1656,10 +1656,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WaymarkPresetPlugin.png",
     "Punchline": "更好用的場地標記管理",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WaymarkPresetPlugin-v7.20.0.4/WaymarkPresetPlugin.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WaymarkPresetPlugin-v7.20.0.4/WaymarkPresetPlugin.zip",
-    "LastUpdate": 1787792713,
-    "Changelog": "- 修正資訊面板視窗 PreDraw 未呼叫 base,恢復 Dalamud 每視窗不透明度功能\n- 歷史整理:壓縮 4 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WaymarkPresetPlugin-v7.20.0.5/WaymarkPresetPlugin.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WaymarkPresetPlugin-v7.20.0.5/WaymarkPresetPlugin.zip",
+    "LastUpdate": 1789106690,
+    "Changelog": "- 別的外掛叫它放場地標記時不再可能把遊戲弄崩:那些呼叫原本跑在對方的執行緒上,現在整段交回遊戲主執行緒\n- 新增繁體中文 README：場地標記預設集管理功能總覽"
   },
   {
     "Author": "Kouzukii",
