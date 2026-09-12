@@ -853,7 +853,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.20.0.56",
+    "AssemblyVersion": "7.20.0.57",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -872,10 +872,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.56/SomethingNeedDoing.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.56/SomethingNeedDoing.zip",
-    "Changelog": "- 巨集讀到的視窗文字、部隊名、FATE 名稱，改成先剝掉遊戲的圖示與連結標記",
-    "LastUpdate": 1789166732,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.57/SomethingNeedDoing.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.57/SomethingNeedDoing.zip",
+    "Changelog": "- 巨集取視窗 AtkValues 時一次讀完，不再邊走邊讀：序列存起來隔幾幀再用也不會讀到失效的記憶體\n- 巨集讀動態事件、AtkValue、南方博德狀態時不再抓著上一幀的遊戲記憶體，剩餘秒數與人數改成當場重查",
+    "LastUpdate": 1789203437,
     "CategoryTags": [
       "Utility"
     ]
@@ -999,7 +999,7 @@
     "Author": "veyn, croizat",
     "Name": "Visland",
     "InternalName": "visland",
-    "AssemblyVersion": "7.20.0.43",
+    "AssemblyVersion": "7.20.0.44",
     "Description": "自動化採集、開拓工坊排班等無人島相關作業。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/visland",
@@ -1020,10 +1020,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/visland.png",
     "Punchline": "自動化無人島各項活動",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.43/visland.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.43/visland.zip",
-    "Changelog": "- 修正遊戲關閉瞬間 IPC 閘門會整個失效的問題：改成直接回「暫時不可用」，不再繞過主執行緒保護",
-    "LastUpdate": 1789116291
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.44/visland.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/visland-v7.20.0.44/visland.zip",
+    "Changelog": "- 屯貨倉庫指派遠征時，遠征名稱改成原樣複製給遊戲，不再先解碼成文字再編碼回去",
+    "LastUpdate": 1789203506
   },
   {
     "Author": "veyn",
