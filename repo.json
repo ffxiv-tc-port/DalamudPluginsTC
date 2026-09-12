@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.77",
+    "AssemblyVersion": "7.20.0.78",
     "Description": "自動幫你跑副本，支援親信戰友、劇情輔助器、冒險者分隊、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.77/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.77/AutoDuty.zip",
-    "Changelog": "- 修正排隊助手讀副本名的方式:改成真的解析 SeString,不再靠三個字串替換敲掉控制序列",
-    "LastUpdate": 1789166380
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.78/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.78/AutoDuty.zip",
+    "Changelog": "- 多開在關遊戲那一瞬間不再從連線執行緒讀遊戲狀態，避免整個遊戲被直接關掉",
+    "LastUpdate": 1789203066
   },
   {
     "Author": "Det",
@@ -263,7 +263,7 @@
     "Author": "Infi, Anna",
     "Name": "Chat 2",
     "InternalName": "ChatTwo",
-    "AssemblyVersion": "7.20.0.28",
+    "AssemblyVersion": "7.20.0.29",
     "Description": "Chat 2 是遊戲內建聊天視窗的完整重寫版插件。\n支援功能：\n\n- 無限分頁\n- 固定發送到特定頻道的分頁\n- 更靈活的過濾功能\n- RGB 頻道顏色\n- 完全可變字體大小\n- 側邊欄分頁\n- 未讀訊息計數\n- 表情符號\n- 截圖模式（隱藏名稱）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ChatTwo",
@@ -285,10 +285,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ChatTwo.png",
     "Punchline": "電光石火 - ♪ 全新的聊天視窗，一個嶄新美妙的聊天窗口 ♪",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.28/ChatTwo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.28/ChatTwo.zip",
-    "Changelog": "- 在地化:manifest 描述修正用詞,外掛改為插件\n- README 改寫為繁體中文\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose",
-    "LastUpdate": 1788552162
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.29/ChatTwo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/ChatTwo-v7.20.0.29/ChatTwo.zip",
+    "Changelog": "- 關遊戲那一瞬間網頁介面不再從 HTTP 執行緒讀寫遊戲狀態，避免整個遊戲被直接關掉",
+    "LastUpdate": 1789203036
   },
   {
     "Author": "Nylfae",
@@ -505,7 +505,7 @@
     "Author": "Latihas",
     "Name": "LatihasChocobo",
     "InternalName": "LatihasChocobo",
-    "AssemblyVersion": "7.20.0.12",
+    "AssemblyVersion": "7.20.0.13",
     "Description": "自動陸行鳥競賽",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/LatihasChocobo",
@@ -521,11 +521,11 @@
     "LoadPriority": 0,
     "Punchline": "自動陸行鳥競賽",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.12/LatihasChocobo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.12/LatihasChocobo.zip",
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.13/LatihasChocobo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/LatihasChocobo-v7.20.0.13/LatihasChocobo.zip",
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/LatihasChocobo.png",
-    "Changelog": "- 加上跨外掛重按診斷：實際送出按壓的當下記一行 Information",
-    "LastUpdate": 1788437367,
+    "Changelog": "- 關遊戲那一瞬間不再從背景執行緒開義務搜尋器、按下報名，避免整個遊戲被直接關掉\n- 文件:README 大幅精簡\n- 修正註解裡的錯誤事實:使用者的 LogLevel 是 1,Debug 收得到、盲區只有 Verbose",
+    "LastUpdate": 1789203023,
     "CategoryTags": [
       "Minigames"
     ]
@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.20.0.59",
+    "AssemblyVersion": "7.20.0.60",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 區域轉換後等畫面就緒不再從背景執行緒讀遊戲畫面狀態，改成排在遊戲主執行緒上等",
+    "Changelog": "- 區域轉換後的循環檢查不再繞執行緒池，被 IPC 控制的時間戳改成原子讀寫",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.59/WrathCombo.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.59/WrathCombo.zip",
-    "LastUpdate": 1789140512,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.60/WrathCombo.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WrathCombo-v7.20.0.60/WrathCombo.zip",
+    "LastUpdate": 1789202994,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1181,7 +1181,7 @@
     "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.20.0.50",
+    "AssemblyVersion": "7.20.0.51",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/DailyDuty",
@@ -1204,10 +1204,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.50/DailyDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.50/DailyDuty.zip",
-    "Changelog": "- 部隊小隊任務完成判定改成先剝掉 SeString payload 再比對,任務名帶連結時不再永遠判成未完成",
-    "LastUpdate": 1789166727
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.51/DailyDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.51/DailyDuty.zip",
+    "Changelog": "- 更新 KamiToolKit 子模組:GIF 動畫節點不再從背景執行緒直接寫原生記憶體",
+    "LastUpdate": 1789203016
   },
   {
     "Author": "liza, qstxiv, & various contributors",
@@ -1525,7 +1525,7 @@
     "Author": "daemitus, MidoriKami",
     "Name": "ezWondrousTails",
     "InternalName": "WondrousTailsSolver",
-    "AssemblyVersion": "7.20.0.7",
+    "AssemblyVersion": "7.20.0.8",
     "Description": "直接在遊戲原生的天書奇談面板上顯示連線機率：依目前已貼上的印花，算出最終貼出 1／2／3 條故事線的機率，並同時列出「重新貼」（消耗 2 奇想點把印花隨機重貼）之後的平均機率。數值會依優於或劣於重貼期望值以不同顏色標示，一眼就能判斷該不該花奇想點重抽。純唯讀計算，不會替你操作。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/EzWondrousTails",
@@ -1546,10 +1546,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WondrousTailsSolver.png",
     "Punchline": "在天書奇談面板顯示故事線機率",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WondrousTailsSolver-v7.20.0.7/WondrousTailsSolver.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WondrousTailsSolver-v7.20.0.7/WondrousTailsSolver.zip",
-    "LastUpdate": 1787139136,
-    "Changelog": "- KamiToolKit 前進至 03c405a:名牌陣列取回值補判空"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WondrousTailsSolver-v7.20.0.8/WondrousTailsSolver.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/WondrousTailsSolver-v7.20.0.8/WondrousTailsSolver.zip",
+    "LastUpdate": 1789202983,
+    "Changelog": "- 更新 KamiToolKit 子模組:GIF 動畫節點不再從背景執行緒直接寫原生記憶體\n- README 改寫為繁體中文\n- 子模組 gitlink 對齊歷史整理後的 KamiToolKit(樹一致,內容零變更)\n- 歷史整理:壓縮 18 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)"
   },
   {
     "Author": "alydev",
@@ -1854,7 +1854,7 @@
     "Author": "MidoriKami",
     "Name": "SortaKinda",
     "InternalName": "SortaKinda",
-    "AssemblyVersion": "7.20.0.4",
+    "AssemblyVersion": "7.20.0.5",
     "Description": "依照你的需求整理物品欄，並維持指定的排序方式。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SortaKinda",
@@ -1873,10 +1873,10 @@
     "IconUrl": "",
     "Punchline": "全面自訂物品欄排序方式。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SortaKinda-v7.20.0.4/SortaKinda.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SortaKinda-v7.20.0.4/SortaKinda.zip",
-    "LastUpdate": 1788035218,
-    "Changelog": "- KamiLib 子模組更新至 fef483b,設定目錄不再為 contentId 0 建出名為 0 的空資料夾"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SortaKinda-v7.20.0.5/SortaKinda.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SortaKinda-v7.20.0.5/SortaKinda.zip",
+    "LastUpdate": 1789203020,
+    "Changelog": "- 更新 KamiToolKit 子模組:GIF 動畫節點不再從背景執行緒直接寫原生記憶體\n- 重寫 README 為繁體中文：依實際原始碼補齊等級/道具等級/賣店價格/可交易等篩選條件與自動排序時機，移除下載次數徽章"
   },
   {
     "Author": "Ice",
