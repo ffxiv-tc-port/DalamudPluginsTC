@@ -2018,7 +2018,7 @@
     "Author": "yagi2",
     "Name": "GilDelta 金幣流水追蹤",
     "InternalName": "GilDelta",
-    "AssemblyVersion": "7.20.0.13",
+    "AssemblyVersion": "7.20.0.14",
     "Description": "常駐金幣流水追蹤外掛。監控自己的金幣、每位僱員與公會儲物櫃的變化，自動分類每一筆進出（潛水艇返回、僱員銷售、NPC購買、市場購買、修理、傳送等），透過可自訂的小工具（4 種顯示密度）與四頁儀表板（時間軸／圖表／明細／熱力圖）呈現。唯讀——絕不寫回遊戲狀態。七語言介面（英／日／德／法／簡中／韓／繁中）。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GilDelta",
@@ -2039,9 +2039,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GilDelta.png",
     "Punchline": "追蹤自己、僱員與公會儲物櫃的金幣流向。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GilDelta-v7.20.0.13/GilDelta.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GilDelta-v7.20.0.13/GilDelta.zip",
-    "LastUpdate": 1789234140,
-    "Changelog": "- 說明補上：這次登入還沒看到公會儲物櫃餘額之前會顯示問號，不是壞掉"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GilDelta-v7.20.0.14/GilDelta.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GilDelta-v7.20.0.14/GilDelta.zip",
+    "LastUpdate": 1789244772,
+    "Changelog": "- 更正 CLAUDE.md 兩行描述：Inferrer 已不再靜默吞規則例外，測試數 314\n- 分類規則出錯時會在 log 留一行警告，不再默默歸到其他\n- 整理註解：把剩下的長區塊收到 8 行以內（不改任何程式碼）\n- 整理註解：外掛名單、每日帳與測試專案（不改任何程式碼）\n- 整理註解：Plugin.cs（不改任何程式碼）\n- 整理註解：小視窗、IPC、角色名冊與設定（不改任何程式碼）\n- 整理註解：儀表板分頁與圖表（不改任何程式碼）\n- 整理註解：提示型別與推論規則（不改任何程式碼）\n- 整理註解：事件儲存層與每日結算（不改任何程式碼）\n- 整理註解：錢包讀取層與檔案寫入層（不改任何程式碼）\n- 整理註解：Wallet 值型別與公會儲物櫃閘門（不改任何程式碼）"
   }
 ]
