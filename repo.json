@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.20.0.112",
+    "AssemblyVersion": "7.20.0.113",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.112/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.112/Artisan.zip",
-    "Changelog": "- 向 Universalis 查材料價格不再動不動就 504：只要需要的欄位、失敗時切小批重試、十分鐘內不重查、最後退回精簡端點",
-    "LastUpdate": 1789237765
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.113/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.113/Artisan.zip",
+    "Changelog": "- 查價退回精簡端點時，材料只顯示約略價、不再拿它判定該買還是該做\n- 整理註解：其餘各檔只留原生層守衛與 UI 判準（不改任何程式碼）\n- 整理註解：模擬器與解算器只留契約與刻意的取捨（不改任何程式碼）\n- 整理註解：IPC 端點與僱員快取只留執行緒契約（不改任何程式碼）\n- 整理註解：原生層守衛與宇宙製作只留不變式與刻意不做的理由（不改任何程式碼）\n- 整理註解：製作清單與能力值快照只留執行緒契約與失敗方向（不改任何程式碼）\n- 整理註解：Universalis 查價與相關設定欄位只留契約與一句為什麼（不改任何程式碼）",
+    "LastUpdate": 1789245031
   },
   {
     "Author": "Herculezz",
@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.20.0.53",
+    "AssemblyVersion": "7.20.0.54",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.53/GatherbuddyReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.53/GatherbuddyReborn.zip",
-    "Changelog": "- 偵錯分頁的 vnavmesh 三行狀態：沒裝 vnavmesh 時顯示灰字「未安裝」，不再一律顯示 False",
-    "LastUpdate": 1788789923
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.54/GatherbuddyReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatherbuddyReborn-v7.20.0.54/GatherbuddyReborn.zip",
+    "Changelog": "- 關閉遊戲那一刻不再從背景執行緒改聊天佇列與發通知",
+    "LastUpdate": 1789245027
   },
   {
     "Author": "img02",
@@ -853,7 +853,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.20.0.57",
+    "AssemblyVersion": "7.20.0.58",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -872,10 +872,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.57/SomethingNeedDoing.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.57/SomethingNeedDoing.zip",
-    "Changelog": "- 巨集取視窗 AtkValues 時一次讀完，不再邊走邊讀：序列存起來隔幾幀再用也不會讀到失效的記憶體\n- 巨集讀動態事件、AtkValue、南方博德狀態時不再抓著上一幀的遊戲記憶體，剩餘秒數與人數改成當場重查",
-    "LastUpdate": 1789203437,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.58/SomethingNeedDoing.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/SomethingNeedDoing-v7.20.0.58/SomethingNeedDoing.zip",
+    "Changelog": "- 關閉遊戲那一刻不再從背景執行緒改聊天佇列與設定",
+    "LastUpdate": 1789244968,
     "CategoryTags": [
       "Utility"
     ]
@@ -1092,7 +1092,7 @@
     "Author": "cycleapple",
     "Name": "XIV 寶物地圖工具小幫手",
     "InternalName": "XivTreasureParty",
-    "AssemblyVersion": "7.20.0.13",
+    "AssemblyVersion": "7.20.0.14",
     "Description": "Dalamud 插件版本的 FFXIV 繁中寶物地圖工具小幫手。可與網頁版（https://cycleapple.github.io/xiv-tc-treasure-finder/）使用者混合組隊，即時同步同一份清單。支援建立/加入房間、手動新增寶物地圖、打開寶物地圖時自動選取、遊戲內開地圖打旗標、以自訂頻道指令（例如 /p 或 /cwl1）發送可點擊地圖連結、順序調整、完成勾選等。另外若有安裝 Mappy，可把隊伍清單裡尚未完成的藏寶點「全部」同時畫到 Mappy 的地圖上（不只一次一個旗標）。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/XivTreasureParty",
@@ -1114,10 +1114,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/XivTreasureParty.png",
     "Punchline": "繁中寶物地圖組隊協作，與網頁版即時共享同一個房間。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.20.0.13/XivTreasureParty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.20.0.13/XivTreasureParty.zip",
-    "Changelog": "- 修正 v7.20.0.12 的迴歸：憑證作廢之後連建立隊伍與加入隊伍都會失敗",
-    "LastUpdate": 1788876877
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.20.0.14/XivTreasureParty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/XivTreasureParty-v7.20.0.14/XivTreasureParty.zip",
+    "Changelog": "- 關閉遊戲那一刻不再從背景執行緒改藏寶圖清單",
+    "LastUpdate": 1789245004
   },
   {
     "Author": "daemitus, croizat",
@@ -1269,7 +1269,7 @@
     "Author": "Styr1x, PlusoneChiang",
     "Name": "Crossingway",
     "InternalName": "Crossingway",
-    "AssemblyVersion": "7.20.0.5",
+    "AssemblyVersion": "7.20.0.6",
     "Description": "在遊戲內渲染 Chromium 瀏覽器覆蓋層,可顯示 IINACT/ACT 戰鬥數據網頁介面、Cactbot 時間軸、YouTube、任意網頁等。\n使用設定按鈕或輸入 /cw config 開啟設定。\nFork 自 Styr1x/Browsingway(繁體中文版客戶端,API 13 / .NET 9)。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Crossingway",
@@ -1292,10 +1292,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Crossingway.png",
     "Punchline": "在遊戲內渲染瀏覽器覆蓋層。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Crossingway-v7.20.0.5/Crossingway.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Crossingway-v7.20.0.5/Crossingway.zip",
-    "Changelog": "- Crossingway：LocalPlayer 改走 Services.ObjectTable，清掉 3 處 API13 過時警告",
-    "LastUpdate": 1787088975
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Crossingway-v7.20.0.6/Crossingway.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Crossingway-v7.20.0.6/Crossingway.zip",
+    "Changelog": "- 關閉遊戲那一刻不再從背景執行緒改疊加層與貼圖\n- README 改寫為繁體中文\n- 歷史整理:壓縮 9 筆台服移植與開發 commit 為單一 commit(內容零變更,原歷史在 tag pre-squash-20260826)",
+    "LastUpdate": 1789245020
   },
   {
     "Author": "Usagi, PlusoneChiang",
@@ -1826,7 +1826,7 @@
     "Author": "MidoriKami",
     "Name": "Mappy",
     "InternalName": "Mappy",
-    "AssemblyVersion": "7.20.0.14",
+    "AssemblyVersion": "7.20.0.15",
     "Description": "以 ImGui 地圖取代遊戲內建地圖，並提供多項額外功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Mappy",
@@ -1845,10 +1845,10 @@
     "IconUrl": "",
     "Punchline": "功能更完整的遊戲地圖。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Mappy-v7.20.0.14/Mappy.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Mappy-v7.20.0.14/Mappy.zip",
-    "LastUpdate": 1789235892,
-    "Changelog": "- 地圖霧效果不再從繪圖執行緒讀地圖視窗的記憶體，改由主執行緒驗證好貼圖才交棒，避免關地圖的瞬間讀到已回收位址而當掉"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Mappy-v7.20.0.15/Mappy.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Mappy-v7.20.0.15/Mappy.zip",
+    "LastUpdate": 1789244997,
+    "Changelog": "- 地圖霧效果換貼圖時不再與繪圖執行緒搶同一份資料，換下來的舊貼圖也會確實釋放，避免霧更新卡住或吃掉顯示記憶體\n- 整理註解：座標換算／右鍵選單／設定欄位的長註解收斂，等價推導與實測數字搬進本訊息（不改任何程式碼）\n- 整理註解：MapRenderer 三個 partial 的註解收斂到 5 行以內，日期與細節搬進本訊息（不改任何程式碼）\n- 整理註解：四個 Controller 的註解只留跨外掛契約與「為什麼」，端點清單搬進本訊息（不改任何程式碼）\n- 整理註解：地圖霧效果只留執行緒與 COM 參考契約，鑑識推導鏈搬進本訊息（不改任何程式碼）"
   },
   {
     "Author": "MidoriKami",
