@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.129",
+    "AssemblyVersion": "7.20.0.130",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.129/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.129/AutoRetainer.zip",
-    "Changelog": "- 登入或換角途中寫入僱員離線資料時遊戲不再有機會崩掉，也不再把讀不到的零寫進快照",
-    "LastUpdate": 1789235040,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.130/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.130/AutoRetainer.zip",
+    "Changelog": "- 僱員標籤頁「角色排序」區塊標題錯字修正\n- 整理註解：還原引述原話的用字、SharedText 15 條常數補上契約 summary（不改任何程式碼）\n- 整理註解：僱員術語統一、合併重複的 remarks、清掉殘留的日期與行號（不改任何程式碼）\n- 潛艇零件比對兩端改用同一種文字解析\n- 整理註解：清掉剩下幾塊註解裡的日期、位址與實測次數，只留契約（不改任何程式碼）\n- 整理註解：原生層安全守衛、外掛入口與介面的長註解只留契約（不改任何程式碼）\n- 整理註解：排程器與任務逾時說明只留契約與「刻意不做」，時間戳與反組譯細節搬進 commit（不改任何程式碼）\n- 整理註解：Modules 各模組的鑑識與反組譯紀錄搬進 commit，碼內只留契約與「刻意不做」（不改任何程式碼）\n- 整理註解：IPC 端點與壓制租約的證據鏈搬進 commit，碼內只留契約與「刻意不做」（不改任何程式碼）\n- 整理註解：按下守衛 DialogGuards 的鑑識敘事改成只留契約與「刻意不做」（不改任何程式碼）",
+    "LastUpdate": 1789288720,
     "CategoryTags": [
       "Inventory"
     ]
@@ -447,7 +447,7 @@
     "Author": "Critical_Impact",
     "Name": "Allagan Tools",
     "InternalName": "InventoryTools",
-    "AssemblyVersion": "7.20.0.43",
+    "AssemblyVersion": "7.20.0.44",
     "Description": "Allagan Tools 的主要目的是追蹤你所有角色/僱員/公會倉庫中的道具。透過它的篩選系統，你將不再遺失任何道具的蹤跡，也不再不知道道具該收納在哪裡。\n\n雖然這是它的主要功能，但它還擁有相當豐富的其他功能，包括：\n\t- 製作規劃\n\t- 市場公告板整合\n\t- 在搜尋/整理及挑選製作材料時於背包中高亮顯示道具\n\t- 包含商人與取得來源等資訊的道具視窗\n\t- 可完整搜尋的任務/怪物/飛空艇/潛水艇視窗\n\t- 讓你能為特定道具設定複雜搜尋條件的篩選系統\n\t- 提示視窗整合，滑鼠懸停即可查看道具所在位置",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/InventoryTools",
@@ -467,10 +467,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/InventoryTools.png",
     "Punchline": "讓你的 FFXIV 井井有條，輕鬆定位/顯示道具應收納何處、規劃製作，並搜尋怪物、任務、飛空艇與潛水艇！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.43/InventoryTools.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.43/InventoryTools.zip",
-    "Changelog": "- 查價不再動不動就 504,查價狀態改成原子讀寫(同步 CriticalCommonLib)",
-    "LastUpdate": 1789246336
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.44/InventoryTools.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.44/InventoryTools.zip",
+    "Changelog": "- 市場「N 日成交數」不再卡在 20,兩個市場設定的說明不再誤稱台服沒有市場資料",
+    "LastUpdate": 1789288691
   },
   {
     "Author": "electr0sheep, Nuko",
