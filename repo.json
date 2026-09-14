@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.20.0.131",
+    "AssemblyVersion": "7.20.0.132",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.131/AutoRetainer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.131/AutoRetainer.zip",
-    "Changelog": "- 僱員探險報告那一步逾時時，log 現在說得出選單上當時有哪些項目；軍票逐件明細降為 Debug",
-    "LastUpdate": 1789404799,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.132/AutoRetainer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoRetainer-v7.20.0.132/AutoRetainer.zip",
+    "Changelog": "- 任務逾時中止佇列時，log 會說出後面有哪幾步一起被丟掉",
+    "LastUpdate": 1789418140,
     "CategoryTags": [
       "Inventory"
     ]
@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.20.0.109",
+    "AssemblyVersion": "7.20.0.110",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.109/BossModReborn.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.109/BossModReborn.zip",
-    "Changelog": "- 修正遊戲關閉瞬間 IPC 閘門會整個失效的問題：改成直接回「暫時不可用」，不再繞過主執行緒保護",
-    "LastUpdate": 1789116339,
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.110/BossModReborn.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/BossModReborn-v7.20.0.110/BossModReborn.zip",
+    "Changelog": "- 在雷達上按右鍵開選單：本場模組設定、停用模組與常用顯示開關不必再翻設定視窗",
+    "LastUpdate": 1789418188,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.20.0.113",
+    "AssemblyVersion": "7.20.0.114",
     "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：公會合建素材一鍵全交、野外陸行鳥自動餵食基沙爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.113/TCToolbox.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.113/TCToolbox.zip",
-    "Changelog": "- 置物櫃搬移：讀格位前補上同檔既有的假指標防線，避免格位陣列尚未配置時解參崩潰\n- 置物櫃搬移：同一格重複點不再各自計時，逾時訊息改成看得出「到底卡在哪」\n- 整理註解：清掉短註解裡殘留的行號與日期，並把 4 處錯置的 summary 搬回它描述的成員（不改任何程式碼）\n- 整理註解：收尾把 7 個仍偏長的備註段再縮一次（不改任何程式碼）\n- 整理註解：Windows 視窗層與設定／進入點 7 檔收斂成契約與刻意不做（不改任何程式碼）\n- 整理註解：Modules I~Z 共 30 檔收斂成契約與刻意不做（不改任何程式碼）\n- 整理註解：Modules A~H 共 54 檔收斂成契約與刻意不做（不改任何程式碼）\n- 整理註解：Core 共用層 45 檔收斂成契約與刻意不做（不改任何程式碼）",
-    "LastUpdate": 1789404732
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.114/TCToolbox.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/TCToolbox-v7.20.0.114/TCToolbox.zip",
+    "Changelog": "- 置物櫃搬移：連點多件時改成一件一件送，不再有約兩成被伺服器丟掉\n- 置物櫃搬移：讀不到格位時說出真正的原因，不再一律回報成「置物櫃沒有空位」",
+    "LastUpdate": 1789418120
   },
   {
     "Author": "daemitus, MidoriKami",
