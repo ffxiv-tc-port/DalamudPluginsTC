@@ -447,7 +447,7 @@
     "Author": "Critical_Impact",
     "Name": "Allagan Tools",
     "InternalName": "InventoryTools",
-    "AssemblyVersion": "7.20.0.45",
+    "AssemblyVersion": "7.20.0.46",
     "Description": "Allagan Tools 的主要目的是追蹤你所有角色/僱員/公會倉庫中的道具。透過它的篩選系統，你將不再遺失任何道具的蹤跡，也不再不知道道具該收納在哪裡。\n\n雖然這是它的主要功能，但它還擁有相當豐富的其他功能，包括：\n\t- 製作規劃\n\t- 市場公告板整合\n\t- 在搜尋/整理及挑選製作材料時於背包中高亮顯示道具\n\t- 包含商人與取得來源等資訊的道具視窗\n\t- 可完整搜尋的任務/怪物/飛空艇/潛水艇視窗\n\t- 讓你能為特定道具設定複雜搜尋條件的篩選系統\n\t- 提示視窗整合，滑鼠懸停即可查看道具所在位置",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/InventoryTools",
@@ -467,10 +467,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/InventoryTools.png",
     "Punchline": "讓你的 FFXIV 井井有條，輕鬆定位/顯示道具應收納何處、規劃製作，並搜尋怪物、任務、飛空艇與潛水艇！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.45/InventoryTools.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.45/InventoryTools.zip",
-    "Changelog": "- HttpClient 那段註解不再指向已經被刪掉的類別\n- 同步 CriticalCommonLib:刪掉舊的非 hosted 查價實作,查價行為不變",
-    "LastUpdate": 1789399854
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.46/InventoryTools.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/InventoryTools-v7.20.0.46/InventoryTools.zip",
+    "Changelog": "- 沒有任何清單時不再每幀重跑疊加層刷新，順帶同步 CriticalCommonLib",
+    "LastUpdate": 1789405051
   },
   {
     "Author": "electr0sheep, Nuko",
@@ -1029,7 +1029,7 @@
     "Author": "veyn",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
-    "AssemblyVersion": "7.20.0.45",
+    "AssemblyVersion": "7.20.0.46",
     "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vnavmesh",
@@ -1049,10 +1049,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/vnavmesh.png",
     "Punchline": "自動移動吧！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.45/vnavmesh.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.45/vnavmesh.zip",
-    "Changelog": "- 切區域與別的外掛同時要求重載導航網格時，不再偶發跳例外，也不會把舊區域的網格發佈出來",
-    "LastUpdate": 1789234278
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.46/vnavmesh.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.46/vnavmesh.zip",
+    "Changelog": "- 區域切換之間不再為沒有地形的佔位區域建置並快取一張空網格\n- 整理註解：vnavmesh 三個過長區塊收斂、證據鏈搬離碼內（不改任何程式碼）\n- 整理註解：拿掉 Z0171 行尾註解裡的上游 commit 雜湊（不改任何程式碼）\n- 整理註解：移除 commit 雜湊、日期與實機 log 證據鏈（不改任何程式碼）\n- 修正 DuoLog 例外多載會把原始堆疊蓋掉，讓錯誤訊息指回真正的出錯位置\n- 整理註解：修掉 FollowPath 指向已被拿掉的 MovementLeases 註解的那句引用（不改任何程式碼）\n- 整理註解：補刪 Z0140WesternThanalan 上一顆留下的一行孤兒註解（不改任何程式碼）\n- 整理註解：vnavmesh 區域自訂化與偵錯視窗的長註解收斂（不改任何程式碼）\n- 整理註解：vnavmesh 其餘 12 個檔的長註解收斂成契約／刻意不做／一句為什麼（不改任何程式碼）\n- 整理註解：vnavmesh 九個檔的長註解收斂成契約／刻意不做／一句為什麼（不改任何程式碼）",
+    "LastUpdate": 1789404960
   },
   {
     "Author": "Team Wrath",
@@ -1181,7 +1181,7 @@
     "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.20.0.52",
+    "AssemblyVersion": "7.20.0.53",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/DailyDuty",
@@ -1204,16 +1204,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.52/DailyDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.52/DailyDuty.zip",
-    "Changelog": "- 修正隨機任務列表不上色:副本名含特殊排版資料時,過去永遠比不中",
-    "LastUpdate": 1789204324
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.53/DailyDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/DailyDuty-v7.20.0.53/DailyDuty.zip",
+    "Changelog": "- 同步 KamiToolKit：style 檔改成讀過就快取，登入不再重讀數十個 JSON",
+    "LastUpdate": 1789405002
   },
   {
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.20.0.73",
+    "AssemblyVersion": "7.20.0.74",
     "Description": "自動跑任務插件：\n- 自動導航至任務目標並完成對話、互動與戰鬥觸發\n- 支援主線／支線任務、部分部落任務與採集類任務\n- 提供任務執行優先順序與除錯視窗\n- 需搭配 vnavmesh、TextAdvance、Lifestream 使用",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,10 +1232,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "自動跑任務助手，導航並完成任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.73/Questionable.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.73/Questionable.zip",
-    "Changelog": "- 跑任務卡在原地時不再無聲卡死：路線重算用完額度就停下來並說明原因",
-    "LastUpdate": 1789399878
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.74/Questionable.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.74/Questionable.zip",
+    "Changelog": "- 按窗診斷的那一行從 Information 降到 Debug，不再佔用要使用者回報的等級\n- 飛行中找不到路時先降落再重試一次，不再當場放棄整段移動",
+    "LastUpdate": 1789405071
   },
   {
     "Author": "NightmareXIV",
@@ -1301,7 +1301,7 @@
     "Author": "Usagi, PlusoneChiang",
     "Name": "IINACT",
     "InternalName": "IINACT",
-    "AssemblyVersion": "7.20.0.18",
+    "AssemblyVersion": "7.20.0.19",
     "Description": "在類 ACT 環境中直接執行 FFXIV_ACT_Plugin 的戰鬥數據解析插件,內建深度改造的 Overlay Plugin 移植版,無需另外安裝 ACT。\n可搭配 Crossingway 在遊戲內顯示戰鬥數據覆蓋層。\nFork 自 marzent/IINACT(繁體中文版客戶端,API 13 / .NET 9,TC opcodes 由 PlusoneChiang 維護)。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/IINACT",
@@ -1321,10 +1321,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/IINACT.png",
     "Punchline": "免 ACT 的戰鬥數據解析插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.18/IINACT.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.18/IINACT.zip",
-    "Changelog": "- party list 的除錯輸出改用 Formatting.None：一筆一行，不再佔掉四成的 log",
-    "LastUpdate": 1788757959
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.19/IINACT.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/IINACT-v7.20.0.19/IINACT.zip",
+    "Changelog": "- 解析依賴的訊息不再一句寫兩行，效果解密診斷降成 Debug",
+    "LastUpdate": 1789405001
   },
   {
     "Author": "Ice",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.20.0.73",
+    "AssemblyVersion": "7.20.0.74",
     "Description": "[Questionable 開發用插件]：使用 Pictomancy 繪製採集點路徑，供路徑資料編輯者使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable 開發用] 繪製採集路徑點",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.73/GatheringPathRenderer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.73/GatheringPathRenderer.zip",
-    "LastUpdate": 1789399878,
-    "Changelog": "- 跑任務卡在原地時不再無聲卡死：路線重算用完額度就停下來並說明原因"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.74/GatheringPathRenderer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.74/GatheringPathRenderer.zip",
+    "LastUpdate": 1789405071,
+    "Changelog": "- 按窗診斷的那一行從 Information 降到 Debug，不再佔用要使用者回報的等級\n- 飛行中找不到路時先降落再重試一次，不再當場放棄整段移動"
   },
   {
     "Author": "WildWolf",
