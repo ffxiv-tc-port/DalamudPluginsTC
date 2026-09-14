@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.20.0.113",
+    "AssemblyVersion": "7.20.0.114",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.113/Artisan.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.113/Artisan.zip",
-    "Changelog": "- 查價退回精簡端點時，材料只顯示約略價、不再拿它判定該買還是該做\n- 整理註解：其餘各檔只留原生層守衛與 UI 判準（不改任何程式碼）\n- 整理註解：模擬器與解算器只留契約與刻意的取捨（不改任何程式碼）\n- 整理註解：IPC 端點與僱員快取只留執行緒契約（不改任何程式碼）\n- 整理註解：原生層守衛與宇宙製作只留不變式與刻意不做的理由（不改任何程式碼）\n- 整理註解：製作清單與能力值快照只留執行緒契約與失敗方向（不改任何程式碼）\n- 整理註解：Universalis 查價與相關設定欄位只留契約與一句為什麼（不改任何程式碼）",
-    "LastUpdate": 1789245031
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.114/Artisan.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Artisan-v7.20.0.114/Artisan.zip",
+    "Changelog": "- 僱員補貨的任務逾時現在一定會寫進日誌，連沒取名字的步驟也叫得出是哪個方法\n- 整理註解：移除日期、行號與量測證據鏈，註解內「雇員」改「僱員」（不改任何程式碼）",
+    "LastUpdate": 1789401162
   },
   {
     "Author": "Herculezz",
