@@ -1213,7 +1213,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.20.0.75",
+    "AssemblyVersion": "7.20.0.76",
     "Description": "自動跑任務插件：\n- 自動導航至任務目標並完成對話、互動與戰鬥觸發\n- 支援主線／支線任務、部分部落任務與採集類任務\n- 提供任務執行優先順序與除錯視窗\n- 需搭配 vnavmesh、TextAdvance、Lifestream 使用",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,10 +1232,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "自動跑任務助手，導航並完成任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.75/Questionable.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.75/Questionable.zip",
-    "Changelog": "- 重掛後觸發 GitHub Actions 重新註冊兩個工作流程\n- 優先任務清單可以一鍵補上整串還沒做的前置任務，不必自己一個一個找出來排\n- 更正按窗診斷旁一句與實測不符的註解：按壓頻率其實不低",
-    "LastUpdate": 1789489003
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.76/Questionable.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/Questionable-v7.20.0.76/Questionable.zip",
+    "Changelog": "- 乙太之光晶塊垂直對不齊時，套用跟 NPC／事件物件一樣的逾時放棄保護\n- 尋路失敗要先降落時，降落被擋下會每秒重送一次，不再送一次就白等十秒",
+    "LastUpdate": 1789491249
   },
   {
     "Author": "NightmareXIV",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.20.0.75",
+    "AssemblyVersion": "7.20.0.76",
     "Description": "[Questionable 開發用插件]：使用 Pictomancy 繪製採集點路徑，供路徑資料編輯者使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable 開發用] 繪製採集路徑點",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.75/GatheringPathRenderer.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.75/GatheringPathRenderer.zip",
-    "LastUpdate": 1789489003,
-    "Changelog": "- 重掛後觸發 GitHub Actions 重新註冊兩個工作流程\n- 優先任務清單可以一鍵補上整串還沒做的前置任務，不必自己一個一個找出來排\n- 更正按窗診斷旁一句與實測不符的註解：按壓頻率其實不低"
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.76/GatheringPathRenderer.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/GatheringPathRenderer-v7.20.0.76/GatheringPathRenderer.zip",
+    "LastUpdate": 1789491249,
+    "Changelog": "- 乙太之光晶塊垂直對不齊時，套用跟 NPC／事件物件一樣的逾時放棄保護\n- 尋路失敗要先降落時，降落被擋下會每秒重送一次，不再送一次就白等十秒"
   },
   {
     "Author": "WildWolf",
