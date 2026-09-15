@@ -237,6 +237,56 @@ finally:
         setattr(m, k, v)
     shutil.rmtree(tmp, ignore_errors=True)
 
+# ── 案例 7：Changelog 濾掉發版流程 commit（兩向）──────────────────────
+# 起因：.75／.112 的 Changelog 第一行是「重掛後觸發 GitHub Actions 重新註冊…」。
+# 🔴 這組案例要釘的是**兩個方向**：漏濾只是噪音，誤濾是使用者看不到真的改了什麼。
+print("[case 7] Changelog 排除規則：流程主旨濾掉、功能主旨原樣保留")
+
+_SRC = pathlib.Path(m.__file__).read_text(encoding="utf-8")
+
+FEATURE_A = "優先任務清單可以一鍵補上整串還沒做的前置任務，不必自己一個一個找出來排"
+FEATURE_B = "更正按窗診斷旁一句與實測不符的註解：按壓頻率其實不低"
+# 下面兩條逐字取自 repo.json 實際出現過的 Changelog（.112 與 .75）
+PROCESS_1 = "重掛後觸發 GitHub Actions 重新註冊發版工作流程"
+PROCESS_2 = "重掛後觸發 GitHub Actions 重新註冊兩個工作流程"
+# fork_standalone_rebuild.py 的重建收尾現在產生的那一顆
+PROCESS_3 = "重掛後觸發 GitHub Actions 重新註冊工作流程"
+NL = chr(10)
+
+
+def changelog_of(subjects):
+    """直接餵 get_changelog 一份「compare API 已經取好第一行」的清單。"""
+    saved_gh = m.gh
+    m.gh = lambda *a, **k: NL.join(subjects)
+    try:
+        return m.get_changelog("ffxiv-tc-port/Fake", "v1", "v2")
+    finally:
+        m.gh = saved_gh
+
+
+WANT = "- " + FEATURE_A + NL + "- " + FEATURE_B
+
+cl = changelog_of([PROCESS_1, FEATURE_A, FEATURE_B])
+check("流程主旨被濾掉", cl is not None and PROCESS_1 not in cl, cl)
+check("功能主旨原樣保留、順序不變", cl == WANT, cl)
+
+for label, subj in (("發版工作流程", PROCESS_1), ("兩個工作流程", PROCESS_2),
+                    ("工作流程", PROCESS_3)):
+    check(f"三種實際出現過的流程主旨都命中規則：{label}", m.is_process_commit(subj) is True)
+
+check("不含流程主旨時逐字原樣（負對照）", changelog_of([FEATURE_A, FEATURE_B]) == WANT)
+check("真功能主旨不誤濾：BossmodReborn e9352ee3b 改版號機制那顆",
+      m.is_process_commit(
+          "Adopt VersionPrefix + BuildNumber.txt versioning to match other repos,"
+          " add gate job") is False)
+check("真功能主旨不誤濾：提到 GitHub Actions 但不是重新註冊",
+      m.is_process_commit("修好 GitHub Actions 建置失敗：缺 DalamudLibPath") is False)
+check("全部都是流程 commit → 回 None（退回「無 changelog」的既有路徑）",
+      changelog_of([PROCESS_1, PROCESS_3]) is None)
+check("回 None 時不會寫出空字串（呼叫端是 `if changelog:`）",
+      "changelog = get_changelog(source_repo, prev_tag, tag)" in _SRC
+      and "if changelog:" in _SRC)
+
 print("")
 if FAILURES:
     print(f"FAILED: {len(FAILURES)} check(s): {FAILURES}")

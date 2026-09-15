@@ -279,6 +279,32 @@ def download_asset(asset_url, dest):
 
 MAX_CHANGELOG_COMMITS = 25
 
+# ── Changelog 的流程 commit 排除規則（2026-09-15 加） ────────────────────
+# 這些 commit 記錄的是**發版流程自己的動作**，對使用者是純噪音；混進 Changelog
+# 第一行尤其糟，因為 Dalamud 的更新提示只看得到最前面幾行。
+#
+# 🔴 規則一律寫窄：漏濾只是多一行噪音，誤濾是**使用者看不到這一版真的改了什麼**。
+#    所以每一條都必須對得上一個真實出現過的主旨，而且要窄到不可能命中功能主旨。
+#    反例（正因為它，這裡刻意**沒有**「主旨含 BuildNumber 就濾掉」這條規則）：
+#    BossmodReborn e9352ee3b「Adopt VersionPrefix + BuildNumber.txt versioning to
+#    match other repos, add gate job」是真的改版號機制，濾掉就錯了。
+#
+# 對應的實例：
+#   「重掛後觸發 GitHub Actions 重新註冊發版工作流程」   BossModReborn 7.20.0.112
+#   「重掛後觸發 GitHub Actions 重新註冊兩個工作流程」   Questionable /
+#                                                      GatheringPathRenderer 7.20.0.75
+#   來源＝`~/.claude/tools/fleet/fork_standalone_rebuild.py` 的重建收尾：repo 刪除後
+#   同名重建時 GitHub 不一定會把 .github/workflows/*.yml 註冊成 workflow，而空
+#   commit 觸發不了重掃 ⇒ 只能改動 workflow 檔本身推一顆 commit 逼它重掃。
+CHANGELOG_NOISE_PATTERNS = [
+    re.compile(r"觸發\s*GitHub\s*Actions.*重新註冊"),
+]
+
+
+def is_process_commit(subject):
+    """這行主旨是不是「發版流程自己的動作」（⇒ 不該進使用者看的 Changelog）。"""
+    return any(p.search(subject) for p in CHANGELOG_NOISE_PATTERNS)
+
 
 def get_changelog(source_repo, prev_tag, tag):
     """Build a bullet-list changelog for repo.json's "Changelog" field from
@@ -288,7 +314,9 @@ def get_changelog(source_repo, prev_tag, tag):
     no upstream release-notes body needed (those are just GitHub's
     auto-generated compare links anyway, and point at a private repo the
     end user can't open). Returns None if there's no previous tag to diff
-    against (first-ever mirror of this plugin) or the API call fails."""
+    against (first-ever mirror of this plugin), the API call fails, or every
+    commit in the range was filtered out as release-process noise (see
+    CHANGELOG_NOISE_PATTERNS) - the caller keeps the existing Changelog."""
     if not prev_tag:
         return None
     out = gh("api", f"repos/{source_repo}/compare/{prev_tag}...{tag}", "--jq",
@@ -296,6 +324,12 @@ def get_changelog(source_repo, prev_tag, tag):
     if not out:
         return None
     lines = [line for line in out.splitlines() if line.strip()]
+    kept = [line for line in lines if not is_process_commit(line)]
+    if len(kept) != len(lines):
+        print(f"[changelog] {source_repo}: 濾掉 {len(lines) - len(kept)} 筆流程 commit")
+    lines = kept
+    # 全部都是流程 commit 時退回「沒有 changelog」那條既有路徑（回 None）——
+    # 呼叫端是 `if changelog:`，所以條目沿用舊的 Changelog，不會被寫成空字串。
     if not lines:
         return None
     if len(lines) > MAX_CHANGELOG_COMMITS:
