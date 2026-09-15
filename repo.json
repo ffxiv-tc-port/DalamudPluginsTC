@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.20.0.80",
+    "AssemblyVersion": "7.20.0.81",
     "Description": "自動幫你跑副本，支援親信戰友、劇情輔助器、冒險者分隊、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.80/AutoDuty.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.80/AutoDuty.zip",
-    "Changelog": "- 原生視窗按壓診斷改成除錯等級,不再洗滿記錄檔",
-    "LastUpdate": 1789404784
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.81/AutoDuty.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/AutoDuty-v7.20.0.81/AutoDuty.zip",
+    "Changelog": "- 補齊 7 個副本共 23 個互動步驟的物件編號,這些步驟原本一律卡到逾時才放棄\n- 黃金谷入口與最終王前兩段改成遇怪就地清掉,不再一路拖怪到王面前\n- 修好王戰前後三個從未生效的行為:提前偵測王、等待戰鬥時武裝 AI、開啟王的寶箱\n- 跑完副本不再白等 60 秒才退出,互動步驟參數填錯時也直接跳過並記錄",
+    "LastUpdate": 1789461917
   },
   {
     "Author": "Det",
@@ -1029,7 +1029,7 @@
     "Author": "veyn",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
-    "AssemblyVersion": "7.20.0.46",
+    "AssemblyVersion": "7.20.0.47",
     "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vnavmesh",
@@ -1049,10 +1049,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/vnavmesh.png",
     "Punchline": "自動移動吧！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.46/vnavmesh.zip",
-    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.46/vnavmesh.zip",
-    "Changelog": "- 區域切換之間不再為沒有地形的佔位區域建置並快取一張空網格\n- 整理註解：vnavmesh 三個過長區塊收斂、證據鏈搬離碼內（不改任何程式碼）\n- 整理註解：拿掉 Z0171 行尾註解裡的上游 commit 雜湊（不改任何程式碼）\n- 整理註解：移除 commit 雜湊、日期與實機 log 證據鏈（不改任何程式碼）\n- 修正 DuoLog 例外多載會把原始堆疊蓋掉，讓錯誤訊息指回真正的出錯位置\n- 整理註解：修掉 FollowPath 指向已被拿掉的 MovementLeases 註解的那句引用（不改任何程式碼）\n- 整理註解：補刪 Z0140WesternThanalan 上一顆留下的一行孤兒註解（不改任何程式碼）\n- 整理註解：vnavmesh 區域自訂化與偵錯視窗的長註解收斂（不改任何程式碼）\n- 整理註解：vnavmesh 其餘 12 個檔的長註解收斂成契約／刻意不做／一句為什麼（不改任何程式碼）\n- 整理註解：vnavmesh 九個檔的長註解收斂成契約／刻意不做／一句為什麼（不改任何程式碼）",
-    "LastUpdate": 1789404960
+    "DownloadLinkInstall": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.47/vnavmesh.zip",
+    "DownloadLinkUpdate": "https://github.com/ffxiv-tc-port/DalamudPluginsTC/releases/download/vnavmesh-v7.20.0.47/vnavmesh.zip",
+    "Changelog": "- 飛行尋路不再因 voxel 邊界的浮點誤差而中斷，也不再靜默算到錯誤的 voxel",
+    "LastUpdate": 1789461842
   },
   {
     "Author": "Team Wrath",
