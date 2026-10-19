@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.25.0.64",
+    "AssemblyVersion": "7.25.0.65",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/657114545",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/657114545",
-    "Changelog": "- 深宮踩到陷阱時多記一行診斷：前一幀的禁區、起點、移動權與尋路路點\n- 深宮仇恨迴避擴大到走去寶箱、傳送裝置與埋藏的寶藏光點時，目標本身在怪的範圍內就照舊走\n- 深宮 90 層炸彈教母：眩暈炸彈讀寒霜彈或碰得到 Boss 時不打它、目標鎖回 Boss\n- 深宮保命藥水：死亡與變身中不再推，喝不到時分清「沒有存貨」與「冷卻剩幾秒」\n- 深宮：銅寶箱改成血量 80% 以上且不在戰鬥中才走去開",
-    "LastUpdate": 1792435328,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/657207942",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/657207942",
+    "Changelog": "- 深宮：新增 IPC「BossMod.DeepDungeon.IsPullSafe」，讓 WrathCombo 開打前先問這隻會不會一次帶上太多隻\n- 自動選怪「何時切換目標」設為 Never 時，被打卻沒有可打的目標會換到正在打你的那隻",
+    "LastUpdate": 1792437826,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.25.0.50",
+    "AssemblyVersion": "7.25.0.51",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 相依函式庫對齊到同一版（功能不變）\n- 整理版本歷史，插件功能不變",
+    "Changelog": "- 深層迷宮：自動循環開打新敵人前先問 BossMod，會一次拉太多隻就先不打",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656077670",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656077670",
-    "LastUpdate": 1792408954,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/657206813",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/657206813",
+    "LastUpdate": 1792437820,
     "CategoryTags": [
       "Jobs"
     ]
