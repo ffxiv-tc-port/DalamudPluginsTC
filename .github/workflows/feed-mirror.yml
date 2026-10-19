@@ -1,0 +1,169 @@
+# 同步外掛發版到 feed：本機 scripts/release_plugin.py 只推 tag + 觸發外掛 repo 的
+# release.yml 就返回，不等 CI。這個排程 workflow 跑 scripts/mirror_releases.py，
+# 把已經建好的 release 同步進 repo.json。
+# 背景、事故紀錄、命名沿革見 docs/feed-mirror-notes.md——這裡只留規則本身。
+name: 同步插件發版到 feed
+
+on:
+  schedule:
+    # 每 15 分鐘。外掛自己的 release.yml 要跑 5~7 分鐘，所以「本機推 tag」到
+    # 「feed 上線」實際延遲約 10~20 分鐘。頻率上限是 API 額度不是 Actions 額度。
+    # 刻意避開 :00／:15／:30／:45——GitHub 在整點與整刻的排程佇列最擠，錯開幾分鐘比較準時。
+    - cron: "7,22,37,52 * * * *"
+  # 需要立刻收一次時用。網頁 UI 手動觸發會讓 run 的 actor 變成點的人；
+  # 要保持組織身分請用 App token 呼叫 API（本機 scripts/app_token.py 那條路）。
+  workflow_dispatch:
+
+# 排隊，不取消：取消會整個丟掉一次同步，下一班要等 15 分鐘，而且是靜默的
+# （feed 看起來正常，只是少了一個版本）。
+concurrency:
+  group: feed-mirror
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  # 只有一個 job、沒有 job 層級的 if:——被 if: 擋掉的 job 顯示成 skipped，
+  # 一個「全部 skipped」的 run 在 `gh run list` 看起來跟成功一模一樣。
+  # 要跳過就跳過 step，不要跳過 job。
+  mirror:
+    name: mirror releases into repo.json
+    # self-hosted，標籤對到 org 唯一那台 runner 的實際 labels（大小寫需逐字對）。
+    runs-on: [self-hosted, Windows, X64]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # 取 main 的最新狀態，不是 run 建立當下的 github.sha：排隊中的 run 輪到它時，
+          # 前一個 run 可能已經推了新的 repo.json／release-state.json，從舊 commit 產出會在 rebase 時衝突。
+          ref: main
+          # 要能 `git show HEAD:repo.json`，以及推送被搶先時 rebase。
+          fetch-depth: 0
+
+      # 刻意不用 actions/setup-python：它的安裝腳本要改登錄檔，自架 runner 的服務帳號
+      # 沒有那個權限，改吃機器層 Python（絕對路徑：服務帳號環境不一定跟著機器 PATH 更新）。
+      - name: 確認機器層 Python
+        shell: bash
+        run: |
+          "/c/Program Files/Python313/python.exe" --version
+          # app_token.py 簽 JWT 要 cryptography；--user 裝進服務帳號自己的使用者目錄，
+          # 不需要管理員，第二次起走快取幾秒就過。
+          "/c/Program Files/Python313/python.exe" -m pip install --user --quiet --disable-pip-version-check cryptography
+          "/c/Program Files/Python313/python.exe" -c "import cryptography, sys; print('cryptography', cryptography.__version__)"
+
+      - name: 同步 release 並更新 repo.json
+        id: mirror
+        shell: bash
+        env:
+          # App installation token：org 全 private 後這個 repo 的預設 GITHUB_TOKEN
+          # 只有自己的權限，讀不到其他 70 個外掛 repo 的 release，改由
+          # mirror_releases.py 自己用 scripts/app_token.py 換 App token。
+          TCTOOLBOX_APP_ID: ${{ secrets.TCTOOLBOX_APP_ID }}
+          TCTOOLBOX_APP_KEY: ${{ secrets.TCTOOLBOX_APP_KEY }}
+        run: |
+          # 刻意不用 `set -e`：離開碼交給下一步判。這裡 abort 會讓腳本已寫進
+          # $GITHUB_STEP_SUMMARY 的分級表沒有人去解讀。
+          set -uo pipefail
+          "/c/Program Files/Python313/python.exe" scripts/mirror_releases.py 2>&1 | tee mirror.log
+          # 接了管線之後 $? 是 tee 的（永遠 0）—— 要 PIPESTATUS[0] 才是 python 的。
+          rc="${PIPESTATUS[0]}"
+          echo "rc=$rc" >> "$GITHUB_OUTPUT"
+          echo "mirror_releases.py 離開碼：$rc"
+
+      - name: 🔴 失敗分級（warn 繼續、FAIL 停）
+        shell: bash
+        run: |
+          set -uo pipefail
+          grep -n '^\[summary\]' mirror.log || true
+
+          # rc 沒被設到（上一步整個沒跑完）也會落進這裡——空字串 != 0，往安全的
+          # 方向倒：當成硬失敗。
+          rc="${{ steps.mirror.outputs.rc }}"
+          if [ "$rc" != "0" ]; then
+            echo "::error title=mirror 硬失敗::mirror_releases.py 離開碼 '$rc' —— 這一輪不寫 feed（分級與原因見 run summary）"
+            exit 1
+          fi
+
+          # 反向保險：腳本說 0 卻印了行首 [FAIL]，代表分級邏輯自己有洞，一樣停。
+          # 只抓行首標記，log 尾巴的重印前綴是 [summary]，刻意不會被匹配到。
+          if grep -n '^\[FAIL\]' mirror.log; then
+            echo "::error title=分級不一致::離開碼 0 但輸出有行首 [FAIL] 行（見上）"
+            exit 1
+          fi
+
+          if grep -q '^\[warn\]' mirror.log; then
+            echo "::notice title=mirror 有警告::這一輪不是全綠；那些外掛沿用 feed 既有條目，明細見 run summary"
+            grep -n '^\[warn\]' mirror.log
+          fi
+          echo "分級通過（離開碼 0、無行首 [FAIL]）。"
+
+      - name: 🔴 repo.json 保險（RepoUrl 不可變）
+        shell: bash
+        run: |
+          "/c/Program Files/Python313/python.exe" scripts/verify_repo_json.py
+
+      - name: 有沒有變更
+        id: diff
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add -- repo.json scripts/release-state.json icons
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "沒有新的發版，什麼都不做。" | tee -a "$GITHUB_STEP_SUMMARY"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --cached --name-only
+          fi
+
+      - name: commit + push
+        if: steps.diff.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Claude Sonnet 5"
+          git config user.email "noreply@anthropic.com"
+
+          # 訊息一律走檔案，不要用 -m 接多行/中文：changelog 是逐字讀第一行的。
+          "/c/Program Files/Python313/python.exe" scripts/feed_commit_message.py > "$RUNNER_TEMP/feed-msg.txt"
+          echo "--- commit 訊息 ---"
+          cat "$RUNNER_TEMP/feed-msg.txt"
+          echo "-------------------"
+          git commit -F "$RUNNER_TEMP/feed-msg.txt"
+
+          # push 之後主旨驗一次——唯一的偵測手段就是回頭讀。
+          subject="$(git log -1 --format='%s')"
+          author="$(git log -1 --format='%an <%ae>')"
+          echo "主旨: $subject"
+          echo "作者: $author"
+          case "$subject" in
+            同步*) : ;;
+            *) echo "::error title=commit 主旨不對::$subject"; exit 1 ;;
+          esac
+          if [ "$author" != "Claude Sonnet 5 <noreply@anthropic.com>" ]; then
+            echo "::error title=commit 身分不對::$author"
+            exit 1
+          fi
+
+          # 本機同時也在推這個分支（實測過兩個 agent 同時 commit），所以 push 要能重試。
+          pushed=0
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "第 $attempt 次嘗試推送成功"
+              pushed=1
+              break
+            fi
+            echo "推送被拒（遠端有新 commit），rebase 後重試"
+            git pull --rebase origin main
+          done
+          if [ "$pushed" != 1 ]; then
+            echo "::error title=push 連續三次失敗::feed 沒有更新"
+            exit 1
+          fi
+
+          {
+            echo "### ✅ feed 已更新"
+            echo ""
+            echo "\`$subject\`"
+          } >> "$GITHUB_STEP_SUMMARY"

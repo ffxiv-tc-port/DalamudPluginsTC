@@ -1,0 +1,205 @@
+"""用 GitHub App 的私鑰換取 installation token。
+
+為什麼要這個：`release_plugin.py` 原本用使用者自己的 PAT 去 dispatch release.yml，
+於是 Actions 的 run 會顯示成該使用者觸發（`actor` 是個人帳號）。GitHub 的 run 一定歸屬到
+「使用者」或「GitHub App」——**org 本身不能當 actor**——所以要讓它顯示成組織名義，
+唯一的做法是建一個 App 並用它的 installation token 來 dispatch，run 就會顯示
+`TCToolBox[bot]`。
+
+沒有裝 PyJWT / requests，所以這裡用 `cryptography` 自己簽 RS256、用 `urllib` 打 API，
+不新增任何相依。
+
+設定方式（⚠️ 私鑰走檔案，不要貼進終端機——貼上會被吞掉，曾經因此外洩過真的憑證）：
+
+    setx TCTOOLBOX_APP_ID 123456
+    # 私鑰檔放在 repo 之外，例如 D:\ffxiv-tc-port\tctoolbox-app.pem
+    setx TCTOOLBOX_APP_KEY D:\ffxiv-tc-port\tctoolbox-app.pem
+
+沒設定就回傳 None，呼叫端會自動退回原本的 PAT 流程（所以這是純加值、不會擋住發版）。
+
+🔴 2026-09-17 起 `TCTOOLBOX_APP_KEY` 有第二種合法形狀：CI（`feed-mirror.yml`）
+餵進來的是 org secret 的**值本身**（PEM 內容），不是路徑——GitHub secret 沒有
+檔案系統可指。`_load_key_pem()` 用開頭字串（`-----BEGIN`）分辨這兩種形狀，本機
+的路徑用法完全不受影響。
+"""
+
+from __future__ import annotations
+
+import base64
+import json
+import os
+import time
+import urllib.error
+import urllib.request
+
+ORG = "ffxiv-tc-port"
+_API = "https://api.github.com"
+
+# installation token 有效期 1 小時；發版流程遠短於此，但仍留一點餘裕重取。
+_TOKEN_TTL_MARGIN_S = 300
+
+_cache: dict[str, tuple[str, float]] = {}
+
+
+def _b64(data: bytes) -> str:
+    return base64.urlsafe_b64encode(data).rstrip(b"=").decode()
+
+
+def _make_jwt(app_id: str, key_pem: bytes) -> str:
+    """GitHub App 的 JWT：RS256，iss=app id，有效期最長 10 分鐘。"""
+    from cryptography.hazmat.primitives import hashes, serialization
+    from cryptography.hazmat.primitives.asymmetric import padding
+
+    key = serialization.load_pem_private_key(key_pem, password=None)
+
+    now = int(time.time())
+    header = {"alg": "RS256", "typ": "JWT"}
+    # iat 往前 60 秒，避開本機與 GitHub 之間的時鐘偏移（偏差會直接被拒絕）
+    payload = {"iat": now - 60, "exp": now + 540, "iss": app_id}
+
+    signing_input = f"{_b64(json.dumps(header).encode())}.{_b64(json.dumps(payload).encode())}"
+    signature = key.sign(signing_input.encode(), padding.PKCS1v15(), hashes.SHA256())
+    return f"{signing_input}.{_b64(signature)}"
+
+
+def _api(path: str, token: str, method: str = "GET") -> dict:
+    req = urllib.request.Request(
+        f"{_API}{path}",
+        method=method,
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Accept": "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
+            "User-Agent": "ffxiv-tc-port-release",
+        },
+    )
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return json.loads(resp.read().decode())
+
+
+def _from_user_env(name: str) -> str:
+    """從 Windows 的 User 層級環境變數讀值。
+
+    ⚠️ 這個 fallback 是實際事故換來的：`setx` 設的 User 層級變數只有**之後**才建立的
+    行程才讀得到，而長時間執行的 shell／編輯器 session 是在那之前啟動的，於是
+    `os.environ` 永遠拿不到——2026-08-01 就因此讓 51 次發版退回個人身分而全程無警告。
+    直接查登錄檔可以繞過繼承問題。
+    """
+    if os.name != "nt":
+        return ""
+    try:
+        import winreg
+
+        with winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Environment") as key:
+            return str(winreg.QueryValueEx(key, name)[0]).strip()
+    except Exception:
+        return ""
+
+
+def _load_key_pem(value: str) -> bytes | None:
+    """`TCTOOLBOX_APP_KEY` 的值讀出私鑰的位元組，接受兩種形狀（見檔頭說明）：
+
+    - 本機發版：`value` 是檔案路徑（`setx` 設的，指向 repo 之外的 .pem 檔）。
+    - CI（org secret）：`value` 是 PEM 內容本身——secret 沒有檔案系統可指。
+
+    🔴 判準是開頭字串 `-----BEGIN`，不是「像不像路徑」：PEM 內容一定以它開頭，
+    路徑幾乎不會。以前這裡一律當路徑開，CI 餵 PEM 內容進來時 `os.path.isfile()`
+    對一個含換行的多行字串會直接回 False（Windows 上 `os.stat` 對這種字串是
+    `ValueError`，被 `isfile()` 自己吞掉，不會往外拋)——於是印「找不到私鑰檔」
+    退回 PAT，整條「CI 用 App 身分」的機制形同虛設，而 self-hosted runner 上
+    本來就沒有 `gh auth login` 過，退回等於直接斷頭。
+    """
+    if value.startswith("-----BEGIN"):
+        return value.encode("utf-8")
+    if not os.path.isfile(value):
+        print(f"[app_token] 找不到私鑰檔 {value}，退回使用 PAT")
+        return None
+    with open(value, "rb") as fh:
+        return fh.read()
+
+
+def get_installation_token(org: str = ORG) -> str | None:
+    """回傳可用的 installation token；未設定或失敗時回傳 None（呼叫端退回 PAT）。"""
+    app_id = os.environ.get("TCTOOLBOX_APP_ID", "").strip() or _from_user_env("TCTOOLBOX_APP_ID")
+    key_value = os.environ.get("TCTOOLBOX_APP_KEY", "").strip() or _from_user_env("TCTOOLBOX_APP_KEY")
+    if not app_id or not key_value:
+        # 🔴 不可靜默 return None：任何退回個人身分的情況都必須看得見。
+        print("[app_token] ⚠️ 未設定 TCTOOLBOX_APP_ID / TCTOOLBOX_APP_KEY，"
+              "將退回使用你自己的 GitHub 憑證（workflow run 的 actor 會是你本人）")
+        return None
+
+    cached = _cache.get(org)
+    if cached and cached[1] - _TOKEN_TTL_MARGIN_S > time.time():
+        return cached[0]
+
+    key_pem = _load_key_pem(key_value)
+    if key_pem is None:
+        return None
+
+    try:
+        jwt_token = _make_jwt(app_id, key_pem)
+        installation = _api(f"/orgs/{org}/installation", jwt_token)
+        inst_id = installation["id"]
+        created = _api(f"/app/installations/{inst_id}/access_tokens", jwt_token, method="POST")
+        token = created["token"]
+        # expires_at 是 UTC 的 ISO 8601 字串（結尾 Z）。
+        # 🔴 不能用 time.mktime：它把字串當本地時間解，UTC+8 下早 8 小時⇒快取永遠判過期從未命中。
+        import calendar
+        expires = calendar.timegm(time.strptime(created["expires_at"], "%Y-%m-%dT%H:%M:%SZ"))
+        _cache[org] = (token, expires)
+        return token
+    except urllib.error.HTTPError as ex:
+        body = ex.read().decode(errors="replace")[:200]
+        print(f"[app_token] 取得 installation token 失敗（HTTP {ex.code}）：{body}")
+    except Exception as ex:  # 任何問題都不該擋住發版
+        print(f"[app_token] 取得 installation token 失敗：{ex}")
+    return None
+
+
+def _selftest() -> int:
+    """`_load_key_pem()` 兩向校準：不打網路、不需要真的 App。"""
+    import tempfile
+
+    fails = []
+
+    def check(cond, label):
+        print(("  [ok] " if cond else "  [FAIL] ") + label)
+        if not cond:
+            fails.append(label)
+
+    fake_pem = "-----BEGIN PRIVATE KEY-----\nZmFrZQ==\n-----END PRIVATE KEY-----\n"
+    check(_load_key_pem(fake_pem) == fake_pem.encode("utf-8"),
+          "PEM 內容（CI／org secret 形狀）原樣讀回")
+
+    with tempfile.NamedTemporaryFile(mode="wb", suffix=".pem", delete=False) as fh:
+        fh.write(b"path-shape-bytes")
+        tmp_path = fh.name
+    try:
+        check(_load_key_pem(tmp_path) == b"path-shape-bytes",
+              "檔案路徑（本機發版形狀）讀得到內容")
+    finally:
+        os.unlink(tmp_path)
+
+    missing_path = tmp_path + ".does-not-exist"
+    check(_load_key_pem(missing_path) is None,
+          "不存在的路徑回 None（不拋例外、不誤判成 PEM 內容）")
+
+    if fails:
+        print(f"selftest FAIL：{len(fails)} 項")
+        return 2
+    print("selftest PASS")
+    return 0
+
+
+if __name__ == "__main__":
+    import sys
+
+    if "--selftest" in sys.argv[1:]:
+        sys.exit(_selftest())
+
+    t = get_installation_token()
+    if t:
+        # 只印前綴，不要把 token 完整印進終端機或 log
+        print(f"OK: 取得 installation token（{t[:8]}…，長度 {len(t)}）")
+    else:
+        print("未設定或取得失敗——發版會退回使用你自己的 PAT。")
