@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.25.0.52",
+    "AssemblyVersion": "7.25.0.53",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 減少記憶體配置：改設定後不再對每個功能查一次租約清單（沒有其他插件接管時），優先順序判斷不再每次排序配置",
+    "Changelog": "- 赤魔道士起手：隊上別的赤魔已開鼓勵時跳過起手的鼓勵，不再卡在第 8 步到逾時失敗\n- 赤魔道士：赤大雷電／赤大勁風單鍵在促進或連續魔法期間不再被換成激盪或赤火焰／赤巨岩\n- 自動循環：新增提前排隊秒數（預設 0.1 秒），下一招不再等 GCD 完全轉完才送",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660073015",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660073015",
-    "LastUpdate": 1792519392,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660577923",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660577923",
+    "LastUpdate": 1792532776,
     "CategoryTags": [
       "Jobs"
     ]
