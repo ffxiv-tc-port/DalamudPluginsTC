@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.25.0.70",
+    "AssemblyVersion": "7.25.0.71",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660622907",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660622907",
-    "Changelog": "- 多變迷宮 希拉狄哈水道 忘卻火蛟一家：場地東側與東南側補上實際站得住的地板\n- 對龍城塞石衛塔 柯西切：颱風打到西牆的最後幾發畫得出來，不再報模組錯誤\n- 神聖遺跡無限城市街古跡（困難）：基路伯的「聖療」畫出危險圈，AI 會遠離\n- AI：該閃卻站著不動時記下原因；「暫停自動移動」鍵的按放改記到 Debug 並附按住秒數\n- 澤羅姆斯殲滅戰：連線隕石提示拉開距離，AI 會遠離",
-    "LastUpdate": 1792533893,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660630146",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660630146",
+    "Changelog": "- 手動技能佇列：放出時從原本按的按鈕重新取得替換，不再把已換過的技能再換一次（與 WrathCombo 單鍵替換一起用時，自動循環選的招不再被換成別招）",
+    "LastUpdate": 1792534134,
     "CategoryTags": [
       "Jobs"
     ]
