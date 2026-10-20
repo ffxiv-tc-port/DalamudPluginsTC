@@ -188,9 +188,7 @@ Dalamud 本體另外還有這些原生與綁定相依（只在重建 Dalamud 時
 
 | 函式庫 | 上游 | 用途 | 誰在用 |
 |--------|------|------|--------|
-| [**Pictomancy**](https://github.com/ffxiv-tc-port/Pictomancy) | [sourpuh](https://github.com/sourpuh/ffxiv_pictomancy) | 繪製 3D 世界疊加層與 VFX | `ExplorersIcebox` |
-| [**ffxiv_pictomancy-sourpuh**](https://github.com/ffxiv-tc-port/ffxiv_pictomancy-sourpuh) | [sourpuh](https://github.com/sourpuh/ffxiv_pictomancy) | 同上，另一條分支 | `AutoDuty`、`ICE`、`Questionable`、`Ocelot`（`BOCCHI`） |
-| [**ffxiv_pictomancy-Limiana**](https://github.com/ffxiv-tc-port/ffxiv_pictomancy-Limiana) | [Limiana](https://github.com/Limiana/ffxiv_pictomancy) | 同上，Limiana 維護的分支 | `Splatoon` |
+| [**Pictomancy**](https://github.com/ffxiv-tc-port/Pictomancy) | [sourpuh](https://github.com/sourpuh/ffxiv_pictomancy)（另併入 [Limiana](https://github.com/Limiana/ffxiv_pictomancy) 的分支） | 繪製 3D 世界疊加層與 VFX | `AutoDuty`、`ExplorersIcebox`、`ICE`、`Questionable`、`Ocelot`（`BOCCHI`）、`Splatoon` |
 | [**DotRecast**](https://github.com/ffxiv-tc-port/DotRecast) | [xanunderscore](https://github.com/xanunderscore/DotRecast) | Recast & Detour 導航網格的 C# 移植 | `vnavmesh` |
 | [**machina**](https://github.com/ffxiv-tc-port/machina) | [PlusoneChiang](https://github.com/PlusoneChiang/machina) | 讀取網路資料並解出遊戲訊息的函式庫，含台服 opcode 表 | `IINACT` |
 | [**FFTriadBuddy**](https://github.com/ffxiv-tc-port/FFTriadBuddy) | [MgAl2O4](https://github.com/MgAl2O4/FFTriadBuddy) | 九宮幻卡遊戲邏輯與解牌器 | `TriadBuddy` |
