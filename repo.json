@@ -1181,7 +1181,7 @@
     "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.25.0.21",
+    "AssemblyVersion": "7.25.0.22",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/DailyDuty",
@@ -1204,10 +1204,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656080487",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656080487",
-    "Changelog": "- 相依函式庫對齊到同一版（功能不變）\n- 整理版本歷史，插件功能不變",
-    "LastUpdate": 1792408767
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/659231630",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/659231630",
+    "Changelog": "- 修正塔塔露語音在非每日重置的時刻也念「每日重置」",
+    "LastUpdate": 1792498147
   },
   {
     "Author": "liza, qstxiv, & various contributors",
