@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.25.0.66",
+    "AssemblyVersion": "7.25.0.67",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/657269206",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/657269206",
-    "Changelog": "- 深層迷宮：新增喝藥判斷模組，依預估血量提早喝專屬藥水、自動挑回復量最多的治療劑",
-    "LastUpdate": 1792439433,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660055673",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660055673",
+    "Changelog": "- 深宮：剛進樓層與過房間邊界時不再誤報房間座標校驗不通過\n- 異聞希拉狄哈水道：澤雷斯・夏的影火咒式後段不再擲例外",
+    "LastUpdate": 1792518919,
     "CategoryTags": [
       "Jobs"
     ]
