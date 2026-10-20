@@ -1181,7 +1181,7 @@
     "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.25.0.22",
+    "AssemblyVersion": "7.25.0.23",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/DailyDuty",
@@ -1204,10 +1204,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/659231630",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/659231630",
-    "Changelog": "- 修正塔塔露語音在非每日重置的時刻也念「每日重置」",
-    "LastUpdate": 1792498147
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660193664",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660193664",
+    "Changelog": "- 討伐輔助巡邏：到不了的出現點會跳過，不再一直被選中\n- 討伐輔助：傳送到利姆薩後離乙太之光太遠時先走過去再搭城內傳送，不再直接改成標地圖",
+    "LastUpdate": 1792522564
   },
   {
     "Author": "liza, qstxiv, & various contributors",
