@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.25.0.68",
+    "AssemblyVersion": "7.25.0.69",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660513547",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660513547",
-    "Changelog": "- 金碟遊樂場必中一閃：不再跑出舞台邊界；新增「開始閃避前等待秒數」（預設 2 秒，只在這個活動生效）",
-    "LastUpdate": 1792530974,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660538039",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660538039",
+    "Changelog": "- 金碟遊樂場必中一閃：三個盅開盅時畫出大五郎的扇形並讓 AI 閃開；判斷不了大五郎在哪個盅時畫面上會明說",
+    "LastUpdate": 1792531630,
     "CategoryTags": [
       "Jobs"
     ]
