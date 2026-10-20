@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.25.0.21",
+    "AssemblyVersion": "7.25.0.22",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660500950",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660500950",
-    "Changelog": "- 金碟 G.A.T.E.：登高跳跳樂大挑戰新增「入場後等一段時間直接退出任務」選項（拿最低獎勵，秒數可調）\n- 金碟 G.A.T.E.：暴風倖存者、必中一閃快刀斬魔結束後自動離開場地，走回最近的活動解說員等下一場",
-    "LastUpdate": 1792530673,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660673956",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660673956",
+    "Changelog": "- 金碟 G.A.T.E.：報名 NPC 自動靠近不再從別的 GATE 場上、對話中或活動解說員旁出發，自己走開也不會被拉回去",
+    "LastUpdate": 1792535527,
     "CategoryTags": [
       "Minigames"
     ]
