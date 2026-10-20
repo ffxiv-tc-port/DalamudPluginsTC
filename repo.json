@@ -3,7 +3,7 @@
     "Author": "Ottermandias",
     "Name": "Accountant",
     "InternalName": "Accountant",
-    "AssemblyVersion": "7.25.0.20",
+    "AssemblyVersion": "7.25.0.21",
     "Description": "記錄多名角色的僱員、飛空艇、潛水艇、乙太轉輪與作物計時器，\n以及其他各種雜項任務進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Accountant",
@@ -28,10 +28,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Accountant.png",
     "Punchline": "角色任務計時器。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656076755",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656076755",
-    "Changelog": "- 整理版本歷史，插件功能不變",
-    "LastUpdate": 1792408917,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660101028",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660101028",
+    "Changelog": "- 仙人彩紀錄：角色資料還沒就緒時不再讓遊戲處理中斷\n- 改版防護：飛空艇、潛水艇計時的處理出錯時改成攔下並提示一次，遊戲照常收到資料，不會讓遊戲崩潰",
+    "LastUpdate": 1792520195,
     "CategoryTags": [
       "Inventory"
     ]
@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.25.0.41",
+    "AssemblyVersion": "7.25.0.42",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656078783",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656078783",
-    "Changelog": "- 相依函式庫對齊到同一版（功能不變）\n- 整理版本歷史，插件功能不變",
-    "LastUpdate": 1792408961
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660102415",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660102415",
+    "Changelog": "- 改版防護：遊戲改版後製作手帳對不上時，手動按「製作」改成交還遊戲原本的處理並提示一次，不會讓遊戲崩潰",
+    "LastUpdate": 1792520141
   },
   {
     "Author": "Herculezz",
@@ -96,7 +96,7 @@
     "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
-    "AssemblyVersion": "7.25.0.21",
+    "AssemblyVersion": "7.25.0.22",
     "Description": "自動幫你提鉤釣魚,你能相信嗎?\n支援自訂預設集、自動以小釣大、自動刺魚等功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoHook",
@@ -116,10 +116,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoHook.png",
     "Punchline": "讓釣魚不再無聊(或更無聊)。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656076378",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656076378",
-    "Changelog": "- 相依函式庫對齊到同一版（功能不變）\n- 整理版本歷史，插件功能不變",
-    "LastUpdate": 1792408677
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660101197",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660101197",
+    "Changelog": "- 改版防護：遊戲改版後對不上時，釣到魚的處理改成交還遊戲原本流程並提示一次，不會讓遊戲崩潰",
+    "LastUpdate": 1792520144
   },
   {
     "Author": "кайт машина (Puni.sh)",
@@ -1694,7 +1694,7 @@
     "Author": "Nuffin",
     "Name": "Better Mount Roulette",
     "InternalName": "BetterMountRoulette",
-    "AssemblyVersion": "7.25.0.7",
+    "AssemblyVersion": "7.25.0.8",
     "Description": "可自由選擇任意數量的坐騎加入隨機召喚，不再受遊戲「最多 30 隻」或「全部」模式限制。\n",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BetterMountRoulette",
@@ -1710,10 +1710,10 @@
     "IconUrl": "",
     "Punchline": "自訂坐騎隨機召喚會選到哪些坐騎。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656081626",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656081626",
-    "LastUpdate": 1792408739,
-    "Changelog": "- 整理版本歷史，插件功能不變"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660101402",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660101402",
+    "LastUpdate": 1792520115,
+    "Changelog": "- 改版防護：遊戲改版後對不上時，坐騎隨機改用遊戲原本的處理、飛行坐騎隨機按鈕暫停並提示一次，不會讓遊戲崩潰"
   },
   {
     "Author": "daemitus, hiroa, MidoriKami, foophoof",
