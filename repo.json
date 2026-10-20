@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.25.0.20",
+    "AssemblyVersion": "7.25.0.21",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660039153",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660039153",
-    "Changelog": "- 幻卡收集導航：以太之光就在 20 米內時也直接走過去\n- 幻卡收集導航：離 NPC 不到 20 米就直接走過去，不再先上坐騎或起飛",
-    "LastUpdate": 1792518480,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660500950",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660500950",
+    "Changelog": "- 金碟 G.A.T.E.：登高跳跳樂大挑戰新增「入場後等一段時間直接退出任務」選項（拿最低獎勵，秒數可調）\n- 金碟 G.A.T.E.：暴風倖存者、必中一閃快刀斬魔結束後自動離開場地，走回最近的活動解說員等下一場",
+    "LastUpdate": 1792530673,
     "CategoryTags": [
       "Minigames"
     ]
