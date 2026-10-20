@@ -1694,7 +1694,7 @@
     "Author": "Nuffin",
     "Name": "Better Mount Roulette",
     "InternalName": "BetterMountRoulette",
-    "AssemblyVersion": "7.25.0.9",
+    "AssemblyVersion": "7.25.0.10",
     "Description": "可自由選擇任意數量的坐騎加入隨機召喚，不再受遊戲「最多 30 隻」或「全部」模式限制。\n",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BetterMountRoulette",
@@ -1710,10 +1710,10 @@
     "IconUrl": "",
     "Punchline": "自訂坐騎隨機召喚會選到哪些坐騎。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660283864",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660283864",
-    "LastUpdate": 1792524802,
-    "Changelog": "- 修正設定視窗捲動到坐騎群組框看不見時，介面狀態錯亂（可能讓整個設定視窗與其他插件的介面出錯）"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660292675",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660292675",
+    "LastUpdate": 1792525101,
+    "Changelog": "- 坐騎群組的坐騎清單新增「全部／已選取／未選取」篩選，可以一頁看完某個群組選了哪些坐騎"
   },
   {
     "Author": "daemitus, hiroa, MidoriKami, foophoof",
