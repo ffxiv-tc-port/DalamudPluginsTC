@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.25.0.55",
+    "AssemblyVersion": "7.25.0.56",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662458112",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662458112",
-    "Changelog": "- 多角色換角診斷：別的插件交還控制權後關鈴，不再誤報「30 秒仍未放行」（行為不變）",
-    "LastUpdate": 1792586082,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662829356",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662829356",
+    "Changelog": "- 指派僱員探險讀清單時改成與遊戲自己的讀法一致，不會因為資料型別和預期不同就一直選不到探險（行為不變）\n- 航行選單的「取消」「退出」「出發」改成整句比對，不會再誤按開頭相同的其他選項（目前選單沒有這種選項，行為不變）\n- 指派僱員探險與潛水艇再出發檢查燃料時，視窗資料不完整就跳過這一格，不再可能讓遊戲崩潰（資料正常時行為不變）",
+    "LastUpdate": 1792594051,
     "CategoryTags": [
       "Inventory"
     ]
@@ -1330,7 +1330,7 @@
     "Author": "Ice",
     "Name": "Chilled Leves",
     "InternalName": "ChilledLeves",
-    "AssemblyVersion": "7.25.0.17",
+    "AssemblyVersion": "7.25.0.18",
     "Description": "理符任務輔助工具：讓你挑選想接的理符任務，並自動前往接取、執行與繳交。注意：必須先安裝 vnavmesh 才能使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ChilledLeves",
@@ -1350,10 +1350,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ChilledLeves.png",
     "Punchline": "理符任務，冰鎮上桌。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656076279",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656076279",
-    "Changelog": "- 整理版本歷史，插件功能不變",
-    "LastUpdate": 1792408787
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662827770",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662827770",
+    "Changelog": "- 接理符：同名的理符不再選錯張；交納清單裡有兩張同名時改為停下來，不再交錯張",
+    "LastUpdate": 1792594014
   },
   {
     "Author": "Ice",
@@ -1826,7 +1826,7 @@
     "Author": "MidoriKami",
     "Name": "Mappy",
     "InternalName": "Mappy",
-    "AssemblyVersion": "7.25.0.18",
+    "AssemblyVersion": "7.25.0.19",
     "Description": "以 ImGui 地圖取代遊戲內建地圖，並提供多項額外功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Mappy",
@@ -1845,10 +1845,10 @@
     "IconUrl": "",
     "Punchline": "功能更完整的遊戲地圖。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/659239969",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/659239969",
-    "LastUpdate": 1792498411,
-    "Changelog": "- 修正地圖視窗一角超出遊戲畫面時，隱藏背景與淡化失效、四周出現黑框與右側深色底的問題"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662828068",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662828068",
+    "LastUpdate": 1792594014,
+    "Changelog": "- 從任務開地圖：同名任務不再一律開第一個同名任務的地圖；任務名開頭的圖示不再造成比不中"
   },
   {
     "Author": "MidoriKami",
