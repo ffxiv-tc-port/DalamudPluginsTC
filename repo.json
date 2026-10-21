@@ -149,7 +149,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "Avarice",
     "InternalName": "Avarice",
-    "AssemblyVersion": "7.25.0.16",
+    "AssemblyVersion": "7.25.0.17",
     "Description": "戰鬥定位輔助疊加層：\n- 標示背後／側面判定範圍與最大近戰距離\n- 顯示玩家攻擊判定像素，命中／未命中可觸發 VFX 或聊天訊息\n- 預測下一輪判定並依職業客製化提示\n- 支援 Splatoon 整合與多套設定檔",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Avarice",
@@ -167,10 +167,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Avarice.png",
     "Punchline": "顯示背後／側面判定範圍與命中回饋",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663079811",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663079811",
-    "Changelog": "- 修正登入、換區前後處理技能效果時，可能讓遊戲直接關閉的問題",
-    "LastUpdate": 1792599187
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663198579",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663198579",
+    "Changelog": "- 玩家圓點：「小隊成員」開著但它的顯示條件不成立（例如只在戰鬥中、目前沒在戰鬥）時，小隊成員不再整個沒有圓點，改由「所有玩家」照常畫出",
+    "LastUpdate": 1792601878
   },
   {
     "Author": "NeNeppie",
@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.25.0.26",
+    "AssemblyVersion": "7.25.0.27",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662867264",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662867264",
-    "Changelog": "- 登高跳跳樂：副本選單暫時不能按「退出」時先關掉再重叫，到時限才放棄；仙人微彩叫不到 Questionable 時不算用掉當天那一次",
-    "LastUpdate": 1792594878,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663198661",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663198661",
+    "Changelog": "- 幻卡 NPC 導航途中你自己接手移動時，只停 Saucy 自己送出的路徑，不再連帶取消別的插件正在走的路線\n- 仙人仙彩「三張各自指定號碼」：送了號碼卻沒買成（例如在確認框按「否」）之後重新跟發放員對話，重開的面板不再跳到下一組號碼",
+    "LastUpdate": 1792601880,
     "CategoryTags": [
       "Minigames"
     ]
@@ -1213,7 +1213,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.25.0.44",
+    "AssemblyVersion": "7.25.0.45",
     "Description": "自動跑任務插件：\n- 自動導航至任務目標並完成對話、互動與戰鬥觸發\n- 支援主線／支線任務、部分部落任務與採集類任務\n- 提供任務執行優先順序與除錯視窗\n- 需搭配 vnavmesh、TextAdvance、Lifestream 使用",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,10 +1232,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "自動跑任務助手，導航並完成任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663086622",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663086622",
-    "Changelog": "- 修正除錯指令「/qst@ taxi」一執行就報錯、列不出尚未解鎖的陸行鳥運輸地點\n- 需要高品質成品的製作步驟改為每 0.5 秒才向 Artisan 確認一次狀態，Artisan 不能用時也不再每一幀寫錯誤記錄\n- 自動任務進行中的任務戰鬥若出現 Questionable 不認得的確認框，會在聊天視窗提示你手動選擇\n- 修正 Questionable 停止後進入任務戰鬥時，它與 YesAlready 可能同時去按同一個確認框而讓遊戲當掉\n- 修正自動任務共鳴乙太之光、城內乙太之晶、風脈泉時，站在稍遠處互動不到會在約 9 秒後直接停下",
-    "LastUpdate": 1792599352
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663200647",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663200647",
+    "Changelog": "- 採集步驟遇到目前職業採不到的道具時，若背包裡已經有足夠數量，不再先換採集職業的套組或停下要你換職業，直接進下一步",
+    "LastUpdate": 1792601909
   },
   {
     "Author": "NightmareXIV",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.25.0.44",
+    "AssemblyVersion": "7.25.0.45",
     "Description": "[Questionable 開發用插件]：使用 Pictomancy 繪製採集點路徑，供路徑資料編輯者使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable 開發用] 繪製採集路徑點",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663086635",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663086635",
-    "LastUpdate": 1792599352,
-    "Changelog": "- 修正除錯指令「/qst@ taxi」一執行就報錯、列不出尚未解鎖的陸行鳥運輸地點\n- 需要高品質成品的製作步驟改為每 0.5 秒才向 Artisan 確認一次狀態，Artisan 不能用時也不再每一幀寫錯誤記錄\n- 自動任務進行中的任務戰鬥若出現 Questionable 不認得的確認框，會在聊天視窗提示你手動選擇\n- 修正 Questionable 停止後進入任務戰鬥時，它與 YesAlready 可能同時去按同一個確認框而讓遊戲當掉\n- 修正自動任務共鳴乙太之光、城內乙太之晶、風脈泉時，站在稍遠處互動不到會在約 9 秒後直接停下"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663200635",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663200635",
+    "LastUpdate": 1792601909,
+    "Changelog": "- 採集步驟遇到目前職業採不到的道具時，若背包裡已經有足夠數量，不再先換採集職業的套組或停下要你換職業，直接進下一步"
   },
   {
     "Author": "WildWolf",
@@ -1665,7 +1665,7 @@
     "Author": "Kouzukii",
     "Name": "Death Recap",
     "InternalName": "DeathRecap",
-    "AssemblyVersion": "7.25.0.8",
+    "AssemblyVersion": "7.25.0.9",
     "Description": "快速找出你或隊員的死亡原因！\n\n顯示：\n- 治療\n- 承受傷害\n- 弱化狀態\n- 強化狀態\n- 防護罩\n- 傷害來源身上的昏亂、牽制與雪仇",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ffxiv-deathrecap",
@@ -1685,10 +1685,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DeathRecap.png",
     "Punchline": "快速找出你或隊員的死亡原因！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656081638",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656081638",
-    "LastUpdate": 1792408639,
-    "Changelog": "- 整理版本歷史，插件功能不變"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663198903",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663198903",
+    "LastUpdate": 1792601873,
+    "Changelog": "- 設定視窗：「記錄自己／小隊成員／其他人」改顯示中文（原本顯示英文 Self／Party／Others），滑過「記錄自己」會說明自己死亡時寫進 log 的死因摘要也跟著這個設定"
   },
   {
     "Author": "Nuffin",
@@ -1775,7 +1775,7 @@
     "Author": "Anna, Maintained by Caraxi",
     "Name": "Peeping Tom",
     "InternalName": "PeepingTom",
-    "AssemblyVersion": "7.25.0.10",
+    "AssemblyVersion": "7.25.0.11",
     "Description": "顯示目前正在鎖定你、以及先前曾鎖定你的玩家。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PeepingTom",
@@ -1789,10 +1789,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/PeepingTom.png",
     "Punchline": "顯示誰正在鎖定你。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662864161",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662864161",
-    "LastUpdate": 1792594867,
-    "Changelog": "- 自訂音效檔無法播放時，提示會分清楚是聲道數太多還是格式（位元深度、編碼）不支援，不再一律說「只支援單聲道或立體聲」"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663198889",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663198889",
+    "LastUpdate": 1792601831,
+    "Changelog": "- 「隱藏黑名單玩家」原本關著、之後才打開時，先前已進歷史記錄的黑名單玩家現在也會在一秒內從歷史記錄拿掉"
   },
   {
     "Author": "Felys, aers",
@@ -1989,7 +1989,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "塔塔露誇獎",
     "InternalName": "TataruPraise",
-    "AssemblyVersion": "7.25.0.11",
+    "AssemblyVersion": "7.25.0.12",
     "Description": "遊戲裡發生事情的時候，用塔塔露的聲音喊一句極短的提示——「完美收工！」「後面！」「排到了！」。不是要太多對話，只是要有聲音。每個情境一句、全部 8 個字以內，情境有副本完成／升等／登入／Gil 里程碑／血量低／背後有人／收到密語／副本排到／組隊邀請／交易請求等，各自獨立開關（預設全部關閉）。播的是事先合成好的語音檔，執行期完全不連網。語音來自本機的 GPT-SoVITS 橋接（預設 http://127.0.0.1:9882），沒有橋接就只是不出聲，不會卡遊戲。設定視窗可以直接編輯每個情境的短句；資訊列上有一格，點一下切換總開關。指令 /tataru 開啟設定視窗，/tataru test 試播一句。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TataruPraise",
@@ -2009,10 +2009,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TataruPraise.png",
     "Punchline": "遊戲裡有事發生就喊一句極短提示，純本機、預設全關。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656075790",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656075790",
-    "LastUpdate": 1792408585,
-    "Changelog": "- 整理版本歷史，插件功能不變"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663198250",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663198250",
+    "LastUpdate": 1792601826,
+    "Changelog": "- 說明補上：先前更新把潛水艇的內建提示句改成「潛水艇回來啦！」只對新安裝生效，已經在用的人要換請在「短句」分頁潛水艇那一列自己改成新句子並按「合成」"
   },
   {
     "Author": "yagi2",
