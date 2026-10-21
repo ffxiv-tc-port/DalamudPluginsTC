@@ -1439,7 +1439,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.25.0.25",
+    "AssemblyVersion": "7.25.0.26",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 Gil 並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1455,10 +1455,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點 Gil！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661807933",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661807933",
-    "Changelog": "- 多角色重掛：接手的角色身邊完全沒有傳喚鈴時約 2 秒就跳過，不再白等 25 秒；有鈴只是搆不到的照舊等\n- 快速上架：沒開出上架視窗或沒被定價時，在 log 多記一行原因（僱員市場已佔格數、上架視窗狀態），用來查約 5% 右鍵失敗的主因",
-    "LastUpdate": 1792570274
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662213704",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662213704",
+    "Changelog": "- 採購清單：道具名寫成遊戲畫面上的另一種寫法（例如薩維奈助溶劑）或用全形／半形空白都認得出\n- 快速上架：僱員市場 20 格已滿時直接提示，不再送出後白等\n- 快速上架：上架視窗顯示的道具名與資料表名稱寫法不同時（例如薩維奈助溶劑／融劑）也能認出，不再白等到逾時",
+    "LastUpdate": 1792580459
   },
   {
     "Author": "Faye",
