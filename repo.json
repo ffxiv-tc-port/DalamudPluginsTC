@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.25.0.52",
+    "AssemblyVersion": "7.25.0.53",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660094369",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660094369",
-    "Changelog": "- 設定視窗：左側清單與稀有品繳交循環頁不再每幀配置暫存物件（畫面與操作不變）\n- 診斷紀錄減量：對話視窗每輪重按次數的總結改記在最詳細等級（功能不變）\n- 相依函式庫更新：設定視窗左側清單不再每幀觸發 ImGui 樣式堆疊不成對的斷言（畫面與操作不變）",
-    "LastUpdate": 1792519942,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661689093",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661689093",
+    "Changelog": "- 繳交循環與多角色換角多記幾行診斷，用來判斷還能省多少時間（功能不變）",
+    "LastUpdate": 1792567071,
     "CategoryTags": [
       "Inventory"
     ]
