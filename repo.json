@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.25.0.37",
+    "AssemblyVersion": "7.25.0.38",
     "Description": "自動幫你跑副本，支援親信戰友、劇情輔助器、冒險者分隊、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663080299",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663080299",
-    "Changelog": "- 修正已經暫停時再下一次 /autoduty pause，之後按繼續會一直停在暫停狀態\n- 修正移動途中按暫停再繼續時，會把還沒走完的那一步當成已走到而跳過，或在原地執行動作",
-    "LastUpdate": 1792599185
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663138726",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663138726",
+    "Changelog": "- 修正多開同步主機啟動失敗（例如伺服器位址不是這台電腦的）時，設定頁仍顯示主機已啟動；現在會顯示「未啟動」並在聊天視窗說明原因\n- 多開同步設定的伺服器位址說明補上：主機填區網位址時，同一台電腦的客戶端也要改填該位址才連得上",
+    "LastUpdate": 1792600580
   },
   {
     "Author": "Det",
@@ -351,7 +351,7 @@
     "Author": "Snowy, KangasZ",
     "Name": "Eureka Helper",
     "InternalName": "EurekaHelper",
-    "AssemblyVersion": "7.25.0.29",
+    "AssemblyVersion": "7.25.0.30",
     "Description": "協助你進行優雷卡冒險的工具，已更新至《漂泊眾島》版本！輸入 /eurekahelper 開始使用。\n\n功能包含：\n- 遊戲內追蹤器 GUI\n- 副本追蹤器\n- 聖靈追蹤器\n- 魂武助手\n- 鬧鐘\n- 賺錢 NM 天氣時間提醒\n- 更多功能陸續推出",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/EurekaHelper",
@@ -378,10 +378,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/EurekaHelper.png",
     "Punchline": "優雷卡追蹤器與多項實用功能整合插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663079765",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663079765",
-    "Changelog": "- 「同步近期觸發紀錄」按鈕說明補上：沒開「自動標記 FATE 觸發」時只更新本機，不會送到追蹤器\n- 修正同時連上多個區域的追蹤器時，記住的追蹤器偶爾存檔失敗或被誤記成「重新加入失敗」",
-    "LastUpdate": 1792599371
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663138425",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663138425",
+    "Changelog": "- 尋寶分頁「手動觸發」也改走魔法甕候選點的實際高度，不再可能被導到走不到的樓層（旗標被你改到別處時照舊走向你的旗標）\n- 修正其他玩家在聊天頻道打出「第二處財寶」「發現了財寶」或財寶方向提示等句子時，會被當成自己的尋寶訊息（換錯候選組、提前結束這一輪、自動走向別人的提示）；Ovni 等擊倒訊息同理",
+    "LastUpdate": 1792600569
   },
   {
     "Author": "The Combat Reborn Team",
@@ -1029,7 +1029,7 @@
     "Author": "veyn",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
-    "AssemblyVersion": "7.25.0.26",
+    "AssemblyVersion": "7.25.0.27",
     "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vnavmesh",
@@ -1049,16 +1049,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/vnavmesh.png",
     "Punchline": "自動移動吧！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661370457",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661370457",
-    "Changelog": "- 新增飛行選項「飛行路徑拉直」（預設開啟）：找到飛行路線後刪掉視線看得到就能略過的路徑點，轉折變少、路線只會變短不會變長，起點、終點與能不能到達都不變",
-    "LastUpdate": 1792557734
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663138662",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663138662",
+    "Changelog": "- 修正其他插件要求「取消全部尋路」後，排隊中或已算好的移動請求仍讓角色又開始走",
+    "LastUpdate": 1792600579
   },
   {
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.25.0.56",
+    "AssemblyVersion": "7.25.0.57",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 除錯資訊檔裡的 HP／MP 百分比改成顯示實際數值（以前沒滿一律顯示 0%）\n- 修正判斷「對象沒滿血」時，遇到最大 HP 為 0 的對象會出錯中斷（判斷結果其他情況完全不變）\n- 「血量百分比最低的敵人」改成真的挑百分比最低的那隻（以前沒滿血一律當成 0%，挑到的是清單上第一隻掉血的）；持續傷害自動挑目標時，同樣剩餘時間改成優先挑血量百分比較高的那隻\n- 治療目標「血量百分比最低的隊友」改成真的挑百分比最低的人：以前只要沒滿血就一律當成 0%，選到的是名單上第一個掉血的隊友\n- 修正裝了非正方形替換圖示時，技能圖示在載入完成前可能畫成亂碼",
+    "Changelog": "- 自動循環「僅於戰鬥中」：任務目標與 F.A.T.E. 目標兩個繞過都沒開時，戰鬥外不再每一輪掃一遍周圍敵人（省效能，行為不變）\n- 赤魔法師自動接戰：你或別的插件剛放過短兵相接（0.5 秒內）時，自動循環這時才選上目標也不會再排第二發衝刺\n- 復活重新指定目標：開著「自動復活跳過有『限制復活』的隊友」時，倒地的人裡第一位有限制復活就改選下一位沒有的（以前會整個不選，照你當下的目標放）",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663081323",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663081323",
-    "LastUpdate": 1792599263,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663138750",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663138750",
+    "LastUpdate": 1792600575,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1439,7 +1439,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.25.0.30",
+    "AssemblyVersion": "7.25.0.31",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 Gil 並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1455,10 +1455,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點 Gil！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662990516",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662990516",
-    "Changelog": "- 新增「清理背包」分頁：常被低價下架的道具可一鍵複製給 AutoRetainer 自動賣；背包分揀把東西分成賣商店／上市場／要查價",
-    "LastUpdate": 1792597498
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663138238",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663138238",
+    "Changelog": "- 批次上架：偵測到你右鍵道具或操作上架視窗時，改在下一幀才停下，不在遊戲自己的選單處理途中收拾\n- 快速上架與批次上架讀背包／僱員物品欄原格時，容器沒載入就當作讀不到，不再讀到無效的格子\n- 批次上架：每一件開右鍵選單前，等所有按鍵與滑鼠按鈕都放開，避免別的插件的快捷鍵在同一個選單上選到別的項目\n- 新增「全僱員補上架」：僱員選單旁一鍵逐一重掛每名僱員，再用他自己物品欄裡你勾過的道具補滿市場空位（預設關閉）\n- 新增「批次上架」：在出售品視窗旁勾選道具，按一下就逐件查價、照算好的價上架；低於門檻的改列進賣給商店清單（預設關閉）\n- 快速上架與賣給商店：右鍵選單沒有為這一件重新建立時不再替你選項目，避免選到上一件的選單\n- 重掛、下架與出售清單讀改市場價前多一道格號檢查：格號不合理時不碰遊戲，平常行為不變",
+    "LastUpdate": 1792600562
   },
   {
     "Author": "Faye",
