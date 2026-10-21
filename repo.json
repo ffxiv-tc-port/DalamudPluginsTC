@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.25.0.73",
+    "AssemblyVersion": "7.25.0.74",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661805722",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661805722",
-    "Changelog": "- 深層迷宮自動清層：魔陶器已滿、放回寶箱時，記在身邊剛開的那個金寶箱上，不再記到遠處別的寶箱（之前被記錯的寶箱會被當成滿額箱略過，後來開出的多半是別的東西，也開過擬態怪）",
-    "LastUpdate": 1792570186,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662860476",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662860476",
+    "Changelog": "- 診斷 log 減量：必中一閃三個盅階段逐物件的位置與事件改記 Debug；AI「該閃卻站著不動」復活後重新計時（行為不變）\n- 行為修正：必中一閃出局後模組會結束；手動技能佇列放出時被換成不同冷卻的招（例如 GCD 變能力技）改放原本排的那一招；澤羅姆斯連線隕石被順路撞到的人不再提早收線",
+    "LastUpdate": 1792594744,
     "CategoryTags": [
       "Jobs"
     ]
@@ -795,7 +795,7 @@
     "Author": "UnknownX",
     "Name": "QoL Bar",
     "InternalName": "QoLBar",
-    "AssemblyVersion": "7.25.0.13",
+    "AssemblyVersion": "7.25.0.14",
     "Description": "此插件旨在為聊天指令或其他插件提供簡單、可自訂且隨時可用的介面，\n減少為達成類似效果而需要使用巨集或佔用快捷列空間的需求。\n\n此插件初次啟動時應會顯示在遊戲視窗底部中央的一個小方框。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/QoLBar",
@@ -815,10 +815,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/QoLBar.png",
     "Punchline": "可自訂的 ImGui 快捷列",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662820643",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662820643",
-    "Changelog": "- 用道具名稱使用重要物品（含風脈儀）在台服也找得到道具",
-    "LastUpdate": 1792593854
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662858491",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662858491",
+    "Changelog": "- 超過 15 行的巨集跑過後重新載入 QoL Bar，遊戲內建巨集的行數上限不再卡在舊值、不會重跑上一個長巨集殘留的指令",
+    "LastUpdate": 1792594720
   },
   {
     "Author": "Taurenkey, Kagekazu",
