@@ -1029,7 +1029,7 @@
     "Author": "veyn",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
-    "AssemblyVersion": "7.25.0.25",
+    "AssemblyVersion": "7.25.0.26",
     "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vnavmesh",
@@ -1049,10 +1049,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/vnavmesh.png",
     "Punchline": "自動移動吧！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660181619",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660181619",
-    "Changelog": "- 導航：新增讓其他插件選擇「手動移動時暫停、停手後接續」的選項（預設不變）",
-    "LastUpdate": 1792522250
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661370457",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661370457",
+    "Changelog": "- 新增飛行選項「飛行路徑拉直」（預設開啟）：找到飛行路線後刪掉視線看得到就能略過的路徑點，轉折變少、路線只會變短不會變長，起點、終點與能不能到達都不變",
+    "LastUpdate": 1792557734
   },
   {
     "Author": "Team Wrath",
