@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.25.0.58",
+    "AssemblyVersion": "7.25.0.59",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663082416",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663082416",
-    "Changelog": "- 自動按視窗的防重按保護改成插件一載入就生效，每種視窗第一次被按時也受保護\n- 存放重複道具：改成在僱員真的開著時才判斷它有沒有可補的重複道具，不會再因為看到上一個僱員的背包而漏存或白開",
-    "LastUpdate": 1792599282,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663212419",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663212419",
+    "Changelog": "- 主視窗「跑一輪就回來」按鈕不能按時，滑鼠移上去現在會說明為什麼不能按\n- 按住快捷鍵右鍵出售／存入／取回：同時還按著別的 Ctrl／Alt／Shift 時不再動作，避免和其他插件在同一個選單各選一次而讓遊戲當掉",
+    "LastUpdate": 1792602198,
     "CategoryTags": [
       "Inventory"
     ]
@@ -1439,7 +1439,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.25.0.31",
+    "AssemblyVersion": "7.25.0.32",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 Gil 並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1455,10 +1455,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點 Gil！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663138238",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663138238",
-    "Changelog": "- 批次上架：偵測到你右鍵道具或操作上架視窗時，改在下一幀才停下，不在遊戲自己的選單處理途中收拾\n- 快速上架與批次上架讀背包／僱員物品欄原格時，容器沒載入就當作讀不到，不再讀到無效的格子\n- 批次上架：每一件開右鍵選單前，等所有按鍵與滑鼠按鈕都放開，避免別的插件的快捷鍵在同一個選單上選到別的項目\n- 新增「全僱員補上架」：僱員選單旁一鍵逐一重掛每名僱員，再用他自己物品欄裡你勾過的道具補滿市場空位（預設關閉）\n- 新增「批次上架」：在出售品視窗旁勾選道具，按一下就逐件查價、照算好的價上架；低於門檻的改列進賣給商店清單（預設關閉）\n- 快速上架與賣給商店：右鍵選單沒有為這一件重新建立時不再替你選項目，避免選到上一件的選單\n- 重掛、下架與出售清單讀改市場價前多一道格號檢查：格號不合理時不碰遊戲，平常行為不變",
-    "LastUpdate": 1792600562
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663210528",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663210528",
+    "Changelog": "- 支援 TC Toolbox 的全艦隊急停：一鍵停下重掛、下架、上架、賣商店、僱員與多角色巡迴、價格巡檢，開著的上架視窗交給你\n- 待處理清單：按過「跳過」的異常低價列不再擋住同一格之後的「被壓價／低於最低價」提示\n- 快速上架：右鍵時除了快速上架鍵還按著別的 Shift／Ctrl／Alt 就不上架，避免和其他插件在同一個選單各選一次而讓遊戲當掉",
+    "LastUpdate": 1792602180
   },
   {
     "Author": "Faye",
@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.25.0.37",
+    "AssemblyVersion": "7.25.0.38",
     "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：公會合建素材一鍵全交、野外陸行鳥自動餵食基沙爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663084246",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663084246",
-    "Changelog": "- 每日待辦：交給 GatherBuddy 採寶物地圖時，若它的「來自其他插件」清單或這張地圖被停用，會直接告訴你去哪裡勾回\n- 右鍵轉移公會儲物櫃：連續存入、取出時照點擊順序搬，取出不再插到等待中的存入前面\n- 貨幣上限警示：剛登入背包還沒載入、讀不到十二城邦銀幣等的持有量時，資訊列改顯示「?」，不再當成沒有快滿而收起\n- 自動整理庭院：高幀率跑步或走路模式下自己走動時，自動重跑不再到期就接手帶角色走",
-    "LastUpdate": 1792599179
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663211047",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663211047",
+    "Changelog": "- 全艦隊急停：也會叫停 Marketbuddy（重掛、下架、上架、賣商店、僱員與多角色巡迴、價格巡檢）\n- 自動物品頁面轉移：右鍵時除了觸發鍵還按著別的 Shift／Ctrl／Alt 就不轉移，避免和其他插件在同一個選單各按一次而讓遊戲當掉",
+    "LastUpdate": 1792602184
   },
   {
     "Author": "daemitus, MidoriKami",
