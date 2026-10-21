@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.25.0.25",
+    "AssemblyVersion": "7.25.0.26",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662045958",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662045958",
-    "Changelog": "- 登高跳跳樂：入場後自動退出任務改成看副本選單的「退出」能不能按，不再因為比錯字而永遠不按",
-    "LastUpdate": 1792576137,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662867264",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662867264",
+    "Changelog": "- 登高跳跳樂：副本選單暫時不能按「退出」時先關掉再重叫，到時限才放棄；仙人微彩叫不到 Questionable 時不算用掉當天那一次",
+    "LastUpdate": 1792594878,
     "CategoryTags": [
       "Minigames"
     ]
@@ -1464,7 +1464,7 @@
     "Author": "Faye",
     "Name": "Better Occult Crescent & Chest Helper Interface",
     "InternalName": "BOCCHI",
-    "AssemblyVersion": "7.25.0.88",
+    "AssemblyVersion": "7.25.0.89",
     "Description": "讓你在「蜃景幻界新月島」玩得更順手。\n- 不用再自己走路、自己找寶箱。\n- 小巧的 F.A.T.E. 與緊急遭遇戰面板，會顯示該場獎勵，還能自動幫你導航過去。\n- 附贈一個非常違規的「非法模式」，給那些寧可出去曬太陽的人。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BOCCHI",
@@ -1491,10 +1491,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/BOCCHI.png",
     "Punchline": "讓你在「蜃景幻界新月島」玩得更順手。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662050037",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662050037",
-    "Changelog": "- 跟團刷 CE：成功後退出副本改成看副本選單的「退出」能不能按，不再因為比錯字而永遠不按\n- 相依函式庫對齊到同一版（功能不變）",
-    "LastUpdate": 1792576246
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662867280",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662867280",
+    "Changelog": "- 跟團刷 CE：退出副本時選單暫時不能按「退出」先關掉再重叫，30 秒到了才停止，不再立刻放棄",
+    "LastUpdate": 1792594875
   },
   {
     "Author": "ffxiv-tc-port",
