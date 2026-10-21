@@ -1775,7 +1775,7 @@
     "Author": "Anna, Maintained by Caraxi",
     "Name": "Peeping Tom",
     "InternalName": "PeepingTom",
-    "AssemblyVersion": "7.25.0.9",
+    "AssemblyVersion": "7.25.0.10",
     "Description": "顯示目前正在鎖定你、以及先前曾鎖定你的玩家。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PeepingTom",
@@ -1789,10 +1789,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/PeepingTom.png",
     "Punchline": "顯示誰正在鎖定你。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661304400",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661304400",
-    "LastUpdate": 1792555492,
-    "Changelog": "- 自訂音效檔超過 2 聲道時不再讓遊戲結束，改為在聊天提示一次「請換成 1～2 聲道的音效檔」"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662864161",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662864161",
+    "LastUpdate": 1792594867,
+    "Changelog": "- 自訂音效檔無法播放時，提示會分清楚是聲道數太多還是格式（位元深度、編碼）不支援，不再一律說「只支援單聲道或立體聲」"
   },
   {
     "Author": "Felys, aers",
