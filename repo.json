@@ -418,7 +418,7 @@
     "Author": "img02",
     "Name": "Hunt Helper",
     "InternalName": "HuntHelper",
-    "AssemblyVersion": "7.25.0.9",
+    "AssemblyVersion": "7.25.0.10",
     "Description": "顯示標記重生點的狩獵地圖、A級討伐車隊記錄器（可匯出/匯入分享）、語音播報、聊天通知，以及S級討伐重生計數器",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/HuntHelper",
@@ -438,16 +438,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/HuntHelper.png",
     "Punchline": "狩獵任務雷達＋車隊記錄器＋通知＋S級討伐輔助工具等一應俱全。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660283217",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660283217",
-    "Changelog": "- 修正除錯視窗「乙太之光」展開時每幀多開兩層群組（結尾誤寫成 BeginGroup）\n- 修正地圖選項「一般」分頁開著時每幀弄壞 ImGui 的 ID 堆疊，以及視窗折疊、匯入失敗時開關不成對",
-    "LastUpdate": 1792524887
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663096960",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663096960",
+    "Changelog": "- 修正南薩納蘭 F.A.T.E. 計時：F.A.T.E. 失敗後的幾秒內不再一直重設倒數，F.A.T.E. 清單改為隨時依剩餘時間排好",
+    "LastUpdate": 1792599677
   },
   {
     "Author": "Critical_Impact",
     "Name": "Allagan Tools",
     "InternalName": "InventoryTools",
-    "AssemblyVersion": "7.25.0.28",
+    "AssemblyVersion": "7.25.0.29",
     "Description": "Allagan Tools 的主要目的是追蹤你所有角色/僱員/公會倉庫中的道具。透過它的篩選系統，你將不再遺失任何道具的蹤跡，也不再不知道道具該收納在哪裡。\n\n雖然這是它的主要功能，但它還擁有相當豐富的其他功能，包括：\n\t- 製作規劃\n\t- 市場公告板整合\n\t- 在搜尋/整理及挑選製作材料時於背包中高亮顯示道具\n\t- 包含商人與取得來源等資訊的道具視窗\n\t- 可完整搜尋的任務/怪物/飛空艇/潛水艇視窗\n\t- 讓你能為特定道具設定複雜搜尋條件的篩選系統\n\t- 提示視窗整合，滑鼠懸停即可查看道具所在位置",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/InventoryTools",
@@ -467,10 +467,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/InventoryTools.png",
     "Punchline": "讓你的 FFXIV 井井有條，輕鬆定位/顯示道具應收納何處、規劃製作，並搜尋怪物、任務、飛空艇與潛水艇！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663006740",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663006740",
-    "Changelog": "- 製作清單視窗新增「從遊戲加入」選單：開著公會合建零件或軍隊籌備視窗時，可一鍵把需要的道具加進目前的製作清單\n- 道具提示框可顯示這個道具在哪些精選清單裡（預設關閉，在設定的提示框「精選清單」開啟）\n- 新增兩支給其他插件查持有數量的 IPC（依分類合計、依角色分列），並修正查詢沒有庫存紀錄的角色時會出錯\n- 製作清單新增收集進度通知：照清單收集時可在聊天顯示還差多少、完成時播放音效（預設關閉，在清單設定的「通知」分類開啟）\n- 診斷紀錄減量：右鍵選單開啟時的視窗名稱與物品編號改記在最詳細等級（功能不變）",
-    "LastUpdate": 1792597864
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663097959",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663097959",
+    "Changelog": "- 預防在商店 NPC 附近查詢商店時，遊戲的事件物件清單裡若出現空位會讓遊戲直接關閉：遇到時這一次當作沒有商店，並在記錄檔留一行提示\n- 修正與 Wotsit 搜尋整合時，插件載入 5 秒後的補註冊在背景執行緒進行、可能與新增或刪除清單同時改動註冊表而出錯，現在一律交回遊戲主執行緒處理\n- 停用或更新插件時，存庫存資料最多只讓遊戲畫面停住約 2 秒（原本最多約 5 秒以上），存不完就保留上一份完整的存檔\n- 修正簡易製作途中製作視窗短暫讀不到時，製作清單可能被記入一筆數量大到不合理的完成數（例如 42 億），現在讀不到的那一幀直接略過",
+    "LastUpdate": 1792599696
   },
   {
     "Author": "electr0sheep, Nuko",
