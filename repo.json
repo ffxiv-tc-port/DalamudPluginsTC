@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.25.0.71",
+    "AssemblyVersion": "7.25.0.72",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660630146",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660630146",
-    "Changelog": "- 手動技能佇列：放出時從原本按的按鈕重新取得替換，不再把已換過的技能再換一次（與 WrathCombo 單鍵替換一起用時，自動循環選的招不再被換成別招）",
-    "LastUpdate": 1792534134,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661747500",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661747500",
+    "Changelog": "- 深層迷宮自動清層：金寶箱在身邊 15 碼內有 2 隻以上的怪正在打、或 HP 低於 70% 時先不開，寶箱留在原地等打完再開（可能開出擬態怪）",
+    "LastUpdate": 1792568688,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.25.0.53",
+    "AssemblyVersion": "7.25.0.54",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 赤魔道士起手：隊上別的赤魔已開鼓勵時跳過起手的鼓勵，不再卡在第 8 步到逾時失敗\n- 赤魔道士：赤大雷電／赤大勁風單鍵在促進或連續魔法期間不再被換成激盪或赤火焰／赤巨岩\n- 自動循環：新增提前排隊秒數（預設 0.1 秒），下一招不再等 GCD 完全轉完才送",
+    "Changelog": "- 自動循環診斷：「移動中，詠唱技能無法施放」那行補上被擋下的技能名稱、技能 ID 與連擊選項\n- 機工士進階連擊：野火、槍管加熱、超荷、車型浮游砲塔、整備與四種工具技能可設定「目標 HP 在多少 % 以下就不放」（預設 0＝照舊不檢查）\n- 赤魔道士自動昏亂／抗死：沒有 BossMod 預告時也等敵方全體技詠唱剩 5 秒內才放，新月島長詠唱與不傷人的詠唱不再騙走減傷",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660577923",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660577923",
-    "LastUpdate": 1792532776,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661745338",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661745338",
+    "LastUpdate": 1792568682,
     "CategoryTags": [
       "Jobs"
     ]
