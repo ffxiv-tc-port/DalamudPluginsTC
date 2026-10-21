@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.25.0.39",
+    "AssemblyVersion": "7.25.0.40",
     "Description": "- 一鍵傳送至任何世界或都市傳送網目的地\n- 點擊區域地圖上的城內乙太之晶即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速都市傳送網移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662822117",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662822117",
-    "Changelog": "- 準乙太之光選單：沒有完全相同的選項、又有多個選項部分相符時，不再按第一個，改成不按並在記錄裡說明",
-    "LastUpdate": 1792593888
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662855856",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662855856",
+    "Changelog": "- 地圖點導航：目標在崖頂或崖下時近距離也照飛；已經在空中時不論設定都直接飛過去，不會停在半空",
+    "LastUpdate": 1792594642
   },
   {
     "Author": "apetih",
@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.25.0.54",
+    "AssemblyVersion": "7.25.0.55",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 自動循環診斷：「移動中，詠唱技能無法施放」那行補上被擋下的技能名稱、技能 ID 與連擊選項\n- 機工士進階連擊：野火、槍管加熱、超荷、車型浮游砲塔、整備與四種工具技能可設定「目標 HP 在多少 % 以下就不放」（預設 0＝照舊不檢查）\n- 赤魔道士自動昏亂／抗死：沒有 BossMod 預告時也等敵方全體技詠唱剩 5 秒內才放，新月島長詠唱與不傷人的詠唱不再騙走減傷",
+    "Changelog": "- 機工士進階連擊：工具技能因「目標 HP 在多少 % 以下就不放」被擋下時，整備也一起不放，不再落到普通連擊上",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661745338",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661745338",
-    "LastUpdate": 1792568682,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662854390",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662854390",
+    "LastUpdate": 1792594627,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1181,7 +1181,7 @@
     "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.25.0.24",
+    "AssemblyVersion": "7.25.0.25",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/DailyDuty",
@@ -1204,10 +1204,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660220050",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660220050",
-    "Changelog": "- 討伐輔助：趕路或巡邏途中手動操作時改成讓位、停手後接續，不再一碰就整段結束",
-    "LastUpdate": 1792523252
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662854547",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662854547",
+    "Changelog": "- 討伐輔助：傳送與上坐騎期間不再影響別的插件的自動移動；巡邏時詠唱或上坐騎不再被誤判成到不了",
+    "LastUpdate": 1792594578
   },
   {
     "Author": "liza, qstxiv, & various contributors",
@@ -1301,7 +1301,7 @@
     "Author": "Usagi, PlusoneChiang",
     "Name": "IINACT",
     "InternalName": "IINACT",
-    "AssemblyVersion": "7.25.0.29",
+    "AssemblyVersion": "7.25.0.30",
     "Description": "在類 ACT 環境中直接執行 FFXIV_ACT_Plugin 的戰鬥數據解析插件,內建深度改造的 Overlay Plugin 移植版,無需另外安裝 ACT。\n可搭配 Crossingway 在遊戲內顯示戰鬥數據覆蓋層。\nFork 自 marzent/IINACT(繁體中文版客戶端,API 13 / .NET 9,TC opcodes 由 PlusoneChiang 維護)。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/IINACT",
@@ -1321,10 +1321,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/IINACT.png",
     "Punchline": "免 ACT 的戰鬥數據解析插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661306752",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661306752",
-    "Changelog": "- 修正 WebSocket 疊加層與 cactbot 使用者檔監看出錯時可能讓整個遊戲結束",
-    "LastUpdate": 1792555570
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662854583",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662854583",
+    "Changelog": "- 疊加層：註冊指令處理器與 WebSocket 呼叫同時發生時不再可能讀到壞掉的處理器表（功能不變）",
+    "LastUpdate": 1792594582
   },
   {
     "Author": "Ice",
