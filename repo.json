@@ -1464,7 +1464,7 @@
     "Author": "Faye",
     "Name": "Better Occult Crescent & Chest Helper Interface",
     "InternalName": "BOCCHI",
-    "AssemblyVersion": "7.25.0.90",
+    "AssemblyVersion": "7.25.0.91",
     "Description": "讓你在「蜃景幻界新月島」玩得更順手。\n- 不用再自己走路、自己找寶箱。\n- 小巧的 F.A.T.E. 與緊急遭遇戰面板，會顯示該場獎勵，還能自動幫你導航過去。\n- 附贈一個非常違規的「非法模式」，給那些寧可出去曬太陽的人。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BOCCHI",
@@ -1491,10 +1491,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/BOCCHI.png",
     "Punchline": "讓你在「蜃景幻界新月島」玩得更順手。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663080327",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663080327",
-    "Changelog": "- 確認框內文判讀更穩：內文欄位帶有額外標記時也照樣認得返回／退出等確認框\n- 返回營地前不再取消別的插件正在計算的移動路線：只有 BOCCHI 自己有還在走的目的地時才取消",
-    "LastUpdate": 1792599193
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663176724",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663176724",
+    "Changelog": "- 巡迴某一步一直出錯時，同一個錯誤只在記錄裡寫一次完整內容，不再每 0.15 秒洗一行\n- 非法模式順路開白銀寶箱的檢查少一次每回都新建的對照表，減少記憶體配置\n- 巡迴開始時量第一段步行距離的查詢，超過 3 秒沒算完就取消，不再佔住 vnavmesh 讓之後的移動（含別的插件的）等它算完\n- 在聊天框或插件視窗打字時按到 W／A／S／D／Q／E 或方向鍵，不再被當成你在操作角色而讓自動移動暫停\n- 緊急遭遇戰紀錄：結束時只剩 1～5 秒的場次改記為「成敗不明」，不再當成完成、也不會請塔塔露誇獎（逾時失敗可能被誤判成成功）\n- 順路開白銀寶箱、走去知見水晶或城內乙太之晶的途中你自己操作時，讓位的時間不再算進到達時限（不會因為你操作太久就放棄那個寶箱）\n- 別人在說話、隊伍、公會、通訊貝等頻道貼出魔尋寶結果或「第二處財寶」原句時，不再被當成自己收到的系統訊息（寶箱巡迴不會因此提早收尾）\n- 巡迴、非法模式換目標或讓位給 Lifestream 時，不再取消別的插件正在計算的移動路線（例如你在地圖上點目的地時 Lifestream 的路線）",
+    "LastUpdate": 1792601441
   },
   {
     "Author": "ffxiv-tc-port",
