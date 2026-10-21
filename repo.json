@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.25.0.72",
+    "AssemblyVersion": "7.25.0.73",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661747500",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661747500",
-    "Changelog": "- 深層迷宮自動清層：金寶箱在身邊 15 碼內有 2 隻以上的怪正在打、或 HP 低於 70% 時先不開，寶箱留在原地等打完再開（可能開出擬態怪）",
-    "LastUpdate": 1792568688,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661805722",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661805722",
+    "Changelog": "- 深層迷宮自動清層：魔陶器已滿、放回寶箱時，記在身邊剛開的那個金寶箱上，不再記到遠處別的寶箱（之前被記錯的寶箱會被當成滿額箱略過，後來開出的多半是別的東西，也開過擬態怪）",
+    "LastUpdate": 1792570186,
     "CategoryTags": [
       "Jobs"
     ]
