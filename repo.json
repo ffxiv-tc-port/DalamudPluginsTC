@@ -1269,7 +1269,7 @@
     "Author": "Styr1x, PlusoneChiang",
     "Name": "Crossingway",
     "InternalName": "Crossingway",
-    "AssemblyVersion": "7.25.0.5",
+    "AssemblyVersion": "7.25.0.6",
     "Description": "在遊戲內渲染 Chromium 瀏覽器覆蓋層,可顯示 IINACT/ACT 戰鬥數據網頁介面、Cactbot 時間軸、YouTube、任意網頁等。\n使用設定按鈕或輸入 /cw config 開啟設定。\nFork 自 Styr1x/Browsingway(繁體中文版客戶端,API 13 / .NET 9)。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Crossingway",
@@ -1292,16 +1292,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Crossingway.png",
     "Punchline": "在遊戲內渲染瀏覽器覆蓋層。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656080586",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656080586",
-    "Changelog": "- 整理版本歷史，插件功能不變",
-    "LastUpdate": 1792408990
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661306581",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661306581",
+    "Changelog": "- 設定存檔改在遊戲主執行緒進行：存檔失敗不再讓整個遊戲結束，卸載後也不會再寫設定檔",
+    "LastUpdate": 1792555562
   },
   {
     "Author": "Usagi, PlusoneChiang",
     "Name": "IINACT",
     "InternalName": "IINACT",
-    "AssemblyVersion": "7.25.0.28",
+    "AssemblyVersion": "7.25.0.29",
     "Description": "在類 ACT 環境中直接執行 FFXIV_ACT_Plugin 的戰鬥數據解析插件,內建深度改造的 Overlay Plugin 移植版,無需另外安裝 ACT。\n可搭配 Crossingway 在遊戲內顯示戰鬥數據覆蓋層。\nFork 自 marzent/IINACT(繁體中文版客戶端,API 13 / .NET 9,TC opcodes 由 PlusoneChiang 維護)。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/IINACT",
@@ -1321,10 +1321,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/IINACT.png",
     "Punchline": "免 ACT 的戰鬥數據解析插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660135495",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660135495",
-    "Changelog": "- 減少記憶體配置：沒有發話者的聊天訊息（多為戰鬥訊息）不再組空的發話者名字（功能不變）",
-    "LastUpdate": 1792521040
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661306752",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661306752",
+    "Changelog": "- 修正 WebSocket 疊加層與 cactbot 使用者檔監看出錯時可能讓整個遊戲結束",
+    "LastUpdate": 1792555570
   },
   {
     "Author": "Ice",
@@ -1935,7 +1935,7 @@
     "Author": "Ramen",
     "Name": "Meddle 模型匯出",
     "InternalName": "Meddle.Plugin",
-    "AssemblyVersion": "7.25.0.6",
+    "AssemblyVersion": "7.25.0.7",
     "Description": "把遊戲中的角色、場景、地形與動作匯出成 glTF 格式，可直接在 Blender 等 3D 軟體中開啟。\r\n\r\n主要用途：在「角色」分頁選一個角色或 NPC，按「匯出」即可產生 glTF 檔（含模型、骨架、材質與貼圖）。\r\n另有「場景」分頁可匯出周遭建物與燈光，「動作」分頁可錄製並匯出動作。\r\n\r\n搭配作者提供的 Blender 插件 MeddleTools 可自動接好材質節點。\r\n\r\n台服移植版與上游的差異：\r\n- 基底為上游 v0.1.46（最後一版使用 API13／net9 的標籤），之後的版本已改用 API15／net10，台服跑不動。\r\n- 角色選單改為只保存 GameObjectId、每幀重新查表，避免跨幀持有已失效的原生指標而導致遊戲崩潰。\r\n- 「偵錯」分頁的骨骼列表加上邊界夾制（骨骼數的位元欄位在台服未經驗證）。\r\n- 材質編輯視窗會在換區域或登出時自動關閉。\r\n- 介面僅翻譯分頁名稱與主要按鈕，其餘維持英文（本插件屬開發用工具）。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Meddle",
@@ -1952,10 +1952,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Meddle.Plugin.png",
     "Punchline": "把角色、場景與動作匯出成 glTF 格式。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656075877",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656075877",
-    "LastUpdate": 1792408597,
-    "Changelog": "- 整理版本歷史，插件功能不變"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661306274",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/661306274",
+    "LastUpdate": 1792555568,
+    "Changelog": "- 材質預覽快取加鎖：視窗開著載入新材質時，背景清理不再讓整個遊戲結束"
   },
   {
     "Author": "Asgard, Minmoose and Contributors",
