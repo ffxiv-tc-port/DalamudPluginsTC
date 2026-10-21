@@ -795,7 +795,7 @@
     "Author": "UnknownX",
     "Name": "QoL Bar",
     "InternalName": "QoLBar",
-    "AssemblyVersion": "7.25.0.14",
+    "AssemblyVersion": "7.25.0.15",
     "Description": "此插件旨在為聊天指令或其他插件提供簡單、可自訂且隨時可用的介面，\n減少為達成類似效果而需要使用巨集或佔用快捷列空間的需求。\n\n此插件初次啟動時應會顯示在遊戲視窗底部中央的一個小方框。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/QoLBar",
@@ -815,10 +815,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/QoLBar.png",
     "Punchline": "可自訂的 ImGui 快捷列",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662858491",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662858491",
-    "Changelog": "- 超過 15 行的巨集跑過後重新載入 QoL Bar，遊戲內建巨集的行數上限不再卡在舊值、不會重跑上一個長巨集殘留的指令",
-    "LastUpdate": 1792594720
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663368140",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663368140",
+    "Changelog": "- 修正停用中圖示的佔位貼圖資料不足（1×1 圖只給 1 個位元組，改給滿 4 個；畫面不變，Dalamud 不再補零並記警告）",
+    "LastUpdate": 1792606056
   },
   {
     "Author": "Taurenkey, Kagekazu",
