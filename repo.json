@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.25.0.76",
+    "AssemblyVersion": "7.25.0.77",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663084370",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663084370",
-    "Changelog": "- 降低記憶體用量：AI 評估範圍技站位時，不再為每個優先目標重複建立暫存清單（多個敵人時每次評估少配置 n+1 份清單）；站位結果不變\n- 火龍狩獵戰、佐狄亞克、巴爾巴莉希亞、盧比坎特、高貝扎殲滅戰（普通）：若專屬模組沒認出首領，改顯示通用雷達，不再整場沒有雷達\n- 深層迷宮踩到陷阱時寫的診斷紀錄若出錯，只略過那一行紀錄，不再影響其他功能（陷阱判斷不變）",
-    "LastUpdate": 1792599264,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663145578",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663145578",
+    "Changelog": "- 降低負擔：位移閃避在 vnavmesh 沒載入時不再每幀對每個候選技能拋出錯誤，查詢網格的連線也改成重複使用；閃避判斷不變\n- 降低記憶體用量：手動佇列擋下位移技時，被節流不印的那幾幀不再組診斷文字；擋不擋與 log 內容不變\n- 降低記憶體用量：位移技危險攔截在只有場地邊界、沒有危險區時不再每幀重建資料；攔截結果不變",
+    "LastUpdate": 1792600650,
     "CategoryTags": [
       "Jobs"
     ]
