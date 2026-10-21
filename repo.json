@@ -447,7 +447,7 @@
     "Author": "Critical_Impact",
     "Name": "Allagan Tools",
     "InternalName": "InventoryTools",
-    "AssemblyVersion": "7.25.0.27",
+    "AssemblyVersion": "7.25.0.28",
     "Description": "Allagan Tools 的主要目的是追蹤你所有角色/僱員/公會倉庫中的道具。透過它的篩選系統，你將不再遺失任何道具的蹤跡，也不再不知道道具該收納在哪裡。\n\n雖然這是它的主要功能，但它還擁有相當豐富的其他功能，包括：\n\t- 製作規劃\n\t- 市場公告板整合\n\t- 在搜尋/整理及挑選製作材料時於背包中高亮顯示道具\n\t- 包含商人與取得來源等資訊的道具視窗\n\t- 可完整搜尋的任務/怪物/飛空艇/潛水艇視窗\n\t- 讓你能為特定道具設定複雜搜尋條件的篩選系統\n\t- 提示視窗整合，滑鼠懸停即可查看道具所在位置",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/InventoryTools",
@@ -467,10 +467,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/InventoryTools.png",
     "Punchline": "讓你的 FFXIV 井井有條，輕鬆定位/顯示道具應收納何處、規劃製作，並搜尋怪物、任務、飛空艇與潛水艇！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656078614",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656078614",
-    "Changelog": "- 相依函式庫對齊到同一版（功能不變）\n- 整理版本歷史，插件功能不變",
-    "LastUpdate": 1792408945
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663006740",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663006740",
+    "Changelog": "- 製作清單視窗新增「從遊戲加入」選單：開著公會合建零件或軍隊籌備視窗時，可一鍵把需要的道具加進目前的製作清單\n- 道具提示框可顯示這個道具在哪些精選清單裡（預設關閉，在設定的提示框「精選清單」開啟）\n- 新增兩支給其他插件查持有數量的 IPC（依分類合計、依角色分列），並修正查詢沒有庫存紀錄的角色時會出錯\n- 製作清單新增收集進度通知：照清單收集時可在聊天顯示還差多少、完成時播放音效（預設關閉，在清單設定的「通知」分類開啟）\n- 診斷紀錄減量：右鍵選單開啟時的視窗名稱與物品編號改記在最詳細等級（功能不變）",
+    "LastUpdate": 1792597864
   },
   {
     "Author": "electr0sheep, Nuko",
