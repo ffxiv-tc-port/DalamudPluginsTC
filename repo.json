@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.25.0.74",
+    "AssemblyVersion": "7.25.0.75",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662860476",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662860476",
-    "Changelog": "- 診斷 log 減量：必中一閃三個盅階段逐物件的位置與事件改記 Debug；AI「該閃卻站著不動」復活後重新計時（行為不變）\n- 行為修正：必中一閃出局後模組會結束；手動技能佇列放出時被換成不同冷卻的招（例如 GCD 變能力技）改放原本排的那一招；澤羅姆斯連線隕石被順路撞到的人不再提早收線",
-    "LastUpdate": 1792594744,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662987823",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662987823",
+    "Changelog": "- 雷達近戰範圍指示：新增「改畫在目前目標身上」選項（只在防護、近戰職業與赤魔法師顯示，圈在近戰攻擊打得到的最遠處；預設關，不勾時照舊）\n- 深層迷宮自動清層：新增「魔陶器拿滿 3 個時，在適合的時機自動用一個」（逐種勾選，預設關、預設只在單人時生效；你手動用了魔陶器之後暫停 10 秒）",
+    "LastUpdate": 1792597381,
     "CategoryTags": [
       "Jobs"
     ]
