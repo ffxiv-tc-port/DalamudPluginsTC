@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.25.0.29",
+    "AssemblyVersion": "7.25.0.30",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663384349",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663384349",
-    "Changelog": "- 幻卡 NPC 多區路線（例如多瑪飛地）走到定點、取消或你自己接手移動時，只停 Saucy 自己送出的路徑，不再連帶取消別的插件正在走的路線；取消導航時也會確實停下路線自己送出的移動\n- 仙人微彩／仙人仙彩自動靠近發放員時，到達、結束或你自己接手移動，只停 Saucy 自己送出的路徑，不再連帶取消別的插件正在走的路線\n- 金碟 GATE 自動走去活動解說員／報名 NPC 途中你自己接手移動或按急停時，只停 Saucy 自己送出的路徑，不再連帶取消別的插件正在走的路線",
-    "LastUpdate": 1792606472,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663440988",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663440988",
+    "Changelog": "- 幻卡 NPC 多區路線（例如多瑪飛地）某一步開始時你已經站在目的地附近，不再誤判成「無法開始移動」而整條路線停止\n- 幻卡 NPC 導航判斷到達時也只停 Saucy 自己送出的路徑（內部整理，畫面與操作不變）\n- GATE 報名 NPC 自動靠近途中離開範圍、被擋下、走到 NPC 旁或你自己接手移動時，只停 Saucy 自己送出的路徑，不再連帶取消別的插件正在走的路線\n- 金碟遊樂場導航（走去各活動的櫃台或記錄點）到達、取消、失敗、改搭都市傳送網或你自己接手移動時，只停 Saucy 自己送出的路徑，不再連帶取消別的插件正在走的路線",
+    "LastUpdate": 1792607782,
     "CategoryTags": [
       "Minigames"
     ]
