@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.25.0.32",
+    "AssemblyVersion": "7.25.0.33",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663082796",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663082796",
-    "Changelog": "- 其他插件請 GatherBuddy 採寶物地圖時，若「來自其他插件」清單或這張地圖被停用，改為提示並不開始，不再顯示已開始卻什麼都不採\n- 遊戲改版後傳送清單位址對不上時，自動採集換區不再因計算傳送費用而出錯\n- 修正從 Artisan 匯入採集清單時，可能和清單畫面同時改動清單而出錯",
-    "LastUpdate": 1792599306
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/676003861",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/676003861",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰",
+    "LastUpdate": 1792958367
   },
   {
     "Author": "img02",
@@ -679,7 +679,7 @@
     "Author": "NightmareXIV",
     "Name": "NotificationMaster",
     "InternalName": "NotificationMaster",
-    "AssemblyVersion": "7.25.0.12",
+    "AssemblyVersion": "7.25.0.13",
     "Description": "在遊戲視窗縮到最小時，通知你各種遊戲內事件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/NotificationMaster",
@@ -698,10 +698,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/NotificationMaster.png",
     "Punchline": "目前支援的通知：聊天訊息、接近地圖標記、已找到任務、過場動畫結束、GP 恢復、登入時發生錯誤、怪物已被拉起、任務開始、準備確認、隊友看完過場動畫。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656079854",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656079854",
-    "Changelog": "- 相依函式庫對齊到同一版（功能不變）\n- 整理版本歷史，插件功能不變",
-    "LastUpdate": 1792408874
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/676003720",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/676003720",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰",
+    "LastUpdate": 1792958643
   },
   {
     "Author": "Liza Carvelli (Puni.sh)",
@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.25.0.30",
+    "AssemblyVersion": "7.25.0.31",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663440988",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663440988",
-    "Changelog": "- 幻卡 NPC 多區路線（例如多瑪飛地）某一步開始時你已經站在目的地附近，不再誤判成「無法開始移動」而整條路線停止\n- 幻卡 NPC 導航判斷到達時也只停 Saucy 自己送出的路徑（內部整理，畫面與操作不變）\n- GATE 報名 NPC 自動靠近途中離開範圍、被擋下、走到 NPC 旁或你自己接手移動時，只停 Saucy 自己送出的路徑，不再連帶取消別的插件正在走的路線\n- 金碟遊樂場導航（走去各活動的櫃台或記錄點）到達、取消、失敗、改搭都市傳送網或你自己接手移動時，只停 Saucy 自己送出的路徑，不再連帶取消別的插件正在走的路線",
-    "LastUpdate": 1792607782,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/676003653",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/676003653",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰",
+    "LastUpdate": 1792958862,
     "CategoryTags": [
       "Minigames"
     ]
@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.25.0.57",
+    "AssemblyVersion": "7.25.0.58",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 自動循環「僅於戰鬥中」：任務目標與 F.A.T.E. 目標兩個繞過都沒開時，戰鬥外不再每一輪掃一遍周圍敵人（省效能，行為不變）\n- 赤魔法師自動接戰：你或別的插件剛放過短兵相接（0.5 秒內）時，自動循環這時才選上目標也不會再排第二發衝刺\n- 復活重新指定目標：開著「自動復活跳過有『限制復活』的隊友」時，倒地的人裡第一位有限制復活就改選下一位沒有的（以前會整個不選，照你當下的目標放）",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663138750",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663138750",
-    "LastUpdate": 1792600575,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/676003676",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/676003676",
+    "LastUpdate": 1792958790,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1213,7 +1213,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.25.0.45",
+    "AssemblyVersion": "7.25.0.46",
     "Description": "自動跑任務插件：\n- 自動導航至任務目標並完成對話、互動與戰鬥觸發\n- 支援主線／支線任務、部分部落任務與採集類任務\n- 提供任務執行優先順序與除錯視窗\n- 需搭配 vnavmesh、TextAdvance、Lifestream 使用",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,16 +1232,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "自動跑任務助手，導航並完成任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663200647",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663200647",
-    "Changelog": "- 採集步驟遇到目前職業採不到的道具時，若背包裡已經有足夠數量，不再先換採集職業的套組或停下要你換職業，直接進下一步",
-    "LastUpdate": 1792601909
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/676004976",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/676004976",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時可能讓遊戲崩潰；繪圖設定「過場動畫中也繪製」「畫面淡出時也繪製」打開後不再反而永遠不繪製",
+    "LastUpdate": 1792958498
   },
   {
     "Author": "NightmareXIV",
     "Name": "TextAdvance",
     "InternalName": "TextAdvance",
-    "AssemblyVersion": "7.25.0.18",
+    "AssemblyVersion": "7.25.0.19",
     "Description": "跑任務加速插件：\n- 自動跳過任務對話字幕與過場動畫\n- 自動確認任務接取與完成\n- 自動處理委託視窗與相關互動\n- 可整合 Splatoon 標示任務物件、vnavmesh 自動導航至任務目標",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TextAdvance",
@@ -1260,10 +1260,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TextAdvance.png",
     "Punchline": "跑任務加速工具，自動跳過過場動畫",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656080617",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656080617",
-    "Changelog": "- 相依函式庫對齊到同一版（功能不變）\n- 整理版本歷史，插件功能不變",
-    "LastUpdate": 1792408898
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/676003810",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/676003810",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰",
+    "LastUpdate": 1792958713
   },
   {
     "Author": "Styr1x, PlusoneChiang",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.25.0.45",
+    "AssemblyVersion": "7.25.0.46",
     "Description": "[Questionable 開發用插件]：使用 Pictomancy 繪製採集點路徑，供路徑資料編輯者使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable 開發用] 繪製採集路徑點",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663200635",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663200635",
-    "LastUpdate": 1792601909,
-    "Changelog": "- 採集步驟遇到目前職業採不到的道具時，若背包裡已經有足夠數量，不再先換採集職業的套組或停下要你換職業，直接進下一步"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/676004977",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/676004977",
+    "LastUpdate": 1792958498,
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時可能讓遊戲崩潰；繪圖設定「過場動畫中也繪製」「畫面淡出時也繪製」打開後不再反而永遠不繪製"
   },
   {
     "Author": "WildWolf",
@@ -2048,7 +2048,7 @@
     "Author": "Jukkales",
     "Name": "HoardFarm 天之御柱自動刷寶",
     "InternalName": "HoardFarm",
-    "AssemblyVersion": "7.25.0.14",
+    "AssemblyVersion": "7.25.0.15",
     "Description": "手動按下開始後，自動傳送到紅玉海找九星、進出天之御柱（需事先準備好第 11 層以後的存檔）、使用魔陶器「感知寶藏」「隱形」，走去挖埋藏的寶藏後退出，再重複下一趟；可設定趟數、寶藏數或時間上限，兩趟之間也能交給 AutoRetainer 處理僱員。需要 vnavmesh。預設關閉，載入、進區、登入都不會自己開始；隨時可以取消勾選、/hoardfarm stop 或 TC Toolbox 的全艦隊急停立即停下。不會把任何資料送給原作者或第三方。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/HoardFarm",
@@ -2069,9 +2069,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/HoardFarm.png",
     "Punchline": "在天之御柱自動反覆挖埋藏的寶藏",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663085282",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663085282",
-    "LastUpdate": 1792599181,
-    "Changelog": "- 修正在前往天之御柱途中下「/hoardfarm d（這一趟跑完再停）」，進場後就被忘掉、照樣一直刷下去\n- 修正刷寶用魔石掩護走向寶藏時，身上明明有魔陶器：隱形，卻改用掉魔陶器：咒印解除\n- 修正刷寶時在天之御柱倒地後，回到紅玉海會停很久才繼續下一趟"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/676004391",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/676004391",
+    "LastUpdate": 1792958571,
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰"
   }
 ]
