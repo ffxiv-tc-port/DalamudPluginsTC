@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.25.0.77",
+    "AssemblyVersion": "7.25.0.78",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663145578",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663145578",
-    "Changelog": "- 降低負擔：位移閃避在 vnavmesh 沒載入時不再每幀對每個候選技能拋出錯誤，查詢網格的連線也改成重複使用；閃避判斷不變\n- 降低記憶體用量：手動佇列擋下位移技時，被節流不印的那幾幀不再組診斷文字；擋不擋與 log 內容不變\n- 降低記憶體用量：位移技危險攔截在只有場地邊界、沒有危險區時不再每幀重建資料；攔截結果不變",
-    "LastUpdate": 1792600650,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675106477",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675106477",
+    "Changelog": "- 深層迷宮風箏：近戰怪（含死者宮殿頭目）不再因為你跑開時被平砍而被誤判成遠距攻擊、停用風箏；被停用後可在設定頁按「重新開啟風箏」恢復，也可以關掉自動停用",
+    "LastUpdate": 1792934480,
     "CategoryTags": [
       "Jobs"
     ]
