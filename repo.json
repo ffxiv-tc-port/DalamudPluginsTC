@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.25.0.59",
+    "AssemblyVersion": "7.25.0.60",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663212419",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663212419",
-    "Changelog": "- 主視窗「跑一輪就回來」按鈕不能按時，滑鼠移上去現在會說明為什麼不能按\n- 按住快捷鍵右鍵出售／存入／取回：同時還按著別的 Ctrl／Alt／Shift 時不再動作，避免和其他插件在同一個選單各選一次而讓遊戲當掉",
-    "LastUpdate": 1792602198,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675792859",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675792859",
+    "Changelog": "- 新增給其他插件用的介面：在公會工坊裡，傳喚鈴在 20 米內但搆不到時，可以請 AutoRetainer 把角色走到鈴旁（只移動、不開鈴），走法與 AutoRetainer 自己在工坊開鈴前用的相同\n- 軍票兌換清單：「保留軍票數量」可以依角色的軍票上限分別設定（例如上限 5 萬的角色少留一點），沒有另外設定的上限照舊用原本那個數字\n- 稀有品繳交循環：換角後前往傳喚鈴的傳送半路被中止時，會自動重送一次傳送，不再直接誤報「附近沒有傳喚鈴」而整條停下；兩次都沒到才停，並分開說明是「傳送沒到」還是「到了但那裡沒有鈴」",
+    "LastUpdate": 1792952898,
     "CategoryTags": [
       "Inventory"
     ]
@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.25.0.78",
+    "AssemblyVersion": "7.25.0.79",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675106477",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675106477",
-    "Changelog": "- 深層迷宮風箏：近戰怪（含死者宮殿頭目）不再因為你跑開時被平砍而被誤判成遠距攻擊、停用風箏；被停用後可在設定頁按「重新開啟風箏」恢復，也可以關掉自動停用",
-    "LastUpdate": 1792934480,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675793033",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675793033",
+    "Changelog": "- 深層迷宮：踩到陷阱與腳下危險區即將生效時多記一行診斷，方便查原因",
+    "LastUpdate": 1792952810,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1439,7 +1439,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.25.0.32",
+    "AssemblyVersion": "7.25.0.33",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 Gil 並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1455,10 +1455,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點 Gil！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663210528",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663210528",
-    "Changelog": "- 支援 TC Toolbox 的全艦隊急停：一鍵停下重掛、下架、上架、賣商店、僱員與多角色巡迴、價格巡檢，開著的上架視窗交給你\n- 待處理清單：按過「跳過」的異常低價列不再擋住同一格之後的「被壓價／低於最低價」提示\n- 快速上架：右鍵時除了快速上架鍵還按著別的 Shift／Ctrl／Alt 就不上架，避免和其他插件在同一個選單各選一次而讓遊戲當掉",
-    "LastUpdate": 1792602180
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675791495",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675791495",
+    "Changelog": "- 多角色重掛：新增選項「在公會工坊裡，鈴在附近但搆不到時，請 AutoRetainer 走過去」（預設關）；打開後，做完潛水艇站在工坊面板旁的角色不再白等 25 秒跳過，而是走到鈴旁開鈴重掛\n- 快速上架：按下確認後市場格較慢出現時，不再說「沒有上架成功、請再按一次」，改說還在確認並繼續等待認領",
+    "LastUpdate": 1792952842
   },
   {
     "Author": "Faye",
