@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.25.0.45",
+    "AssemblyVersion": "7.25.0.46",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,16 +58,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663083026",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663083026",
-    "Changelog": "- 修正清單自動先做的中間素材做法沿用錯：之前為了只收 NQ 而用簡易製作做過的配方，之後別的配方要求一般製作時仍然走簡易製作\n- SimpleTweaks 停用或移除後不再把它的舊實例留在記憶體裡\n- 修正從僱員補貨正常做完之後，每次停止製作都在紀錄多寫一行「停止從僱員補貨」\n- 修正「離開任務後恢復」在恢復當下又在排任務或已進任務時，紀錄寫「恢復」但其實沒有恢復\n- 修正清單設定「缺的素材如果自己做得出來，先做到足夠再繼續」會替做不了的配方先做中間素材：等級差太多、沒有該職業套裝或找不到必要道具時改為照舊跳過\n- 修正清單材料表偶爾少算材料：清單表格重建與從僱員補貨同時計算時，可能漏加某道配方後面的材料",
-    "LastUpdate": 1792599383
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675873056",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675873056",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰",
+    "LastUpdate": 1792954061
   },
   {
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.25.0.38",
+    "AssemblyVersion": "7.25.0.39",
     "Description": "自動幫你跑副本，支援親信戰友、劇情輔助器、冒險者分隊、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,16 +87,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663138726",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663138726",
-    "Changelog": "- 修正多開同步主機啟動失敗（例如伺服器位址不是這台電腦的）時，設定頁仍顯示主機已啟動；現在會顯示「未啟動」並在聊天視窗說明原因\n- 多開同步設定的伺服器位址說明補上：主機填區網位址時，同一台電腦的客戶端也要改填該位址才連得上",
-    "LastUpdate": 1792600580
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675871947",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675871947",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時可能讓遊戲崩潰；繪圖設定「過場動畫中也繪製」「畫面淡出時也繪製」打開後不再反而永遠不繪製",
+    "LastUpdate": 1792954324
   },
   {
     "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
-    "AssemblyVersion": "7.25.0.23",
+    "AssemblyVersion": "7.25.0.24",
     "Description": "自動幫你提鉤釣魚,你能相信嗎?\n支援自訂預設集、自動以小釣大、自動刺魚等功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoHook",
@@ -116,16 +116,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoHook.png",
     "Punchline": "讓釣魚不再無聊(或更無聊)。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663079894",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663079894",
-    "Changelog": "- 修正設定檔裡的拋竿間隔若為負值，可能導致之後永遠不再拋竿\n- 修正換餌功能停用時下 /bait，聊天視窗會連印兩則相同的停用說明",
-    "LastUpdate": 1792599192
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675871774",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675871774",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰\n- Update bitetimers.json",
+    "LastUpdate": 1792953637
   },
   {
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.25.0.60",
+    "AssemblyVersion": "7.25.0.61",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675792859",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675792859",
-    "Changelog": "- 新增給其他插件用的介面：在公會工坊裡，傳喚鈴在 20 米內但搆不到時，可以請 AutoRetainer 把角色走到鈴旁（只移動、不開鈴），走法與 AutoRetainer 自己在工坊開鈴前用的相同\n- 軍票兌換清單：「保留軍票數量」可以依角色的軍票上限分別設定（例如上限 5 萬的角色少留一點），沒有另外設定的上限照舊用原本那個數字\n- 稀有品繳交循環：換角後前往傳喚鈴的傳送半路被中止時，會自動重送一次傳送，不再直接誤報「附近沒有傳喚鈴」而整條停下；兩次都沒到才停，並分開說明是「傳送沒到」還是「到了但那裡沒有鈴」",
-    "LastUpdate": 1792952898,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675872782",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675872782",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰",
+    "LastUpdate": 1792954152,
     "CategoryTags": [
       "Inventory"
     ]
@@ -149,7 +149,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "Avarice",
     "InternalName": "Avarice",
-    "AssemblyVersion": "7.25.0.17",
+    "AssemblyVersion": "7.25.0.18",
     "Description": "戰鬥定位輔助疊加層：\n- 標示背後／側面判定範圍與最大近戰距離\n- 顯示玩家攻擊判定像素，命中／未命中可觸發 VFX 或聊天訊息\n- 預測下一輪判定並依職業客製化提示\n- 支援 Splatoon 整合與多套設定檔",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Avarice",
@@ -167,10 +167,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Avarice.png",
     "Punchline": "顯示背後／側面判定範圍與命中回饋",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663198579",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663198579",
-    "Changelog": "- 玩家圓點：「小隊成員」開著但它的顯示條件不成立（例如只在戰鬥中、目前沒在戰鬥）時，小隊成員不再整個沒有圓點，改由「所有玩家」照常畫出",
-    "LastUpdate": 1792601878
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675871750",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675871750",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰",
+    "LastUpdate": 1792953553
   },
   {
     "Author": "NeNeppie",
@@ -351,7 +351,7 @@
     "Author": "Snowy, KangasZ",
     "Name": "Eureka Helper",
     "InternalName": "EurekaHelper",
-    "AssemblyVersion": "7.25.0.30",
+    "AssemblyVersion": "7.25.0.31",
     "Description": "協助你進行優雷卡冒險的工具，已更新至《漂泊眾島》版本！輸入 /eurekahelper 開始使用。\n\n功能包含：\n- 遊戲內追蹤器 GUI\n- 副本追蹤器\n- 聖靈追蹤器\n- 魂武助手\n- 鬧鐘\n- 賺錢 NM 天氣時間提醒\n- 更多功能陸續推出",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/EurekaHelper",
@@ -378,10 +378,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/EurekaHelper.png",
     "Punchline": "優雷卡追蹤器與多項實用功能整合插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663138425",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663138425",
-    "Changelog": "- 尋寶分頁「手動觸發」也改走魔法甕候選點的實際高度，不再可能被導到走不到的樓層（旗標被你改到別處時照舊走向你的旗標）\n- 修正其他玩家在聊天頻道打出「第二處財寶」「發現了財寶」或財寶方向提示等句子時，會被當成自己的尋寶訊息（換錯候選組、提前結束這一輪、自動走向別人的提示）；Ovni 等擊倒訊息同理",
-    "LastUpdate": 1792600569
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675871717",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675871717",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰",
+    "LastUpdate": 1792954104
   },
   {
     "Author": "The Combat Reborn Team",
@@ -534,7 +534,7 @@
     "Author": "53m1k0l0n/Gidedin (Puni.sh)",
     "Name": "LazyLoot",
     "InternalName": "LazyLoot",
-    "AssemblyVersion": "7.25.0.16",
+    "AssemblyVersion": "7.25.0.17",
     "Description": "以指令執行擲骰，支援 need | needonly | greed | pass | passall 等各種參數。\n可設定聊天與跳出訊息輸出，以及擲骰延遲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/LazyLoot",
@@ -554,16 +554,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/LazyLoot.png",
     "Punchline": "打怪但懶得選骰的擲骰插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663082553",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663082553",
-    "Changelog": "- 減少擲骰視窗旁「全部需求／全部貪婪／全部放棄」按鈕的記憶體配置（顯示與操作不變）",
-    "LastUpdate": 1792599241
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675872485",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675872485",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰",
+    "LastUpdate": 1792954193
   },
   {
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.25.0.41",
+    "AssemblyVersion": "7.25.0.42",
     "Description": "- 一鍵傳送至任何世界或都市傳送網目的地\n- 點擊區域地圖上的城內乙太之晶即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速都市傳送網移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663083543",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663083543",
-    "Changelog": "- 導航抵達後降落：降落途中不再重複按「跳下」，避免落地時被拉下坐騎\n- 飛行導航：在聊天欄或插件文字框打字時，不再被當成手動操作而讓位接續\n- 傳送被遊戲拒絕而自動中止時，也會一併停下 Lifestream 交給 vnavmesh 的移動與自動前進",
-    "LastUpdate": 1792599377
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675872993",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675872993",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰",
+    "LastUpdate": 1792953782
   },
   {
     "Author": "apetih",
@@ -650,7 +650,7 @@
     "Author": "Jukka",
     "Name": "NecroLens",
     "InternalName": "NecroLens",
-    "AssemblyVersion": "7.25.0.13",
+    "AssemblyVersion": "7.25.0.14",
     "Description": "深層迷宮輔助工具。提供怪物雷達、仇恨、視野範圍等各種資訊。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/NecroLens",
@@ -670,10 +670,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/NecroLens.png",
     "Punchline": "真正的死靈術士永遠瞭若指掌深層迷宮……其他人只是用了高科技而已！",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656079750",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656079750",
-    "Changelog": "- 整理版本歷史，插件功能不變",
-    "LastUpdate": 1792409012
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675872717",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675872717",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰",
+    "LastUpdate": 1792953873
   },
   {
     "Author": "NightmareXIV",
@@ -707,7 +707,7 @@
     "Author": "Liza Carvelli (Puni.sh)",
     "Name": "Palace Pal",
     "InternalName": "PalacePal",
-    "AssemblyVersion": "7.25.0.25",
+    "AssemblyVersion": "7.25.0.26",
     "Description": "顯示死者宮殿、天之御柱、正統優雷卡中可能的陷阱與寶藏位置。\n\n此插件需要 Splatoon 才能在畫面上繪製各種標示。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PalacePal",
@@ -728,10 +728,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/PalacePal.png",
     "Punchline": "顯示死者宮殿、天之御柱、正統優雷卡中可能的陷阱與寶藏位置。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663083072",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663083072",
-    "Changelog": "- 修正進入深層迷宮下載社群標記時，偶爾可能讓標記或設定變更遺失、甚至出錯的問題\n- 同一瞬間確認到多個陷阱或寶藏位置時，確認紀錄只存檔一次，減少深層迷宮裡的卡頓",
-    "LastUpdate": 1792599355
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675872847",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675872847",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰",
+    "LastUpdate": 1792953687
   },
   {
     "Author": "Haplo064",
@@ -853,7 +853,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.25.0.19",
+    "AssemblyVersion": "7.25.0.20",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -872,10 +872,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663081176",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663081176",
-    "Changelog": "- 修正設定檔被外部改動、或巨集期間暫停 YesAlready 的續約時，若處理過程出錯會讓整個遊戲直接關閉\n- 巨集 /equip 換裝：找「裝備」選項時只看這次右鍵選單實際列出的項目，不會被上一個選單殘留的內容誤導\n- 巨集 /equip 換裝：修正插件載入後累計用到第 5 次起，明明已換上裝備卻每次都報「找不到裝備選項」並中止巨集",
-    "LastUpdate": 1792599193,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675872272",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675872272",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰",
+    "LastUpdate": 1792953918,
     "CategoryTags": [
       "Utility"
     ]
@@ -913,7 +913,7 @@
     "Author": "NightmareXIV",
     "Name": "Splatoon",
     "InternalName": "Splatoon",
-    "AssemblyVersion": "7.25.0.34",
+    "AssemblyVersion": "7.25.0.35",
     "Description": "Splatoon 是一款強大的輔助工具。它以自訂路標系統徹底革新遊戲體驗，可建立無數量限制的成組路標、文字標籤與角色指示器，並具備精確到像素的定位能力。此功能讓玩家能更清楚辨識關鍵物件與事件，進而做出更快速的反應。請注意，此插件本身不附帶任何預設檔，玩家可自行製作或匯入現成的預設檔，打造專屬於自己的遊戲體驗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Splatoon",
@@ -932,10 +932,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Splatoon.png",
     "Punchline": "以無限、精準的路標重新定義 FFXIV 導航方式。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660284653",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/660284653",
-    "Changelog": "- 修正設定視窗每幀多結束一次分頁列（可能把其他插件的分頁弄亂）；記錄器分頁被擠到看不見時不再讓遊戲崩潰；絕歐米茄 P6 腳本設定的下拉選單打開時不再弄亂介面",
-    "LastUpdate": 1792524823
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675873095",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675873095",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時可能讓遊戲崩潰；繪圖設定「過場動畫中也繪製」「畫面淡出時也繪製」打開後不再反而永遠不繪製",
+    "LastUpdate": 1792954010
   },
   {
     "Author": "Infi",
@@ -999,7 +999,7 @@
     "Author": "veyn, croizat",
     "Name": "Visland",
     "InternalName": "visland",
-    "AssemblyVersion": "7.25.0.17",
+    "AssemblyVersion": "7.25.0.18",
     "Description": "自動化採集、開拓工坊排班等無人島相關作業。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/visland",
@@ -1020,10 +1020,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/visland.png",
     "Punchline": "自動化無人島各項活動",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663081626",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663081626",
-    "Changelog": "- 採集路線暫停時不再停掉其他插件的 vnavmesh 移動\n- 修正採集路線停止或換點時，會連帶取消其他插件正在計算的 vnavmesh 路線",
-    "LastUpdate": 1792599299
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675872326",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675872326",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰",
+    "LastUpdate": 1792954281
   },
   {
     "Author": "veyn",
@@ -1123,7 +1123,7 @@
     "Author": "daemitus, croizat",
     "Name": "YesAlready",
     "InternalName": "YesAlready",
-    "AssemblyVersion": "7.25.0.23",
+    "AssemblyVersion": "7.25.0.24",
     "Description": "厭倦了在天守閣/伊迪爾夏爾禁地一直點確認嗎？受不了在副本裡一直按鍵嗎？YesAlready 可以自動點擊你設定的所有惱人對話框。只要輸入對話文字，就再也不用手動點了！支援 /regex/ 比對，也內建了幾個針對「看起來不是 yes/no，但行為類似」的對話框（例如分解）的模組。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/YesAlready",
@@ -1143,10 +1143,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/YesAlready.png",
     "Punchline": "自動點擊你指定的各種確認對話框。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662442051",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/662442051",
-    "Changelog": "- 自動交收藏品：確認框道具名改成整句比對，長名稱（例如第二期重建用的合板）不再被認成較短的另一個道具而套錯收藏價值門檻",
-    "LastUpdate": 1792585738
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675872345",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675872345",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰",
+    "LastUpdate": 1792953593
   },
   {
     "Author": "KangasZ",
@@ -1330,7 +1330,7 @@
     "Author": "Ice",
     "Name": "Chilled Leves",
     "InternalName": "ChilledLeves",
-    "AssemblyVersion": "7.25.0.20",
+    "AssemblyVersion": "7.25.0.21",
     "Description": "理符任務輔助工具：讓你挑選想接的理符任務，並自動前往接取、執行與繳交。注意：必須先安裝 vnavmesh 才能使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ChilledLeves",
@@ -1350,16 +1350,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ChilledLeves.png",
     "Punchline": "理符任務，冰鎮上桌。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663255379",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663255379",
-    "Changelog": "- 降低負擔：交納理符道具時，選道具的點選工作每一格只排一次，不再在第一格放好之前每一幀重複排入一整批",
-    "LastUpdate": 1792603242
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675871733",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675871733",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰",
+    "LastUpdate": 1792953959
   },
   {
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.25.0.32",
+    "AssemblyVersion": "7.25.0.33",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663080000",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663080000",
-    "Changelog": "- 停止 ICE 時不再連帶取消別的插件正在計算的 vnavmesh 路徑\n- 宇宙探索區查不到對應的信用點道具時，在日誌留一行警告（每個區域只寫一次）\n- 修正自行修理：裝備在別處修好之後，下次需要修理時會一開始就判定放棄、整輪不再自行修理\n- 減少按鈕防重按守衛在視窗開著時每一幀的記憶體配置",
-    "LastUpdate": 1792599236
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675871821",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675871821",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時可能讓遊戲崩潰；繪圖設定「過場動畫中也繪製」「畫面淡出時也繪製」打開後不再反而永遠不繪製",
+    "LastUpdate": 1792953733
   },
   {
     "Author": "Liza Carvelli",
@@ -1464,7 +1464,7 @@
     "Author": "Faye",
     "Name": "Better Occult Crescent & Chest Helper Interface",
     "InternalName": "BOCCHI",
-    "AssemblyVersion": "7.25.0.91",
+    "AssemblyVersion": "7.25.0.92",
     "Description": "讓你在「蜃景幻界新月島」玩得更順手。\n- 不用再自己走路、自己找寶箱。\n- 小巧的 F.A.T.E. 與緊急遭遇戰面板，會顯示該場獎勵，還能自動幫你導航過去。\n- 附贈一個非常違規的「非法模式」，給那些寧可出去曬太陽的人。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BOCCHI",
@@ -1491,10 +1491,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/BOCCHI.png",
     "Punchline": "讓你在「蜃景幻界新月島」玩得更順手。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663176724",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/663176724",
-    "Changelog": "- 巡迴某一步一直出錯時，同一個錯誤只在記錄裡寫一次完整內容，不再每 0.15 秒洗一行\n- 非法模式順路開白銀寶箱的檢查少一次每回都新建的對照表，減少記憶體配置\n- 巡迴開始時量第一段步行距離的查詢，超過 3 秒沒算完就取消，不再佔住 vnavmesh 讓之後的移動（含別的插件的）等它算完\n- 在聊天框或插件視窗打字時按到 W／A／S／D／Q／E 或方向鍵，不再被當成你在操作角色而讓自動移動暫停\n- 緊急遭遇戰紀錄：結束時只剩 1～5 秒的場次改記為「成敗不明」，不再當成完成、也不會請塔塔露誇獎（逾時失敗可能被誤判成成功）\n- 順路開白銀寶箱、走去知見水晶或城內乙太之晶的途中你自己操作時，讓位的時間不再算進到達時限（不會因為你操作太久就放棄那個寶箱）\n- 別人在說話、隊伍、公會、通訊貝等頻道貼出魔尋寶結果或「第二處財寶」原句時，不再被當成自己收到的系統訊息（寶箱巡迴不會因此提早收尾）\n- 巡迴、非法模式換目標或讓位給 Lifestream 時，不再取消別的插件正在計算的移動路線（例如你在地圖上點目的地時 Lifestream 的路線）",
-    "LastUpdate": 1792601441
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675871873",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675871873",
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時可能讓遊戲崩潰；繪圖設定「過場動畫中也繪製」「畫面淡出時也繪製」打開後不再反而永遠不繪製",
+    "LastUpdate": 1792953831
   },
   {
     "Author": "ffxiv-tc-port",
@@ -1882,7 +1882,7 @@
     "Author": "Ice",
     "Name": "Explorer's Icebox",
     "InternalName": "ExplorersIcebox",
-    "AssemblyVersion": "7.25.0.20",
+    "AssemblyVersion": "7.25.0.21",
     "Description": "協助提升無人島等級或採集各種無人島素材。需要 vnavmesh。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Explorers-Icebox",
@@ -1900,10 +1900,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ExplorersIcebox.png",
     "Punchline": "協助無人島開拓與素材採集。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656081317",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/656081317",
-    "LastUpdate": 1792408775,
-    "Changelog": "- 整理版本歷史，插件功能不變"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675873253",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/675873253",
+    "LastUpdate": 1792954238,
+    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時可能讓遊戲崩潰；繪圖設定「過場動畫中也繪製」「畫面淡出時也繪製」打開後不再反而永遠不繪製\n- 子模組網址改用新名稱 Pictomancy（功能不變）"
   },
   {
     "Author": "Haselnussbomber",
