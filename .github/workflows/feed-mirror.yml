@@ -1,4 +1,4 @@
-# 同步外掛發版到 feed：本機 scripts/release_plugin.py 只推 tag + 觸發外掛 repo 的
+# 同步插件發版到 feed：本機 scripts/release_plugin.py 只推 tag + 觸發外掛 repo 的
 # release.yml 就返回，不等 CI。這個排程 workflow 跑 scripts/mirror_releases.py，
 # 把已經建好的 release 同步進 repo.json。
 # 背景、事故紀錄、命名沿革見 docs/feed-mirror-notes.md——這裡只留規則本身。
