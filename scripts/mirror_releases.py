@@ -3,9 +3,9 @@
 this feed repo's own releases, then refresh repo.json.
 
 Normally runs inside the DalamudPluginsTC repo's own GitHub Actions workflow
-(feed-mirror.yml, self-hosted runner); it can also be run by hand from a local
+(feed-mirror.yml, GitHub-hosted runner); it can also be run by hand from a local
 checkout. Either way it uses an App token that is never stored in the source
-plugin repos. `PUBLIC_REPO` keeps its old name: the feed repo is private too.
+plugin repos.
 """
 import base64
 import copy
@@ -303,7 +303,7 @@ def latest_release(repo):
 
 
 def download_asset(asset_url, dest):
-    # 一定要帶 App token 環境：private repo 的資產只有 App 讀得到，而 self-hosted runner
+    # 一定要帶 App token 環境：private repo 的資產只有 App 讀得到，而 CI runner
     # 上沒有本機 gh 登入可退回（沒帶時 gh 回 exit 4「set GH_TOKEN」，整輪 mirror 靜默零更新）。
     with open(dest, "wb") as f:
         subprocess.run(

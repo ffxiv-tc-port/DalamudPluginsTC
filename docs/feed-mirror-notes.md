@@ -106,3 +106,19 @@
 `self-hosted` runner、App token、失敗分級、commit+push）逐字等價，只有
 `concurrency.group` 跟著改名成 `feed-mirror`（配合新檔名，避免沿用可能同樣卡住的
 舊群組名）。
+
+## 2026-10-27：轉公開，改代管 runner（B6）
+
+公開 repo 的 self-hosted job 被 runner group（`allows_public_repositories=false`）擋住、永遠排隊，
+而排程排隊不會報錯——不改 workflow 就切公開＝feed 當下靜默停更。逐項會壞的地方與修法：
+
+| 會壞的地方 | 公開＋代管後的樣子 | 修法 |
+|---|---|---|
+| `runs-on: [self-hosted, Windows, X64]` | 永遠 queued | `windows-latest`（腳本只在 Windows 上驗過：檔名大小寫不敏感、symlink 落成純文字檔） |
+| `C:/Program Files/Python313/python.exe` 絕對路徑、`pip --user` | 代管機沒有這個路徑 | `actions/setup-python` 3.13＋`python` |
+| leak guard 讀 runner 本機 needle 檔 | 讀不到＝每個外掛的上傳被擋成 `[warn]`，run 綠、feed 不收新版 | repo secret `LEAK_GUARD_NEEDLE` 在獨立一步寫進 `RUNNER_TEMP` 檔（`LEAK_GUARD_NEEDLE_FILE`）並先跑一次 `leak_guard.py` 驗格式；讀不到整輪紅 |
+| leak guard 成功訊息印 needle 長度 | 公開 run log 人人可讀 | 不印長度 |
+| 行尾 | 代管映像的 `core.autocrlf` 不保證；沒正規化＝每輪整份 repo.json 換成 CRLF | checkout 前 `git config --global core.autocrlf true`（與 self-hosted 相同的正規化） |
+| token | — | **維持 App token**：GatherBuddyReborn 仍 private（GITHUB_TOKEN 讀不到）；一輪全掃約 220 次 API×每小時 4 輪，逼近 GITHUB_TOKEN 每 repo 每小時 1000 次上限；mirror release 的作者維持 `tctoolbox[bot]`。寫回 main 本來就是 checkout 帶的 GITHUB_TOKEN（`permissions: contents: write`），不變 |
+| 長路徑 | 代管機 `RUNNER_TEMP`＝`D:\a\_temp`，比 self-hosted 服務帳號短 | 不用改（clone 仍帶 `core.longpaths=true`） |
+| 排程 | 公開 repo 60 天沒有活動會被停用 | feed commit 頻繁，正常不會觸發；長期沒有發版時要留意 |

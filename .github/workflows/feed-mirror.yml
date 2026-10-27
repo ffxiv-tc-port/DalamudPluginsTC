@@ -29,9 +29,16 @@ jobs:
   # 要跳過就跳過 step，不要跳過 job。
   mirror:
     name: mirror releases into repo.json
-    # self-hosted，標籤對到 org 唯一那台 runner 的實際 labels（大小寫需逐字對）。
-    runs-on: [self-hosted, Windows, X64]
+    # 公開 repo 的 self-hosted job 會被 runner group 擋住、永遠排隊（feed 靜默停更）⇒ 代管機。
+    # 選 Windows 不選 Ubuntu：腳本只在 Windows 上驗過（檔名大小寫不敏感、symlink 落成純文字檔）。
+    runs-on: windows-latest
     steps:
+      # repo.json 的 blob 是 LF，Python 在 Windows 寫出 CRLF ⇒ 靠 autocrlf 在 add 時正規化；
+      # 不依賴代管映像的預設值：沒正規化＝每輪整份 repo.json 改行尾。
+      - name: 行尾正規化
+        shell: bash
+        run: git config --global core.autocrlf true
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -41,31 +48,48 @@ jobs:
           # 要能 `git show HEAD:repo.json`，以及推送被搶先時 rebase。
           fetch-depth: 0
 
-      # 刻意不用 actions/setup-python：它的安裝腳本要改登錄檔，自架 runner 的服務帳號
-      # 沒有那個權限，改吃機器層 Python（絕對路徑：服務帳號環境不一定跟著機器 PATH 更新）。
-      - name: 確認機器層 Python
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: 相依套件
         shell: bash
         run: |
-          "/c/Program Files/Python313/python.exe" --version
-          # app_token.py 簽 JWT 要 cryptography；--user 裝進服務帳號自己的使用者目錄，
-          # 不需要管理員，第二次起走快取幾秒就過。
-          "/c/Program Files/Python313/python.exe" -m pip install --user --quiet --disable-pip-version-check cryptography
-          "/c/Program Files/Python313/python.exe" -c "import cryptography, sys; print('cryptography', cryptography.__version__)"
+          # app_token.py 簽 JWT 要 cryptography。
+          python -m pip install --quiet --disable-pip-version-check cryptography
+          python -c "import cryptography; print('cryptography', cryptography.__version__)"
+
+      # needle 只在這一步碰得到；讀不到或格式不對就整輪失敗（大聲），不讓每個外掛
+      # 各自被閘門擋成 [warn]、run 照樣綠而 feed 不再收新版。
+      - name: 帳號痕跡閘門的 needle
+        shell: bash
+        env:
+          LEAK_GUARD_NEEDLE: ${{ secrets.LEAK_GUARD_NEEDLE }}
+          LEAK_GUARD_NEEDLE_FILE: ${{ runner.temp }}/leak-needle.txt
+        run: |
+          set -uo pipefail
+          printf '%s' "$LEAK_GUARD_NEEDLE" > "$LEAK_GUARD_NEEDLE_FILE"
+          if ! python scripts/leak_guard.py; then
+            echo "::error title=帳號痕跡閘門沒有 needle::repo secret LEAK_GUARD_NEEDLE 未設定或格式不對 —— 這一輪不同步"
+            exit 1
+          fi
 
       - name: 同步 release 並更新 repo.json
         id: mirror
         shell: bash
         env:
-          # App installation token：org 全 private 後這個 repo 的預設 GITHUB_TOKEN
-          # 只有自己的權限，讀不到其他 70 個外掛 repo 的 release，改由
-          # mirror_releases.py 自己用 scripts/app_token.py 換 App token。
+          # 刻意用 App token、不用這個 repo 的 GITHUB_TOKEN：維持 private 的來源 repo
+          # （GatherBuddyReborn）只有 App 讀得到；一輪全掃約 220 次 API、每小時 4 輪，
+          # 會撞 GITHUB_TOKEN 每 repo 每小時 1000 次的上限（撞到＝逐外掛 [warn]、feed 靜默少版本）。
           TCTOOLBOX_APP_ID: ${{ secrets.TCTOOLBOX_APP_ID }}
           TCTOOLBOX_APP_KEY: ${{ secrets.TCTOOLBOX_APP_KEY }}
+          LEAK_GUARD_NEEDLE_FILE: ${{ runner.temp }}/leak-needle.txt
         run: |
           # 刻意不用 `set -e`：離開碼交給下一步判。這裡 abort 會讓腳本已寫進
           # $GITHUB_STEP_SUMMARY 的分級表沒有人去解讀。
           set -uo pipefail
-          "/c/Program Files/Python313/python.exe" scripts/mirror_releases.py 2>&1 | tee mirror.log
+          python scripts/mirror_releases.py 2>&1 | tee mirror.log
           # 接了管線之後 $? 是 tee 的（永遠 0）—— 要 PIPESTATUS[0] 才是 python 的。
           rc="${PIPESTATUS[0]}"
           echo "rc=$rc" >> "$GITHUB_OUTPUT"
@@ -101,7 +125,7 @@ jobs:
       - name: 🔴 repo.json 保險（RepoUrl 不可變）
         shell: bash
         run: |
-          "/c/Program Files/Python313/python.exe" scripts/verify_repo_json.py
+          python scripts/verify_repo_json.py
 
       - name: 有沒有變更
         id: diff
@@ -126,7 +150,7 @@ jobs:
           git config user.email "noreply@anthropic.com"
 
           # 訊息一律走檔案，不要用 -m 接多行/中文：changelog 是逐字讀第一行的。
-          "/c/Program Files/Python313/python.exe" scripts/feed_commit_message.py > "$RUNNER_TEMP/feed-msg.txt"
+          python scripts/feed_commit_message.py > "$RUNNER_TEMP/feed-msg.txt"
           echo "--- commit 訊息 ---"
           cat "$RUNNER_TEMP/feed-msg.txt"
           echo "-------------------"

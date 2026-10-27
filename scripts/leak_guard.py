@@ -2,7 +2,7 @@
 """上傳前的帳號痕跡閘門：mirror 要上傳的插件 zip／source zip 先掃，有真命中就不傳。
 
 契約：要找的字（needle）只從 repo 外的本機檔讀（預設 NEEDLE_FILE，可用環境變數 LEAK_GUARD_NEEDLE_FILE 覆寫），
-原始碼與 workflow 都不含它。讀不到 needle 一律不放行（fail-closed），訊息只印長度、不印內容。
+原始碼與 workflow 都不含它。讀不到 needle 一律不放行（fail-closed）；訊息不印內容也不印長度（公開 repo 的 run log 人人可讀）。
 真命中＝字詞開頭且大小寫是全小寫／首字大寫／全大寫；字中出現或怪大小寫算誤判、不擋。
 """
 import base64
@@ -90,7 +90,7 @@ def check_files(paths, needle_path=None):
             bad.append(f"{os.path.basename(p)} real={c} members={mem[:3]}")
     if bad:
         return False, "擋下：" + "；".join(bad)
-    return True, f"乾淨（{len(paths)} 個檔，needle 長度 {len(n)}）"
+    return True, f"乾淨（{len(paths)} 個檔）"
 
 
 if __name__ == "__main__":
