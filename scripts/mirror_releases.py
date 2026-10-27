@@ -405,6 +405,8 @@ CHANGELOG_NOISE_PATTERNS = [
     re.compile(r"^台服移植：彙整歷史為單一 commit$"),
     # 只改 README 的 commit（主旨固定這一句），插件本身沒有變化。
     re.compile(r"^更新 README（程式碼不變）$"),
+    # 轉公開時把發版流程改到 GitHub 代管機器的那一顆（主旨由 workflow_patch.py --hosted-public 的批次決定），插件本身沒有變化。
+    re.compile(r"^發版流程改用 GitHub 代管機器建置"),
     # 只動註解的整理 commit（主旨一律以「整理註解」開頭），對使用者沒有可見變化。
     # 🔴 這條必須排最後：COMMENT_ONLY_PATTERN 取的是 [-1]。
     re.compile(r"^整理註解"),
