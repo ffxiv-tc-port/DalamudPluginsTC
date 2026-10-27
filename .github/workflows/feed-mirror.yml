@@ -32,6 +32,9 @@ jobs:
     # 公開 repo 的 self-hosted job 會被 runner group 擋住、永遠排隊（feed 靜默停更）⇒ 代管機。
     # 選 Windows 不選 Ubuntu：腳本只在 Windows 上驗過（檔名大小寫不敏感、symlink 落成純文字檔）。
     runs-on: windows-latest
+    env:
+      # 代管 Windows 的 Python stdout 是 cp1252，印中文就擲 UnicodeEncodeError。
+      PYTHONUTF8: "1"
     steps:
       # repo.json 的 blob 是 LF，Python 在 Windows 寫出 CRLF ⇒ 靠 autocrlf 在 add 時正規化；
       # 不依賴代管映像的預設值：沒正規化＝每輪整份 repo.json 改行尾。
