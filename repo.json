@@ -999,7 +999,7 @@
     "Author": "veyn, croizat",
     "Name": "Visland",
     "InternalName": "visland",
-    "AssemblyVersion": "7.25.0.18",
+    "AssemblyVersion": "7.25.0.19",
     "Description": "自動化採集、開拓工坊排班等無人島相關作業。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/visland",
@@ -1020,10 +1020,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/visland.png",
     "Punchline": "自動化無人島各項活動",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/678705939",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/678705939",
-    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時，傳入無法轉換的參數可能讓遊戲崩潰",
-    "LastUpdate": 1792954281
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/684874349",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/684874349",
+    "Changelog": "- 修正採集路線走尋路時，上坐騎的那段被 vnavmesh 取消、反覆重算尋路最後被判卡住停下",
+    "LastUpdate": 1793189195
   },
   {
     "Author": "veyn",
