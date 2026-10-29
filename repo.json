@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.25.0.63",
+    "AssemblyVersion": "7.25.0.64",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/689517816",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/689517816",
-    "Changelog": "- 新增「沒有房屋的公會成立滿 30 天時通知可以購買土地」：公會資訊分頁顯示成立日期與公會房屋狀態（可購買／還差幾天／不知道），天數可在通知設定調整\n- 相依函式庫 NightmareUI 對齊到補上授權檔的版本（功能不變）",
-    "LastUpdate": 1793298773,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/689592395",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/689592395",
+    "Changelog": "- 修正公會成立日期一直抓不到：打開「公會情報」或公會視窗「情報」分頁都會記下成立日期，抓不到時記錄檔會寫出原因",
+    "LastUpdate": 1793300519,
     "CategoryTags": [
       "Inventory"
     ]
