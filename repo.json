@@ -418,7 +418,7 @@
     "Author": "img02",
     "Name": "Hunt Helper",
     "InternalName": "HuntHelper",
-    "AssemblyVersion": "7.25.0.10",
+    "AssemblyVersion": "7.25.0.11",
     "Description": "顯示標記重生點的狩獵地圖、A級討伐車隊記錄器（可匯出/匯入分享）、語音播報、聊天通知，以及S級討伐重生計數器",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/HuntHelper",
@@ -438,10 +438,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/HuntHelper.png",
     "Punchline": "狩獵任務雷達＋車隊記錄器＋通知＋S級討伐輔助工具等一應俱全。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/678696392",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/678696392",
-    "Changelog": "- 修正南薩納蘭 F.A.T.E. 計時：F.A.T.E. 失敗後的幾秒內不再一直重設倒數，F.A.T.E. 清單改為隨時依剩餘時間排好",
-    "LastUpdate": 1792599677
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/688891277",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/688891277",
+    "Changelog": "- 同一隻狩獵魔物的發現通知加上冷卻（預設 5 分鐘，可在通知分頁的設定調整，0＝關閉），魔物在偵測範圍邊緣進進出出不再反覆洗版",
+    "LastUpdate": 1793285537
   },
   {
     "Author": "Critical_Impact",
@@ -1181,7 +1181,7 @@
     "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.25.0.25",
+    "AssemblyVersion": "7.25.0.26",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/DailyDuty",
@@ -1204,10 +1204,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/678694136",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/678694136",
-    "Changelog": "- 討伐輔助：傳送與上坐騎期間不再影響別的插件的自動移動；巡邏時詠唱或上坐騎不再被誤判成到不了",
-    "LastUpdate": 1792594578
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/688891390",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/688891390",
+    "Changelog": "- 討伐輔助：「前往目標地圖」抵達後自動接著巡邏；巡邏發現目標後先接近到設定距離內再停（兩項都可在巡邏設定關閉）",
+    "LastUpdate": 1793285545
   },
   {
     "Author": "liza, qstxiv, & various contributors",
