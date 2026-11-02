@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.25.0.81",
+    "AssemblyVersion": "7.25.0.83",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/680482351",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/680482351",
-    "Changelog": "- 伊弗利特、泰坦討伐戰（普通）的限時必殺小怪（火獄之楔、泰坦的核心、花崗石牢）：「何時切換目標」設成不換目標時也會切過去打，並提供給 AutoDuty 切目標",
-    "LastUpdate": 1793076560,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/701192057",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/701192057",
+    "Changelog": "- 深層迷宮避開陷阱時能走陷阱之間的窄路：AI 閃陷阱的圓從 2 碼縮成 1.8 碼（仍大於實測觸發距離），不再把畫面上看得到的縫判成走不過；要開的寶箱被陷阱圍住、8 秒走不到就本層放棄它，不再站著不動\n- 深層迷宮避開怪物仇恨範圍時不再貼著邊走：自動趕路與風箏後退都和偵測範圍多保持 2 碼安全距離（可調，0＝照舊貼邊），走不過去時先拿掉這段距離再試，還是卡住才整個停止迴避\n- 深層迷宮 BOSS 戰不再省藥：BOSS 戰中喝藥判斷模組照常運作，而且 BOSS 層改用較寬的門檻（深層迷宮專屬藥水血量低於 90% 或預估 10 秒內低於 70% 就喝、治療劑低於 50% 就用；三個門檻可在設定調整，只會比平常更早喝）\n- 深層迷宮仇恨種類修正：死者宮殿 101~110 層的深宮元精改為聽覺、深宮駿鷹改為接近（原本誤標成視覺，自動趕路只繞開牠面前的扇形，從背後或側面經過會被發現）",
+    "LastUpdate": 1793611369,
     "CategoryTags": [
       "Jobs"
     ]
