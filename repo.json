@@ -1181,7 +1181,7 @@
     "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.25.0.26",
+    "AssemblyVersion": "7.25.0.27",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/DailyDuty",
@@ -1204,10 +1204,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/688891390",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/688891390",
-    "Changelog": "- 討伐輔助：「前往目標地圖」抵達後自動接著巡邏；巡邏發現目標後先接近到設定距離內再停（兩項都可在巡邏設定關閉）",
-    "LastUpdate": 1793285545
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/705254311",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/705254311",
+    "Changelog": "- 討伐輔助說明更新：寫明點一下會一路做完（傳送後接著巡邏、發現後接近），自己操作角色是暫停而不是結束\n- 修正討伐輔助「接近目標」一發現遠處的怪就說它消失：太遠選不到的怪現在會照常飛過去",
+    "LastUpdate": 1793702852
   },
   {
     "Author": "liza, qstxiv, & various contributors",
