@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.25.0.48",
+    "AssemblyVersion": "7.25.0.49",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/710535892",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/710535892",
-    "Changelog": "- 製作清單編輯器：配方清單與複製清單的空白選項不再觸發介面斷言",
-    "LastUpdate": 1793817843
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/710637910",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/710637910",
+    "Changelog": "- 修正製作模擬器在內靜加改革時品質偶爾少算 1 點，製作途中不再因此報錯並多等半秒",
+    "LastUpdate": 1793820073
   },
   {
     "Author": "Herculezz",
@@ -418,7 +418,7 @@
     "Author": "img02",
     "Name": "Hunt Helper",
     "InternalName": "HuntHelper",
-    "AssemblyVersion": "7.25.0.11",
+    "AssemblyVersion": "7.25.0.12",
     "Description": "顯示標記重生點的狩獵地圖、A級討伐車隊記錄器（可匯出/匯入分享）、語音播報、聊天通知，以及S級討伐重生計數器",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/HuntHelper",
@@ -438,10 +438,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/HuntHelper.png",
     "Punchline": "狩獵任務雷達＋車隊記錄器＋通知＋S級討伐輔助工具等一應俱全。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/688891277",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/688891277",
-    "Changelog": "- 同一隻狩獵魔物的發現通知加上冷卻（預設 5 分鐘，可在通知分頁的設定調整，0＝關閉），魔物在偵測範圍邊緣進進出出不再反覆洗版",
-    "LastUpdate": 1793285537
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/710637279",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/710637279",
+    "Changelog": "- 修正地圖選項視窗開著一般分頁時不斷觸發介面斷言（畫面不變）",
+    "LastUpdate": 1793820010
   },
   {
     "Author": "Critical_Impact",
