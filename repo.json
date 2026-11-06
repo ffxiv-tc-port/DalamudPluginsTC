@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.25.0.33",
+    "AssemblyVersion": "7.25.0.34",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717916634",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717916634",
-    "Changelog": "- 登高跳跳樂提早退出：按下退出確認後若退出被延後，改為繼續等到離開，不再誤報「沒有自動退出」\n- 定時走去活動解說員時，被 NPC 傳送後不再誤判成「你自己接手移動」而停下 2 秒",
-    "LastUpdate": 1793985289,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/718705598",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/718705598",
+    "Changelog": "- 金碟遊樂園 GATE 在場上時不再每幀存設定檔（每幀配置與硬碟寫入大降）\n- 搶救小雛鳥大作戰：替你報名之後（對話結束）就走回最近的活動解說員等下一場\n- 定時走去活動解說員：被 NPC 傳送走之後，這個時段（:55／:15／:35 那一分鐘）不再走回去對話\n- 空軍裝甲駕駛員：同一個位置剛開過槍就先打別的目標，避免連點太快（同一點最短間隔預設 500 毫秒，可調）\n- 空軍裝甲駕駛員：炸彈避讓圈與目標標靶圈拆成兩個設定，舊設定自動換成「炸彈＝原值＋10、目標＝原值－10」\n- 登高跳跳樂與空軍裝甲駕駛員：副本結束後的金碟幣結算視窗出現 2 秒後自動關閉，狀態與 log 改說明「在等結算視窗結束」",
+    "LastUpdate": 1794002333,
     "CategoryTags": [
       "Minigames"
     ]
@@ -1301,7 +1301,7 @@
     "Author": "Usagi, PlusoneChiang",
     "Name": "IINACT",
     "InternalName": "IINACT",
-    "AssemblyVersion": "7.25.0.31",
+    "AssemblyVersion": "7.25.0.32",
     "Description": "在類 ACT 環境中直接執行 FFXIV_ACT_Plugin 的戰鬥數據解析插件,內建深度改造的 Overlay Plugin 移植版,無需另外安裝 ACT。\n可搭配 Crossingway 在遊戲內顯示戰鬥數據覆蓋層。\nFork 自 marzent/IINACT(繁體中文版客戶端,API 13 / .NET 9,TC opcodes 由 PlusoneChiang 維護)。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/IINACT",
@@ -1321,10 +1321,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/IINACT.png",
     "Punchline": "免 ACT 的戰鬥數據解析插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/678694946",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/678694946",
-    "Changelog": "- 修正讀取戰鬥對象偶爾失敗時，疊加層可能拿到別的對象殘留的資料（例如名字、血量、狀態錯置）",
-    "LastUpdate": 1792599366
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/718705711",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/718705711",
+    "Changelog": "- 支援解析元件 FFXIV_ACT_Plugin 3.0.3.4",
+    "LastUpdate": 1794002332
   },
   {
     "Author": "Ice",
@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.25.0.42",
+    "AssemblyVersion": "7.25.0.43",
     "Description": "台服自製雜項 QoL 工具箱。模組化設計，每個功能獨立開關（預設全部關閉）：公會合建素材一鍵全交、野外陸行鳥自動餵食基沙爾野菜、自動完成 QTE 連打、周邊玩家數量統計與清單（含偵測規則：名稱命中正規表達式時通知並執行指令）、自動園圃收穫／護理／施肥／播種。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服雜項 QoL 模組集：合建交料、餵鳥、QTE、周邊玩家、園圃自動化。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/705311589",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/705311589",
-    "Changelog": "- 周圍敵人／周圍可互動物件／小地圖顯示周圍目標的搜尋半徑上限從 200 米提高到 500 米",
-    "LastUpdate": 1793704103
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/718705636",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/718705636",
+    "Changelog": "- 快速交易：右鍵當下選單還沒就緒或剛送過時，0.5 秒內自動重試，不再約一半的點擊沒放進交易視窗",
+    "LastUpdate": 1794002330
   },
   {
     "Author": "daemitus, MidoriKami",
