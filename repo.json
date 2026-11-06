@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.25.0.84",
+    "AssemblyVersion": "7.25.0.85",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/705925772",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/705925772",
-    "Changelog": "- 補上 52 場大型任務的場地邊界（沒有專屬模組時自動閃避不再往場外走、雷達畫出真的場地）：萬魔殿普通版 10 場、歐米茄時空狹縫 18 場、伊甸希望樂園 16 場、亞歷山大機神城 6 場、巴哈姆特大迷宮 2 場\n- 沒有專屬模組的大型任務（8 人與 24 人團隊任務）開打後也會出現雷達視窗：畫出場地範圍、敵人位置，以及照讀條猜出來的危險區；設定改名為「沒有專屬模組的討伐戰與大型任務也顯示雷達」（同一個開關，預設開；關掉就和以前一樣），視窗標題改為「雷達（沒有專屬模組）」；自動閃避的判斷方式不變",
-    "LastUpdate": 1793716566,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717994997",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717994997",
+    "Changelog": "- 金碟 GATE「暴風倖存者」的場地外圍攻擊改判成甜甜圈形，站在中間不再被當成腳下危險",
+    "LastUpdate": 1793986872,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1213,7 +1213,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.25.0.47",
+    "AssemblyVersion": "7.25.0.48",
     "Description": "自動跑任務插件：\n- 自動導航至任務目標並完成對話、互動與戰鬥觸發\n- 支援主線／支線任務、部分部落任務與採集類任務\n- 提供任務執行優先順序與除錯視窗\n- 需搭配 vnavmesh、TextAdvance、Lifestream 使用",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,10 +1232,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "自動跑任務助手，導航並完成任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717887458",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717887458",
-    "Changelog": "- 登出時任務視窗不再每一幀重複停止動作，降低閒置耗能",
-    "LastUpdate": 1793984760
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717994612",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717994612",
+    "Changelog": "- 任務中斷後重新開始時，若都市傳送網水晶還沒開完，改用傳送到目的地那一區的乙太之光再走過去，不再直接停下",
+    "LastUpdate": 1793986891
   },
   {
     "Author": "NightmareXIV",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.25.0.47",
+    "AssemblyVersion": "7.25.0.48",
     "Description": "[Questionable 開發用插件]：使用 Pictomancy 繪製採集點路徑，供路徑資料編輯者使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable 開發用] 繪製採集路徑點",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717887457",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717887457",
-    "LastUpdate": 1793984760,
-    "Changelog": "- 登出時任務視窗不再每一幀重複停止動作，降低閒置耗能"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717994613",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717994613",
+    "LastUpdate": 1793986891,
+    "Changelog": "- 任務中斷後重新開始時，若都市傳送網水晶還沒開完，改用傳送到目的地那一區的乙太之光再走過去，不再直接停下"
   },
   {
     "Author": "WildWolf",
