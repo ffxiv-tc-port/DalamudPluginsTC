@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.25.0.64",
+    "AssemblyVersion": "7.25.0.65",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/689592395",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/689592395",
-    "Changelog": "- 修正公會成立日期一直抓不到：打開「公會情報」或公會視窗「情報」分頁都會記下成立日期，抓不到時記錄檔會寫出原因",
-    "LastUpdate": 1793300519,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717917406",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717917406",
+    "Changelog": "- 沒裝 Lifestream 時不再每幀擲出 IPC 例外（減少每幀記憶體配置），記錄檔也不再每分鐘寫一行「Lifestream.IsBusy 未註冊」",
+    "LastUpdate": 1793985289,
     "CategoryTags": [
       "Inventory"
     ]
@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.25.0.32",
+    "AssemblyVersion": "7.25.0.33",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/697833850",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/697833850",
-    "Changelog": "- GATE 自動報名：替你按 NPC 對話前先請 YesAlready 暫停，避免兩個插件同時按同一個對話框",
-    "LastUpdate": 1793524010,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717916634",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717916634",
+    "Changelog": "- 登高跳跳樂提早退出：按下退出確認後若退出被延後，改為繼續等到離開，不再誤報「沒有自動退出」\n- 定時走去活動解說員時，被 NPC 傳送後不再誤判成「你自己接手移動」而停下 2 秒",
+    "LastUpdate": 1793985289,
     "CategoryTags": [
       "Minigames"
     ]
@@ -1029,7 +1029,7 @@
     "Author": "veyn",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
-    "AssemblyVersion": "7.25.0.27",
+    "AssemblyVersion": "7.25.0.28",
     "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vnavmesh",
@@ -1049,10 +1049,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/vnavmesh.png",
     "Punchline": "自動移動吧！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/678697614",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/678697614",
-    "Changelog": "- 修正其他插件要求「取消全部尋路」後，排隊中或已算好的移動請求仍讓角色又開始走",
-    "LastUpdate": 1792600579
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717916676",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717916676",
+    "Changelog": "- 從沒改過設定時，每次啟動不再在記錄檔寫一行「讀取設定檔失敗」錯誤",
+    "LastUpdate": 1793985330
   },
   {
     "Author": "Team Wrath",
