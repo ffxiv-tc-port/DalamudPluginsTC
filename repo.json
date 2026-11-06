@@ -447,7 +447,7 @@
     "Author": "Critical_Impact",
     "Name": "Allagan Tools",
     "InternalName": "InventoryTools",
-    "AssemblyVersion": "7.25.0.29",
+    "AssemblyVersion": "7.25.0.30",
     "Description": "Allagan Tools 的主要目的是追蹤你所有角色/僱員/公會倉庫中的道具。透過它的篩選系統，你將不再遺失任何道具的蹤跡，也不再不知道道具該收納在哪裡。\n\n雖然這是它的主要功能，但它還擁有相當豐富的其他功能，包括：\n\t- 製作規劃\n\t- 市場公告板整合\n\t- 在搜尋/整理及挑選製作材料時於背包中高亮顯示道具\n\t- 包含商人與取得來源等資訊的道具視窗\n\t- 可完整搜尋的任務/怪物/飛空艇/潛水艇視窗\n\t- 讓你能為特定道具設定複雜搜尋條件的篩選系統\n\t- 提示視窗整合，滑鼠懸停即可查看道具所在位置",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/InventoryTools",
@@ -467,10 +467,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/InventoryTools.png",
     "Punchline": "讓你的 FFXIV 井井有條，輕鬆定位/顯示道具應收納何處、規劃製作，並搜尋怪物、任務、飛空艇與潛水艇！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/678697219",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/678697219",
-    "Changelog": "- 預防在商店 NPC 附近查詢商店時，遊戲的事件物件清單裡若出現空位會讓遊戲直接關閉：遇到時這一次當作沒有商店，並在記錄檔留一行提示\n- 修正與 Wotsit 搜尋整合時，插件載入 5 秒後的補註冊在背景執行緒進行、可能與新增或刪除清單同時改動註冊表而出錯，現在一律交回遊戲主執行緒處理\n- 停用或更新插件時，存庫存資料最多只讓遊戲畫面停住約 2 秒（原本最多約 5 秒以上），存不完就保留上一份完整的存檔\n- 修正簡易製作途中製作視窗短暫讀不到時，製作清單可能被記入一筆數量大到不合理的完成數（例如 42 億），現在讀不到的那一幀直接略過",
-    "LastUpdate": 1792599696
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717887381",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717887381",
+    "Changelog": "- 背包資料存檔再減少約六成：變動後安靜 10 秒才寫、連續變動最多 2 分鐘寫一次（登入、登出、換角、關閉插件仍立刻寫）",
+    "LastUpdate": 1793984706
   },
   {
     "Author": "electr0sheep, Nuko",
@@ -1181,7 +1181,7 @@
     "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.25.0.28",
+    "AssemblyVersion": "7.25.0.29",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/DailyDuty",
@@ -1204,16 +1204,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/705306527",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/705306527",
-    "Changelog": "- 討伐輔助偵測半徑上限從 100 米提高到 300 米：實測遠處也能發現標的，可自行把半徑調到約 200 米，一趟巡邏涵蓋更多出現點",
-    "LastUpdate": 1793704030
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717887200",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717887200",
+    "Changelog": "- 修正關閉軍隊分隊任務結算視窗時插件報錯，並改善特殊任務完成的辨識（每週清單標成已完成）",
+    "LastUpdate": 1793984657
   },
   {
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.25.0.46",
+    "AssemblyVersion": "7.25.0.47",
     "Description": "自動跑任務插件：\n- 自動導航至任務目標並完成對話、互動與戰鬥觸發\n- 支援主線／支線任務、部分部落任務與採集類任務\n- 提供任務執行優先順序與除錯視窗\n- 需搭配 vnavmesh、TextAdvance、Lifestream 使用",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,10 +1232,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "自動跑任務助手，導航並完成任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/678707298",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/678707298",
-    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時可能讓遊戲崩潰；繪圖設定「過場動畫中也繪製」「畫面淡出時也繪製」打開後不再反而永遠不繪製",
-    "LastUpdate": 1792958498
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717887458",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717887458",
+    "Changelog": "- 登出時任務視窗不再每一幀重複停止動作，降低閒置耗能",
+    "LastUpdate": 1793984760
   },
   {
     "Author": "NightmareXIV",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.25.0.46",
+    "AssemblyVersion": "7.25.0.47",
     "Description": "[Questionable 開發用插件]：使用 Pictomancy 繪製採集點路徑，供路徑資料編輯者使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable 開發用] 繪製採集路徑點",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/678706467",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/678706467",
-    "LastUpdate": 1792958498,
-    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時可能讓遊戲崩潰；繪圖設定「過場動畫中也繪製」「畫面淡出時也繪製」打開後不再反而永遠不繪製"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717887457",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717887457",
+    "LastUpdate": 1793984760,
+    "Changelog": "- 登出時任務視窗不再每一幀重複停止動作，降低閒置耗能"
   },
   {
     "Author": "WildWolf",
