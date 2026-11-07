@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.25.0.40",
+    "AssemblyVersion": "7.25.0.41",
     "Description": "自動幫你跑副本，支援親信戰友、劇情輔助器、冒險者分隊、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/680481381",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/680481381",
-    "Changelog": "- 王戰時自動把目標切到限時必殺的小怪（例：伊弗利特討伐戰的火獄之楔），打掉後切回首領（需要新版 BossModReborn）",
-    "LastUpdate": 1793076507
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/720878688",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/720878688",
+    "Changelog": "- 卸載或重複停止時不再停掉其他插件正在走的導航路徑",
+    "LastUpdate": 1794060266
   },
   {
     "Author": "Det",
@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.25.0.34",
+    "AssemblyVersion": "7.25.0.35",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/718705598",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/718705598",
-    "Changelog": "- 金碟遊樂園 GATE 在場上時不再每幀存設定檔（每幀配置與硬碟寫入大降）\n- 搶救小雛鳥大作戰：替你報名之後（對話結束）就走回最近的活動解說員等下一場\n- 定時走去活動解說員：被 NPC 傳送走之後，這個時段（:55／:15／:35 那一分鐘）不再走回去對話\n- 空軍裝甲駕駛員：同一個位置剛開過槍就先打別的目標，避免連點太快（同一點最短間隔預設 500 毫秒，可調）\n- 空軍裝甲駕駛員：炸彈避讓圈與目標標靶圈拆成兩個設定，舊設定自動換成「炸彈＝原值＋10、目標＝原值－10」\n- 登高跳跳樂與空軍裝甲駕駛員：副本結束後的金碟幣結算視窗出現 2 秒後自動關閉，狀態與 log 改說明「在等結算視窗結束」",
-    "LastUpdate": 1794002333,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/720878678",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/720878678",
+    "Changelog": "- 卸載或停用模組時不再停掉其他插件正在走的導航路徑",
+    "LastUpdate": 1794060263,
     "CategoryTags": [
       "Minigames"
     ]
@@ -1213,7 +1213,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.25.0.48",
+    "AssemblyVersion": "7.25.0.49",
     "Description": "自動跑任務插件：\n- 自動導航至任務目標並完成對話、互動與戰鬥觸發\n- 支援主線／支線任務、部分部落任務與採集類任務\n- 提供任務執行優先順序與除錯視窗\n- 需搭配 vnavmesh、TextAdvance、Lifestream 使用",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,10 +1232,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "自動跑任務助手，導航並完成任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717994612",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717994612",
-    "Changelog": "- 任務中斷後重新開始時，若都市傳送網水晶還沒開完，改用傳送到目的地那一區的乙太之光再走過去，不再直接停下",
-    "LastUpdate": 1793986891
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/720878904",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/720878904",
+    "Changelog": "- 卸載時不再停掉其他插件正在走的導航路徑",
+    "LastUpdate": 1794060328
   },
   {
     "Author": "NightmareXIV",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.25.0.48",
+    "AssemblyVersion": "7.25.0.49",
     "Description": "[Questionable 開發用插件]：使用 Pictomancy 繪製採集點路徑，供路徑資料編輯者使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable 開發用] 繪製採集路徑點",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717994613",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/717994613",
-    "LastUpdate": 1793986891,
-    "Changelog": "- 任務中斷後重新開始時，若都市傳送網水晶還沒開完，改用傳送到目的地那一區的乙太之光再走過去，不再直接停下"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/720878914",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/720878914",
+    "LastUpdate": 1794060328,
+    "Changelog": "- 卸載時不再停掉其他插件正在走的導航路徑"
   },
   {
     "Author": "WildWolf",
