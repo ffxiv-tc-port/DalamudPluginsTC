@@ -2078,7 +2078,7 @@
     "Author": "Caraxi",
     "Name": "Simple Tweaks Plugin",
     "InternalName": "SimpleTweaksPlugin",
-    "AssemblyVersion": "7.25.0.0",
+    "AssemblyVersion": "7.25.0.1",
     "Description": "A collection of Quality of Life tweaks. Aiming to improve the experience without changing anything drastically.\nAll changes are toggleable, with everything disabled by default. Visit the Repo for a full list of tweaks. (Globe icon below)",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SimpleTweaksPlugin",
@@ -2098,9 +2098,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SimpleTweaksPlugin.png",
     "Punchline": "This was supposed to be simple...",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/0",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/0",
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/737963507",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/737963507",
     "Changelog": "- 台服移植版首發（以原作者 1.10.12.0 為底，併入上游 API13 線到 1.10.12.6 的修正）：設定檔與原本相同、換裝不會遺失設定\n- 移除使用統計上報；停用清單改隨插件出貨，不再每次載入向原作者下載\n- 台服修正：Fix '/target' 認得台服錯誤訊息、/r 切換悄悄話頻道不再出錯、自動打開擲骰視窗認得「請擲骰。」\n- 特徵碼對不上時只停用相依功能，不再整個插件都載不到；市場板強化改用唯一特徵碼",
-    "LastUpdate": 0
+    "LastUpdate": 1794455347
   }
 ]
