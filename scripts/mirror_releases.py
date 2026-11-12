@@ -129,6 +129,7 @@ SOURCE_REPOS = {
     "BetterMountRoulette": "ffxiv-tc-port/BetterMountRoulette",
     "GilDelta": "ffxiv-tc-port/GilDelta",
     "HoardFarm": "ffxiv-tc-port/HoardFarm",
+    "SimpleTweaksPlugin": "ffxiv-tc-port/SimpleTweaksPlugin",
 }
 
 # InternalName -> icon path within the source repo (on its default branch).
@@ -213,6 +214,8 @@ ICON_PATHS = {
     "GilDelta": "images/icon.png",
     # HoardFarm: 上游的圖是 300x300 RGB，已在我方 repo 換成 512x512 RGBA 並補上 sRGB/gAMA/pHYs。
     "HoardFarm": "icon.png",
+    # SimpleTweaksPlugin: 上游原圖 512x512 RGBA（帶 pHYs，沒有 sRGB／gAMA），與上游官方插件庫用的是同一張。
+    "SimpleTweaksPlugin": "images/icon.png",
     # GatheringPathRenderer: 刻意不在這裡列——上游的 repo 裡從沒放過圖示檔，也沒有第三方圖示可以借。
     # 留空不是遺漏：manifest 沒有 IconUrl 時 Dalamud 會退到內建的通用圖示，不是破圖。
 }

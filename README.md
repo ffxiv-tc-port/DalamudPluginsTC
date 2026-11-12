@@ -123,6 +123,7 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 | [**Mappy**](https://github.com/ffxiv-tc-port/Mappy) | [harbingerftw](https://github.com/harbingerftw/Mappy) | 以 ImGui 重繪並取代原生地圖視窗的全功能地圖，可顯示其他插件的標記與路線。 |
 | [**SortaKinda**](https://github.com/ffxiv-tc-port/SortaKinda) | [MidoriKami](https://github.com/MidoriKami/SortaKinda) | 依自訂規則把物品欄與兵裝庫的物品排進指定格子，取代原生 /isort。 |
 | [**Peeping Tom**](https://github.com/ffxiv-tc-port/PeepingTom) | [Caraxi](https://github.com/Caraxi/PeepingTom) | 顯示誰正在以你為目標，可保留紀錄、在對方頭上標示，被鎖定時發出提醒。 |
+| [**Simple Tweaks**](https://github.com/ffxiv-tc-port/SimpleTweaksPlugin) | [Caraxi](https://github.com/Caraxi/SimpleTweaksPlugin) | 一百多項生活便利小調整（介面、提示框、聊天、指令等），各自開關、預設全部關閉；台服移植版不上報使用統計。 |
 | [**Better Mount Roulette**](https://github.com/ffxiv-tc-port/BetterMountRoulette) | [CMDRNuffin](https://github.com/CMDRNuffin/BetterMountRoulette) | 從自訂坐騎分組隨機召喚。 |
 | [**High FPS Physics**](https://github.com/ffxiv-tc-port/xivlauncher_physics_plugin) | [ItsLunaYup](https://github.com/ItsLunaYup/xivlauncher_physics_plugin) | 修正高幀率下布料與頭髮的物理效果異常（把物理效果更新頻率限制在設定值）。 |
 | [**ScrollableTabs**](https://github.com/ffxiv-tc-port/ScrollableTabs) | [Haselnussbomber](https://github.com/Haselnussbomber/ScrollableTabs) | 用滑鼠滾輪切換遊戲介面中的分頁（物品欄、兵裝庫、人物、坐騎一覽等）。 |
