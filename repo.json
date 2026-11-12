@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.25.0.33",
+    "AssemblyVersion": "7.25.0.34",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/678702799",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/678702799",
-    "Changelog": "- 共用函式庫更新：修正自動操作遊戲視窗時可能讓遊戲崩潰；繪圖設定「過場動畫中也繪製」「畫面淡出時也繪製」打開後不再反而永遠不繪製",
-    "LastUpdate": 1792953733
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/739235623",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/739235623",
+    "Changelog": "- 機甲行動參與中不再自動施放宇宙衝刺；遊戲改版後駕駛申請書對不上時只停用那一列，不再讓整個插件載入失敗",
+    "LastUpdate": 1794483064
   },
   {
     "Author": "Liza Carvelli",
