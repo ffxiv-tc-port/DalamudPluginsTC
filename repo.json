@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.25.0.43",
+    "AssemblyVersion": "7.25.0.44",
     "Description": "- 一鍵傳送至任何世界或都市傳送網目的地\n- 點擊區域地圖上的城內乙太之晶即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速都市傳送網移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/684668045",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/684668045",
-    "Changelog": "- 傳送抵達後等待主水晶不再空等 30 秒\n- 相依函式庫 NightmareUI 對齊到補上授權檔的版本（功能不變）",
-    "LastUpdate": 1793184392
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/739741669",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/739741669",
+    "Changelog": "- 資料表缺列時不再讓傳送功能整個失效（自訂乙太網點與城內乙太網點查不到就略過）\n- 艦隊急停與進度條右鍵也會取消「抵達後關閉遊戲」；插件卸載時收回自己開的自動移動；擋下只有逗號的 IPC 指令",
+    "LastUpdate": 1794492682
   },
   {
     "Author": "apetih",
