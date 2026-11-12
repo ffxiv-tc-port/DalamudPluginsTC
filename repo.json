@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.25.0.66",
+    "AssemblyVersion": "7.25.0.67",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/737922015",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/737922015",
-    "Changelog": "- 稀有品繳交循環：傳送被遊戲拒絕時先等角色不忙再重送，並多試幾次",
-    "LastUpdate": 1794454333,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/739388486",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/739388486",
+    "Changelog": "- 其他插件要求 AutoRetainer 急停時，連稀有品繳交循環、「跑一輪就回來」的換回角色、自動籌備稀有品也一起停下\n- 遊戲改版後若稀有品繳交清單或僱員物品指令的版面對不上，只停用相關功能，不再讓整個插件載入失敗",
+    "LastUpdate": 1794486085,
     "CategoryTags": [
       "Inventory"
     ]
