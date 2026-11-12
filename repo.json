@@ -2078,7 +2078,7 @@
     "Author": "Caraxi",
     "Name": "Simple Tweaks Plugin",
     "InternalName": "SimpleTweaksPlugin",
-    "AssemblyVersion": "7.25.0.1",
+    "AssemblyVersion": "7.25.0.0",
     "Description": "A collection of Quality of Life tweaks. Aiming to improve the experience without changing anything drastically.\nAll changes are toggleable, with everything disabled by default. Visit the Repo for a full list of tweaks. (Globe icon below)",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SimpleTweaksPlugin",
