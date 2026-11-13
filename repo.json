@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.25.0.42",
+    "AssemblyVersion": "7.25.0.43",
     "Description": "自動幫你跑副本，支援親信戰友、劇情輔助器、冒險者分隊、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/740793972",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/740793972",
-    "Changelog": "- 卸載或重新載入插件時一併關閉多開連線與監聽\n- 閒置時執行 /ad pause 不再停掉其他插件正在走的導航路徑\n- 修正運行中站在傳喚鈴旁時可能讓遊戲卡死的問題",
-    "LastUpdate": 1794511633
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/741625278",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/741625278",
+    "Changelog": "- 停止時還原開跑前的狀態：PandorasBox 自動開寶箱、AutoRetainer 排程器、路徑暫改的設定不再被留在開跑時的值",
+    "LastUpdate": 1794529258
   },
   {
     "Author": "Det",
