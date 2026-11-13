@@ -1213,7 +1213,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.25.0.50",
+    "AssemblyVersion": "7.25.0.51",
     "Description": "自動跑任務插件：\n- 自動導航至任務目標並完成對話、互動與戰鬥觸發\n- 支援主線／支線任務、部分部落任務與採集類任務\n- 提供任務執行優先順序與除錯視窗\n- 需搭配 vnavmesh、TextAdvance、Lifestream 使用",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,10 +1232,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "自動跑任務助手，導航並完成任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/744226783",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/744226783",
-    "Changelog": "- 遊戲資料改版後缺少任務日誌引用的列時，插件照常載入，只略過缺的那幾項並記錄警告\n- 召喚師職業任務補上前置任務：業火的召喚、大地的召喚、烈風的召喚需先完成對應的蠻神主線\n- 採集路徑編輯器（GatheringPathRenderer）：選取的採集點改存編號每幀重查；路徑資料改從 repo 預設分支下載\n- 停止任務、登出與 /qst stop 不再停掉其他插件正在走的導航路徑\n- TextAdvance 沒裝或重載時不再每幀出錯；停止任務時外部插件出錯也會把停止做完",
-    "LastUpdate": 1794585156
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/744555542",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/744555542",
+    "Changelog": "- 閒置時不再每幀向 vnavmesh 查詢路徑狀態\n- 自己手動看製作人員名單時不再被自動關掉，只在 Questionable 自動任務進行中才關\n- 載入插件時關閉殘留的 RhythmAction 視窗改到遊戲主執行緒進行，並經過防重複按鍵閘門\n- 戰鬥交給 RSR 時：卸載插件只在本插件把 RSR 切成手動的情況下才關掉它，並說明戰鬥後不會回到原本的模式\n- 停止任務或卸載插件時，寫回被舊版 AutoDuty／BossMod 退路改掉的存檔設定，並先停下 Questionable 自己發起的工作",
+    "LastUpdate": 1794591297
   },
   {
     "Author": "NightmareXIV",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.25.0.50",
+    "AssemblyVersion": "7.25.0.51",
     "Description": "[Questionable 開發用插件]：使用 Pictomancy 繪製採集點路徑，供路徑資料編輯者使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable 開發用] 繪製採集路徑點",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/744226780",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/744226780",
-    "LastUpdate": 1794585156,
-    "Changelog": "- 遊戲資料改版後缺少任務日誌引用的列時，插件照常載入，只略過缺的那幾項並記錄警告\n- 召喚師職業任務補上前置任務：業火的召喚、大地的召喚、烈風的召喚需先完成對應的蠻神主線\n- 採集路徑編輯器（GatheringPathRenderer）：選取的採集點改存編號每幀重查；路徑資料改從 repo 預設分支下載\n- 停止任務、登出與 /qst stop 不再停掉其他插件正在走的導航路徑\n- TextAdvance 沒裝或重載時不再每幀出錯；停止任務時外部插件出錯也會把停止做完"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/744555535",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/744555535",
+    "LastUpdate": 1794591297,
+    "Changelog": "- 閒置時不再每幀向 vnavmesh 查詢路徑狀態\n- 自己手動看製作人員名單時不再被自動關掉，只在 Questionable 自動任務進行中才關\n- 載入插件時關閉殘留的 RhythmAction 視窗改到遊戲主執行緒進行，並經過防重複按鍵閘門\n- 戰鬥交給 RSR 時：卸載插件只在本插件把 RSR 切成手動的情況下才關掉它，並說明戰鬥後不會回到原本的模式\n- 停止任務或卸載插件時，寫回被舊版 AutoDuty／BossMod 退路改掉的存檔設定，並先停下 Questionable 自己發起的工作"
   },
   {
     "Author": "WildWolf",
