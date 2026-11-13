@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.25.0.50",
+    "AssemblyVersion": "7.25.0.51",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/710743696",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/710743696",
-    "Changelog": "- 「只顯示可製作」建清單不再耗掉十幾秒與 15 GB 配置：配方快取改用配方編號比對",
-    "LastUpdate": 1793822341
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/741721302",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/741721302",
+    "Changelog": "- 耐力模式與製作清單等待修理時，找附近修理 NPC 改成每半秒掃描一次，不再每幀走訪整張物件表\n- 每幀更新的各步驟改成各自隔離：其中一步出錯不再讓同一幀後面的製作、耐力模式等步驟整個跳過，同一個錯誤也只記一次\n- 製作清單處理中出錯時改成自動暫停並在聊天欄說明，「暫停」「取消」按鈕不再跟著消失\n- 材料表點價格欄前往最便宜伺服器改由 Lifestream 插件介面處理，查不到伺服器時改成提示、不再送出空的傳送指令",
+    "LastUpdate": 1794531436
   },
   {
     "Author": "Herculezz",
