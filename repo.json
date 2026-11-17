@@ -351,7 +351,7 @@
     "Author": "Snowy, KangasZ",
     "Name": "Eureka Helper",
     "InternalName": "EurekaHelper",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "協助你進行優雷卡冒險的工具，已更新至《漂泊眾島》版本！輸入 /eurekahelper 開始使用。\n\n功能包含：\n- 遊戲內追蹤器 GUI\n- 副本追蹤器\n- 聖靈追蹤器\n- 魂武助手\n- 鬧鐘\n- 賺錢 NM 天氣時間提醒\n- 更多功能陸續推出",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/EurekaHelper",
@@ -378,10 +378,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/EurekaHelper.png",
     "Punchline": "優雷卡追蹤器與多項實用功能整合插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760245716",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760245716",
-    "Changelog": "- 尋寶按清除時只停本插件送出的導航，不再取消別的插件正在計算的路線（舊版 vnavmesh 照舊）\n- 仇恨範圍、看過的怪物、危險標記的資料檔改為先寫暫存檔再換名：存檔途中遊戲結束不會讓資料檔變成半截",
-    "LastUpdate": 1794941647
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760579421",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760579421",
+    "Changelog": "- 優雷卡內每幀的記憶體配置大幅降低：怪物名字與狀態分類改用快取，F.A.T.E. 進度檢查不再每幀建清單",
+    "LastUpdate": 1794948361
   },
   {
     "Author": "The Combat Reborn Team",
@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.3",
+    "AssemblyVersion": "7.30.0.4",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760245762",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760245762",
-    "Changelog": "- 法恩娜開放後更新過時的提示文字，並補上 10 筆任務分數",
-    "LastUpdate": 1794941673
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760579449",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760579449",
+    "Changelog": "- 宇宙探索存檔不再讓畫面卡頓：設定改在背景序列化，主執行緒只拍快照",
+    "LastUpdate": 1794948386
   },
   {
     "Author": "Liza Carvelli",
