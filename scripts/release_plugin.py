@@ -118,7 +118,7 @@ BRANCH = "tc-7.20"
 # jumps straight to v<floor>.0.1 instead of incrementing the previous era's
 # build number (7.15 -> 7.20 -> 7.25).
 # 🔴 新紀元一律寫成兩位數次版號：台服 7.3 ＝ (7, 30)、7.35 ＝ (7, 35)；寫 (7, 3) 會小於 (7, 25)。
-ERA_FLOOR = (7, 25)
+ERA_FLOOR = (7, 30)
 VERSION_RE = re.compile(r"^v?(\d+)\.(\d+)\.(\d+)\.(\d+)$")
 
 
