@@ -35,10 +35,10 @@ import release_plugin as rp  # noqa: E402
 
 TARGETS = ["Artisan", "GatherbuddyReborn", "TCToolbox", "Dynamis"]
 # 這一輪各外掛「上一個」tag。故意讓 build number 各不相同，對組錯位才看得出來。
-LATEST = {"Artisan": "v7.25.0.80", "GatherbuddyReborn": "v7.25.0.31",
-          "TCToolbox": "v7.25.0.48", "Dynamis": "v7.25.0.6"}
-EXPECTED_NEXT = {"Artisan": "v7.25.0.81", "GatherbuddyReborn": "v7.25.0.32",
-                 "TCToolbox": "v7.25.0.49", "Dynamis": "v7.25.0.7"}
+LATEST = {"Artisan": "v7.30.0.80", "GatherbuddyReborn": "v7.30.0.31",
+          "TCToolbox": "v7.30.0.48", "Dynamis": "v7.30.0.6"}
+EXPECTED_NEXT = {"Artisan": "v7.30.0.81", "GatherbuddyReborn": "v7.30.0.32",
+                 "TCToolbox": "v7.30.0.49", "Dynamis": "v7.30.0.7"}
 
 FAILURES = []
 
@@ -140,11 +140,11 @@ with tempfile.TemporaryDirectory() as tmpdir:
     check("離開碼 2", code == 2, str(code))
 
 print("情境 5  紀元跳版")
-check("v7.20.1.17 -> v7.25.0.1", rp.next_tag("X", "v7.20.1.17") == "v7.25.0.1",
-      rp.next_tag("X", "v7.20.1.17"))
-check("v7.25.0.1 -> v7.25.0.2", rp.next_tag("X", "v7.25.0.1") == "v7.25.0.2",
-      rp.next_tag("X", "v7.25.0.1"))
-check("沒有 tag -> v7.25.0.1", rp.next_tag("X", None) == "v7.25.0.1",
+check("v7.25.0.40 -> v7.30.0.1", rp.next_tag("X", "v7.25.0.40") == "v7.30.0.1",
+      rp.next_tag("X", "v7.25.0.40"))
+check("v7.30.0.1 -> v7.30.0.2", rp.next_tag("X", "v7.30.0.1") == "v7.30.0.2",
+      rp.next_tag("X", "v7.30.0.1"))
+check("沒有 tag -> v7.30.0.1", rp.next_tag("X", None) == "v7.30.0.1",
       rp.next_tag("X", None))
 
 print("")

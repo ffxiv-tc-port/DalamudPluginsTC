@@ -23,7 +23,7 @@ import release_plugin as rp  # noqa: E402
 NEEDLE = "zqxvtest"
 DIRTY = ("see https://github.com/" + NEEDLE.capitalize() + "/Repo\n").encode()
 CLEAN = ("var al" + NEEDLE[0] + NEEDLE[1].upper() + NEEDLE[2:] + "s = 1;\n").encode()
-BASE_TAG, NEXT_TAG = "v7.25.99.1", "v7.25.99.2"
+BASE_TAG, NEXT_TAG = "v7.30.99.1", "v7.30.99.2"
 ID = ["-c", "user.name=Fixture", "-c", "user.email=fixture@example.invalid"]
 
 FAILURES = []
