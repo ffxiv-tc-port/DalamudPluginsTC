@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "自動幫你跑副本，支援親信戰友、劇情輔助器、冒險者分隊、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758694904",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758694904",
-    "Changelog": "- 永久幽界中央終端、最終決戰天幕魔導城、究極武器破壞作戰換成上游新路線（用到持續條件與離開條件）\n- 路徑步驟「等待走到距離內」（WaitFor DistanceTo）參數正確時改為真的等待；參數格式不對才略過並記一行警告\n- 路徑步驟支援上游新的「持續條件」與「離開條件」：移動途中條件不再成立就中止這一步往下走，離開條件沒成立就重做這一步",
-    "LastUpdate": 1794913018
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758861699",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758861699",
+    "Changelog": "- 路線轉向步驟與 /ad moveto 指令的座標不是數字時改為提示並略過，不再拋出例外\n- 路線座標參數不是數字時改為略過該步，不再拋出例外",
+    "LastUpdate": 1794916321
   },
   {
     "Author": "Det",
