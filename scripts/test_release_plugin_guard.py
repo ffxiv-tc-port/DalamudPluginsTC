@@ -56,15 +56,15 @@ def make_repo(root, name, push_head=False, head_files=None, head_msg="work"):
     origin, repo = root / f"{name}-origin.git", root / name
     subprocess.run(["git", "init", "-q", "--bare", str(origin)], check=True, capture_output=True)
     repo.mkdir()
-    g(repo, "init", "-q", "-b", "tc-7.20")
+    g(repo, "init", "-q", "-b", "tc-7.30")
     g(repo, "config", "core.autocrlf", "false")
     g(repo, "remote", "add", "origin", str(origin))
     commit(repo, {"a.txt": b"base\n"}, "init")
     g(repo, "tag", BASE_TAG)
-    g(repo, "push", "-q", "origin", "tc-7.20", BASE_TAG)
+    g(repo, "push", "-q", "origin", "tc-7.30", BASE_TAG)
     commit(repo, head_files or {"b.txt": CLEAN}, head_msg)
     if push_head:
-        g(repo, "push", "-q", "origin", "tc-7.20")
+        g(repo, "push", "-q", "origin", "tc-7.30")
     return repo, origin
 
 

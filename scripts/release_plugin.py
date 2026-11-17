@@ -113,7 +113,7 @@ LOCAL_PATHS = {
     if name not in ALIAS_INTERNAL_NAMES
 }
 
-BRANCH = "tc-7.20"
+BRANCH = "tc-7.30"
 # Era floor = current TC game version: any repo whose latest tag predates it
 # jumps straight to v<floor>.0.1 instead of incrementing the previous era's
 # build number (7.15 -> 7.20 -> 7.25).

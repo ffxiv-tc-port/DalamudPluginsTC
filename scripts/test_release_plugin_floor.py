@@ -45,13 +45,13 @@ def make_repo(root, name, tags=(), push_tags=True):
     origin, repo = root / f"{name}-origin.git", root / name
     subprocess.run(["git", "init", "-q", "--bare", str(origin)], check=True, capture_output=True)
     repo.mkdir()
-    g(repo, "init", "-q", "-b", "tc-7.20")
+    g(repo, "init", "-q", "-b", "tc-7.30")
     g(repo, "config", "core.autocrlf", "false")
     g(repo, "remote", "add", "origin", str(origin))
     (repo / "a.txt").write_bytes(b"x\n")
     g(repo, "add", "-A")
     g(repo, "commit", "-q", "-m", "squashed")
-    g(repo, "push", "-q", "origin", "tc-7.20")
+    g(repo, "push", "-q", "origin", "tc-7.30")
     for t in tags:
         g(repo, "tag", t)
         if push_tags:
