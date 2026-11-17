@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.30.0.5",
+    "AssemblyVersion": "7.30.0.6",
     "Description": "自動幫你跑副本，支援親信戰友、劇情輔助器、冒險者分隊、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/759974128",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/759974128",
-    "Changelog": "- 開發分支改名為 tc-7.30：路徑檔更新改從新分支下載",
-    "LastUpdate": 1794936345
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760328859",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760328859",
+    "Changelog": "- 內部整理（使用上行為不變）：別的插件與多開送來的指令改排同一條佇列，停止時的導航收尾集中到同一個判斷\n- 新增永恆黑暗殲滅戰路線（台服 7.3）",
+    "LastUpdate": 1794943301
   },
   {
     "Author": "Det",
@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758696182",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758696182",
-    "Changelog": "- 深宮新增「一般層只標記必要的打斷」（預設關）：走得出去的大麻痺、能用視線遮蔽躲的地震／高壓電流不再標記\n- 深宮新增兩個魔陶器選項（預設關）：被多隻敵人圍攻且血量偏低時用形態變化、有復生就先用\n- AI 設定新增「尋路反轉去抖動」（預設關）：路線在左右兩邊來回換時，先照原方向走 0.3 秒再換\n- 自動移動「原地來回抖動」加每分鐘一行診斷，分辨是決策翻轉、撞牆還是到點過衝（不改任何移動）\n- 設定檔有一處讀不懂時，只影響那一頁設定，排在後面的設定不再一起被清成預設\n- 顯示文字：「金碟遊樂場」改為台服 7.3 官方名稱「金碟遊樂園」",
-    "LastUpdate": 1794913027,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760330087",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760330087",
+    "Changelog": "- 青龍征魂戰模組分類更正為討伐殲滅戰（原誤標為極）\n- 新增幻 青龍征魂戰模組（台服 7.3 幻境）",
+    "LastUpdate": 1794943380,
     "CategoryTags": [
       "Jobs"
     ]
@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.30.0.1",
+    "AssemblyVersion": "7.30.0.2",
     "Description": "- 一鍵傳送至任何世界或都市傳送網目的地\n- 點擊區域地圖上的城內乙太之晶即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速都市傳送網移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758408950",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758408950",
-    "Changelog": "- 台服 7.3 改版：版號推進到 7.30（插件功能不變）",
-    "LastUpdate": 1794907302
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760329904",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760329904",
+    "Changelog": "- 傳送面板：站在同一座城內乙太之晶旁時的提示改為直接走過去，不再叫你去開已暫停的設定\n- 同乙太之光傳送修補暫停：原本寫錯位置從未生效，先停用避免影響其他插件\n- 宇宙探索：支援台服 7.3 的目的地選擇，新增直接前往行星法恩娜",
+    "LastUpdate": 1794943323
   },
   {
     "Author": "apetih",
@@ -1579,7 +1579,7 @@
     "Author": "WildWolf",
     "Name": "MonsterDex",
     "InternalName": "DeepDungeonDex",
-    "AssemblyVersion": "7.30.0.1",
+    "AssemblyVersion": "7.30.0.2",
     "Description": "即時顯示深層迷宮魔物的仇恨類型、威脅程度、狀態弱點及重要機制概覽。\n威脅程度主要供單人攻略參考，資料來自社群蒐集；原名 DeepDungeonDex。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/MonsterDex",
@@ -1600,10 +1600,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DeepDungeonDex.png",
     "Punchline": "即時顯示深層迷宮魔物資料。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758410948",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758410948",
-    "LastUpdate": 1794907186,
-    "Changelog": "- 台服 7.3 改版：版號推進到 7.30（插件功能不變）"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760329802",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760329802",
+    "LastUpdate": 1794943307,
+    "Changelog": "- 內建備援魔物資料更新：元精一律改為範圍感知"
   },
   {
     "Author": "d87",
@@ -1826,7 +1826,7 @@
     "Author": "MidoriKami",
     "Name": "Mappy",
     "InternalName": "Mappy",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "以 ImGui 地圖取代遊戲內建地圖，並提供多項額外功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Mappy",
@@ -1845,16 +1845,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Mappy.png",
     "Punchline": "功能更完整的遊戲地圖。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758696363",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758696363",
-    "LastUpdate": 1794913007,
-    "Changelog": "- 插件包不再自帶 Newtonsoft.Json，改用 Dalamud 內建的同一版"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760329706",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760329706",
+    "LastUpdate": 1794943298,
+    "Changelog": "- 維護更新（插件本身不變）"
   },
   {
     "Author": "MidoriKami",
     "Name": "SortaKinda",
     "InternalName": "SortaKinda",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "依照你的需求整理物品欄，並維持指定的排序方式。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SortaKinda",
@@ -1873,10 +1873,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SortaKinda.png",
     "Punchline": "全面自訂物品欄排序方式。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758696394",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758696394",
-    "LastUpdate": 1794913013,
-    "Changelog": "- 插件包不再自帶 Newtonsoft.Json，改用 Dalamud 內建的同一版"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760329777",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760329777",
+    "LastUpdate": 1794943309,
+    "Changelog": "- 維護更新（插件本身不變）"
   },
   {
     "Author": "Ice",
