@@ -406,6 +406,14 @@ MAX_CHANGELOG_COMMITS = 25
 #    一個真實出現過的主旨，而且窄到不可能命中功能主旨 —— 所以刻意**沒有**「主旨含 BuildNumber 就濾掉」
 #    這種規則（真的改版號機制的 commit 主旨也含它）。
 
+# 插件本身沒變的維護 commit（分支改名、manifest 網址、子模組對齊）：主旨只認這兩種形狀。
+PLUGIN_UNCHANGED_PATTERNS = [
+    re.compile(r"（插件本身不變）$"),
+    re.compile(r"^相依函式庫對齊到同一版（功能不變）$"),
+]
+# 一個版本的 commit 全被濾掉、且含上面這種時寫這一句，不沿用上一版的 Changelog。
+PLUGIN_UNCHANGED_CHANGELOG = "維護更新（插件本身不變）"
+
 # 第一條的來源：repo 刪除後同名重建時 GitHub 不一定把 .github/workflows/*.yml 註冊成 workflow，
 # 空 commit 觸發不了重掃，只能改動 workflow 檔本身推一顆「重掛後觸發 GitHub Actions 重新註冊…」的 commit。
 CHANGELOG_NOISE_PATTERNS = [
@@ -416,6 +424,7 @@ CHANGELOG_NOISE_PATTERNS = [
     re.compile(r"^更新 README（程式碼不變）$"),
     # 轉公開時把發版流程改到 GitHub 代管機器的那一顆（主旨由 workflow_patch.py --hosted-public 的批次決定），插件本身沒有變化。
     re.compile(r"^發版流程改用 GitHub 代管機器建置"),
+    *PLUGIN_UNCHANGED_PATTERNS,
     # 只動註解的整理 commit（主旨一律以「整理註解」開頭），對使用者沒有可見變化。
     # 🔴 這條必須排最後：COMMENT_ONLY_PATTERN 取的是 [-1]。
     re.compile(r"^整理註解"),
@@ -536,6 +545,10 @@ def get_changelog(source_repo, prev_tag, tag):
     if not kept and any(COMMENT_ONLY_PATTERN.search(line) for line in lines):
         print(f"[changelog] {source_repo}: {prev_tag}...{tag} 全是整理註解／流程 commit，Changelog 寫固定說明「{COMMENT_ONLY_CHANGELOG}」")
         return f"- {COMMENT_ONLY_CHANGELOG}"
+    if not kept and any(p.search(line) for p in PLUGIN_UNCHANGED_PATTERNS for line in lines):
+        print(f"[changelog] {source_repo}: {prev_tag}...{tag} 全是插件本身不變的維護／流程 commit，"
+              f"Changelog 寫固定說明「{PLUGIN_UNCHANGED_CHANGELOG}」")
+        return f"- {PLUGIN_UNCHANGED_CHANGELOG}"
     lines = kept
     # 全部都是流程 commit 時退回「沒有 changelog」那條既有路徑（回 None）——
     # 呼叫端是 `if changelog:`，所以條目沿用舊的 Changelog，不會被寫成空字串。

@@ -149,10 +149,10 @@ def main():
             tidy1, tidy2 = "整理註解：設定頁與 IPC 端點（只動註解）", "整理註解：戰鬥模組（只動註解）"
             aligned = "相依函式庫對齊到同一版（功能不變）"
             check("主旨以「整理註解」開頭 ⇒ 命中", m.is_process_commit(tidy1) is True)
-            check("「相依函式庫對齊到同一版（功能不變）」不濾", m.is_process_commit(aligned) is False)
+            check("「相依函式庫對齊到同一版（功能不變）」也濾掉", m.is_process_commit(aligned) is True)
             check("中間才出現「整理註解」的功能主旨不濾", m.is_process_commit("修好甲，順手整理註解") is False)
-            cl, out, rep = resolve(tmp, None, [tidy1, "修好甲", tidy2, aligned])
-            check("混合 ⇒ 只留功能那幾行、順序不變", cl == "- 修好甲" + NL + "- " + aligned, repr(cl))
+            cl, out, rep = resolve(tmp, None, [tidy1, "修好甲", tidy2, "新增乙", aligned])
+            check("混合 ⇒ 只留功能那幾行、順序不變", cl == "- 修好甲" + NL + "- 新增乙", repr(cl))
             cl, out, rep = resolve(tmp, None, [tidy1, tidy2])
             check("全是整理註解 ⇒ 固定一句「整理註解（功能不變）」，不是 None（不沿用上一版）", cl == "- 整理註解（功能不變）" and not rep.warns, repr(cl))
             check("走這條路時印得出來", "全是整理註解" in out and f"{PREV}...{TAG}" in out, out)
@@ -170,6 +170,34 @@ def main():
             check("混合 ⇒ 只留功能那一行", cl == "- 修好甲", repr(cl))
             cl, out, rep = resolve(tmp, None, [readme])
             check("只有 README ⇒ 維持原行為回 None（沿用上一版）", cl is None and not rep.warns, repr(cl))
+
+            print("情境 5d  插件本身不變的維護 commit 不進 Changelog")
+            unchanged = ["開發分支改名為 tc-7.30（插件本身不變）",
+                         "插件圖示改用原作者在官方插件庫的圖示（插件本身不變）",
+                         "插件資訊裡失效的圖示與截圖網址改指向現存檔案（插件本身不變）",
+                         "相依函式庫對齊到同一版（功能不變）"]
+            for s in unchanged:
+                check(f"命中：{s}", m.is_process_commit(s) is True)
+            for s in ["設定存檔改為先寫暫存檔再換名（行為不變）",
+                      "設定存檔改為先寫暫存檔再換名，存檔內容不變",
+                      "相依函式庫對齊到同一版（功能不變），順手修好甲",
+                      "改用新版相依函式庫（功能不變）",
+                      "（插件本身不變）的部分之外，修好甲",
+                      "修好甲（插件本身不變）後補上說明"]:
+                check(f"不濾：{s}", m.is_process_commit(s) is False)
+            check("「整理註解」仍排最後", m.COMMENT_ONLY_PATTERN.pattern == "^整理註解")
+            cl, out, rep = resolve(tmp, None, [unchanged[0], "修好甲", unchanged[3]])
+            check("混合 ⇒ 只留功能那一行", cl == "- 修好甲", repr(cl))
+            cl, out, rep = resolve(tmp, None, unchanged[:3])
+            check("全是插件本身不變 ⇒ 固定一句「維護更新（插件本身不變）」，不沿用上一版",
+                  cl == "- 維護更新（插件本身不變）" and not rep.warns, repr(cl))
+            check("走這條路時印得出來", "插件本身不變的維護" in out and f"{PREV}...{TAG}" in out, out)
+            cl, out, rep = resolve(tmp, None, [unchanged[3], "發版流程改用 GitHub 代管機器建置：插件建置改用我方 Dalamud 7.30.0.1"])
+            check("子模組對齊＋流程 commit ⇒ 同樣是那一句", cl == "- 維護更新（插件本身不變）", repr(cl))
+            cl, out, rep = resolve(tmp, None, [tidy1, unchanged[0]])
+            check("整理註解＋插件本身不變 ⇒ 整理註解那句優先（既有行為不變）", cl == "- 整理註解（功能不變）", repr(cl))
+            cl, out, rep = resolve(tmp, None, ["發版流程改用 GitHub 代管機器建置：插件建置改用我方 Dalamud 7.30.0.1"])
+            check("只有發版流程 commit ⇒ 維持原行為回 None", cl is None and not rep.warns, repr(cl))
 
             print("情境 6  呼叫鏈：真的跑 mirror_one()，上一版 tag 比不出來")
             (tmp / "changelog-overrides.json").write_text(json.dumps({"fallback_when_compare_fails": FALLBACK}, ensure_ascii=False), encoding="utf-8")
