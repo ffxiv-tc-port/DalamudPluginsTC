@@ -351,7 +351,7 @@
     "Author": "Snowy, KangasZ",
     "Name": "Eureka Helper",
     "InternalName": "EurekaHelper",
-    "AssemblyVersion": "7.30.0.1",
+    "AssemblyVersion": "7.30.0.2",
     "Description": "協助你進行優雷卡冒險的工具，已更新至《漂泊眾島》版本！輸入 /eurekahelper 開始使用。\n\n功能包含：\n- 遊戲內追蹤器 GUI\n- 副本追蹤器\n- 聖靈追蹤器\n- 魂武助手\n- 鬧鐘\n- 賺錢 NM 天氣時間提醒\n- 更多功能陸續推出",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/EurekaHelper",
@@ -378,10 +378,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/EurekaHelper.png",
     "Punchline": "優雷卡追蹤器與多項實用功能整合插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758405716",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758405716",
-    "Changelog": "- 台服 7.3 改版：版號推進到 7.30（插件功能不變）",
-    "LastUpdate": 1794906990
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760245716",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760245716",
+    "Changelog": "- 尋寶按清除時只停本插件送出的導航，不再取消別的插件正在計算的路線（舊版 vnavmesh 照舊）\n- 仇恨範圍、看過的怪物、危險標記的資料檔改為先寫暫存檔再換名：存檔途中遊戲結束不會讓資料檔變成半截",
+    "LastUpdate": 1794941647
   },
   {
     "Author": "The Combat Reborn Team",
@@ -476,7 +476,7 @@
     "Author": "electr0sheep, Nuko",
     "Name": "Item Vendor Location",
     "InternalName": "ItemVendorLocation",
-    "AssemblyVersion": "7.30.0.1",
+    "AssemblyVersion": "7.30.0.2",
     "Description": "為道具新增右鍵選單選項，可查看該道具可在哪些商人處購買",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ItemVendorLocation",
@@ -496,10 +496,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ItemVendorLocation.png",
     "Punchline": "顯示可購買該道具的商人所在位置",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758409077",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758409077",
-    "Changelog": "- 台服 7.3 改版：版號推進到 7.30（插件功能不變）",
-    "LastUpdate": 1794906970
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760246003",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760246003",
+    "Changelog": "- 插件包不再自帶 Newtonsoft.Json，改用 Dalamud 內建那份",
+    "LastUpdate": 1794941625
   },
   {
     "Author": "Latihas",
@@ -1029,7 +1029,7 @@
     "Author": "veyn",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vnavmesh",
@@ -1049,16 +1049,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/vnavmesh.png",
     "Punchline": "自動移動吧！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758695803",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758695803",
-    "Changelog": "- 新增帶擁有者的移動與停止端點，讓其他插件只停得到自己送出的路徑（舊端點行為不變）\n- 設定頁新增「清除導航網格快取」按鈕：按下後確認才刪，只刪 vnavmesh 自己的網格快取檔\n- 設定檔讀不完整時，同一份原檔只備份一次，不再每次載入都多一個 .bad- 檔",
-    "LastUpdate": 1794913072
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760245908",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760245908",
+    "Changelog": "- 設定存檔改為先寫暫存檔再換名：存檔途中遊戲結束不會再讓設定整份回到預設",
+    "LastUpdate": 1794941675
   },
   {
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 說明文字的技能名改成台服 7.3 官方名稱：失傳超療傷、大神聖、原初的怒震\n- 深層迷宮非首領層新增「只打斷 BossMod 標記的詠唱」選項（預設關），可再勾選讓傷頭改打被標記的施放者",
+    "Changelog": "- PvP「目標太近時不放位移技能」勾選後改成拉近距離用：目標在設定距離以外、技能射程以內才放，近戰內不放；騎士、暗黑騎士、絕槍戰士新增暴怒選項\n- PvP 補師與繪靈法師新增上游選項：占星 吉星相位／神諭、學者 對隊友鼓舞激勵之策與重新指定目標、賢者 心關重新指定目標、白魔 Burst Mode 補血與熾天強襲變閃颯、繪靈 動物構想一鍵彩繪（皆預設關）\n- PvP 新增全職業開關「目標太近時不放位移技能」（預設關、可調距離）；戰士新增原初的怒號（極限爆發）、暴怒選項；各職業 PvP 頁頂端顯示全職業開關狀態\n- PvP 絕槍戰士的粗分斬防溢出改成滿層才放（台服 7.3 起粗分斬最多 3 層）\n- PvP 自癒、淨化的 MP 消耗改成台服 7.3 的 2000；快速淨化新增「MP 低於設定值時不使用淨化」滑桿",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758695131",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758695131",
-    "LastUpdate": 1794913014,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760245897",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760245897",
+    "LastUpdate": 1794941669,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758694844",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758694844",
-    "Changelog": "- 整理：兌換、宇宙幸運、研究員繳交、修理走向 NPC 的流程收成同一份；走到 NPC 旁邊時只停 ICE 自己的導航",
-    "LastUpdate": 1794913053
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760245762",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760245762",
+    "Changelog": "- 法恩娜開放後更新過時的提示文字，並補上 10 筆任務分數",
+    "LastUpdate": 1794941673
   },
   {
     "Author": "Liza Carvelli",
@@ -1694,7 +1694,7 @@
     "Author": "Nuffin",
     "Name": "Better Mount Roulette",
     "InternalName": "BetterMountRoulette",
-    "AssemblyVersion": "7.30.0.1",
+    "AssemblyVersion": "7.30.0.2",
     "Description": "可自由選擇任意數量的坐騎加入隨機召喚，不再受遊戲「最多 30 隻」或「全部」模式限制。\n",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BetterMountRoulette",
@@ -1710,10 +1710,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/BetterMountRoulette.png",
     "Punchline": "自訂坐騎隨機召喚會選到哪些坐騎。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758411523",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758411523",
-    "LastUpdate": 1794907051,
-    "Changelog": "- 台服 7.3 改版：版號推進到 7.30（插件功能不變）"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760246283",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760246283",
+    "LastUpdate": 1794941642,
+    "Changelog": "- 維護更新（插件本身不變）"
   },
   {
     "Author": "daemitus, hiroa, MidoriKami, foophoof",
@@ -1748,7 +1748,7 @@
     "Author": "ItsLunaYup",
     "Name": "High FPS Physics Fix",
     "InternalName": "HighFpsPhysicsPlugin",
-    "AssemblyVersion": "7.30.0.1",
+    "AssemblyVersion": "7.30.0.2",
     "Description": "讓遊戲每隔數幀才更新一次物理效果，以改善高 FPS 下的物理表現。\n可使用「/physics t」切換，或以 on/off 取代 t。\n較低 FPS 時可能會造成物理效果晃動過度。\n若使用 /physics 開啟或關閉後停用整個插件，需要重新啟動遊戲才能再次啟用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/xivlauncher_physics_plugin",
@@ -1766,10 +1766,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/HighFpsPhysicsPlugin.png",
     "Punchline": "降低動作物理效果的更新頻率，改善高 FPS 下的物理表現。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758411353",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758411353",
-    "LastUpdate": 1794907242,
-    "Changelog": "- 台服 7.3 改版：版號推進到 7.30（插件功能不變）"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760246351",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760246351",
+    "LastUpdate": 1794941639,
+    "Changelog": "- 維護更新（插件本身不變）"
   },
   {
     "Author": "Anna, Maintained by Caraxi",
