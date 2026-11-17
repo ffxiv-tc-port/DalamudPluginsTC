@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.30.0.3",
+    "AssemblyVersion": "7.30.0.4",
     "Description": "自動幫你跑副本，支援親信戰友、劇情輔助器、冒險者分隊、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758861699",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758861699",
-    "Changelog": "- 路線轉向步驟與 /ad moveto 指令的座標不是數字時改為提示並略過，不再拋出例外\n- 路線座標參數不是數字時改為略過該步，不再拋出例外",
-    "LastUpdate": 1794916321
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758968190",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758968190",
+    "Changelog": "- 中止或跳過步驟時只停 AutoDuty 自己送出的導航，不再連別的插件的導航一起停（舊版 vnavmesh 照舊）",
+    "LastUpdate": 1794918278
   },
   {
     "Author": "Det",
@@ -1464,7 +1464,7 @@
     "Author": "Faye",
     "Name": "Better Occult Crescent & Chest Helper Interface",
     "InternalName": "BOCCHI",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "讓你在「蜃景幻界新月島」玩得更順手。\n- 不用再自己走路、自己找寶箱。\n- 小巧的 F.A.T.E. 與緊急遭遇戰面板，會顯示該場獎勵，還能自動幫你導航過去。\n- 附贈一個非常違規的「非法模式」，給那些寧可出去曬太陽的人。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BOCCHI",
@@ -1491,10 +1491,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/BOCCHI.png",
     "Punchline": "讓你在「蜃景幻界新月島」玩得更順手。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758694857",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758694857",
-    "Changelog": "- 兩歧塔傳送魔紋等候：走到魔紋時只停自己送的導航路線\n- 寶箱開箱距離加上對照診斷：記錄現行 2 米判定與遊戲互動距離判定不同的情況（只記錄，行為不變）\n- 非法模式新增「兩歧塔開放時到傳送魔紋等候」（預設關）：開放報名時走到傳送魔紋等，不替你報名或使用憑證，進塔後自動化全部停止",
-    "LastUpdate": 1794913044
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758968159",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758968159",
+    "Changelog": "- 緊急遭遇戰與 F.A.T.E. 趕路：到達時只停自己送的導航路線，別的插件或你自己送的路線不再被停掉\n- 魔法甕等候：走到出生點附近時只停自己送的導航路線，別的插件或你自己送的路線不再被停掉",
+    "LastUpdate": 1794918276
   },
   {
     "Author": "ffxiv-tc-port",
