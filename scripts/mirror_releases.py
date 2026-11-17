@@ -216,6 +216,12 @@ ICON_PATHS = {
     "HoardFarm": "icon.png",
     # SimpleTweaksPlugin: 上游原圖 512x512 RGBA（帶 pHYs，沒有 sRGB／gAMA），與上游官方插件庫用的是同一張。
     "SimpleTweaksPlugin": "images/icon.png",
+    # 以下四個上游 repo 沒放圖示：原樣取原作者在官方插件庫（goatcorp/PluginDistD17 的
+    # stable/<InternalName>/images/icon.png）用的圖，放進我方 repo 的 images/icon.png。
+    "Mappy": "images/icon.png",
+    "SortaKinda": "images/icon.png",
+    "BetterMountRoulette": "images/icon.png",
+    "HighFpsPhysicsPlugin": "images/icon.png",
     # GatheringPathRenderer: 刻意不在這裡列——上游的 repo 裡從沒放過圖示檔，也沒有第三方圖示可以借。
     # 留空不是遺漏：manifest 沒有 IconUrl 時 Dalamud 會退到內建的通用圖示，不是破圖。
 }
