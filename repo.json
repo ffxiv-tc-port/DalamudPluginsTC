@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.30.0.3",
+    "AssemblyVersion": "7.30.0.4",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- PvP「目標太近時不放位移技能」勾選後改成拉近距離用：目標在設定距離以外、技能射程以內才放，近戰內不放；騎士、暗黑騎士、絕槍戰士新增暴怒選項\n- PvP 補師與繪靈法師新增上游選項：占星 吉星相位／神諭、學者 對隊友鼓舞激勵之策與重新指定目標、賢者 心關重新指定目標、白魔 Burst Mode 補血與熾天強襲變閃颯、繪靈 動物構想一鍵彩繪（皆預設關）\n- PvP 新增全職業開關「目標太近時不放位移技能」（預設關、可調距離）；戰士新增原初的怒號（極限爆發）、暴怒選項；各職業 PvP 頁頂端顯示全職業開關狀態\n- PvP 絕槍戰士的粗分斬防溢出改成滿層才放（台服 7.3 起粗分斬最多 3 層）\n- PvP 自癒、淨化的 MP 消耗改成台服 7.3 的 2000；快速淨化新增「MP 低於設定值時不使用淨化」滑桿",
+    "Changelog": "- PvP 補師既有選項改版：白魔 治療功能可分別重新指定中療傷／大療傷／水流幕、賢者 心關提醒新增移動心關、占星 吉星相位治療功能可關雙重詠唱與重新指定目標（新增的勾選皆預設不改變原本行為）",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760245897",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760245897",
-    "LastUpdate": 1794941669,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760403285",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760403285",
+    "LastUpdate": 1794944867,
     "CategoryTags": [
       "Jobs"
     ]
