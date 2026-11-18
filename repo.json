@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.5",
+    "AssemblyVersion": "7.30.0.6",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761607392",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761607392",
-    "Changelog": "- 深宮自動清層：死者宮殿 51～200 層冒出的金寶箱擬態怪也會多保持距離",
-    "LastUpdate": 1794970104,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761872906",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761872906",
+    "Changelog": "- 循環預設與冷卻計畫存檔失敗時會在記錄裡說明這次沒存進去；關遊戲前會先把剛改的循環預設寫完\n- 循環預設有幾筆讀不進來時，先備份原檔再允許寫回；設定讀壞的備份同內容只留一份",
+    "LastUpdate": 1794975538,
     "CategoryTags": [
       "Jobs"
     ]
@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758696025",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758696025",
-    "Changelog": "- 加入台服 7.3 新魚（221 條，含行星法恩娜宇宙探索任務魚），魚類清單可依 7.3 篩選",
-    "LastUpdate": 1794913006
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761872582",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761872582",
+    "Changelog": "- 鬧鐘、採集群組、採集視窗、自動採集清單讀不進來時先備份原檔（.bad-）再重置；存檔中斷不再留下半截檔",
+    "LastUpdate": 1794975538
   },
   {
     "Author": "img02",
@@ -447,7 +447,7 @@
     "Author": "Critical_Impact",
     "Name": "Allagan Tools",
     "InternalName": "InventoryTools",
-    "AssemblyVersion": "7.30.0.1",
+    "AssemblyVersion": "7.30.0.2",
     "Description": "Allagan Tools 的主要目的是追蹤你所有角色/僱員/公會倉庫中的道具。透過它的篩選系統，你將不再遺失任何道具的蹤跡，也不再不知道道具該收納在哪裡。\n\n雖然這是它的主要功能，但它還擁有相當豐富的其他功能，包括：\n\t- 製作規劃\n\t- 市場公告板整合\n\t- 在搜尋/整理及挑選製作材料時於背包中高亮顯示道具\n\t- 包含商人與取得來源等資訊的道具視窗\n\t- 可完整搜尋的任務/怪物/飛空艇/潛水艇視窗\n\t- 讓你能為特定道具設定複雜搜尋條件的篩選系統\n\t- 提示視窗整合，滑鼠懸停即可查看道具所在位置",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/InventoryTools",
@@ -467,10 +467,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/InventoryTools.png",
     "Punchline": "讓你的 FFXIV 井井有條，輕鬆定位/顯示道具應收納何處、規劃製作，並搜尋怪物、任務、飛空艇與潛水艇！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758408229",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758408229",
-    "Changelog": "- 台服 7.3 改版：版號推進到 7.30（插件功能不變）",
-    "LastUpdate": 1794906976
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761872803",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761872803",
+    "Changelog": "- 設定存檔改為不會寫到一半就中斷的寫法，避免設定損毀",
+    "LastUpdate": 1794975456
   },
   {
     "Author": "electr0sheep, Nuko",
@@ -650,7 +650,7 @@
     "Author": "Jukka",
     "Name": "NecroLens",
     "InternalName": "NecroLens",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "深層迷宮輔助工具。提供怪物雷達、仇恨、視野範圍等各種資訊。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/NecroLens",
@@ -670,10 +670,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/NecroLens.png",
     "Punchline": "真正的死靈術士永遠瞭若指掌深層迷宮……其他人只是用了高科技而已！",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761607039",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761607039",
-    "Changelog": "- 深層迷宮疊加層效能：通道、返回、奉納等物件的名稱改為快取，不再每幀產生記憶體垃圾\n- 設定頁的擬態怪寶箱名稱改用官方譯名\n- 深層迷宮名稱標籤：文字放大、加半透明深色底，陷阱依種類分色，並標示本層可能是擬態怪的寶箱\n- 死者宮殿 51～200 層的金寶箱擬態怪現身後改標為擬態怪（紅色名稱、套用擬態怪的偵測範圍）",
-    "LastUpdate": 1794970030
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761872410",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761872410",
+    "Changelog": "- 移除「Opt-In Data Collection」：不再把深層迷宮的樓層資料上傳到原作者的伺服器\n- 自動開箱的距離改由遊戲判斷，不再用插件自訂的距離門檻\n- 深層迷宮疊加層：拿掉沒有作用的物件清單鎖，繪製中途出錯時不再留下未釋放的鎖\n- 遊戲改版後若遊戲函式對不上，深層迷宮相關功能改為停用並只記一行警告，不再每幀報錯\n- 深層迷宮疊加層：進過特定梯段後，其他梯段的同種怪物不再被畫錯巡邏箭頭與感知方式",
+    "LastUpdate": 1794975465
   },
   {
     "Author": "NightmareXIV",
@@ -707,7 +707,7 @@
     "Author": "Liza Carvelli (Puni.sh)",
     "Name": "Palace Pal",
     "InternalName": "PalacePal",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "顯示死者宮殿、天之御柱、正統優雷卡中可能的陷阱與寶藏位置。\n\n此插件需要 Splatoon 才能在畫面上繪製各種標示。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PalacePal",
@@ -728,10 +728,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/PalacePal.png",
     "Punchline": "顯示死者宮殿、天之御柱、正統優雷卡中可能的陷阱與寶藏位置。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761607033",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761607033",
-    "Changelog": "- 疊字標籤放大並加半透明底色：陷阱種類依種類上色，寶箱與通道標籤改用繁中名稱",
-    "LastUpdate": 1794970052
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761872421",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761872421",
+    "Changelog": "- 繪製與換區時不再每次向 DI 容器查詢繪製元件\n- 移除原作者舊伺服器停用後必定失敗的「Export」分頁；/pal stats 改為直接說明全體統計已無法取得\n- /pal 子指令改回遊戲主執行緒執行：/pal near 等偵錯指令不再於背景讀取物件表\n- 改版日防護：遊戲函式對不上時，魔陶器狀態偵測與小地圖改為停用並顯示提示，不再每幀出錯",
+    "LastUpdate": 1794975518
   },
   {
     "Author": "Haplo064",
@@ -884,7 +884,7 @@
     "Author": "Sonar Team",
     "Name": "Sonar",
     "InternalName": "SonarPlugin",
-    "AssemblyVersion": "7.30.0.1",
+    "AssemblyVersion": "7.30.0.2",
     "Description": "自動傳送與接收狩獵任務及 FATE 情報。輸入 /sonar 開啟主視窗，/sonarconfig 進行設定。技術支援僅提供於 Sonar Support Discord。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SonarPlugin",
@@ -904,10 +904,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SonarPlugin.png",
     "Punchline": "自動傳送與接收狩獵任務及 FATE 情報。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758409803",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758409803",
-    "Changelog": "- 台服 7.3 改版：版號推進到 7.30（插件功能不變）",
-    "LastUpdate": 1794907183
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761872520",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761872520",
+    "Changelog": "- Sonar 設定檔讀不到而重置成預設值前，先在原檔旁留一份備份",
+    "LastUpdate": 1794975527
   },
   {
     "Author": "NightmareXIV",
@@ -1439,7 +1439,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 Gil 並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1455,10 +1455,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點 Gil！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758694627",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758694627",
-    "Changelog": "- 多角色重掛找傳喚鈴時，記錄距離常數與遊戲判定不一致的情況",
-    "LastUpdate": 1794912994
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761871641",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761871641",
+    "Changelog": "- 批次重掛與全部下架：道具資料還沒載入時改為略過該件並說明，不再顯示「遊戲無法辨識這件道具」",
+    "LastUpdate": 1794975451
   },
   {
     "Author": "Faye",
@@ -2048,7 +2048,7 @@
     "Author": "Jukkales",
     "Name": "HoardFarm 天之御柱自動刷寶",
     "InternalName": "HoardFarm",
-    "AssemblyVersion": "7.30.0.1",
+    "AssemblyVersion": "7.30.0.2",
     "Description": "手動按下開始後，自動傳送到紅玉海找九星、進出天之御柱（需事先準備好第 11 層以後的存檔）、使用魔陶器「感知寶藏」「隱形」，走去挖埋藏的寶藏後退出，再重複下一趟；可設定趟數、寶藏數或時間上限，兩趟之間也能交給 AutoRetainer 處理僱員。需要 vnavmesh。預設關閉，載入、進區、登入都不會自己開始；隨時可以取消勾選、/hoardfarm stop 或 TC Toolbox 的全艦隊急停立即停下。不會把任何資料送給原作者或第三方。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/HoardFarm",
@@ -2069,16 +2069,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/HoardFarm.png",
     "Punchline": "在天之御柱自動反覆挖埋藏的寶藏",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758411653",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758411653",
-    "LastUpdate": 1794907056,
-    "Changelog": "- 台服 7.3 改版：版號推進到 7.30（插件功能不變）"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761873067",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761873067",
+    "LastUpdate": 1794975474,
+    "Changelog": "- 模式設定值改用具名常數（功能不變）\n- 移除從未使用的 vnavmesh 介面訂閱（功能不變）\n- 退出天之御柱時的暫存記憶體在準備失敗的路徑上也會釋放（功能不變）\n- AutoRetainer 卸載或沒回應時主視窗與僱員流程不再擲例外，主視窗也不再每幀詢問 AutoRetainer"
   },
   {
     "Author": "Caraxi",
     "Name": "Simple Tweaks Plugin",
     "InternalName": "SimpleTweaksPlugin",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "A collection of Quality of Life tweaks. Aiming to improve the experience without changing anything drastically.\nAll changes are toggleable, with everything disabled by default. Visit the Repo for a full list of tweaks. (Globe icon below)",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SimpleTweaksPlugin",
@@ -2098,9 +2098,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SimpleTweaksPlugin.png",
     "Punchline": "This was supposed to be simple...",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761805817",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761805817",
-    "Changelog": "- 閒置時的效能改善：每幀不再為錯誤清單與計時標籤配置記憶體",
-    "LastUpdate": 1794974188
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761873033",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761873033",
+    "Changelog": "- tweak 設定檔讀壞時先留備份，存檔改為不會寫到一半的方式",
+    "LastUpdate": 1794975463
   }
 ]
