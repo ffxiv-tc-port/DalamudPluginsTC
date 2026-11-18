@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.30.0.3",
+    "AssemblyVersion": "7.30.0.4",
     "Description": "台服自製 QoL 工具箱，內含上百個獨立模組，分成「背包・裝備」「戰鬥・小隊」「公會・生活」「介面・雜項」四類，可在設定視窗逐一開關。預設只開啟 3 個純顯示或只寫紀錄的模組，其餘預設關閉。涵蓋背包整理與搬移、公會合建交料、陸行鳥餵食、園圃作業、隊伍招募輔助、周邊玩家與敵人清單等。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服 QoL 模組集：背包、戰鬥小隊、公會生活、介面雜項，每個模組獨立開關。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761572507",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761572507",
-    "Changelog": "- 目標情報的原生文字在介面被遊戲重建時改為安全停用，不再碰已釋放的節點\n- 目標情報界面最佳化新增「以原生文字顯示（實驗）」：體力與詠唱文字改由遊戲介面繪製，使用遊戲字型與外框並跟著 HUD 縮放（預設關）\n- 目標情報與敵對列表的疊圖文字改用清晰字型並加上黑色外框，放大後不再模糊；新增「文字大小跟著介面縮放」選項（預設關）",
-    "LastUpdate": 1794969310
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763126114",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763126114",
+    "Changelog": "- 減少記憶體配置：目標情報與敵對列表的疊圖文字每幀不再配置暫存物件，每日任務清單與周邊玩家提示也少配置（顯示不變）",
+    "LastUpdate": 1795001127
   },
   {
     "Author": "daemitus, MidoriKami",
@@ -2018,7 +2018,7 @@
     "Author": "yagi2",
     "Name": "GilDelta Gil 流水追蹤",
     "InternalName": "GilDelta",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "常駐 Gil 流水追蹤插件。監控自己的 Gil、每位僱員與公會儲物櫃的變化，自動分類每一筆進出（潛水艇返回、僱員銷售、NPC購買、市場購買、修理、傳送等），透過可自訂的小工具（4 種顯示密度）與六頁儀表板（時間軸／圖表／每日結算／明細／熱力圖／餘額明細）呈現。唯讀——絕不寫回遊戲狀態。七語言介面（英／日／德／法／簡中／韓／繁中）。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GilDelta",
@@ -2039,10 +2039,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GilDelta.png",
     "Punchline": "追蹤自己、僱員與公會儲物櫃的 Gil 流向。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758696466",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758696466",
-    "LastUpdate": 1794912997,
-    "Changelog": "- 介面與說明的「金幣」改用台服用語「Gil」"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763126118",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763126118",
+    "LastUpdate": 1795001108,
+    "Changelog": "- 減少記憶體配置：每 2 秒檢查設定有沒有改動時少配置約六成（何時存檔不變）"
   },
   {
     "Author": "Jukkales",
