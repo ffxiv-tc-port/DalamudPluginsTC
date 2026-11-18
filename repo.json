@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.30.0.8",
+    "AssemblyVersion": "7.30.0.9",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763349242",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763349242",
-    "Changelog": "- 自動採集分頁與採集視窗開著時每幀的記憶體配置減少：清單每列不再建暫存物件與字串、查僱員背包數量不再每次建陣列（畫面文字、勾選、數量、拖放都不變）\n- 主視窗清單分頁（自動採集、採集視窗、採集群組、鬧鐘）：在清單上按住滑鼠時不再每幀觸發介面斷言警告；拖曳排序、拖到別的清單照舊",
-    "LastUpdate": 1795005346
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763533522",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763533522",
+    "Changelog": "- 沒勾「加入釣魚資料收集」時釣到或匯入的釣獲不再排進上傳佇列：之後才勾也不會補傳勾選前的紀錄，長時間自動釣魚也不會在記憶體裡越積越多；本機釣魚紀錄照常保存，有勾的人行為不變\n- 自動釣魚不再要求勾選設定裡的「加入釣魚資料收集」：沒勾也能把魚放進自動採集清單照常釣，而且不會上傳任何資料；有勾的人行為不變",
+    "LastUpdate": 1795008848
   },
   {
     "Author": "img02",
@@ -2078,7 +2078,7 @@
     "Author": "Caraxi",
     "Name": "Simple Tweaks Plugin",
     "InternalName": "SimpleTweaksPlugin",
-    "AssemblyVersion": "7.30.0.4",
+    "AssemblyVersion": "7.30.0.5",
     "Description": "A collection of Quality of Life tweaks. Aiming to improve the experience without changing anything drastically.\nAll changes are toggleable, with everything disabled by default. Visit the Repo for a full list of tweaks. (Globe icon below)",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SimpleTweaksPlugin",
@@ -2098,9 +2098,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SimpleTweaksPlugin.png",
     "Punchline": "This was supposed to be simple...",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762834254",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762834254",
-    "Changelog": "- 介面事件的效能改善：每個介面視窗更新或關閉時不再為了比對視窗名稱而配置字串",
-    "LastUpdate": 1794995526
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763533655",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763533655",
+    "Changelog": "- 停用「重新整理市場價格」（市場板查價被拒時自動重試）：設定頁改顯示「因已知問題而停用。」，原本有開的人設定保留不刪，只是不再生效",
+    "LastUpdate": 1795008843
   }
 ]
