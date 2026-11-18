@@ -447,7 +447,7 @@
     "Author": "Critical_Impact",
     "Name": "Allagan Tools",
     "InternalName": "InventoryTools",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "Allagan Tools 的主要目的是追蹤你所有角色/僱員/公會倉庫中的道具。透過它的篩選系統，你將不再遺失任何道具的蹤跡，也不再不知道道具該收納在哪裡。\n\n雖然這是它的主要功能，但它還擁有相當豐富的其他功能，包括：\n\t- 製作規劃\n\t- 市場公告板整合\n\t- 在搜尋/整理及挑選製作材料時於背包中高亮顯示道具\n\t- 包含商人與取得來源等資訊的道具視窗\n\t- 可完整搜尋的任務/怪物/飛空艇/潛水艇視窗\n\t- 讓你能為特定道具設定複雜搜尋條件的篩選系統\n\t- 提示視窗整合，滑鼠懸停即可查看道具所在位置",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/InventoryTools",
@@ -467,10 +467,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/InventoryTools.png",
     "Punchline": "讓你的 FFXIV 井井有條，輕鬆定位/顯示道具應收納何處、規劃製作，並搜尋怪物、任務、飛空艇與潛水艇！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761872803",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761872803",
-    "Changelog": "- 設定存檔改為不會寫到一半就中斷的寫法，避免設定損毀",
-    "LastUpdate": 1794975456
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762396367",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762396367",
+    "Changelog": "- 背包紀錄檔讀壞時先留一份備份再覆寫，其他角色與僱員的庫存紀錄不再靜默消失\n- 歷史記錄存檔改為不會寫到一半就中斷的寫法，關遊戲時被中斷也不會遺失已追蹤的歷史記錄",
+    "LastUpdate": 1794987046
   },
   {
     "Author": "electr0sheep, Nuko",
@@ -1301,7 +1301,7 @@
     "Author": "Usagi, PlusoneChiang",
     "Name": "IINACT",
     "InternalName": "IINACT",
-    "AssemblyVersion": "7.30.0.4",
+    "AssemblyVersion": "7.30.0.5",
     "Description": "在類 ACT 環境中直接執行 FFXIV_ACT_Plugin 的戰鬥數據解析插件,內建深度改造的 Overlay Plugin 移植版,無需另外安裝 ACT。\n可搭配 Crossingway 在遊戲內顯示戰鬥數據覆蓋層。\nFork 自 marzent/IINACT(繁體中文版客戶端,API 13 / .NET 9,TC opcodes 由 PlusoneChiang 維護)。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/IINACT",
@@ -1321,10 +1321,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/IINACT.png",
     "Punchline": "免 ACT 的戰鬥數據解析插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761684347",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761684347",
-    "Changelog": "- 載入時不再出現「找不到 CEDirector opcode」的錯誤訊息：停用台服沒有資料、也用不到的 CEDirector 記錄",
-    "LastUpdate": 1794971741
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762396266",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762396266",
+    "Changelog": "- 其他插件透過 IPC 訂閱疊加層事件時，改在遊戲主執行緒依序送出，不再從背景執行緒直接呼叫對方\n- 疊加層設定改成整份寫好才替換原檔，存檔途中出錯或遊戲結束不會再把設定檔寫壞\n- 儲存疊加層設定失敗時不再跳出錯誤對話框卡住遊戲，改為只寫進記錄\n- 插件載入失敗時一併收回網路封包接收的 hook，不再可能留在遊戲裡",
+    "LastUpdate": 1794987040
   },
   {
     "Author": "Ice",
