@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.30.0.5",
+    "AssemblyVersion": "7.30.0.6",
     "Description": "- 一鍵傳送至任何世界或都市傳送網目的地\n- 點擊區域地圖上的城內乙太之晶即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速都市傳送網移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764152861",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764152861",
-    "Changelog": "- 設定、房屋登錄、通訊錄、旅行封鎖與角色選擇畫面開著時不再每幀擷取呼叫堆疊配置記憶體（畫面不變）",
-    "LastUpdate": 1795019768
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764258486",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764258486",
+    "Changelog": "- 「/li 渴望灣」「/li 法恩娜」「/li 行星法恩娜」在任何地方都能用：不在最佳威兔洞旁時自動走和 /li cosmic、/li phaenna 相同的直達流程（需要時先回原始世界）",
+    "LastUpdate": 1795021819
   },
   {
     "Author": "apetih",
@@ -913,7 +913,7 @@
     "Author": "NightmareXIV",
     "Name": "Splatoon",
     "InternalName": "Splatoon",
-    "AssemblyVersion": "7.30.0.3",
+    "AssemblyVersion": "7.30.0.4",
     "Description": "Splatoon 是一款強大的輔助工具。它以自訂路標系統徹底革新遊戲體驗，可建立無數量限制的成組路標、文字標籤與角色指示器，並具備精確到像素的定位能力。此功能讓玩家能更清楚辨識關鍵物件與事件，進而做出更快速的反應。請注意，此插件本身不附帶任何預設檔，玩家可自行製作或匯入現成的預設檔，打造專屬於自己的遊戲體驗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Splatoon",
@@ -932,10 +932,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Splatoon.png",
     "Punchline": "以無限、精準的路標重新定義 FFXIV 導航方式。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764153273",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764153273",
-    "Changelog": "- 紀錄視窗、一般設定、受信任來源與腳本設定頁開著時不再每幀擷取呼叫堆疊配置記憶體（畫面不變）",
-    "LastUpdate": 1795019824
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764258660",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764258660",
+    "Changelog": "- 放大的疊加文字（含 PalacePal 深宮標籤）改用清楚的字型繪製，不再拉伸一般字型而變糊；設定新增「疊加文字倍率」可整體放大",
+    "LastUpdate": 1795021826
   },
   {
     "Author": "Infi",
@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.30.0.12",
+    "AssemblyVersion": "7.30.0.13",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 連段每次指定技能施放對象時配置的記憶體少約八成（每次約 1.0～1.3 KB→0.1～0.3 KB），行為不變\n- 設定視窗載入後第一次打開不再卡頓約 0.3 秒：職業清單與子選項表改用載入時已讀好的資料建立",
+    "Changelog": "- PvP 戰士一鍵連招：原初的血氣改成目標是玩家、且自身 HP 掉到 80% 以下才放；猛攻、蠻荒崩裂只對玩家目標放（NPC、物件不會移動）。三項都可在各自選項裡改回",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764169806",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764169806",
-    "LastUpdate": 1795020154,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764257771",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764257771",
+    "LastUpdate": 1795021809,
     "CategoryTags": [
       "Jobs"
     ]
