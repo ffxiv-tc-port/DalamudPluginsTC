@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758695982",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758695982",
-    "Changelog": "- 傳喚鈴互動距離加診斷：同時記插件的距離門檻與遊戲自己的判定，兩者不同時寫進紀錄（不改行為）\n- 潛水艇航線計算支援台服 7.3 新海域（南蒼茫洋 N～T），解鎖計畫可排到星痕水道深部",
-    "LastUpdate": 1794913037,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762444352",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762444352",
+    "Changelog": "- 軍票預支單用不掉而停止時的說明不再叫你開啟背包（實際用法不需要開背包）",
+    "LastUpdate": 1794987947,
     "CategoryTags": [
       "Inventory"
     ]
@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.30.0.5",
+    "AssemblyVersion": "7.30.0.6",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762212480",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762212480",
-    "Changelog": "- 自動採集途中卸載或更新插件時，停下自己送出的 vnavmesh 路徑，不再讓角色把剩下的路走完\n- 本機釣魚紀錄 fish_records.dat 讀不懂時先備份原檔再繼續，存檔改成不會寫出半截檔\n- 卸載時不再把遠端釣魚紀錄寫進設定資料夾（那份 GatherBuddy.CustomInfo.fish_records.json 沒有任何地方會讀）\n- 採集點座標檔（world_locations.json／node_offsets.json）寫到一半或讀不懂時，不再讓插件每次都載入失敗：先備份原檔再改用內建資料",
-    "LastUpdate": 1794983267
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762444076",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762444076",
+    "Changelog": "- 關掉自動採集時，若正讓位給 AutoRetainer／Lifestream，不再順手停掉它們的 vnavmesh 路徑",
+    "LastUpdate": 1794987915
   },
   {
     "Author": "img02",
@@ -447,7 +447,7 @@
     "Author": "Critical_Impact",
     "Name": "Allagan Tools",
     "InternalName": "InventoryTools",
-    "AssemblyVersion": "7.30.0.3",
+    "AssemblyVersion": "7.30.0.4",
     "Description": "Allagan Tools 的主要目的是追蹤你所有角色/僱員/公會倉庫中的道具。透過它的篩選系統，你將不再遺失任何道具的蹤跡，也不再不知道道具該收納在哪裡。\n\n雖然這是它的主要功能，但它還擁有相當豐富的其他功能，包括：\n\t- 製作規劃\n\t- 市場公告板整合\n\t- 在搜尋/整理及挑選製作材料時於背包中高亮顯示道具\n\t- 包含商人與取得來源等資訊的道具視窗\n\t- 可完整搜尋的任務/怪物/飛空艇/潛水艇視窗\n\t- 讓你能為特定道具設定複雜搜尋條件的篩選系統\n\t- 提示視窗整合，滑鼠懸停即可查看道具所在位置",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/InventoryTools",
@@ -467,10 +467,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/InventoryTools.png",
     "Punchline": "讓你的 FFXIV 井井有條，輕鬆定位/顯示道具應收納何處、規劃製作，並搜尋怪物、任務、飛空艇與潛水艇！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762396367",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762396367",
-    "Changelog": "- 背包紀錄檔讀壞時先留一份備份再覆寫，其他角色與僱員的庫存紀錄不再靜默消失\n- 歷史記錄存檔改為不會寫到一半就中斷的寫法，關遊戲時被中斷也不會遺失已追蹤的歷史記錄",
-    "LastUpdate": 1794987046
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762444212",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762444212",
+    "Changelog": "- CriticalCommonLib 更新：怪物出生點追蹤關著時，載入或匯出紀錄不再把它暫時打開\n- 背包紀錄檔整份讀壞時不再暫時鎖住檔案，緊接著的存檔不會再被拒",
+    "LastUpdate": 1794987917
   },
   {
     "Author": "electr0sheep, Nuko",
@@ -884,7 +884,7 @@
     "Author": "Sonar Team",
     "Name": "Sonar",
     "InternalName": "SonarPlugin",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "自動傳送與接收狩獵任務及 FATE 情報。輸入 /sonar 開啟主視窗，/sonarconfig 進行設定。技術支援僅提供於 Sonar Support Discord。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SonarPlugin",
@@ -904,10 +904,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SonarPlugin.png",
     "Punchline": "自動傳送與接收狩獵任務及 FATE 情報。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761872520",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761872520",
-    "Changelog": "- Sonar 設定檔讀不到而重置成預設值前，先在原檔旁留一份備份",
-    "LastUpdate": 1794975527
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762444061",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762444061",
+    "Changelog": "- 每次載入不再在記錄檔印出數十行內嵌資源、音效名稱與服務啟動清單（改為除錯等級）",
+    "LastUpdate": 1794987915
   },
   {
     "Author": "NightmareXIV",
@@ -1301,7 +1301,7 @@
     "Author": "Usagi, PlusoneChiang",
     "Name": "IINACT",
     "InternalName": "IINACT",
-    "AssemblyVersion": "7.30.0.5",
+    "AssemblyVersion": "7.30.0.6",
     "Description": "在類 ACT 環境中直接執行 FFXIV_ACT_Plugin 的戰鬥數據解析插件,內建深度改造的 Overlay Plugin 移植版,無需另外安裝 ACT。\n可搭配 Crossingway 在遊戲內顯示戰鬥數據覆蓋層。\nFork 自 marzent/IINACT(繁體中文版客戶端,API 13 / .NET 9,TC opcodes 由 PlusoneChiang 維護)。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/IINACT",
@@ -1321,10 +1321,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/IINACT.png",
     "Punchline": "免 ACT 的戰鬥數據解析插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762396266",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762396266",
-    "Changelog": "- 其他插件透過 IPC 訂閱疊加層事件時，改在遊戲主執行緒依序送出，不再從背景執行緒直接呼叫對方\n- 疊加層設定改成整份寫好才替換原檔，存檔途中出錯或遊戲結束不會再把設定檔寫壞\n- 儲存疊加層設定失敗時不再跳出錯誤對話框卡住遊戲，改為只寫進記錄\n- 插件載入失敗時一併收回網路封包接收的 hook，不再可能留在遊戲裡",
-    "LastUpdate": 1794987040
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762444273",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762444273",
+    "Changelog": "- 其他插件建立舊版 IPC 訂閱失敗時，不再留下沒人收的訂閱、之後每個事件各寫一行錯誤",
+    "LastUpdate": 1794987915
   },
   {
     "Author": "Ice",
