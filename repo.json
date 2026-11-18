@@ -1439,7 +1439,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.30.0.5",
+    "AssemblyVersion": "7.30.0.6",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 Gil 並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1455,10 +1455,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點 Gil！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764346255",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764346255",
-    "Changelog": "- 即時掛單面板可改基準點（出售品視窗左右兩側、上緣或下緣對齊，或螢幕固定位置），每一欄都能個別開關",
-    "LastUpdate": 1795023402
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764484012",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764484012",
+    "Changelog": "- 側邊面板與巡迴面板從左側或下緣基準點換成「螢幕固定位置」時，面板留在原地，不再跳一個寬或高蓋到出售品視窗\n- 重掛面板裡會動到市場的按鈕（重掛、下架與確認、下架查不到行情的那幾件、批次上架、賣給商店與確認）在剛出現或剛移位的 0.3 秒內暫停接受點擊，避免面板移位讓別的按鈕剛好滑到滑鼠底下被誤按\n- 出售品視窗旁的側邊面板：基準點在下緣時改成重掛面板貼著基準點、即時掛單疊在它上面，整欄不再超出出售品視窗上緣；基準點在左側時重掛面板只會變寬不會變窄，裡面的按鈕不再左右移動\n- 快速上架撞到「這名僱員的市場已滿」時，同一則訊息接著列出這個角色其他僱員還有幾格空位（標明是幾分鐘前的紀錄，或僱員清單計數；不知道的寫「未知」）\n- 快速上架：右鍵連按太快被擋下的那一件，選單收乾淨後 1 秒內在同一個選單上補選一次「到市場出售」；格子或道具變了、選單關了或你按了別的就放棄",
+    "LastUpdate": 1795026044
   },
   {
     "Author": "Faye",
