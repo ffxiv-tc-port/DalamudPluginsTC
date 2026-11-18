@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.12",
+    "AssemblyVersion": "7.30.0.13",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763917105",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763917105",
-    "Changelog": "- 修正攔截連線機制的 AI 走位：拿著連線（如主線副本「威爾布蘭德揚帆起航」的炸彈連線）時改為避開所有隊員與 NPC 隊友，不再只避開其中一位；連線數比隊伍人數多時也不再讓當幀的 AI 提示整個失效",
-    "LastUpdate": 1795015670,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764131997",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764131997",
+    "Changelog": "- 雷達上的文字（方位、場地標記等）改為跟著 Dalamud 整體字型縮放變大並修正置中偏移；設定新增「雷達文字大小倍率」可另外調整",
+    "LastUpdate": 1795019442,
     "CategoryTags": [
       "Jobs"
     ]
