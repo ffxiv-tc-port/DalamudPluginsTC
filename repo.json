@@ -1213,7 +1213,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "自動跑任務插件：\n- 自動導航至任務目標並完成對話、互動與戰鬥觸發\n- 支援主線／支線任務、部分部落任務與採集類任務\n- 提供任務執行優先順序與除錯視窗\n- 需搭配 vnavmesh、TextAdvance、Lifestream 使用",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,10 +1232,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "自動跑任務助手，導航並完成任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760285081",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760285081",
-    "Changelog": "- 任務路線產生器改為擋下所有不合規格的路線檔（建置過＝路線檔合乎規格）\n- 任務路線 schema 跟上插件已支援的欄位：釣魚步驟與兩項略過條件（驗證規格，插件行為不變）\n- 漁師職業任務：身上已有魚餌時不再先傳送到利姆薩・羅敏薩\n- 主線永恆黑暗殲滅戰改由 AutoDuty 自動攻略（剿滅戰支援）\n- 台服 7.3 任務路線同步上游修正：主線、異界瓦納・迪爾、宇宙探索前往法恩娜、新月島；台服沒有的蜃景鎮捷徑改為略過",
-    "LastUpdate": 1794942473
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762148138",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762148138",
+    "Changelog": "- 任務視窗開著時不再每幀產生大量暫時物件，降低記憶體回收負擔",
+    "LastUpdate": 1794981832
   },
   {
     "Author": "NightmareXIV",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "[Questionable 開發用插件]：使用 Pictomancy 繪製採集點路徑，供路徑資料編輯者使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable 開發用] 繪製採集路徑點",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760285088",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760285088",
-    "LastUpdate": 1794942473,
-    "Changelog": "- 任務路線產生器改為擋下所有不合規格的路線檔（建置過＝路線檔合乎規格）\n- 任務路線 schema 跟上插件已支援的欄位：釣魚步驟與兩項略過條件（驗證規格，插件行為不變）\n- 漁師職業任務：身上已有魚餌時不再先傳送到利姆薩・羅敏薩\n- 主線永恆黑暗殲滅戰改由 AutoDuty 自動攻略（剿滅戰支援）\n- 台服 7.3 任務路線同步上游修正：主線、異界瓦納・迪爾、宇宙探索前往法恩娜、新月島；台服沒有的蜃景鎮捷徑改為略過"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762148136",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762148136",
+    "LastUpdate": 1794981832,
+    "Changelog": "- 任務視窗開著時不再每幀產生大量暫時物件，降低記憶體回收負擔"
   },
   {
     "Author": "WildWolf",
