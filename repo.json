@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.30.0.5",
+    "AssemblyVersion": "7.30.0.6",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764346991",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764346991",
-    "Changelog": "- 委託管理、軍票交換清單與背包清理各頁開著時不再每幀擷取呼叫堆疊配置記憶體（畫面不變）",
-    "LastUpdate": 1795023437,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764473209",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764473209",
+    "Changelog": "- 多角色模式「一分鐘內互動錯誤過多」在找不到目前角色資料時不再擲例外（原本會讓同一幀其他處理一併跳過）\n- 多角色模式中角色被排除、遊戲設定被改或流程被停止時，集中列在「AutoRetainer 偵測到異常」視窗，跑完回來一眼看完\n- 多角色模式新增「僱員與遠航探索都沒啟用的角色不自動進入房屋」選項，僱員管理與遠航探索清單可加開 G 欄顯示各角色 Gil 並在偏低時警告（兩者預設關閉，行為與畫面不變）\n- 按住快捷鍵右鍵道具時，若上一個選單還沒收乾淨，這一下改為排隊在 1 秒內補選，不必再按一次",
+    "LastUpdate": 1795025859,
     "CategoryTags": [
       "Inventory"
     ]
