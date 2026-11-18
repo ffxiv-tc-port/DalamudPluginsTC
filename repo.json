@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.30.0.12",
+    "AssemblyVersion": "7.30.0.13",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764346736",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764346736",
-    "Changelog": "- 自動採集在採集點視窗開著時每幀的記憶體配置減少：挑要採哪一格、找水晶格、判斷清單有沒有魚不再每幀建暫存清單與迭代器（採哪一格、用不用技能、何時放棄都不變）\n- 採集視窗與主視窗「自動採集」分頁開著時每幀的記憶體配置減少：道具持有數改成最多每 0.5 秒重查一次（數字最多晚 0.5 秒），開「檢查僱員物品欄」時不再每列每幀詢問 Allagan Tools",
-    "LastUpdate": 1795023432
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764556251",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764556251",
+    "Changelog": "- 法恩娜任務釣場內建站位紀錄：自動釣魚不必先手動釣一次就能導航到 45 個任務釣場；渴望灣另補 15 個釣場的站位\n- 採集點座標資料跟上上游：亞克特爾樹海 12 個採集點（含 7.3 傳說點「破布木原木／破布木樹液塊」）多了出現位置，德拉瓦尼亞河谷地補 6 個採集點，4 個採集點補上導航偏移\n- 法恩娜的任務釣場現在有正確的地區：210 條法恩娜任務魚可以查到釣場、最近的以太之光與傳送目標",
+    "LastUpdate": 1795027409
   },
   {
     "Author": "img02",
