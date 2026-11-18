@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.30.0.4",
+    "AssemblyVersion": "7.30.0.5",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762001808",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762001808",
-    "Changelog": "- 鬧鐘、採集群組、採集視窗、自動採集清單、自訂位置有部分項目讀不進來時，寫回前先備份原檔（.bad-）",
-    "LastUpdate": 1794978414
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762212480",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762212480",
+    "Changelog": "- 自動採集途中卸載或更新插件時，停下自己送出的 vnavmesh 路徑，不再讓角色把剩下的路走完\n- 本機釣魚紀錄 fish_records.dat 讀不懂時先備份原檔再繼續，存檔改成不會寫出半截檔\n- 卸載時不再把遠端釣魚紀錄寫進設定資料夾（那份 GatherBuddy.CustomInfo.fish_records.json 沒有任何地方會讀）\n- 採集點座標檔（world_locations.json／node_offsets.json）寫到一半或讀不懂時，不再讓插件每次都載入失敗：先備份原檔再改用內建資料",
+    "LastUpdate": 1794983267
   },
   {
     "Author": "img02",
