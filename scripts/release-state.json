@@ -2,7 +2,7 @@
   "EurekaHelper": "v7.30.0.3",
   "Accountant": "v7.30.0.1",
   "AutoRetainer": "v7.30.0.2",
-  "Saucy": "v7.30.0.1",
+  "Saucy": "v7.30.0.2",
   "LogogramHelper": "v7.30.0.1",
   "TriadBuddy": "v7.30.0.1",
   "SomethingNeedDoing": "v7.30.0.1",
@@ -16,7 +16,7 @@
   "visland": "v7.30.0.2",
   "Lifestream": "v7.30.0.2",
   "SubmarineTracker": "v7.30.0.1",
-  "YesAlready": "v7.30.0.1",
+  "YesAlready": "v7.30.0.2",
   "GatherbuddyReborn": "v7.30.0.2",
   "ItemVendorLocation": "v7.30.0.2",
   "HuntHelper": "v7.30.0.1",
@@ -71,5 +71,5 @@
   "TataruPraise": "v7.30.0.1",
   "GilDelta": "v7.30.0.2",
   "HoardFarm": "v7.30.0.1",
-  "SimpleTweaksPlugin": "v7.30.0.1"
+  "SimpleTweaksPlugin": "v7.30.0.2"
 }
