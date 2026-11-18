@@ -1029,7 +1029,7 @@
     "Author": "veyn",
     "Name": "vnavmesh",
     "InternalName": "vnavmesh",
-    "AssemblyVersion": "7.30.0.3",
+    "AssemblyVersion": "7.30.0.4",
     "Description": "自動在世界中移動角色的輔助工具，能巧妙地避開各種障礙物。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vnavmesh",
@@ -1049,10 +1049,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/vnavmesh.png",
     "Punchline": "自動移動吧！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760245908",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760245908",
-    "Changelog": "- 設定存檔改為先寫暫存檔再換名：存檔途中遊戲結束不會再讓設定整份回到預設",
-    "LastUpdate": 1794941675
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764527721",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764527721",
+    "Changelog": "- 法恩娜：飛行跳板落點與一處石頭的尋路修正（第一次進法恩娜會重建一次網格）",
+    "LastUpdate": 1795026878
   },
   {
     "Author": "Team Wrath",
