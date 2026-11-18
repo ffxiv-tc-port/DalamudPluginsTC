@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.30.0.9",
+    "AssemblyVersion": "7.30.0.10",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 治療技能的對象選擇（滑鼠指向／目標／焦點／血最少的隊友…）挑到屍體時改挑下一位，不再把補血放到倒地的隊友身上；復活照舊挑倒地的隊友\n- 自動循環搭配 BMR 手動技能佇列時：你手動按的 GCD（補血、持續傷害、赤復活…）不再被自動循環接著送的技能換掉，放出後自動循環立刻接手",
+    "Changelog": "- 「血最少的隊友」挑補血對象時，剛倒地的隊友（以及倒地的親信戰友）當下就跳過、改挑下一位血最少的活人，不再補到屍體上或整項落空；復活對象的挑選不變",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763581421",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763581421",
-    "LastUpdate": 1795009705,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763896409",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763896409",
+    "LastUpdate": 1795015316,
     "CategoryTags": [
       "Jobs"
     ]
@@ -2078,7 +2078,7 @@
     "Author": "Caraxi",
     "Name": "Simple Tweaks Plugin",
     "InternalName": "SimpleTweaksPlugin",
-    "AssemblyVersion": "7.30.0.5",
+    "AssemblyVersion": "7.30.0.6",
     "Description": "A collection of Quality of Life tweaks. Aiming to improve the experience without changing anything drastically.\nAll changes are toggleable, with everything disabled by default. Visit the Repo for a full list of tweaks. (Globe icon below)",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SimpleTweaksPlugin",
@@ -2098,9 +2098,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SimpleTweaksPlugin.png",
     "Punchline": "This was supposed to be simple...",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763533655",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763533655",
-    "Changelog": "- 停用「重新整理市場價格」（市場板查價被拒時自動重試）：設定頁改顯示「因已知問題而停用。」，原本有開的人設定保留不刪，只是不再生效",
-    "LastUpdate": 1795008843
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763896629",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763896629",
+    "Changelog": "- SimpleTweaks 繁中翻譯：小隊成員清單說明裡的「社群視窗」改為台服用語「社交視窗」\n- SimpleTweaks 繁中翻譯:改用台服遊戲內正式用語(快速鍵、分隊員、吉兆、評級、同好招募、金碟巨豆中心)",
+    "LastUpdate": 1795015346
   }
 ]
