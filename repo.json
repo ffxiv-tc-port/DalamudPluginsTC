@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.30.0.3",
+    "AssemblyVersion": "7.30.0.4",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763167259",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763167259",
-    "Changelog": "- 九宮幻卡：牌組最佳化與出牌計算重複使用模擬用的暫存物件，背景計算的記憶體配置減少約九成（算出的牌組分數與出牌完全相同）\n- 九宮幻卡：開著 Saucy 面板時，持有的卡片沒變就不再反覆重建卡片收藏頁與牌組編輯順序，大幅減少記憶體配置（顯示與行為不變）",
-    "LastUpdate": 1795001839,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763246917",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763246917",
+    "Changelog": "- 九宮幻卡：牌桌上剩下幾張牌、改為完整推算所有出法時，重複使用模擬用的暫存盤面，出牌計算的記憶體配置大幅減少（算出的出牌完全相同）\n- 九宮幻卡：對局中每幀讀取牌桌畫面時不再為每個介面節點建暫存清單與文字，大幅減少記憶體配置（讀到的回合、規則與對手資訊不變）\n- 九宮幻卡：開著 Saucy 面板時，牌組快取的狀態檢查不再每幀重建卡片 id 集合與快取鍵字串，減少記憶體配置（顯示與判斷結果不變）",
+    "LastUpdate": 1795003384,
     "CategoryTags": [
       "Minigames"
     ]
