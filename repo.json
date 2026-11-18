@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.10",
+    "AssemblyVersion": "7.30.0.11",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763026120",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763026120",
-    "Changelog": "- 減少副本裡首領模組載入後每幀記憶體配置：檢查「同類模組是否已啟動」不再每幀配置暫存物件（行為不變）\n- 減少有危險區時每幀記憶體配置：位移攔截的危險區快照沒變就沿用上一幀的（行為不變）\n- 減少戰鬥中每幀記憶體配置：處理技能效果確認與命中事件時不再每次配置暫存物件（行為不變）\n- 減少首領戰每幀記憶體配置：危險區的位置與角度沒變時沿用上一幀的判定，不再每幀重建（行為不變）\n- 減少每幀記憶體配置：場上的怪物清單逐幀沿用同一隻怪的資料，不再每幀全部重建（行為不變）",
-    "LastUpdate": 1794999180,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763704260",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763704260",
+    "Changelog": "- 減少首領戰每幀記憶體配置：首領朝當前目標的扇形範圍攻擊提示不再每次建暫存清單（行為不變）\n- 減少戰鬥中每幀記憶體配置：處理身上狀態變化與受擊效果時不再每次配置暫存物件（行為不變）\n- 減少首領戰每幀記憶體配置：一排排往前推進的連續爆炸範圍不再每幀重建暫存清單與陣列（行為不變）\n- 減少深層迷宮趕路時每幀記憶體配置：避開怪物偵測範圍時，怪物沒動就沿用上一幀的判定（行為不變）",
+    "LastUpdate": 1795011962,
     "CategoryTags": [
       "Jobs"
     ]
