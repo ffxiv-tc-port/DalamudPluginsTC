@@ -9,7 +9,7 @@
   "BossModReborn": "v7.30.0.8",
   "WrathCombo": "v7.30.0.7",
   "LatihasChocobo": "v7.30.0.2",
-  "Artisan": "v7.30.0.4",
+  "Artisan": "v7.30.0.5",
   "Splatoon": "v7.30.0.1",
   "vnavmesh": "v7.30.0.3",
   "InventoryTools": "v7.30.0.4",
@@ -49,7 +49,7 @@
   "Gearsetter": "v7.30.0.1",
   "ChilledLeves": "v7.30.0.3",
   "BOCCHI": "v7.30.0.4",
-  "ICE": "v7.30.0.4",
+  "ICE": "v7.30.0.5",
   "TCToolbox": "v7.30.0.3",
   "WondrousTailsSolver": "v7.30.0.1",
   "GatheringPathRenderer": "v7.30.0.3",
@@ -71,5 +71,5 @@
   "TataruPraise": "v7.30.0.1",
   "GilDelta": "v7.30.0.2",
   "HoardFarm": "v7.30.0.3",
-  "SimpleTweaksPlugin": "v7.30.0.3"
+  "SimpleTweaksPlugin": "v7.30.0.4"
 }
