@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.11",
+    "AssemblyVersion": "7.30.0.12",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763704260",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763704260",
-    "Changelog": "- 減少首領戰每幀記憶體配置：首領朝當前目標的扇形範圍攻擊提示不再每次建暫存清單（行為不變）\n- 減少戰鬥中每幀記憶體配置：處理身上狀態變化與受擊效果時不再每次配置暫存物件（行為不變）\n- 減少首領戰每幀記憶體配置：一排排往前推進的連續爆炸範圍不再每幀重建暫存清單與陣列（行為不變）\n- 減少深層迷宮趕路時每幀記憶體配置：避開怪物偵測範圍時，怪物沒動就沿用上一幀的判定（行為不變）",
-    "LastUpdate": 1795011962,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763917105",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763917105",
+    "Changelog": "- 修正攔截連線機制的 AI 走位：拿著連線（如主線副本「威爾布蘭德揚帆起航」的炸彈連線）時改為避開所有隊員與 NPC 隊友，不再只避開其中一位；連線數比隊伍人數多時也不再讓當幀的 AI 提示整個失效",
+    "LastUpdate": 1795015670,
     "CategoryTags": [
       "Jobs"
     ]
@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.30.0.9",
+    "AssemblyVersion": "7.30.0.10",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763533522",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763533522",
-    "Changelog": "- 沒勾「加入釣魚資料收集」時釣到或匯入的釣獲不再排進上傳佇列：之後才勾也不會補傳勾選前的紀錄，長時間自動釣魚也不會在記憶體裡越積越多；本機釣魚紀錄照常保存，有勾的人行為不變\n- 自動釣魚不再要求勾選設定裡的「加入釣魚資料收集」：沒勾也能把魚放進自動採集清單照常釣，而且不會上傳任何資料；有勾的人行為不變",
-    "LastUpdate": 1795008848
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763916276",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763916276",
+    "Changelog": "- 複製自動採集清單後，分頁不再畫不出清單內容：複本會一併帶上每個道具的勾選狀態（原本取消勾選的仍是取消）；在清單裡把道具換成別的之後，舊道具的偏好採集地點也不再殘留",
+    "LastUpdate": 1795015589
   },
   {
     "Author": "img02",
@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "- 一鍵傳送至任何世界或都市傳送網目的地\n- 點擊區域地圖上的城內乙太之晶即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速都市傳送網移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760329904",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760329904",
-    "Changelog": "- 傳送面板：站在同一座城內乙太之晶旁時的提示改為直接走過去，不再叫你去開已暫停的設定\n- 同乙太之光傳送修補暫停：原本寫錯位置從未生效，先停用避免影響其他插件\n- 宇宙探索：支援台服 7.3 的目的地選擇，新增直接前往行星法恩娜",
-    "LastUpdate": 1794943323
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763916944",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763916944",
+    "Changelog": "- 宇宙探索書籤列加上「直接進行星法恩娜」「直接進渴望灣」按鈕；行星法恩娜可收進書籤，地圖點可直達行星法恩娜",
+    "LastUpdate": 1795015608
   },
   {
     "Author": "apetih",
