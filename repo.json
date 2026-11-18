@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.30.0.7",
+    "AssemblyVersion": "7.30.0.8",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763295944",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763295944",
-    "Changelog": "- 自動採集途中每幀的記憶體配置大幅減少：挑下一個採集點與往採集點移動的判斷不再每幀建暫存清單（採什麼、去哪、何時停都不變）",
-    "LastUpdate": 1795004315
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763349242",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763349242",
+    "Changelog": "- 自動採集分頁與採集視窗開著時每幀的記憶體配置減少：清單每列不再建暫存物件與字串、查僱員背包數量不再每次建陣列（畫面文字、勾選、數量、拖放都不變）\n- 主視窗清單分頁（自動採集、採集視窗、採集群組、鬧鐘）：在清單上按住滑鼠時不再每幀觸發介面斷言警告；拖曳排序、拖到別的清單照舊",
+    "LastUpdate": 1795005346
   },
   {
     "Author": "img02",
