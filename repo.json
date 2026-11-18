@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.30.0.8",
+    "AssemblyVersion": "7.30.0.9",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764002657",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764002657",
-    "Changelog": "- 製作清單編輯器的「成品庫存」與「材料」頁開著時，每幀的記憶體配置幾乎歸零（畫面與行為不變）",
-    "LastUpdate": 1795017118
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764102269",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764102269",
+    "Changelog": "- 製作清單編輯器「成品庫存」頁依價格排序、「材料」頁查到價格後，開著時每幀的記憶體配置幾乎歸零（畫面與行為不變）",
+    "LastUpdate": 1795018913
   },
   {
     "Author": "Herculezz",
