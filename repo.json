@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.30.0.13",
+    "AssemblyVersion": "7.30.0.14",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- PvP 戰士一鍵連招：原初的血氣改成目標是玩家、且自身 HP 掉到 80% 以下才放；猛攻、蠻荒崩裂只對玩家目標放（NPC、物件不會移動）。三項都可在各自選項裡改回",
+    "Changelog": "- 一鍵減傷（戰士、絕槍戰士、騎士、暗黑騎士）與黑魔法師、賢者移動中技能選擇：每次判斷不再重建整張優先表（配置數百 bytes→0），行為不變",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764257771",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764257771",
-    "LastUpdate": 1795021809,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764312962",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764312962",
+    "LastUpdate": 1795022810,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1854,7 +1854,7 @@
     "Author": "MidoriKami",
     "Name": "SortaKinda",
     "InternalName": "SortaKinda",
-    "AssemblyVersion": "7.30.0.5",
+    "AssemblyVersion": "7.30.0.6",
     "Description": "依照你的需求整理物品欄，並維持指定的排序方式。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SortaKinda",
@@ -1873,10 +1873,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SortaKinda.png",
     "Punchline": "全面自訂物品欄排序方式。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762408486",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762408486",
-    "LastUpdate": 1794987283,
-    "Changelog": "- 修正插件載入時背景準備設定檔讀寫失敗（每次都記一筆警告）；角色已登入時重新載入插件不再做這項準備"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764313177",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764313177",
+    "LastUpdate": 1795022784,
+    "Changelog": "- 勾了重新排列未排序物品但沒套規則時也會排序；/sortakinda sort 會回報是否排入、沒排入不再吃冷卻"
   },
   {
     "Author": "Ice",
