@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.30.0.6",
+    "AssemblyVersion": "7.30.0.7",
     "Description": "- 一鍵傳送至任何世界或都市傳送網目的地\n- 點擊區域地圖上的城內乙太之晶即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速都市傳送網移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764258486",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764258486",
-    "Changelog": "- 「/li 渴望灣」「/li 法恩娜」「/li 行星法恩娜」在任何地方都能用：不在最佳威兔洞旁時自動走和 /li cosmic、/li phaenna 相同的直達流程（需要時先回原始世界）",
-    "LastUpdate": 1795021819
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764447076",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764447076",
+    "Changelog": "- 最後一段自動步行時，自己按住移動鍵或搖桿約半秒就結束這趟行程，不必再右鍵點擊進度條（設定可關）",
+    "LastUpdate": 1795025329
   },
   {
     "Author": "apetih",
@@ -824,7 +824,7 @@
     "Author": "Taurenkey, Kagekazu",
     "Name": "Saucy",
     "InternalName": "Saucy",
-    "AssemblyVersion": "7.30.0.4",
+    "AssemblyVersion": "7.30.0.5",
     "Description": "自動化部分金碟遊樂園小遊戲。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Saucy",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Saucy.png",
     "Punchline": "當賺取 MGP 太費工夫的時候。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763246917",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763246917",
-    "Changelog": "- 九宮幻卡：牌桌上剩下幾張牌、改為完整推算所有出法時，重複使用模擬用的暫存盤面，出牌計算的記憶體配置大幅減少（算出的出牌完全相同）\n- 九宮幻卡：對局中每幀讀取牌桌畫面時不再為每個介面節點建暫存清單與文字，大幅減少記憶體配置（讀到的回合、規則與對手資訊不變）\n- 九宮幻卡：開著 Saucy 面板時，牌組快取的狀態檢查不再每幀重建卡片 id 集合與快取鍵字串，減少記憶體配置（顯示與判斷結果不變）",
-    "LastUpdate": 1795003384,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764446674",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764446674",
+    "Changelog": "- 金碟遊樂場 GATE：每個 :00／:20／:40 時段在 log 記一行結果（類型、去過的區域、有沒有參加與原因、MGP 增減），空軍裝甲駕駛員進出也各記一行",
+    "LastUpdate": 1795025330,
     "CategoryTags": [
       "Minigames"
     ]
@@ -1123,7 +1123,7 @@
     "Author": "daemitus, croizat",
     "Name": "YesAlready",
     "InternalName": "YesAlready",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "厭倦了在天守閣/伊迪爾夏爾禁地一直點確認嗎？受不了在副本裡一直按鍵嗎？YesAlready 可以自動點擊你設定的所有惱人對話框。只要輸入對話文字，就再也不用手動點了！支援 /regex/ 比對，也內建了幾個針對「看起來不是 yes/no，但行為類似」的對話框（例如分解）的模組。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/YesAlready",
@@ -1143,10 +1143,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/YesAlready.png",
     "Punchline": "自動點擊你指定的各種確認對話框。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761805583",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/761805583",
-    "Changelog": "- 對話時的效能改善：對話視窗開著時不再每幀重新走訪整棵規則樹、重新解析目標名稱",
-    "LastUpdate": 1794974197
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764446650",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764446650",
+    "Changelog": "- 內部修正：圖示按鈕的單參數版本不再呼叫自己（原本一呼叫就無限遞迴；目前沒有地方用到，畫面與行為不變）\n- 「其他選項」分頁新增搜尋框：輸入名稱或說明文字即可篩選選項，英文視窗名稱也搜得到",
+    "LastUpdate": 1795025322
   },
   {
     "Author": "KangasZ",
