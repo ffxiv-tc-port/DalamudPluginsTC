@@ -96,7 +96,7 @@
     "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
-    "AssemblyVersion": "7.30.0.3",
+    "AssemblyVersion": "7.30.0.4",
     "Description": "自動幫你提鉤釣魚,你能相信嗎?\n支援自訂預設集、自動以小釣大、自動刺魚等功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoHook",
@@ -116,10 +116,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoHook.png",
     "Punchline": "讓釣魚不再無聊(或更無聊)。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762585301",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762585301",
-    "Changelog": "- 社群預設集下載途中，設定視窗的社群分頁不再可能因清單同時被改寫而中斷繪製\n- 載入插件時不再每次都重寫一遍設定檔，只在舊版設定遷移或補上預設項時才寫回\n- 設定檔不再替每個魚餌／魚寫出名稱、種類與魚影訊息，存檔變小也變快\n- 釣魚時每則聊天訊息不再掃過整張訊息表，減輕釣魚途中的主執行緒負擔",
-    "LastUpdate": 1794990648
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762657087",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762657087",
+    "Changelog": "- 下載社群預設集時不再從背景執行緒呼叫遊戲函式：匯入改回遊戲主執行緒逐一進行\n- 改設定、切換 preset 時存檔造成的卡頓變小：短時間內的多次存檔合併成一次，寫檔改在背景做",
+    "LastUpdate": 1794992098
   },
   {
     "Author": "кайт машина (Puni.sh)",
