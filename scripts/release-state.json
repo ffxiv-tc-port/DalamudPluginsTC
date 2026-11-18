@@ -13,7 +13,7 @@
   "Splatoon": "v7.30.0.4",
   "vnavmesh": "v7.30.0.3",
   "InventoryTools": "v7.30.0.7",
-  "visland": "v7.30.0.2",
+  "visland": "v7.30.0.3",
   "Lifestream": "v7.30.0.6",
   "SubmarineTracker": "v7.30.0.2",
   "YesAlready": "v7.30.0.2",
@@ -28,7 +28,7 @@
   "PixelPerfect": "v7.30.0.1",
   "PriceInsight": "v7.30.0.2",
   "QoLBar": "v7.30.0.1",
-  "SonarPlugin": "v7.30.0.4",
+  "SonarPlugin": "v7.30.0.5",
   "AvantGarde": "v7.30.0.1",
   "Dynamis": "v7.30.0.1",
   "DynamisWithSMA": "v7.30.0.1",
@@ -50,7 +50,7 @@
   "ChilledLeves": "v7.30.0.3",
   "BOCCHI": "v7.30.0.4",
   "ICE": "v7.30.0.5",
-  "TCToolbox": "v7.30.0.4",
+  "TCToolbox": "v7.30.0.5",
   "WondrousTailsSolver": "v7.30.0.1",
   "GatheringPathRenderer": "v7.30.0.3",
   "DeepDungeonDex": "v7.30.0.4",
@@ -71,5 +71,5 @@
   "TataruPraise": "v7.30.0.1",
   "GilDelta": "v7.30.0.3",
   "HoardFarm": "v7.30.0.3",
-  "SimpleTweaksPlugin": "v7.30.0.6"
+  "SimpleTweaksPlugin": "v7.30.0.7"
 }
