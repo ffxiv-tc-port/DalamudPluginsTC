@@ -970,7 +970,7 @@
     "Author": "MgAl2O4",
     "Name": "TriadBuddy",
     "InternalName": "TriadBuddy",
-    "AssemblyVersion": "7.30.0.1",
+    "AssemblyVersion": "7.30.0.2",
     "Description": "九宮幻卡解牌工具，僅支援 NPC 對戰。\n- 小遊戲進行時提示下一步最佳出牌\n- 對戰前評估所有牌組預設\n- NPC 牌組優化器\n- 為卡牌收藏視窗新增更多細節",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/FFTriadBuddyDalamud",
@@ -986,11 +986,11 @@
     "LoadPriority": 0,
     "Punchline": "九宮幻卡解牌助手",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758406440",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758406440",
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763252684",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/763252684",
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TriadBuddy.png",
-    "Changelog": "- 台服 7.3 改版：版號推進到 7.30（插件功能不變）\n- 相依函式庫 FFTriadBuddy 對齊到補上授權檔的版本（功能不變）",
-    "LastUpdate": 1794907071,
+    "Changelog": "- 九宮幻卡：對局中讀取牌桌畫面與計算出牌提示的記憶體配置大幅減少（提示的牌、格位與勝率完全相同）",
+    "LastUpdate": 1795003508,
     "CategoryTags": [
       "Minigames"
     ]
