@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.30.0.11",
+    "AssemblyVersion": "7.30.0.12",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 設定視窗開著時每幀配置的記憶體大幅減少：職業頁約少三到七成（例如學者約 102 KB→29 KB／幀）、職業清單約 10 KB→2.4 KB／幀，畫面與操作不變",
+    "Changelog": "- 連段每次指定技能施放對象時配置的記憶體少約八成（每次約 1.0～1.3 KB→0.1～0.3 KB），行為不變\n- 設定視窗載入後第一次打開不再卡頓約 0.3 秒：職業清單與子選項表改用載入時已讀好的資料建立",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764087008",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764087008",
-    "LastUpdate": 1795018614,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764169806",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764169806",
+    "LastUpdate": 1795020154,
     "CategoryTags": [
       "Jobs"
     ]
