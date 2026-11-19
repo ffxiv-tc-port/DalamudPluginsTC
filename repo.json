@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.17",
+    "AssemblyVersion": "7.30.0.18",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/767886025",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/767886025",
-    "Changelog": "- 新增惡靈府邸靜語莊園 哈利卡納蘇斯模組：女僕或阿芒迪娜女士還沒打到 0% 時，AI 會先停打王、換去打小怪，避免王吸收滿血小怪後放出致死的血雨；虛空超火焰、暗黑霧等範圍技照讀條閃",
-    "LastUpdate": 1795096405,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/768750809",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/768750809",
+    "Changelog": "- 永恆黑暗殲滅戰：從監牢傳送回場地後，首領模組不再重複載入第二份、繼續追蹤同一隻首領；打倒首領當下模組就結束（原本要等離開副本才結束）",
+    "LastUpdate": 1795112109,
     "CategoryTags": [
       "Jobs"
     ]
