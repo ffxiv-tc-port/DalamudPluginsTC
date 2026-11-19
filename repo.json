@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.30.0.8",
+    "AssemblyVersion": "7.30.0.9",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/765684838",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/765684838",
-    "Changelog": "- 4 個勾了沒作用的設定改為停用並標示「無作用」：關鍵操作失敗、兩個航行器提醒、不檢查派遣計劃錯誤",
-    "LastUpdate": 1795050468,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/766438682",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/766438682",
+    "Changelog": "- 多角色模式：已經沒有空格的僱員，不再為同一輪後面才拿到的稀有品被打開一次又關上（每次省約 2 秒）\n- 僱員管理分頁的角色列新增 E 欄：掛著稀有品存放計畫的僱員已用／總格數，以及約幾小時後會滿（可在「顯示項目」關閉）；快滿或已滿時記進「偵測到異常」視窗",
+    "LastUpdate": 1795067671,
     "CategoryTags": [
       "Inventory"
     ]
