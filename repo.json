@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.30.0.14",
+    "AssemblyVersion": "7.30.0.15",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/765669324",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/765669324",
-    "Changelog": "- 設定「按 Esc 關閉主視窗」改為停用並標示目前沒有作用：主視窗獲得焦點時按 Esc 一律會關閉",
-    "LastUpdate": 1795050132
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/766218232",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/766218232",
+    "Changelog": "- 自動採集清單裡未知／傳說採集點的道具，列尾以灰字顯示預估還要幾輪、幾小時才採得完（滑鼠移上去看算法與下次出現時間）；算不出來顯示「?」\n- 自動採集進行中插件被重新載入（停用再啟用、更新）時，重新載入後在聊天視窗與主視窗提示「繼續自動採集」，點了才開始；另有「重新載入後自動繼續」選項（預設關）",
+    "LastUpdate": 1795062556
   },
   {
     "Author": "img02",
