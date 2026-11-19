@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.30.0.10",
+    "AssemblyVersion": "7.30.0.11",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/765684997",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/765684997",
-    "Changelog": "- 製作清單編輯器「切換製作職業」：點目前的職業不再把該項目從清單刪掉；選單只列同一個成品的配方\n- 「清單生成器」的星級篩選：0 星選項改顯示「無星」，不再觸發介面斷言",
-    "LastUpdate": 1795050492
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/766553028",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/766553028",
+    "Changelog": "- 製作清單「缺料全部加進 GatherBuddy」：送出前先列出來自限時採集點（傳說／未知／限時）的素材，附市價與 GatherBuddy 預估的採集時間，可以取消勾選想改用購買的素材再送出（設定可關）",
+    "LastUpdate": 1795070141
   },
   {
     "Author": "Herculezz",
@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.30.0.15",
+    "AssemblyVersion": "7.30.0.16",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/766218232",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/766218232",
-    "Changelog": "- 自動採集清單裡未知／傳說採集點的道具，列尾以灰字顯示預估還要幾輪、幾小時才採得完（滑鼠移上去看算法與下次出現時間）；算不出來顯示「?」\n- 自動採集進行中插件被重新載入（停用再啟用、更新）時，重新載入後在聊天視窗與主視窗提示「繼續自動採集」，點了才開始；另有「重新載入後自動繼續」選項（預設關）",
-    "LastUpdate": 1795062556
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/766552485",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/766552485",
+    "Changelog": "- 其他插件可以向 GatherBuddy 查詢限時採集點素材的預估採集時間（給 Artisan 匯出前確認用，只讀）",
+    "LastUpdate": 1795070123
   },
   {
     "Author": "img02",
