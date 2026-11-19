@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.16",
+    "AssemblyVersion": "7.30.0.17",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/766569000",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/766569000",
-    "Changelog": "- 新增萬魔殿 荒天之獄3（一般）模組：駁回判決的擊退前 AI 會先走到場中央附近，不再被擊退出場；光與暗的調停會站到身上標記對應的那一半",
-    "LastUpdate": 1795070498,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/767886025",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/767886025",
+    "Changelog": "- 新增惡靈府邸靜語莊園 哈利卡納蘇斯模組：女僕或阿芒迪娜女士還沒打到 0% 時，AI 會先停打王、換去打小怪，避免王吸收滿血小怪後放出致死的血雨；虛空超火焰、暗黑霧等範圍技照讀條閃",
+    "LastUpdate": 1795096405,
     "CategoryTags": [
       "Jobs"
     ]
