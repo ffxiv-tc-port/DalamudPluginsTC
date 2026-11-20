@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.38",
+    "AssemblyVersion": "7.30.0.39",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772062893",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772062893",
-    "Changelog": "- 厄爾庇斯育體寶殿 育體雄獅：額外出現的獎勵怪還在時模組不提早結束，並列入繪製與目標優先序\n- 夢羽寶殿：新增視財如命 代恩・奧瑟變身艾奇德娜的模組（石化、石化爆發、深淵收割、深淵柱、虛無奔流、鐮刀強擊）；變身奧爾特羅斯時補上獎勵怪的砸爛／挑起／迴轉，神秘海燕補上獎勵怪的洋蔥汁等 5 招，獎勵怪還在時模組不提早結束\n- 夢羽寶境：新增亞利幾諾模組（熾熱凝視、不協和音波、鬧劇、擊倒、獎勵怪的招式），與歌利亞共用第五房場地；歌利亞補上獎勵怪的砸爛／挑起／迴轉、噴水與鑽井留下的水窪\n- 運河寶物庫神殿 神殿斯卡尼特：隨機出現的獎勵怪讀洋蔥汁、剪除、惡臭、絕叫、花粉時畫出危險區，首領先倒而獎勵怪還在時模組不提早結束；神殿巨獸同樣等額外的獎勵怪倒下才結束",
-    "LastUpdate": 1795183588,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772105743",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772105743",
+    "Changelog": "- AI 腳下的危險區快生效、閃避路線又要轉彎時，不再把餘裕誤判成「還不急」（設了移動急迫門檻的人會晚動身）",
+    "LastUpdate": 1795184317,
     "CategoryTags": [
       "Jobs"
     ]
