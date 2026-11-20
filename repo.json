@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.30",
+    "AssemblyVersion": "7.30.0.31",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771707161",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771707161",
-    "Changelog": "- AI 被擊退到場地邊緣（站在尋路圖上不可通行的格子）時，照樣分得出安全格與快爆的格，也不再把危險誤判成「還不急」而站著不動\n- 新增武裝聖域放浪神古神殿三個首領模組：靈魂熄滅 AI 會背對、小火球標成坦克死刑，光鱗兄弟戰 AI 先打祭器\n- 新增邪念妖地無限城古堡三個首領模組：夜魔人戰 AI 先打幻光球、弗迪亞戰 AI 先打邪輪小丑並提示全能牌，全場傷害有提示\n- 新增逆轉要害沙斯塔夏溶洞 克拉肯模組：AI 先打克拉肯的腕足、不打觸手，噴墨與墨點照預兆畫範圍\n- 新增甦醒遺跡喀恩埋沒聖堂三個首領模組：仙人掌怪女皇的十萬根針提示要趕快打、AI 先打仙人掌怪守衛，審理神代言者戰 AI 會避開聖堂木乃伊\n- 新增激戰城塞石衛塔三個首領模組：格里尼奇惡龍的利爪標成坦克死刑、庫卡龍龜的猛力踏標成全場傷害，其餘讀條照預兆畫範圍\n- 新增鑽石武器捕獲作戰模組：鑽石閃光會提示全隊直線分攤，追蹤雷射點名散開，敖龍厄運的死刑圈其他人會避開，場地照東西兩片平台畫\n- 新增綠寶石武器破壞作戰模組：光子射線兩道外擴的環照實際內外徑畫出（不再被當成內徑 3 的甜甜圈往外跑），綠寶石射擊與分而治之有死刑預告\n- 新增紅寶石武器破壞作戰模組：誘導射線的散開、高功率誘導射線的兩組分攤、隕石流點名散開會提示，踐踏與紅寶石之爪有死刑預告",
-    "LastUpdate": 1795176741,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771731775",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771731775",
+    "Changelog": "- Lv60 高難迷宮新模組的提示顯示繁中：神聖遺跡無限城市街古跡、天山深境索姆阿爾靈峰、秘本寶庫迦巴勒幻想圖書館、空中神域不獲島、黑渦傳說破艦島\n- 新增黑渦傳說破艦島尤彌爾、愛因扎爾・斯拉菲爾辛大甲將模組：萬雷、槍彈地獄提示全場傷害，一萬伏特提示被點名者踩黏液\n- 新增地脈靈燈天狼星燈塔三個首領模組：炸彈之母／炸彈之父戰 AI 先打灰色炸彈，孛罟的採掘會畫範圍\n- 新增空中神域不獲島三個首領模組：AI 先打奴涅努克之羽與之影、卡努瓦努圖騰，渦輪提示貼近首領防擊退\n- 新增秘本寶庫迦巴勒幻想圖書館三個首領模組：博學林鴞的大雷電之章 AI 會散開、黃道隕石提示躲到岩石後，液態火焰的磁石依標記提示靠近或遠離\n- 新增天山深境索姆阿爾靈峰三個首領模組：大孢囊的引火會畫範圍，熔岩蠍的致命尾刺標成坦克死刑、炎絲噴射甜甜圈照實際內徑畫，AI 先打硬螯蠍\n- 新增神聖遺跡無限城市街古跡阿卡莫特、雙翼飛獅模組：幻惑鱗粉時 AI 會背對首領面向牆，古代神聖時 AI 先打立體魔法陣\n- 新增伊甸希望樂園 覺醒之章4 模組：崩岩的死刑圈其他人會避開，大地之吼與大地之怒有全體傷害預告\n- 新增伊甸希望樂園 覺醒之章3 模組：裂流的坦克直線其他人會避開，畸形波會提示散開、殺人浪全隊分攤，浪潮嘶吼與大海嘯有全體傷害預告\n- 新增伊甸希望樂園 覺醒之章2 模組：暗影炎有死刑預告、熵有全體傷害預告，黑暗大火焰會提示散開、黑暗神聖全隊分攤 AI 會走進分攤圈\n- 新增伊甸希望樂園 覺醒之章1 模組：伊甸火光的甜甜圈會畫對安全圈、樂園之槍有死刑預告、伊甸大火焰提示散開，虛榮之惡的坦克直線其他人會避開",
+    "LastUpdate": 1795177263,
     "CategoryTags": [
       "Jobs"
     ]
