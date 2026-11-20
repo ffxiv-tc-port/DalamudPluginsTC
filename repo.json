@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.20",
+    "AssemblyVersion": "7.30.0.21",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/770743399",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/770743399",
-    "Changelog": "- 寫到一半就中斷的重播檔（例：遊戲當機）不再整份讀不進來：讀到中斷處之前的內容照常可以回放，最後那筆不完整的紀錄捨棄\n- 重播設定「自動刪除前保留的最大重播數」在預設重播資料夾下也會生效（原本永遠不刪）；只刪 BMR 自己錄的重播檔、由最舊的開始，資料夾裡的其他檔案不動\n- 點名型範圍技（例：最終幻想末世終跡 和平捍衛者的「對人光線」，共 24 招）讀條中途施放者消失或被點名者倒下時，AI 不再一直躲一個不會來的範圍\n- 桑多利亞：第二巡行：「牽引光束」的擊退落點預測改為會被拉過施放點 5 碼，站得太近時場地圖箭頭與「即將被擊退到危險區域！」提示會正確警告",
-    "LastUpdate": 1795156232,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/770913067",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/770913067",
+    "Changelog": "- 主線單人戰「海詞石窟的潛伏者」在「啟用任務戰鬥 / 個人副本的自動執行」關閉時不再改動攻擊目標的優先順序\n- 主線單人戰「英雄無法安息」自動執行在打倒首領後會結束互動步驟並走到收尾位置，不再打完停在原地\n- 主線單人戰「踏破風雪」自動執行時，站進巡邏兵的視野範圍會先放下手上的互動去閃開，不再站在原地被發現；第二段馬車改走固定路點\n- 主線單人戰「無盡寒夜」的自動執行改成上游修過多次的最新版：未戰鬥敵兵本體也列為禁區、幾段互動前先沿指定路線走、後段救人改走固定路點並在打倒指定敵人後才往下一處\n- 脫戰時要放播魂種或各種彩繪（脫戰時是瞬發）不再被當成要詠唱：AI 自動移動與「詠唱期間禁止移動」不會為了它們停下腳步",
+    "LastUpdate": 1795160166,
     "CategoryTags": [
       "Jobs"
     ]
