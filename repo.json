@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.21",
+    "AssemblyVersion": "7.30.0.22",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/770913067",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/770913067",
-    "Changelog": "- 主線單人戰「海詞石窟的潛伏者」在「啟用任務戰鬥 / 個人副本的自動執行」關閉時不再改動攻擊目標的優先順序\n- 主線單人戰「英雄無法安息」自動執行在打倒首領後會結束互動步驟並走到收尾位置，不再打完停在原地\n- 主線單人戰「踏破風雪」自動執行時，站進巡邏兵的視野範圍會先放下手上的互動去閃開，不再站在原地被發現；第二段馬車改走固定路點\n- 主線單人戰「無盡寒夜」的自動執行改成上游修過多次的最新版：未戰鬥敵兵本體也列為禁區、幾段互動前先沿指定路線走、後段救人改走固定路點並在打倒指定敵人後才往下一處\n- 脫戰時要放播魂種或各種彩繪（脫戰時是瞬發）不再被當成要詠唱：AI 自動移動與「詠唱期間禁止移動」不會為了它們停下腳步",
-    "LastUpdate": 1795160166,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/770982124",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/770982124",
+    "Changelog": "- 占星術師職業任務單人戰「冰槍的試煉」自動執行：在第三與第四個目標之間補上一段「走到指定位置、打倒那裡的敵人」（照上游修正）\n- 劍術士職業任務單人戰「納爾札爾雙劍」自動執行：不再攻擊不該打的對象，打倒指定敵人後會回頭清掉一開始沒被拉到的敵人（完成副本需要）\n- 永恆黑暗殲滅戰：中場被傳送到另一塊場地時，就算雷達視窗沒有顯示，AI 也會照那塊場地走向傳送點（以前要等雷達畫出來才會換場地）\n- 山中戰線澤梅爾要塞「全視之眼」的場地範圍補上洞窟東側與南側水晶附近的區域：首領被拉到水晶旁打時，AI 不再因為人站在場地外而停下不動",
+    "LastUpdate": 1795161762,
     "CategoryTags": [
       "Jobs"
     ]
