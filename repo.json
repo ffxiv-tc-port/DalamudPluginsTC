@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.7",
+    "AssemblyVersion": "7.30.0.8",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/768783512",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/768783512",
-    "Changelog": "- 宇宙好運道自動執行的除錯記錄改正比較方向（只改文字，判定不變）\n- 宇宙工具經驗模式：最近拿不到金星的製作任務在 30 分鐘內排到最後，不再馬上重接（預設開，可關、分鐘數可調）；工具經驗全滿又沒開自動回報時會寫一行說明\n- 宇宙探索任務面板的讀取記錄改在面板開好之後才寫，讀不到時自動附上面板文字；宇宙好運道選邊記錄列出兩邊獎品與權重\n- 宇宙探索：騎乘中不再把製作職誤判成還沒學會「掌握」（改以技能解鎖紀錄為準）",
-    "LastUpdate": 1795112761
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771711309",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771711309",
+    "Changelog": "- 宇宙商店頁手動調整採購（購買數量、保留數量、移除項目、關閉購買等）改為 0.5 秒內存檔，當機重開後不會照舊設定多買\n- 宇宙商店自動購買後的「剩餘購買數量」改回 0.5 秒內存檔，不受 5 秒存檔間隔限制，當機重開後不會重複購買\n- 宇宙探索設定連續修改時不再每半秒整份重寫：存檔最多每 5 秒一次，最後一次修改照樣會存到；每小時在記錄留一行存檔次數與來源\n- 宇宙好運道：兩邊權重一樣時隨機選定一邊就固定，不再每一幀左右來回換\n- 宇宙好運道：HQ 獎品（例如 HQ 強心劑）現在對得上權重表，不再顯示「未登記」\n- 宇宙好運道權重表補上法恩娜轉盤的「惰性炸裂狀水晶」（權重 0，可在設定頁自行調整）",
+    "LastUpdate": 1795176862
   },
   {
     "Author": "Liza Carvelli",
