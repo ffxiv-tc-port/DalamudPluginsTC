@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.36",
+    "AssemblyVersion": "7.30.0.37",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771981798",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771981798",
-    "Changelog": "- 禁忌城邦瑪哈 卡洛菲斯提莉：場地改成照實際地板（原本的圓往北偏 1 米、大了半米，北半圈邊緣有踩不到的地方被當成場地），南端入口的牆外不再算場地\n- 禁忌城邦瑪哈 石面：場地改成照實際地板的三塊平台（原本三個圓都畫成半徑 20 米，兩端平台實際只有 16 米，約兩成場地是空中），兩側入口的牆外不再算場地\n- 禁忌城邦瑪哈 弗加爾：場地改成照實際地板（原本的圓大了半米、往南偏約 0.5 米，東西兩側有踩不到的地方被當成場地），南北入口的牆外不再算場地\n- 聖教中樞伊修加爾德教皇廳 聖騎士阿代爾斐爾：場地原本整塊往西北偏了約 0.6 米，改回對準實際地板",
-    "LastUpdate": 1795182164,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772038131",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772038131",
+    "Changelog": "- AI 設定頁的「分隊號令」開關與說明顯示繁中\n- 分隊攻略任務：魔獸領域日影地修練所 獸鬥士 坦伽塔、監獄廢墟托托・拉克千獄 霸星蛛蠍、山中戰線澤梅爾要塞 巴特拉爾的機制目標沒有分隊員在打時，自動對它下「號令：戰鬥開始」（AI 設定可關，預設開）\n- 魔獸領域日影地修練所：支援的首領清單裡「獸鬥士 坦伽塔」原本顯示成「熾熱火叢」，改回正確名稱",
+    "LastUpdate": 1795183157,
     "CategoryTags": [
       "Jobs"
     ]
