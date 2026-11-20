@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.22",
+    "AssemblyVersion": "7.30.0.23",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/770982124",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/770982124",
-    "Changelog": "- 占星術師職業任務單人戰「冰槍的試煉」自動執行：在第三與第四個目標之間補上一段「走到指定位置、打倒那裡的敵人」（照上游修正）\n- 劍術士職業任務單人戰「納爾札爾雙劍」自動執行：不再攻擊不該打的對象，打倒指定敵人後會回頭清掉一開始沒被拉到的敵人（完成副本需要）\n- 永恆黑暗殲滅戰：中場被傳送到另一塊場地時，就算雷達視窗沒有顯示，AI 也會照那塊場地走向傳送點（以前要等雷達畫出來才會換場地）\n- 山中戰線澤梅爾要塞「全視之眼」的場地範圍補上洞窟東側與南側水晶附近的區域：首領被拉到水晶旁打時，AI 不再因為人站在場地外而停下不動",
-    "LastUpdate": 1795161762,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771221088",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771221088",
+    "Changelog": "- 永恆黑暗殲滅戰／極 永恆黑暗殲滅戰：被關進監牢那段不再每一幀重建場地（AI 的尋路底圖改成每座監牢只建一次）\n- 桑多利亞：第二巡行（Ultima, the Feared）：在燃燒的船與逃生平台之間移動時，雷達視窗沒有顯示也會照所在那一邊的場地走位\n- 永久幽界中央終端（某位處刑人的記憶【枯黃】）：牢籠出現後，雷達視窗沒有顯示時 AI 也會照「自己有沒有被鎖鏈連到處刑人」換成對應的場地\n- 極 青龍征魂戰：第二階段站在中間圓形平台上時，雷達視窗沒有顯示也會照平台（半徑 20 米）的場地走位，被打進水裡時照水面那塊（以前雷達沒畫就一直停在含水面的大場地）\n- 帝國湖岸堡攻城戰（達溫）：在達溫與獸王 萊昂兩塊場地之間移動時，雷達視窗沒有顯示也會照所在那塊場地走位與判斷危險區\n- 帝國湖岸堡攻城戰（布里歐納克）：在上下兩層之間移動時，雷達視窗沒有顯示也會照所在那一層的場地走位與判斷危險區\n- 黃金平原帕戈爾贊草原（魔導要塞）：走上核心平台時，雷達視窗沒有顯示也會照核心平台的場地走位\n- 魔術工坊瑪托雅工作室（水滴精）：被間歇泉送上雲朵平台時，雷達視窗沒有顯示也會照雲朵平台走位\n- 幻 青龍征魂戰：第二階段站在中間圓形平台上時，雷達視窗沒有顯示也會照平台（半徑 20 米）的場地走位，被打進水裡時照水面那塊（以前雷達沒畫就一直停在含水面的大場地）\n- 惡夢樂園迷途鬼區（夢像）：場地變成十字形那段，雷達視窗沒有顯示時 AI 也會照十字形場地走位（變成幽靈時照原場地）\n- 極 永恆黑暗殲滅戰：中場被傳送到另一塊場地時，就算雷達視窗沒有顯示，AI 也會照那塊場地走向傳送點（以前要等雷達畫出來才會換場地）",
+    "LastUpdate": 1795166935,
     "CategoryTags": [
       "Jobs"
     ]
