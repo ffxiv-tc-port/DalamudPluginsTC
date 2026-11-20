@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.28",
+    "AssemblyVersion": "7.30.0.29",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771618579",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771618579",
-    "Changelog": "- 新增複製工廠廢墟 9S：接入多腳戰車模組：前後／側面齊射的雷射掃射、主砲雷射、馬克思衝擊、對接解除後的三道俯衝（依序）與飛彈命中的範圍會畫出，大型戰車自爆時 AI 會躲到另一台戰車後面，殘骸墜落分攤與飛彈命中分散會照著站\n- 新增複製工廠廢墟 霍布斯模組：環形雷射最外圈、多重攻擊檢測的圓與甜甜圈、塌方、高壓放電的範圍會畫出，短程飛彈分散 AI 會照著站，場地改成三個聯盟各自的平台\n- 新增複製工廠廢墟 多關節型：司令機模組：全方位能量彈的圓與三圈甜甜圈會依序畫出，連續能量彈的正面扇形、迫擊能量彈、側方／中央旋轉攻擊與大口徑雷射的範圍會畫出，AI 會避開\n- 新增失落之都拉巴納斯塔 冷血劍阿加斯模組：真實／虛假的面具配上頭上指令時 AI 會照規則持續移動或停手、背對或面向王，冷血劍的直線、咒槍穿刺與冥界恐叫打的範圍會畫出\n- 新增失落之都拉巴納斯塔 人馬王洛弗卡勒模組：人馬戰車的衝鋒線、戰吼的半場、分身特立獨行的直線、冥界恐叫打與古惡魔的範圍會畫出，AI 會避開\n- 新增失落之都拉巴納斯塔 統治者哈修馬利姆模組：加速刃、岩石突擊、統治之塔、支配之塔、大地搖動、崩塌的範圍會畫出，大落石分攤、落石分散 AI 會照著站",
-    "LastUpdate": 1795175031,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771658480",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771658480",
+    "Changelog": "- Lv50 高難迷宮新模組的提示顯示繁中：劍鬥領域日影地修練所、腐壞遺跡無限城市街古跡\n- 新增慘劇靈殿塔姆・塔拉墓園三首領模組：AI 閃避範圍技時限制在房內地板上\n- 新增財寶傳說破艦島大腳巨猿、肖魯姆模組：AI 閃避範圍技時限制在房內地板上\n- 新增腐壞遺跡無限城市街古跡三首領模組：迪亞布羅斯的究極恐懼改成甜甜圈（AI 會貼到王腳下或站遠，不再往外跑進範圍），破滅預兆會提示穿過同符號的門\n- 新增劍鬥領域日影地修練所三首領模組：皮拉刻蒙的1000噸迴轉會提示去拉桿取得堅壁、卡托布雷帕斯的惡魔之瞳會提示使用幽暗珠、穆穆艾珀的停滯會提示用札爾神的咒具解救隊友\n- 新增紛爭要地布雷福洛克斯野營地三首領模組：6號哥布林坦克的火炎放射（無讀條順劈）會畫出並避開，三場的 AI 都限制在房內地板上閃避\n- 新增魔神賽菲羅特殲滅戰模組：魔神之怒會提示全隊分攤、意志點名散開，仁慈死刑預告，大地搖動的扇形、慈悲之柱與王國的擊退會畫出\n- 新增女神索菲亞殲滅戰模組：大雷電改成王腳下安全的甜甜圈（不再被當成實心圓往外跑），中雷電、大勁風、光露、突襲的範圍與灼熱視線的背對提示會畫出\n- 新增真 濕婆殲滅戰模組：冰雹點名會提示散開，鑽石星塵有全體傷害預告，地面結冰時 AI 不會亂跑滑出去\n- 新增惡靈府邸靜語莊園 莊園的小丑、阿修模組：阿修的「肢解」「深淵飛刺」直線與「死鐮」周圍 AI 會避開，小丑的虛空大暴雪會當死刑提示\n- 新增山中戰線澤梅爾要塞 陶拉德模組：落肘、雙重碎擊的扇形與深空巨怪的火焰水槍落點 AI 會照讀條閃開\n- 新增監獄廢墟托托・拉克千獄 豹尾花模組：治療與遠程會站到「酸霧」範圍外，兩場豹尾花戰各用自己走廊的場地",
+    "LastUpdate": 1795175743,
     "CategoryTags": [
       "Jobs"
     ]
@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.30.0.8",
+    "AssemblyVersion": "7.30.0.9",
     "Description": "- 一鍵傳送至任何世界或都市傳送網目的地\n- 點擊區域地圖上的城內乙太之晶即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速都市傳送網移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764602680",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764602680",
-    "Changelog": "- 其他插件呼叫停止時更穩定（不再在背景執行緒建立介面元件）",
-    "LastUpdate": 1795028277
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771658317",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771658317",
+    "Changelog": "- 傳送到城內乙太之晶時人已經站在它旁邊：有設自訂落點就直接走過去，不再只跳提示什麼都不做（AutoRetainer 稀有品繳交換角後不會再卡住）",
+    "LastUpdate": 1795175701
   },
   {
     "Author": "apetih",
