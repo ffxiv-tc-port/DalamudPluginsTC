@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.19",
+    "AssemblyVersion": "7.30.0.20",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/768861163",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/768861163",
-    "Changelog": "- 在副本中重新載入插件後自動開始的錄影，檔名不再少了職業、等級與角色名縮寫（等拿到玩家資料才開錄，最多等約 3 秒）\n- 新增水晶塔 暗之世界 亞特蒙斯（三隊各打一隻的中途戰）模組：黑洞的標記出現後，其他人會避開亞特蒙斯與被點名者之間的扇形，不再被一起吸進去；衝擊狂潮照讀條離開半徑 19\n- 最終決戰天幕魔導城 蓋烏斯：「指引」連續爆炸看到第一波就畫出整輪四波的落點與時間，AI 一開始就選好位置，不再每 2 秒轉一次方向\n- 水晶塔 暗之世界 暗黑之雲：沒有讀條的波動爆炸（半徑 5）改為在地上標記出現時就畫出範圍，AI 約有 10 秒可以先走開\n- 水晶塔 暗之世界 安格拉・曼紐：王正面的怪光線（沒有讀條的直線）改為常駐危險區，非坦克的 AI 不再站在王正前方\n- 水晶塔 暗之世界 安格拉・曼紐：死亡視線的背對提示改為持續到真正判定那一刻（原本提早約 1.4 秒消失，連段會把角色轉回面向王而吃到死亡宣告）",
-    "LastUpdate": 1795114303,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/770743399",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/770743399",
+    "Changelog": "- 寫到一半就中斷的重播檔（例：遊戲當機）不再整份讀不進來：讀到中斷處之前的內容照常可以回放，最後那筆不完整的紀錄捨棄\n- 重播設定「自動刪除前保留的最大重播數」在預設重播資料夾下也會生效（原本永遠不刪）；只刪 BMR 自己錄的重播檔、由最舊的開始，資料夾裡的其他檔案不動\n- 點名型範圍技（例：最終幻想末世終跡 和平捍衛者的「對人光線」，共 24 招）讀條中途施放者消失或被點名者倒下時，AI 不再一直躲一個不會來的範圍\n- 桑多利亞：第二巡行：「牽引光束」的擊退落點預測改為會被拉過施放點 5 碼，站得太近時場地圖箭頭與「即將被擊退到危險區域！」提示會正確警告",
+    "LastUpdate": 1795156232,
     "CategoryTags": [
       "Jobs"
     ]
