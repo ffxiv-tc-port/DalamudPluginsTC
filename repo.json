@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.30.0.6",
+    "AssemblyVersion": "7.30.0.7",
     "Description": "自動幫你跑副本，支援親信戰友、劇情輔助器、冒險者分隊、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760328859",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/760328859",
-    "Changelog": "- 內部整理（使用上行為不變）：別的插件與多開送來的指令改排同一條佇列，停止時的導航收尾集中到同一個判斷\n- 新增永恆黑暗殲滅戰路線（台服 7.3）",
-    "LastUpdate": 1794943301
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771980841",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771980841",
+    "Changelog": "- 修正冒險者小隊排魔獸領域日影地修練所時選錯任務的問題",
+    "LastUpdate": 1795182171
   },
   {
     "Author": "Det",
@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.35",
+    "AssemblyVersion": "7.30.0.36",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771916373",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771916373",
-    "Changelog": "- 禁忌城邦瑪哈 奧斯瑪：場地改成照碰撞描出的外框（原本畫的場地與實際錯開約 6 米），被送到三條並排走道或奧斯瑪之影的場地時雷達與 AI 跟著換場地，首領暫時消失時模組不會提早結束\n- 禁忌城邦瑪哈 阿剌克涅：場地改成照實際地板（原本中心偏了約 6 米，西側一塊站得住的地被畫在場外、南北邊緣外反而算場內），站上蜘蛛網時換成扣掉網洞的場地；地震改成由內往外三段依序預告，破土突襲有危險區\n- 青龍征魂戰：第二階段被打進水裡時，AI 照含水面的場地走位並回到中央平台，水裡的荒波有危險區；蛇崩擊退前的安全區不論從哪個方向推都算得對",
-    "LastUpdate": 1795180908,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771981798",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771981798",
+    "Changelog": "- 禁忌城邦瑪哈 卡洛菲斯提莉：場地改成照實際地板（原本的圓往北偏 1 米、大了半米，北半圈邊緣有踩不到的地方被當成場地），南端入口的牆外不再算場地\n- 禁忌城邦瑪哈 石面：場地改成照實際地板的三塊平台（原本三個圓都畫成半徑 20 米，兩端平台實際只有 16 米，約兩成場地是空中），兩側入口的牆外不再算場地\n- 禁忌城邦瑪哈 弗加爾：場地改成照實際地板（原本的圓大了半米、往南偏約 0.5 米，東西兩側有踩不到的地方被當成場地），南北入口的牆外不再算場地\n- 聖教中樞伊修加爾德教皇廳 聖騎士阿代爾斐爾：場地原本整塊往西北偏了約 0.6 米，改回對準實際地板",
+    "LastUpdate": 1795182164,
     "CategoryTags": [
       "Jobs"
     ]
