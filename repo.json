@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.40",
+    "AssemblyVersion": "7.30.0.41",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772124665",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772124665",
-    "Changelog": "- 影之國 虛空弗迪亞：弗迪亞小丑讀幸運小丑（衝向虛聲的亞特蒙斯）時畫出直線危險區\n- 極 永恆女王殲滅戰：冰場地第一次重算時，右下 (105,104) 那座還沒出現的橋不再被當成可以走\n- 永恆女王殲滅戰：放逐射線讀條時顯示「連續全體傷害」提示\n- 賢者的進化（賢者職業任務）壞岩裂石 安塞爾：明眼聰慧 羅伊法對優秀生 菈菈・基恩加爾讀注藥III 時顯示強力單體攻擊提示\n- 堅牢鐵壁巴埃薩長城 鐵面公卿 伊爾伯德：獅子首讀條時顯示全體傷害提示\n- 旗艦達爾里阿達號 迪亞布羅魔兵：強化死亡射線（坦克直線死刑）點名時畫出直線危險區，其他人會避開坦克的方向\n- 運河寶物庫深層 艾拉瓦塔：同房的雜兵讀雙重碎擊、古代勁風、火輪時畫出危險區，中巨岩顯示死刑提示",
-    "LastUpdate": 1795184677,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772248038",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772248038",
+    "Changelog": "- AI 設定頁「暫停鍵：腳下危險區快生效時提示／失效」與危險門檻顯示繁中\n- AI 設定新增「危險時暫停鍵失效」（預設開）：按著「暫停自動移動」鍵時，腳下的危險區快生效就照常閃避，安全後恢復暫停\n- AI：按著「暫停自動移動」鍵時，腳下的危險區快生效會在聊天框提示一次（AI 設定可關，預設開）\n- 山中戰線澤梅爾要塞 巴特拉爾：偏屬性水晶一出現就要分隊去打，不再等首領身上的無敵",
+    "LastUpdate": 1795187075,
     "CategoryTags": [
       "Jobs"
     ]
