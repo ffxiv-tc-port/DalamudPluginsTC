@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.30.0.7",
+    "AssemblyVersion": "7.30.0.8",
     "Description": "自動幫你跑副本，支援親信戰友、劇情輔助器、冒險者分隊、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771980841",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771980841",
-    "Changelog": "- 修正冒險者小隊排魔獸領域日影地修練所時選錯任務的問題",
-    "LastUpdate": 1795182171
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772684098",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772684098",
+    "Changelog": "- 冒險者小隊小怪路段：選新的敵人前先下「號令：戰鬥開始」，等分隊坦克換過去才開打（設定頁可關、可調等待上限）",
+    "LastUpdate": 1795195215
   },
   {
     "Author": "Det",
@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.41",
+    "AssemblyVersion": "7.30.0.42",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772248038",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772248038",
-    "Changelog": "- AI 設定頁「暫停鍵：腳下危險區快生效時提示／失效」與危險門檻顯示繁中\n- AI 設定新增「危險時暫停鍵失效」（預設開）：按著「暫停自動移動」鍵時，腳下的危險區快生效就照常閃避，安全後恢復暫停\n- AI：按著「暫停自動移動」鍵時，腳下的危險區快生效會在聊天框提示一次（AI 設定可關，預設開）\n- 山中戰線澤梅爾要塞 巴特拉爾：偏屬性水晶一出現就要分隊去打，不再等首領身上的無敵",
-    "LastUpdate": 1795187075,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772684569",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772684569",
+    "Changelog": "- 「暫停自動移動」等按住鍵選項新增滑鼠側鍵 4（後退鍵）與側鍵 5（前進鍵）",
+    "LastUpdate": 1795195249,
     "CategoryTags": [
       "Jobs"
     ]
