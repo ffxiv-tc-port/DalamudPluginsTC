@@ -387,7 +387,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.30.0.16",
+    "AssemblyVersion": "7.30.0.17",
     "Description": "透過物品名稱簡化採集流程，找出節點/魚群位置，並用 UI 追蹤特殊開放時段與天氣條件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -409,10 +409,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "把採集與釣魚簡化到極致。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/766552485",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/766552485",
-    "Changelog": "- 其他插件可以向 GatherBuddy 查詢限時採集點素材的預估採集時間（給 Artisan 匯出前確認用，只讀）",
-    "LastUpdate": 1795070123
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771171201",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771171201",
+    "Changelog": "- 自動採集寶藏圖時只看玩家背包有沒有同一張：放在僱員身上的同一張不再讓採集清單當成「已經有了」而跳過（每名僱員、陸行鳥鞍囊、玩家背包各可放一張）",
+    "LastUpdate": 1795165913
   },
   {
     "Author": "img02",
