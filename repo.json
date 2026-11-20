@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.27",
+    "AssemblyVersion": "7.30.0.28",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771386159",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771386159",
-    "Changelog": "- 新增萬魔殿 荒天之獄4（一般）模組：三魂一體的三下左右半場會依序畫出，對話的分攤與分散、明眸的直線死刑、超鏈回環的甜甜圈範圍 AI 會照著站\n- 新增萬魔殿 荒天之獄2（一般）模組：萬魔殿之柱的塔 AI 會去踩、尖腳的塔只給坦克踩，噴吐絲網會分散、攥魂畫出坦克分攤\n- 新增萬魔殿 煉淨之獄3（一般）模組：阿提斯的巨枝、靜電之月、怪鳥強襲的範圍會預先畫出，半神神聖會分散、半神・中勁風的死刑圈其他人會避開\n- 新增萬魔殿 煉淨之獄2（一般）模組：協同的死刑圈、冥灰的分散、寄生之舞與噴氣的扇形會預先畫出，AI 會避開\n- 水晶塔 暗之世界：模組清單裡地獄三頭犬原本誤顯示成「雷電龍頭」，改回正確名稱\n- 山中戰線澤梅爾要塞 巴特拉爾：雷達上畫出「猙獰光環」（沒有讀條、打王周圍所有人）的範圍外框，AI 站位不變",
-    "LastUpdate": 1795170268,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771618579",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/771618579",
+    "Changelog": "- 新增複製工廠廢墟 9S：接入多腳戰車模組：前後／側面齊射的雷射掃射、主砲雷射、馬克思衝擊、對接解除後的三道俯衝（依序）與飛彈命中的範圍會畫出，大型戰車自爆時 AI 會躲到另一台戰車後面，殘骸墜落分攤與飛彈命中分散會照著站\n- 新增複製工廠廢墟 霍布斯模組：環形雷射最外圈、多重攻擊檢測的圓與甜甜圈、塌方、高壓放電的範圍會畫出，短程飛彈分散 AI 會照著站，場地改成三個聯盟各自的平台\n- 新增複製工廠廢墟 多關節型：司令機模組：全方位能量彈的圓與三圈甜甜圈會依序畫出，連續能量彈的正面扇形、迫擊能量彈、側方／中央旋轉攻擊與大口徑雷射的範圍會畫出，AI 會避開\n- 新增失落之都拉巴納斯塔 冷血劍阿加斯模組：真實／虛假的面具配上頭上指令時 AI 會照規則持續移動或停手、背對或面向王，冷血劍的直線、咒槍穿刺與冥界恐叫打的範圍會畫出\n- 新增失落之都拉巴納斯塔 人馬王洛弗卡勒模組：人馬戰車的衝鋒線、戰吼的半場、分身特立獨行的直線、冥界恐叫打與古惡魔的範圍會畫出，AI 會避開\n- 新增失落之都拉巴納斯塔 統治者哈修馬利姆模組：加速刃、岩石突擊、統治之塔、支配之塔、大地搖動、崩塌的範圍會畫出，大落石分攤、落石分散 AI 會照著站",
+    "LastUpdate": 1795175031,
     "CategoryTags": [
       "Jobs"
     ]
