@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.30.0.19",
+    "AssemblyVersion": "7.30.0.20",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/775512823",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/775512823",
-    "Changelog": "- 專家配方解算器：好兆頭之後必定高品質，先顧進度時高品質改放集中製作（必成，不再賭急速製作）；工匠的絕技＋改革在身上時，高品質直接放坯料加工，省下闊步；設定可關，預設開\n- 專家配方解算器：進展需求很低的配方改用閒靜起手（堅信的加成用不完），品質更容易做滿，也不會因此做不完；設定可關，預設開\n- Raphael：開了後置進展時，先用後置進展的解開工，背景再求一份不後置進展的解；品質一樣而且更快，之後同一配方就改用新解（限執行緒、不搶前景求解；設定可關，預設開）",
-    "LastUpdate": 1795264013
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/775872906",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/775872906",
+    "Changelog": "- Raphael：「確保可靠度退路」只用在宇宙探索配方，其他配方照用確保可靠度的解\n- Raphael：背景另求的不後置進展解改成品質優先，品質更高就換（即使多一步），品質一樣才比快\n- Raphael：開了「確保可靠度」時，做不到最高品質的配方（例如宇宙探索高難+ 的最終成品）會再求一份不確保可靠度、不後置進展的解，品質較高就改用；做得到最高品質的照舊；舊的快取解會重求一次（設定可關，預設開）\n- Raphael 解算器：修正上級加工的 CP 估算（中級加工沒接在加工後面時，遊戲收 46 不是 18），偏離或重排計畫後不再因此 CP 不夠、進展做不完；剩下的計畫做不完進展時，先跳過品質類技能把製作做完（設定可關，預設開）",
+    "LastUpdate": 1795271991
   },
   {
     "Author": "Herculezz",
