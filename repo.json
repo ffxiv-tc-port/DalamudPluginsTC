@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.11",
+    "AssemblyVersion": "7.30.0.12",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/774202994",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/774202994",
-    "Changelog": "- 巨集與其他插件可以查到 ICE 為什麼停下來（宇宙工具經驗已滿、做完目前任務就停、被叫停等），停下時也會在紀錄寫一行原因",
-    "LastUpdate": 1795229578
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/775825727",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/775825727",
+    "Changelog": "- 機甲行動：認得 7.3 新技能（強力吸取器、拖曳光束等），法恩娜石採掘指令能判出駕駛員／協助員；強力吸取器扇形預設改 80 度；機甲技能那行紀錄不再每秒重印\n- 宇宙製作：Artisan 做完但製作失敗（品質沒到必要品質等）不再被當成「沒有進展」而停下 ICE；同一個任務這一輪製作失敗 2 次就放棄換任務，宇宙工具經驗模式會把它排到最後 30 分鐘",
+    "LastUpdate": 1795271014
   },
   {
     "Author": "Liza Carvelli",
