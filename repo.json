@@ -853,7 +853,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -872,10 +872,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772637394",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772637394",
-    "Changelog": "- Lua 巨集可以控制 ICE 宇宙探索：啟動／停止、設定「做完目前任務就停」、查詢是否還在執行與目前任務",
-    "LastUpdate": 1795194310,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/774203013",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/774203013",
+    "Changelog": "- Lua 巨集可以查 ICE 上一次為什麼停下來（IPC.ICE.StopReason），ICE 舊版沒有這項時回 nil、巨集照常執行\n- 巨集停止後馬上再執行，新的一輪不會再被上一輪的收尾中斷（上一輪還在收尾時會排隊，收完就開始）",
+    "LastUpdate": 1795229571,
     "CategoryTags": [
       "Utility"
     ]
@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.10",
+    "AssemblyVersion": "7.30.0.11",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772694765",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772694765",
-    "Changelog": "- 緊急任務結束後先返回基地再接下一個任務（設定頁「自動化」可關，預設開；30 秒內回不去就照常繼續）",
-    "LastUpdate": 1795195428
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/774202994",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/774202994",
+    "Changelog": "- 巨集與其他插件可以查到 ICE 為什麼停下來（宇宙工具經驗已滿、做完目前任務就停、被叫停等），停下時也會在紀錄寫一行原因",
+    "LastUpdate": 1795229578
   },
   {
     "Author": "Liza Carvelli",
