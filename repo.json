@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.30.0.20",
+    "AssemblyVersion": "7.30.0.21",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/775872906",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/775872906",
-    "Changelog": "- Raphael：「確保可靠度退路」只用在宇宙探索配方，其他配方照用確保可靠度的解\n- Raphael：背景另求的不後置進展解改成品質優先，品質更高就換（即使多一步），品質一樣才比快\n- Raphael：開了「確保可靠度」時，做不到最高品質的配方（例如宇宙探索高難+ 的最終成品）會再求一份不確保可靠度、不後置進展的解，品質較高就改用；做得到最高品質的照舊；舊的快取解會重求一次（設定可關，預設開）\n- Raphael 解算器：修正上級加工的 CP 估算（中級加工沒接在加工後面時，遊戲收 46 不是 18），偏離或重排計畫後不再因此 CP 不夠、進展做不完；剩下的計畫做不完進展時，先跳過品質類技能把製作做完（設定可關，預設開）",
-    "LastUpdate": 1795271991
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/775902158",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/775902158",
+    "Changelog": "- 專家配方解算器：有必要品質的配方（品質不夠就失敗，例如宇宙探索高難任務的中間素材）成功率提高：工匠的絕技留到闊步＋改革下放坯料加工、內靜疊滿前不在長持續放原價掌握、進展很少的配方先做完進展；高效狀態補耐久改用巧奪天工；設定可關，預設開",
+    "LastUpdate": 1795272641
   },
   {
     "Author": "Herculezz",
