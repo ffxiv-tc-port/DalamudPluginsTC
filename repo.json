@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.51",
+    "AssemblyVersion": "7.30.0.52",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779819234",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779819234",
-    "Changelog": "- 複製工廠廢墟：衝擊波、殲滅轟炸、廣擴散雷射補上全體傷害危險度（中），耐雷射檢測改記 4 段\n- 複製工廠廢墟 霍布斯：多重攻擊檢測的扇形改成正確的 60 度（原本猜成半圓、AI 以為平台上沒有安全處），塌方改成近中心才危險並補全體傷害預告，崩塌的 4 道直線提前約 12 秒畫出\n- 複製工廠廢墟 恩格斯：馬克思打擊從首領 5.7 秒的前搖讀條就開始畫（原本判定前 0.5～1.5 秒才出現），補畫腕部雷射、馬克思突擊、擴散燃燒飛彈與廣擴散雷射的全體傷害預告\n- 複製工廠廢墟 9S：畫出對人飛彈亂射的棋盤格方格（依標記順序，最早一波標危險、下一波預告），補上殲滅轟炸的全體傷害預告\n- 複製工廠廢墟 司令機：畫出穿越全場的能量球與沿方框路線轟炸的士兵機，補上衝擊波的全體傷害預告",
-    "LastUpdate": 1795367534,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779885977",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779885977",
+    "Changelog": "- 減傷預判：誘導類範圍（頭標、施法點名、全員誘導）不再當成全體傷害開團減（危險度表沒列的一律不開）\n- 減傷預判：新增給 WrathCombo 的「下一筆值得減傷的全體傷害」，低危散開排在前面時不再擋住後面那發",
+    "LastUpdate": 1795368933,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.30.0.20",
+    "AssemblyVersion": "7.30.0.21",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 暗黑騎士進階循環的行屍走肉「避開Boss」改成真的在Boss戰中不放（原本正好相反：只在Boss戰中才放）；「盡量不使用」類說明的中文翻譯原本漏了「不」，一併修正\n- 暗黑騎士進階範圍的行屍走肉改用範圍自己的首領限制設定，並補上設定介面（原本共用單體循環的設定、範圍這邊看不到）\n- 戰士進階單體與範圍的親疏自行補上血量設定滑桿（原本只能吃預設的 80%）\n- 戰士進階單體的原初的血氣改照單體循環自己的血量與敵人類型設定（原本誤讀範圍循環的設定）；絕槍進階單體的親疏自行改照單體自己的血量設定，並補上單體與範圍兩邊原本看不到的血量滑桿",
+    "Changelog": "- 自動團減依危險度判斷時，排在前面的低危散開不再擋住後面那發真正的全體傷害（需搭配新版 BossModReborn）",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779304756",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779304756",
-    "LastUpdate": 1795357096,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779885372",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779885372",
+    "LastUpdate": 1795368881,
     "CategoryTags": [
       "Jobs"
     ]
