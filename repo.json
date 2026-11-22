@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.42",
+    "AssemblyVersion": "7.30.0.43",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772684569",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772684569",
-    "Changelog": "- 「暫停自動移動」等按住鍵選項新增滑鼠側鍵 4（後退鍵）與側鍵 5（前進鍵）",
-    "LastUpdate": 1795195249,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/778941622",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/778941622",
+    "Changelog": "- 古代遺跡喀恩埋沒聖堂：一王「致命射線」與三王會拉人的「召喚」讀條時提示用眩暈打斷，AI 的掃腿／下踢會在這時放；二王有受傷減輕時提示先打魔像的魂石",
+    "LastUpdate": 1795349211,
     "CategoryTags": [
       "Jobs"
     ]
