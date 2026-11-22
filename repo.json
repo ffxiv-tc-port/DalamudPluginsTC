@@ -96,7 +96,7 @@
     "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
-    "AssemblyVersion": "7.30.0.5",
+    "AssemblyVersion": "7.30.0.6",
     "Description": "自動幫你提鉤釣魚,你能相信嗎?\n支援自訂預設集、自動以小釣大、自動刺魚等功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoHook",
@@ -116,10 +116,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoHook.png",
     "Punchline": "讓釣魚不再無聊(或更無聊)。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772006529",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772006529",
-    "Changelog": "- ICE 交出或放棄宇宙探索任務時，沒有臨時預設集要清就不再整份重存設定（以前每交一個任務主執行緒卡一下）",
-    "LastUpdate": 1795182601
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780252030",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780252030",
+    "Changelog": "- 宇宙探索釣魚：匯入的新版 preset（ICE 內建等）裡的技能條件、規則（自動換餌／換 preset）、熟練妙招開始生效（游動餌自動切換等台服驗證後再開）",
+    "LastUpdate": 1795376793
   },
   {
     "Author": "кайт машина (Puni.sh)",
@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.14",
+    "AssemblyVersion": "7.30.0.15",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780122771",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780122771",
-    "Changelog": "- 宇宙探索：法恩娜釣魚任務「【高難+】調查熔火湧流的分布」「【高難+】調查火山口地帶的熔融玻璃類精靈」補上內建 AutoHook 釣魚設定，不再標為未支援\n- 限定任務模式：新增「只刷勾選中未金星的任務」選項（預設關），勾選的限定任務都拿到金星就停止並在聊天視窗說明；任務表上方顯示勾選數與未金星數",
-    "LastUpdate": 1795373985
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780252037",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780252037",
+    "Changelog": "- 宇宙探索：雙職業的釣魚任務指定了自訂 AutoHook preset 時會切過去；匯入內建 preset 時記錄 AutoHook 吃不下的設定\n- 宇宙探索：法恩娜釣魚任務「【高難】高效籌備稀有水產資源」「【高難】調查河川流域的水中類精靈」換成上游的整包資料夾設定，修正換階卡住",
+    "LastUpdate": 1795376832
   },
   {
     "Author": "Liza Carvelli",
