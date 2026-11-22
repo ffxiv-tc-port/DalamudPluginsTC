@@ -1439,7 +1439,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.30.0.11",
+    "AssemblyVersion": "7.30.0.12",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 Gil 並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1455,10 +1455,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點 Gil！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/770687882",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/770687882",
-    "Changelog": "- 批次上架的道具清單新增「全部勾選」按鈕（在「全部取消」旁邊；在製作清單上的道具不會勾，要賣請自己勾）",
-    "LastUpdate": 1795154903
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/778699540",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/778699540",
+    "Changelog": "- 最近一筆成交被判成特殊交易時，改用近期多筆成交的共識價和板上最低價取低，不再直接跟著遠高於行情的板上價掛\n- 上架新道具時板上沒人賣，改用近期多筆成交的共識價先掛上（成交不夠再用其他世界最便宜的一般掛單）；異常價改看最新多筆成交、排除轉 Gil 之類的特殊交易，天價掛單不再擋住正常價（設定可關，預設開）\n- 「賣給商店」展開的道具清單超過 12 行時改成固定高度可捲動，整理一輪或背包分揀交過來很多件時面板不再被拉長\n- 批次上架可以把道具設成「不自動上架」（批次上架、全僱員補上架、整理一輪的補上架都會跳過，NQ／HQ 一起；設定「上架」頁可逐件或全部移除）；道具清單改成固定高度可捲動，全部勾選／全部取消移到清單上方",
+    "LastUpdate": 1795343578
   },
   {
     "Author": "Faye",
