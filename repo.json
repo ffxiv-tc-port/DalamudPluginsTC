@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.50",
+    "AssemblyVersion": "7.30.0.51",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779760547",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779760547",
-    "Changelog": "- 減傷預判：散開不再當成全體傷害開團減（危險度表沒列的散開一律不開），首領身上已有別人的昏亂／牽制／雪仇時不再重複放\n- 真 俾斯麥殲滅戰：新增模組（落雷與雷暴雲砧畫成跟著目標的散開範圍、鯨鬚炸彈與小怪的範圍、漏斗雲、甲板與鯨背場地；魔導結界產生器與對龍弩砲只提示不代按）\n- 萬魔殿 荒天之獄4（一般）照錄影補完：被靈魂鏈鎖住的平台提前 8 秒畫出崩落範圍、崩掉的平台在復原前都標成不能站，超鏈理論的球與環提前約 12 秒畫出落點，另補白火連線、究極之刃的即死地面與全場傷害、女神的護佑跳躍與衝擊波",
-    "LastUpdate": 1795366458,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779819234",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779819234",
+    "Changelog": "- 複製工廠廢墟：衝擊波、殲滅轟炸、廣擴散雷射補上全體傷害危險度（中），耐雷射檢測改記 4 段\n- 複製工廠廢墟 霍布斯：多重攻擊檢測的扇形改成正確的 60 度（原本猜成半圓、AI 以為平台上沒有安全處），塌方改成近中心才危險並補全體傷害預告，崩塌的 4 道直線提前約 12 秒畫出\n- 複製工廠廢墟 恩格斯：馬克思打擊從首領 5.7 秒的前搖讀條就開始畫（原本判定前 0.5～1.5 秒才出現），補畫腕部雷射、馬克思突擊、擴散燃燒飛彈與廣擴散雷射的全體傷害預告\n- 複製工廠廢墟 9S：畫出對人飛彈亂射的棋盤格方格（依標記順序，最早一波標危險、下一波預告），補上殲滅轟炸的全體傷害預告\n- 複製工廠廢墟 司令機：畫出穿越全場的能量球與沿方框路線轟炸的士兵機，補上衝擊波的全體傷害預告",
+    "LastUpdate": 1795367534,
     "CategoryTags": [
       "Jobs"
     ]
