@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.43",
+    "AssemblyVersion": "7.30.0.44",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/778941622",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/778941622",
-    "Changelog": "- 古代遺跡喀恩埋沒聖堂：一王「致命射線」與三王會拉人的「召喚」讀條時提示用眩暈打斷，AI 的掃腿／下踢會在這時放；二王有受傷減輕時提示先打魔像的魂石",
-    "LastUpdate": 1795349211,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779022250",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779022250",
+    "Changelog": "- 古代遺跡喀恩埋沒聖堂一王：眩暈留給「致命射線」，戰鬥中不對其他讀條標記眩暈；新增「眩暈／打斷保留」讓 WrathCombo 等插件也照著留",
+    "LastUpdate": 1795350993,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.30.0.16",
+    "AssemblyVersion": "7.30.0.17",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 設定「縮短伺服器資訊列文字」改為停用並標示無作用：本版伺服器資訊欄只顯示圖示",
+    "Changelog": "- 自動眩暈照 BossModReborn 的危險讀條標記：標記該眩暈的首領讀條（例如喀恩埋沒聖堂一王「致命射線」）坦克會用下踢打斷，模組要求保留時不把眩暈／打斷用在別的讀條",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764779302",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764779302",
-    "LastUpdate": 1795031622,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779021729",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779021729",
+    "LastUpdate": 1795350887,
     "CategoryTags": [
       "Jobs"
     ]
