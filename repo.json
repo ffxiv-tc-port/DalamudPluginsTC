@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.12",
+    "AssemblyVersion": "7.30.0.13",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/775825727",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/775825727",
-    "Changelog": "- 機甲行動：認得 7.3 新技能（強力吸取器、拖曳光束等），法恩娜石採掘指令能判出駕駛員／協助員；強力吸取器扇形預設改 80 度；機甲技能那行紀錄不再每秒重印\n- 宇宙製作：Artisan 做完但製作失敗（品質沒到必要品質等）不再被當成「沒有進展」而停下 ICE；同一個任務這一輪製作失敗 2 次就放棄換任務，宇宙工具經驗模式會把它排到最後 30 分鐘",
-    "LastUpdate": 1795271014
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780038162",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780038162",
+    "Changelog": "- 宇宙採集：額外採集獎勵率讀不到時不放饋贈；技能改看任務要的那件道具的機率；採集配置的「開始任務所需的最低 GP」與「最少採集數量」開始生效；高產II／豐收II 的設定說明更正\n- 宇宙採集：之後才開放的任務會沿用同類任務的採集配置，不再全用預設配置；「套用至該類型任務」不再把雙職業任務改成採集指定數量；每個採集點在紀錄寫一行用了哪個配置、放了哪些技能",
+    "LastUpdate": 1795372197
   },
   {
     "Author": "Liza Carvelli",
