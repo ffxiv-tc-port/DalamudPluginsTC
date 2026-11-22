@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.52",
+    "AssemblyVersion": "7.30.0.53",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779885977",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779885977",
-    "Changelog": "- 減傷預判：誘導類範圍（頭標、施法點名、全員誘導）不再當成全體傷害開團減（危險度表沒列的一律不開）\n- 減傷預判：新增給 WrathCombo 的「下一筆值得減傷的全體傷害」，低危散開排在前面時不再擋住後面那發",
-    "LastUpdate": 1795368933,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780114555",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780114555",
+    "Changelog": "- 複製工廠廢墟 恩格斯：高性能追蹤飛彈（只點三名坦克）改報成死刑，坦克的死刑減傷看得到它\n- 減傷預判：標成死刑的誘導（頭標、施法點名）改報成死刑，不再當成全體傷害開團減；另補標 5 招只打坦克的誘導",
+    "LastUpdate": 1795373823,
     "CategoryTags": [
       "Jobs"
     ]
