@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.13",
+    "AssemblyVersion": "7.30.0.14",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780038162",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780038162",
-    "Changelog": "- 宇宙採集：額外採集獎勵率讀不到時不放饋贈；技能改看任務要的那件道具的機率；採集配置的「開始任務所需的最低 GP」與「最少採集數量」開始生效；高產II／豐收II 的設定說明更正\n- 宇宙採集：之後才開放的任務會沿用同類任務的採集配置，不再全用預設配置；「套用至該類型任務」不再把雙職業任務改成採集指定數量；每個採集點在紀錄寫一行用了哪個配置、放了哪些技能",
-    "LastUpdate": 1795372197
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780122771",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780122771",
+    "Changelog": "- 宇宙探索：法恩娜釣魚任務「【高難+】調查熔火湧流的分布」「【高難+】調查火山口地帶的熔融玻璃類精靈」補上內建 AutoHook 釣魚設定，不再標為未支援\n- 限定任務模式：新增「只刷勾選中未金星的任務」選項（預設關），勾選的限定任務都拿到金星就停止並在聊天視窗說明；任務表上方顯示勾選數與未金星數",
+    "LastUpdate": 1795373985
   },
   {
     "Author": "Liza Carvelli",
