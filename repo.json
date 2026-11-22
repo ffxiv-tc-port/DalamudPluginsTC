@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.48",
+    "AssemblyVersion": "7.30.0.49",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779305319",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779305319",
-    "Changelog": "- AI 不再對有石膚、吸收盾或部分減傷狀態的敵人停手（例：深宮小怪上石膚時不再停打 8 秒；惡靈府邸靜語莊園（困難）哈利卡納蘇斯上石膚時照常打）",
-    "LastUpdate": 1795357129,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779504104",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779504104",
+    "Changelog": "- 敵人同時帶兩種無敵狀態時，失去其中一種不再提早被 AI 當成可打（掛有「未認領讀條」處理的戰鬥，防範性修正）\n- 無敵狀態刷新過的敵人，狀態消失後 AI 不會再一直跳過它，也不會套到之後出現在同位置的敵人（防範性修正）\n- 敵人上冰棘屏障／火棘屏障時 AI 技能照打、只停普通攻擊（原本冰棘屏障會讓 AI 整個停手；停普通攻擊要開「自動管理普通攻擊」）",
+    "LastUpdate": 1795361314,
     "CategoryTags": [
       "Jobs"
     ]
