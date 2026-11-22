@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.30.0.21",
+    "AssemblyVersion": "7.30.0.22",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/775902158",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/775902158",
-    "Changelog": "- 專家配方解算器：有必要品質的配方（品質不夠就失敗，例如宇宙探索高難任務的中間素材）成功率提高：工匠的絕技留到闊步＋改革下放坯料加工、內靜疊滿前不在長持續放原價掌握、進展很少的配方先做完進展；高效狀態補耐久改用巧奪天工；設定可關，預設開",
-    "LastUpdate": 1795272641
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/778883558",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/778883558",
+    "Changelog": "- 素材表右鍵「加進 GatherBuddy」：限時採集點素材的滑鼠提示多一行預估採集時間與市價，按下照舊直接送出",
+    "LastUpdate": 1795347905
   },
   {
     "Author": "Herculezz",
