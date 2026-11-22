@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.47",
+    "AssemblyVersion": "7.30.0.48",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779151041",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779151041",
-    "Changelog": "- 朱諾：第一巡行：支配斬、神聖、憎惡之火、冥界之怒與萬億斬擊現在會被預判減傷與其他插件看見（萬億斬擊判成高危險，提前 5 秒開團隊減傷）\n- 預判減傷依危險度出手：高危險的全體傷害才用全部團隊減傷，中等只用冷卻 60 秒以內的（牽制／昏亂只用在對應屬性），低危險不放；戰士有戰慄／戮罪／原初的血氣或死刑將至時不放擺脫\n- 新增給 WrathCombo 等插件的全體傷害／死刑危險度：下一發全體傷害與死刑分成低／中／高並附上來源技能，其他插件可以只在危險的招式開團隊減傷",
-    "LastUpdate": 1795353876,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779305319",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779305319",
+    "Changelog": "- AI 不再對有石膚、吸收盾或部分減傷狀態的敵人停手（例：深宮小怪上石膚時不再停打 8 秒；惡靈府邸靜語莊園（困難）哈利卡納蘇斯上石膚時照常打）",
+    "LastUpdate": 1795357129,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.30.0.19",
+    "AssemblyVersion": "7.30.0.20",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 自動團減改看 BossModReborn 預告的全體傷害危險度：高才用節制、疾風怒濤之計這類大招與團盾，中只用雪仇、野戰治療陣這類短冷卻，低就省下來（設定可關；BossModReborn 沒給危險度時照舊）",
+    "Changelog": "- 暗黑騎士進階循環的行屍走肉「避開Boss」改成真的在Boss戰中不放（原本正好相反：只在Boss戰中才放）；「盡量不使用」類說明的中文翻譯原本漏了「不」，一併修正\n- 暗黑騎士進階範圍的行屍走肉改用範圍自己的首領限制設定，並補上設定介面（原本共用單體循環的設定、範圍這邊看不到）\n- 戰士進階單體與範圍的親疏自行補上血量設定滑桿（原本只能吃預設的 80%）\n- 戰士進階單體的原初的血氣改照單體循環自己的血量與敵人類型設定（原本誤讀範圍循環的設定）；絕槍進階單體的親疏自行改照單體自己的血量設定，並補上單體與範圍兩邊原本看不到的血量滑桿",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779150370",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779150370",
-    "LastUpdate": 1795353869,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779304756",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779304756",
+    "LastUpdate": 1795357096,
     "CategoryTags": [
       "Jobs"
     ]
