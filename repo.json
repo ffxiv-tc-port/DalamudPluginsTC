@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.49",
+    "AssemblyVersion": "7.30.0.50",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779504104",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779504104",
-    "Changelog": "- 敵人同時帶兩種無敵狀態時，失去其中一種不再提早被 AI 當成可打（掛有「未認領讀條」處理的戰鬥，防範性修正）\n- 無敵狀態刷新過的敵人，狀態消失後 AI 不會再一直跳過它，也不會套到之後出現在同位置的敵人（防範性修正）\n- 敵人上冰棘屏障／火棘屏障時 AI 技能照打、只停普通攻擊（原本冰棘屏障會讓 AI 整個停手；停普通攻擊要開「自動管理普通攻擊」）",
-    "LastUpdate": 1795361314,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779760547",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779760547",
+    "Changelog": "- 減傷預判：散開不再當成全體傷害開團減（危險度表沒列的散開一律不開），首領身上已有別人的昏亂／牽制／雪仇時不再重複放\n- 真 俾斯麥殲滅戰：新增模組（落雷與雷暴雲砧畫成跟著目標的散開範圍、鯨鬚炸彈與小怪的範圍、漏斗雲、甲板與鯨背場地；魔導結界產生器與對龍弩砲只提示不代按）\n- 萬魔殿 荒天之獄4（一般）照錄影補完：被靈魂鏈鎖住的平台提前 8 秒畫出崩落範圍、崩掉的平台在復原前都標成不能站，超鏈理論的球與環提前約 12 秒畫出落點，另補白火連線、究極之刃的即死地面與全場傷害、女神的護佑跳躍與衝擊波",
+    "LastUpdate": 1795366458,
     "CategoryTags": [
       "Jobs"
     ]
