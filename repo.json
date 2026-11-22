@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.44",
+    "AssemblyVersion": "7.30.0.45",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779022250",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779022250",
-    "Changelog": "- 古代遺跡喀恩埋沒聖堂一王：眩暈留給「致命射線」，戰鬥中不對其他讀條標記眩暈；新增「眩暈／打斷保留」讓 WrathCombo 等插件也照著留",
-    "LastUpdate": 1795350993,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779050362",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779050362",
+    "Changelog": "- 樂欲之所甌博訥修道院（測試中模組）：盾之騎士無敵時 AI 不再打它，並提示到銀色圓圈拿聖劍、用任務指令「聖劍攻擊」打掉連線的盾（只提示，不代按）\n- 封閉聖塔黎鐸拉納大燈塔（測試中模組）：魔人貝利亞斯的魔人兵、鬼龍雅茲瑪特召喚的惡魔靠在一起有受傷減輕時提示坦克拉開，AI 坦克會把自己拉的那隻帶離\n- 魔航船虛無方舟（測試中模組）：刻托斯的水化核心有受傷減輕時，屏障外的人改先打連線的水化球體；天柱樹與鋸齒花依職能避開對你免疫的那隻；艾奇德娜分身靠在一起時提示坦克拉開\n- 最終決戰天幕魔導城 蓋烏斯：「指引」畫面只畫接下來兩波，最先爆的那波用危險色、下一波用一般色，看得出先後與往哪閃；AI 照舊拿整輪四波的落點與時間選位置\n- 伊弗利特討伐戰的「地獄火焰」、迦樓羅討伐戰的「大氣爆發」、毒霧洞窟黃金谷 守財夫人的「黏菌爆發」標成全體傷害，自動減傷吃得到預告；伊弗利特無敵時 AI 停手、9S：接入多腳戰車無敵時先打大型戰車\n- 朱諾：第一巡行 方舟天使的狂暴技「隱於微塵」、惡靈府邸靜語莊園 莊園的守衛「石膚」與莊園的小丑「虛空大暴雪」讀條時提示打斷，AI 的插言／傷頭會在這時放；隱於微塵等方舟之盾打破、HM 的無敵消失後才提示",
+    "LastUpdate": 1795351612,
     "CategoryTags": [
       "Jobs"
     ]
