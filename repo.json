@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.60",
+    "AssemblyVersion": "7.30.0.61",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/784323384",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/784323384",
-    "Changelog": "- 複製工廠廢墟 司令機：對地能量彈改成沿士兵機的方框路線畫出接下來 4 發的落點（約 4 秒前預告，原本只有 1 秒）",
-    "LastUpdate": 1795463431,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/784364201",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/784364201",
+    "Changelog": "- AI 狀態改變時寫進紀錄：開關、跟隨對象、禁止移動／禁止技能／騎乘時閒置與 AI 預設，附改前改後與來源",
+    "LastUpdate": 1795464275,
     "CategoryTags": [
       "Jobs"
     ]
