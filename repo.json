@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.55",
+    "AssemblyVersion": "7.30.0.56",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783713015",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783713015",
-    "Changelog": "- 樂欲之所甌博訥修道院 雷神希德：補上冥界恐叫打的落點圈與暗影之劍全體傷害預告\n- 樂欲之所甌博訥修道院 聖騎士阿格莉亞絲：補上聖光爆裂破的連線直線、無雙閃電突刺外圈、劍之騎士強擊範圍與聖天擊滅斬全體傷害預告\n- 樂欲之所甌博訥修道院 聖騎士阿格莉亞絲：不動無明劍與聖光爆裂破提示「先面向首領再按聖盾防禦」，舉盾後到判定前 BMR 不出招也不移動，避免舉起的聖盾被自己接著放的技能解除\n- 樂欲之所甌博訥修道院 機工士姆斯塔迪奧：最終聖約讀條時標出身上「未解析」那一側要對著首領的方向，開啟避開凝視的自動轉向時會自動轉過去",
-    "LastUpdate": 1795451872,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783758554",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783758554",
+    "Changelog": "- 阿卡狄亞登天鬥技場 次重量級1：舞浪全開時 AI 不再特地跑去綠色安全格，閃開浪就好",
+    "LastUpdate": 1795452732,
     "CategoryTags": [
       "Jobs"
     ]
