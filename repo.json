@@ -96,7 +96,7 @@
     "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
-    "AssemblyVersion": "7.30.0.9",
+    "AssemblyVersion": "7.30.0.10",
     "Description": "自動幫你提鉤釣魚,你能相信嗎?\n支援自訂預設集、自動以小釣大、自動刺魚等功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoHook",
@@ -116,10 +116,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoHook.png",
     "Punchline": "讓釣魚不再無聊(或更無聊)。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783193529",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783193529",
-    "Changelog": "- 宇宙探索釣魚：任務說明是「任意水產品」或「每條魚均給予評價」時，preset 沒開的咬鉤（例如弱咬）改用一般提鉤、不再歇竿（設定頁可關）；歇竿時插件紀錄會寫出咬鉤種類、拋竿後秒數與原因\n- 宇宙探索釣魚：每一竿的量測紀錄加上拋竿前與提鉤前的 GP、身上狀態（大魚獵手、專一垂釣、耐心、撒餌、引誘餌層數等）與這一竿用了哪種提鉤，用來算放技能每 GP 換多少分",
-    "LastUpdate": 1795442889
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783225186",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783225186",
+    "Changelog": "- 插件紀錄裡施放技能的名稱改讀遊戲資料：雄心之餌、謙遜之餌不再是空白，提鉤類不再是英文（Normal、Double…），歇竿不再誤寫成提鉤\n- 除錯頁的「Swap Swimbait」按鈕改成依游動餌欄位（0～2）切換，修正按了不會換游動餌（一般版本看不到除錯頁）",
+    "LastUpdate": 1795443438
   },
   {
     "Author": "кайт машина (Puni.sh)",
@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.17",
+    "AssemblyVersion": "7.30.0.18",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783093694",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783093694",
-    "Changelog": "- 宇宙探索：高難+ 兩件型製作任務（例如製作高性能寢具）第一件沒做到滿品質時就判出「已經不可能拿到金星」，不必等第二件做完",
-    "LastUpdate": 1795441072
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783225191",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783225191",
+    "Changelog": "- 宇宙探索：限時採集／釣魚任務交件時，金星、銀星的判定改讀得懂台服的「剩餘時間 23:00以上」，不再一律記成銅星\n- 宇宙探索：法恩娜釣魚任務「支援食用水產品」「調查大型變異養殖品種」的內建 AutoHook 設定原本裝反了，現在各自用任務發的釣餌\n- 宇宙探索：任務表標出「要等星球建設到更後面的階段才會開放」的任務（灰字＋【尚未開放】，滑過顯示需要第幾階段、目前第幾階段）",
+    "LastUpdate": 1795443460
   },
   {
     "Author": "Liza Carvelli",
