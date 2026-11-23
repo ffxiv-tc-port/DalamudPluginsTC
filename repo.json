@@ -447,7 +447,7 @@
     "Author": "Critical_Impact",
     "Name": "Allagan Tools",
     "InternalName": "InventoryTools",
-    "AssemblyVersion": "7.30.0.12",
+    "AssemblyVersion": "7.30.0.13",
     "Description": "Allagan Tools 的主要目的是追蹤你所有角色/僱員/公會倉庫中的道具。透過它的篩選系統，你將不再遺失任何道具的蹤跡，也不再不知道道具該收納在哪裡。\n\n雖然這是它的主要功能，但它還擁有相當豐富的其他功能，包括：\n\t- 製作規劃\n\t- 市場公告板整合\n\t- 在搜尋/整理及挑選製作材料時於背包中高亮顯示道具\n\t- 包含商人與取得來源等資訊的道具視窗\n\t- 可完整搜尋的任務/怪物/飛空艇/潛水艇視窗\n\t- 讓你能為特定道具設定複雜搜尋條件的篩選系統\n\t- 提示視窗整合，滑鼠懸停即可查看道具所在位置",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/InventoryTools",
@@ -467,10 +467,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/InventoryTools.png",
     "Punchline": "讓你的 FFXIV 井井有條，輕鬆定位/顯示道具應收納何處、規劃製作，並搜尋怪物、任務、飛空艇與潛水艇！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783301374",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783301374",
-    "Changelog": "- 貨幣兌換價值排行：新增「淨值優先／賣得完優先」切換與「穩健值」欄（依每日成交打折，賣不完的排後面），上方加一列「手上這批全換成第一名約值多少 Gil」\n- 製作清單：直接加進清單的公會商店物品，需要的公會點數改為商店標價（原本每個只算 1 點，例如飛空艇登記票算成 1 點而不是 10,000 點）",
-    "LastUpdate": 1795444730
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783403657",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783403657",
+    "Changelog": "- 貨幣兌換價值排行：欄寬、左側貨幣清單、搜尋框、圖示與視窗大小改跟著字型大小放大，字型調大時不再擠成一團",
+    "LastUpdate": 1795446607
   },
   {
     "Author": "electr0sheep, Nuko",
@@ -853,7 +853,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.30.0.4",
+    "AssemblyVersion": "7.30.0.5",
     "Description": "現在不只能用於生產，功能更多！",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -872,10 +872,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "工作，工作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/775820051",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/775820051",
-    "Changelog": "- Lua 巨集可以使用 AutoRetainer 的「跑一輪就回來」（IPC.AutoRetainer.RoundTrip*），AutoRetainer 舊版沒有這項時回 0／nil／false、巨集照常執行",
-    "LastUpdate": 1795270844,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783403213",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783403213",
+    "Changelog": "- Lua 巨集可以讀深層迷宮狀態（InstancedContent.DeepDungeon）：樓層、房間格、隊友所在房間、魔陶器與魔石數量，也能用指令使用魔陶器／魔石",
+    "LastUpdate": 1795446630,
     "CategoryTags": [
       "Utility"
     ]
@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.20",
+    "AssemblyVersion": "7.30.0.21",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783367401",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783367401",
-    "Changelog": "- 宇宙探索：製作任務送 Artisan 製作指令前的 2.5 秒等待只用在每個任務的第一次，同一任務之後的製作只等 25 毫秒；中途一出狀況就本場自動退回 2.5 秒（可關閉、可調）\n- 宇宙探索：限定任務「只刷未金星」時，同一個任務本場連續 2 次沒拿到金星就先排到最後（不移除），拿到金星、插件重載或 Artisan 換版就重算；次數可調、可關閉",
-    "LastUpdate": 1795445989
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783403169",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783403169",
+    "Changelog": "- 宇宙探索：任務表的【尚未開放】標記間距、「尚未開放」計數間距改跟著字型大小放大；兩個新加的數值輸入框改用共用的換算",
+    "LastUpdate": 1795446651
   },
   {
     "Author": "Liza Carvelli",
