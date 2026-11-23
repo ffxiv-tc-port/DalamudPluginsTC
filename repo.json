@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.30.0.24",
+    "AssemblyVersion": "7.30.0.25",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783206132",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783206132",
-    "Changelog": "- Raphael 解算器：高品質／最高品質時計畫的 CP 與耐久剛好用完，也會拿掉之後一個品質技能、改在這一步放加工（模擬確定品質更高才換）；設定可關，預設開\n- 宇宙探索高難+：Raphael 的解做不到最高品質時，改用奇蹟之材與倉促、冒進、急速製作衝最高品質（兩件型任務每件最多用一半次數）；設定可關，預設開",
-    "LastUpdate": 1795443136
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783273400",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783273400",
+    "Changelog": "- 製作清單編輯器新增「依世界採購」頁：還缺的素材依世界分組，列所需數量／持有／還要／在這裡買幾件／小計，買齊的自動標「已備齊」；預設盡量在越少世界買齊，可切換每項各自最便宜\n- 製作清單編輯器頂端新增「開工前」檢查：哪些配方在目前裝備下作業精度／加工精度不足（紅）、要靠食物藥水才夠（黃）、還缺幾種素材、背包格位夠不夠；讀不到的顯示「?」",
+    "LastUpdate": 1795444229
   },
   {
     "Author": "Herculezz",
@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.18",
+    "AssemblyVersion": "7.30.0.19",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783225191",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783225191",
-    "Changelog": "- 宇宙探索：限時採集／釣魚任務交件時，金星、銀星的判定改讀得懂台服的「剩餘時間 23:00以上」，不再一律記成銅星\n- 宇宙探索：法恩娜釣魚任務「支援食用水產品」「調查大型變異養殖品種」的內建 AutoHook 設定原本裝反了，現在各自用任務發的釣餌\n- 宇宙探索：任務表標出「要等星球建設到更後面的階段才會開放」的任務（灰字＋【尚未開放】，滑過顯示需要第幾階段、目前第幾階段）",
-    "LastUpdate": 1795443460
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783271853",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783271853",
+    "Changelog": "- 宇宙探索：任務表新增四個效益欄（金星率、平均耗時、每小時金星、每小時信用點），點欄位標題就能依它排序；嘗試不到 3 次的任務淡色顯示「樣本少」並排在最後\n- 宇宙探索：限定任務模式不再為「建設階段還沒到、遊戲不會派」的任務空等；只刷未金星時也不再為了它們一直重跑已金星的前置任務\n- 宇宙探索：釣魚任務中途重新開始時改用任務設定裡指定的自訂 AutoHook 設定（以前一律換回內建）；「導航卡住時跳躍」現在真的會作用，同一個目的地最多脫困 3 次\n- 宇宙探索：宇宙工具經驗模式開著「僅限已勾選的任務」、但這個職業一個任務都沒勾時，改成說明原因後停止（停止原因 no_mission），不再當成錯誤",
+    "LastUpdate": 1795444216
   },
   {
     "Author": "Liza Carvelli",
@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.30.0.13",
+    "AssemblyVersion": "7.30.0.14",
     "Description": "台服自製 QoL 工具箱，內含上百個獨立模組，分成「背包・裝備」「戰鬥・小隊」「公會・生活」「介面・雜項」四類，可在設定視窗逐一開關。預設只開啟 3 個純顯示或只寫紀錄的模組，其餘預設關閉。涵蓋背包整理與搬移、公會合建交料、陸行鳥餵食、園圃作業、隊伍招募輔助、周邊玩家與敵人清單等。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服 QoL 模組集：背包、戰鬥小隊、公會生活、介面雜項，每個模組獨立開關。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783193909",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783193909",
-    "Changelog": "- 「換 World 與副本區」面板的查價遇到 Universalis 忙線（429）或伺服器錯誤（5xx）、連線失敗時會自動等一下再重試，有指定等待時間就照它，不再一次就失敗\n- 貨幣上限警示可一步開啟 InventoryTools 的「貨幣兌換價值排行」：資訊列警示按左鍵、聊天提醒尾端的連結、設定頁的按鈕都能開（沒載入 InventoryTools 時照舊，不顯示也不報錯）",
-    "LastUpdate": 1795442915
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783272258",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783272258",
+    "Changelog": "- 新增「角色總覽」視窗（/tcchars）：一頁看所有角色的僱員、潛水艇、分隊與訓練、公會特效庫存、背包空格，依下一件事最早到排序，每列可直接換到該角色；可選擇分隊歸隊、訓練結束時在聊天欄提醒（預設關）",
+    "LastUpdate": 1795444208
   },
   {
     "Author": "daemitus, MidoriKami",
