@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.58",
+    "AssemblyVersion": "7.30.0.59",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783812475",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783812475",
-    "Changelog": "- 秘本寶庫迦巴勒幻想圖書館 液態火焰：突進的範圍改成從首領連到被點名的人，跟著人移動\n- 秘本寶庫迦巴勒幻想圖書館 博學林鴞：黃道隕石讀條時雷達畫出每顆隕石背後可以躲的影子（只畫，AI 不跟著躲）\n- 秘本寶庫迦巴勒幻想圖書館 博學林鴞：大地槌之章、龍捲風之章讀條時 AI 會站進白圈／黑圈；變成河童時踩綠圈變回，沒變時避開綠圈",
-    "LastUpdate": 1795453653,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783975777",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783975777",
+    "Changelog": "- 複製工廠廢墟 霍布斯：畫出耐火焰檢測的火焰範圍（約 10 秒前預告，噴火 5 下期間一直標著）\n- 阿卡狄亞登天鬥技場 次重量級4：群狼劍短距離瞬移後的扇形，判定時間改準（原本標晚約 1 秒，AI 會以為還來得及穿過）",
+    "LastUpdate": 1795456568,
     "CategoryTags": [
       "Jobs"
     ]
