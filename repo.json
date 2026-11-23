@@ -96,7 +96,7 @@
     "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
-    "AssemblyVersion": "7.30.0.10",
+    "AssemblyVersion": "7.30.0.11",
     "Description": "自動幫你提鉤釣魚,你能相信嗎?\n支援自訂預設集、自動以小釣大、自動刺魚等功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoHook",
@@ -116,10 +116,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoHook.png",
     "Punchline": "讓釣魚不再無聊(或更無聊)。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783225186",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783225186",
-    "Changelog": "- 插件紀錄裡施放技能的名稱改讀遊戲資料：雄心之餌、謙遜之餌不再是空白，提鉤類不再是英文（Normal、Double…），歇竿不再誤寫成提鉤\n- 除錯頁的「Swap Swimbait」按鈕改成依游動餌欄位（0～2）切換，修正按了不會換游動餌（一般版本看不到除錯頁）",
-    "LastUpdate": 1795443438
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783673332",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783673332",
+    "Changelog": "- 出海垂釣：遊戲改版後讀不到船上狀態時不開始也不去讀（不會因此當機）；自動化內部出錯時只停下出海垂釣、不影響自動釣魚\n- 出海垂釣規則可以指定航線：航線、海域、時段都能設「任何」，整條航線用同一組 preset 時只要一條規則；同時符合好幾條時取指定得最多的那條（一樣多取上面那條），另加「新增目前這條航線」按鈕\n- 設定視窗新增「出海垂釣」分頁：開始／停止按鈕、目前航線與站別（海域、時段、幻海流、這一站剩幾秒）、各站規則表（海域＋時段→一般與幻海流各自的 preset 與釣餌），可一鍵新增目前這一站\n- 出海垂釣：新增整趟自動化（/ahocean start 手動開始）：上船後每一站自動走到船邊拋竿、依海域與時段換 preset 或釣餌、幻海流出現與結束時切換，航程結束收手；你收竿或走動時讓位，AutoHook 被關閉或全艦隊急停時停下",
+    "LastUpdate": 1795451242
   },
   {
     "Author": "кайт машина (Puni.sh)",
