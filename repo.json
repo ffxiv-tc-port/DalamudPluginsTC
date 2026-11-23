@@ -1439,7 +1439,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.30.0.12",
+    "AssemblyVersion": "7.30.0.13",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 Gil 並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1455,10 +1455,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點 Gil！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/778699540",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/778699540",
-    "Changelog": "- 最近一筆成交被判成特殊交易時，改用近期多筆成交的共識價和板上最低價取低，不再直接跟著遠高於行情的板上價掛\n- 上架新道具時板上沒人賣，改用近期多筆成交的共識價先掛上（成交不夠再用其他世界最便宜的一般掛單）；異常價改看最新多筆成交、排除轉 Gil 之類的特殊交易，天價掛單不再擋住正常價（設定可關，預設開）\n- 「賣給商店」展開的道具清單超過 12 行時改成固定高度可捲動，整理一輪或背包分揀交過來很多件時面板不再被拉長\n- 批次上架可以把道具設成「不自動上架」（批次上架、全僱員補上架、整理一輪的補上架都會跳過，NQ／HQ 一起；設定「上架」頁可逐件或全部移除）；道具清單改成固定高度可捲動，全部勾選／全部取消移到清單上方",
-    "LastUpdate": 1795343578
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783257998",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783257998",
+    "Changelog": "- 跨世界價格巡檢視窗與即時掛單面板的欄寬改成跟著字級放大：在 Dalamud 設定裡換了較大的預設字型時，欄位不再被字撐爆\n- 扣稅後實拿改用遊戲的算法（稅額先捨去，實拿＝總價－稅額）：僱員銷售紀錄的金額對帳、低於 NPC 收購價就下架的判斷、看盤欄位的實拿都一樣，不再少算 1 gil\n- 即時掛單面板的看盤欄位（扣稅後實拿、比你便宜的件數、預估幾天賣完）改成預設顯示，不想看可以在面板「選項」關掉\n- 跨世界價格巡檢視窗的欄寬與按鈕跟著介面縮放，視窗高度不再超出螢幕；第一次開啟改成固定的 900×600（依縮放）\n- 即時掛單面板新增看盤欄位（在面板「選項」開啟）：扣稅後實拿、板上比你便宜的件數、預估幾天賣完；按「查日銷」才向 Universalis 查，資料超過一天沒更新的列淡色顯示",
+    "LastUpdate": 1795443982
   },
   {
     "Author": "Faye",
