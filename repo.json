@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.56",
+    "AssemblyVersion": "7.30.0.57",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783758554",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783758554",
-    "Changelog": "- 阿卡狄亞登天鬥技場 次重量級1：舞浪全開時 AI 不再特地跑去綠色安全格，閃開浪就好",
-    "LastUpdate": 1795452732,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783791086",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783791086",
+    "Changelog": "- 自動戰鬥：身上有加速度炸彈時，不論副本有沒有專用模組，到期前都會自動停止移動與出招",
+    "LastUpdate": 1795453321,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.30.0.21",
+    "AssemblyVersion": "7.30.0.22",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 自動團減依危險度判斷時，排在前面的低危散開不再擋住後面那發真正的全體傷害（需搭配新版 BossModReborn）",
+    "Changelog": "- 自動循環在 BossModReborn 要求停手的機制期間（熱病、加速度炸彈、舉起的聖盾防禦等）暫停出招，解除後自動恢復（新設定預設開啟，你自己按的技能不擋）",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779885372",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/779885372",
-    "LastUpdate": 1795368881,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783790295",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783790295",
+    "LastUpdate": 1795453291,
     "CategoryTags": [
       "Jobs"
     ]
