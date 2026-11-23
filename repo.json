@@ -96,7 +96,7 @@
     "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
-    "AssemblyVersion": "7.30.0.7",
+    "AssemblyVersion": "7.30.0.8",
     "Description": "自動幫你提鉤釣魚,你能相信嗎?\n支援自訂預設集、自動以小釣大、自動刺魚等功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoHook",
@@ -116,10 +116,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoHook.png",
     "Punchline": "讓釣魚不再無聊(或更無聊)。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782028647",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782028647",
-    "Changelog": "- 宇宙探索釣魚：依尺寸計分的任務，耐心期間改用精準提鉤／強力提鉤／華麗提鉤並暫停雙重／三重提鉤；preset 沒在尺寸上花 GP 時自動補放耐心II（設定頁可關）",
-    "LastUpdate": 1795419864
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782065103",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782065103",
+    "Changelog": "- 起始餌、額外設定（幻海流、漁師之識、漁師之計）與釣到魚後的自動換餌，每次換餌都會在插件紀錄寫一行由哪個設定觸發\n- 釣魚：preset 的游動餌自動切換開始生效；拍擊水面／專一垂釣期間與空欄位不送切換，送出後確認選中才拋竿（最多等 1.5 秒），選了游動餌後也能換回原本那顆一般餌",
+    "LastUpdate": 1795420664
   },
   {
     "Author": "кайт машина (Puni.sh)",
