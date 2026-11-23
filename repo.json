@@ -96,7 +96,7 @@
     "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
-    "AssemblyVersion": "7.30.0.8",
+    "AssemblyVersion": "7.30.0.9",
     "Description": "自動幫你提鉤釣魚,你能相信嗎?\n支援自訂預設集、自動以小釣大、自動刺魚等功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoHook",
@@ -116,16 +116,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoHook.png",
     "Punchline": "讓釣魚不再無聊(或更無聊)。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782065103",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782065103",
-    "Changelog": "- 起始餌、額外設定（幻海流、漁師之識、漁師之計）與釣到魚後的自動換餌，每次換餌都會在插件紀錄寫一行由哪個設定觸發\n- 釣魚：preset 的游動餌自動切換開始生效；拍擊水面／專一垂釣期間與空欄位不送切換，送出後確認選中才拋竿（最多等 1.5 秒），選了游動餌後也能換回原本那顆一般餌",
-    "LastUpdate": 1795420664
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783193529",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783193529",
+    "Changelog": "- 宇宙探索釣魚：任務說明是「任意水產品」或「每條魚均給予評價」時，preset 沒開的咬鉤（例如弱咬）改用一般提鉤、不再歇竿（設定頁可關）；歇竿時插件紀錄會寫出咬鉤種類、拋竿後秒數與原因\n- 宇宙探索釣魚：每一竿的量測紀錄加上拋竿前與提鉤前的 GP、身上狀態（大魚獵手、專一垂釣、耐心、撒餌、引誘餌層數等）與這一竿用了哪種提鉤，用來算放技能每 GP 換多少分",
+    "LastUpdate": 1795442889
   },
   {
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.30.0.12",
+    "AssemblyVersion": "7.30.0.13",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782303190",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782303190",
-    "Changelog": "- 探險瀏覽器的「查詢價格」改開 TC Toolbox「僱員探險收益」視窗並定位到該物品（沒開那個模組時改用 Market Board 插件，兩者都沒有就不顯示按鈕）；新增唯讀的探險帶回數量介面給其他插件",
-    "LastUpdate": 1795425544,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783194083",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783194083",
+    "Changelog": "- 探險瀏覽器的「採集」按鈕現在會出現了：認得艦隊版 GatherBuddy Reborn，只在它已啟用時顯示；漁師僱員的探險改用釣魚查詢",
+    "LastUpdate": 1795442926,
     "CategoryTags": [
       "Inventory"
     ]
@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.30.0.12",
+    "AssemblyVersion": "7.30.0.13",
     "Description": "台服自製 QoL 工具箱，內含上百個獨立模組，分成「背包・裝備」「戰鬥・小隊」「公會・生活」「介面・雜項」四類，可在設定視窗逐一開關。預設只開啟 3 個純顯示或只寫紀錄的模組，其餘預設關閉。涵蓋背包整理與搬移、公會合建交料、陸行鳥餵食、園圃作業、隊伍招募輔助、周邊玩家與敵人清單等。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服 QoL 模組集：背包、戰鬥小隊、公會生活、介面雜項，每個模組獨立開關。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782302907",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782302907",
-    "Changelog": "- 新增「僱員探險收益」模組（預設關，公會 · 生活分頁）：每位僱員一列，列出目前的探險、最賺的指定探險、每趟與每小時能換多少 Gil、賣得完係數與行情資料時間，可排序、可展開看前幾名；按「查價」才向 Universalis 查家世界行情。需要 AutoRetainer 新版",
-    "LastUpdate": 1795425545
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783193909",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783193909",
+    "Changelog": "- 「換 World 與副本區」面板的查價遇到 Universalis 忙線（429）或伺服器錯誤（5xx）、連線失敗時會自動等一下再重試，有指定等待時間就照它，不再一次就失敗\n- 貨幣上限警示可一步開啟 InventoryTools 的「貨幣兌換價值排行」：資訊列警示按左鍵、聊天提醒尾端的連結、設定頁的按鈕都能開（沒載入 InventoryTools 時照舊，不顯示也不報錯）",
+    "LastUpdate": 1795442915
   },
   {
     "Author": "daemitus, MidoriKami",
