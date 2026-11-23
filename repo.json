@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.30.0.11",
+    "AssemblyVersion": "7.30.0.12",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/775820559",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/775820559",
-    "Changelog": "- 「跑一輪就回來」開放給其他插件與巨集：可以開始、查進度、查上一趟是換回原角色還是被取消，也能只取消自己開的那一趟",
-    "LastUpdate": 1795270886,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782303190",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782303190",
+    "Changelog": "- 探險瀏覽器的「查詢價格」改開 TC Toolbox「僱員探險收益」視窗並定位到該物品（沒開那個模組時改用 Market Board 插件，兩者都沒有就不顯示按鈕）；新增唯讀的探險帶回數量介面給其他插件",
+    "LastUpdate": 1795425544,
     "CategoryTags": [
       "Inventory"
     ]
@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.30.0.11",
+    "AssemblyVersion": "7.30.0.12",
     "Description": "台服自製 QoL 工具箱，內含上百個獨立模組，分成「背包・裝備」「戰鬥・小隊」「公會・生活」「介面・雜項」四類，可在設定視窗逐一開關。預設只開啟 3 個純顯示或只寫紀錄的模組，其餘預設關閉。涵蓋背包整理與搬移、公會合建交料、陸行鳥餵食、園圃作業、隊伍招募輔助、周邊玩家與敵人清單等。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服 QoL 模組集：背包、戰鬥小隊、公會生活、介面雜項，每個模組獨立開關。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782232007",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782232007",
-    "Changelog": "- 國防聯軍分隊：新增「替我選今天的任務並派遣」按鈕（預設關，在設定裡勾選啟用）：用遊戲預填的隊員，重要任務三項全達標就派它，否則派至少兩項達標、等級最高的任務\n- 整理程式碼結構：自動刷新招募板的倒數小窗改用共用的「貼在原生視窗上方」開窗（功能不變）",
-    "LastUpdate": 1795424156
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782302907",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782302907",
+    "Changelog": "- 新增「僱員探險收益」模組（預設關，公會 · 生活分頁）：每位僱員一列，列出目前的探險、最賺的指定探險、每趟與每小時能換多少 Gil、賣得完係數與行情資料時間，可排序、可展開看前幾名；按「查價」才向 Universalis 查家世界行情。需要 AutoRetainer 新版",
+    "LastUpdate": 1795425545
   },
   {
     "Author": "daemitus, MidoriKami",
