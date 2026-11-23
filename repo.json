@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.16",
+    "AssemblyVersion": "7.30.0.17",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782028648",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782028648",
-    "Changelog": "- 宇宙探索：釣魚任務的內建 AutoHook 釣魚設定自己指定了餌時，ICE 不再在拋竿前把餌換回身上第一個月面餌，交給 AutoHook 換\n- 宇宙探索：釣魚任務換了目標（中途停止再開始、或上一個任務是手動接的）時，不再走去舊任務的釣點後原地卡住",
-    "LastUpdate": 1795419884
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783093694",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783093694",
+    "Changelog": "- 宇宙探索：高難+ 兩件型製作任務（例如製作高性能寢具）第一件沒做到滿品質時就判出「已經不可能拿到金星」，不必等第二件做完",
+    "LastUpdate": 1795441072
   },
   {
     "Author": "Liza Carvelli",
