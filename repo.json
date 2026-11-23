@@ -96,7 +96,7 @@
     "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
-    "AssemblyVersion": "7.30.0.6",
+    "AssemblyVersion": "7.30.0.7",
     "Description": "自動幫你提鉤釣魚,你能相信嗎?\n支援自訂預設集、自動以小釣大、自動刺魚等功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoHook",
@@ -116,10 +116,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoHook.png",
     "Punchline": "讓釣魚不再無聊(或更無聊)。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780252030",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780252030",
-    "Changelog": "- 宇宙探索釣魚：匯入的新版 preset（ICE 內建等）裡的技能條件、規則（自動換餌／換 preset）、熟練妙招開始生效（游動餌自動切換等台服驗證後再開）",
-    "LastUpdate": 1795376793
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782028647",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782028647",
+    "Changelog": "- 宇宙探索釣魚：依尺寸計分的任務，耐心期間改用精準提鉤／強力提鉤／華麗提鉤並暫停雙重／三重提鉤；preset 沒在尺寸上花 GP 時自動補放耐心II（設定頁可關）",
+    "LastUpdate": 1795419864
   },
   {
     "Author": "кайт машина (Puni.sh)",
@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.15",
+    "AssemblyVersion": "7.30.0.16",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780252037",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780252037",
-    "Changelog": "- 宇宙探索：雙職業的釣魚任務指定了自訂 AutoHook preset 時會切過去；匯入內建 preset 時記錄 AutoHook 吃不下的設定\n- 宇宙探索：法恩娜釣魚任務「【高難】高效籌備稀有水產資源」「【高難】調查河川流域的水中類精靈」換成上游的整包資料夾設定，修正換階卡住",
-    "LastUpdate": 1795376832
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782028648",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782028648",
+    "Changelog": "- 宇宙探索：釣魚任務的內建 AutoHook 釣魚設定自己指定了餌時，ICE 不再在拋竿前把餌換回身上第一個月面餌，交給 AutoHook 換\n- 宇宙探索：釣魚任務換了目標（中途停止再開始、或上一個任務是手動接的）時，不再走去舊任務的釣點後原地卡住",
+    "LastUpdate": 1795419884
   },
   {
     "Author": "Liza Carvelli",
