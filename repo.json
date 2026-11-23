@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.21",
+    "AssemblyVersion": "7.30.0.22",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783403169",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783403169",
-    "Changelog": "- 宇宙探索：任務表的【尚未開放】標記間距、「尚未開放」計數間距改跟著字型大小放大；兩個新加的數值輸入框改用共用的換算",
-    "LastUpdate": 1795446651
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783641769",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783641769",
+    "Changelog": "- 宇宙探索：新增「條件差不多時優先接近的任務」選項（預設關）：其他挑選規則分不出先後時，改接離你現在位置近的採集／釣魚任務，少趕一段路\n- 宇宙探索主視窗：最上面那一列（模式下拉、開始／停止按鈕）跟著字型大小放大，字放大後不會再被切掉下緣",
+    "LastUpdate": 1795450658
   },
   {
     "Author": "Liza Carvelli",
