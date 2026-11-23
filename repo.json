@@ -67,7 +67,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.30.0.8",
+    "AssemblyVersion": "7.30.0.9",
     "Description": "自動幫你跑副本，支援親信戰友、劇情輔助器、冒險者分隊、多變或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -87,10 +87,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "自動跑本，解放雙手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772684098",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772684098",
-    "Changelog": "- 冒險者小隊小怪路段：選新的敵人前先下「號令：戰鬥開始」，等分隊坦克換過去才開打（設定頁可關、可調等待上限）",
-    "LastUpdate": 1795195215
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783712037",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783712037",
+    "Changelog": "- 設定頁、排程表與浮動列的輸入框和欄寬跟著字級放大：調大字型後下拉選單、數字框、排程表的路徑與操作欄不再被擠窄截字",
+    "LastUpdate": 1795451792
   },
   {
     "Author": "Det",
@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.54",
+    "AssemblyVersion": "7.30.0.55",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782232367",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782232367",
-    "Changelog": "- 零式女王古殿 求道之三位一體、女王騎士等四人：拿掉一定會失敗的場地變化元件停用（每次開戰後換階段時記一筆錯誤，畫面不受影響）\n- 天山絕頂索姆阿爾靈峰 邁思、樂欲之所甌博訥修道院 聖天使阿爾蒂瑪、禁地優雷卡 豐水之地 兵武塔調查支援、假面狂歡（奧爾特羅斯&杜彭、模仿師格格）：拿掉重複啟用的元件（開戰時記錯誤，畫面不受影響）\n- 白虎幻巧戰：全體攻擊的元件每次讀條結束就收回，不再在下一次全體攻擊時重複啟用（之前每場記 2 筆錯誤並換掉舊的元件）\n- 榮華神域塔利亞 歐羅基亞：第二輪隨機機制開始時，不再把還在運作的 18 個機制元件整批換成新的（換掉會丟掉它們已記下的狀態，並在紀錄寫 18 筆錯誤）",
-    "LastUpdate": 1795424186,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783713015",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783713015",
+    "Changelog": "- 樂欲之所甌博訥修道院 雷神希德：補上冥界恐叫打的落點圈與暗影之劍全體傷害預告\n- 樂欲之所甌博訥修道院 聖騎士阿格莉亞絲：補上聖光爆裂破的連線直線、無雙閃電突刺外圈、劍之騎士強擊範圍與聖天擊滅斬全體傷害預告\n- 樂欲之所甌博訥修道院 聖騎士阿格莉亞絲：不動無明劍與聖光爆裂破提示「先面向首領再按聖盾防禦」，舉盾後到判定前 BMR 不出招也不移動，避免舉起的聖盾被自己接著放的技能解除\n- 樂欲之所甌博訥修道院 機工士姆斯塔迪奧：最終聖約讀條時標出身上「未解析」那一側要對著首領的方向，開啟避開凝視的自動轉向時會自動轉過去",
+    "LastUpdate": 1795451872,
     "CategoryTags": [
       "Jobs"
     ]
@@ -999,7 +999,7 @@
     "Author": "veyn, croizat",
     "Name": "Visland",
     "InternalName": "visland",
-    "AssemblyVersion": "7.30.0.3",
+    "AssemblyVersion": "7.30.0.4",
     "Description": "自動化採集、開拓工坊排班等無人島相關作業。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/visland",
@@ -1020,10 +1020,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/visland.png",
     "Punchline": "自動化無人島各項活動",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764272059",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764272059",
-    "Changelog": "- 列舉下拉選單不再每幀反射讀取顯示名稱（畫面不變）",
-    "LastUpdate": 1795022118
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783712222",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783712222",
+    "Changelog": "- 無人島的材料帳本、穀倉、耕地表格欄寬與工房、自動化分頁的輸入框寬度改跟著字型大小放大，放大字型後欄位不再截字",
+    "LastUpdate": 1795451786
   },
   {
     "Author": "veyn",
@@ -1213,7 +1213,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.30.0.5",
+    "AssemblyVersion": "7.30.0.6",
     "Description": "自動跑任務插件：\n- 自動導航至任務目標並完成對話、互動與戰鬥觸發\n- 支援主線／支線任務、部分部落任務與採集類任務\n- 提供任務執行優先順序與除錯視窗\n- 需搭配 vnavmesh、TextAdvance、Lifestream 使用",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1232,10 +1232,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "自動跑任務助手，導航並完成任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764794636",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764794636",
-    "Changelog": "- 通知設定的「顯示系統匣通知」「閃爍工作列圖示」恢復可用：走到需要手動處理的步驟時，經 NotificationMaster 跳出系統匣通知或閃爍工作列（需安裝 NotificationMaster，預設關）",
-    "LastUpdate": 1795031955
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783713071",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783713071",
+    "Changelog": "- 介面跟著字型大小放大：設定頁的副本設定區塊、任務驗證／任務選擇／圖鑑進度表的欄寬，以及執行中、優先任務等視窗的最小尺寸，放大字型後不再擠在一起或截字",
+    "LastUpdate": 1795451842
   },
   {
     "Author": "NightmareXIV",
@@ -1330,7 +1330,7 @@
     "Author": "Ice",
     "Name": "Chilled Leves",
     "InternalName": "ChilledLeves",
-    "AssemblyVersion": "7.30.0.3",
+    "AssemblyVersion": "7.30.0.4",
     "Description": "理符任務輔助工具：讓你挑選想接的理符任務，並自動前往接取、執行與繳交。注意：必須先安裝 vnavmesh 才能使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ChilledLeves",
@@ -1350,16 +1350,16 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ChilledLeves.png",
     "Punchline": "理符任務，冰鎮上桌。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762567844",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762567844",
-    "Changelog": "- 接理符時在紀錄檔寫下按了委託人選單的第幾項與那一項的文字，方便確認台服選單順序\n- 存工作清單改成先寫暫存檔再換名，存到一半當機或斷電不會留下寫壞的清單檔\n- 理符自動化途中卸載或更新插件時，停下自己送出的 vnavmesh 路線，不再讓角色把剩下的路走完",
-    "LastUpdate": 1794990348
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783711966",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783711966",
+    "Changelog": "- 採集理符清單與委託人選擇表的欄寬跟著字級放大，「理符名稱」欄改成自動填滿剩餘寬度，不再截字",
+    "LastUpdate": 1795451772
   },
   {
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.22",
+    "AssemblyVersion": "7.30.0.23",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783641769",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783641769",
-    "Changelog": "- 宇宙探索：新增「條件差不多時優先接近的任務」選項（預設關）：其他挑選規則分不出先後時，改接離你現在位置近的採集／釣魚任務，少趕一段路\n- 宇宙探索主視窗：最上面那一列（模式下拉、開始／停止按鈕）跟著字型大小放大，字放大後不會再被切掉下緣",
-    "LastUpdate": 1795450658
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783712003",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783712003",
+    "Changelog": "- 宇宙探索設定頁的輸入框、下拉選單寬度改跟著字型大小放大（採集設定、停止條件、安全設定、購物清單、其他設定等），放大字型後不會截字",
+    "LastUpdate": 1795451810
   },
   {
     "Author": "Liza Carvelli",
@@ -1555,7 +1555,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.30.0.5",
+    "AssemblyVersion": "7.30.0.6",
     "Description": "[Questionable 開發用插件]：使用 Pictomancy 繪製採集點路徑，供路徑資料編輯者使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1570,10 +1570,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable 開發用] 繪製採集路徑點",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764794647",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/764794647",
-    "LastUpdate": 1795031955,
-    "Changelog": "- 通知設定的「顯示系統匣通知」「閃爍工作列圖示」恢復可用：走到需要手動處理的步驟時，經 NotificationMaster 跳出系統匣通知或閃爍工作列（需安裝 NotificationMaster，預設關）"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783713069",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783713069",
+    "LastUpdate": 1795451842,
+    "Changelog": "- 介面跟著字型大小放大：設定頁的副本設定區塊、任務驗證／任務選擇／圖鑑進度表的欄寬，以及執行中、優先任務等視窗的最小尺寸，放大字型後不再擠在一起或截字"
   },
   {
     "Author": "WildWolf",
