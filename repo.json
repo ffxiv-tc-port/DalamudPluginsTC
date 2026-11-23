@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.19",
+    "AssemblyVersion": "7.30.0.20",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783271853",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783271853",
-    "Changelog": "- 宇宙探索：任務表新增四個效益欄（金星率、平均耗時、每小時金星、每小時信用點），點欄位標題就能依它排序；嘗試不到 3 次的任務淡色顯示「樣本少」並排在最後\n- 宇宙探索：限定任務模式不再為「建設階段還沒到、遊戲不會派」的任務空等；只刷未金星時也不再為了它們一直重跑已金星的前置任務\n- 宇宙探索：釣魚任務中途重新開始時改用任務設定裡指定的自訂 AutoHook 設定（以前一律換回內建）；「導航卡住時跳躍」現在真的會作用，同一個目的地最多脫困 3 次\n- 宇宙探索：宇宙工具經驗模式開著「僅限已勾選的任務」、但這個職業一個任務都沒勾時，改成說明原因後停止（停止原因 no_mission），不再當成錯誤",
-    "LastUpdate": 1795444216
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783367401",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783367401",
+    "Changelog": "- 宇宙探索：製作任務送 Artisan 製作指令前的 2.5 秒等待只用在每個任務的第一次，同一任務之後的製作只等 25 毫秒；中途一出狀況就本場自動退回 2.5 秒（可關閉、可調）\n- 宇宙探索：限定任務「只刷未金星」時，同一個任務本場連續 2 次沒拿到金星就先排到最後（不移除），拿到金星、插件重載或 Artisan 換版就重算；次數可調、可關閉",
+    "LastUpdate": 1795445989
   },
   {
     "Author": "Liza Carvelli",
@@ -1439,7 +1439,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.30.0.14",
+    "AssemblyVersion": "7.30.0.15",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 Gil 並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1455,10 +1455,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點 Gil！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783319683",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783319683",
-    "Changelog": "- 賣給商店：新增「併進原有堆疊時也整疊賣掉」選項（預設關）；只限那種道具這一輪之前就被低價下架過、不在製作清單上，整疊連原有的一起賣，清單與按鈕下方會寫出含幾個原有的\n- 批次上架：查價低於門檻的道具會記住 7 天（可調、預設開），期間不再重查、直接當成低於門檻，開始時按住 Ctrl 可全部重查；跑完列出「已處理／還要處理」彙整表（道具、件數、價格、最低價、NPC 收購價）",
-    "LastUpdate": 1795445121
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783367224",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783367224",
+    "Changelog": "- 設定視窗、各面板的輸入框寬度與買入面板改照 Dalamud 字型大小放大：把字放大的人不會再看到被擠窄的輸入框；出廠字型大小下尺寸與原本相同\n- 即時掛單面板：新增「常見買量」欄，按「查日銷」時一起帶回最近成交每筆買了幾個，列上顯示最常見的件數、滑鼠移上去看分布；沒查過或最近 7 天沒成交顯示灰色「?」",
+    "LastUpdate": 1795445938
   },
   {
     "Author": "Faye",
