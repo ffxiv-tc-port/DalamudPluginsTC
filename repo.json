@@ -40,7 +40,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.30.0.22",
+    "AssemblyVersion": "7.30.0.23",
     "Description": "整合各種功能的全能製作插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -58,10 +58,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "一款「簡單」的製作插件。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/778883558",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/778883558",
-    "Changelog": "- 素材表右鍵「加進 GatherBuddy」：限時採集點素材的滑鼠提示多一行預估採集時間與市價，按下照舊直接送出",
-    "LastUpdate": 1795347905
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782232424",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782232424",
+    "Changelog": "- 購物估算：每個世界改挑實際付款最少的掛單組合，買得齊的世界不再被只買得到一部分的世界蓋掉",
+    "LastUpdate": 1795424170
   },
   {
     "Author": "Herculezz",
@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.53",
+    "AssemblyVersion": "7.30.0.54",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780114555",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/780114555",
-    "Changelog": "- 複製工廠廢墟 恩格斯：高性能追蹤飛彈（只點三名坦克）改報成死刑，坦克的死刑減傷看得到它\n- 減傷預判：標成死刑的誘導（頭標、施法點名）改報成死刑，不再當成全體傷害開團減；另補標 5 招只打坦克的誘導",
-    "LastUpdate": 1795373823,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782232367",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782232367",
+    "Changelog": "- 零式女王古殿 求道之三位一體、女王騎士等四人：拿掉一定會失敗的場地變化元件停用（每次開戰後換階段時記一筆錯誤，畫面不受影響）\n- 天山絕頂索姆阿爾靈峰 邁思、樂欲之所甌博訥修道院 聖天使阿爾蒂瑪、禁地優雷卡 豐水之地 兵武塔調查支援、假面狂歡（奧爾特羅斯&杜彭、模仿師格格）：拿掉重複啟用的元件（開戰時記錯誤，畫面不受影響）\n- 白虎幻巧戰：全體攻擊的元件每次讀條結束就收回，不再在下一次全體攻擊時重複啟用（之前每場記 2 筆錯誤並換掉舊的元件）\n- 榮華神域塔利亞 歐羅基亞：第二輪隨機機制開始時，不再把還在運作的 18 個機制元件整批換成新的（換掉會丟掉它們已記下的狀態，並在紀錄寫 18 筆錯誤）",
+    "LastUpdate": 1795424186,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.30.0.10",
+    "AssemblyVersion": "7.30.0.11",
     "Description": "台服自製 QoL 工具箱，內含上百個獨立模組，分成「背包・裝備」「戰鬥・小隊」「公會・生活」「介面・雜項」四類，可在設定視窗逐一開關。預設只開啟 3 個純顯示或只寫紀錄的模組，其餘預設關閉。涵蓋背包整理與搬移、公會合建交料、陸行鳥餵食、園圃作業、隊伍招募輔助、周邊玩家與敵人清單等。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服 QoL 模組集：背包、戰鬥小隊、公會生活、介面雜項，每個模組獨立開關。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772062141",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772062141",
-    "Changelog": "- 國防聯軍分隊診斷：編組名單人數格型別、無獎勵任務的獎勵數量、隊伍不足 4 人時推得的訓練值不再誤報",
-    "LastUpdate": 1795183470
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782232007",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/782232007",
+    "Changelog": "- 國防聯軍分隊：新增「替我選今天的任務並派遣」按鈕（預設關，在設定裡勾選啟用）：用遊戲預填的隊員，重要任務三項全達標就派它，否則派至少兩項達標、等級最高的任務\n- 整理程式碼結構：自動刷新招募板的倒數小窗改用共用的「貼在原生視窗上方」開窗（功能不變）",
+    "LastUpdate": 1795424156
   },
   {
     "Author": "daemitus, MidoriKami",
