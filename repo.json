@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.30.0.16",
+    "AssemblyVersion": "7.30.0.17",
     "Description": "台服自製 QoL 工具箱，內含上百個獨立模組，分成「背包・裝備」「戰鬥・小隊」「公會・生活」「介面・雜項」四類，可在設定視窗逐一開關。預設只開啟 3 個純顯示或只寫紀錄的模組，其餘預設關閉。涵蓋背包整理與搬移、公會合建交料、陸行鳥餵食、園圃作業、隊伍招募輔助、周邊玩家與敵人清單等。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服 QoL 模組集：背包、戰鬥小隊、公會生活、介面雜項，每個模組獨立開關。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783378135",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783378135",
-    "Changelog": "- 貼在遊戲原生視窗旁的按鈕與面板維持原本大小：免費商店上方的兌換按鈕列、招募說明可反白複製的小窗不跟字級放大，避免擋到原生視窗\n- 獨立視窗的最小尺寸與主視窗搜尋框也跟著字級放大：換了較大的預設字型時，視窗不會縮到把內容擠掉\n- 介面寬度跟著字級放大：在 Dalamud 設定換了較大的預設字型時，各模組的輸入框、滑桿、表格欄、按鈕、圖示與清單高度一起放大，不再被字撐爆",
-    "LastUpdate": 1795446175
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787418506",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787418506",
+    "Changelog": "- 新增「插件設定自動備份」：每次載入與每天一次把所有插件設定壓成 zip 存到插件設定資料夾以外，發現設定檔變成全 NUL、空檔、JSON 不完整或被重置時列出受影響的插件並提示，可在該插件停用時一鍵還原",
+    "LastUpdate": 1795528710
   },
   {
     "Author": "daemitus, MidoriKami",
