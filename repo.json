@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.24",
+    "AssemblyVersion": "7.30.0.25",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/784121033",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/784121033",
-    "Changelog": "- 宇宙探索「換一批任務」（接下再放棄來刷新清單）時，不再每次都記一行「放棄任務時沒有正在計時的任務」警告\n- 宇宙探索製作任務開工前先自動下坐騎：騎著坐騎按開始、或趕路騎著接到製作任務時，不會再讓 Artisan 連續出錯而停用",
-    "LastUpdate": 1795459370
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/786288285",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/786288285",
+    "Changelog": "- 宇宙探索任務板：切換分頁時殘留的上一個分頁任務不再被選中（修正工具經驗模式一直選到別的職業的任務、反覆報錯卡住）；渴望灣緊急任務 535 的製作件數改為 3 件，與其他渴望灣緊急製作一致",
+    "LastUpdate": 1795507925
   },
   {
     "Author": "Liza Carvelli",
