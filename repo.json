@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.30.0.12",
+    "AssemblyVersion": "7.30.0.13",
     "Description": "- 一鍵傳送至任何世界或都市傳送網目的地\n- 點擊區域地圖上的城內乙太之晶即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速都市傳送網移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/785733303",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/785733303",
-    "Changelog": "- 直接進渴望灣：解鎖行星法恩娜後乙太之光選單不再有渴望灣，改為立刻騎去找駕駛威前往，不再空等 20 秒；途中你自己選了目的地就停手",
-    "LastUpdate": 1795495525
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/785760256",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/785760256",
+    "Changelog": "- 渴望灣：解鎖行星法恩娜後，傳送面板那一列、浮動面板按鈕、/li goto、地圖點、Wotsit、自訂別名也都改走直接進渴望灣的流程（選單沒有渴望灣就騎去找駕駛威），沒到就停下、不再接著走自訂落點",
+    "LastUpdate": 1795496146
   },
   {
     "Author": "apetih",
