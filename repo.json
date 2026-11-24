@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.30.0.22",
+    "AssemblyVersion": "7.30.0.23",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 自動循環在 BossModReborn 要求停手的機制期間（熱病、加速度炸彈、舉起的聖盾防禦等）暫停出招，解除後自動恢復（新設定預設開啟，你自己按的技能不擋）",
+    "Changelog": "- 自動循環新增「DailyDuty 通緝目標繞過『僅於戰鬥中』限制」：DailyDuty 通緝令自動開打提出要求時，對它指定的那一隻通緝目標在戰鬥外直接出招（預設開啟，只在 DailyDuty 提出要求、而且目前目標正是那一隻時才作用）",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783790295",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783790295",
-    "LastUpdate": 1795453291,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787519431",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787519431",
+    "LastUpdate": 1795530378,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1181,7 +1181,7 @@
     "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.30.0.8",
+    "AssemblyVersion": "7.30.0.9",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/DailyDuty",
@@ -1204,10 +1204,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787379852",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787379852",
-    "Changelog": "- 通緝令：可在抵達告示板後自動接取（接到每週的直接前往目標），以及接近通緝目標後自動選取並開自動攻擊（兩項都預設關，在討伐輔助設定裡開）",
-    "LastUpdate": 1795527984
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787519677",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787519677",
+    "Changelog": "- 通緝令自動開打：接近完成時人在坐騎上會先下坐騎（飛行中先降落再下來），下來後才請 WrathCombo 開打或開自動攻擊；等了幾秒仍下不來就停下並告訴你「沒能下坐騎」\n- 通緝令自動開打：WrathCombo 自動循環開著時，先選取通緝目標並請 WrathCombo 開打（WrathCombo 要同步更新並勾「DailyDuty 通緝目標繞過『僅於戰鬥中』限制」，預設已勾），幾秒內沒進入戰鬥才改開自動攻擊；沒開成時的說明會寫明是 WrathCombo 沒接手還是沒有 WrathCombo",
+    "LastUpdate": 1795530386
   },
   {
     "Author": "liza, qstxiv, & various contributors",
