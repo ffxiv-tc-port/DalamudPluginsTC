@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.25",
+    "AssemblyVersion": "7.30.0.26",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/786288285",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/786288285",
-    "Changelog": "- 宇宙探索任務板：切換分頁時殘留的上一個分頁任務不再被選中（修正工具經驗模式一直選到別的職業的任務、反覆報錯卡住）；渴望灣緊急任務 535 的製作件數改為 3 件，與其他渴望灣緊急製作一致",
-    "LastUpdate": 1795507925
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/786322756",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/786322756",
+    "Changelog": "- 宇宙探索：任務中途收手改按「回報結果」交件時，也會判定金星／銀星／銅星，交件次數統計與記錄的任務分數不再記錯\n- 宇宙探索：修正法恩娜 9 個任務的內建分數（「研究法恩娜資源活用方法」等 8 個職業的同一級任務 78 改 50、任務 902 由 6 改 5），任務排序與每分鐘成果改用正確值",
+    "LastUpdate": 1795508667
   },
   {
     "Author": "Liza Carvelli",
