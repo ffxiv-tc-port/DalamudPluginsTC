@@ -1439,7 +1439,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.30.0.15",
+    "AssemblyVersion": "7.30.0.16",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 Gil 並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1455,10 +1455,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點 Gil！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783367224",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783367224",
-    "Changelog": "- 設定視窗、各面板的輸入框寬度與買入面板改照 Dalamud 字型大小放大：把字放大的人不會再看到被擠窄的輸入框；出廠字型大小下尺寸與原本相同\n- 即時掛單面板：新增「常見買量」欄，按「查日銷」時一起帶回最近成交每筆買了幾個，列上顯示最常見的件數、滑鼠移上去看分布；沒查過或最近 7 天沒成交顯示灰色「?」",
-    "LastUpdate": 1795445938
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/786451269",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/786451269",
+    "Changelog": "- 重掛、快速上架與批次上架要查的最近成交價改成照上架順序、每批最多 20 件分批查：一次排很多件時不會因為一個大請求逾時而整批拿不到近期成交價，最先上架的幾件也最先查到\n- 快速上架與批次上架不再每件白等 Universalis 25 秒：要上架的道具一排進去就先查最近成交價，單件最多等 8 秒；Universalis 剛逾時或失敗時接下來的道具直接照原本的方式定價，查成功一次就恢復；「拿不到最近成交價」的提示 5 分鐘內只講一次",
+    "LastUpdate": 1795511252
   },
   {
     "Author": "Faye",
