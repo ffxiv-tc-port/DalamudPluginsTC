@@ -1181,7 +1181,7 @@
     "Author": "MidoriKami",
     "Name": "DailyDuty",
     "InternalName": "DailyDuty",
-    "AssemblyVersion": "7.30.0.7",
+    "AssemblyVersion": "7.30.0.8",
     "Description": "自動追蹤並完成各種每日與每週任務",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/DailyDuty",
@@ -1204,10 +1204,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/DailyDuty.png",
     "Punchline": "輕鬆追蹤每日／每週任務",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772672310",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/772672310",
-    "Changelog": "- 每週討伐輔助：打完一張通緝目標後自動前往下一張通緝令（可在巡邏設定關閉）",
-    "LastUpdate": 1795194997
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787379852",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787379852",
+    "Changelog": "- 通緝令：可在抵達告示板後自動接取（接到每週的直接前往目標），以及接近通緝目標後自動選取並開自動攻擊（兩項都預設關，在討伐輔助設定裡開）",
+    "LastUpdate": 1795527984
   },
   {
     "Author": "liza, qstxiv, & various contributors",
