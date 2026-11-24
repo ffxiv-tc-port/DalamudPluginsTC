@@ -563,7 +563,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.30.0.11",
+    "AssemblyVersion": "7.30.0.12",
     "Description": "- 一鍵傳送至任何世界或都市傳送網目的地\n- 點擊區域地圖上的城內乙太之晶即可傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -584,10 +584,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "加速都市傳送網移動與跨世界旅行的插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783662324",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783662324",
-    "Changelog": "- 經好友傳送：讀好友房屋清單多一道檢查，同一種房屋在清單上重複出現就停手，改由你在遊戲視窗自己選\n- 新增「經好友傳送」：輸入 /li friend <好友名字>，或在「工具」頁選好友，經遊戲好友名單的房屋傳送前往好友的個人房屋、公寓或公會房屋",
-    "LastUpdate": 1795451060
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/785733303",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/785733303",
+    "Changelog": "- 直接進渴望灣：解鎖行星法恩娜後乙太之光選單不再有渴望灣，改為立刻騎去找駕駛威前往，不再空等 20 秒；途中你自己選了目的地就停手",
+    "LastUpdate": 1795495525
   },
   {
     "Author": "apetih",
