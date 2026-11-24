@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.63",
+    "AssemblyVersion": "7.30.0.64",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/786338431",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/786338431",
-    "Changelog": "- 樂欲之所甌博訥修道院 雷神希德：「無雙閃電突刺」的圓與環改照各自的讀條出現與消失，不再有一圈危險區留到戰鬥結束\n- 桑多利亞：第二巡行 小怪戰：克拉肯在讀「吸蝕」時被打倒，之後不會來的「洪水」危險區不再一直留著擋路",
-    "LastUpdate": 1795508919,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787748682",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787748682",
+    "Changelog": "- 新增給其他插件用的介面：即時轉發副本的目標進度事件（DirectorUpdate），供 TC Toolbox「前線目標面板」顯示紛爭前線的目標狀態",
+    "LastUpdate": 1795534241,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.30.0.19",
+    "AssemblyVersion": "7.30.0.20",
     "Description": "台服自製 QoL 工具箱，內含上百個獨立模組，分成「背包・裝備」「戰鬥・小隊」「公會・生活」「介面・雜項」四類，可在設定視窗逐一開關。預設只開啟 3 個純顯示或只寫紀錄的模組，其餘預設關閉。涵蓋背包整理與搬移、公會合建交料、陸行鳥餵食、園圃作業、隊伍招募輔助、周邊玩家與敵人清單等。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服 QoL 模組集：背包、戰鬥小隊、公會生活、介面雜項，每個模組獨立開關。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787726275",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787726275",
-    "Changelog": "- 新增「前線戰績」：紛爭前線每場結算時記下全部玩家的計分與三隊分數，報表可看計分板、依地圖與職業的彙總並匯出 CSV（預設關）",
-    "LastUpdate": 1795533896
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787748013",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787748013",
+    "Changelog": "- 新增「前線目標面板」（預設關）：紛爭前線的目標清單，顯示快要可用的倒數、可契約、已占領與即將失效、石文剩餘點數與冰的 HP，附距離、方向與俯視小圖（需要 BossModReborn）",
+    "LastUpdate": 1795534190
   },
   {
     "Author": "daemitus, MidoriKami",
