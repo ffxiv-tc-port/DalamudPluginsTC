@@ -1439,7 +1439,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.30.0.17",
+    "AssemblyVersion": "7.30.0.18",
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 Gil 並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1455,10 +1455,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "少點幾下，多賺點 Gil！",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/788001191",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/788001191",
-    "Changelog": "- 全僱員補上架：取消巡迴（取消鈕、ESC、急停、AutoRetainer 接手）時，巡迴帶起來的那一批上架也一起停下，不再留在背景繼續上架\n- 新增「背包上架到有空位的僱員」（預設關）：按一次就逐名僱員把背包裡勾選的道具上架，一名僱員的市場滿了就換下一名，背包處理完或僱員都走過就收工並列彙整表\n- 批次上架面板顯示這名僱員的市場已佔幾格（例：18/20）；已滿時開始鈕停用並說明原因，旁邊列出其他僱員還有幾格空位",
-    "LastUpdate": 1795538554
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/788109457",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/788109457",
+    "Changelog": "- 背包預先勾選：之後才進背包的可上架道具也會先勾起來（取消過的不勾回，按過「全部取消」就不再自動勾）；InventoryTools 有載入但還讀不到製作清單時先不勾，避免把製作材料勾去上架\n- 背包上架：這個角色的背包還沒勾任何道具時，先把能上架的道具勾起來（不自動上架、製作清單上、近期低於門檻的不勾），僱員選單旁新增「檢視／調整勾選」；只是先勾好，仍要按開始才上架",
+    "LastUpdate": 1795540422
   },
   {
     "Author": "Faye",
@@ -1500,7 +1500,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.30.0.20",
+    "AssemblyVersion": "7.30.0.21",
     "Description": "台服自製 QoL 工具箱，內含上百個獨立模組，分成「背包・裝備」「戰鬥・小隊」「公會・生活」「介面・雜項」四類，可在設定視窗逐一開關。預設只開啟 3 個純顯示或只寫紀錄的模組，其餘預設關閉。涵蓋背包整理與搬移、公會合建交料、陸行鳥餵食、園圃作業、隊伍招募輔助、周邊玩家與敵人清單等。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1516,10 +1516,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服 QoL 模組集：背包、戰鬥小隊、公會生活、介面雜項，每個模組獨立開關。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787748013",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787748013",
-    "Changelog": "- 新增「前線目標面板」（預設關）：紛爭前線的目標清單，顯示快要可用的倒數、可契約、已占領與即將失效、石文剩餘點數與冰的 HP，附距離、方向與俯視小圖（需要 BossModReborn）",
-    "LastUpdate": 1795534190
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/788109747",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/788109747",
+    "Changelog": "- 前線目標面板新增「疊在小地圖上」（預設關）：把各目標的進度環、狀態色與倒數直接畫在遊戲小地圖上，圈外的目標在圓邊畫箭頭；周邊遺跡群的 9 個據點也有了位置，面板的「俯視小圖」與「顯示待機中的冰」改為會記住",
+    "LastUpdate": 1795540447
   },
   {
     "Author": "daemitus, MidoriKami",
