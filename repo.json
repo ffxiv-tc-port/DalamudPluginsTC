@@ -125,7 +125,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.30.0.14",
+    "AssemblyVersion": "7.30.0.15",
     "Description": "躺在床上就能收取並指派僱員的遠航任務。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -137,10 +137,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "躺著也能派遣僱員出去探險。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783626999",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783626999",
-    "Changelog": "- 僱員設定的「委託物品」計畫下拉與「遊戲啟動時自動登入」的角色下拉跟著字型大小放大，名字＠世界不再被截掉",
-    "LastUpdate": 1795450443,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/786545266",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/786545266",
+    "Changelog": "- 交完軍票後自動用軍票換物品時，人先離開主城（例如走進軍營找分隊軍曹）不再報錯：這輪換物品直接停下並在 log 記一行還剩幾項沒換，不會把你帶回去，也不會在別的區域去按軍需官的視窗",
+    "LastUpdate": 1795513013,
     "CategoryTags": [
       "Inventory"
     ]
