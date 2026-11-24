@@ -1058,7 +1058,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.30.0.23",
+    "AssemblyVersion": "7.30.0.24",
     "Description": "將連段技能與互斥技能整合到單一按鍵，並提供額外的自動戰鬥輔助功能。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1078,12 +1078,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 自動循環新增「DailyDuty 通緝目標繞過『僅於戰鬥中』限制」：DailyDuty 通緝令自動開打提出要求時，對它指定的那一隻通緝目標在戰鬥外直接出招（預設開啟，只在 DailyDuty 提出要求、而且目前目標正是那一隻時才作用）",
+    "Changelog": "- 赤魔道士自動復活：魔力只夠最後一發時只留給坦克與治療職業；小隊坦克或治療職業全倒時中斷輸出循環先拉人；之後依治療職業、坦克、DPS 的順序復活（三項預設開啟，在自動循環的治療設定裡）",
     "Punchline": "將連段技能與互斥技能整合到單一按鍵——不只如此。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787519431",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787519431",
-    "LastUpdate": 1795530378,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787802344",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787802344",
+    "LastUpdate": 1795535166,
     "CategoryTags": [
       "Jobs"
     ]
