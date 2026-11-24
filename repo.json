@@ -1359,7 +1359,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.27",
+    "AssemblyVersion": "7.30.0.28",
     "Description": "宇宙探索輔助工具：自動接取宇宙探索任務，並代為完成採集與製作流程，讓你輕鬆累積研究進度。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1377,10 +1377,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "宇宙探索的自動化好夥伴。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787406556",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/787406556",
-    "Changelog": "- 宇宙探索：新增「全職業研究進度」視窗（11 個職業的宇宙工具階段與各研究項目進度，可直接換到該職業）；宇宙工具經驗模式可選擇在本職業工具這一階滿了時照職業優先度換下一個職業繼續（預設關）",
-    "LastUpdate": 1795528503
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/788091073",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/788091073",
+    "Changelog": "- 宇宙探索：開著「取得金星後自動停用」時，連續任務整串都拿到金星後，前面的段落也一起停用，不會再先去重接已經做完那串的前置",
+    "LastUpdate": 1795540144
   },
   {
     "Author": "Liza Carvelli",
