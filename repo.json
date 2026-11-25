@@ -48,7 +48,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.30.0.28",
+    "AssemblyVersion": "7.30.0.29",
     "Description": "製作輔助插件：依巨集或內建解算器自動按製作技能，並能成批製作。輸入 /artisan 開啟。\n\n- 自動製作：標準與專家配方解算器、Raphael 最佳解、自訂巨集，附模擬器可先試算\n- 製作清單：依序製作多項配方，可從僱員補貨、自動修理、精製魔晶石，也能從 Teamcraft 匯入\n- 耐力模式：重複製作同一配方，製作之間自動補食物與藥品\n- 清單「開工前」檢查：作業精度、加工精度、素材與背包格位夠不夠\n- 缺的素材可一鍵交給 GatherBuddy Reborn 採集，或依世界列出採購清單（只顯示、不代買）\n- 公會工坊的專案可轉成製作清單",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -72,10 +72,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "自動執行製作技能，支援製作清單與耐力模式。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790751900",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790751900",
-    "Changelog": "- 維護更新（插件本身不變）",
-    "LastUpdate": 1795595890
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791100144",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791100144",
+    "Changelog": "- 從 Teamcraft 分享網址抓清單時，若插件剛好卸載或遊戲正在關閉，抓回來的結果改為丟棄、不再寫入製作清單",
+    "LastUpdate": 1795602658
   },
   {
     "Author": "Herculezz",
@@ -1262,7 +1262,7 @@
     "Author": "Team Wrath",
     "Name": "Wrath Combo",
     "InternalName": "WrathCombo",
-    "AssemblyVersion": "7.30.0.25",
+    "AssemblyVersion": "7.30.0.26",
     "Description": "把連擊與互斥技能整合到單一按鍵的職業循環插件，PvE、PvP 皆可用。\n- 多數職業提供單鍵循環，也可逐項自訂要整合哪些技能\n- 自動循環：依設定自動執行輸出與治療循環；治療職業與赤魔道士等可自動復活倒地的隊友\n- 搭配 BossModReborn：依模組預告打斷或眩暈危險讀條、在死刑與全體傷害前開減傷，要求停手的機制期間暫停出招\n- 搭配 DailyDuty：怪物通緝令自動開打指定的目標可在戰鬥外直接出手\n- 可作為 AutoDuty 的戰鬥循環\n- 指令 /wrath 開啟主視窗，/wrath auto 切換自動循環",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/WrathCombo",
@@ -1289,12 +1289,12 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/WrathCombo.png",
-    "Changelog": "- 維護更新（插件本身不變）",
+    "Changelog": "- 功能狀態快取建到一半時若剛好改了設定並存檔，下一次查詢會重建，不再沿用混了改前改後狀態的舊結果",
     "Punchline": "把連擊與互斥技能整合到單一按鍵，並可自動循環。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790936085",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790936085",
-    "LastUpdate": 1795599463,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791099473",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791099473",
+    "LastUpdate": 1795602650,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1549,7 +1549,7 @@
     "Author": "Usagi, PlusoneChiang",
     "Name": "IINACT",
     "InternalName": "IINACT",
-    "AssemblyVersion": "7.30.0.11",
+    "AssemblyVersion": "7.30.0.12",
     "Description": "在遊戲內執行 FFXIV_ACT_Plugin 解析戰鬥數據，並提供相容 ACT／OverlayPlugin 的 WebSocket 服務給疊加層與紀錄工具使用，不需要另外安裝 ACT。\n- 本身不顯示疊加層；要在遊戲內顯示，需搭配 Crossingway\n- 戰鬥紀錄檔與 FFLogs Uploader 相容，可設定自動刪除舊紀錄\n- 網路資料只讀取，不修改、不送出\n- 對應台服的封包格式，cactbot 疊加層使用繁體中文語系\n- 解析元件會自動下載，只安裝已知版本\n- 輸入 /iinact 開啟主視窗，/endenc 結束目前的戰鬥",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/IINACT",
@@ -1574,10 +1574,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/IINACT.png",
     "Punchline": "免 ACT 的戰鬥數據解析插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790752269",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790752269",
-    "Changelog": "- 維護更新（插件本身不變）",
-    "LastUpdate": 1795595864
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791099761",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791099761",
+    "Changelog": "- 其他插件透過 IPC 訂閱疊加層事件時，送出改在鎖外進行，避免對方等待遊戲主執行緒時互相卡住",
+    "LastUpdate": 1795602638
   },
   {
     "Author": "Ice",
