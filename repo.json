@@ -116,7 +116,7 @@
     "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
-    "AssemblyVersion": "7.30.0.16",
+    "AssemblyVersion": "7.30.0.17",
     "Description": "自動釣魚：依咬鉤型態與等待時間自動提鉤，並可用預設為每種魚、每種釣餌設定釣法。\n- 自動拋竿、以小釣大、換釣餌，自動施放釣魚技能與使用道具\n- 自動刺魚：依魚的尺寸與速度出手\n- 出海垂釣：上船後整趟自動拋竿、換預設與釣餌；每趟手動開始，走到船邊需搭配 vnavmesh\n- 「天氣與時段」分頁：顯示各種魚的天氣與時間條件，只顯示、不會自動開始或停止釣魚\n- 社群預設：取得其他玩家分享的預設，也能匯出自己的\n- 釣到稀有魚時請塔塔露出聲提醒（需搭配 TataruPraise）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoHook",
@@ -144,10 +144,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoHook.png",
     "Punchline": "自動拋竿、提鉤與刺魚，可為每種魚設定釣法。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792659607",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792659607",
-    "Changelog": "- 宇宙釣魚的診斷紀錄：量測行與判定行的計分型別一致",
-    "LastUpdate": 1795631283
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793223988",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793223988",
+    "Changelog": "- 宇宙探索釣魚：任務剩餘時間不夠一竿（不到 10 秒）就不再拋竿，也不放拋竿前的動作，省下 GP",
+    "LastUpdate": 1795642316
   },
   {
     "Author": "кайт машина (Puni.sh)",
@@ -326,7 +326,7 @@
     "Author": "Infi, Anna",
     "Name": "Chat 2",
     "InternalName": "ChatTwo",
-    "AssemblyVersion": "7.30.0.7",
+    "AssemblyVersion": "7.30.0.8",
     "Description": "Chat 2 完整重寫遊戲內建的聊天視窗，分頁、過濾與外觀都能自訂。\n- 分頁數量不限，可讓分頁固定發送到指定頻道，並顯示未讀訊息數\n- 每個分頁可自訂訊息過濾條件；頻道顏色與字型大小可調整\n- 聊天記錄存在本機，可在聊天歷史視窗依日期、頻道與關鍵字搜尋\n- 右鍵玩家名字可傳送好友申請、加入到黑名單\n- 表情符號、側邊欄分頁、截圖模式（隱藏玩家名稱）\n- 網頁介面：可用瀏覽器查看聊天內容（預設關閉）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ChatTwo",
@@ -353,10 +353,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ChatTwo.png",
     "Punchline": "取代遊戲內建聊天視窗，提供分頁、過濾與歷史搜尋。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792964079",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792964079",
-    "Changelog": "- 設定「變更紀錄」分頁的「傳送變更紀錄」改為停用並標示「無作用」（勾不勾都不會在聊天視窗印出變更紀錄）",
-    "LastUpdate": 1795637166
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793224302",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793224302",
+    "Changelog": "- 修正刪除排在彈出視窗前面的標籤頁後，彈出的聊天視窗變成錯誤畫面\n- 設定的「已遮蔽的表情」改為按「儲存」才生效，按「取消」可以退回（之前一加入就立刻生效、取消也退不掉）",
+    "LastUpdate": 1795642276
   },
   {
     "Author": "Nylfae",
@@ -1193,7 +1193,7 @@
     "Author": "veyn, croizat",
     "Name": "Visland",
     "InternalName": "visland",
-    "AssemblyVersion": "7.30.0.5",
+    "AssemblyVersion": "7.30.0.6",
     "Description": "自動化採集、開拓工坊排班等無人島相關作業。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/visland",
@@ -1220,10 +1220,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/visland.png",
     "Punchline": "自動化無人島各項活動",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791013559",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791013559",
-    "Changelog": "- 採集路線跑到一半副本排到時會自動暫停，出本回到同一張地圖後從停下的那一步接續（兩項都可在進階選項關閉）",
-    "LastUpdate": 1795600966
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793224190",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793224190",
+    "Changelog": "- 採集路線執行的狀態記錄改成最詳細等級，除錯等級下也不再洗版\n- 採集路線執行的狀態記錄改成除錯等級，平常不再洗版",
+    "LastUpdate": 1795642319
   },
   {
     "Author": "veyn",
@@ -1714,7 +1714,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.30.0.21",
+    "AssemblyVersion": "7.30.0.22",
     "Description": "市場佈告板上架、改價與下架的操作輔助。每個動作都要你自己按下才開始，不會被遊戲事件或別的插件觸發；補上架、巡檢與多角色重掛預設關閉。\n- 調整價格：一併開啟市場上的標價與交易履歷，點一列就填入比它低 1 Gil 的價格；按住 Ctrl 沿用剪貼簿的價格，按住 Shift 暫時略過\n- 批次重掛與下架：按一下依市場最低價重新定價這位僱員的商品，也可逐一拜訪所有僱員；附異常低價保護，可改參考最近成交價（預設關）\n- 全僱員補上架、背包上架到有空位的僱員（手動開始、預設關）：逐名僱員把你勾選的道具上架，可指定不自動上架的道具\n- 跨世界價格巡檢（手動開始、預設關）：在每個世界按一次掃描，查自己掛售中道具的當地行情；只查價，不改價、不買\n- 多角色重掛（每一輪都要你手動啟動、預設關）需搭配 AutoRetainer；巡檢涵蓋所有角色需搭配 InventoryTools，換世界需搭配 Lifestream\n- 指令 /mbuddy 開啟設定視窗，/mbuddy survey 開啟巡檢視窗",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1739,10 +1739,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "市場佈告板上架、改價、下架與比價的操作輔助。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793186205",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793186205",
-    "Changelog": "- 賣給商店：那一格和清單對不上時，記錄檔寫出那一格現在放什麼、清單原本是什麼\n- 多角色重掛：一輪結束時列出被跳過的角色與原因，並可一鍵只重跑這幾角",
-    "LastUpdate": 1795641524
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793223844",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793223844",
+    "Changelog": "- 歷史賣出價與看盤：每小時在紀錄寫一行對 Universalis 的請求彙總\n- 歷史賣出價：Universalis 回應超過 8 MB 時放棄這次回應並記一行警告，不再整包收進記憶體",
+    "LastUpdate": 1795642293
   },
   {
     "Author": "Faye",
