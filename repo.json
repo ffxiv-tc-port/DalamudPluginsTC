@@ -253,7 +253,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.79",
+    "AssemblyVersion": "7.30.0.80",
     "Description": "戰鬥機制輔助插件：在雷達上畫出場地、敵人與即將到來的危險區，並提示機制怎麼處理。\n- 雷達與機制提示：依首領模組畫出各種 AOE、站位與解法；沒有專屬模組的討伐殲滅戰、大型任務與迷宮挑戰，也會畫出場地與照讀條猜出的危險區。\n- AI 移動與閃避：依安全區自動走位、閃避與選目標。預設在插件載入時開啟，你可以在 AI 設定關閉，或按住暫停鍵（預設 Alt）暫時自己走位；不建議與陌生玩家同隊時使用。\n- 自動循環與減傷：內建循環預設與冷卻計劃器；也可以只用「預測減傷」在全體傷害與死刑之前先開減傷，和其他循環插件並行。\n- 深層迷宮與寶物庫：小地圖、自動走到傳送點與寶箱、迴避已知陷阱，寶物庫的獎勵怪優先打。\n- 給其他插件的介面：提供傷害預告、停手時機、打斷目標與位移落點安全等查詢，可搭配 WrathCombo、AutoDuty 等插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -280,10 +280,10 @@
     ],
     "Punchline": "畫出副本機制的危險區與解法提示，並可由 AI 自動閃避",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793287057",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793287057",
-    "Changelog": "- 手動佇列：連按升成緊急模式的硬詠唱，之後腳下才出現來不及閃的危險區時，不再照樣放出（退回一般佇列，危險過了照常放出）\n- AI「該閃卻站著不動」的記錄多記遊戲本身的狀態（會擋輸入的狀態與異常狀態）、動畫鎖秒數，以及讓位給預設集時自動移動為什麼沒動",
-    "LastUpdate": 1795643548,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793321547",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793321547",
+    "Changelog": "- 主線任務「衣錦還鄉」（紅甲族水兵長）：離開任務戰鬥後首領模組會結束，不再一直掛著\n- AI／自動選目標：要選的目標離你 50 米以上（名牌已不顯示）時，不再替你把遊戲目標切過去\n- 自動攻擊管理：看副本錄影回放、或遊戲處於「無法執行指令」狀態時，不再自動開關自動攻擊\n- 兩歧塔 力之塔：星頭三兄弟第二次自爆（火球）讀條時有狂暴提示；魔陶洛斯鬥氣爆裂／神聖改看首領的 19 秒讀條，全場傷害提早預告、提示時間正確\n- 燦爛神域阿格萊亞 納爾札爾：死之散爆最後一道落下後清掉點名標記，不再殘留到下一輪\n- 首領模組：踏破風雪、輕量級1 黑貓、沃克佐莫山 固伏魯、六根山 怨靈猛虎在危險區數量少時不再出錯（黑貓改成只顯示下一波 4 道，固伏魯 9～11 道時顯示 8 道）\n- 山中戰線澤梅爾要塞：AutoDuty 站魔導終端等點亮時，全視之眼的預告不再把人拉離終端（血量低於一半才照閃）\n- 山中戰線澤梅爾要塞：走廊遊蕩的全視之眼「凶眼注目」前 3 秒，AI 會離開範圍或躲進水晶紗帳\n- 水晶塔 暗之世界：五頭巨龍「雷之吐息」標出分攤（被標記的人身上，約 6 秒後），AI 會一起吃\n- 分攤（集合）提示：人數還沒到上限時，圈外的人不再同時被叫「別進來」又「進來」，AI 會加入分攤\n- 吉祥天女殲滅戰：補完聖槍／聖錘點名、光之波動、血池、完全拒絕擊退與自動按元氣\n- 優雷卡／博茲雅自動刷怪：每幀查目標屬性改用快取，不再每幀反射配置",
+    "LastUpdate": 1795644326,
     "CategoryTags": [
       "Jobs"
     ]
