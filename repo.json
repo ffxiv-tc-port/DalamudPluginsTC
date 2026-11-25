@@ -153,7 +153,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.30.0.16",
+    "AssemblyVersion": "7.30.0.17",
     "Description": "自動處理僱員探險與公會工坊的遠航探索：到期就收回成果並重新派出。輸入 /autoretainer 開啟。\n\n- 僱員探險：在傳喚鈴前自動收取探險成果並重新委託，可順便存提 Gil、把指定物品賣掉或交給僱員保管\n- 潛水艇與飛空艇：返航後自動收回並重新出航，內建航線規劃；可自動補買桶裝青磷水（預設關）\n- 多角色模式：輪流登入各角色處理到期的僱員與遠航探索；「跑一輪就回來」處理完自動換回原本的角色\n- 籌備稀有品：前往大國防聯軍繳交，並照兌換清單花掉軍票（需搭配 Lifestream）\n- 角色列表顯示各角色的軍票、理符受理限額等額度，快滿時在列上看得見\n- 探險或遠航返航時可請塔塔露出聲提醒（需搭配 TataruPraise）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -175,10 +175,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "自動收發僱員探險與公會潛水艇、飛空艇的遠航探索。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790751272",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790751272",
-    "Changelog": "- 維護更新（插件本身不變）",
-    "LastUpdate": 1795595881,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793174203",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793174203",
+    "Changelog": "- 角色收尾期間也能替 Marketbuddy 走到工坊的傳喚鈴邊（新增 IPC，舊端點不變）",
+    "LastUpdate": 1795641297,
     "CategoryTags": [
       "Inventory"
     ]
@@ -1714,7 +1714,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.30.0.19",
+    "AssemblyVersion": "7.30.0.20",
     "Description": "市場佈告板上架、改價與下架的操作輔助。每個動作都要你自己按下才開始，不會被遊戲事件或別的插件觸發；補上架、巡檢與多角色重掛預設關閉。\n- 調整價格：一併開啟市場上的標價與交易履歷，點一列就填入比它低 1 Gil 的價格；按住 Ctrl 沿用剪貼簿的價格，按住 Shift 暫時略過\n- 批次重掛與下架：按一下依市場最低價重新定價這位僱員的商品，也可逐一拜訪所有僱員；附異常低價保護，可改參考最近成交價（預設關）\n- 全僱員補上架、背包上架到有空位的僱員（手動開始、預設關）：逐名僱員把你勾選的道具上架，可指定不自動上架的道具\n- 跨世界價格巡檢（手動開始、預設關）：在每個世界按一次掃描，查自己掛售中道具的當地行情；只查價，不改價、不買\n- 多角色重掛（每一輪都要你手動啟動、預設關）需搭配 AutoRetainer；巡檢涵蓋所有角色需搭配 InventoryTools，換世界需搭配 Lifestream\n- 指令 /mbuddy 開啟設定視窗，/mbuddy survey 開啟巡檢視窗",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1739,10 +1739,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "市場佈告板上架、改價、下架與比價的操作輔助。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790935784",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790935784",
-    "Changelog": "- 介面用語改用台服名稱：交易履歷",
-    "LastUpdate": 1795599407
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793173346",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793173346",
+    "Changelog": "- 多角色重掛：工坊鈴搆不到時，請 AutoRetainer 走過去的功能終於能用了",
+    "LastUpdate": 1795641259
   },
   {
     "Author": "Faye",
