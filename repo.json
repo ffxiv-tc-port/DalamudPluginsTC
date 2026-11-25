@@ -253,7 +253,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.77",
+    "AssemblyVersion": "7.30.0.78",
     "Description": "戰鬥機制輔助插件：在雷達上畫出場地、敵人與即將到來的危險區，並提示機制怎麼處理。\n- 雷達與機制提示：依首領模組畫出各種 AOE、站位與解法；沒有專屬模組的討伐殲滅戰、大型任務與迷宮挑戰，也會畫出場地與照讀條猜出的危險區。\n- AI 移動與閃避：依安全區自動走位、閃避與選目標。預設在插件載入時開啟，你可以在 AI 設定關閉，或按住暫停鍵（預設 Alt）暫時自己走位；不建議與陌生玩家同隊時使用。\n- 自動循環與減傷：內建循環預設與冷卻計劃器；也可以只用「預測減傷」在全體傷害與死刑之前先開減傷，和其他循環插件並行。\n- 深層迷宮與寶物庫：小地圖、自動走到傳送點與寶箱、迴避已知陷阱，寶物庫的獎勵怪優先打。\n- 給其他插件的介面：提供傷害預告、停手時機、打斷目標與位移落點安全等查詢，可搭配 WrathCombo、AutoDuty 等插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -280,10 +280,10 @@
     ],
     "Punchline": "畫出副本機制的危險區與解法提示，並可由 AI 自動閃避",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792980919",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792980919",
-    "Changelog": "- 新增多變迷宮 阿羅阿羅島 羅庫羅庫伊 首領模組（移植上游）\n- 新增多變迷宮 阿羅阿羅島 斯塔緹絲 首領模組（移植上游）\n- 新增多變迷宮 阿羅阿羅島 拉拉魯 首領模組（移植上游）\n- 新增多變迷宮 阿羅阿羅島 凱圖嘟凱 首領模組（移植上游）\n- 新增多變迷宮 阿羅阿羅島 庫阿庫阿 首領模組（移植上游）\n- AI：24 人團隊任務中，別人身上的分散圈不再多留 1 米，場地不會被分散圈塞滿（設定可關）",
-    "LastUpdate": 1795637478,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793205385",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793205385",
+    "Changelog": "- 深層迷宮自動攻略：更正程式註解（不影響行為）\n- /bmr cfg 與其他插件改設定時，名稱完全相同就直接採用、不再回報名稱不明確；同一刻有兩個標記的錄影不再載入失敗\n- 「不要移動！」「停止一切動作！」「移動！」提示的紅字改為依這一幀有沒有在移動判斷\n- 首領機制判定修正：寵物的動作不再誤觸機制；同一組範圍讀條超過預期數時仍依判定時間排序；踩塔提示改用目前有效塔的最早時間\n- 危險區顯示修正：假面狂歡「鬥獸系統」關卡的「壓艙水」三段範圍一次全部顯示；蒼天騎士任務戰場地輪廓更正",
+    "LastUpdate": 1795641906,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1789,7 +1789,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.30.0.25",
+    "AssemblyVersion": "7.30.0.26",
     "Description": "台服自製的工具箱，把許多獨立的小功能做成模組，在設定視窗逐一開關。只有少數純顯示、只寫紀錄或備份設定的模組預設開啟，其餘預設關閉。\n- 背包・裝備：按住指定鍵右鍵搬移物品、快速交易、背包一鍵清倉、僱員批次取回、製作清單缺料與採買\n- 戰鬥・小隊：隊員招募的過濾、排序與自動刷新，F.A.T.E. 總覽與導航，天書奇談換格建議，紛爭前線目標面板與戰績\n- 公會・生活：角色總覽、公會合建素材一鍵全交、公會特效自動使用、自動園圃作業、自動餵食陸行鳥\n- 介面・雜項：周邊玩家統計、換世界與副本區面板、DailyDuty 未完成任務清單、插件設定自動備份\n- 急停模組：開啟後可用熱鍵或 /tcstopall 把所有會自己動的插件一次叫停\n- 指令 /tctoolbox 開啟設定視窗",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1814,10 +1814,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服自製工具箱：背包、戰鬥、公會與介面的小功能模組。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793032766",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793032766",
-    "Changelog": "- 貨幣上限警示：聊天提醒不再每換一次區域就重印，同一角色同一種貨幣跨過門檻只提醒一次",
-    "LastUpdate": 1795638459
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793204776",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793204776",
+    "Changelog": "- 換 World 與副本區：查價面板每小時在紀錄寫一行對 Universalis 的請求彙總\n- 公會特效自動使用：被遊戲拒絕時寫出具體原因（已達上限、同類生效中、沒有許可權），設定頁顯示最後一次原因",
+    "LastUpdate": 1795641848
   },
   {
     "Author": "daemitus, MidoriKami",
