@@ -18,7 +18,15 @@
       "Submarine",
       "Submersible",
       "Tasks",
-      "Cactpot"
+      "Cactpot",
+      "僱員",
+      "潛水艇",
+      "飛空艇",
+      "乙太轉輪",
+      "園圃",
+      "計時器",
+      "仙人仙彩",
+      "多角色"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -45,7 +53,13 @@
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
     "Tags": [
-      "crafting"
+      "crafting",
+      "製作",
+      "能工巧匠",
+      "自動製作",
+      "製作清單",
+      "巨集",
+      "生產"
     ],
     "CategoryTags": [
       "Jobs"
@@ -74,7 +88,13 @@
     "Tags": [
       "Duty",
       "Automation",
-      "Pathfinding"
+      "Pathfinding",
+      "副本",
+      "自動跑本",
+      "親信戰友",
+      "冒險者分隊",
+      "練等",
+      "AD"
     ],
     "CategoryTags": [
       "Utility"
@@ -103,7 +123,15 @@
     "Tags": [
       "Gathering",
       "Fishing",
-      "Automation"
+      "Automation",
+      "釣魚",
+      "自動釣魚",
+      "漁師",
+      "提鉤",
+      "刺魚",
+      "以小釣大",
+      "出海垂釣",
+      "釣餌"
     ],
     "CategoryTags": [
       "Jobs"
@@ -129,6 +157,16 @@
     "Description": "自動處理僱員探險與公會工坊的遠航探索：到期就收回成果並重新派出。輸入 /autoretainer 開啟。\n\n- 僱員探險：在傳喚鈴前自動收取探險成果並重新委託，可順便存提 Gil、把指定物品賣掉或交給僱員保管\n- 潛水艇與飛空艇：返航後自動收回並重新出航，內建航線規劃；可自動補買桶裝青磷水（預設關）\n- 多角色模式：輪流登入各角色處理到期的僱員與遠航探索；「跑一輪就回來」處理完自動換回原本的角色\n- 籌備稀有品：前往大國防聯軍繳交，並照兌換清單花掉軍票（需搭配 Lifestream）\n- 角色列表顯示各角色的軍票、理符受理限額等額度，快滿時在列上看得見\n- 探險或遠航返航時可請塔塔露出聲提醒（需搭配 TataruPraise）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
+    "Tags": [
+      "僱員",
+      "探險",
+      "潛水艇",
+      "飛空艇",
+      "遠航探索",
+      "傳喚鈴",
+      "多角色",
+      "AR"
+    ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
     "LoadSync": false,
@@ -154,7 +192,13 @@
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Avarice",
     "Tags": [
-      "combat"
+      "combat",
+      "身位",
+      "背後",
+      "側面",
+      "近戰",
+      "判定範圍",
+      "positional"
     ],
     "CategoryTags": [
       "Jobs"
@@ -183,7 +227,11 @@
     "Tags": [
       "FashionReport",
       "Glamour",
-      "QoL"
+      "QoL",
+      "時尚品鑑",
+      "投影",
+      "金碟遊樂園",
+      "裝備"
     ],
     "CategoryTags": [
       "Minigames"
@@ -209,6 +257,16 @@
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
+    "Tags": [
+      "機制",
+      "雷達",
+      "迴避",
+      "副本",
+      "自動循環",
+      "BMR",
+      "bossmod",
+      "boss"
+    ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
     "LoadSync": false,
@@ -241,7 +299,12 @@
     "Tags": [
       "Character",
       "QoL",
-      "Stats"
+      "Stats",
+      "角色面板",
+      "暴擊",
+      "直擊",
+      "屬性",
+      "裝備比較"
     ],
     "CategoryTags": [
       "UI"
@@ -271,7 +334,12 @@
       "Social",
       "UI",
       "Chat",
-      "Replacement"
+      "Replacement",
+      "聊天",
+      "聊天視窗",
+      "頻道",
+      "分頁",
+      "聊天記錄"
     ],
     "CategoryTags": [
       "Social",
@@ -300,7 +368,10 @@
     "RepoUrl": "https://github.com/ffxiv-tc-port/Dynamis",
     "Tags": [
       "reverse-engineering",
-      "developer-tools"
+      "developer-tools",
+      "逆向工程",
+      "開發",
+      "除錯"
     ],
     "CategoryTags": [
       "Utility"
@@ -329,7 +400,10 @@
     "Tags": [
       "reverse-engineering",
       "developer-tools",
-      "powershell"
+      "powershell",
+      "逆向工程",
+      "開發",
+      "除錯"
     ],
     "CategoryTags": [
       "Utility"
@@ -365,7 +439,14 @@
       "Elemental",
       "Fairy",
       "Relic",
-      "Alarms"
+      "Alarms",
+      "禁地優雷卡",
+      "優雷卡",
+      "新月島",
+      "魔法甕",
+      "天氣",
+      "尋寶",
+      "追蹤器"
     ],
     "CategoryTags": [
       "Utility"
@@ -396,7 +477,15 @@
       "Automation",
       "Botany",
       "Mining",
-      "Fishing"
+      "Fishing",
+      "採集",
+      "釣魚",
+      "園藝師",
+      "採掘師",
+      "漁師",
+      "大地使者",
+      "採集點",
+      "GBR"
     ],
     "CategoryTags": [
       "Jobs"
@@ -425,7 +514,12 @@
     "Tags": [
       "Hunt",
       "Tracker",
-      "Notification"
+      "Notification",
+      "危險標的",
+      "狩獵",
+      "S級",
+      "A級",
+      "車隊"
     ],
     "CategoryTags": [
       "Utility"
@@ -454,7 +548,15 @@
     "Tags": [
       "inventory",
       "crafting",
-      "market board"
+      "market board",
+      "背包",
+      "物品欄",
+      "僱員",
+      "道具",
+      "庫存",
+      "公會儲物櫃",
+      "製作",
+      "AT"
     ],
     "CategoryTags": [
       "Inventory"
@@ -483,7 +585,11 @@
     "Tags": [
       "Vendor",
       "Item",
-      "QoL"
+      "QoL",
+      "商人",
+      "商店",
+      "購買",
+      "在哪買"
     ],
     "CategoryTags": [
       "Inventory"
@@ -512,7 +618,11 @@
     "Tags": [
       "chocobo",
       "racing",
-      "automation"
+      "automation",
+      "陸行鳥競賽",
+      "陸行鳥",
+      "金碟遊樂園",
+      "賽跑"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -541,7 +651,13 @@
     "Tags": [
       "Loot",
       "Automation",
-      "QoL"
+      "QoL",
+      "擲骰",
+      "戰利品",
+      "需求",
+      "貪婪",
+      "放棄",
+      "分配"
     ],
     "CategoryTags": [
       "Utility"
@@ -571,7 +687,13 @@
       "teleport",
       "aethernet",
       "world",
-      "travel"
+      "travel",
+      "傳送",
+      "跨界傳送",
+      "超域傳送",
+      "都市傳送網",
+      "乙太之光",
+      "伺服器"
     ],
     "CategoryTags": [
       "Utility"
@@ -599,7 +721,11 @@
     "RepoUrl": "https://github.com/ffxiv-tc-port/LogogramHelper",
     "Tags": [
       "eureka",
-      "logograms"
+      "logograms",
+      "優雷卡",
+      "禁地優雷卡",
+      "文理技能",
+      "文理融合器"
     ],
     "CategoryTags": [
       "Utility"
@@ -628,7 +754,11 @@
     "Tags": [
       "Minimap",
       "Friends",
-      "FC"
+      "FC",
+      "小地圖",
+      "好友",
+      "公會",
+      "公會成員"
     ],
     "CategoryTags": [
       "Social"
@@ -657,7 +787,15 @@
     "Tags": [
       "DeepDungeon",
       "Radar",
-      "QoL"
+      "QoL",
+      "深層迷宮",
+      "死者宮殿",
+      "天之御柱",
+      "正統優雷卡",
+      "雷達",
+      "寶箱",
+      "陷阱",
+      "魔物"
     ],
     "CategoryTags": [
       "Utility"
@@ -685,7 +823,12 @@
     "RepoUrl": "https://github.com/ffxiv-tc-port/NotificationMaster",
     "Tags": [
       "Notification",
-      "QoL"
+      "QoL",
+      "通知",
+      "提醒",
+      "配對",
+      "任務搜尋器",
+      "最小化"
     ],
     "CategoryTags": [
       "Utility"
@@ -715,7 +858,14 @@
       "DeepDungeon",
       "PotD",
       "HoH",
-      "EurekaOrthos"
+      "EurekaOrthos",
+      "深層迷宮",
+      "死者宮殿",
+      "天之御柱",
+      "正統優雷卡",
+      "陷阱",
+      "寶藏",
+      "寶箱"
     ],
     "CategoryTags": [
       "Utility"
@@ -744,7 +894,11 @@
     "Tags": [
       "Hitbox",
       "Raid",
-      "QoL"
+      "QoL",
+      "判定範圍",
+      "判定點",
+      "站位",
+      "高難度"
     ],
     "CategoryTags": [
       "Utility"
@@ -773,7 +927,12 @@
     "Tags": [
       "Market",
       "Price",
-      "QoL"
+      "QoL",
+      "市場",
+      "市場佈告板",
+      "價格",
+      "查價",
+      "行情"
     ],
     "CategoryTags": [
       "Inventory"
@@ -802,7 +961,12 @@
     "Tags": [
       "Hotbar",
       "QoL",
-      "Macro"
+      "Macro",
+      "技能欄",
+      "快捷列",
+      "巨集",
+      "指令",
+      "按鈕"
     ],
     "CategoryTags": [
       "UI"
@@ -831,7 +995,12 @@
     "Tags": [
       "gold saucer",
       "mgp",
-      "automation"
+      "automation",
+      "金碟遊樂園",
+      "金碟幣",
+      "小遊戲",
+      "仙人微彩",
+      "仙人仙彩"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -862,7 +1031,11 @@
       "automation",
       "macros",
       "lua",
-      "scripting"
+      "scripting",
+      "巨集",
+      "腳本",
+      "自動化",
+      "SND"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -891,7 +1064,12 @@
     "Tags": [
       "Hunt",
       "Fate",
-      "Tracker"
+      "Tracker",
+      "危險標的",
+      "狩獵",
+      "S級",
+      "A級",
+      "通知"
     ],
     "CategoryTags": [
       "Utility"
@@ -919,7 +1097,13 @@
     "RepoUrl": "https://github.com/ffxiv-tc-port/Splatoon",
     "Tags": [
       "Utility",
-      "Accessibility"
+      "Accessibility",
+      "畫圈",
+      "標示",
+      "機制",
+      "站位",
+      "範圍",
+      "疊加層"
     ],
     "CategoryTags": [
       "Utility"
@@ -948,7 +1132,12 @@
     "Tags": [
       "Submarine",
       "Tracker",
-      "FC"
+      "FC",
+      "潛水艇",
+      "遠航探索",
+      "公會",
+      "航線",
+      "配置"
     ],
     "CategoryTags": [
       "Inventory"
@@ -977,7 +1166,12 @@
     "Tags": [
       "solver",
       "triad",
-      "triple triad"
+      "triple triad",
+      "九宮幻卡",
+      "幻卡",
+      "卡牌",
+      "金碟遊樂園",
+      "解牌"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -1007,7 +1201,13 @@
       "island",
       "sanctuary",
       "gathering",
-      "workshop"
+      "workshop",
+      "無人島",
+      "開拓工坊",
+      "採集",
+      "航點",
+      "路徑",
+      "自動移動"
     ],
     "CategoryTags": [
       "Utility"
@@ -1036,7 +1236,11 @@
     "Tags": [
       "navigation",
       "movement",
-      "pathfinding"
+      "pathfinding",
+      "導航",
+      "自動移動",
+      "尋路",
+      "vnav"
     ],
     "CategoryTags": [
       "Utility"
@@ -1070,7 +1274,14 @@
       "autorotation",
       "rotation",
       "pve",
-      "pvp"
+      "pvp",
+      "連段",
+      "一鍵",
+      "輸出循環",
+      "自動循環",
+      "戰鬥",
+      "技能",
+      "WC"
     ],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -1101,7 +1312,12 @@
       "map",
       "party",
       "zhTW",
-      "Chinese"
+      "Chinese",
+      "寶物地圖",
+      "藏寶圖",
+      "挖寶",
+      "組隊",
+      "寶藏"
     ],
     "CategoryTags": [
       "Social"
@@ -1130,7 +1346,12 @@
     "Tags": [
       "Automation",
       "QoL",
-      "Dialogue"
+      "Dialogue",
+      "確認框",
+      "自動確認",
+      "對話框",
+      "自動按是",
+      "選單"
     ],
     "CategoryTags": [
       "Utility"
@@ -1159,7 +1380,11 @@
     "Tags": [
       "cutscene",
       "msq",
-      "qol"
+      "qol",
+      "過場動畫",
+      "主線任務",
+      "跳過",
+      "隨機任務"
     ],
     "CategoryTags": [
       "Utility"
@@ -1191,7 +1416,13 @@
       "tasks",
       "dailies",
       "tracking",
-      "todo"
+      "todo",
+      "每日任務",
+      "每週任務",
+      "日常",
+      "週常",
+      "挑戰筆記",
+      "待辦"
     ],
     "CategoryTags": [
       "Utility"
@@ -1219,7 +1450,12 @@
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
     "Tags": [
       "quests",
-      "msq"
+      "msq",
+      "任務",
+      "主線任務",
+      "支線任務",
+      "自動任務",
+      "友好部族任務"
     ],
     "CategoryTags": [
       "Utility"
@@ -1247,7 +1483,13 @@
     "RepoUrl": "https://github.com/ffxiv-tc-port/TextAdvance",
     "Tags": [
       "quests",
-      "utility"
+      "utility",
+      "任務",
+      "對話",
+      "跳過",
+      "過場動畫",
+      "字幕",
+      "自動對話"
     ],
     "CategoryTags": [
       "Utility"
@@ -1279,7 +1521,13 @@
       "inlay",
       "overlay",
       "chromium",
-      "act"
+      "act",
+      "疊加層",
+      "網頁",
+      "瀏覽器",
+      "傷害統計",
+      "戰鬥數據",
+      "DPS"
     ],
     "CategoryTags": [
       "UI"
@@ -1308,7 +1556,12 @@
     "Tags": [
       "parsing",
       "plugin",
-      "ACT"
+      "ACT",
+      "戰鬥數據",
+      "傷害統計",
+      "解析",
+      "DPS",
+      "FFLogs"
     ],
     "CategoryTags": [
       "Utility"
@@ -1337,7 +1590,12 @@
     "Tags": [
       "Leves",
       "Crafters",
-      "Gatherers"
+      "Gatherers",
+      "理符任務",
+      "理符",
+      "能工巧匠",
+      "大地使者",
+      "練等"
     ],
     "CategoryTags": [
       "Jobs"
@@ -1364,7 +1622,12 @@
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
     "Tags": [
-      "Gatherers"
+      "Gatherers",
+      "宇宙探索",
+      "宇宙",
+      "能工巧匠",
+      "大地使者",
+      "自動化"
     ],
     "CategoryTags": [
       "Jobs"
@@ -1392,7 +1655,12 @@
     "RepoUrl": "https://github.com/ffxiv-tc-port/Gearsetter",
     "Tags": [
       "gearset",
-      "gearsets"
+      "gearsets",
+      "裝備",
+      "套裝",
+      "升級",
+      "裝備升級",
+      "換裝"
     ],
     "CategoryTags": [
       "Inventory"
@@ -1418,7 +1686,14 @@
     "Description": "幻巧拼圖求解輔助。以 ezFauxHollows 為基礎，但改用已知圖樣資料庫比對，而非通用求解演算法，因此需要翻開的格數更少。開啟幻巧拼圖介面後會直接在遊戲原生面板上為各格著色：藍色代表已確定的雙劍、黃色代表已確定的箱子或寶箱、紫色代表可能的狐狸，綠色則是目前期望值最高的格子。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/vfaux",
-    "Tags": [],
+    "Tags": [
+      "幻巧拼圖",
+      "宗長",
+      "幻殲滅戰",
+      "拼圖",
+      "小遊戲",
+      "faux hollows"
+    ],
     "CategoryTags": [
       "Minigames"
     ],
@@ -1443,7 +1718,16 @@
     "Description": "市場公告板上架與調價的操作輔助。點選「調整價格」時會一次開啟改價視窗、目前市場標價列表與成交紀錄；點一下列表中的商品，你的售價就會自動設為該價格減 1 Gil 並跳回商品列表，同時把價格複製到剪貼簿。若要把同一個價格套用到多個商品，按住 Ctrl 再點「調整價格」即可直接沿用剪貼簿裡的數值。按住 Shift 可暫時略過部分自動化。各項功能都能在設定視窗（/mbuddy）中個別開關。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
-    "Tags": [],
+    "Tags": [
+      "市場",
+      "市場佈告板",
+      "上架",
+      "改價",
+      "調價",
+      "出售",
+      "僱員",
+      "MB"
+    ],
     "CategoryTags": [
       "Inventory"
     ],
@@ -1478,7 +1762,12 @@
       "Fate",
       "Faye",
       "BOCCHER",
-      "OCH"
+      "OCH",
+      "新月島",
+      "蜃景幻界新月島",
+      "緊急遭遇戰",
+      "寶箱",
+      "非法模式"
     ],
     "CategoryTags": [
       "Utility"
@@ -1504,7 +1793,16 @@
     "Description": "台服自製 QoL 工具箱，內含上百個獨立模組，分成「背包・裝備」「戰鬥・小隊」「公會・生活」「介面・雜項」四類，可在設定視窗逐一開關。預設只開啟 3 個純顯示或只寫紀錄的模組，其餘預設關閉。涵蓋背包整理與搬移、公會合建交料、陸行鳥餵食、園圃作業、隊伍招募輔助、周邊玩家與敵人清單等。指令 /tctoolbox 開啟設定視窗。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
-    "Tags": [],
+    "Tags": [
+      "台服",
+      "工具箱",
+      "背包",
+      "公會",
+      "合建",
+      "園圃",
+      "陸行鳥",
+      "QoL"
+    ],
     "CategoryTags": [
       "Utility"
     ],
@@ -1533,7 +1831,11 @@
       "wondrous tails",
       "weekly bingo",
       "天書奇談",
-      "probability"
+      "probability",
+      "天書",
+      "奇想點",
+      "印花",
+      "每週"
     ],
     "CategoryTags": [
       "Minigames"
@@ -1559,7 +1861,13 @@
     "Description": "[Questionable 開發用插件]：使用 Pictomancy 繪製採集點路徑，供路徑資料編輯者使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
-    "Tags": [],
+    "Tags": [
+      "採集",
+      "路徑",
+      "開發",
+      "Questionable",
+      "gathering"
+    ],
     "CategoryTags": [
       "Utility"
     ],
@@ -1589,7 +1897,13 @@
       "battle",
       "combat",
       "monsters",
-      "enemies"
+      "enemies",
+      "深層迷宮",
+      "死者宮殿",
+      "天之御柱",
+      "正統優雷卡",
+      "魔物",
+      "仇恨"
     ],
     "CategoryTags": [],
     "DalamudApiLevel": 13,
@@ -1617,7 +1931,11 @@
       "Buff",
       "Debuff",
       "Scale",
-      "Interface"
+      "Interface",
+      "弱化狀態",
+      "強化狀態",
+      "狀態圖示",
+      "放大"
     ],
     "CategoryTags": [],
     "DalamudApiLevel": 13,
@@ -1645,7 +1963,11 @@
       "Waymark",
       "Marker",
       "Preset",
-      "Tool"
+      "Tool",
+      "場地標記",
+      "標記",
+      "預設",
+      "站位"
     ],
     "CategoryTags": [],
     "DalamudApiLevel": 13,
@@ -1672,7 +1994,12 @@
     "Tags": [
       "death",
       "recap",
-      "log"
+      "log",
+      "死亡",
+      "死因",
+      "死亡原因",
+      "承受傷害",
+      "治療"
     ],
     "CategoryTags": [
       "utility"
@@ -1699,7 +2026,10 @@
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BetterMountRoulette",
     "Tags": [
-      "mount"
+      "mount",
+      "坐騎",
+      "隨機坐騎",
+      "隨機"
     ],
     "CategoryTags": [],
     "DalamudApiLevel": 13,
@@ -1728,7 +2058,10 @@
       "zodiac",
       "黃道武器",
       "atma",
-      "novus"
+      "novus",
+      "古武",
+      "黃道",
+      "武器強化"
     ],
     "CategoryTags": [],
     "DalamudApiLevel": 13,
@@ -1755,7 +2088,11 @@
     "Tags": [
       "plugin",
       "jank",
-      "graphics"
+      "graphics",
+      "物理效果",
+      "更新率",
+      "晃動",
+      "頭髮"
     ],
     "CategoryTags": [],
     "DalamudApiLevel": 13,
@@ -1779,7 +2116,14 @@
     "Description": "顯示目前正在鎖定你、以及先前曾鎖定你的玩家。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PeepingTom",
-    "Tags": [],
+    "Tags": [
+      "鎖定",
+      "目標",
+      "誰在看我",
+      "被選中",
+      "target",
+      "targeting"
+    ],
     "CategoryTags": [],
     "DalamudApiLevel": 13,
     "LoadRequiredState": 0,
@@ -1806,7 +2150,11 @@
       "combat",
       "debuff",
       "dot",
-      "enemylist"
+      "enemylist",
+      "敵對列表",
+      "弱化狀態",
+      "持續傷害",
+      "倒數"
     ],
     "CategoryTags": [],
     "DalamudApiLevel": 13,
@@ -1834,7 +2182,11 @@
       "map",
       "mapping",
       "overlay",
-      "utility"
+      "utility",
+      "地圖",
+      "旗標",
+      "地圖標記",
+      "乙太之光"
     ],
     "CategoryTags": [],
     "DalamudApiLevel": 13,
@@ -1859,7 +2211,12 @@
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SortaKinda",
     "Tags": [
-      "utility"
+      "utility",
+      "物品欄",
+      "背包",
+      "整理",
+      "排序",
+      "背包整理"
     ],
     "CategoryTags": [
       "Utility",
@@ -1889,7 +2246,10 @@
     "Tags": [
       "無人島開拓",
       "無人島",
-      "採集"
+      "採集",
+      "自動採集",
+      "素材",
+      "開拓等級"
     ],
     "CategoryTags": [],
     "DalamudApiLevel": 13,
@@ -1915,7 +2275,11 @@
     "RepoUrl": "https://github.com/ffxiv-tc-port/ScrollableTabs",
     "Tags": [
       "UI",
-      "QoL"
+      "QoL",
+      "滾輪",
+      "分頁",
+      "切換分頁",
+      "滑鼠"
     ],
     "CategoryTags": [],
     "DalamudApiLevel": 13,
@@ -1941,7 +2305,11 @@
     "RepoUrl": "https://github.com/ffxiv-tc-port/Meddle",
     "Tags": [
       "model",
-      "glTF"
+      "glTF",
+      "模型",
+      "匯出",
+      "Blender",
+      "3D"
     ],
     "CategoryTags": [],
     "DalamudApiLevel": 13,
@@ -1969,7 +2337,12 @@
       "gpose",
       "posing",
       "集體動作",
-      "表情"
+      "表情",
+      "姿勢",
+      "擺姿",
+      "拍照",
+      "截圖",
+      "動作"
     ],
     "CategoryTags": [],
     "DalamudApiLevel": 13,
@@ -1998,7 +2371,10 @@
       "tts",
       "tataru",
       "語音",
-      "塔塔露"
+      "塔塔露",
+      "提示音",
+      "語音提示",
+      "音效"
     ],
     "CategoryTags": [],
     "DalamudApiLevel": 13,
@@ -2028,7 +2404,11 @@
       "wealth",
       "retainer",
       "fc",
-      "submarine"
+      "submarine",
+      "收支",
+      "記帳",
+      "財產",
+      "僱員"
     ],
     "CategoryTags": [],
     "DalamudApiLevel": 13,
@@ -2058,7 +2438,11 @@
       "deep dungeon",
       "深層迷宮",
       "天之御柱",
-      "埋藏的寶藏"
+      "埋藏的寶藏",
+      "刷寶",
+      "挖寶",
+      "魔陶器",
+      "HoH"
     ],
     "CategoryTags": [],
     "DalamudApiLevel": 13,
@@ -2087,7 +2471,12 @@
       "tweaks",
       "qol",
       "便利",
-      "調整"
+      "調整",
+      "小調整",
+      "介面",
+      "聊天",
+      "指令",
+      "ST"
     ],
     "CategoryTags": [],
     "DalamudApiLevel": 13,
