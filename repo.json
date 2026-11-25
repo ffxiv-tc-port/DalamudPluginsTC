@@ -326,7 +326,7 @@
     "Author": "Infi, Anna",
     "Name": "Chat 2",
     "InternalName": "ChatTwo",
-    "AssemblyVersion": "7.30.0.6",
+    "AssemblyVersion": "7.30.0.7",
     "Description": "Chat 2 完整重寫遊戲內建的聊天視窗，分頁、過濾與外觀都能自訂。\n- 分頁數量不限，可讓分頁固定發送到指定頻道，並顯示未讀訊息數\n- 每個分頁可自訂訊息過濾條件；頻道顏色與字型大小可調整\n- 聊天記錄存在本機，可在聊天歷史視窗依日期、頻道與關鍵字搜尋\n- 右鍵玩家名字可傳送好友申請、加入到黑名單\n- 表情符號、側邊欄分頁、截圖模式（隱藏玩家名稱）\n- 網頁介面：可用瀏覽器查看聊天內容（預設關閉）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ChatTwo",
@@ -353,10 +353,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ChatTwo.png",
     "Punchline": "取代遊戲內建聊天視窗，提供分頁、過濾與歷史搜尋。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790751951",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790751951",
-    "Changelog": "- 維護更新（插件本身不變）",
-    "LastUpdate": 1795595865
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792964079",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792964079",
+    "Changelog": "- 設定「變更紀錄」分頁的「傳送變更紀錄」改為停用並標示「無作用」（勾不勾都不會在聊天視窗印出變更紀錄）",
+    "LastUpdate": 1795637166
   },
   {
     "Author": "Nylfae",
@@ -541,7 +541,7 @@
     "Author": "Critical_Impact",
     "Name": "Allagan Tools",
     "InternalName": "InventoryTools",
-    "AssemblyVersion": "7.30.0.17",
+    "AssemblyVersion": "7.30.0.18",
     "Description": "追蹤你所有角色、僱員與公會儲物櫃裡的道具，隨時查得到東西放在哪。輸入 /allagantools 開啟。\n\n- 道具清單：用篩選條件建立清單，符合的道具會在背包裡高亮顯示，方便整理與取用\n- 製作規劃：算出所需材料並對照現有庫存；缺的材料標出哪裡買，並可前往商人（需搭配 ItemVendorLocation 與 Lifestream）\n- 市場佈告板價格：透過 Universalis 查詢各世界的價格與成交數\n- 貨幣兌換價值排行：比較各種貨幣換成哪些道具拿到市場上最值錢\n- 道具資訊視窗與滑鼠提示：商人、取得來源、放在哪些地方\n- 任務、怪物、NPC、飛空艇與潛水艇的資料查詢視窗",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/InventoryTools",
@@ -569,10 +569,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/InventoryTools.png",
     "Punchline": "追蹤所有角色、僱員與公會儲物櫃的道具，並規劃製作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792134190",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792134190",
-    "Changelog": "- 市場價格背景更新改成整批查詢，對 Universalis 的請求次數大幅減少（價格只會更早更新）",
-    "LastUpdate": 1795621244
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792964411",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792964411",
+    "Changelog": "- 染劑欄：沒有染色的道具顯示「無染色」，不再是空白",
+    "LastUpdate": 1795637207
   },
   {
     "Author": "electr0sheep, Nuko",
@@ -1057,7 +1057,7 @@
     "Author": "Sonar Team",
     "Name": "Sonar",
     "InternalName": "SonarPlugin",
-    "AssemblyVersion": "7.30.0.6",
+    "AssemblyVersion": "7.30.0.7",
     "Description": "偵測並提醒危險標的（狩獵怪物）與 F.A.T.E.，顯示在清單與追蹤器視窗；開啟連線後還能收到其他 Sonar 使用者的回報。\n- 音效與聊天訊息提醒\n- 「連線 Sonar 伺服器」預設關閉：關著時不連線、不送出任何資料，只顯示你自己遇到的\n- 「全域回報貢獻」預設關閉：要把你遇到的危險標的與 F.A.T.E. 回報出去，需另外開啟\n- 輸入 /sonar 開啟主視窗，/sonarconfig 開啟設定",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SonarPlugin",
@@ -1082,10 +1082,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SonarPlugin.png",
     "Punchline": "追蹤危險標的與 F.A.T.E.，可接收其他玩家的回報。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790751792",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790751792",
-    "Changelog": "- 維護更新（插件本身不變）",
-    "LastUpdate": 1795595867
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792964014",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792964014",
+    "Changelog": "- F.A.T.E. 聊天通知的「跨世界圖示」開關恢復作用（原本誤讀狩獵通知的同名開關）",
+    "LastUpdate": 1795637170
   },
   {
     "Author": "NightmareXIV",
@@ -1125,7 +1125,7 @@
     "Author": "Infi",
     "Name": "Submarine Tracker",
     "InternalName": "SubmarineTracker",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "+ 追蹤目前的潛水艇配置、航線與所需時間\n+ 潛水艇配置建構器，協助改良配置並最佳化經驗值\n+ 可自訂的返航與維修通知\n+ 內建豐富資訊的 Helpy 助手\n+ 自訂戰利品總覽，含歷史紀錄與匯出功能\n+ 多種疊加層輔助你完成每日任務\n+ 支援多個公會",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SubmarineTracker",
@@ -1150,10 +1150,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SubmarineTracker.png",
     "Punchline": "潛水艇的事，不能說。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762759261",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/762759261",
-    "Changelog": "- 戰利品紀錄寫進資料庫失敗時，記錄檔會寫明這趟航行有幾筆沒寫進去、是哪個公會哪艘潛水艇\n- 資料庫開不起來時，載入失敗的原因改為顯示真正的錯誤，不再被「空參考」蓋掉\n- 配置器升級分頁：計算中途出錯不再讓遊戲結束，改在分頁顯示「計算失敗」；卸載插件時會先停下計算",
-    "LastUpdate": 1794994107
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792963872",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792963872",
+    "Changelog": "- 總覽「返回後顯示維修狀態」勾選框恢復作用：取消勾選時顯示目前記錄的最低耐久，不再扣除本次航線的預估損耗",
+    "LastUpdate": 1795637160
   },
   {
     "Author": "MgAl2O4",
