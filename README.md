@@ -1,29 +1,28 @@
 # DalamudPluginsTC
 
-台服（TC，Traditional Chinese client）專用的第三方 Dalamud 插件庫，收錄並持續維護 **72 個**對應台服客戶端的插件（來自 70 個 fork repo）。
+台服（TC，Traditional Chinese client）專用的第三方 Dalamud 插件庫，目前收錄並持續維護 **73 個**對應台服客戶端的插件（來自 71 個 fork repo）。
 
-台服目前使用的 Dalamud 為 **API Level 13**，而多數插件的官方版本已隨國際服前進到更新的 API 等級，無法直接在台服安裝。本倉庫維護這些插件對應 **TC 7.25（API13）** 的相容分支，並**已完成全面繁體中文化**（介面採台服官方譯名、對照官方遊戲資料表校訂）。
+台服目前使用的 Dalamud 為 **API Level 13**，而多數插件的官方版本已隨國際服前進到更新的 API 等級，無法直接在台服安裝。這個插件庫維護這些插件對應 **台服現行版本（API13）** 的相容分支，並**已完成全面繁體中文化**（介面採台服官方譯名、對照官方遊戲資料表校訂）。
 
 ## 使用方式
 
-1. 開啟遊戲內插件安裝器
-2. 進入「實驗性功能」（Experimental）
-3. 在「自訂插件庫」（Custom Plugin Repositories）加入以下網址：
+1. 在遊戲內輸入 `/xlsettings` 開啟「Dalamud 設定」（或按插件管理員底部的「設定」）
+2. 切到「試驗性功能」（Experimental）分頁
+3. 在「第三方插件倉庫」（Custom Plugin Repositories）加入以下網址：
 
 ```
 https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 ```
 
-4. 儲存後即可在插件安裝器中搜尋並安裝下方列出的插件
+4. 儲存變更後，就能在插件管理員（`/xlplugins`）搜尋並安裝下方列出的插件
 
-> 📌 2026-09-17 起本倉庫與收錄插件皆為 private（只服務維護者本人）：這個網址、
-> 圖示與插件下載都需要驗證，要在 Dalamud 設定頁填入 GitHub fine-grained token
-> （本 org 的 Dalamud fork 才有這個設定）才能抓取。設計文件在維護機的艦隊根目錄
-> `D:/ffxiv-tc-port/docs/private-migration-design.md`（不在本倉庫）。
+插件庫、圖示與插件下載都是公開的，不需要登入或填任何權杖。
+
+同一個插件請只安裝這裡的版本，不要同時安裝上游或其他插件庫的版本——那些版本不是針對台服客戶端做的。
 
 ## 收錄插件
 
-插件名稱連至本 org 維護的 fork（台服相容性問題請開在這裡），「上游」為原始專案。不保證插件彼此之間的相容性，請自行評估風險後使用。
+插件名稱連到這裡維護的台服版 repo，「上游」是原始專案。不保證插件彼此之間的相容性，請自行評估風險後使用。
 
 ### 戰鬥與副本
 
@@ -73,7 +72,7 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 | 插件 | 上游 | 說明 |
 |------|------|------|
 | [**Questionable**](https://github.com/ffxiv-tc-port/Questionable) | [PunishXIV](https://github.com/PunishXIV/Questionable) | 自動接取並完成任務：導航到任務地點、處理對話與互動，戰鬥與任務戰鬥可交給 BossMod。需搭配 vnavmesh、TextAdvance 與 Lifestream。 |
-| [**GatheringPathRenderer**](https://github.com/ffxiv-tc-port/Questionable) | [PunishXIV](https://github.com/PunishXIV/Questionable) | Questionable 附屬開發插件，繪製採集點位視覺化 |
+| [**GatheringPathRenderer**](https://github.com/ffxiv-tc-port/Questionable) | [PunishXIV](https://github.com/PunishXIV/Questionable) | Questionable 附屬的開發用插件，把採集點位畫出來檢視。 |
 | [**TextAdvance**](https://github.com/ffxiv-tc-port/TextAdvance) | [NightmareXIV](https://github.com/NightmareXIV/TextAdvance) | 任務推進輔助：自動確認任務接取與交付、跳過字幕與過場動畫，並可選用 Splatoon 顯示任務目標指示、用 vnavmesh 自動走到任務地點。 |
 | [**AutoDuty**](https://github.com/ffxiv-tc-port/AutoDuty) | [ffxivcode](https://github.com/ffxivcode/AutoDuty) | 自動幫你跑副本，支援親信戰友、劇情輔助器、冒險者分隊、多變迷宮或一般模式。需搭配 BossModReborn、vnavmesh 與一款戰鬥循環插件（WrathCombo 或 BossMod AutoRotation）使用。 |
 | [**YesAlready**](https://github.com/ffxiv-tc-port/YesAlready) | [PunishXIV](https://github.com/PunishXIV/YesAlready) | 依你設定的文字（可用正規表示式）自動點選確認框、選單與對話，並內建分解、僱員派遣、任務準備完成確認等常見視窗的自動處理。 |
@@ -104,13 +103,13 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 | [**Price Insight**](https://github.com/ffxiv-tc-port/PriceInsight) | [Kouzukii](https://github.com/Kouzukii/ffxiv-priceinsight) | 當你將滑鼠移到道具上時，會在下方顯示該道具的普通品／高品質市場佈告板價格，以及最近一次的成交紀錄。 |
 | [**Item Vendor Location**](https://github.com/ffxiv-tc-port/ItemVendorLocation) | [electr0sheep](https://github.com/electr0sheep/ItemVendorLocation) | 道具右鍵選單可查詢有哪些 NPC 商人在賣，並可交給 Lifestream 帶你前往。 |
 | [**Accountant**](https://github.com/ffxiv-tc-port/Accountant) | [Ottermandias](https://github.com/Ottermandias/Accountant) | 記錄多名角色的僱員、飛空艇、潛水艇、乙太轉輪與作物計時器，以及其他各種雜項任務進度。 |
-| [**GilDelta**](https://github.com/ffxiv-tc-port/GilDelta) | [yagi2](https://github.com/yagi2/GilDelta) | 追蹤自己、僱員與公會儲物櫃的金幣流向，每筆變動自動分類，附常駐小工具、儀表板與每日結算。 |
+| [**GilDelta**](https://github.com/ffxiv-tc-port/GilDelta) | [yagi2](https://github.com/yagi2/GilDelta) | 追蹤自己、僱員與公會儲物櫃的 Gil 流向，每筆變動自動分類，附常駐小工具、儀表板與每日結算。 |
 
 ### 物品與介面
 
 | 插件 | 上游 | 說明 |
 |------|------|------|
-| [**Allagan Tools**](https://github.com/ffxiv-tc-port/InventoryTools) | [Critical-Impact](https://github.com/Critical-Impact/InventoryTools) | Allagan Tools：追蹤所有角色、僱員與公會倉庫的道具，提供篩選清單、製作規劃、市場佈告板查價與各種資料查詢視窗。 |
+| [**Allagan Tools**](https://github.com/ffxiv-tc-port/InventoryTools) | [Critical-Impact](https://github.com/Critical-Impact/InventoryTools) | 追蹤所有角色、僱員與公會倉庫的道具，提供篩選清單、製作規劃、市場佈告板查價與各種資料查詢視窗。 |
 | [**Gearsetter**](https://github.com/ffxiv-tc-port/Gearsetter) | [VeraNala](https://github.com/VeraNala/Gearsetter) | 瀏覽各職業可以裝備的所有裝備，並列出你目前套裝還能升級的部位。 |
 | [**Chat 2**](https://github.com/ffxiv-tc-port/ChatTwo) | [Infiziert90](https://github.com/Infiziert90/ChatTwo) | 完整重寫遊戲內建聊天視窗：無限分頁、彈性過濾、可搜尋的聊天記錄資料庫。 |
 | [**QoL Bar**](https://github.com/ffxiv-tc-port/QoLBar) | [UnknownX7](https://github.com/UnknownX7/QoLBar) | 自訂按鈕列：把聊天指令、巨集與其他插件的介面放在隨時可按的列上，不必佔用快捷列。 |
@@ -135,18 +134,18 @@ https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/repo.json
 | 插件 | 上游 | 說明 |
 |------|------|------|
 | [**Dynamis**](https://github.com/ffxiv-tc-port/Dynamis) | [Exter-N](https://github.com/Exter-N/Dynamis) | 給開發者的逆向工程與除錯工具箱：物件檢視器、特徵碼掃描、不必外接除錯器的中斷點（IPFD）。 |
-| [**Dynamis (with Hosted PowerShell)**](https://github.com/ffxiv-tc-port/Dynamis) | [Exter-N](https://github.com/Exter-N/Dynamis) | Dynamis 含內建 PowerShell 版本 |
+| [**Dynamis (with Hosted PowerShell)**](https://github.com/ffxiv-tc-port/Dynamis) | [Exter-N](https://github.com/Exter-N/Dynamis) | 內建 PowerShell 的 Dynamis 版本。 |
 | [**Meddle**](https://github.com/ffxiv-tc-port/Meddle) | [PassiveModding](https://github.com/PassiveModding/Meddle) | 把遊戲內角色模型與場景匯出成 glTF，搭配 MeddleTools Blender 附加元件使用（製作／開發工具）。 |
 
 ## 共用函式庫
 
-插件本身不是全部——底下這些函式庫也一起維護著台服 fork。它們不會出現在插件清單裡，但**每一個插件都踩在上面**：
+除了插件，底下這些函式庫也一起維護著台服 fork。它們不會出現在插件清單裡，但**每一個插件都建立在它們之上**：
 
 ### 執行環境與遊戲資料
 
 | 函式庫 | 上游 | 用途 | 誰在用 |
 |--------|------|------|--------|
-| [**Dalamud**](https://github.com/ffxiv-tc-port/Dalamud) | [yanmucorp](https://github.com/yanmucorp/Dalamud)（原作 [goatcorp](https://github.com/goatcorp/Dalamud)） | 台服專用插件執行環境（API13 / net9），本倉庫所有插件的宿主 | 全部 |
+| [**Dalamud**](https://github.com/ffxiv-tc-port/Dalamud) | [yanmucorp](https://github.com/yanmucorp/Dalamud)（原作 [goatcorp](https://github.com/goatcorp/Dalamud)） | 台服專用插件執行環境（API13 / net9），這裡所有插件的宿主 | 全部 |
 | [**FFXIVClientStructs**](https://github.com/ffxiv-tc-port/FFXIVClientStructs) | [yanmucorp](https://github.com/yanmucorp/FFXIVClientStructs)（原作 [aers](https://github.com/aers/FFXIVClientStructs)） | 遊戲記憶體結構定義——插件靠它讀取遊戲已解析好的狀態 | 全部（隨 Dalamud 出貨） |
 | [**Lumina**](https://github.com/ffxiv-tc-port/Lumina) | [NotAdam](https://github.com/NotAdam/Lumina) | 讀取遊戲資料檔（sqpack／EXD 資料表） | 全部（隨 Dalamud 出貨） |
 
@@ -171,12 +170,13 @@ Dalamud 本體另外還有這些原生與綁定相依（只在重建 Dalamud 時
 
 | 函式庫 | 上游 | 用途 | 誰在用 |
 |--------|------|------|--------|
-| [**ECommons**](https://github.com/ffxiv-tc-port/ECommons) | [NightmareXIV](https://github.com/NightmareXIV/ECommons) | 插件開發框架：服務容器、設定存取、節流、任務佇列、UI 輔助——艦隊裡最廣泛的相依 | 26 個插件 |
+| [**ECommons**](https://github.com/ffxiv-tc-port/ECommons) | [NightmareXIV](https://github.com/NightmareXIV/ECommons) | 插件開發框架：服務容器、設定存取、節流、任務佇列、UI 輔助——最多插件共用的相依 | 多個插件（`Artisan`、`AutoRetainer`、`Lifestream`、`Splatoon` 等） |
 | [**ECommons.IPC**](https://github.com/ffxiv-tc-port/ECommons.IPC) | [NightmareXIV](https://github.com/NightmareXIV/ECommons.IPC) | ECommons 的跨插件 IPC 模組（獨立套件） | `AutoDuty`、`AutoRetainer` |
 | [**OtterGui**](https://github.com/ffxiv-tc-port/OtterGui) | [Ottermandias](https://github.com/Ottermandias/OtterGui) | ImGui 輔助函式庫：表格、篩選清單、拖放樹狀結構 | `Artisan`、`AutoRetainer`、`GatherBuddyReborn`、`InventoryTools`、`Lifestream` |
-| [**PunishLib**](https://github.com/ffxiv-tc-port/PunishLib) | [PunishXIV](https://github.com/PunishXIV/PunishLib) | Puni.sh 系列插件的共用基底（關於視窗、錯誤回報） | 8 個插件 |
-| [**KamiToolKit**](https://github.com/ffxiv-tc-port/KamiToolKit) | [MidoriKami](https://github.com/MidoriKami/KamiToolKit) | 原生 UI 節點函式庫——直接繪製遊戲自己的 UI 元件而不是 ImGui | `DailyDuty`、`EzWondrousTails`、`SortaKinda` |
+| [**PunishLib**](https://github.com/ffxiv-tc-port/PunishLib) | [PunishXIV](https://github.com/PunishXIV/PunishLib) | Puni.sh 系列插件的共用基底（關於視窗、錯誤回報） | Puni.sh 系列插件（`Artisan`、`AutoRetainer`、`WrathCombo` 等） |
+| [**KamiToolKit**](https://github.com/ffxiv-tc-port/KamiToolKit) | [MidoriKami](https://github.com/MidoriKami/KamiToolKit) | 原生 UI 節點函式庫——直接繪製遊戲自己的 UI 元件而不是 ImGui | `DailyDuty`、`EzWondrousTails`、`SortaKinda`、`TCToolbox` |
 | [**CriticalCommonLib**](https://github.com/ffxiv-tc-port/CriticalCommonLib) | [Critical-Impact](https://github.com/Critical-Impact/CriticalCommonLib) | 物品／容器／僱員資料的快取與查詢層 | `InventoryTools` |
+| [**AllaganLib**](https://github.com/ffxiv-tc-port/AllaganLib) | [Critical-Impact](https://github.com/Critical-Impact/AllaganLib) | Allagan Tools 的共用套件：遊戲資料表封裝、NPC／商店／道具來源快取、表單與表格元件、Universalis 查價 | `CriticalCommonLib`、`InventoryTools` |
 | [**LLib**](https://github.com/ffxiv-tc-port/LLib) | [alydevs](https://github.com/alydevs/LLib) | Dalamud 插件共用輔助（設定視窗、ImGui 小元件） | `Gearsetter` |
 | [**KamiLib**](https://github.com/ffxiv-tc-port/KamiLib) | [MidoriKami](https://github.com/MidoriKami/KamiLib) | 角色設定、指令與選擇清單視窗等共用元件 | `DailyDuty`、`Mappy`、`SortaKinda` |
 | [**NightmareUI**](https://github.com/ffxiv-tc-port/NightmareUI) | [NightmareXIV](https://github.com/NightmareXIV/NightmareUI) | ImGui 介面元件（含支援台服的世界選單） | `AutoRetainer`、`Lifestream`、`Splatoon`、`TextAdvance` |
@@ -200,9 +200,9 @@ Dalamud 本體另外還有這些原生與綁定相依（只在重建 Dalamud 時
 
 | 函式庫 | 上游 | 用途 | 誰在用 |
 |--------|------|------|--------|
-| [**AutoRetainerAPI**](https://github.com/ffxiv-tc-port/AutoRetainerAPI) | [PunishXIV](https://github.com/PunishXIV/AutoRetainerAPI) | 呼叫 `AutoRetainer` 的僱員／潛水艇排程 | `AutoRetainer`、`GatherBuddyReborn`、`Lifestream`、`SomethingNeedDoing`、`visland` |
+| [**AutoRetainerAPI**](https://github.com/ffxiv-tc-port/AutoRetainerAPI) | [PunishXIV](https://github.com/PunishXIV/AutoRetainerAPI) | 呼叫 `AutoRetainer` 的僱員／潛水艇排程 | `AutoRetainer`、`HoardFarm`、`Lifestream`、`SomethingNeedDoing`、`visland` |
 | [**WrathCombo.API**](https://github.com/ffxiv-tc-port/WrathCombo.API) | [PunishXIV](https://github.com/PunishXIV/WrathCombo.API) | 向 `WrathCombo` 借用戰鬥連段判斷 | `AutoDuty` |
-| [**NotificationMasterAPI**](https://github.com/ffxiv-tc-port/NotificationMasterAPI) | [NightmareXIV](https://github.com/NightmareXIV/NotificationMasterAPI) | 送出桌面／手機通知 | `NotificationMaster`（其餘 5 個插件吃上游公開 NuGet 版） |
+| [**NotificationMasterAPI**](https://github.com/ffxiv-tc-port/NotificationMasterAPI) | [NightmareXIV](https://github.com/NightmareXIV/NotificationMasterAPI) | 送出桌面／手機通知 | `NotificationMaster`（其餘插件使用上游公開的 NuGet 版） |
 
 ### 資料與求解工具
 
@@ -210,15 +210,15 @@ Dalamud 本體另外還有這些原生與綁定相依（只在重建 Dalamud 時
 |------|------|------|
 | [**raphael-rs**](https://github.com/ffxiv-tc-port/raphael-rs) | [KonaeAkira](https://github.com/KonaeAkira/raphael-rs) | 製作流程求解器（Rust），`Artisan` 的宇宙探索專家配方解算用 |
 | [**xiv-data-oxidizer**](https://github.com/ffxiv-tc-port/xiv-data-oxidizer) | [cycleapple](https://github.com/cycleapple/xiv-data-oxidizer)（原作 [fae-industries](https://github.com/fae-industries/xiv-data-oxidizer)） | 把台服遊戲資料匯出成 CSV，移植時比對台服與國際服差異的依據 |
-| [**ff14-submarine**](https://github.com/ffxiv-tc-port/ff14-submarine) | [yueecui](https://github.com/yueecui/ff14-submarine) | 潛水艇航線與配裝規劃網頁工具（台服 7.20 資料、繁體中文化） |
+| [**ff14-submarine**](https://github.com/ffxiv-tc-port/ff14-submarine) | [yueecui](https://github.com/yueecui/ff14-submarine) | 潛水艇航線與配裝規劃網頁工具（台服資料、繁體中文化） |
 | [**EXDSchema**](https://github.com/ffxiv-tc-port/EXDSchema) | [xivdev](https://github.com/xivdev/EXDSchema) | 遊戲 Excel（EXD）資料表的欄位定義，`xiv-data-oxidizer` 匯出台服 EXD 時用 |
 | [**XIVTCLauncher**](https://github.com/ffxiv-tc-port/XIVTCLauncher) | [cycleapple](https://github.com/cycleapple/XIVTCLauncher) | 台服啟動器 FFXIVSimpleLauncher 的原始碼鏡像（僅供查閱） |
 
-> 🔑 **為什麼函式庫也要 fork**：台服的記憶體結構位移、資料表欄位、語言判斷都與國際服不同，而這些差異多半落在函式庫這一層。上游多數已經跟進 API15／net10，我們釘在 API13，因此走各自的分支。
+> 🔑 **為什麼函式庫也要 fork**：台服的記憶體結構位移、資料表欄位、語言判斷都與國際服不同，而這些差異多半落在函式庫這一層。上游多數已經升到更新的 API 等級，這裡釘在 API13，因此走各自的分支。
 
-## 為什麼需要這個倉庫？
+## 為什麼需要這個插件庫？
 
-台服使用的 Dalamud 版本與官方插件倉庫所要求的 API 等級不一致，導致許多實用插件無法直接安裝。本倉庫維護這些插件對應 API13 的相容版本，並修正因客戶端差異導致的問題——包括記憶體結構位移、語言判斷、台服資料表差異（NPC／道具 ID 不同、未開放內容）等。
+台服使用的 Dalamud 版本與官方插件倉庫所要求的 API 等級不一致，導致許多實用插件無法直接安裝。這個插件庫維護這些插件對應 API13 的相容版本，並修正因客戶端差異導致的問題——包括記憶體結構位移、語言判斷、台服資料表差異（NPC／道具 ID 不同、未開放內容）等。
 
 ## 繁體中文化
 
@@ -227,6 +227,6 @@ Dalamud 本體另外還有這些原生與綁定相依（只在重建 Dalamud 時
 - **翻譯外部化**：程式碼保留英文原文作為鍵值，譯文存放於外部語言檔（ini／resx／json），跟隨上游更新時翻譯不會遺失
 - 修正了多個台服客戶端語言判斷問題（部分插件先前因此永遠顯示英文）
 
-## 貢獻 / 回報問題
+## 回報問題
 
-插件在台服上的相容性問題，請至上表對應的 **ffxiv-tc-port fork** 開 issue（上游專案不處理台服相容性）。翻譯用語建議也歡迎回報。
+目前不開放外部回報：這個組織底下的 repo 只開放協作者開 issue、留言與送 PR。上游專案不處理台服相容性，台服版的問題也請不要回報到上游。
