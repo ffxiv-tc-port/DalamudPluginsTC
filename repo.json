@@ -48,7 +48,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.30.0.32",
+    "AssemblyVersion": "7.30.0.33",
     "Description": "製作輔助插件：依巨集或內建解算器自動按製作技能，並能成批製作。輸入 /artisan 開啟。\n\n- 自動製作：標準與專家配方解算器、Raphael 最佳解、自訂巨集，附模擬器可先試算\n- 製作清單：依序製作多項配方，可從僱員補貨、自動修理、精製魔晶石，也能從 Teamcraft 匯入\n- 搜尋配方：依名稱、職業、等級、星級等條件篩選，填想要幾個成品，勾選多筆一次加入清單\n- 耐力模式：重複製作同一配方，製作之間自動補食物與藥品\n- 清單「開工前」檢查：作業精度、加工精度、素材與背包格位夠不夠\n- 缺的素材可一鍵交給 GatherBuddy Reborn 採集，或依世界列出採購清單（只顯示、不代買）\n- 公會工坊的專案可轉成製作清單",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -72,10 +72,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "自動執行製作技能，支援製作清單與耐力模式。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792540121",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792540121",
-    "Changelog": "- 插件說明補上搜尋配方分頁",
-    "LastUpdate": 1795629099
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793187084",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793187084",
+    "Changelog": "- 材料查價：Universalis 回應超過 8 MB 時放棄這次回應並記一行警告，不再整包收進記憶體\n- 製作巨集與標準解算器：中級加工沒接在加工後面時，下一步改從加工重新連擊，不再接 46 CP 的上級加工；巨集頁的 CP 合計也照這個規則算",
+    "LastUpdate": 1795641584
   },
   {
     "Author": "Herculezz",
@@ -541,7 +541,7 @@
     "Author": "Critical_Impact",
     "Name": "Allagan Tools",
     "InternalName": "InventoryTools",
-    "AssemblyVersion": "7.30.0.18",
+    "AssemblyVersion": "7.30.0.19",
     "Description": "追蹤你所有角色、僱員與公會儲物櫃裡的道具，隨時查得到東西放在哪。輸入 /allagantools 開啟。\n\n- 道具清單：用篩選條件建立清單，符合的道具會在背包裡高亮顯示，方便整理與取用\n- 製作規劃：算出所需材料並對照現有庫存；缺的材料標出哪裡買，並可前往商人（需搭配 ItemVendorLocation 與 Lifestream）\n- 市場佈告板價格：透過 Universalis 查詢各世界的價格與成交數\n- 貨幣兌換價值排行：比較各種貨幣換成哪些道具拿到市場上最值錢\n- 道具資訊視窗與滑鼠提示：商人、取得來源、放在哪些地方\n- 任務、怪物、NPC、飛空艇與潛水艇的資料查詢視窗",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/InventoryTools",
@@ -569,10 +569,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/InventoryTools.png",
     "Punchline": "追蹤所有角色、僱員與公會儲物櫃的道具，並規劃製作。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792964411",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792964411",
-    "Changelog": "- 染劑欄：沒有染色的道具顯示「無染色」，不再是空白",
-    "LastUpdate": 1795637207
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793186748",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793186748",
+    "Changelog": "- 市場查價：Universalis 回應超過 8 MB 時放棄該次回應並記一行警告；關閉插件時一併解除投影台事件的監聽\n- 時間服務的提示文字改用台服用語「艾奧傑亞時間」",
+    "LastUpdate": 1795641592
   },
   {
     "Author": "electr0sheep, Nuko",
@@ -1714,7 +1714,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.30.0.20",
+    "AssemblyVersion": "7.30.0.21",
     "Description": "市場佈告板上架、改價與下架的操作輔助。每個動作都要你自己按下才開始，不會被遊戲事件或別的插件觸發；補上架、巡檢與多角色重掛預設關閉。\n- 調整價格：一併開啟市場上的標價與交易履歷，點一列就填入比它低 1 Gil 的價格；按住 Ctrl 沿用剪貼簿的價格，按住 Shift 暫時略過\n- 批次重掛與下架：按一下依市場最低價重新定價這位僱員的商品，也可逐一拜訪所有僱員；附異常低價保護，可改參考最近成交價（預設關）\n- 全僱員補上架、背包上架到有空位的僱員（手動開始、預設關）：逐名僱員把你勾選的道具上架，可指定不自動上架的道具\n- 跨世界價格巡檢（手動開始、預設關）：在每個世界按一次掃描，查自己掛售中道具的當地行情；只查價，不改價、不買\n- 多角色重掛（每一輪都要你手動啟動、預設關）需搭配 AutoRetainer；巡檢涵蓋所有角色需搭配 InventoryTools，換世界需搭配 Lifestream\n- 指令 /mbuddy 開啟設定視窗，/mbuddy survey 開啟巡檢視窗",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1739,10 +1739,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "市場佈告板上架、改價、下架與比價的操作輔助。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793173346",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793173346",
-    "Changelog": "- 多角色重掛：工坊鈴搆不到時，請 AutoRetainer 走過去的功能終於能用了",
-    "LastUpdate": 1795641259
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793186205",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793186205",
+    "Changelog": "- 賣給商店：那一格和清單對不上時，記錄檔寫出那一格現在放什麼、清單原本是什麼\n- 多角色重掛：一輪結束時列出被跳過的角色與原因，並可一鍵只重跑這幾角",
+    "LastUpdate": 1795641524
   },
   {
     "Author": "Faye",
