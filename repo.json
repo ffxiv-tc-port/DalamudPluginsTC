@@ -48,7 +48,7 @@
     "Author": "Taurenkey (Puni.sh)",
     "Name": "Artisan",
     "InternalName": "Artisan",
-    "AssemblyVersion": "7.30.0.33",
+    "AssemblyVersion": "7.30.0.34",
     "Description": "製作輔助插件：依巨集或內建解算器自動按製作技能，並能成批製作。輸入 /artisan 開啟。\n\n- 自動製作：標準與專家配方解算器、Raphael 最佳解、自訂巨集，附模擬器可先試算\n- 製作清單：依序製作多項配方，可從僱員補貨、自動修理、精製魔晶石，也能從 Teamcraft 匯入\n- 搜尋配方：依名稱、職業、等級、星級等條件篩選，填想要幾個成品，勾選多筆一次加入清單\n- 耐力模式：重複製作同一配方，製作之間自動補食物與藥品\n- 清單「開工前」檢查：作業精度、加工精度、素材與背包格位夠不夠\n- 缺的素材可一鍵交給 GatherBuddy Reborn 採集，或依世界列出採購清單（只顯示、不代買）\n- 公會工坊的專案可轉成製作清單",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Artisan",
@@ -72,10 +72,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Artisan.png",
     "Punchline": "自動執行製作技能，支援製作清單與耐力模式。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793187084",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793187084",
-    "Changelog": "- 材料查價：Universalis 回應超過 8 MB 時放棄這次回應並記一行警告，不再整包收進記憶體\n- 製作巨集與標準解算器：中級加工沒接在加工後面時，下一步改從加工重新連擊，不再接 46 CP 的上級加工；巨集頁的 CP 合計也照這個規則算",
-    "LastUpdate": 1795641584
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793238890",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793238890",
+    "Changelog": "- 製作巨集：巨集頁的 CP 合計把「加工連攜（精煉加工路線）」照實際順序算（先加工 18、接上的精煉加工 24），之前順序對調，用了單數次時多算 6 CP\n- 製作模擬：精煉加工只有接在加工後面才多疊一層內靜，和遊戲一致（之前不論前一招是什麼都多算一層，預測的內靜與品質偏高）",
+    "LastUpdate": 1795642609
   },
   {
     "Author": "Herculezz",
@@ -679,7 +679,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.30.0.14",
+    "AssemblyVersion": "7.30.0.15",
     "Description": "用 /li 指令、傳送面板或地圖，快速前往其他世界、城內乙太之晶與住宅。\n- 跨界傳送：/li <世界名稱> 前往其他世界或資料中心；/li 不帶參數會回到自己原本的世界\n- 城內乙太之晶：/li <目的地>，或直接點區域地圖上的城內乙太之晶標記\n- 快捷目的地：市場佈告板、個人房屋、公會房屋、公寓、旅店、大國防聯軍、無人島、新月島、渴望灣與行星法恩娜等\n- 傳送面板與收藏視窗（/li panel）：搜尋、收藏與備註傳送點；乙太之光可設定自訂落點，抵達後自動走過去（需搭配 vnavmesh）\n- 地址簿、自訂指令別名、經好友名單前往好友的房屋（/li friend <好友名字>）\n- /li stop 中止目前所有傳送與移動",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -706,10 +706,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "用指令或面板快速前往其他世界、城內乙太之晶與住宅。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790937097",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790937097",
-    "Changelog": "- 維護更新（插件本身不變）",
-    "LastUpdate": 1795599464
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793238597",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793238597",
+    "Changelog": "- 直接進渴望灣：騎往駕駛威的內建座標若走不到（逾時或停下時摸不到駕駛威），改用導航網格走到駕駛威目前的位置再對話",
+    "LastUpdate": 1795642566
   },
   {
     "Author": "apetih",
