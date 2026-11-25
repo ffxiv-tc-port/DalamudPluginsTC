@@ -116,7 +116,7 @@
     "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
-    "AssemblyVersion": "7.30.0.13",
+    "AssemblyVersion": "7.30.0.14",
     "Description": "自動釣魚：依咬鉤型態與等待時間自動提鉤，並可用預設為每種魚、每種釣餌設定釣法。\n- 自動拋竿、以小釣大、換釣餌，自動施放釣魚技能與使用道具\n- 自動刺魚：依魚的尺寸與速度出手\n- 出海垂釣：上船後整趟自動拋竿、換預設與釣餌；每趟手動開始，走到船邊需搭配 vnavmesh\n- 「天氣與時段」分頁：顯示各種魚的天氣與時間條件，只顯示、不會自動開始或停止釣魚\n- 社群預設：取得其他玩家分享的預設，也能匯出自己的\n- 釣到稀有魚時請塔塔露出聲提醒（需搭配 TataruPraise）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoHook",
@@ -144,10 +144,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoHook.png",
     "Punchline": "自動拋竿、提鉤與刺魚，可為每種魚設定釣法。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791309615",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791309615",
-    "Changelog": "- 釣到魚的通知被別的插件擋下時，改從聊天訊息補記：換餌規則、計數、拍擊水面與停手條件不再整場失效\n- 宇宙探索：要釣到幾種不同魚的任務，不再用雙重／三重提鉤，改用一般提鉤（設定頁可關）",
-    "LastUpdate": 1795606651
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791442186",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791442186",
+    "Changelog": "- 宇宙探索數量型釣魚：只在起獲多條的魚放雙重／三重提鉤，只算條數的任務不放引誘，省下的 GP 留給多重提鉤",
+    "LastUpdate": 1795609170
   },
   {
     "Author": "кайт машина (Puni.sh)",
