@@ -205,7 +205,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.67",
+    "AssemblyVersion": "7.30.0.68",
     "Description": "提供 Boss 戰雷達、自動循環、冷卻計劃與 AI 功能，幫助您輕鬆應對各種 Boss 機制。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -222,10 +222,10 @@
     ],
     "Punchline": "不再因副本機制失誤",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790607309",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790607309",
-    "Changelog": "- 樂欲之所甌博訥修道院 聖騎士阿格莉亞絲：無雙閃電突刺的圓與環，第一發讀條時就把同一落點的第二發一起畫出來（提早約 4.6 秒），先到的用危險色\n- 樂欲之所甌博訥修道院 機工士姆斯塔迪奧：維護讀條一開始就畫出連線的勞動型鐵巨人／古代機工兵器之後要放的執行壓縮與衛星光束（提早約 12 秒），AI 在判定前 6 秒開始閃；探照燈追人時畫出它會炸開的 5 碼範圍\n- 樂欲之所甌博訥修道院 聖騎士阿格莉亞絲：舉著聖盾防禦再按一次時不再被當成放下盾，BMR 會繼續要求停手，自動循環不會在這空檔出招把盾打掉\n- 樂欲之所甌博訥修道院 聖天使阿爾蒂瑪：錘擊提早約 16 秒預告、激流照路線預告，究極幻想期間雷達換成拉姆札的護盾圈\n- 樂欲之所甌博訥修道院 雷神希德：雷神式聖劍技各型從首領讀條起就畫出落點並閃避，劍鬥技場的圓形競技場也會換上雷達",
-    "LastUpdate": 1795593084,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790646757",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790646757",
+    "Changelog": "- 紅玉火山獄之蓋 玄武：玄冥瀑散開的判定時間改成錄影實測的約 3.2 秒（原本猜 5 秒，AI 會以為還有時間）\n- 紅玉火山獄之蓋 鐮鼬：野鐮照大鐮風之間的連線預先畫出三段衝鋒路線；玉風自爆前 8 秒畫出範圍（自爆時間只量到一輪，近似）\n- 紅玉火山獄之蓋 大岳丸：噴火飛び之後王身邊每秒一跳的玄武熔岩、徒手標出的岩棍落點畫進危險區，AI 會離開王身邊並避開下一跳的落點",
+    "LastUpdate": 1795593857,
     "CategoryTags": [
       "Jobs"
     ]
