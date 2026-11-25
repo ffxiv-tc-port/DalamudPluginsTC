@@ -253,7 +253,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.76",
+    "AssemblyVersion": "7.30.0.77",
     "Description": "戰鬥機制輔助插件：在雷達上畫出場地、敵人與即將到來的危險區，並提示機制怎麼處理。\n- 雷達與機制提示：依首領模組畫出各種 AOE、站位與解法；沒有專屬模組的討伐殲滅戰、大型任務與迷宮挑戰，也會畫出場地與照讀條猜出的危險區。\n- AI 移動與閃避：依安全區自動走位、閃避與選目標。預設在插件載入時開啟，你可以在 AI 設定關閉，或按住暫停鍵（預設 Alt）暫時自己走位；不建議與陌生玩家同隊時使用。\n- 自動循環與減傷：內建循環預設與冷卻計劃器；也可以只用「預測減傷」在全體傷害與死刑之前先開減傷，和其他循環插件並行。\n- 深層迷宮與寶物庫：小地圖、自動走到傳送點與寶箱、迴避已知陷阱，寶物庫的獎勵怪優先打。\n- 給其他插件的介面：提供傷害預告、停手時機、打斷目標與位移落點安全等查詢，可搭配 WrathCombo、AutoDuty 等插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -280,10 +280,10 @@
     ],
     "Punchline": "畫出副本機制的危險區與解法提示，並可由 AI 自動閃避",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792694478",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792694478",
-    "Changelog": "- 複製工廠廢墟 霍布斯：直線分攤提示留 1 碼餘裕，AI 站得更靠中間\n- 複製工廠廢墟 霍布斯：雷射照射（每個平台一道直線分攤）加上分攤提示，AI 會站進自己平台那道直線\n- 休養勝地布雷福洛克斯野營地：衝浪水蜥的水浪吐息沒有預兆，改成常駐標出牠正前方，沒被牠盯上時 AI 不站那裡\n- 對龍城塞石衛塔：通道牆上的小雙足飛龍噴火（熾熱彌漫）前約 2 秒，AI 會先離開那道直線範圍",
-    "LastUpdate": 1795631954,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792980919",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792980919",
+    "Changelog": "- 新增多變迷宮 阿羅阿羅島 羅庫羅庫伊 首領模組（移植上游）\n- 新增多變迷宮 阿羅阿羅島 斯塔緹絲 首領模組（移植上游）\n- 新增多變迷宮 阿羅阿羅島 拉拉魯 首領模組（移植上游）\n- 新增多變迷宮 阿羅阿羅島 凱圖嘟凱 首領模組（移植上游）\n- 新增多變迷宮 阿羅阿羅島 庫阿庫阿 首領模組（移植上游）\n- AI：24 人團隊任務中，別人身上的分散圈不再多留 1 米，場地不會被分散圈塞滿（設定可關）",
+    "LastUpdate": 1795637478,
     "CategoryTags": [
       "Jobs"
     ]
@@ -1022,7 +1022,7 @@
     "Author": "daemitus, croizat",
     "Name": "Something Need Doing",
     "InternalName": "SomethingNeedDoing",
-    "AssemblyVersion": "7.30.0.6",
+    "AssemblyVersion": "7.30.0.7",
     "Description": "擴充遊戲的巨集系統：巨集不限行數，還能用 Lua 寫腳本。輸入 /snd 開啟。\n\n- 相容遊戲原生巨集語法，另外擴充等待、迴圈、條件等指令與修飾詞\n- 可同時執行多個巨集，隨時暫停、恢復或停止，也能指定迴圈次數\n- Lua 腳本可讀取角色、背包、任務、副本等狀態，操作遊戲視窗，並呼叫其他插件\n- Lua 可控制 AutoRetainer 與 ICE（需另外安裝這兩個插件），也能讀深層迷宮的樓層狀態\n- 巨集跑完或出錯停下時可請塔塔露出聲提醒（需搭配 TataruPraise）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SomethingNeedDoing",
@@ -1045,10 +1045,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SomethingNeedDoing.png",
     "Punchline": "不限行數的巨集與 Lua 腳本，可同時執行多個。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790749880",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790749880",
-    "Changelog": "- 維護更新（插件本身不變）",
-    "LastUpdate": 1795595866,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792980248",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/792980248",
+    "Changelog": "- 設定頁「CraftLoop 最大等待值」「CraftLoop 回顯」改成在不使用 CraftLoop 範本時顯示（只有這時候才有作用）\n- 「錯誤提示音」恢復作用：巨集出錯停下時依設定的頻率／持續時間／次數發出提示音；「從製作筆記視窗開始製作循環」「最大逾時重試次數」改為停用並標示「無作用」",
+    "LastUpdate": 1795637426,
     "CategoryTags": [
       "Utility"
     ]
