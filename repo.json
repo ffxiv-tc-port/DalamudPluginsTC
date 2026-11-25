@@ -81,7 +81,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.30.0.11",
+    "AssemblyVersion": "7.30.0.12",
     "Description": "讓角色沿著內建路線自動通過副本：按下開始後才接手，隨時可停止。可用親信戰友、劇情輔助器、冒險者分隊、多變迷宮或一般模式。\n- 需搭配 vnavmesh、BossModReborn 與一款戰鬥循環插件（WrathCombo，或 BossModReborn 的自動循環）\n- 自動升等：依等級挑選合適的副本循環練等，可自動換上最佳裝備\n- 排程器：多個副本依序跑，可存成播放清單重複使用\n- 輪次之間可自動修理、精製魔晶石、分解、籌備稀有品繳交，並交給 AutoRetainer 處理僱員\n- 同一場副本死亡達設定次數會自動停下；自己停下時發出通知，可搭配 TataruPraise 語音提醒\n- 指令 /ad 開啟主視窗，/ad start、/ad stop 開始與停止",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -107,10 +107,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "沿著內建路線自動通過副本，戰鬥交給戰鬥插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790936007",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790936007",
-    "Changelog": "- 介面用語改用台服譯名：親信戰友、劇情輔助器",
-    "LastUpdate": 1795599450
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791182123",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791182123",
+    "Changelog": "- 設定頁補上三句繁中翻譯（靠近坦克、其他插件暫時接管設定的提示）\n- 修正某些路線檔（檔名大小寫和舊版不同的）每次載入都重新下載\n- 連按「跳過步驟」快轉時，不再把等待秒數改短寫回路線檔\n- 卡住時不再自動跳過首領步驟；自動跳步後副本沒打完，不再說「全部跑完」而是請你接手\n- 澤梅爾要塞：魔導終端沒點亮就重站一次（最多重做 2 次），還是沒亮就停下請你接手\n- 死亡後復活會自動接續副本路線（以一般模式跑分隊攻略也會；同一場死兩次才停）",
+    "LastUpdate": 1795604131
   },
   {
     "Author": "Det",
@@ -954,7 +954,7 @@
     "Author": "UnknownX",
     "Name": "QoL Bar",
     "InternalName": "QoLBar",
-    "AssemblyVersion": "7.30.0.1",
+    "AssemblyVersion": "7.30.0.2",
     "Description": "此插件旨在為聊天指令或其他插件提供簡單、可自訂且隨時可用的介面，\n減少為達成類似效果而需要使用巨集或佔用快捷列空間的需求。\n\n此插件初次啟動時應會顯示在遊戲視窗底部中央的一個小方框。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/QoLBar",
@@ -979,10 +979,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/QoLBar.png",
     "Punchline": "可自訂的 ImGui 快捷列",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758409778",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758409778",
-    "Changelog": "- 台服 7.3 改版：版號推進到 7.30（插件功能不變）",
-    "LastUpdate": 1794907064
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791182157",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791182157",
+    "Changelog": "- 圖示瀏覽器補上「戰略板」分類繁中翻譯",
+    "LastUpdate": 1795604161
   },
   {
     "Author": "Taurenkey, Kagekazu",
@@ -1444,7 +1444,7 @@
     "Author": "liza, qstxiv, & various contributors",
     "Name": "Questionable",
     "InternalName": "Questionable",
-    "AssemblyVersion": "7.30.0.7",
+    "AssemblyVersion": "7.30.0.8",
     "Description": "自動跑任務的插件：按下開始後依序導航到任務目標，處理對話、互動與戰鬥，隨時可停止。\n- 支援主線與支線任務、部分友好部族任務與採集類任務\n- 需搭配 vnavmesh、Lifestream、TextAdvance，以及一款戰鬥插件（BossModReborn 等）\n- 友好部族日常：一次排多個任務時先做最近的目標，排入的任務全部交完就停下\n- 自動接續（預設關）：沒有任務可做時繼續等下一個任務\n- 走到需要手動處理的步驟會停下並提示，可搭配 NotificationMaster 跳系統通知、TataruPraise 出聲提醒\n- 指令 /qst 開啟任務視窗，/qst start、/qst stop 開始與停止",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1468,10 +1468,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Questionable.png",
     "Punchline": "自動導航並完成主線、支線等任務。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790937410",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790937410",
-    "Changelog": "- 維護更新（插件本身不變）",
-    "LastUpdate": 1795599535
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791182472",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791182472",
+    "Changelog": "- 任務日誌篩選補上「隱藏已完成的任務」繁中翻譯",
+    "LastUpdate": 1795604226
   },
   {
     "Author": "NightmareXIV",
@@ -1857,7 +1857,7 @@
     "Author": "alydev",
     "Name": "GatheringPathRenderer",
     "InternalName": "GatheringPathRenderer",
-    "AssemblyVersion": "7.30.0.7",
+    "AssemblyVersion": "7.30.0.8",
     "Description": "[Questionable 開發用插件]：使用 Pictomancy 繪製採集點路徑，供路徑資料編輯者使用。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Questionable",
@@ -1878,10 +1878,10 @@
     "LoadPriority": 0,
     "Punchline": "[Questionable 開發用] 繪製採集路徑點",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790937402",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790937402",
-    "LastUpdate": 1795599535,
-    "Changelog": "- 維護更新（插件本身不變）"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791182493",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791182493",
+    "LastUpdate": 1795604226,
+    "Changelog": "- 任務日誌篩選補上「隱藏已完成的任務」繁中翻譯"
   },
   {
     "Author": "WildWolf",
