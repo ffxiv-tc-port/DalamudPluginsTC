@@ -468,7 +468,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "GatherBuddy Reborn",
     "InternalName": "GatherbuddyReborn",
-    "AssemblyVersion": "7.30.0.19",
+    "AssemblyVersion": "7.30.0.20",
     "Description": "採集與釣魚的助手：用物品名稱找出採集點與釣場，追蹤限時採集點的出現時間與天氣，並可自動採集。\n- 自動採集（啟用後才開始）：依清單自動導航、採集並收滿指定數量，途中可自動精選、精製魔晶石與修理；需搭配 vnavmesh，跨區移動可搭配 Lifestream，釣魚可搭配 AutoHook\n- 自動採集清單：可從 TeamCraft 匯入，其他插件也能把缺的素材加進來（例如 Artisan）；限時採集點的道具會顯示預估還要多久才採得完\n- 提醒與採集視窗：依採集點出現時間與天氣提醒，可自訂多組採集清單快速切換\n- 釣魚計時器、刺魚輔助工具、釣魚紀錄與統計\n- 指令 /gbr 開啟主視窗，/gather <物品名稱> 標出最近的採集點並傳送過去",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/GatherbuddyReborn",
@@ -498,10 +498,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/GatherbuddyReborn.png",
     "Punchline": "查詢採集點與釣場，並可自動導航採集。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790936761",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790936761",
-    "Changelog": "- 維護更新（插件本身不變）",
-    "LastUpdate": 1795599440
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793357251",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793357251",
+    "Changelog": "- 釣魚資料：修正 122 條 7.2 以前的魚的釣餌、提鉤、時間與天氣條件，另補 199 條海釣魚的分數與雙重／三重提鉤數（收上游）",
+    "LastUpdate": 1795645011
   },
   {
     "Author": "img02",
