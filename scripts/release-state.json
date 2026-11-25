@@ -14,7 +14,7 @@
   "vnavmesh": "v7.30.0.4",
   "InventoryTools": "v7.30.0.19",
   "visland": "v7.30.0.6",
-  "Lifestream": "v7.30.0.15",
+  "Lifestream": "v7.30.0.16",
   "SubmarineTracker": "v7.30.0.3",
   "YesAlready": "v7.30.0.5",
   "GatherbuddyReborn": "v7.30.0.19",
@@ -23,7 +23,7 @@
   "LazyLoot": "v7.30.0.2",
   "MiniMappingway": "v7.30.0.1",
   "NecroLens": "v7.30.0.4",
-  "NotificationMaster": "v7.30.0.2",
+  "NotificationMaster": "v7.30.0.3",
   "PalacePal": "v7.30.0.4",
   "PixelPerfect": "v7.30.0.1",
   "PriceInsight": "v7.30.0.8",
@@ -50,7 +50,7 @@
   "ChilledLeves": "v7.30.0.4",
   "BOCCHI": "v7.30.0.5",
   "ICE": "v7.30.0.33",
-  "TCToolbox": "v7.30.0.26",
+  "TCToolbox": "v7.30.0.27",
   "WondrousTailsSolver": "v7.30.0.1",
   "GatheringPathRenderer": "v7.30.0.8",
   "DeepDungeonDex": "v7.30.0.4",
@@ -71,5 +71,5 @@
   "TataruPraise": "v7.30.0.1",
   "GilDelta": "v7.30.0.3",
   "HoardFarm": "v7.30.0.4",
-  "SimpleTweaksPlugin": "v7.30.0.11"
+  "SimpleTweaksPlugin": "v7.30.0.12"
 }

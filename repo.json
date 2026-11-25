@@ -679,7 +679,7 @@
     "Author": "NightmareXIV",
     "Name": "Lifestream",
     "InternalName": "Lifestream",
-    "AssemblyVersion": "7.30.0.15",
+    "AssemblyVersion": "7.30.0.16",
     "Description": "用 /li 指令、傳送面板或地圖，快速前往其他世界、城內乙太之晶與住宅。\n- 跨界傳送：/li <世界名稱> 前往其他世界或資料中心；/li 不帶參數會回到自己原本的世界\n- 城內乙太之晶：/li <目的地>，或直接點區域地圖上的城內乙太之晶標記\n- 快捷目的地：市場佈告板、個人房屋、公會房屋、公寓、旅店、大國防聯軍、無人島、新月島、渴望灣與行星法恩娜等\n- 傳送面板與收藏視窗（/li panel）：搜尋、收藏與備註傳送點；乙太之光可設定自訂落點，抵達後自動走過去（需搭配 vnavmesh）\n- 地址簿、自訂指令別名、經好友名單前往好友的房屋（/li friend <好友名字>）\n- /li stop 中止目前所有傳送與移動",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Lifestream",
@@ -706,10 +706,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Lifestream.png",
     "Punchline": "用指令或面板快速前往其他世界、城內乙太之晶與住宅。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793238597",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793238597",
-    "Changelog": "- 直接進渴望灣：騎往駕駛威的內建座標若走不到（逾時或停下時摸不到駕駛威），改用導航網格走到駕駛威目前的位置再對話",
-    "LastUpdate": 1795642566
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793302175",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793302175",
+    "Changelog": "- 台服角色在角色選擇畫面的傳送目的地不再多出大洋洲（Materia）",
+    "LastUpdate": 1795643864
   },
   {
     "Author": "apetih",
@@ -817,7 +817,7 @@
     "Author": "NightmareXIV",
     "Name": "NotificationMaster",
     "InternalName": "NotificationMaster",
-    "AssemblyVersion": "7.30.0.2",
+    "AssemblyVersion": "7.30.0.3",
     "Description": "遊戲視窗最小化或不在前景時，用系統匣通知、工作列閃爍、音效等方式提醒你遊戲內發生的事件。每種事件可各自開關、設定條件與提醒方式。\n- 副本：配對成功、副本開始、準備確認、戰鬥倒數、過場動畫結束、隊友看完過場動畫\n- 其他：聊天訊息、GP 恢復、釣魚上鉤、連線錯誤、監控名單裡的怪物進入戰鬥、招募隊伍成員異動\n- 接近地圖旗標；抵達目的地（需搭配 vnavmesh）\n- 通知樞紐：其他插件送來的通知，由你設定的路由表決定用哪些方式提醒\n- 可請塔塔露念出提醒（需搭配 TataruPraise）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/NotificationMaster",
@@ -841,10 +841,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/NotificationMaster.png",
     "Punchline": "遊戲視窗最小化或不在前景時，提醒你遊戲內發生的事件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790751704",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790751704",
-    "Changelog": "- 維護更新（插件本身不變）",
-    "LastUpdate": 1795595853
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793301809",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793301809",
+    "Changelog": "- 聊天訊息通知：選「系統資訊」這類頻道的規則，自己相關的那一半訊息也會觸發了",
+    "LastUpdate": 1795643847
   },
   {
     "Author": "Liza Carvelli (Puni.sh)",
@@ -1789,7 +1789,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.30.0.26",
+    "AssemblyVersion": "7.30.0.27",
     "Description": "台服自製的工具箱，把許多獨立的小功能做成模組，在設定視窗逐一開關。只有少數純顯示、只寫紀錄或備份設定的模組預設開啟，其餘預設關閉。\n- 背包・裝備：按住指定鍵右鍵搬移物品、快速交易、背包一鍵清倉、僱員批次取回、製作清單缺料與採買\n- 戰鬥・小隊：隊員招募的過濾、排序與自動刷新，F.A.T.E. 總覽與導航，天書奇談換格建議，紛爭前線目標面板與戰績\n- 公會・生活：角色總覽、公會合建素材一鍵全交、公會特效自動使用、自動園圃作業、自動餵食陸行鳥\n- 介面・雜項：周邊玩家統計、換世界與副本區面板、DailyDuty 未完成任務清單、插件設定自動備份\n- 急停模組：開啟後可用熱鍵或 /tcstopall 把所有會自己動的插件一次叫停\n- 指令 /tctoolbox 開啟設定視窗",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1814,10 +1814,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服自製工具箱：背包、戰鬥、公會與介面的小功能模組。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793204776",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793204776",
-    "Changelog": "- 換 World 與副本區：查價面板每小時在紀錄寫一行對 Universalis 的請求彙總\n- 公會特效自動使用：被遊戲拒絕時寫出具體原因（已達上限、同類生效中、沒有許可權），設定頁顯示最後一次原因",
-    "LastUpdate": 1795641848
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793301961",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793301961",
+    "Changelog": "- 國防聯軍分隊停止原因的系統訊息線索、座標開地圖的頻道名，改看頻道本身不受發話者旗標影響",
+    "LastUpdate": 1795643837
   },
   {
     "Author": "daemitus, MidoriKami",
@@ -2462,7 +2462,7 @@
     "Author": "Caraxi",
     "Name": "Simple Tweaks Plugin",
     "InternalName": "SimpleTweaksPlugin",
-    "AssemblyVersion": "7.30.0.11",
+    "AssemblyVersion": "7.30.0.12",
     "Description": "收錄聊天、指令、介面、提示、便利性等各類小調整，在不大幅改變遊戲的前提下讓日常操作更順手。每一項都能個別開關，預設全部關閉。\n- 輸入 /tweaks 開啟設定視窗，逐項啟用與設定\n- 例：修正「/target」指令、總是選「是」、HP 條顯示護盾、顯示食物與藥品的預期數值\n- 內建台服用語的繁體中文介面\n- 不上報使用統計\n- 遊戲改版後有項目對不上時，只停用受影響的項目，其他照常運作",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/SimpleTweaksPlugin",
@@ -2487,9 +2487,9 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/SimpleTweaksPlugin.png",
     "Punchline": "收錄各類可個別開關的小調整，讓日常操作更順手。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790752593",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/790752593",
-    "Changelog": "- 維護更新（插件本身不變）",
-    "LastUpdate": 1795595845
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793302063",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793302063",
+    "Changelog": "- 「更整潔的世界旅行選單」「記住所選世界」「聊天玩家名稱顏色」現在認得台服 8 個世界",
+    "LastUpdate": 1795643828
   }
 ]
