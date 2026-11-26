@@ -81,7 +81,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.30.0.14",
+    "AssemblyVersion": "7.30.0.15",
     "Description": "讓角色沿著內建路線自動通過副本：按下開始後才接手，隨時可停止。可用親信戰友、劇情輔助器、冒險者分隊、多變迷宮或一般模式。\n- 需搭配 vnavmesh、BossModReborn 與一款戰鬥循環插件（WrathCombo，或 BossModReborn 的自動循環）\n- 自動升等：依等級挑選合適的副本循環練等，可自動換上最佳裝備\n- 排程器：多個副本依序跑，可存成播放清單重複使用\n- 輪次之間可自動修理、精製魔晶石、分解、籌備稀有品繳交，並交給 AutoRetainer 處理僱員\n- 同一場副本死亡達設定次數會自動停下；自己停下時發出通知，可搭配 TataruPraise 語音提醒\n- 指令 /ad 開啟主視窗，/ad start、/ad stop 開始與停止",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -107,10 +107,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "沿著內建路線自動通過副本，戰鬥交給戰鬥插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794422260",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794422260",
-    "Changelog": "- 冒險者小隊小怪路段：提供「目前由 AutoDuty 決定目標」給其他自動選目標插件（例：TCToolbox 自動選中目標），讓 AutoDuty 先下號令讓坦克接手\n- 王戰限時必殺小怪：BMR 標了優先度時，更優先的一出現就立刻換過去（例：魔獸領域日影地修練所第三王的毒火優先於怨火）；同優先度不來回切\n- 冒險者小隊小怪路段：目標被別的插件或手動先選好時也會立刻下「號令：戰鬥開始」；新增「被怪打時下號令讓坦克接走」（預設開）",
-    "LastUpdate": 1795669840
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794619232",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794619232",
+    "Changelog": "- 澤梅爾要塞魔導終端：站上去時若有怪在打玩家，先照常閃避、等分隊坦克把怪接走再站著，不再同時吃怪的攻擊和偏屬性水晶",
+    "LastUpdate": 1795674666
   },
   {
     "Author": "Det",
@@ -253,7 +253,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.83",
+    "AssemblyVersion": "7.30.0.84",
     "Description": "戰鬥機制輔助插件：在雷達上畫出場地、敵人與即將到來的危險區，並提示機制怎麼處理。\n- 雷達與機制提示：依首領模組畫出各種 AOE、站位與解法；沒有專屬模組的討伐殲滅戰、大型任務與迷宮挑戰，也會畫出場地與照讀條猜出的危險區。\n- AI 移動與閃避：依安全區自動走位、閃避與選目標。預設在插件載入時開啟，你可以在 AI 設定關閉，或按住暫停鍵（預設 Alt）暫時自己走位；不建議與陌生玩家同隊時使用。\n- 自動循環與減傷：內建循環預設與冷卻計劃器；也可以只用「預測減傷」在全體傷害與死刑之前先開減傷，和其他循環插件並行。\n- 深層迷宮與寶物庫：小地圖、自動走到傳送點與寶箱、迴避已知陷阱，寶物庫的獎勵怪優先打。\n- 給其他插件的介面：提供傷害預告、停手時機、打斷目標與位移落點安全等查詢，可搭配 WrathCombo、AutoDuty 等插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -280,10 +280,10 @@
     ],
     "Punchline": "畫出副本機制的危險區與解法提示，並可由 AI 自動閃避",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794401972",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794401972",
-    "Changelog": "- 日影地修練所 獸鬥士 坦伽塔：火靈的守護期間把毒火、怨火標成限時必殺（毒火優先），AutoDuty 會自動切目標過去；冒險者小隊的號令也改成毒火一出現就叫分隊轉打毒火。澤梅爾要塞 巴特拉爾無敵期間的偏屬性水晶同樣標成限時必殺",
-    "LastUpdate": 1795669350,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794619900",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794619900",
+    "Changelog": "- AI 站到場地邊界外一碼以上、腳下又有範圍攻擊時，會判定要馬上走，不再當成「還不急」站著連吃好幾發\n- 分隊攻略任務首領戰：「號令：戰鬥開始」真的會下了（之前遊戲回報沒有 NPC 隊員就整場不下令）\n- 澤梅爾要塞 巴特拉爾：首領轉打你時，AI 不再為了「別讓順劈掃到隊友」而只剩往首領身上跑一條路，荒蕪新星改往側邊閃",
+    "LastUpdate": 1795674725,
     "CategoryTags": [
       "Jobs"
     ]
