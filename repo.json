@@ -2112,7 +2112,7 @@
     "Author": "Anna, Maintained by Caraxi",
     "Name": "Peeping Tom",
     "InternalName": "PeepingTom",
-    "AssemblyVersion": "7.30.0.1",
+    "AssemblyVersion": "7.30.0.2",
     "Description": "顯示目前正在鎖定你、以及先前曾鎖定你的玩家。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/PeepingTom",
@@ -2133,10 +2133,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/PeepingTom.png",
     "Punchline": "顯示誰正在鎖定你。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758411300",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/758411300",
-    "LastUpdate": 1794907145,
-    "Changelog": "- 台服 7.3 改版：版號推進到 7.30（插件功能不變）"
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/795044667",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/795044667",
+    "LastUpdate": 1795683218,
+    "Changelog": "- 同一位玩家盯著你時會累計次數，並保存每個人的盯人紀錄（可在新的紀錄視窗查）"
   },
   {
     "Author": "Felys, aers",
