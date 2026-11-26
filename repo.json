@@ -1714,7 +1714,7 @@
     "Author": "Chalkos",
     "Name": "Marketbuddy",
     "InternalName": "Marketbuddy",
-    "AssemblyVersion": "7.30.0.23",
+    "AssemblyVersion": "7.30.0.24",
     "Description": "市場佈告板上架、改價與下架的操作輔助。每個動作都要你自己按下才開始，不會被遊戲事件或別的插件觸發；補上架、巡檢與多角色重掛預設關閉。\n- 調整價格：一併開啟市場上的標價與交易履歷，點一列就填入比它低 1 Gil 的價格；按住 Ctrl 沿用剪貼簿的價格，按住 Shift 暫時略過\n- 批次重掛與下架：按一下依市場最低價重新定價這位僱員的商品，也可逐一拜訪所有僱員；附異常低價保護，可改參考最近成交價（預設關）\n- 全僱員補上架、背包上架到有空位的僱員（手動開始、預設關）：逐名僱員把你勾選的道具上架，可指定不自動上架的道具\n- 跨世界價格巡檢（手動開始、預設關）：在每個世界按一次掃描，查自己掛售中道具的當地行情；只查價，不改價、不買\n- 多角色重掛（每一輪都要你手動啟動、預設關）需搭配 AutoRetainer；巡檢涵蓋所有角色需搭配 InventoryTools，換世界需搭配 Lifestream\n- 指令 /mbuddy 開啟設定視窗，/mbuddy survey 開啟巡檢視窗",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/Marketbuddy",
@@ -1739,10 +1739,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/Marketbuddy.png",
     "Punchline": "市場佈告板上架、改價、下架與比價的操作輔助。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794185310",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794185310",
-    "Changelog": "- 多角色重掛新增「背包上架＋重掛」模式：每個角色先把背包裡預先勾選的道具上架到有空位的僱員再重掛，不賣給商店（預設仍是只重掛）",
-    "LastUpdate": 1795664296
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794992662",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794992662",
+    "Changelog": "- 跨世界價格巡檢可以用區網連線把整輪交給另一台電腦跑，兩台查到的行情會互相合併（預設關閉）",
+    "LastUpdate": 1795682410
   },
   {
     "Author": "Faye",
