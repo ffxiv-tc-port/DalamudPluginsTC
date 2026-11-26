@@ -116,7 +116,7 @@
     "Author": "Det",
     "Name": "AutoHook",
     "InternalName": "AutoHook",
-    "AssemblyVersion": "7.30.0.19",
+    "AssemblyVersion": "7.30.0.20",
     "Description": "自動釣魚：依咬鉤型態與等待時間自動提鉤，並可用預設為每種魚、每種釣餌設定釣法。\n- 自動拋竿、以小釣大、換釣餌，自動施放釣魚技能與使用道具\n- 自動刺魚：依魚的尺寸與速度出手\n- 出海垂釣：上船後整趟自動拋竿、換預設與釣餌；每趟手動開始，走到船邊需搭配 vnavmesh\n- 「天氣與時段」分頁：顯示各種魚的天氣與時間條件，只顯示、不會自動開始或停止釣魚\n- 社群預設：取得其他玩家分享的預設，也能匯出自己的\n- 釣到稀有魚時請塔塔露出聲提醒（需搭配 TataruPraise）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoHook",
@@ -144,10 +144,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoHook.png",
     "Punchline": "自動拋竿、提鉤與刺魚，可為每種魚設定釣法。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/795796776",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/795796776",
-    "Changelog": "- 宇宙探索釣魚：只算條數的任務裡 preset 沒開某種咬鉤的雙重／三重提鉤、而那種魚其實能一次起好幾條時，插件紀錄會寫一行說明",
-    "LastUpdate": 1795696030
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/795886856",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/795886856",
+    "Changelog": "- 宇宙探索釣魚：preset 可設定「專一垂釣後等華麗提鉤冷卻再拋竿」與「每條魚都算分的任務也只提 preset 有開的咬鉤」（供 ICE 內建 487 的新打法使用，預設不變）",
+    "LastUpdate": 1795697464
   },
   {
     "Author": "кайт машина (Puni.sh)",
@@ -1617,7 +1617,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.35",
+    "AssemblyVersion": "7.30.0.36",
     "Description": "宇宙探索自動化：按下開始後自動接取、執行並回報宇宙探索任務，依你勾選的任務與優先順序進行，隨時可停止。\n- 採集、釣魚、製作任務代為完成：採集需搭配 vnavmesh，釣魚需搭配 AutoHook，製作需搭配 Artisan\n- 任務挑選規則：階級順序、沒金星的優先、取得金星後自動停用；任務表可依金星率、平均耗時等效益欄排序\n- 「全職業研究進度」視窗：一頁看各職業的宇宙工具階段與研究項目進度，可直接換到該職業\n- 自動購買宇宙信用點數商店的道具、轉宇宙好運道；達到指定等級或點數時自動停止\n- 機甲行動只顯示資訊（技能範圍、冷卻、事件時間），不施放技能、不走位、不報名\n- 指令 /ice 開啟主視窗，/ice start、/ice stop 開始與停止",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1640,10 +1640,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "自動接取並完成宇宙探索任務，累積研究進度。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/795796788",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/795796788",
-    "Changelog": "- 宇宙探索：「【高難】緊急籌備水產食材」的內建釣魚設定改為傳說咬放三重／雙重提鉤，GP 有餘時先撒餌，湊滿 18 條快很多",
-    "LastUpdate": 1795696063
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/795886896",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/795886896",
+    "Changelog": "- 宇宙探索：「【高難+】調查熔火湧流的分布」第三階段的內建釣魚設定改為傳說咬也能放雙重／三重提鉤\n- 宇宙探索：「【高難+】採集精密淨水裝置所需的材料」改打法：只等深月水盾草與港灣利齒（22 秒後才咬的大魚），其他咬鉤馬上歇竿；釣到水盾草後放專一垂釣，等華麗提鉤轉好再拋竿",
+    "LastUpdate": 1795697458
   },
   {
     "Author": "Liza Carvelli",
