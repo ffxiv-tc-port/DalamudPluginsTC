@@ -1303,7 +1303,7 @@
     "Author": "cycleapple",
     "Name": "XIV 寶物地圖工具小幫手",
     "InternalName": "XivTreasureParty",
-    "AssemblyVersion": "7.30.0.3",
+    "AssemblyVersion": "7.30.0.4",
     "Description": "Dalamud 插件版本的 FFXIV 繁中寶物地圖工具小幫手。可與網頁版（https://cycleapple.github.io/xiv-tc-treasure-finder/）使用者混合組隊，即時同步同一份清單。支援建立/加入房間、手動新增寶物地圖、打開寶物地圖時自動選取、遊戲內開地圖打旗標、以自訂頻道指令（例如 /p 或 /cwl1）發送可點擊地圖連結、順序調整、完成勾選等。另外若有安裝 Mappy，可把隊伍清單裡尚未完成的藏寶點「全部」同時畫到 Mappy 的地圖上（不只一次一個旗標）。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/XivTreasureParty",
@@ -1330,10 +1330,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/XivTreasureParty.png",
     "Punchline": "繁中寶物地圖組隊協作，與網頁版即時共享同一個房間。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783626373",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/783626373",
-    "Changelog": "- 主視窗與藏寶圖清單跟著字型大小放大：字型調大時「操作」欄最右邊的「刪除」按鈕不再被截掉",
-    "LastUpdate": 1795450393
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/796667486",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/796667486",
+    "Changelog": "- 合併的同步連線只要被伺服器以 401／403 拒絕就改回 3 條，避免拒絕訊息和預期不同時整個隊伍連不上\n- 發送座標的訊息內容可以自訂：藏寶圖清單「訊息格式…」可改樣板，一鍵切成最簡的「/p 角色 地圖連結」（預設照舊是完整格式）\n- 新增「進階：臨時伺服器」：cycleapple 連線滿或連不上時，可改連自己或朋友架的臨時伺服器，房主可一鍵把清單搬過去並送出邀請網址（平時照舊用 cycleapple）\n- 同步連線從每人 3 條合併成 1 條，cycleapple 伺服器同時連線快滿時比較不容易被擋；連線已滿時狀態列會直接說明",
+    "LastUpdate": 1795709234
   },
   {
     "Author": "daemitus, croizat",
