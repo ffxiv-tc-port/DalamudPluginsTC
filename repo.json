@@ -253,7 +253,7 @@
     "Author": "The Combat Reborn Team",
     "Name": "Bossmod Reborn",
     "InternalName": "BossModReborn",
-    "AssemblyVersion": "7.30.0.84",
+    "AssemblyVersion": "7.30.0.85",
     "Description": "戰鬥機制輔助插件：在雷達上畫出場地、敵人與即將到來的危險區，並提示機制怎麼處理。\n- 雷達與機制提示：依首領模組畫出各種 AOE、站位與解法；沒有專屬模組的討伐殲滅戰、大型任務與迷宮挑戰，也會畫出場地與照讀條猜出的危險區。\n- AI 移動與閃避：依安全區自動走位、閃避與選目標。預設在插件載入時開啟，你可以在 AI 設定關閉，或按住暫停鍵（預設 Alt）暫時自己走位；不建議與陌生玩家同隊時使用。\n- 自動循環與減傷：內建循環預設與冷卻計劃器；也可以只用「預測減傷」在全體傷害與死刑之前先開減傷，和其他循環插件並行。\n- 深層迷宮與寶物庫：小地圖、自動走到傳送點與寶箱、迴避已知陷阱，寶物庫的獎勵怪優先打。\n- 給其他插件的介面：提供傷害預告、停手時機、打斷目標與位移落點安全等查詢，可搭配 WrathCombo、AutoDuty 等插件。",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/BossmodReborn",
@@ -280,10 +280,10 @@
     ],
     "Punchline": "畫出副本機制的危險區與解法提示，並可由 AI 自動閃避",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794619900",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794619900",
-    "Changelog": "- AI 站到場地邊界外一碼以上、腳下又有範圍攻擊時，會判定要馬上走，不再當成「還不急」站著連吃好幾發\n- 分隊攻略任務首領戰：「號令：戰鬥開始」真的會下了（之前遊戲回報沒有 NPC 隊員就整場不下令）\n- 澤梅爾要塞 巴特拉爾：首領轉打你時，AI 不再為了「別讓順劈掃到隊友」而只剩往首領身上跑一條路，荒蕪新星改往側邊閃",
-    "LastUpdate": 1795674725,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/797052358",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/797052358",
+    "Changelog": "- 水晶塔 希爾科斯塔：金剛不壞的守護者「星極拳」與才思敏捷的亞蒙「花腔」（沒有讀條的正面扇形）改為常駐危險區，非坦克的 AI 不再站在王正前方\n- 新增腐壞遺跡無限城市街古跡、水晶塔 希爾科斯塔的整座副本障礙物圖，魔科學研究所改用涵蓋整座副本的圖：沒有啟用中的首領模組時 AI 尋路會避開牆",
+    "LastUpdate": 1795715311,
     "CategoryTags": [
       "Jobs"
     ]
