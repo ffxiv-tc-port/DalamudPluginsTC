@@ -81,7 +81,7 @@
     "Author": "Herculezz",
     "Name": "AutoDuty",
     "InternalName": "AutoDuty",
-    "AssemblyVersion": "7.30.0.13",
+    "AssemblyVersion": "7.30.0.14",
     "Description": "讓角色沿著內建路線自動通過副本：按下開始後才接手，隨時可停止。可用親信戰友、劇情輔助器、冒險者分隊、多變迷宮或一般模式。\n- 需搭配 vnavmesh、BossModReborn 與一款戰鬥循環插件（WrathCombo，或 BossModReborn 的自動循環）\n- 自動升等：依等級挑選合適的副本循環練等，可自動換上最佳裝備\n- 排程器：多個副本依序跑，可存成播放清單重複使用\n- 輪次之間可自動修理、精製魔晶石、分解、籌備稀有品繳交，並交給 AutoRetainer 處理僱員\n- 同一場副本死亡達設定次數會自動停下；自己停下時發出通知，可搭配 TataruPraise 語音提醒\n- 指令 /ad 開啟主視窗，/ad start、/ad stop 開始與停止",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoDuty",
@@ -107,10 +107,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoDuty.png",
     "Punchline": "沿著內建路線自動通過副本，戰鬥交給戰鬥插件。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791296493",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/791296493",
-    "Changelog": "- 澤梅爾要塞：站魔導終端等點亮時，暫時請 BossMod AI 不要閃避（血量不足時照常閃）",
-    "LastUpdate": 1795606402
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794422260",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794422260",
+    "Changelog": "- 冒險者小隊小怪路段：提供「目前由 AutoDuty 決定目標」給其他自動選目標插件（例：TCToolbox 自動選中目標），讓 AutoDuty 先下號令讓坦克接手\n- 王戰限時必殺小怪：BMR 標了優先度時，更優先的一出現就立刻換過去（例：魔獸領域日影地修練所第三王的毒火優先於怨火）；同優先度不來回切\n- 冒險者小隊小怪路段：目標被別的插件或手動先選好時也會立刻下「號令：戰鬥開始」；新增「被怪打時下號令讓坦克接走」（預設開）",
+    "LastUpdate": 1795669840
   },
   {
     "Author": "Det",
@@ -1789,7 +1789,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.30.0.27",
+    "AssemblyVersion": "7.30.0.28",
     "Description": "台服自製的工具箱，把許多獨立的小功能做成模組，在設定視窗逐一開關。只有少數純顯示、只寫紀錄或備份設定的模組預設開啟，其餘預設關閉。\n- 背包・裝備：按住指定鍵右鍵搬移物品、快速交易、背包一鍵清倉、僱員批次取回、製作清單缺料與採買\n- 戰鬥・小隊：隊員招募的過濾、排序與自動刷新，F.A.T.E. 總覽與導航，天書奇談換格建議，紛爭前線目標面板與戰績\n- 公會・生活：角色總覽、公會合建素材一鍵全交、公會特效自動使用、自動園圃作業、自動餵食陸行鳥\n- 介面・雜項：周邊玩家統計、換世界與副本區面板、DailyDuty 未完成任務清單、插件設定自動備份\n- 急停模組：開啟後可用熱鍵或 /tcstopall 把所有會自己動的插件一次叫停\n- 指令 /tctoolbox 開啟設定視窗",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1814,10 +1814,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服自製工具箱：背包、戰鬥、公會與介面的小功能模組。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793301961",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/793301961",
-    "Changelog": "- 國防聯軍分隊停止原因的系統訊息線索、座標開地圖的頻道名，改看頻道本身不受發話者旗標影響",
-    "LastUpdate": 1795643837
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794422411",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794422411",
+    "Changelog": "- 自動選中目標：AutoDuty 跑冒險者小隊小怪路段時，沒有目標也不自動選，交給 AutoDuty 先下號令讓坦克接手（避免玩家先出手被圍）",
+    "LastUpdate": 1795669825
   },
   {
     "Author": "daemitus, MidoriKami",
