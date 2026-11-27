@@ -1617,7 +1617,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.37",
+    "AssemblyVersion": "7.30.0.38",
     "Description": "宇宙探索自動化：按下開始後自動接取、執行並回報宇宙探索任務，依你勾選的任務與優先順序進行，隨時可停止。\n- 採集、釣魚、製作任務代為完成：採集需搭配 vnavmesh，釣魚需搭配 AutoHook，製作需搭配 Artisan\n- 任務挑選規則：階級順序、沒金星的優先、取得金星後自動停用；任務表可依金星率、平均耗時等效益欄排序\n- 「全職業研究進度」視窗：一頁看各職業的宇宙工具階段與研究項目進度，可直接換到該職業\n- 自動購買宇宙信用點數商店的道具、轉宇宙好運道；達到指定等級或點數時自動停止\n- 機甲行動只顯示資訊（技能範圍、冷卻、事件時間），不施放技能、不走位、不報名\n- 指令 /ice 開啟主視窗，/ice start、/ice stop 開始與停止",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1640,10 +1640,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "自動接取並完成宇宙探索任務，累積研究進度。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/796437356",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/796437356",
-    "Changelog": "- 宇宙探索：「【高難】製作改良版月凝膠」釣到小跳肺魚後不再放專一垂釣（這種魚吃不到專一垂釣），省下的 GP 留給拍擊水面與撒餌\n- 宇宙探索：「【高難+】製作鰻魚預製菜」改照攻略先提一條強咬雜魚拍擊水面，再專等虛空鰻；撒餌改成 GP 400 以上才放，留 GP 給拍擊水面\n- 宇宙探索：「【高難+】如水晶一般的寶石」釣明月碧璽原石時 GP 不夠放三重提鉤也照樣提起來，不再放掉；華麗提鉤也不會再用在雜魚身上\n- 宇宙探索：「採集精密加工所需的水產品」的內建釣魚設定改成專刷黑冠尾鬥魚的魚影：謙遜之餌放滿三層還沒出現魚影就歇竿重拋，不再等雜魚咬鉤",
-    "LastUpdate": 1795705683
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/800541048",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/800541048",
+    "Changelog": "- 宇宙探索：「【高難+】採集魔泉環境的樣本」分數還沒到銀星時，月蝠鱝的 !!! 也會提起來；到銀星以後改成只等月底走鯨拚金星",
+    "LastUpdate": 1795784891
   },
   {
     "Author": "Liza Carvelli",
