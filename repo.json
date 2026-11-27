@@ -153,7 +153,7 @@
     "Author": "кайт машина (Puni.sh)",
     "Name": "AutoRetainer",
     "InternalName": "AutoRetainer",
-    "AssemblyVersion": "7.30.0.19",
+    "AssemblyVersion": "7.30.0.20",
     "Description": "自動處理僱員探險與公會工坊的遠航探索：到期就收回成果並重新派出。輸入 /autoretainer 開啟。\n\n- 僱員探險：在傳喚鈴前自動收取探險成果並重新委託，可順便存提 Gil、把指定物品賣掉或交給僱員保管\n- 潛水艇與飛空艇：返航後自動收回並重新出航，內建航線規劃；可自動補買桶裝青磷水（預設關）\n- 多角色模式：輪流登入各角色處理到期的僱員與遠航探索；「跑一輪就回來」處理完自動換回原本的角色\n- 籌備稀有品：前往大國防聯軍繳交，並照兌換清單花掉軍票（需搭配 Lifestream）\n- 角色列表顯示各角色的軍票、理符受理限額等額度，快滿時在列上看得見\n- 探險或遠航返航時可請塔塔露出聲提醒（需搭配 TataruPraise）",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/AutoRetainer",
@@ -175,10 +175,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/AutoRetainer.png",
     "Punchline": "自動收發僱員探險與公會潛水艇、飛空艇的遠航探索。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/801481822",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/801481822",
-    "Changelog": "- 稀有品繳交循環：繳交模式為「隱藏套裝中的物品」的角色，背包滿時可把從僱員取回的裝備先移到兵裝庫，一趟拿更多裝備（預設關）\n- 內部：新增把背包裝備放進兵裝庫的搬移核心（還沒有功能使用它）\n- 僱員存放：可指定一位僱員集中收可交易的裝備，其他僱員不再收（在僱員設定「可交易裝備集中到」選擇，預設不指定）\n- 僱員探險：查看探險報告時，在紀錄寫下帶回的獨佔道具「領取前是否已持有」與領取後的數量，離開傳喚鈴時彙總一行",
-    "LastUpdate": 1795801940,
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/801629172",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/801629172",
+    "Changelog": "- 稀有品繳交循環設定頁：加上「可交易裝備集中到」，每個角色一列（和僱員設定框裡的是同一個設定）",
+    "LastUpdate": 1795804876,
     "CategoryTags": [
       "Inventory"
     ]
