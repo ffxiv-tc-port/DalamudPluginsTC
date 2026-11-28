@@ -1617,7 +1617,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.39",
+    "AssemblyVersion": "7.30.0.40",
     "Description": "宇宙探索自動化：按下開始後自動接取、執行並回報宇宙探索任務，依你勾選的任務與優先順序進行，隨時可停止。\n- 採集、釣魚、製作任務代為完成：採集需搭配 vnavmesh，釣魚需搭配 AutoHook，製作需搭配 Artisan\n- 任務挑選規則：階級順序、沒金星的優先、取得金星後自動停用；任務表可依金星率、平均耗時等效益欄排序\n- 「全職業研究進度」視窗：一頁看各職業的宇宙工具階段與研究項目進度，可直接換到該職業\n- 自動購買宇宙信用點數商店的道具、轉宇宙好運道；達到指定等級或點數時自動停止\n- 機甲行動只顯示資訊（技能範圍、冷卻、事件時間），不施放技能、不走位、不報名\n- 指令 /ice 開啟主視窗，/ice start、/ice stop 開始與停止",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1640,10 +1640,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "自動接取並完成宇宙探索任務，累積研究進度。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/804400325",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/804400325",
-    "Changelog": "- 宇宙探索：釣魚任務在遊戲宣告「探索任務的評價已定」時直接回報；「釣到指定數量的任意水產品」類任務改成任何一條魚都算數",
-    "LastUpdate": 1795867064
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/804467035",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/804467035",
+    "Changelog": "- 宇宙探索：「【高難】緊急籌備水產食材」的內建釣魚設定拿掉從別的任務複製過來、這個任務用不到的設定（謙遜之餌、拍擊水面、弱咬的雙重／三重提鉤），實際釣法不變",
+    "LastUpdate": 1795868447
   },
   {
     "Author": "Liza Carvelli",
@@ -1789,7 +1789,7 @@
     "Author": "ffxiv-tc-port",
     "Name": "TC Toolbox",
     "InternalName": "TCToolbox",
-    "AssemblyVersion": "7.30.0.28",
+    "AssemblyVersion": "7.30.0.29",
     "Description": "台服自製的工具箱，把許多獨立的小功能做成模組，在設定視窗逐一開關。只有少數純顯示、只寫紀錄或備份設定的模組預設開啟，其餘預設關閉。\n- 背包・裝備：按住指定鍵右鍵搬移物品、快速交易、背包一鍵清倉、僱員批次取回、製作清單缺料與採買\n- 戰鬥・小隊：隊員招募的過濾、排序與自動刷新，F.A.T.E. 總覽與導航，天書奇談換格建議，紛爭前線目標面板與戰績\n- 公會・生活：角色總覽、公會合建素材一鍵全交、公會特效自動使用、自動園圃作業、自動餵食陸行鳥\n- 介面・雜項：周邊玩家統計、換世界與副本區面板、DailyDuty 未完成任務清單、插件設定自動備份\n- 急停模組：開啟後可用熱鍵或 /tcstopall 把所有會自己動的插件一次叫停\n- 指令 /tctoolbox 開啟設定視窗",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/TCToolbox",
@@ -1814,10 +1814,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/TCToolbox.png",
     "Punchline": "台服自製工具箱：背包、戰鬥、公會與介面的小功能模組。",
     "AcceptsFeedback": false,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794422411",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/794422411",
-    "Changelog": "- 自動選中目標：AutoDuty 跑冒險者小隊小怪路段時，沒有目標也不自動選，交給 AutoDuty 先下號令讓坦克接手（避免玩家先出手被圍）",
-    "LastUpdate": 1795669825
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/804467218",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/804467218",
+    "Changelog": "- 自動物品頁面轉移：遊戲改版後找不到搬移用的遊戲函式時，右鍵轉移改為不動作並在聊天視窗提示，設定頁也會標出停用中的項目",
+    "LastUpdate": 1795868364
   },
   {
     "Author": "daemitus, MidoriKami",
