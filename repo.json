@@ -1617,7 +1617,7 @@
     "Author": "Ice",
     "Name": "Ice's Cosmic Exploration",
     "InternalName": "ICE",
-    "AssemblyVersion": "7.30.0.40",
+    "AssemblyVersion": "7.30.0.41",
     "Description": "宇宙探索自動化：按下開始後自動接取、執行並回報宇宙探索任務，依你勾選的任務與優先順序進行，隨時可停止。\n- 採集、釣魚、製作任務代為完成：採集需搭配 vnavmesh，釣魚需搭配 AutoHook，製作需搭配 Artisan\n- 任務挑選規則：階級順序、沒金星的優先、取得金星後自動停用；任務表可依金星率、平均耗時等效益欄排序\n- 「全職業研究進度」視窗：一頁看各職業的宇宙工具階段與研究項目進度，可直接換到該職業\n- 自動購買宇宙信用點數商店的道具、轉宇宙好運道；達到指定等級或點數時自動停止\n- 機甲行動只顯示資訊（技能範圍、冷卻、事件時間），不施放技能、不走位、不報名\n- 指令 /ice 開啟主視窗，/ice start、/ice stop 開始與停止",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/ffxiv-tc-port/ICE",
@@ -1640,10 +1640,10 @@
     "IconUrl": "https://raw.githubusercontent.com/ffxiv-tc-port/DalamudPluginsTC/main/icons/ICE.png",
     "Punchline": "自動接取並完成宇宙探索任務，累積研究進度。",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/804467035",
-    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/804467035",
-    "Changelog": "- 宇宙探索：「【高難】緊急籌備水產食材」的內建釣魚設定拿掉從別的任務複製過來、這個任務用不到的設定（謙遜之餌、拍擊水面、弱咬的雙重／三重提鉤），實際釣法不變",
-    "LastUpdate": 1795868447
+    "DownloadLinkInstall": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/804920207",
+    "DownloadLinkUpdate": "https://api.github.com/repos/ffxiv-tc-port/DalamudPluginsTC/releases/assets/804920207",
+    "Changelog": "- 宇宙探索：「金星已不可能時」的設定說明把「緊急任務」誤寫成「高難任務」的地方改正，記錄檔用語一併統一",
+    "LastUpdate": 1795877458
   },
   {
     "Author": "Liza Carvelli",
